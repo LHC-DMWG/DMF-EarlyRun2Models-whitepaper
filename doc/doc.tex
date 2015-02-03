@@ -1,4 +1,4 @@
-\documentclass[a4]{tufte-handout}
+\documentclass[a4,debug,notitlepage]{tufte-book}
 
 \usepackage[protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true]{microtype}
 \usepackage{graphicx}
@@ -16,18 +16,38 @@
 \usepackage{lastpage}
 \fvset{fontsize=\normalsize} % default font size for fancy-verbatim environments
 
-\title{Working Title}
-\author{Authors}
+% Prints an asterisk that takes up no horizontal space.
+% Useful in tabular environments.
+\newcommand{\hangstar}{\makebox[0pt][l]{*}}
+\newcommand{\openepigraph}[2]{%
+  %\sffamily\fontsize{14}{16}\selectfont
+  \begin{fullwidth}
+  \sffamily\large
+  \begin{doublespace}
+  \noindent\allcaps{#1}\\% epigraph
+  \noindent\allcaps{#2}% author
+  \end{doublespace}
+  \end{fullwidth}
+}
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
+
+\makeatletter
+\title{ATLAS+CMS Dark Matter Forum Recommendations} 
+\author{ATLAS+CMS Dark Matter Forum}
 \date{\today}
+
+\usepackage{titling}
 
 \begin{document}
 
 \morefloats
 \setcounter{secnumdepth}{-1} % turn off section numbering
 
-\begin{titlepage}
+\input{frontmatter.tex}
+
+\blankpage
+
 The write-up...
-\end{titlepage}
 
 
 \end{document}
