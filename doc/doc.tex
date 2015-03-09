@@ -1,11 +1,9 @@
 \documentclass[a4,debug,notitlepage,nobib]{tufte-book}
 
-%% \usepackage[protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true]{microtype}
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-% \usepackage{amsmath}  
 \usepackage{mathtools} % extended mathematics
 \usepackage{booktabs} % book-quality tables
 \usepackage{units}    % non-stacked fractions and better unit spacing
@@ -15,6 +13,11 @@
 \usepackage{refcount}
 \usepackage{calc}
 \usepackage{lastpage}
+\usepackage{natbib} % for \citep
+% create a dummy file (shell command "touch moderntex") to turn on some features that don't work on lxplus
+\IfFileExists{moderntex}{
+  \usepackage[protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true]{microtype}
+}{}
 \fvset{fontsize=\normalsize} % default font size for fancy-verbatim environments
 
 % Prints an asterisk that takes up no horizontal space.
