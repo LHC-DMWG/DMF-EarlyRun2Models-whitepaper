@@ -154,7 +154,7 @@ The parton shower is done using Pythia 8, with a matching scale of...
 A complete list of effective operators with direct DM/boson couplings for
 Dirac DM, up to dimension 7, can be found in~\citep{Cotta:2012nj}. 
 
-Following the notation of~\citep{1212.3352}, the dimension 5 benchmark models 
+Following the notation of~\citep{Carpenter:2012rg}, the dimension 5 benchmark models 
 from this category have a Lagrangian that includes terms such as:
 
 \begin{eqnarray}
@@ -169,10 +169,54 @@ induces signatures with MET in conjunction with Z and W bosons at tree level,
 while at loop level it induces couplings to photon pairs and $Z \gamma$ through W loops. 
 \textbf{[CD: I believe the paper but I couldn't write this down. How much detail do we want here?]}. 
 
+The dimension 7 benchmark models include couplings to the kinetic
+terms of the EW bosons ($F^{\mu\nu}_i$, with $F_i=1,2,3$ being the field strengths
+of the SM $U(1)$ and $SU(2)$ gauge groups and $\tilde F^{\mu\nu}_i$ their dual tensors). 
+The Lagrangian for the scalar coupling
+of DM and bosons include terms such as the following:
 
+\begin{eqnarray}
+\frac{1}{\Lambda_{7,S}^3} ~\bar{\chi} \chi ~ \sum_i k_i  F_i^{\mu \nu} F^i_{\mu \nu} + 
+\frac{1}{\Lambda_{7,S}^3} ~\bar{\chi} \chi ~ \sum_i k_i  F_i^{\mu \nu} \tilde F^i_{\mu \nu}
+\end{eqnarray}
 
+The Lagrangian with pseudoscalar coupling includes the following term:
 
+\begin{eqnarray}
+\frac{1}{\Lambda_{7,PS}^3} ~\bar{\chi} \gamma^5 \chi ~ \sum_i k_i  F_i^{\mu \nu} F^i_{\mu \nu} +
+\frac{1}{\Lambda_{7,PS}^3} ~\bar{\chi} \gamma^5 \chi ~ \sum_i k_i  F_i^{\mu \nu} \tilde F^i_{\mu \nu}
+\end{eqnarray}
 
+The cut-off scales $\Lambda$ for the separate terms can be related to operators with different 
+Lorentz structure from Ref.~\citep{Cotta:2012nj}. Given that they do not lead to 
+substantial differences for collider searches as shown in Figure 2 of Ref.~\citep{Carpenter:2012rg}, 
+they have been denoted as $\Lambda_{7,S}$ for the scalar case and  $\Lambda_{7,PS}$ for the pseudoscalar
+case. When no distinction is made, they will be simply called $\Lambda_{7}$. 
+
+The $k_i$ coefficients are related to the couplings of DM to pairs of gauge 
+bosons by gauge invariance: 
+
+\begin{eqnarray}
+% g_{gg}&=&\frac{k_3}{\Lambda_7^3} \\
+g_{WW}&=&\frac{2k_2}{s_w^2 \Lambda_7^3} \\
+g_{ZZ} &=& \frac{1}{4 s_w^2 \Lambda_7^3} \left(\frac{k_1 s_w^2}{c_w^2}+\frac{k_2 c_w^2}{s_w^2} \right) \\
+g_{\gamma\gamma}&=&\frac{1}{4 c_w^2}\frac{k_1+k_2}{\Lambda_7^3} \\
+g_{Z\gamma} &=& \frac{1}{2 s_w c_w \Lambda_7^3} \left(\frac{k_2}{s_w^2}-\frac{k_1}{c_w^2} \right)
+\label{eq:prefactors}
+\end{eqnarray}
+
+where $s_w$ and $c_w$ are respectively the sine and cosine of the weak mixing angle. 
+\textbf{[CD: add here correspondence with Uli's coefficients - it may be useful.]}
+
+The coefficients $k_i$ determine the relative importance of each of the boson channels,
+and their correlations. For example, for what concerns searches with W, Z and photons: 
+\begin{itemize}
+ \item $k_2$ alone controls the rate of the coupling to $W$ boson pairs;
+ \item If $k_1 = k_2$ contributions from both $Z$ and $\gamma$ exchange appear;
+ \item If $k_1 = c_w^2 / s_w^2 k_2$ the $\gamma$ exchange is negligible. 
+\end{itemize}
+
+\textbf{[CD: discussion on the grid scan, need better internet for that]}
 
 
 \paragraph{Specific simplified models}
