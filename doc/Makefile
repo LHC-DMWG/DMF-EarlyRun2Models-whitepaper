@@ -1,5 +1,5 @@
 
-pdf: *.tex contributors.tex
+pdf: *.tex contributors.tex tex/*.tex figures/*.pdf figures/svg/*.svg
 	pdflatex doc.tex
 	bibtex doc
 	pdflatex doc.tex
