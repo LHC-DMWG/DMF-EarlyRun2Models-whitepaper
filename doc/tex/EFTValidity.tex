@@ -1,0 +1,117 @@
+% \documentclass[11pt,a4paper]{article}
+% \usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+% \usepackage[utf8]{inputenc}
+% \usepackage[english]{babel}
+
+% \usepackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage{amssymb}
+% \usepackage{graphicx}
+% \usepackage{mathrsfs}
+% \usepackage{latexsym}
+% \usepackage{color}
+% \usepackage{slashed, cancel}
+% \usepackage{hyperref}
+% \usepackage{bbold}%For identity-matrix symbol
+
+% \usepackage[font=footnotesize,labelfont=bf]{caption} % Modifies captions
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% 	COMMANDS AND DEFINITIONS   %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+% \definecolor{bluscuro}{rgb}{0.15, 0.2, .85}
+% %
+% \hypersetup{colorlinks, citecolor=bluscuro, linkcolor=bluscuro, urlcolor=bluscuro}
+
+\def\Qtr{Q_{\rm tr}}
+\def\pT{p_{\rm T}}
+\def\mx{m_{\rm DM}}
+\def\gx{g_{\rm DM}}
+
+ \def\be   {\begin{equation}}   \def\ee   {\end{equation}}
+ \def\ba   {\begin{array}}      \def\ea   {\end{array}}
+ \def\bea  {\begin{eqnarray}}   \def\eea  {\end{eqnarray}}
+ \def\bean {\begin{eqnarray*}}  \def\eean {\end{eqnarray*}}
+ \def\nn{\nonumber}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%        	BEGIN DOCUMENT		   %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\title{EFT Validity and Truncation Summary}
+
+% \begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{EFT Validity and Truncation Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Effective Field Theories (EFTs) are an extremely useful tool for DM searches at the LHC. Given the current lack of indications about the nature of the DM particle and its interactions, a model independent interpretation of the collider bounds appears mandatory, especially in complementarity with the reinterpretation of the exclusion limits within a choice of simplified models, which cannot exhaust the set of possible completions of an effective Lagrangian. However EFTs must be used with caution at LHC energies, where the energy scale of the interaction is at a scale where the EFT approximation can no longer be assumed to be valid. Here we summarise some methods that can be used to ensure the validity of the EFT approximation. These methods are described in detail in Refs.~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Outline of the procedure described in Refs.~\cite{Busoni:2014sya,Aad:2015zva}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+For a tree-level interaction between DM and the Standard Model (SM) via some mediator with mass $M$, the EFT approximation corresponds to expanding the propagator 
+in powers of $\Qtr^2/M^2$, truncating at lowest order, and combining the remaining parameters into a single parameter ${M_*}$ (also called $\Lambda$). For an example scenario with a $Z'$-type mediator (leading to some combination of operators D5 to D8 in the EFT limit)
+this corresponds to setting
+%
+\be
+\frac{\gx g_q}{Q_{\rm tr}^2-M^2}=-\frac{\gx g_q}{M^2}\left(1+\frac{Q^2_{\rm tr}}{M^2}+ \mathcal{O} \left(\frac{Q^4_{\rm tr}}{M^4}\right)\right) \simeq -\frac{1}{{M_*}^2},
+\ee
+%
+where $\Qtr$ is the momentum carried by the mediator, and $\gx$, $g_q$ are the DM-mediator and quark-mediator couplings respectively. Similar expressions exist for other operators. Clearly the condition that must be satisfied for this approximation to be valid is that $\Qtr^2 < M^2 = \gx g_q {M_*}^2$. 
+
+We can use this condition to enforce the validity of the EFT approximation by restricting the signal (after the imposition of the cuts of the analysis) to events for which $\Qtr^2 < M^2$. This truncated signal can then be used to derive the new, truncated limit on $M_*$ as a function of $(\mx, \gx g_q)$.
+
+For the example D5-like operator, $\sigma \propto {M_*}^{-4}$, and so there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${M_*}$ if the original limit is based on a simple cut-and-count procedure. Defining $\sigma_{\rm EFT}^{\rm cut}$ as the cross section truncated such that all events pass the condition $\sqrt{\gx g_q} M_*^{\rm rescaled} > \Qtr$, we have
+%
+\be
+M_*^{\rm rescaled} = \left(\frac{\sigma_{\rm EFT}}{\sigma_{\rm EFT}^{\rm cut}}\right)^{1/4} M_*^{\rm original},
+\ee
+%
+which can be solved for $M_*^{\rm rescaled}$ via either iteration or a scan (note that $M_*^{\rm rescaled}$ appears on both the LHS and RHS of the equation). Similar relations exist for a given UV completion of each operator. The details and application of this procedure to ATLAS results can be found in Ref.~\cite{Aad:2015zva} for a range of operators. Since this method uses the physical couplings and energy scale $\Qtr$, it gives the strongest possible constraints in the EFT limit while remaining robust by ensuring the validity of the EFT approximation. 
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Outline of the procedure described in Ref.~\cite{Racco:2015dxa}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In \cite{Racco:2015dxa} a procedure to extract model independent and consistent bounds within the EFT is described. This procedure can be applied to any effective Lagrangian describing the interactions between the DM and the SM, and provides limits that can be directly reinterpreted in any completion of the EFT.
+
+The range of applicability of the EFT is defined by a mass scale $M_\text{cut}$, a parameter which marks the upper limit of the range of energy scales at which the EFT can be used reliably, independently of the particular completion of the model. 
+Regardless of the  details of the full theory, the energy scale probing the validity of the EFT is less than or equal to the centre-of-mass energy $E_\text{cm}$, 
+the total invariant mass of the hard final states of the reaction.
+Therefore, the condition ensuring the validity of the EFT is, by definition of $M_\text{cut}$,
+\begin{equation}
+\label{Ecm<Mcut}
+E_\text{cm}<M_\text{cut}\,.
+\end{equation}
+For example, in the specific case of a tree level mediation with a single mediator, $M_\text{cut}$ can be interpreted as the mass of that mediator.
+
+There are then at least three free parameters describing an EFT:~ 
+the DM mass $m_\text{DM}$, the scale $M_*$ of the interaction, and the cutoff scale $M_\text{cut}$.
+
+We can use the same technique as above to restrict the signal to the events for which $E_\text{cm}<M_\text{cut}$,  using only these events to derive the exclusion limits on $M_*$ as a function of  $(m_\text{DM},M_{\rm cut})$. 
+%
+We can also define an \textit{effective coupling strength} $M_\text{cut}=g_* \, M_*\,,$ where $g_*$ is a free parameter that substitutes the parameter $M_\text{cut}$, and therefore derive exclusions on $M_*$ as a function of $(m_\text{DM},g_*)$. This allows us to see how much of the theoretically allowed parameter space has been actually tested and how much is still unexplored; For example, in the $Z'$-type model considered above, $g_*$ is equal to $\sqrt{g_\text{DM}g_q}$.
+%
+The resulting plots are shown in \cite{Racco:2015dxa} for a particular effective operator. 
+
+The advantage of this procedure is that the obtained bounds can be directly and easily recast in any  completion of the EFT, by computing the parameters $M_*$, $M_\text{cut}$ in the full model as functions of the parameters of the complete theory. On the other hand, the resulting limits will be weaker than those obtained using $\Qtr$ and a specific UV completion.
+
+
+ % \begin{thebibliography}{1}
+
+  
+%     \end{thebibliography}
+
+% \end{document}
+
