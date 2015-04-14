@@ -3,12 +3,14 @@
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
+\usepackage{lineno}
 
 \usepackage{slashed}
 \usepackage{amsfonts}
 \usepackage{amsmath,amssymb}
 \usepackage{slashed}
 \usepackage{feynmp}
+\usepackage{subfig}
 \DeclareGraphicsRule{*}{mps}{*}{}
 
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
@@ -49,6 +51,8 @@
 \date{\today}
 
 \usepackage{titling}
+
+\linenumbers
 
 \begin{document}
 
@@ -96,7 +100,8 @@
 \input{tex/ColliderConstraints.tex}
 
 %%FIXME: it does not understand Collaboration. Fix here rather than hacking bib file?
-\bibliographystyle{unsrtnat}
+% \bibliographystyle{unsrtnat}
+\bibliographystyle{alpha}
 \bibliography{doc}
 
 \end{document}
