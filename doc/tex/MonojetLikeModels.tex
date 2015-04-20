@@ -42,10 +42,10 @@ We assume that no additional visible or invisible decays contribute to the width
 
 where the individual contributions to this from the partial width are from,
 \begin{align}
-\Gamma_{\bar{\chi}\chi}^{\rm{vector}}&=\frac{\gDM^2 \mMed}{12\pi}\left(1+\frac{2 \mDM^2}{\mMed^2} \right)\sqrt{1-\frac{4 \mDM^2}{\mMed^2}}\\
-\Gamma_{\bar{q}q}^{\rm{vector}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1+\frac{2 m_q^2}{\mMed^2} \right)\sqrt{1-\frac{4 m_q^2}{\mMed^2}}\\
-\Gamma_{\bar{\chi}\chi}^{\rm{axial}}&=\frac{\gDM^2 \mMed}{12\pi} \left(1-\frac{4 \mDM^2}{\mMed^2}\right)^{3/2}\\
-\Gamma_{\bar{q}q}^{\rm{axial}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2}\label{eq:Gamma4}\;.
+\Gamma_{\bar{\chi}\chi}^{\rm{V}}&=\frac{\gDM^2 \mMed}{12\pi}\left(1+\frac{2 \mDM^2}{\mMed^2} \right)\sqrt{1-\frac{4 \mDM^2}{\mMed^2}}\\
+\Gamma_{\bar{q}q}^{\rm{V}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1+\frac{2 m_q^2}{\mMed^2} \right)\sqrt{1-\frac{4 m_q^2}{\mMed^2}}\\
+\Gamma_{\bar{\chi}\chi}^{\rm{A}}&=\frac{\gDM^2 \mMed}{12\pi} \left(1-\frac{4 \mDM^2}{\mMed^2}\right)^{3/2}\\
+\Gamma_{\bar{q}q}^{\rm{A}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2}\label{eq:Gamma4}\;.
 \end{align}
 
 \end{itemize}
@@ -60,6 +60,14 @@ In addition to this, studies conducted within the DM forum have shown that POWHE
 The input configuration in POWHEG allows you to set parameters to not generate events below a given $k{T}$ cut ('bornktmin') and an additional parameter that ensures sufficient statistics at high transverse momentum ('bornsuppfact). With these flags set to appropriate variables, it is then possible to use a single POWHEG sample to generate the Monte Carlo for all signal regions, whereas with Madgraph more individual samples to be stitched together to achieve the required statistics out to the tails of the kinematic distributions. 
 The POWHEG and Madgraph implementations were compared and the yields obtained from both were found to be compatible.  
 \end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\linewidth]{figures/monojet/width_V.eps}
+\includegraphics[width=0.45\linewidth]{figures/monojet/width_A.eps}
+\caption{Scan over couplings}
+\label{fig:monojet_width_V}
+\end{figure}
 
 \begin{figure}
 \centering
@@ -107,6 +115,21 @@ The POWHEG and Madgraph implementations were compared and the yields obtained fr
 
 
 \paragraph{Scalar and pseudoscalar mediator, s-channel exchange}
+
+\begin{align}
+\Gamma_{\bar{\chi}\chi}^{\rm{S}}&=\frac{\gDM^2 \mMed}{8\pi}\left(1-\frac{4 \mDM^2}{\mMed^2} \right)^{3/2}\\
+\Gamma_{\bar{q}q}^{\rm{S}}&= \frac{3 \gq^2 \mMed}{8\pi}\frac{\mMed m_q^2}{v^2}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2}\\
+\Gamma_{\bar{\chi}\chi}^{\rm{P}}&=\frac{\gDM^2 \mMed}{8\pi} \sqrt{1-\frac{4 \mDM^2}{\mMed^2}}\\
+\Gamma_{\bar{q}q}^{\rm{P}}&= \frac{3 \gq^2 \mMed}{8\pi}\frac{\mMed m_q^2}{v^2}\sqrt{1-\frac{4 m_q^2}{\mMed^2}}\label{eq:Gamma4}\;.
+\end{align}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\linewidth]{figures/monojet/width_S.eps}
+\includegraphics[width=0.45\linewidth]{figures/monojet/width_P.eps}
+\caption{Scan over couplings}
+\label{fig:monojet_width_S}
+\end{figure}
 
 \begin{figure}
 \centering
@@ -156,6 +179,13 @@ The POWHEG and Madgraph implementations were compared and the yields obtained fr
 
 \begin{figure}
 \centering
+\includegraphics[width=0.9\linewidth]{figures/monojet/lambda_14TeV_SR1.eps}
+\caption{Comparison of the 95\% CL lower limits on the scale of the interaction of a $Z'$-like simplified model at 14\,TeV, in terms of the mediator mass. Corresponding limits from EFT models are shown on the same plot as green dashed lines to show equivalence between the two models for high mediator masses.}
+\label{fig:monojet_MstarMmed}
+\end{figure}
+
+\begin{figure}
+\centering
 \includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_V_gg100.eps}
 \includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_A_gg100.eps}\\
 \includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_S_gg100.eps}
@@ -183,8 +213,11 @@ The POWHEG and Madgraph implementations were compared and the yields obtained fr
 \caption{Scaling on-shell}
 \label{fig:monojet_scaling}
 \end{figure}
+%choose mDM=50, mMed=300, gSM=0.1, gDM={0.1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10} for S (mMed=GammaMin is reached around 5)
+%choose mDM=50, mMed=300, gDM=0.1, gSM={0.1, 0.4, 0.7, 1, 1.3, 1.6, 1.9, 2.2, 2.5, 2.8, 3.1} for V (mMed=GammaMin is reached around 2.7)
+%choose mDM=50, mMed=1000, gDM=0.1, gSM={0.1, 0.4, 0.7, 1, 1.3, 1.6, 1.9, 2.2, 2.5, 2.8, 3.1} for V (mMed=GammaMin is reached around 1.8)
 
-%M_S = 300 GeV, m_chi = 100 GeV, gSM = gDM =4
+%The plots are produced with M_S = 300 GeV, m_chi = 100 GeV, gSM = gDM =4
 \begin{figure}
 \centering
 \includegraphics[page=1, trim=310 200 310 200, clip, width=0.3\linewidth]{figures/monojet/rescalingexercise.pdf}
@@ -194,6 +227,19 @@ The POWHEG and Madgraph implementations were compared and the yields obtained fr
 \label{fig:monojet_scaling_constwidth}
 \end{figure}
 
+\paragraph{Powheg}
+
+\begin{itemize}
+\item bornktmin and bornsuppfact to ensure sufficient statistics at high MET
+\end{itemize}
+
+\paragraph{MadGraph}
+
+\begin{itemize}
+\item jet differential rates for CKKW for 30 GeV and 80 GeV (ask Fuquan for final plots)
+\item importance of 0-parton sample at low MET with 80 GeV cut
+\item 3-parton emission can be ingored (we need new plots with high statistics - ask Fuquan or drop this)
+\end{itemize}
 
 \paragraph{Colored scalar mediator, t-channel exchange}
 
