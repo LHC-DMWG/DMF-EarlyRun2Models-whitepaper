@@ -13,7 +13,7 @@ Section~\ref{subsec:MonojetLikeModels}.
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.5\textwidth]{figures/VPlusMET_EFT}
+    \includegraphics[width=0.5\textwidth]{figures/EW/VPlusMET_EFT}
   \caption{Sketch of benchmark models including a contact interaction 
   for V+MET searches, adapted from~\cite{Nelson:2013pqa}. \label{fig:VPlusMET_EFT}}
 \end{figure}
@@ -115,13 +115,28 @@ already detailed in Section~\ref{subsec:MonojetLikeModels}.
 
 As in the case of the jet+MET models, the width does not have a significant
 impact on the kinematic distributions relevant for those searches. An example
-of the particle-level analysis acceptance using simplified cuts \textbf{[TODO: add cuts]}
-for the photon+MET analysis is shown in Figure~\ref{fig:DMV_EW_gamma_acceptance}.
+of the particle-level analysis acceptance using the
+generator-level cuts from Ref.~\cite{Aad:2014tda} 
+for the photon+MET analysis, but raising the photon $p_T$ cut
+to 150 GeV is shown in Figure~\ref{fig:DMV_EW_gamma_acceptance}, 
+comparing a width that is set to $\Gamma=M_{med}/3$ to the
+minimal width (the ratio between the two widths 
+ranges from 1.05 to 1.5 with increasing mediator masses).
+
+% mMed : minW
+% 10  : 3.5
+% 50 : 21.3
+% 100 : 42.4
+% 300 : 127.3
+% 600 : 300.1
+% 1000 : 503
+% 3000 : 1512
+% 6000 : 3024
 
 \begin{figure}
-    \includegraphics[width=0.6\textwidth]{figures/llug}
+    \includegraphics[width=0.7\textwidth]{figures/EW/acceptance_minwidth_vs_mo3_gamma}
     \caption{Analysis acceptance for the photon+MET analysis when varying the mediator width, in the
-    case of a vector mediator exchanged in the $s-$channel}
+    case of a vector mediator exchanged in the $s-$channel}%This plot will come from Marie-Helene
     \label{fig:DMV_EW_gamma_acceptance}
 \end{figure}
 
@@ -132,9 +147,15 @@ benchmark points are shown in Table~\ref{table:x-sec}
 
 \begin{figure}[h!]
   \centering  
-  \subfloat[Missing transverse momentum distribution for the photon+MET final state.\label{fig:DMV_EW_gamma_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/gull}
-    }
+  \subfloat[Missing transverse momentum distribution for the photon+MET final state, for 
+  different mediator mass choices, for a DM mass of 10 GeV.\label{fig:DMV_EW_gamma_MET}]{%
+      \includegraphics[width=0.45\textwidth]{figures/EW/ptGamma_filter120GeV_dmV_dm10GeV}
+    }%TODO: add equivalent plot of MET to appendix
+    \hfill
+  \subfloat[Leading photon transverse momentum distribution for the photon+MET final state, 
+  for different DM mass choices, with a mediator mass of 1 TeV.\label{fig:DMV_EW_gamma_pT}]{%
+      \includegraphics[width=0.45\textwidth]{figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV}
+    }%TODO: add equivalent plot of MET to appendix
     \hfill
   \subfloat[Missing transverse momentum distribution for the leptonic Z+MET final state.\label{fig:DMV_EW_Z_MET}]{%
       \includegraphics[width=0.45\textwidth]{figures/llug}
