@@ -319,7 +319,7 @@ The results of the scan over the couplings presented in the previous sections in
 
 Let us now elaborate on a cross section scaling procedure.
 %TODO say something about the fact that this can work only for fixed masses
-The propagator on the s-channel exchange is written in a Breit-Wigner form as $\frac{1}{\sqrt{s}-\mMed^2 \quad+\quad i\mMed\Gamma}$. The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
+The propagator on the s-channel exchange is written in a Breit-Wigner form as $\frac{1}{\sqrt{s}-\mMed^2 + i\mMed\Gamma}$. The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
 \begin{itemize}
 \item off-shell production when $\sqrt{s} \gg \mMed$ leading to suppressed cross sections,
 \item on-shell production when $\sqrt{s} \sim \mMed$ leading to enhanced cross sections,
@@ -389,22 +389,20 @@ On the contrary, both the Standard Model and Dark Matter partial width have comp
 The performance of the cross section scaling is demonstrated in Fig.\,\ref{fig:monojet_scaling} %where two mass points $\mMed=100$\,GeV and 1\,TeV are chosen with $\mDM=10$\,GeV
 where the mass point $\mMed=1$\,TeV and $\mDM=10$\,GeV is chosen
 and rescaled from the starting point $g_q=\gDM=1$ according to Eq.\,\ref{eq:monojet_scaling} to populate the whole $g_q$--$\gDM$ plane. This means the width is not kept constant in this test and this is done in purpose in order to point out deviations from the scaling when the width is altered. For each mass point, the rescaled cross section is compared to the generator cross section and the ratio of the two is plotted.
-%TODO comment on the values in the plot.
-Constant colors indicate the lines along which the cross section scaling works and there is a remarkable resemblance of the patterns shown in the plots of the mediator width. To prove the scaling along the lines of constant width works, one such line is chosen in Fig.\,\ref{fig:monojet_scaling_constwidth} for a scalar mediator, defined by $\mMed=300$\,GeV, $\mDM=100$\,GeV, $g_q=\gDM=1$, and the rescaled and generated cross sections are found to agree within 3\%.
+For the given choice of the mass points, the scaling seems to work approximately with the precision of $\sim20\%$ in the region where $\Gamma_{\rm{min}}<\mMed$.
+Constant colors indicate the lines along which the cross section scaling works precisely and there is a remarkable resemblance of the patterns shown in the plots of the mediator width. To prove the scaling along the lines of constant width works, one such line is chosen in Fig.\,\ref{fig:monojet_scaling_constwidth} for a scalar mediator, defined by $\mMed=300$\,GeV, $\mDM=100$\,GeV, $g_q=\gDM=1$, and the rescaled and generated cross sections are found to agree within 3\%.
 
 
 \begin{figure}
 \centering
 %\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_V_10_100.eps}
 %\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_V_10_1000.eps}\\
-%\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_S_10_100.eps}
-%\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_S_10_1000.eps}\\
-\includegraphics[width=0.9\linewidth]{figures/monojet/scaling_S_10_1000.eps}
+\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_S_10_100.eps}
+\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_S_10_1000.eps}\\
 \caption{Ratio of the rescaled and generated cross sections in the $g_q$--$\gDM$ plane. The point at $g_q=\gDM=1$, taken as a reference for the rescaling, is denoted by a star symbol.
-Scalar model with $\mMed=1$\,TeV and $\mDM=10$\,GeV is plotted.}
+Scalar model with $\mMed=100$\,GeV (left) and 1\,TeV (right) is plotted for $\mDM=10$\,GeV.}
 %Vector (scalar) mediator is shown at the top (bottom), the left (right) column corresponds to $\mMed=100$\,GeV ($\mMed=1$\,TeV). Dark Matter mass of 10\,GeV is considered.}
 %TODO indicate mMed=GammaMin in the plot
-%TODO show the plot from 0 to 2pi
 \label{fig:monojet_scaling}
 \end{figure}
 
@@ -418,6 +416,9 @@ Scalar model with $\mMed=1$\,TeV and $\mDM=10$\,GeV is plotted.}
 \label{fig:monojet_scaling_constwidth}
 \end{figure}
 
+
+\paragraph{Proposed parameter grid}
+
 We propose to present the results in the $g_q$--$\gDM$ plane using the following prescription:
 \begin{itemize}
 \item Since the shapes of kinematic quantities do not change for different couplings, use the acceptance and efficiency for the available $\mDM=50$\,GeV, $\mMed=300$\,GeV, $g_q=\gDM=1$ grid point from the $\mMed$--$\mDM$ plane for the scalar and pseudo-scalar mediator. In case of the vector and axial-vector mediator, use the grid point $\mDM=50$\,GeV, $\mMed=1$\,TeV, $g_q=\gDM=1$.
@@ -429,7 +430,10 @@ We propose to present the results in the $g_q$--$\gDM$ plane using the following
 %choose mDM=50, mMed=300, gDM=0.1, gSM={0.1, 0.4, 0.7, 1, 1.3, 1.6, 1.9, 2.2, 2.5, 2.8, 3.1} for V (mMed=GammaMin is reached around 2.7)
 %choose mDM=50, mMed=1000, gDM=0.1, gSM={0.1, 0.4, 0.7, 1, 1.3, 1.6, 1.9, 2.2, 2.5, 2.8, 3.1} for V (mMed=GammaMin is reached around 1.8)
 
-%TODO say that the g-g plane can be used to recast the results on gammamin to different mediator widths.
+
+\paragraph{Rescaling to different mediator width}
+
+In general there may be an interest to consider larger mediator masses than $\Gamma_{\rm{min}}$ in order to accommodate further couplings of the mediator. The cross section scaling method described above can be used to reinterpret the results presented for the minimal width.
 
 
 
