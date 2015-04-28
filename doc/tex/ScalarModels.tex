@@ -47,45 +47,45 @@ Furthermore, as we are dealing with a 4D parameter space, it is necessary to con
 
 We now turn to the constraints on these models from non-collider experiments: thermal relic abundances, indirect detection, and direct detection. The first two results can be considered together, as they depend on the same set of annihilation cross sections.
 
-\paragraph{Thermal Cross Sections}
-
-The thermally-average annihilation of dark matter through the spin-0 mediators can be calculated from the Simplified Model Eqs.~\eqref{eq:scalarlag} and \eqref{eq:pseudoscalarlag}. The resulting cross sections for annihilation into Standard Model fermions, as a function of the dark matter temperature $T$ are
-\begin{eqnarray*}
-\langle \sigma v \rangle(\chi\bar{\chi} \to \phi^* \to f\bar{f}) & = & N_c \frac{3 g_\chi^2 g_v^2 y_f^2 (m_\chi^2 - m_f^2)^{3/2}}{8\pi m_\chi^2\left[ (m_\phi^2 - 4m_\chi^2)^2 + m_\phi^2\Gamma^2_\phi \right]} T, \label{eq:scalarthermal} \\
-\langle \sigma v \rangle(\chi\bar{\chi} \to a^* \to f\bar{f}) & = & N_c \frac{g_\chi^2 g_v^2 y_f^2 }{4\pi \left[ (m_a^2 - 4m_\chi^2)^2 + m_a^2\Gamma^2_a \right]} \left[ m_\chi^2 \sqrt{1-\frac{m_f^2}{m_\chi^2}} + \frac{3m_f^2}{4m_\chi \sqrt{1-\frac{m_f^2}{m_\chi^2}}} T \right].  \label{eq:pseudoscalarthermal} \\
-\end{eqnarray*}
-Notably, the scalar mediators do not have a temperature-independent contribution their annihilation cross section, while pseudoscalars do. As $T \propto v^2$, where $v$ is the dark matter velocity, there is no velocity-independent annihilation through scalars. As, in the Universe today, $v \lesssim 10^{-3}$, this means there are no non-trivial constraints on dark matter annihilation from indirect detection in the scalar mediator model. 
-
-The pseudoscalar model, on the other hand, does have relevant constraints from indirect detection. These can be obtained from Eq.~\ref{eq:pseudoscalarthermal} by setting $T \to 0$, and considering annihilation into the relevant Standard Model channel(s). Most constraints from indirect detection are written in terms of a single annihilation channel, and so the constraints for the full Simplified Model (with multiple annihilation channels open) require some modification of the available results. Good estimates can be obtained by considering the most massive fermion into which the dark matter can annihilate (typically the $b$ or $t$ quark), as this will tend to dominate the annihilation cross section. Note that, outside of resonance, the width is relatively unimportant to the indirect detection constraints.
-
-The thermal relic calculation requires the same input cross sections as the indirect detection. Here, the cross sections are summed over all kinematically available final states, and can be written parametrically as
-\[
-\langle \sigma v\rangle = a + bT. 
-\]
-The thermal relic abundance of dark matter is then
-\begin{equation}
-\Omega_\chi h^2 = \frac{1.04\times 10^9~\mbox{GeV}}{m_{\rm Planck}}\frac{x_f}{\sqrt{g_\star}}\frac{1}{a+b m_\chi x_f^{-1}},
-\end{equation}
-where $x_f \sim 25$ is $m_\chi$ over the freeze-out temperature, and $g_{\rm star}$ is the number of degrees of freedom active at the time of freeze-out. For reasonable early Universe parameters, the correct relic abundance occurs when
-\begin{equation}
-3 \times 10^{-26}~\mbox{cm$^3$/s} = 2.57 \times 10^{-9}~\mbox{GeV}^{-2} = a + \frac{b m_\chi}{x_f}.
-\end{equation}
-Keep in mind that these equations require some modification when the dark matter-mediator system is on resonance. Further, recall that we do not know dark matter is a thermal relic, or that the only annihilation process in play in the early Universe is through the mediator. Therefore, while it is appropriate to compare the sensitivity of experimental results to the thermal cross section, this is not the only range of parameters of theoretical interest.
-
-\paragraph{Direct Detection}
-
-As noted previously, the scalar mediator model has no indirect detection constraints, while the pseudoscalar does. The situation is reversed in direct detection: the pseudoscalar mediator has no velocity- or momentum-unsuppressed interactions with nucleons, while the scalar mediator induces a spin-independent scattering cross section. These constraints are very powerful compared to the present collider bounds, especially when $m_\chi > 10$~GeV. As with indirect detection, for weakly coupled theories, the direct detection bounds are relatively independent of the width. 
-
-For the scalar mediator model, the interaction with direct detection nuclear targets is (to good approximation) isospin-conserving. Therefore, the bound on scattering with nucleons can be applied to either the dark matter-proton or dark matter-neutron cross section, given by
-\begin{eqnarray}
-\sigma_{\chi-p,n} & = & \frac{\mu^2}{\pi} f_{p,n}^2 \\
-f_{p,n} & = & \sum_{q=u,d,s} f^{p,n}_q \frac{m_{p,n}}{m_q} \left(\frac{g_\chi g_v y_q}{\sqrt{2}m_\phi^2} \right) + \frac{2}{27} f_{\rm TG}^{p,n} \sum_{q=c,b,t} \frac{m_{p,n}}{m_q} \left(\frac{g_\chi g_v y_q}{\sqrt{2}m_\phi^2} \right),
-\end{eqnarray}
-where $\mu$ is the dark matter-nucleon reduced mass $\mu = (m_\chi m_{p,n})/(m_\chi + m_{p,n})$, and the nuclear matrix elements $f_{q}^{p,n}$ and $f_{\rm TG}^{p,n}$ must be extracted from lattice QCD. For our purposes, the neutron and proton matrix elements are essentially identical. Using the values from Ref.~\cite{Fitzpatrick:2010em} gives (for both protons and neutrons)
-\begin{eqnarray}
-f_u & = & 0.02 \\
-f_d & = & 0.026 \\
-f_s & = & 0.118 \\
-f_{\rm TG} & = & 0.84
-\end{eqnarray}.
+% \paragraph{Thermal Cross Sections}
+% 
+% The thermally-average annihilation of dark matter through the spin-0 mediators can be calculated from the Simplified Model Eqs.~\eqref{eq:scalarlag} and \eqref{eq:pseudoscalarlag}. The resulting cross sections for annihilation into Standard Model fermions, as a function of the dark matter temperature $T$ are
+% \begin{eqnarray*}
+% \langle \sigma v \rangle(\chi\bar{\chi} \to \phi^* \to f\bar{f}) & = & N_c \frac{3 g_\chi^2 g_v^2 y_f^2 (m_\chi^2 - m_f^2)^{3/2}}{8\pi m_\chi^2\left[ (m_\phi^2 - 4m_\chi^2)^2 + m_\phi^2\Gamma^2_\phi \right]} T, \label{eq:scalarthermal} \\
+% \langle \sigma v \rangle(\chi\bar{\chi} \to a^* \to f\bar{f}) & = & N_c \frac{g_\chi^2 g_v^2 y_f^2 }{4\pi \left[ (m_a^2 - 4m_\chi^2)^2 + m_a^2\Gamma^2_a \right]} \left[ m_\chi^2 \sqrt{1-\frac{m_f^2}{m_\chi^2}} + \frac{3m_f^2}{4m_\chi \sqrt{1-\frac{m_f^2}{m_\chi^2}}} T \right].  \label{eq:pseudoscalarthermal} \\
+% \end{eqnarray*}
+% Notably, the scalar mediators do not have a temperature-independent contribution their annihilation cross section, while pseudoscalars do. As $T \propto v^2$, where $v$ is the dark matter velocity, there is no velocity-independent annihilation through scalars. As, in the Universe today, $v \lesssim 10^{-3}$, this means there are no non-trivial constraints on dark matter annihilation from indirect detection in the scalar mediator model. 
+% 
+% The pseudoscalar model, on the other hand, does have relevant constraints from indirect detection. These can be obtained from Eq.~\ref{eq:pseudoscalarthermal} by setting $T \to 0$, and considering annihilation into the relevant Standard Model channel(s). Most constraints from indirect detection are written in terms of a single annihilation channel, and so the constraints for the full Simplified Model (with multiple annihilation channels open) require some modification of the available results. Good estimates can be obtained by considering the most massive fermion into which the dark matter can annihilate (typically the $b$ or $t$ quark), as this will tend to dominate the annihilation cross section. Note that, outside of resonance, the width is relatively unimportant to the indirect detection constraints.
+% 
+% The thermal relic calculation requires the same input cross sections as the indirect detection. Here, the cross sections are summed over all kinematically available final states, and can be written parametrically as
+% \[
+% \langle \sigma v\rangle = a + bT. 
+% \]
+% The thermal relic abundance of dark matter is then
+% \begin{equation}
+% \Omega_\chi h^2 = \frac{1.04\times 10^9~\mbox{GeV}}{m_{\rm Planck}}\frac{x_f}{\sqrt{g_\star}}\frac{1}{a+b m_\chi x_f^{-1}},
+% \end{equation}
+% where $x_f \sim 25$ is $m_\chi$ over the freeze-out temperature, and $g_{\rm star}$ is the number of degrees of freedom active at the time of freeze-out. For reasonable early Universe parameters, the correct relic abundance occurs when
+% \begin{equation}
+% 3 \times 10^{-26}~\mbox{cm$^3$/s} = 2.57 \times 10^{-9}~\mbox{GeV}^{-2} = a + \frac{b m_\chi}{x_f}.
+% \end{equation}
+% Keep in mind that these equations require some modification when the dark matter-mediator system is on resonance. Further, recall that we do not know dark matter is a thermal relic, or that the only annihilation process in play in the early Universe is through the mediator. Therefore, while it is appropriate to compare the sensitivity of experimental results to the thermal cross section, this is not the only range of parameters of theoretical interest.
+% 
+% \paragraph{Direct Detection}
+% 
+% As noted previously, the scalar mediator model has no indirect detection constraints, while the pseudoscalar does. The situation is reversed in direct detection: the pseudoscalar mediator has no velocity- or momentum-unsuppressed interactions with nucleons, while the scalar mediator induces a spin-independent scattering cross section. These constraints are very powerful compared to the present collider bounds, especially when $m_\chi > 10$~GeV. As with indirect detection, for weakly coupled theories, the direct detection bounds are relatively independent of the width. 
+% 
+% For the scalar mediator model, the interaction with direct detection nuclear targets is (to good approximation) isospin-conserving. Therefore, the bound on scattering with nucleons can be applied to either the dark matter-proton or dark matter-neutron cross section, given by
+% \begin{eqnarray}
+% \sigma_{\chi-p,n} & = & \frac{\mu^2}{\pi} f_{p,n}^2 \\
+% f_{p,n} & = & \sum_{q=u,d,s} f^{p,n}_q \frac{m_{p,n}}{m_q} \left(\frac{g_\chi g_v y_q}{\sqrt{2}m_\phi^2} \right) + \frac{2}{27} f_{\rm TG}^{p,n} \sum_{q=c,b,t} \frac{m_{p,n}}{m_q} \left(\frac{g_\chi g_v y_q}{\sqrt{2}m_\phi^2} \right),
+% \end{eqnarray}
+% where $\mu$ is the dark matter-nucleon reduced mass $\mu = (m_\chi m_{p,n})/(m_\chi + m_{p,n})$, and the nuclear matrix elements $f_{q}^{p,n}$ and $f_{\rm TG}^{p,n}$ must be extracted from lattice QCD. For our purposes, the neutron and proton matrix elements are essentially identical. Using the values from Ref.~\cite{Fitzpatrick:2010em} gives (for both protons and neutrons)
+% \begin{eqnarray}
+% f_u & = & 0.02 \\
+% f_d & = & 0.026 \\
+% f_s & = & 0.118 \\
+% f_{\rm TG} & = & 0.84
+% \end{eqnarray}.
 
