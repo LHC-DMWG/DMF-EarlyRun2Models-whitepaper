@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{lineno}
 \usepackage{epstopdf}
+\usepackage{appendix}
 
 \usepackage{slashed}
 \usepackage{amsfonts}
@@ -53,6 +54,11 @@
 
 \usepackage{titling}
 
+%This is to make tufte append an Appendix in front of an appendix title, 
+%even though Tufte himself might not have liked appendices?
+%Taken from: https://groups.google.com/forum/#!topic/tufte-latex/oEWGA6624-Y
+\input{appendixCommands}
+
 \linenumbers
 
 \begin{document}
@@ -99,6 +105,12 @@
 \chapter{Recommendations for expressing collider constraints}
 \label{sec:ColliderConstraints} 
 \input{tex/ColliderConstraints.tex}
+
+\appendix
+
+\chapter{Detailed studies on mono-jet signatures}
+\label{app:MonojetLikeModels_Appendix}
+\input{tex/MonojetLikeModels_Appendix.tex}
 
 %%FIXME: it does not understand Collaboration. Fix here rather than hacking bib file?
 % \bibliographystyle{unsrtnat}
