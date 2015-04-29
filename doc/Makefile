@@ -13,6 +13,6 @@ contributors.tex: members-lhc-dmf-contributors.csv contributors.pl
 	perl contributors.pl >> contributors.tex
 
 clean:
-	rm -f doc.aux doc.blg doc.log doc.out
+	rm -f doc.aux doc.blg doc.log doc.out doc.bbl
 	rm -f *~ tex/*~
 	rm -f doc.pdf 
