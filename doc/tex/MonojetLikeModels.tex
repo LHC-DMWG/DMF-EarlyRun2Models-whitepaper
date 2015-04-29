@@ -83,7 +83,6 @@ Figure\,\ref{fig:monojet_width_V} shows the minimal width as a function of media
 \includegraphics[width=0.45\linewidth]{figures/monojet/width_V.eps}
 \includegraphics[width=0.45\linewidth]{figures/monojet/width_A.eps}
 \caption{Minimal width as a function of mediator mass for vector and axial-vector mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of 10\,GeV, 30\,GeV, 100\,GeV and 300\,GeV in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
-%TODO fix the qq line
 \label{fig:monojet_width_V}
 \end{figure}
 
@@ -105,9 +104,10 @@ Differences in kinematic distributions are expected only close to the transition
 \end{figure}
 
 The only place where special care needs to be taken are extremely heavy and narrow mediators, in other words with low couplings. Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the $\MET$ distribution for 5\,TeV mediator once $\Gamma_{\rm{min}}/\mMed$ gets down to the order of percent or below.
-This, however, does not come from physics as it is a feature of the generator implementation, where a cutoff for the regions far away from the mediator mass is often used. This is illustrated in Fig.\,\ref{fig:monojet_mchichi} showing the invariant mass of the Dark Matter pair...
-%TODO get the plot from Kristian on slide 11 of https://indico.cern.ch/event/378495/contribution/10/material/slides/0.pdf
-In general, for such extreme parameter choices as $\mMed=7$\,TeV and $\Gamma_{\rm{min}}=36$\,GeV, the EFT model should give the correct answer. In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
+This, however, does not come from physics as it is a feature of the generator implementation, where a cutoff for the regions far away from the mediator mass is often used. This is illustrated in Fig.\,\ref{fig:monojet_mchichi} showing the invariant mass of the Dark Matter pair in the samples generated for 7\,TeV mediator with different coupling strength. In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chi}\chi}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chi}\chi}\rightarrow0$ implies the resonant production at $m_{\bar{\chi}\chi}=7$\,TeV is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7\,TeV is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chi}\chi}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes. This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
+In general, for such extreme parameter choices
+%as $\mMed=7$\,TeV and $\Gamma_{\rm{min}}=36$\,GeV,
+the EFT model should give the correct answer. In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
 
 %Uli: as fabio says, increasing bwcutoff might improve things in the case you are considering
 %
@@ -123,6 +123,12 @@ In general, for such extreme parameter choices as $\mMed=7$\,TeV and $\Gamma_{\r
 \label{fig:monojet_narrow}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
+\caption{Invariant mass of the Dark Matter pair in the samples with $\mMed=7$\,TeV and different coupling strengths.}
+\label{fig:monojet_mchichi}
+\end{figure}
 
 \paragraph{Scan over the Dark Matter mass}
 
@@ -238,7 +244,6 @@ Note that we decide to ignore the partial width coming from gluons through loops
 \includegraphics[width=0.45\linewidth]{figures/monojet/width_S.eps}
 \includegraphics[width=0.45\linewidth]{figures/monojet/width_P.eps}
 \caption{Minimal width as a function of mediator mass for scalar and pseudo-scalar mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of 10\,GeV, 30\,GeV, 100\,GeV and 300\,GeV in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
-%TODO what exactly does the qq line show?
 \label{fig:monojet_width_S}
 \end{figure}
 
@@ -463,15 +468,6 @@ F(k_{\rm{T}})=\frac{k_{\rm{T}}^2}{k_{\rm{T}}^2+\texttt{bornsuppfact}^2} \;.
 In this way, the events at low $\MET$ are suppressed and receive higher event weights which ensures higher statistics at high $\MET$. We recommend to set \verb+bornsuppfact+ to 1000.
 \item The \verb+bornktmin+ parameter allows to suppress the low $\MET$ region even further by starting the generation at a certain value of $k_{\rm{T}}$. It is recommended to set this parameter  to half the lower analysis $\MET$ cut, therefore the proposed value for \verb+bornktmin+ is 150.
 \end{itemize}
-
-
-%\subsection{MadGraph}
-%
-%\begin{itemize}
-%\item jet differential rates for CKKW for 30 GeV and 80 GeV
-%\item importance of 0-parton sample at low MET with 80 GeV cut
-%\item 3-parton emission can be ingored (we need new plots with high statistics)
-%\end{itemize}
 
 
 
