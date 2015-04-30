@@ -459,17 +459,25 @@ Advantage of doing this is again in the fact that no event selection and detecto
 
 \subsection{POWHEG settings}
 
-The POWHEG implementation allows to generate a single sample that provides sufficient statistics in all mono-jet analysis signal regions by optimizing the following two parameters:
+This section describes specif settings for the Dark Matter models needed to run the POWHEG generation.
 \begin{itemize}
-\item POWHEG generates weighted events and the \verb+bornsuppfact+ parameter is used to set the event suppression factor according to
+\item The POWHEG implementation allows to generate a single sample that provides sufficient statistics in all mono-jet analysis signal regions. %by optimizing the following two parameters:
+%\begin{itemize}
+POWHEG generates weighted events and the \verb+bornsuppfact+ parameter is used to set the event suppression factor according to
 \begin{equation}
 F(k_{\rm{T}})=\frac{k_{\rm{T}}^2}{k_{\rm{T}}^2+\texttt{bornsuppfact}^2} \;.
 \end{equation}
 In this way, the events at low $\MET$ are suppressed and receive higher event weights which ensures higher statistics at high $\MET$. We recommend to set \verb+bornsuppfact+ to 1000.
 \item The \verb+bornktmin+ parameter allows to suppress the low $\MET$ region even further by starting the generation at a certain value of $k_{\rm{T}}$. It is recommended to set this parameter  to half the lower analysis $\MET$ cut, therefore the proposed value for \verb+bornktmin+ is 150.
+%\end{itemize}
+
+\item Set \verb+runningwidth+ to 0.
+\item Set \verb+mass_low+ and \verb+mass_high+ to -1.
+\item The minimal values for \verb+ncall1+, \verb+itmx1+, \verb+ncall2+, \verb+itmx2+ are 250000, 5, 1000000, 5 for the DMV model, respectively. In order to increase speed, set \verb+foldsci+ and \verb+foldy+ to 2 and keep \verb+foldphi+ at 1. 
+\item The minimal values for \verb+ncall1+, \verb+itmx1+, \verb+ncall2+, \verb+itmx2+ are 100000, 5, 100000, 5 for the DMS\_tloop model, respectively.
+\item Allow negative weights for the DMV model by setting \verb+withnegweights+ to 1.
+\item Since the DMS\_tloop model is a leading order process, set \verb+LOevents+ and \verb+bornonly+ are set to 1 internally.
 \end{itemize}
-
-
 
 
 \subsection{Colored scalar mediator, t-channel exchange}
