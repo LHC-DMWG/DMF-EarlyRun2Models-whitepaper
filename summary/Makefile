@@ -1,5 +1,5 @@
 
-pdf: *.tex contributors.tex tex/*.tex 
+pdf: *.tex contributors.tex  
 	pdflatex summary.tex
 	bibtex summary
 	pdflatex summary.tex
