@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {UKenglish}
+\contentsline {section}{\numberline {1}\texttt {atlasphysics.sty}\xspace style file}{2}{section.1}
+\contentsline {section}{\numberline {2}\texttt {atlasparticle.sty}\xspace }{4}{section.2}
+\contentsline {section}{\numberline {3}\texttt {atlasjournal.sty}\xspace }{5}{section.3}
+\contentsline {section}{\numberline {4}\texttt {atlasmisc.sty}\xspace }{6}{section.4}
+\contentsline {section}{\numberline {5}\texttt {atlasxref.sty}\xspace }{7}{section.5}
+\contentsline {section}{\numberline {6}\texttt {atlasbsm.sty}\xspace }{8}{section.6}
+\contentsline {section}{\numberline {7}\texttt {atlasheavyion.sty}\xspace }{9}{section.7}
+\contentsline {section}{\numberline {8}\texttt {atlasmath.sty}\xspace }{10}{section.8}
+\contentsline {section}{\numberline {9}\texttt {atlasother.sty}\xspace }{10}{section.9}
+\contentsline {section}{\numberline {10}\texttt {atlasprocess.sty}\xspace }{11}{section.10}
+\contentsline {section}{\numberline {11}\texttt {atlasunit.sty}\xspace }{11}{section.11}
+\contentsline {section}{\numberline {12}Old macros}{12}{section.12}

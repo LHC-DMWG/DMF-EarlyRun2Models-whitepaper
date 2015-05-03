@@ -1,0 +1,156 @@
+%-------------------------------------------------------------------------------
+% This file provides a skeleton ATLAS document
+%-------------------------------------------------------------------------------
+% Specify where ATLAS LaTeX style files can be found
+\newcommand*{\ATLASLATEXPATH}{latex/}
+% Use this variant if the files are in a central location, e.g. $HOME/texmf
+% \newcommand*{\ATLASLATEXPATH}{}
+%-------------------------------------------------------------------------------
+\documentclass[UKenglish,texlive=2013]{\ATLASLATEXPATH atlasdoc}
+% The language of the document must be set: usually UKenglish or USenglish
+% british and american also work!
+% Selected options:
+%  texlive=YYYY          Specify TeX Live version (2013 is default)
+%  atlasstyle=true|false Use ATLAS style for document (default)
+%  coverpage             Create ATLAS draft cover page for collaboration circulation
+%                        See atlas-draft-cover.tex for a list of variables that should be defined.
+%  cernpreprint          Create front page for a CERN preprint
+%                        See atlas-preprint-cover.tex for a list of variables that should be defined.
+%  PAPER                 The document is an ATLAS paper (draft)
+%  CONF                  The document is a CONF note (only useful together with coverpage)
+%  PUB                   The document is a PUB note (only useful together with coverpage)
+%  txfonts=true|false    Use txfonts rather than the default newtx - needed for arXiv submission
+%  paper=a4|letter       Set paper size to A4 (default) or letter
+%  maketitle=true|false  Run or do not run \maketitle from the class
+
+%-------------------------------------------------------------------------------
+% Extra packages:
+\usepackage{\ATLASLATEXPATH atlaspackage}
+% Selected options:
+%  biblatex=true|false   Use biblatex (default) or bibtex for the bibliography
+%  backend=biber         Use the biber backend rather than bibtex
+%  minimal               Minimal set of packages
+%  default               Standard set of packages
+%  full                  Full set of packages
+% Style file with biblatex options for ATLAS documents
+\usepackage{lineno}
+\linenumbers
+\usepackage{\ATLASLATEXPATH atlasbiblatex}
+
+% Package for creating list of authors and contributors to the analysis
+\usepackage{\ATLASLATEXPATH atlascontribute}
+
+% Useful macros
+\usepackage{\ATLASLATEXPATH atlasphysics}
+% See doc/atlas-physics.pdf for a list of the defined symbols
+% Default options are 
+%   true:  journal, misc, particle, unit, xref
+%   false: BSM, hion, math, process, other, texmf
+% See the package for details on the options
+
+% Files with references for use with biblatex
+% Note that biber gives an error if it finds empty bib files
+\addbibresource{TopRelatedModel.bib}
+\addbibresource{bibtex/bib/atlas-paper.bib}
+
+% Paths for figures - do not forget the / at the end of the directory name
+\graphicspath{{logos/}{figures/}}
+
+% Add you own definitions here (file TopRelatedModel-defs.sty)
+\usepackage{TopRelatedModel-defs}
+\def\ares{\ensuremath{a_{\mathrm{res}}}}
+\def\anonres{\ensuremath{a_{\mathrm{non\mbox{-}res}}}}
+\def\mfmet{\ensuremath{m(f_{\mathrm{met}})}}
+\def\mvmet{\ensuremath{m(v_{\mathrm{met}})}}
+\def\vmet{\ensuremath{v_{\mathrm{met}}}}
+\def\fmet{\ensuremath{f_{\mathrm{met}}}}
+
+%-------------------------------------------------------------------------------
+% Generic document information
+%-------------------------------------------------------------------------------
+
+% Author and title for the PDF file
+\hypersetup{pdftitle={Dark Matter Forum Draft (Top related models)},pdfauthor={Romain Madar}}
+% Title, abstract and document 
+\input{TopRelatedModel-metadata}
+
+%-------------------------------------------------------------------------------
+% Content
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+% List of contributors - print here or after the Bibliography
+%\AtlasPrintContribute{0.3}
+\clearpage
+
+%-------------------------------------------------------------------------------
+\section{Motivations and models description}
+\label{sec:MotivModelDescription}
+%-------------------------------------------------------------------------------
+
+\input{TopRelatedModel-ModelStructure.tex}
+
+\input{TopRelatedModel-Simplifications.tex} 
+ 
+
+\section{Collider signatures}
+\label{sec:ColliderSignature}
+ 
+ As explained in Section~\ref{sec:MotivModelDescription}, there are two types of model that can be constrained by 
+ the following signatures at the Large Hadron Collider (LHC):
+ \begin{enumerate}
+  \item $t+\met$ final state (resonant and non-resonant production)~\cite{ATLASmonotop,CMSmonotop,CDFmonotop}
+  \item $tt+X$ final state (non-resonant production)~\cite{ATLASsamesigntop}
+ \end{enumerate}
+ These two productions are highly suppressed in the SM and makes these channels good candidates to search for new physics. In the current section, details about the global search strategy are given in each cases and the interplay between the two final state is described. Finally, some considerations on practical aspects are discussed, such as parameters scan or PDF and showering modeling for the signal generation.
+
+ \subsection{Search strategy}
+ 
+ \input{TopRelatedModel-SearchStrategy.tex}
+  
+ \subsection{Relevant model parameters}
+
+ \input{TopRelatedModel-ModelParameters.tex}
+ 
+ \subsection{Practical implementation}
+
+ \input{TopRelatedModel-PracticalImplementation.tex}
+
+%-------------------------------------------------------------------------------
+% If you use biblatex and either biber or bibtex to process the bibliography 
+% just say \printbibliography here
+\clearpage
+\addcontentsline{toc}{section}{References} % to add the appendix in the table of contents and in the bookmarks
+\printbibliography
+% If you want to use the traditional BibTeX you need to use the syntax below.
+%\bibliographystyle{bibtex/bst/atlasBibStyleWoTitle}
+%\bibliography{TopRelatedModel,bibtex/bib/atlas-paper}
+
+
+%-------------------------------------------------------------------------------
+\clearpage
+\appendix
+\part*{Appendix}
+\addcontentsline{toc}{part}{Appendix}
+%-------------------------------------------------------------------------------
+
+\section{Cross-sections}
+
+\input{TopRelatedModel-Appendix-CrossSections.tex}
+
+\clearpage
+\section{Mediator width effects for the non-resonant model}
+
+\input{TopRelatedModel-Appendix-WidthEffects.tex}
+
+\clearpage
+\section{Signal and background distributions ($tt+X$ final state)}
+
+\input{TopRelatedModel-Appendix-Distributions.tex}
+
+
+\end{document}

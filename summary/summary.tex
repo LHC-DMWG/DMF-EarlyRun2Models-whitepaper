@@ -1,5 +1,6 @@
 \documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
 
+\usepackage{rotating}
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
@@ -167,24 +168,31 @@ for the vector/axial vector models and for the scalar/pseudoscalar models
 respectively. 
 
 %%Combined tables
-\begin{table}[!ht]
+\begin{sidewaystable}[!h]
 \centering
-\begin{tabular}{| l | r |}
+\begin{tabular}{| l |r r r r r r r r r r r r|}
 \hline
-\multicolumn{1}{|c|}{$m_{DM}$ (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
+\multicolumn{1}{|c|}{$m_{DM}$ (${\rm GeV}$)} & \multicolumn{12}{c|}{$m_{med}$ (${\rm GeV}$)} \\
 \hline
- $1$    	   & $10$, $20$, $50$, $100$, $150$, $200$, $300$, $500$, $1000$, $1500$, $3000$, $5000$  \\
- $10$   	   & $10$, $20$, $50$, $100$, $150$, $200$, $300$, $500$, $1000$, $1500$, $3000$, $5000$  \\
- $50$   	   &             $50$, $100$, $150$, $200$, $300$, $500$, $1000$, $1500$, $3000$, $5000$  \\
- $150$  	   &                          $150$, $200$, $300$, $500$, $1000$, $1500$, $3000$, $5000$  \\
- $200$  	   &                                 $200$, $300$, $500$, $1000$, $1500$, $3000$, $5000$  \\
- $500$  	   &                                               $500$, $1000$, $1500$, $3000$, $5000$  \\
- $1500$ 	   &                                                              $1500$, $3000$, $5000$  \\
+ %this row is for a cross-check of all the points at 1 GeV, where the LHC is more sensitive than DD/ID
+ 1    & 10 & 20 & 50 & 100 & 150 & 200 & 300 & 500 & 1000 & \textbf{1500} & \textbf{3000} & 5000  \\
+ %the following rows have only the diagonal + one point above/below
+ 10   & 10 & 20 & 50 &     &     &     &     &     &      &               & \textbf{3000} & 5000  \\
+ 50   & 10 &    & 50 & 100 & 150 &     &     &     &      &               & \textbf{3000} & 5000  \\
+ 150  & 10 &    &    &     &     & 200 & 300 & 500 &      &               & \textbf{3000} & 5000  \\
+ 200  & 10 &    &    &     &     & 200 & 300 & 500  &     &               & \textbf{3000} & 5000  \\
+ 500  & 10 &    &    &     &     &     &     & 500 & 1000 & \textit{1500} & \textbf{3000} & 5000  \\
+ \textit{1000} & \textit{10} &    &    &     &     &     &     & & \textit{1000} & \textbf{1500} & \textbf{3000} & \textit{5000}  \\
+ \textit{1500} & \textit{10} &    &    &     &     &     &     &              & & \textbf{1500} & \textbf{3000} & \textit{5000}  \\
 \hline
 \end{tabular}
-\caption{Simplified model benchmarks for all s-channel simplified models (spin-1 and spin-0 mediators decaying to Dirac DM fermions taking the minimum width presciption for $g_v = g_{DM} = 1$).}
+\caption{Simplified model benchmarks for all s-channel simplified models (spin-1 and spin-0 mediators 
+decaying to Dirac DM fermions taking the minimum width for $g_v = g_{DM} = 1$).
+Points in \textbf{bold} points are only generated for the V and A cases, while points in 
+\textit{italics} are generated for the monojet analysis (V,A,S,P cases) 
+but not for the search including heavy quarks. }
 \label{tab:ttdm_benchmarks}
-\end{table}
+\end{sidewaystable}
 
 %%%
 \begin{table}[!ht]

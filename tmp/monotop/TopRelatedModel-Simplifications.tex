@@ -1,0 +1,81 @@
+\subsection{Simplifications}
+ 
+The lagrangians from equations~\eqref{eq:lagrangianResonant} and~\eqref{eq:lagrangianNonResonantVector} contains too many degrees of freedom, 
+which makes the LHC phenomenology difficult to predict. In addition, only a certain region of the parameter space can actually be probed with a monotop final state.
+For these reasons, further simplifications are performed in particular in term of flavour and chiral structure of the model. 
+These simplifications leads to some limitations in the way ATLAS and CMS can constrain the model parameter space and these limitations are also qualitatively discussed below.
+
+\subsubsection{Flavour structure}
+
+The flavour structure is simplified in order to have a reasonable signal production rate in proton-proton collisions.
+In case of a scalar mediator, it has to be sufficiently produced so it has to couple with proton content, namely lightest quark which 
+are allowed in equation~\eqref{eq:lagrangianResonant}. The monotop final state is sensitive to the scenario where $\phi$ strongly couples to $t\chi$.
+\com{Correct and/or complete with the monotop paper}. In term of parameter space, it means that the monotop final state is not sensitive
+to some parameters like coupling between the mediator and heavy quarks or the scenario in which $\BR{\phi}{t\chi} \ll 100 \%$. For the latest, 
+there is a way to recover the sensitivity looking at $u_i d_j \to \phi \to u_i d_j$. Since $\phi$ must be produced, it has to coupled to quarks 
+and must decay in the same final state. Experimentally, this would correspond to a di-jet resonance search.
+
+The same kind of simplification is performed for the non-resonant production. The equation~\eqref{eq:lagrangianNonResonantVector} is simplified in the parameter
+space where a monotop final state can be sufficiently produced to be detected at the LHC. The mediator $V$ must be produced from light quark initial state, 
+in association with a top quark: this signature can mainly probe a high coupling $\left(g^{v/a}_{Vu}\right)^{13}_{Vu} \equiv g^{v/a}_{Vtu}$. Therefore,
+the sensitivity to other flavour couplings is significantly lower since $V$ is less importantly produced. In addition, the mediator must decay into invisible particles
+to lead to the searched monotop final state. As a consequence, the sensitivity for scenario where $\BR{V}{\chi\chi}\ll 100\%$ can be quite low. 
+To cope with this second limitation, a same-sign top quark final state $gu \to tV(\to t\bar{u})$ is proposed to cover the cases where $V$ would decay
+into visible particles. This case is more likely as the $tV$ production rate increases, and becomes then a key point to constraint this model in a consistent way.
+
+\com{Questions for theorists:
+\begin{itemize}
+ \item How well these flavour assumptions are allowed by the other HEP data (proton decay life time, flavour physics, etc ...) ?
+ \item MFV criteria ?
+\end{itemize}
+}
+
+\subsubsection{Chiral structure}
+\label{sec:chiralstructure}
+
+The main point here is to consider only right handed quark components in order to not simplify the phenomenology. In fact, the representation of the left-handed 
+components under the $\SUtwo$ symmetry imposes a coupling to $down$-type quarks, since the effective theory is invariant under $\SUtwoUone$ gauge symmetry. Having a coupling between
+the mediator and $down$-type quarks fairly complicates the collider phenomenology in term of decay mode. Typically, including 
+the left-handed components of quarks in the lagrangian~\eqref{eq:lagrangianNonResonantVector} describing the $Vtu$ vertex would lead to 
+\begin{equation}
+ \Lagr_{Vtu} \; = \;  g^{R}_{Vtu} \: \bar{t}_{R}\gam^{\mu}u_R \: V_{\mu} \; + \; g^{L}_{Vtu} \left(   \bar{t}_{L}\gam^{\mu}u_L \: + \:  \bar{b}_{L}\gam^{\mu}d_L \right) \: V_{\mu}
+\end{equation}
+where $g^{R/L} \equiv 1/2 \, (g^{v} \pm g^{a})$ couples only to right-handed/left-handed components. The second term ensure the invariance under $\SUtwo$ rotations, and lead to an additional decay mode $V \to b\bar{d} + \bar{b}d$ (on top of $V \to t\bar{u} + \bar{t}u$ and $V \to \chi\chi$). 
+ 
+\subsection{Notations}
+
+In section~\ref{sec:ColliderSignature}, the collider phenomenology and benchmark definition is discussed with notations which are 
+a bit different\footnote{This difference is due to two things: the historical developpement on the monotop analysis and having a 
+  common and simple set of notations for equations~\eqref{eq:lagrangianResonant},~\eqref{eq:lagrangianNonResonantScalar} and~\eqref{eq:lagrangianNonResonantVector}.} 
+from section~\ref{sec:MotivModelDescription}. This section describes the notations used in section~\ref{sec:ColliderSignature} as well as 
+the MadGraph model~\cite{MGmodel} convention, in term of the ones introduced in section~\ref{sec:MotivModelDescription}.
+
+The Madgraph model corresponds to the Lagrangian from~\cite{AndreaFuksMaltoni}. Each coupling constant of this dynamics can be set via the paramater card and 
+the blocks which are relevant for the two models used in section~\ref{sec:ColliderSignature} are described below.
+\begin{enumerate}
+
+\item Resonant scalar model described by the Lagrangian~\eqref{eq:lagrangianResonant}
+  \begin{itemize}
+  \item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavour space) fixing the coupling of the scalar $\phi^{\pm}$ ($S$ stands for scalar) and $down$-type 
+    quarks ($Q$ stands for quarks), written in this note $g_{\phi u}$ or $a^{q}_{\mathrm{res}}$.
+  \item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavour space) fixing the coupling of the fermion $\chi$ ($12$ stands for spin-$1/2$ fermion) 
+    and $up$-type quarks, written in this note $g_{u \chi}$ or $a^{1/2}_{\mathrm{res}}$.
+  \item particle name: the scalar $\phi^{\pm}$ is labelled $S$ and the fermion $\chi$ is $f_{met}$
+  \end{itemize}  
+  
+\item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
+\begin{itemize}
+\item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavour space) fixing the coupling of the vector $V$ 
+  ($1$ stands for vector) and $up$-type quarks, written in this note $g_{Vu}$ or $a_{\mathrm{non-res}}$.
+\item particle name: the vector $V$ is labelled $v_{met}$ and the fermion $\chi$ doesn't exist
+\item the dark matter candidate $\chi$ is not implemented (this model assumes $\BR{V}{\chi\chi}=100\%$)
+\end{itemize}
+
+\end{enumerate}
+
+$A$ means vectorial coupling ($g^{v}$) and $B$ means axial coupling ($g^{a}$) and these two matrices 
+are taken to be equal according to the chiral simplification (see section~\ref{sec:chiralstructure}).
+The convention used in~\cite{ATLASmonotop} and in section~\ref{sec:monotop} is to define a single number $a_{\mathrm{res}}$ ($a_{\mathrm{non-res}}$) 
+for the resonant (non resonant) model, such as $(\ares^q)_{\mathrm{12}}=(\ares^q)_{\mathrm{21}}=(\ares^{1/2})_{\mathrm{3}}\equiv \ares$ 
+(in order to have $d-s-S$ couplings, and $t-S-f_{met}$ couplings) 
+and $(\anonres)_{\mathrm{13}}=(\anonres)_{\mathrm{31}}\equiv \anonres$ (in order to have $v_{met}-t-u$ couplings). 
