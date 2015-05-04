@@ -1,10 +1,12 @@
-\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
+%\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
+\documentclass[debug,notitlepage]{dmfm}
 
 \usepackage{rotating}
+\usepackage{xspace}
 \usepackage{graphicx}
-\usepackage[svgnames]{xcolor}
-\usepackage{hyperref}
-\usepackage{lineno}
+%%\usepackage[svgnames]{xcolor}
+%%\usepackage{hyperref}
+%%\usepackage{lineno}
 \usepackage{epstopdf}
 
 \usepackage{slashed}
@@ -33,6 +35,7 @@
 }{}
 \fvset{fontsize=\normalsize} % default font size for fancy-verbatim environments
 
+
 % Prints an asterisk that takes up no horizontal space.
 % Useful in tabular environments.
 \newcommand{\hangstar}{\makebox[0pt][l]{*}}
@@ -47,6 +50,12 @@
   \end{fullwidth}
 }
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
+
+\usepackage{xhfill}% http://ctan.org/pkg/xhfill
+\newcommand{\ditto}[1][.4pt]{\xrfill{#1}~''~\xrfill{#1}}
+\newcommand{\mdm}{\ensuremath{m_{DM}}\xspace}
+\newcommand{\mmed}{\ensuremath{m_{med}}\xspace}
+
 
 \makeatletter
 
@@ -67,7 +76,7 @@
 
 \begin{document}
 
-\morefloats
+%%\morefloats
 \setcounter{secnumdepth}{3} % turn on section numbering, for now (3=subsubsection)
 
 % \input{frontmatter.tex}
@@ -91,30 +100,36 @@ will be provided in the upcoming document concluding the works of the Forum.
 For all MET+X analyses, simplified models should replace EFTs as the
 highest-priority dark matter interpretation. The consensus of the
 Forum is that all of these analyses should consider a set of simplified models involving 
-a single, mediating particle with mass $M_{med}$. 
+a single, mediating particle with mass \mmed. 
 The two underlying choices for the model recommendations by the ATLAS/CMS DM Forum are:
-\begin{itemize}
- \item the dark matter particle is a Dirac fermion of mass $M_{DM}$;
+\begin{enumerate}
+ \item the dark matter particle is a Dirac fermion of mass \mdm;
  \item only interactions consistent with Minimal Flavor Violation are allowed.
-\end{itemize}
+\end{enumerate}
 
 The highest priority models discussed within the Forum are:
 \begin{itemize}
-\item spin-1 $s$-channel mediators with mass $m_{med}$ and vector coupling to both SM quarks  ($g_q$) and a Dirac fermion WIMP $g_{DM}$ of mass $m_{DM}$ or an axial vector coupling to both SM and DM;
-\item spin-0 $s$-channel mediators with mass $m_{med}$ and scalar coupling to both SM quarks $g_q$ and a 
-Dirac fermion WIMP $g_{DM}$ of mass $m_{DM}$ or pseudoscalar coupling to both SM and DM. 
-\item a colored spin-0 $t$-channel mediator with mass $m_{med}$, with 
-coupling $g$ at the vertex between quark, WIMP (of mass $m_{DM}$) and mediator. 
+\item[a.] spin-1 $s$-channel mediators with vector or 
+  axial-vector coupling to SM quarks $g_q$
+  and vector or axial-vector coupling to a Dirac fermion WIMP $g_{DM}$;
+\item[b.] spin-0 $s$-channel mediators with scalar or 
+  pseudo-scalar coupling to SM quarks $g_q$ and scalar or pseudo-scalar
+  coupling to a Dirac fermion WIMP $g_{DM}$;
+\item[c.] and colored spin-0 $t$-channel mediators with 
+  coupling $g$ at the vertex between quark, WIMP 
+  and mediator. 
 \end{itemize}
-In all three cases, the coupling of the mediator to quarks is identical for all three
-generations. In the case of the scalar and pseudo-scalar 
-models, we assume Yukawa couplings ($y_q$ = $m_q/v$) between the quarks and the
+
+In all three cases, the coupling of the mediator to quarks is
+identical for all three generations. In the case of the scalar and
+pseudo-scalar models, we assume Yukawa couplings ($y_q$ = $m_q/v$)
+between the quarks and the
 mediators, included as a separate factor with respect to $g_q$:
 the specific case of scalar mediator decaying into two top quarks 
 is discussed in Section~\ref{sub:SPttbar}. 
 There are thus four parameters in the first two
-models ($m_{DM}$, $m_{med}$, $g_q$, and $g_{DM}$) and three parameters
-in the last model ($m_{DM}$, $m_{med}$, $g$). We assume that no
+models (\mdm, $m_{med}$, $g_q$, and $g_{DM}$) and three parameters
+in the last model (\mdm, $m_{med}$, $g$). We assume that no
 additional visible or invisible decays contribute to the width of the
 mediator. We provide formulae for calculation of the ``minimal
 width'' for any given choice of the four parameters. Run 2 MET+X
@@ -124,11 +139,13 @@ width up to $\Gamma \approx m_{med}$.
 
 All types of $s$-channel mediators are important, and ideally an analysis 
 would have to include all cases. On the other hand, the vector and axial-vector models 
-(including those with mixed vector-axial couplings) produce nearly indistinguishable kinematic distributions 
+(including those with mixed couplings) produce nearly indistinguishable kinematic distributions 
 for the MET+X analyses, and the scalar and pseudo-scalar models are also very similar. 
 If one cannot generate all models, one could generate the full grid of mass points for only one of each 
 type (for example, the pure axial vector and pure pseudo-scalar models). 
-\textbf{[Open point: in this situation, do we want to mention which are preferred? SM: For vector and axial vector, we can probably do with just one, but for scalar and pseudoscalar, I would still say we want both, because both are difficult for DD/ID and add significant complementarity. Anyhow, lets see what people say. ]}
+
+\textbf{[Open point: in this situation, do we want to mention which are
+    preferred?]}
 %TODO: CD: can one have S/PS mixed couplings?
 % Pure axial-vector (plus vector-axial and axial-vector combinations) 
 % and pseudo-scalar versions of the $s$-channel models are
@@ -148,33 +165,29 @@ type (for example, the pure axial vector and pure pseudo-scalar models).
 Studies of the $s$-channel models include comparisons of the kinematic
 distributions across a scan of each of the four parameters. From these
 studies, we recommend generation of a set of a total of 144
+$(\simeq x\times y\times z)$ 
 combinations of parameter choices in order to capture the full variety
-of shapes possible in the models. Namely the bulk of the grid scan for
-the $s$-channel models will consist of up to 25 separate
-samples per model, covering from 10 GeV to 3 TeV (10 GeV to 1.5 TeV)
-in mediator mass for the vector and axial vector (scalar and pseudoscalar) models,
-and from 5 GeV to 1.5 TeV in WIMP mass
-\textbf{[Open point: We should add to the scan 
-the very heavy mediator mass points (5 TeV) scanned in DM mass, to use as EFT limits.  
-3 TeV may be borderline according to ATLAS 14 TeV studies 
-in~\url{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2014-007/}
-For S/P, no equivalent plot, but sensitivity is low.]}
-The grid points for the scan in $m_{med}$, $m_{DM}$ are shown in
+of shapes possible in the models.
+The grid points for the scan in $m_{med}$, \mdm are shown in
 Tables~\ref{tab:mMedmDM_VA} and~\ref{tab:mMedmDM_SP} 
-for the vector/axial vector models and for the scalar/pseudoscalar models
+for the vector/axial vector models and for the scalar/pseudoscalar models,
 respectively. 
 
+
+
+
 %%Combined tables
-\begin{sidewaystable}[!h]
+%%\begin{sidewaystable}[!h]
+\begin{table}[!h]
 \centering
 \begin{tabular}{| l |r r r r r r r r r r r r|}
 \hline
-\multicolumn{1}{|c|}{$m_{DM}$ (${\rm GeV}$)} & \multicolumn{12}{c|}{$m_{med}$ (${\rm GeV}$)} \\
+\multicolumn{1}{|c|}{\mdm (${\rm GeV}$)} & \multicolumn{12}{c|}{$m_{med}$ (${\rm GeV}$)} \\
 \hline
  %this row is for a cross-check of all the points at 1 GeV, where the LHC is more sensitive than DD/ID
  1    & 10 & 20 & 50 & 100 & 150 & 200 & 300 & 500 & 1000 & \textbf{1500} & \textbf{3000} & 5000  \\
  %the following rows have only the diagonal + one point above/below
- 10   & 10 & 20 & 50 &     &     &     &     &     &      &               & \textbf{3000} & 5000  \\
+ 10   & 10 & 20 & 50 & \ditto    & \ditto    &     &     &     &      &               & \textbf{3000} & 5000  \\
  50   & 10 &    & 50 & 100 & 150 &     &     &     &      &               & \textbf{3000} & 5000  \\
  150  & 10 &    &    &     &     & 200 & 300 & 500 &      &               & \textbf{3000} & 5000  \\
  200  & 10 &    &    &     &     & 200 & 300 & 500  &     &               & \textbf{3000} & 5000  \\
@@ -189,14 +202,15 @@ Points in \textbf{bold} points are only generated for the V and A cases, while p
 \textit{italics} are generated for the monojet analysis (V,A,S,P cases) 
 but not for the search including heavy quarks. }
 \label{tab:ttdm_benchmarks}
-\end{sidewaystable}
+%%\end{sidewaystable}
+\end{table}
 
 %%%
 \begin{table}[!ht]
 \centering
 \begin{tabular}{| l | l |}
 \hline
-\multicolumn{1}{|c|}{$m_{DM}$ (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
+\multicolumn{1}{|c|}{\mdm (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
 \hline
  $5$    & $10$, $30$, $100$, $300$, $1000$, $3000$\\
  $15$   & $10$, $30$, $100$ \\
@@ -215,7 +229,7 @@ decaying to Dirac DM fermions.}
 \centering
 \begin{tabular}{| l | l |}
 \hline
-\multicolumn{1}{|c|}{$m_{DM}$ (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
+\multicolumn{1}{|c|}{\mdm (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
 \hline
  $5$    & $10$, $30$, $100$, $300$, $1000$\\
  $15$   & $10$, $30$, $100$ \\
@@ -229,6 +243,22 @@ decaying to Dirac DM fermions.}
 decaying to Dirac DM fermions.}
 \label{tab:mMedmDM_SP}
 \end{table}
+
+
+Namely the bulk of the grid scan for
+the $s$-channel models will consist of up to 25 separate
+samples per model, covering from 10 GeV to 3 TeV (10 GeV to 1.5 TeV)
+in mediator mass for the vector and axial vector (scalar and pseudoscalar) models,
+and from 5 GeV to 1.5 TeV in WIMP mass
+
+\textbf{[Open point: We should add to the scan 
+the very heavy mediator mass points (5 TeV) scanned in DM mass, to use as EFT limits.  
+3 TeV may be borderline according to ATLAS 14 TeV studies 
+in~\url{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2014-007/}
+For S/P, no equivalent plot, but sensitivity is low.]}
+
+
+
 
 \textbf{[The grids in Tables \ref{tab:mMedmDM_VA}, \ref{tab:mMedmDM_SP} and 
 \ref{tab:ttdm_benchmarks} may be harmonized.]}
@@ -276,7 +306,7 @@ $s$-channel models.
 This model is parallel to, and partially motivated by, the
 squark of the MSSM. Since the $t$-channel model can produce signatures 
 similar to those arising from squark production in the MSSM, investigations 
-are needed of what ranges of $g$, $M_{med}$, and $M_{DM}$ are already excluded.
+are needed of what ranges of $g$, \mmed, and \mdm are already excluded.
 %[AB: comment on susy overlap] 
 The mediator can radiate a SM object, such as a jet or gauge boson, 
 thus providing three separate MET+X diagrams which must be considered together in
@@ -284,7 +314,7 @@ calculations. This model can also give a signal in the di-jet + MET
 channel when, for example, a WIMP is exchanged in the $t$-channel to
 produce a pair of mediators, each of which decays to a jet and a DM particle.
 
-\newthought{Technical implementation of the $s-$channel models} 
+\subsubsection{Technical implementation of the $s-$channel models} 
 
 There are several matrix element implementations of the $s$-channel
 vector and scalar mediated DM production.
@@ -322,7 +352,7 @@ twiki page.
 \textbf{[Open point: Add here implementation details for CMS..]}
 \fi
 
-\newthought{Technical implementation of the $t-$channel models} 
+\subsubsection{Technical implementation of the $t-$channel models} 
 
 The $t$-channel model is implemented in MadGraph. 
 The relevant parameter card can be found on the Forum
@@ -345,7 +375,7 @@ SVN repository~\cite{ForumSVN_TChannel}.
 
 \subsection{Specific models for analyses of MET+b quark(s)}
 
-\newthought{Single $b$+MET}
+\subsubsection{Single $b$+MET}
 
 We consider a simplified model for single-$b$-jet signatures, 
 with a colored scalar mediator coupling to Dark Matter and a $b-$quark. 
@@ -357,7 +387,7 @@ space probed by the LHC with early searches.
 This model is available in MADGRAPH, and the relevant card files are 
 available in the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
 
-\newthought{$b \bar{b}$+MET}
+\subsubsection{$b \bar{b}$+MET}
 
 \textbf{[Open point: Do we plan for a specific implementation of the scalar/pseudoscalar
 with $b-$jets in the final state instead of ttbar?]}
@@ -365,7 +395,7 @@ with $b-$jets in the final state instead of ttbar?]}
 \subsection{Specific models for analyses of MET+top(s)}
 \label{sub:SPttbar}
 
-\newthought{$t \bar{t}$+MET}
+\subsubsection{$t \bar{t}$+MET}
 
 As mentioned in Sec.~\ref{sec:RecommendedModelsAllAnalyses}, we assume 
 mass dependent Yukawa couplings to quarks for spin-$0$ scalar
@@ -374,8 +404,9 @@ producing a tree-level signature of a $t \bar{t}$ pair
 in association with missing transverse momentum from the two DM particles.
 The parameter scan for this model is based on three different kinematic
 regimes: the case of a very heavy mediator with $m_{med} > 2 m_{top}$, 
-the case of an on-shell mediator below the $t\bar{t}$ threshold ($m_{med} > 2 m_{DM}$, 
-$m_{med} < 2 m_{top}$) and the case of an off-shell mediator below
+the case of an on-shell mediator below the $t\bar{t}$ threshold
+($\mmed >  \mdm, 
+ \mmed < 2 m_{top}$) and the case of an off-shell mediator below
 the $t\bar{t}$ threshold ($m_{med} < 2 m_{DM}$, $m_{med} < 2 m_{top}$). 
 Large kinematic differences are found between on-shell and off-shell mediator
 regimes, while the total width changes slope depending on whether one
@@ -398,7 +429,7 @@ that substitutes the scan in couplings for early searches.
 \centering
 \begin{tabular}{| l | r |}
 \hline
-\multicolumn{1}{|c|}{$m_{DM}$ (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
+\multicolumn{1}{|c|}{\mdm (${\rm GeV}$)} & \multicolumn{1}{c|}{$m_{med}$ (${\rm GeV}$)} \\
 \hline
  $1$    & $10$, $20$, $50$, $100$, $150$, $200$, $300$, $500$, $1000$, $1500$  \\
  $10$   & $10$, $20$, $50$, $100$, $150$, $200$, $300$, $500$, $1000$, $1500$  \\
@@ -430,7 +461,7 @@ will follow the MC15 pilot request for the monophoton D5 operator~\cite{ATLAS_Po
 \textbf{[Open point: Add here implementation details for CMS..]}
 \fi
 
-\newthought{single top+MET}
+\subsubsection{single top+MET}
 
 Two simplified models, described in Refs.~\cite{Andrea:2011ws,Boucheneb:2014wza}, are recommended 
 for the signature of a single top quark+MET~\footnote{The non-resonant production 
@@ -506,7 +537,7 @@ following the relevant recommendations in Section~\ref{sec:eft}.
 %    boson and two DM particles).
 % \end{description}
 
-\newthought{MET+photon,Z,W} 
+\subsubsection{MET+photon,Z,W} 
 
 These searches should consider an
 effective $VV\chi\chi$ vertex, with two electroweak bosons and two WIMPs,
@@ -546,7 +577,7 @@ Meanwhile, the $t$-channel model of the previous subsection may be
 used to obtain different couplings and interference, but those studies
 are left for a longer timescale.
 
-\newthought{MET+Higgs} 
+\subsubsection{MET+Higgs} 
 
 \textbf{[Open point: we will add EFT models with direct boson-DM production 
 for mono-Higgs. The parameter scan is being discussed, and 
