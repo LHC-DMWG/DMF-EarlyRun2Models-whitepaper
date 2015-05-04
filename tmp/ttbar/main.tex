@@ -1,0 +1,69 @@
+\documentclass{report}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}% bold math
+\usepackage{slashed}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+
+\def\invfb   {\ensuremath{\mbox{\,fb}^{-1}}\xspace}
+\newcommand{\mev}{\ensuremath{\mathrm{\,Me\kern -0.1em V}}\xspace}
+\newcommand{\mevc}{\ensuremath{{\mathrm{\,Me\kern -0.1em V\!/}c}}\xspace}
+\newcommand{\mevcc}{\ensuremath{{\mathrm{\,Me\kern -0.1em V\!/}c^2}}\xspace}
+\newcommand{\gev}{\ensuremath{\mathrm{\,Ge\kern -0.1em V}}\xspace}
+\newcommand{\gevc}{\ensuremath{{\mathrm{\,Ge\kern -0.1em V\!/}c}}\xspace}
+\newcommand{\gevcnospace}{\ensuremath{{\mathrm{\,Ge\kern -0.1em V\!/}c}}}
+\newcommand{\gevcc}{\ensuremath{{\mathrm{\,Ge\kern -0.1em V\!/}c^2}}\xspace}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+
+\newcommand{\gsim}{ \mathop{}_{\textstyle \sim}^{\textstyle >} }
+\newcommand{\lsim}{ \mathop{}_{\textstyle \sim}^{\textstyle <} }
+\newcommand{\ev}{{\rm eV}}
+\newcommand{\kms}{{\rm km/s}}
+\newcommand{\kev}{{\rm keV}}
+\newcommand{\Mev}{{\rm MeV}}
+
+\def\missET {\slashed{E}_T}
+\def \bm#1{\mbox{\boldmath$#1$\unboldmath}} 
+\def \myeq#1{(\ref{#1})}
+
+
+%colors
+\newcommand{\htr}[1]{{\color{red}  #1}}
+\newcommand{\htb}[1]{{\color{blue}  #1}}
+\newcommand{\htg}[1]{{\color{green}  #1}}
+\newcommand{\hto}[1]{{\color{orange}  #1}}
+\newcommand{\htp}[1]{{\color{Purple}  #1}}
+\newcommand{\htm}[1]{{\color{magenta}  #1}}
+\newcommand{\htrd}[1]{\htr{\st{#1}}}
+\newcommand{\htbd}[1]{\htb{\sout{#1}}}
+\newcommand{\htpd}[1]{\htp{\st{#1}}}
+\newcommand{\htod}[1]{\hto{\st{#1}}}
+\newcommand{\htgd}[1]{\htg{\st{#1}}}
+
+\begin{document}
+
+color code:
+
+\htg{Priscilla}, \hto{Bjoern}, \htr{Krisztian}, \htb{Kevin}, \htm{Deborah}
+\newline
+\newline
+\hto{BP: Todo: All tables need to be abbreviated to a sensible number of sig. digits.}
+
+\input{schannelscalar.tex}
+\input{ttdm.tex}
+\input{bibliography}
+
+\end{document}
