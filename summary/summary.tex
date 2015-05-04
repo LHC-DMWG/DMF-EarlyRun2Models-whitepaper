@@ -1,12 +1,15 @@
-%\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
-\documentclass[debug,notitlepage]{dmfm}
+%%%ATLAS prefers the following 4 lines (comment CMS line out)
+\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
+\usepackage[svgnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{lineno}
+
+%%%CMS prefers the following line (comment ATLAS lines out)
+%\documentclass[debug,notitlepage]{dmfm}
 
 \usepackage{rotating}
 \usepackage{xspace}
 \usepackage{graphicx}
-%%\usepackage[svgnames]{xcolor}
-%%\usepackage{hyperref}
-%%\usepackage{lineno}
 \usepackage{epstopdf}
 
 \usepackage{slashed}
@@ -90,7 +93,7 @@ for the simplified models recommended by the ATLAS/CMS Dark Matter Forum.
 This summary is aimed at defining the models and parameters
 for the upcoming signal Monte Carlo production by the two collaborations. 
 Motivations for these choices, reinterpretation details, and a full bibliography 
-will be provided in the upcoming document concluding the works of the Forum. 
+will be provided in an upcoming document concluding the works of the Forum. 
 
 \section{Prioritized lists of simplified models for MET+X searches}
 
@@ -120,22 +123,24 @@ The highest priority models discussed within the Forum are:
   and mediator. 
 \end{itemize}
 
-In all three cases, the coupling of the mediator to quarks is
-identical for all three generations. In the case of the scalar and
-pseudo-scalar models, we assume Yukawa couplings ($y_q$ = $m_q/v$)
-between the quarks and the
-mediators, included as a separate factor with respect to $g_q$:
-the specific case of scalar mediator decaying into two top quarks 
-is discussed in Section~\ref{sub:SPttbar}. 
+In all three cases, the coupling of the mediator to quarks $g_q$ is
+identical for all three generations. 
+In the case of the scalar and pseudo-scalar models, we assume a separate 
+Yukawa coupling ($y_q$ = $m_q/v$) between the quarks and the mediators
+multiplying $g_q$; the specific case of scalar mediator decaying
+into two top quarks is discussed in Section~\ref{sub:SPttbar}. The
+coupling between mediator and WIMP does not have any Yukawa structure.
+
 There are thus four parameters in the first two
 models (\mdm, $m_{med}$, $g_q$, and $g_{DM}$) and three parameters
 in the last model (\mdm, $m_{med}$, $g$). We assume that no
 additional visible or invisible decays contribute to the width of the
 mediator. We provide formulae for calculation of the ``minimal
-width'' for any given choice of the four parameters. Run 2 MET+X
-analyses, particularly early Run 2 analyses, are not sensitive to
-changes in the kinematic distributions that result from increasing the
-width up to $\Gamma \approx m_{med}$.
+width'' for any given choice of the four parameters. Early run 2 MET+X
+analyses are not sensitive to changes in the kinematic distributions that 
+result from increasing the width up to $\Gamma \approx m_{med}$: their
+reach will not extend to narrow, off-shell mediators whose kinematics
+depends on the width. 
 
 All types of $s$-channel mediators are important, and ideally an analysis 
 would have to include all cases. On the other hand, the vector and axial-vector models 
@@ -197,7 +202,7 @@ respectively.
 \hline
 \end{tabular}
 \caption{Simplified model benchmarks for all s-channel simplified models (spin-1 and spin-0 mediators 
-decaying to Dirac DM fermions taking the minimum width for $g_v = g_{DM} = 1$).
+decaying to Dirac DM fermions taking the minimum width for $g_{q} = g_{DM} = 1$).
 Points in \textbf{bold} points are only generated for the V and A cases, while points in 
 \textit{italics} are generated for the monojet analysis (V,A,S,P cases) 
 but not for the search including heavy quarks. }
@@ -269,15 +274,15 @@ kinematic distributions. It is unclear whether the MET+jet analysis
 would be able to observe these signals during Run 2; therefore we
 recommend a more limited scan which still allows further studies.
 For the highest mediator mass points for the vector and axial vector models, 
-signals should be generated with couplings in a grid of $g_{DM} = g_{SM} = $ 1.0, 0.3, 0.5, 1.45,
+signals should be generated with couplings in a grid of $g_{DM} = g_{q} = $ 1.0, 0.3, 0.5, 1.45,
 while for the scalar and pseudoscalar signals the recommended grid is
-$g_{DM} = g_{SM} = $ 1.0, 0.1, 0.5, 1.0, 2.0, 3.0.
+$g_{DM} = g_{q} = $ 1.0, 0.5, 1.0, 2.0, 3.0.
 
 
 % \textbf{[Open point: What values of couplings should we suggest to scan? 
 % We could have a limited scan of the Bristol workshop:
 % weak, semi-weak, strong and maximum coupling based on width~mass for 1 TeV mediator,
-% leading to a scan on $g_{DM} = g_{SM} = $ 1.0, 0.3, 0.5, 1.45, 
+% leading to a scan on $g_{DM} = g_{q} = $ 1.0, 0.3, 0.5, 1.45, 
 % but we may need a finer granularity.}
 
 % \begin{itemize}
@@ -304,11 +309,12 @@ has not yet been studied in the same detail as the
 $s$-channel models. 
 %[AB: Comment on the relationship to SUSY parameter space]. 
 This model is parallel to, and partially motivated by, the
-squark of the MSSM. Since the $t$-channel model can produce signatures 
+squark of the MSSM, with the difference that in the MSSM the 
+coupling of quark-squark-WIMP is small. 
+Since the $t$-channel model can produce signatures 
 similar to those arising from squark production in the MSSM, investigations 
-are needed of what ranges of $g$, \mmed, and \mdm are already excluded.
-%[AB: comment on susy overlap] 
-The mediator can radiate a SM object, such as a jet or gauge boson, 
+may be needed of what ranges of $g$, \mmed, and \mdm are already probed
+by other searches. The mediator can radiate a SM object, such as a jet or gauge boson, 
 thus providing three separate MET+X diagrams which must be considered together in
 calculations. This model can also give a signal in the di-jet + MET
 channel when, for example, a WIMP is exchanged in the $t$-channel to
@@ -405,8 +411,7 @@ in association with missing transverse momentum from the two DM particles.
 The parameter scan for this model is based on three different kinematic
 regimes: the case of a very heavy mediator with $m_{med} > 2 m_{top}$, 
 the case of an on-shell mediator below the $t\bar{t}$ threshold
-($\mmed >  \mdm, 
- \mmed < 2 m_{top}$) and the case of an off-shell mediator below
+($\mmed >  \mdm, \mmed < 2 m_{top}$) and the case of an off-shell mediator below
 the $t\bar{t}$ threshold ($m_{med} < 2 m_{DM}$, $m_{med} < 2 m_{top}$). 
 Large kinematic differences are found between on-shell and off-shell mediator
 regimes, while the total width changes slope depending on whether one
