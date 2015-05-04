@@ -519,7 +519,7 @@
 \newcounter{author}
 \newboolean{cms@primaryAuthor}
 \setboolean{cms@primaryAuthor}{false}
-\renewcommand\author{\@ifstar\cmsauthorP\cmsauthor}
+%%\renewcommand\author{\@ifstar\cmsauthorP\cmsauthor}
 \newcommand{\cmsauthor}[2][]
 {
    \stepcounter{author}
@@ -571,7 +571,7 @@
 % Abstract: now a command, not an environment.
 \newsavebox{\CMSabstractbox}
 \savebox{\CMSabstractbox}{Please replace the default abstract using the abstract command.}
-\renewcommand{\abstract}[1]{\savebox{\CMSabstractbox}{\parbox[t]{0.90\textwidth}{#1}}}
+%%\renewcommand{\abstract}[1]{\savebox{\CMSabstractbox}{\parbox[t]{0.90\textwidth}{#1}}}
 \newenvironment{CMSabstract}{\@beginparpenalty\@lowpenalty
 %
     \begin{center}%
@@ -586,7 +586,8 @@
     \ignorespaces}
 {\par}
 % Definition of maketitle mostly from article.cls
-\renewcommand\maketitle{\begin{titlepage}%
+%%\renewcommand\maketitle{\begin{titlepage}%
+\newcommand\smaketitle{\begin{titlepage}%
   \thispagestyle{empty}
 %  \let\footnotesize\small
 %  \let\footnoterule\relax

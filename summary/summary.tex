@@ -1,15 +1,14 @@
-%%%ATLAS prefers the following 4 lines (comment CMS line out)
-\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
-\usepackage[svgnames]{xcolor}
-\usepackage{hyperref}
-\usepackage{lineno}
-
-%%%CMS prefers the following line (comment ATLAS lines out)
-%\documentclass[debug,notitlepage]{dmfm}
+%\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
+%\documentclass[a4,debug,notitlepage]{dmfm}
+%%\documentclass[11pt,twoside,a4paper,debug]{dmfm}
+\documentclass[notitlepage,11pt,twoside,a4paper,debug]{dmfm}
 
 \usepackage{rotating}
 \usepackage{xspace}
 \usepackage{graphicx}
+%%\usepackage[svgnames]{xcolor}
+%%\usepackage{hyperref}
+%%\usepackage{lineno}
 \usepackage{epstopdf}
 
 \usepackage{slashed}
@@ -30,6 +29,7 @@
 \usepackage{refcount}
 \usepackage{calc}
 \usepackage{lastpage}
+\usepackage{titling}
 
 % \usepackage{natbib} % for \citep
 % create a dummy file (shell command "touch moderntex") to turn on some features that don't work on lxplus
@@ -58,6 +58,9 @@
 \newcommand{\ditto}[1][.4pt]{\xrfill{#1}~''~\xrfill{#1}}
 \newcommand{\mdm}{\ensuremath{m_{DM}}\xspace}
 \newcommand{\mmed}{\ensuremath{m_{med}}\xspace}
+\newcommand{\gq}{\ensuremath{g_{q}}\xspace}
+\newcommand{\gdm}{\ensuremath{g_{DM}}\xspace}
+
 
 
 \makeatletter
@@ -69,31 +72,31 @@
 %%%Uncomment this in the case of CMS-only details
 % \CMStrue
 
-\title{Short summary of ATLAS+CMS Dark Matter Forum Recommendations For Signal MC} 
-\author{ATLAS+CMS Dark Matter Forum}
-\date{\today}
-
-\usepackage{titling}
-
-\linenumbers
-
-\begin{document}
-
 %%\morefloats
 \setcounter{secnumdepth}{3} % turn on section numbering, for now (3=subsubsection)
 
 % \input{frontmatter.tex}
 
+\begin{document}
+
+
+\title{Short summary of ATLAS+CMS Dark Matter Forum Recommendations For Signal MC} 
+\author{ATLAS+CMS Dark Matter Forum}
+\date{\today}
+
+
 \maketitle
 
-% \blankpage
+\linenumbers
 
-This document outlines the choices made for the MC production and parameter scans
+\abstract{This document outlines the choices made for the MC production and parameter scans
 for the simplified models recommended by the ATLAS/CMS Dark Matter Forum. 
 This summary is aimed at defining the models and parameters
 for the upcoming signal Monte Carlo production by the two collaborations. 
 Motivations for these choices, reinterpretation details, and a full bibliography 
-will be provided in an upcoming document concluding the works of the Forum. 
+will be provided in the upcoming document concluding the works of the Forum. }
+
+
 
 \section{Prioritized lists of simplified models for MET+X searches}
 
@@ -113,44 +116,43 @@ The two underlying choices for the model recommendations by the ATLAS/CMS DM For
 The highest priority models discussed within the Forum are:
 \begin{itemize}
 \item[a.] spin-1 $s$-channel mediators with vector or 
-  axial-vector coupling to SM quarks $g_q$
-  and vector or axial-vector coupling to a Dirac fermion WIMP $g_{DM}$;
+  axial-vector coupling to SM quarks \gq
+  and vector or axial-vector coupling to a Dirac fermion WIMP \gdm;
 \item[b.] spin-0 $s$-channel mediators with scalar or 
-  pseudo-scalar coupling to SM quarks $g_q$ and scalar or pseudo-scalar
-  coupling to a Dirac fermion WIMP $g_{DM}$;
+  pseudo-scalar coupling to SM quarks \gq and scalar or pseudo-scalar
+  coupling to a Dirac fermion WIMP \gdm;
 \item[c.] and colored spin-0 $t$-channel mediators with 
   coupling $g$ at the vertex between quark, WIMP 
   and mediator. 
 \end{itemize}
 
-In all three cases, the coupling of the mediator to quarks $g_q$ is
-identical for all three generations. 
-In the case of the scalar and pseudo-scalar models, we assume a separate 
-Yukawa coupling ($y_q$ = $m_q/v$) between the quarks and the mediators
-multiplying $g_q$; the specific case of scalar mediator decaying
-into two top quarks is discussed in Section~\ref{sub:SPttbar}. The
-coupling between mediator and WIMP does not have any Yukawa structure.
-
+In all three cases, the coupling of the mediator to quarks is
+identical for all three generations. In the case of the scalar and
+pseudo-scalar models, we assume Yukawa couplings ($y_q$ = $m_q/v$)
+between the quarks and the
+mediators, included as a separate factor with respect to \gq:
+the specific case of scalar mediator decaying into two top quarks 
+is discussed in Section~\ref{sub:SPttbar}. 
 There are thus four parameters in the first two
-models (\mdm, $m_{med}$, $g_q$, and $g_{DM}$) and three parameters
+models (\mdm, $m_{med}$, \gq, and \gdm) and three parameters
 in the last model (\mdm, $m_{med}$, $g$). We assume that no
 additional visible or invisible decays contribute to the width of the
 mediator. We provide formulae for calculation of the ``minimal
-width'' for any given choice of the four parameters. Early run 2 MET+X
-analyses are not sensitive to changes in the kinematic distributions that 
-result from increasing the width up to $\Gamma \approx m_{med}$: their
-reach will not extend to narrow, off-shell mediators whose kinematics
-depends on the width. 
+width'' for any given choice of the four parameters. Run 2 MET+X
+analyses, particularly early Run 2 analyses, are not sensitive to
+changes in the kinematic distributions that result from increasing the
+width up to $\Gamma \approx m_{med}$.  (The exceptional case of a narrow,
+off-shell mediator is addressed later.)
 
 All types of $s$-channel mediators are important, and ideally an analysis 
 would have to include all cases. On the other hand, the vector and axial-vector models 
 (including those with mixed couplings) produce nearly indistinguishable kinematic distributions 
 for the MET+X analyses, and the scalar and pseudo-scalar models are also very similar. 
-If one cannot generate all models, one could generate the full grid of mass points for only one of each 
-type (for example, the pure axial vector and pure pseudo-scalar models). 
+%If one cannot generate all models, one could generate the full grid of mass points for only one of each 
+%type (for example, the pure axial vector and pure pseudo-scalar models). 
 
-\textbf{[Open point: in this situation, do we want to mention which are
-    preferred?]}
+%\textbf{[Open point: in this situation, do we want to mention which are
+%    preferred?]}
 %TODO: CD: can one have S/PS mixed couplings?
 % Pure axial-vector (plus vector-axial and axial-vector combinations) 
 % and pseudo-scalar versions of the $s$-channel models are
@@ -192,17 +194,17 @@ respectively.
  %this row is for a cross-check of all the points at 1 GeV, where the LHC is more sensitive than DD/ID
  1    & 10 & 20 & 50 & 100 & 150 & 200 & 300 & 500 & 1000 & \textbf{1500} & \textbf{3000} & 5000  \\
  %the following rows have only the diagonal + one point above/below
- 10   & 10 & 20 & 50 & \ditto    & \ditto    &     &     &     &      &               & \textbf{3000} & 5000  \\
- 50   & 10 &    & 50 & 100 & 150 &     &     &     &      &               & \textbf{3000} & 5000  \\
- 150  & 10 &    &    &     &     & 200 & 300 & 500 &      &               & \textbf{3000} & 5000  \\
+ 10   & 10 & 20$\pm\epsilon$ & 50 & \ditto    & \ditto    &     &     &     &      &               & \textbf{3000} & 5000  \\
+ 50   & 10 &    & 50 & 100$\pm\epsilon$ & 150 &     &     &     &      &               & \textbf{3000} & 5000  \\
+ 150  & 10 &    &    &     &     & 200 & 300$\pm\epsilon$ & 500 &      &               & \textbf{3000} & 5000  \\
  200  & 10 &    &    &     &     & 200 & 300 & 500  &     &               & \textbf{3000} & 5000  \\
- 500  & 10 &    &    &     &     &     &     & 500 & 1000 & \textit{1500} & \textbf{3000} & 5000  \\
+ 500  & 10 &    &    &     &     &     &     & 500 & 1000$\pm\epsilon$ & \textit{1500} & \textbf{3000} & 5000  \\
  \textit{1000} & \textit{10} &    &    &     &     &     &     & & \textit{1000} & \textbf{1500} & \textbf{3000} & \textit{5000}  \\
- \textit{1500} & \textit{10} &    &    &     &     &     &     &              & & \textbf{1500} & \textbf{3000} & \textit{5000}  \\
+ \textit{1500} & \textit{10} &    &    &     &     &     &     &              & & \textbf{1500} & \textbf{3000}$\pm\epsilon$ & \textit{5000}  \\
 \hline
 \end{tabular}
 \caption{Simplified model benchmarks for all s-channel simplified models (spin-1 and spin-0 mediators 
-decaying to Dirac DM fermions taking the minimum width for $g_{q} = g_{DM} = 1$).
+decaying to Dirac DM fermions taking the minimum width for $g_v = g_{DM} = 1$).
 Points in \textbf{bold} points are only generated for the V and A cases, while points in 
 \textit{italics} are generated for the monojet analysis (V,A,S,P cases) 
 but not for the search including heavy quarks. }
@@ -252,9 +254,8 @@ decaying to Dirac DM fermions.}
 
 Namely the bulk of the grid scan for
 the $s$-channel models will consist of up to 25 separate
-samples per model, covering from 10 GeV to 3 TeV (10 GeV to 1.5 TeV)
-in mediator mass for the vector and axial vector (scalar and pseudoscalar) models,
-and from 5 GeV to 1.5 TeV in WIMP mass
+samples per model, covering \mmed from 10 GeV to 3 TeV (10 GeV to 1.5 TeV) for the vector and axial vector (scalar and pseudoscalar) models,
+and \mdm from 5 GeV to 1.5 TeV.
 
 \textbf{[Open point: We should add to the scan 
 the very heavy mediator mass points (5 TeV) scanned in DM mass, to use as EFT limits.  
@@ -274,15 +275,15 @@ kinematic distributions. It is unclear whether the MET+jet analysis
 would be able to observe these signals during Run 2; therefore we
 recommend a more limited scan which still allows further studies.
 For the highest mediator mass points for the vector and axial vector models, 
-signals should be generated with couplings in a grid of $g_{DM} = g_{q} = $ 1.0, 0.3, 0.5, 1.45,
+signals should be generated with couplings in a grid of $\gdm = \gq = $ 1.0, 0.3, 0.5, 1.45,
 while for the scalar and pseudoscalar signals the recommended grid is
-$g_{DM} = g_{q} = $ 1.0, 0.5, 1.0, 2.0, 3.0.
+$\gdm = \gq = $ 1.0, 0.1, 0.5, 1.0, 2.0, 3.0.
 
 
 % \textbf{[Open point: What values of couplings should we suggest to scan? 
 % We could have a limited scan of the Bristol workshop:
 % weak, semi-weak, strong and maximum coupling based on width~mass for 1 TeV mediator,
-% leading to a scan on $g_{DM} = g_{q} = $ 1.0, 0.3, 0.5, 1.45, 
+% leading to a scan on $g_{DM} = g_{SM} = $ 1.0, 0.3, 0.5, 1.45, 
 % but we may need a finer granularity.}
 
 % \begin{itemize}
@@ -309,16 +310,19 @@ has not yet been studied in the same detail as the
 $s$-channel models. 
 %[AB: Comment on the relationship to SUSY parameter space]. 
 This model is parallel to, and partially motivated by, the
-squark of the MSSM, with the difference that in the MSSM the 
-coupling of quark-squark-WIMP is small. 
-Since the $t$-channel model can produce signatures 
+squark of the MSSM. Since the $t$-channel model can produce signatures 
 similar to those arising from squark production in the MSSM, investigations 
-may be needed of what ranges of $g$, \mmed, and \mdm are already probed
-by other searches. The mediator can radiate a SM object, such as a jet or gauge boson, 
-thus providing three separate MET+X diagrams which must be considered together in
-calculations. This model can also give a signal in the di-jet + MET
-channel when, for example, a WIMP is exchanged in the $t$-channel to
-produce a pair of mediators, each of which decays to a jet and a DM particle.
+are needed of what ranges of $g$, \mmed, and \mdm are already excluded.
+Since the relevant coupling is arbitrary in the $t$-channel model, while
+it is weak-scale in the MSSM, additional production topologies need to
+be considered.   The coordination of a generic $t$-channel scan with
+MSSM scans needs more thought.
+%% %[AB: comment on susy overlap] 
+%% The mediator can radiate a SM object, such as a jet or gauge boson, 
+%% thus providing three separate MET+X diagrams which must be considered together in
+%% calculations. This model can also give a signal in the di-jet + MET
+%% channel when, for example, a WIMP is exchanged in the $t$-channel to
+%% produce a pair of mediators, each of which decays to a jet and a DM particle.
 
 \subsubsection{Technical implementation of the $s-$channel models} 
 
@@ -411,7 +415,8 @@ in association with missing transverse momentum from the two DM particles.
 The parameter scan for this model is based on three different kinematic
 regimes: the case of a very heavy mediator with $m_{med} > 2 m_{top}$, 
 the case of an on-shell mediator below the $t\bar{t}$ threshold
-($\mmed >  \mdm, \mmed < 2 m_{top}$) and the case of an off-shell mediator below
+($\mmed >  \mdm, 
+ \mmed < 2 m_{top}$) and the case of an off-shell mediator below
 the $t\bar{t}$ threshold ($m_{med} < 2 m_{DM}$, $m_{med} < 2 m_{top}$). 
 Large kinematic differences are found between on-shell and off-shell mediator
 regimes, while the total width changes slope depending on whether one
@@ -480,10 +485,10 @@ that can decay in two DM candidates;
 
 The parameters for the $s$-channel resonant production are:
 \begin{itemize}
- \item the couplings of the scalar mediator to down-type quarks, all considered equal and denoted with $a_{res}^q$;
+ \item the couplings of the scalar resonance to down-type quarks, all considered equal and denoted with $a_{res}^q$;
  \item the couplings of the DM particle to up-type quarks and to the mediator, denoted with $a_{res}^{1/2}$;
 \end{itemize}
-The mediator width is computed according to the couplings, assuming no other decays in addition
+The resonance width is computed according to the couplings, assuming no other decays in addition
 to those in DM and quarks. Fixing the branching fraction to DM particles to 100\% would lead 
 to a single value for the coupling of the mediator to DM particles. $a_{res}^{1/2}$ 
 may however become a parameter to be scanned, after further studies on whether changing 
@@ -604,8 +609,8 @@ a scan in DM mass and mediator mass that follows Table~\ref{tab:mMedmDM_VA} whil
 the other model parameters fixed to the following values: 
 \begin{itemize}
  \item coupling between mediator and SM Higgs boson $g_{hZ'Z'}/m_{med}$ = 1
- \item mediator-DM coupling $g_{DM}$ = 1
- \item mediator-quark $g_{q}$ = 0.333
+ \item mediator-DM coupling \gdm = 1
+ \item mediator-quark \gq = 0.333
  \item mixing angle between the new baryonic Higgs in this model and the SM Higgs $sin(\theta)$ = 0.3
 \end{itemize}
 for the vector mediator model, and the following values: 
