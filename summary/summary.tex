@@ -1,7 +1,7 @@
 %\documentclass[a4,debug,notitlepage,nobib]{tufte-handout}
 %\documentclass[a4,debug,notitlepage]{dmfm}
 %%\documentclass[11pt,twoside,a4paper,debug]{dmfm}
-\documentclass[notitlepage,11pt,twoside,a4paper,debug]{dmfm}
+\documentclass[notitlepage,12pt,twoside,a4paper,debug]{dmfm}
 
 \usepackage{rotating}
 \usepackage{xspace}
@@ -194,20 +194,22 @@ respectively.
  %this row is for a cross-check of all the points at 1 GeV, where the LHC is more sensitive than DD/ID
  1    & 10 & 20 & 50 & 100 & 150 & 200 & 300 & 500 & 1000 & \textbf{1500} & \textbf{3000} & 5000  \\
  %the following rows have only the diagonal + one point above/below
- 10   & 10 & 20$\pm\epsilon$ & 50 & \ditto    & \ditto    &     &     &     &      &               & \textbf{3000} & 5000  \\
- 50   & 10 &    & 50 & 100$\pm\epsilon$ & 150 &     &     &     &      &               & \textbf{3000} & 5000  \\
- 150  & 10 &    &    &     &     & 200 & 300$\pm\epsilon$ & 500 &      &               & \textbf{3000} & 5000  \\
- 200  & 10 &    &    &     &     & 200 & 300 & 500  &     &               & \textbf{3000} & 5000  \\
- 500  & 10 &    &    &     &     &     &     & 500 & 1000$\pm\epsilon$ & \textit{1500} & \textbf{3000} & 5000  \\
+ 10   & 10 & 20$^{*}$ & 50 & \ditto    & \ditto    & \ditto    & \ditto
+ & \ditto    &  \ditto    &  \ditto             & \textbf{3000} & 5000  \\
+ 50   & 10 &   & 50 & 100$^{*}$ & 150 &  \ditto   &  \ditto   &  \ditto   &  \ditto    &  \ditto             & \textbf{3000} & 5000  \\
+ 150  & 10 &  &  &  &  & 200 & 300$^{*}$ & 500 &  \ditto    &  \ditto             & \textbf{3000} & 5000  \\
+ 200  & 10 &    &    &     &     & 200 & 300 & 500  &  \ditto   &  \ditto             & \textbf{3000} & 5000  \\
+ 500  & 10 &    &    &     &     &     &     & 500 & 1000$^{*}$ & \textit{1500} & \textbf{3000} & 5000  \\
  \textit{1000} & \textit{10} &    &    &     &     &     &     & & \textit{1000} & \textbf{1500} & \textbf{3000} & \textit{5000}  \\
- \textit{1500} & \textit{10} &    &    &     &     &     &     &              & & \textbf{1500} & \textbf{3000}$\pm\epsilon$ & \textit{5000}  \\
+ \textit{1500} & \textit{10} &    &    &     &     &     &     &              & & \textbf{1500} & \textbf{3000}$^{*}$ & \textit{5000}  \\
 \hline
 \end{tabular}
 \caption{Simplified model benchmarks for all s-channel simplified models (spin-1 and spin-0 mediators 
 decaying to Dirac DM fermions taking the minimum width for $g_v = g_{DM} = 1$).
 Points in \textbf{bold} points are only generated for the V and A cases, while points in 
 \textit{italics} are generated for the monojet analysis (V,A,S,P cases) 
-but not for the search including heavy quarks. }
+but not for the search including heavy quarks. The points
+marked by an asterisk ($^*$) will be shifted above/below threshold for production.}
 \label{tab:ttdm_benchmarks}
 %%\end{sidewaystable}
 \end{table}
@@ -257,11 +259,11 @@ the $s$-channel models will consist of up to 25 separate
 samples per model, covering \mmed from 10 GeV to 3 TeV (10 GeV to 1.5 TeV) for the vector and axial vector (scalar and pseudoscalar) models,
 and \mdm from 5 GeV to 1.5 TeV.
 
-\textbf{[Open point: We should add to the scan 
-the very heavy mediator mass points (5 TeV) scanned in DM mass, to use as EFT limits.  
-3 TeV may be borderline according to ATLAS 14 TeV studies 
-in~\url{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2014-007/}
-For S/P, no equivalent plot, but sensitivity is low.]}
+%% \textbf{[Open point: We should add to the scan 
+%% the very heavy mediator mass points (5 TeV) scanned in DM mass, to use as EFT limits.  
+%% 3 TeV may be borderline according to ATLAS 14 TeV studies 
+%% in~\url{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2014-007/}
+%% For S/P, no equivalent plot, but sensitivity is low.]}
 
 
 
@@ -302,15 +304,14 @@ $\gdm = \gq = $ 1.0, 0.1, 0.5, 1.0, 2.0, 3.0.
 % > 
 
 Results for other choices of parameters can be related to
-these through simple rescalings of the total rate, using cross-section
+these through simple rescaling of the total rate, using cross-section
 formulae that will be provided by the forum.
 
 The parameter space of the $t$-channel model 
 has not yet been studied in the same detail as the
 $s$-channel models. 
 %[AB: Comment on the relationship to SUSY parameter space]. 
-This model is parallel to, and partially motivated by, the
-squark of the MSSM. Since the $t$-channel model can produce signatures 
+Since the $t$-channel model can produce signatures 
 similar to those arising from squark production in the MSSM, investigations 
 are needed of what ranges of $g$, \mmed, and \mdm are already excluded.
 Since the relevant coupling is arbitrary in the $t$-channel model, while
@@ -326,10 +327,11 @@ MSSM scans needs more thought.
 
 \subsubsection{Technical implementation of the $s-$channel models} 
 
-There are several matrix element implementations of the $s$-channel
-vector and scalar mediated DM production.
-They are available in POWHEG, MADGRAPH
-and also MCFM. We recommend the POWHEG implementation, 
+There are matrix element implementations of the $s$-channel
+vector and scalar mediated DM production
+available in POWHEG, MADGRAPH and MCFM.
+We recommend the POWHEG implementation of DM pair production +1 parton at NLO
+(the DMV model), 
 and the associated theoretical uncertainties 
 computed by POWHEG. 
 % CD: After a discussion with SarahM, SM and SL, removed the line
@@ -347,7 +349,7 @@ For ATLAS and CMS, the necessary version of POWHEG is centrally available
 (V2.0 in both cases, revision 3049 for CMS and revision 3033 for ATLAS).
 
 \textbf{[Open point: The recommendations for assessing systematic uncertainties has to be approved by 
-both collaborations. Once ready, ATLAS and CMS should discuss whether this can be harmonised.]}
+both collaborations. Once ready, ATLAS and CMS should discuss whether this can be harmonized.]}
 
 \ifATLAS 
 % The ATLAS implementation of the job options for the generation of 
@@ -364,7 +366,12 @@ twiki page.
 
 \subsubsection{Technical implementation of the $t-$channel models} 
 
-The $t$-channel model is implemented in MadGraph. 
+The $t$-channel model is implemented in MadGraph.  It is recommended
+to compute at LO and apply matching up to two additional partons
+beyond the Born level
+process.    Theoretical uncertainties are to be calculated using
+the MadGraph SysCalc package, which performs scale and PDF variations
+in a similar manner as POWHEG.
 The relevant parameter card can be found on the Forum
 SVN repository~\cite{ForumSVN_TChannel}. 
 % \textbf{[Open point: put Madgraph card file on SVN]}
@@ -388,24 +395,41 @@ SVN repository~\cite{ForumSVN_TChannel}.
 \subsubsection{Single $b$+MET}
 
 We consider a simplified model for single-$b$-jet signatures, 
-with a colored scalar mediator coupling to Dark Matter and a $b-$quark. 
-This model is described in Ref.~\cite{Agrawal:2014una}. Preliminary studies 
-show that generation of a grid of roughly 10 points in DM mass, 15 points in mediator
+with a colored scalar resonance coupling to Dark Matter and a $b-$quark 
+as described in Ref.~\cite{Agrawal:2014una}.
+The model is similar to the MSSM
+with a light bottom squark and neutralino, and is thus a flavor-specific
+example of a $t$-channel model.
+Preliminary studies show that generation of a grid of roughly 10 points
+in DM mass, 15 points in mediator
 mass and two coupling values is sufficient to cover the parameter
-space probed by the LHC with early searches. 
+space probed by the LHC with early searches.
+
 
 This model is available in MADGRAPH, and the relevant card files are 
 available in the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
 
 \subsubsection{$b \bar{b}$+MET}
 
-\textbf{[Open point: Do we plan for a specific implementation of the scalar/pseudoscalar
-with $b-$jets in the final state instead of ttbar?]}
+As noted earlier, the $t$-channel model produces both mono-jet and
+di-jet +MET signatures after applying cuts.  In the case when
+only a $b$-flavored mediator is accessible, both mono-$b$ and
+$b\bar b$+MET
+signatures are possible.  The details for the implementation of these
+models is still under investigation.
 
 \subsection{Specific models for analyses of MET+top(s)}
 \label{sub:SPttbar}
 
 \subsubsection{$t \bar{t}$+MET}
+
+The pair production of top-flavored resonances that decay to
+a top quark and DM is the subject of intensive study by the
+experimental collaborations, and are not in the purview of this Forum.
+
+Instead, we focus on the implications of the scalar/pseudo-scalar
+model introduced earlier, with the mediator produced in association
+with a $t\bar t$ pair.
 
 As mentioned in Sec.~\ref{sec:RecommendedModelsAllAnalyses}, we assume 
 mass dependent Yukawa couplings to quarks for spin-$0$ scalar
@@ -420,7 +444,7 @@ the case of an on-shell mediator below the $t\bar{t}$ threshold
 the $t\bar{t}$ threshold ($m_{med} < 2 m_{DM}$, $m_{med} < 2 m_{top}$). 
 Large kinematic differences are found between on-shell and off-shell mediator
 regimes, while the total width changes slope depending on whether one
-is above or below the ttbar threshold. 
+is above or below the $t\bar t$ threshold. 
 Scalar and pseudoscalar models shows kinematic differences as the mediator mass 
 is reduced, due to the difference in coupling of the top pair to the mediator. 
 These considerations lead to the choice of the grid scan shown in 
@@ -448,7 +472,7 @@ that substitutes the scan in couplings for early searches.
  $500$  &                                               $500$, $1000$, $1500$  \\
 \hline
 \end{tabular}
-\caption{Simplified model benchmarks for $t\bar{t}$+DM production via spin-0 mediators decaying to Dirac DM fermions taking the minimum width presciption for $g_v = g_{DM} = 1$.}
+\caption{Simplified model benchmarks for $t\bar{t}$+DM production via spin-0 mediators decaying to Dirac DM fermions taking the minimum width prescription for $g_v = g_{DM} = 1$.}
 \label{tab:ttdm_benchmarks}
 \end{table}
 
@@ -472,6 +496,8 @@ will follow the MC15 pilot request for the monophoton D5 operator~\cite{ATLAS_Po
 \fi
 
 \subsubsection{single top+MET}
+
+Models of single top+MET production are different from the other models under consideration, since they truly involve a single top quark in the final state.
 
 Two simplified models, described in Refs.~\cite{Andrea:2011ws,Boucheneb:2014wza}, are recommended 
 for the signature of a single top quark+MET~\footnote{The non-resonant production 
@@ -529,7 +555,7 @@ final state should include the general models recommended in
 Section~\ref{sec:RecommendedModelsAllAnalyses}. In addition to these,
 we recommend models where an electroweak boson participates in
 the dark matter interaction itself, rather than appearing as final
-state radition.
+state radiation.
 
 Though the requisite set simplified models have not yet been fully
 developed by the theoretical community, it is here especially that
@@ -610,7 +636,7 @@ the other model parameters fixed to the following values:
 \begin{itemize}
  \item coupling between mediator and SM Higgs boson $g_{hZ'Z'}/m_{med}$ = 1
  \item mediator-DM coupling \gdm = 1
- \item mediator-quark \gq = 0.333
+ \item mediator-quark \gq = $\frac{1}{3}$.
  \item mixing angle between the new baryonic Higgs in this model and the SM Higgs $sin(\theta)$ = 0.3
 \end{itemize}
 for the vector mediator model, and the following values: 
@@ -673,7 +699,7 @@ Another type of constraint 'external' to the MET+X analyses comes from
 the LHC experiments themselves. Resonant signals of dark matter
 mediators are a key difference between simplified models and the EFT
 scenario. Direct searches for these mediators, for example in dijet,
-ttbar, and dilepton final states, are thus a crucial part of the LHC
+$t\bar t$, and dilepton final states, are thus a crucial part of the LHC
 search program. These are discussed in the forum report but specific
 recommendations for them are beyond the scope of the document.  It is
 tempting to apply the constraints from these mediator searches to
@@ -732,7 +758,8 @@ bearing on MC requests.
 %included for purposes of comparison with prior results.
 
 
-\bibliographystyle{alpha}
-\bibliography{summary}
+%%\bibliographystyle{alpha}
+%%\bibliography{summary}
+\bibliography{auto_generated}
 
 \end{document}
