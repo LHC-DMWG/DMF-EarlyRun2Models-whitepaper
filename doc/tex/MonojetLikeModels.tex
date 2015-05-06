@@ -215,20 +215,49 @@ The presentation of the results in the $g_q$--$\gDM$ plane for fixed masses bene
 \section{Scalar and pseudoscalar mediator, s-channel exchange}
 \label{sec:monojet_scalar}
 
-%TODO add figure with diagrams
+One of the most simple UV complete extensions of the effective field theory approach is the addition of a scalar/pseudoscalar mediator between DM and SM.
+A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle.
+In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. The kinematics of the two cases is sufficiently different to suggest that further investigation of the complex scalar case is needed but left for future studies. 
+
+%%CD: this sentence really belongs elsewhere: MG does not have the gluon loop
+Couplings to the SM fermions can be arranged by mixing with the SM Higgs. Such models have interesting connections with Higgs physics, and can be viewed as generalizations of the Higgs portal to DM. The most general scalar mediator models will have renormalizable interactions between the SM Higgs and the new scalar $\phi$ or pseudoscalar $a$, as well as $\phi/a$ interactions with electroweak gauge bosons. Such interactions are model dependent, often subject to constraints from electroweak precision tests, and would suggest specialized searches which cannot be generalized to a broad class of models (unlike, for instance, the $\missET+\textrm{jets}$ searches). As a result, for this class of minimal simplified models with spin-$0$ mediators, we will focus primarily on couplings to fermions and loop-induced couplings to gluons. %Possible couplings to the electroweak sector may also lead to interesting DM phenomenology that can be studied in the context of Higgs Portal DM.
+
+%\subsection{Model and assumption for fermionic DM}
+
+Minimal Flavor Violation (MFV) implies that scalar couplings to fermions will be proportional to the fermion mass.  However, they can differ for up- and down-type quarks and for charged leptons. 
+
+Following the assumption that DM is a fermion $\chi$, which couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level Lagrangians compatible with the MFV assumption are~\cite{Cotta:2013jna,Abdullah:2014lla}:
+ \begin{eqnarray}
+{\cal L}_{{\rm fermion},\phi} & = & {\cal L}_{\rm SM}+i\bar{\chi} \slashed{\partial} \chi + m_\chi \bar{\chi}\chi + \left| \partial_\mu \phi \right|^2+\frac{1}{2}m_\phi^2 \phi^2 + \nonumber \\ 
+& &  g_\chi \phi \bar{\chi}\chi+ \frac{\phi}{\sqrt{2}} \sum_i \left(g_u y_i^u \bar{u}_i u_i+g_d y_i^d \bar{d}_i d_i+g_\ell y_i^\ell \bar{\ell}_i \ell_i\right)\, , \label{eq:scalarlag} \\
+{\cal L}_{{\rm fermion},a} & = & {\cal L}_{\rm SM}+i\bar{\chi} \slashed{\partial} \chi + m_\chi \bar{\chi}\chi + \left| \partial_\mu a \right|^2+\frac{1}{2}m_a^2 a^2 + \nonumber \\
+& &  ig_\chi a \bar{\chi}\gamma_5\chi+ \frac{i a}{\sqrt{2}}\sum_i  \left(g_u y_i^u \bar{u}_i \gamma_5 u_i+g_d y_i^d \bar{d}_i \gamma_5 d_i+g_\ell y_i^\ell   \bar{\ell}_i \gamma_5 \ell_i\right) \,. \label{eq:pseudoscalarlag}
+\end{eqnarray}
+Here the sums run over the all SM generations; the Yukawa couplings $y_i^f$ are normalized to $y_i^f = \sqrt{2}m_i^f/v$ where $v \simeq 246 \, {\rm GeV}$ represents the Higgs vacuum expectation value (VEV). We parametrise the DM-mediator coupling as $g_\chi$, without any additional Yukawa structure between the mediator and the dark sector.
+
+%The most general Lagrangians including new scalars or pseudoscalars will have a potential containing interactions with the SM Higgs field $h$. 
+As already stated we only choose a minimal set of interactions that do not include interactions with the Higgs field. For simplicity, we also assume universal SM-mediator couplings $g_v = g_u = g_d = g_\ell$
+
+Given these simplifications, the minimal set of parameters under consideration is
+ \bea
+  \left\{ m_\chi,~ m_{\phi/a},~ g_\chi,~ g_q \right\} \,.
+ \eea
+%The simplest choice of couplings, known as Minimal Simplified Dark Matter model (MSDM) \textbf{[TODO: add references]}, is $g_u = g_d = g_\ell$, which is realized in singlet scalar extensions of the SM. 
+
+%Extending the SM Higgs sector to a two Higgs doublet model implies more complex couplings such as  $g_u = \cot \beta$ and $g_d = g_e = \tan \beta$ where $\tan \beta$ denotes the ratio of VEVs of the two Higgs doublets.  The case $g_u \neq  g_d \neq g_\ell$ requires more additional scalars with potentially large masses, and it is not covered here: for simplicity, we assume universal SM-mediator couplings $g_v = g_u = g_d = g_\ell$ in the remainder of this work. 
 
 The matrix element implementation of the s-channel spin-0 mediated DM production is available in POWHEG with the full top-loop calculation at LO\,\cite{Haisch:2015ioa}.
-The model assumes Dirac Dark Matter particles and is based on the minimal flavor violation (MFV), which motivates Higgs-like Yukawa couplings of the mediator to the Standard Model quarks. No other couplings, such as to leptons, are allowed in this model.
-The following two cases are considered:\\
-(a) scalar couplings to DM and SM,\\
-(b) pseudo-scalar couplings to DM and SM\\
-\noindent with the corresponding Lagrangians written as:
-\begin{align}
-\label{eq:SP} 
-\mathcal{L}_{\mathrm{scalar}} &= g_q \sum \frac{m_q}{v} (\bar{q}q) S + \gDM (\bar{\chi}\chi) S \\
-\mathcal{L}_{\mathrm{pseudo-scalar}} &= g_q \sum \frac{m_q}{v} (\bar{q}\gamma^5q) P + \gDM (\bar{\chi}\gamma^5\chi) P \\
-\end{align}
-where $v=246$\,GeV denotes the Higgs vacuum expectation value.
+%The model assumes Dirac Dark Matter particles and is based on the minimal flavor violation (MFV), which motivates Higgs-like Yukawa couplings of the mediator to the Standard Model quarks. No other couplings, such as to leptons, are allowed in this model.
+%The following two cases are considered:\\
+%(a) scalar couplings to DM and SM,\\
+%(b) pseudo-scalar couplings to DM and SM\\
+%\noindent with the corresponding Lagrangians written as:
+%\begin{align}
+%\label{eq:SP} 
+%\mathcal{L}_{\mathrm{scalar}} &= g_q \sum \frac{m_q}{v} (\bar{q}q) S + \gDM (\bar{\chi}\chi) S \\
+%\mathcal{L}_{\mathrm{pseudo-scalar}} &= g_q \sum \frac{m_q}{v} (\bar{q}\gamma^5q) P + \gDM (\bar{\chi}\gamma^5\chi) P \\
+%\end{align}
+%where $v=246$\,GeV denotes the Higgs vacuum expectation value.
 
 We choose to consider minimal mediator width given by Eq.\,\ref{eq:monojet_min}, where the individual contributions follow from
 \begin{align}
