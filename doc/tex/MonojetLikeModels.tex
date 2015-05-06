@@ -107,7 +107,8 @@ The only place where special care needs to be taken are extremely heavy and narr
 This, however, does not come from physics as it is a feature of the generator implementation, where a cutoff for the regions far away from the mediator mass is often used. This is illustrated in Fig.\,\ref{fig:monojet_mchichi} showing the invariant mass of the Dark Matter pair in the samples generated for 7\,TeV mediator with different coupling strength. In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chi}\chi}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chi}\chi}\rightarrow0$ implies the resonant production at $m_{\bar{\chi}\chi}=7$\,TeV is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7\,TeV is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chi}\chi}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes. This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
 In general, for such extreme parameter choices
 %as $\mMed=7$\,TeV and $\Gamma_{\rm{min}}=36$\,GeV,
-the EFT model should give the correct answer. In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
+the EFT model should give the correct answer. \textbf{[TODO: add results of ongoing study.]}
+% In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
 
 %Uli: as fabio says, increasing bwcutoff might improve things in the case you are considering
 %
@@ -132,7 +133,7 @@ the EFT model should give the correct answer. In case the simplified model calcu
 
 \paragraph{Scan over the Dark Matter mass}
 
-For the fixed mediator mass and couplings, both the cross section and the kinematic distributions remain similar for different Dark Matter masses as long as $\mMed>2\mDM$. This is illustrated in Fig.\,\ref{fig:monojet_scan_V_mDM1000} on an example of 1\,TeV mediator and Dark Matter mases ranging from 10\,GeV to 300\,GeV. It is observed that the cross section decreases as the Dark Matter mass reaches closer to $\mMed/2$. Once the Dark Matter pair is produced off-line, the cross section of such simplified model is suppressed and the $\MET$ spectrum hardens, as demonstrated with the choice of 1\,TeV Dark Matter in the same plot. Figure\,\ref{fig:monojet_scan_V_mDM100} reveals the $\MET$ spectrum hardens further with increasing Dark Matter mass, accompanied by the gradual decrease of the cross section. From these observations one can conclude:
+For the fixed mediator mass and couplings, both the cross section and the kinematic distributions remain similar for different Dark Matter masses as long as $\mMed>2\mDM$. This is illustrated in Fig.\,\ref{fig:monojet_scan_V_mDM1000} on an example of 1\,TeV mediator and Dark Matter mases ranging from 10\,GeV to 300\,GeV. It is observed that the cross section decreases as the Dark Matter mass reaches closer to $\mMed/2$. Once the Dark Matter pair is produced off-shell, the cross section of such simplified model is suppressed and the $\MET$ spectrum hardens, as demonstrated with the choice of 1\,TeV Dark Matter in the same plot. Figure\,\ref{fig:monojet_scan_V_mDM100} reveals the $\MET$ spectrum hardens further with increasing Dark Matter mass, accompanied by the gradual decrease of the cross section. From these observations one can conclude:
 \begin{itemize}
 \item A coarse binning along $\mDM$ is sufficient at $\mMed \gg 2\mDM$.
 \item Finer binning is needed in order to capture the changes in the cross section and kinematic quantities close to the production threshold on both sides around $\mMed=2\mDM$.
@@ -249,7 +250,9 @@ Note that we decide to ignore the partial width coming from gluons through loops
 \end{figure}
 
 
-Similarly as in the case of the vector and axial-vector mediators, scans in the paramater space are performed also for the scalar and pseudo-scalar mediators in order to decide on the optimised parameter grid for the presentation of Run-2 results. Figures\,\ref{fig:monojet_scan_S_g,fig:monojet_scan_S_mDM1000,fig:monojet_scan_S_mDM100,fig:monojet_scan_S_mMed10,fig:monojet_scan_S_mMed1000} show the scans over the couplings, Dark Matter mass and mediator mass and the same conclusions apply as in Section\,\ref{sec:monojet_V}.
+Similarly as in the case of the vector and axial-vector mediators, scans in the paramater space are performed also for the scalar and pseudo-scalar mediators in order to decide on the optimised parameter grid for the presentation of Run-2 results. Figures\,\ref{fig:monojet_scan_S_g}-
+%, fig:monojet_scan_S_mDM1000,fig:monojet_scan_S_mDM100, fig:monojet_scan_S_mMed10, 
+\ref{fig:monojet_scan_S_mMed1000} show the scans over the couplings, Dark Matter mass and mediator mass and the same conclusions apply as in Section\,\ref{sec:monojet_V}.
 
 %TODO does the discussion below make sense?
 Since the top quark gives the dominant contribution to the mediator width due to Higgs-like Yukawa couplings, the effect of the top channel opening in the mediator production was studied in addition. Scan over the mediator mass is shown in Fig.\,\ref{fig:monojet_scan_S_mMed1000} where the mediator masses 300\,GeV and 500\,GeV are chosen to be below and above $2m_t$. The off-shell Dark Matter production regime is assumed by taking $\mDM=1$\,TeV in order to allow studying solely the effects of the couplings to quarks. 
@@ -291,7 +294,7 @@ No differences in the kinematic distributions are observed and also the cross se
 \end{figure}
 
 
-The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, similar pattern is followed here, taking again $g_q=\gDM=1$. Only the sensitivity to the highest mediator masses has to be revisited.
+The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, taking again $g_q=\gDM=1$. Only the sensitivity to the highest mediator masses has to be revisited.
 The generator level cross section times the acceptance at $\MET>500$\,GeV for the model with couplings $g_q=\gDM=1$, light Dark Matter of 10\,GeV and 500\,GeV scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1\,TeV pushes the product $\sigma\times A$ down to approximately 0.1\,fb, beyond the LHC sensitivity. Therefore, we choose to remove the 3\,TeV mediator mass from the grid and present the final grid with 19 mass points only in Fig.\,\ref{fig:monojet_grid_S}.
 %mDM =    5  : mMed =   10    30   100   300  1000 
 %mDM =   15  : mMed =   10    30   100              
