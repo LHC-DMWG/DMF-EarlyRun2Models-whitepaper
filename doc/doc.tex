@@ -1,5 +1,10 @@
 \documentclass[a4,debug,notitlepage,nobib]{tufte-book}
 
+%%%%%%%%%%%%%
+%Compilation options
+%%%%%%%%%%%%%
+\newif\ifNotMonojetTTBarOnly
+
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
@@ -110,13 +115,17 @@
 
 \blankpage
 
+\ifNotMonojetTTBarOnly
 \chapter{Introduction}
 \label{sec:Introduction}
 \input{tex/Introduction.tex}
+\fi
 
+\ifNotMonojetTTBarOnly
 \chapter{Overall choices for simplified models}
 \label{sec:SimplifiedModelsIntro} 
 \input{tex/SimplifiedModelsIntro.tex}
+\fi
 
 \chapter{Recommended models for all MET+X analyses}
 \label{subsec:MonojetLikeModels}
@@ -126,9 +135,11 @@
 % \label{subsec:ScalarModels}
 % \input{tex/ScalarModels}
 
+\ifNotMonojetTTBarOnly
 \chapter{Specific models for signatures with EW bosons}
 \label{subsec:EWSpecificModels}
 \input{tex/EWSpecificModels}
+\fi
 
 \chapter{Specific models for signatures with heavy flavor quarks}
 \label{subsec:DMHFModels}
@@ -138,9 +149,11 @@
 % \label{subsec:SUSYModels}
 % \input{tex/SUSYModels}
 
+\ifNotMonojetTTBarOnly
 \chapter{Validity of EFT approach}
 \label{sec:EFTValidity} 
 \input{tex/EFTValidity.tex}
+\fi
 
 % \chapter{Recommendations for expressing collider constraints}
 % \label{sec:ColliderConstraints} 
@@ -148,17 +161,23 @@
 
 \appendix
 
+\ifNotMonojetTTBarOnly
 \chapter{Appendix: Detailed studies on mono-jet signatures}
 \label{app:MonojetLikeModels_Appendix}
 \input{tex/MonojetLikeModels_Appendix.tex}
+\fi
 
+\ifNotMonojetTTBarOnly
 \chapter{Appendix: Detailed studies for EW models}
 \label{app:EWSpecificModels_Appendix}
 \input{tex/EWSpecificModels_Appendix.tex}
+\fi 
 
+\ifNotMonojetTTBarOnly
 \chapter{Appendix: Table of cross sections for $t\bar{t}$+MET searches}
 \label{app:TTBar_Xsecs}
 \input{tex/TTBar_Xsecs_Appendix.tex}
+\fi 
 
 %%FIXME: it does not understand Collaboration. Fix here rather than hacking bib file?
 % \bibliographystyle{unsrtnat}
