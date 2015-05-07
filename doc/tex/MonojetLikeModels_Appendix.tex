@@ -1,0 +1,102 @@
+
+\section{CKKW parton matching implementation}
+\label{sec:monojet_parton_match}
+
+The parton matching techniques are implemented in the mono-jet like MC generation in order to avoid double counting the partons from matrix elements and parton showering. The CKKW matching is better developed and preferred in this study. As the illustration sample, the EFT D5 samples are generated with \texttt{MadGraph5\_aMC@NLO} version 2.2.2. The technical implementations are shown as below.
+%TODO: Add references
+
+On the generator side, i.e., \texttt{MadGraph5\_aMC@NLO}:
+\begin{itemize}
+\item \texttt{ickkw = 0}
+\item \texttt{ktdurham = }matching scale
+\item \texttt{dparameter = 0.4}
+\item \texttt{dokt = T}
+\item \texttt{ptj=20}
+\item \texttt{drjj=0}
+\item \texttt{mmjj=0}
+\item \texttt{ptj1min=0}
+\end{itemize}
+On the parton showering side, i.e., \texttt{Pythia 8}:
+\begin{itemize}
+\item \texttt{Merging:ktType           = 1}
+\item \texttt{Merging:TMS              = }matching scale
+\item \texttt{1000022:all = chi chi~ 2 0 0 30.0 0.0 0.0 0.0 0.0}
+\item \texttt{1000022:isVisible = false}
+\item \texttt{Merging:doKTMerging      = on}
+\item \texttt{Merging:Process          = pp>{chi,1000022}{chi~,-1000022}}
+\item \texttt{Merging:nJetMax          = 2}
+\end{itemize}
+The matching scales should be the same for the generation and parton showering. In \texttt{MadGraph5\_aMC@NLO}, the particle data group ID \texttt{1000022} is used for weakly interacting dark matter candidates, which should be informed to \texttt{Pythia 8}. 
+
+In this test we are generating the process with up to two parton emissions, so the command \texttt{Merging:nJetMax = 2} is applied to \texttt{Pythia 8}. The different parton emission cases are generated separately:
+\begin{itemize}
+\item \texttt{p p > chi chi~}
+\item \texttt{p p > chi chi~ j}
+\item \texttt{p p > chi chi~ j j}
+\end{itemize}
+Two matching scales are tested at 30 and 80 GeV. The differential jet rates are shown in Fig. \ref{fig:CKKW_D5_30} for matching scale 30 GeV and Fig. \ref{fig:CKKW_D5_80} for 80 GeV. The 80 GeV matching scale gives smoother distribution, which is desired to avoid artifical effect due to parton matching. There will be a small tink around the matching scale for both cases.
+
+\begin{figure} [thbp]
+  \center
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet1to2_30.pdf}
+    \caption{$1\rightarrow2$ parton process}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet2to3_30.pdf}
+    \caption{$2\rightarrow3$ parton process}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet3to4_30.pdf}
+    \caption{$3\rightarrow4$ parton process}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet4to5_30.pdf}
+    \caption{$4\rightarrow5$ parton process}
+  \end{subfigure}
+  \caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 30 GeV. 0-, 1- and 2-parton emission cases are generated separatedly.}
+  \label{fig:CKKW_D5_30}
+\end{figure}
+
+\begin{figure} [thbp]
+  \center
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet1to2_80.pdf}
+    \caption{$1\rightarrow2$ parton process}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet2to3_80.pdf}
+    \caption{$2\rightarrow3$ parton process}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet3to4_80.pdf}
+    \caption{$3\rightarrow4$ parton process}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/HistoJet4to5_80.pdf}
+    \caption{$4\rightarrow5$ parton process}
+  \end{subfigure}
+  \caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 80 GeV. 0-, 1- and 2-parton emission cases are generated separatedly.}
+  \label{fig:CKKW_D5_80}
+\end{figure}
+
+The MC distributions for the missing transverse energy and transverse momenta for the leading and subleading jets are plotted in Fig.. For the mono-jet analysis, usually a missing transverse energy cut larger than 300 GeV is applied for offline selection, which makes the contribution of the 0-parton emission case negligible in the mono-jet analysis.
+
+\begin{figure} [thbp]
+  \center
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/jet1pt_matching80.pdf}
+    \caption{Transverse momentum of leading jet}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/jet1pt_matching80.pdf}
+    \caption{Transverse momentum of subleading jet}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/MET_matching80.pdf}
+    \caption{Missing transverse energy}
+  \end{subfigure}
+  \caption{Kinematics distributions for EFT D5 sample with CKKW matching scale at 80 GeV. 0-, 1- and 2-parton emission cases are generated separatedly and added together by cross sections. The 0-parton emission case has very limited contribution for missing transverse energy larger than 300 GeV region.}
+  \label{fig:Kine_D5_80}
+\end{figure}
+
