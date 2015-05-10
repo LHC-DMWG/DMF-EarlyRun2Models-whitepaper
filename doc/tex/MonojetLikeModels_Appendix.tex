@@ -100,3 +100,48 @@ The MC distributions for the missing transverse energy and transverse momenta fo
   \label{fig:Kine_D5_80}
 \end{figure}
 
+\section{Parton emission generation}
+\label{sec:monojet_parton_emission}
+In order to describe the signal kinematics correctly and save time in MC generation, the parton emissions will only be generated up to a certain numbers of parton and ignore the cases with more partons. The later ones usually have cross sections small enough and limited contribution in the interested kinematic regions.
+
+It is found that the 3- or more-parton emission cases are negligible in our intersted regions, but the 2-parton emission case has significant contributions. The 0- and 1-parton emissions are out of discussion since they give the baseline signature in this analysis. The impacts of 2- and 3-parton emissions are quantified in this section.
+
+Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requested in matching step with \texttt{Merging:nJetMax=3} and scale at 80 GeV in Pythia8. The kinematic distributions for MET, leading and subleading jet transverse momenta are plotted in Fig, while the jet multiplicity at different leading jet transverse momentum cuts is shown in Fig.
+
+\begin{figure} [thbp]
+  \center
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/h_MET_MET250.pdf}
+    \caption{Transverse momentum of leading jet}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/h_pt1_MET250.pdf}
+    \caption{Transverse momentum of subleading jet}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/h_pt2_MET250.pdf}
+    \caption{Missing transverse energy}
+  \end{subfigure}
+  \caption{Kinematics distributions for EFT D5 sample with CKKW matching scale at 80 GeV. 0-, 1-, 2- and 3-parton emission cases are generated separatedly and added together by cross sections.}
+  \label{fig:RatioKine_D5}
+\end{figure}
+
+\begin{figure} [thbp]
+  \center
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/h_njet30.pdf}
+    \caption{Jet multiplicity, leading jet $p_{T}>30$ GeV}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/h_njet80.pdf}
+    \caption{Jet multiplicity, leading jet $p_{T}>80$ GeV}
+  \end{subfigure}
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{figures/monojet_appendix/h_njet250.pdf}
+    \caption{Jet multiplicity, leading jet $p_{T}>250$ GeV}
+  \end{subfigure}
+  \caption{Jet multiplicity distributions for EFT D5 sample with CKKW matching scale at 80 GeV. 0-, 1-, 2- and 3-parton emission cases are generated separatedly and added together by cross sections.}
+  \label{fig:RatioKine_D5}
+\end{figure}
+
+With the ATLAS run-I baseline cut (MET and leading jet $p_{T}$ larger than 250 GeV, less than 4 jets), the 0+1 parton emission has 11.4\% yield less compared to 0+1+2+3 parton emission, while the 0+1+2 has only 0.4\% less. With MET$>$400 GeV, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 0.8\% less compared to 0+1+2+3 parton emission. With MET$>$600 GeV, 0+1 parton emission has 22.1\% yield less and 0+1+2 parton emission has 1.6\% less compared to 0+1+2+3 parton emission.
