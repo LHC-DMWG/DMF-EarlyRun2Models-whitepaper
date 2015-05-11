@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%
 %Compilation options
 %%%%%%%%%%%%%
-\newif\ifNotMonojetTTBarOnly
+%\newif\ifNotMonojetTTBarOnly
 
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
@@ -128,17 +128,17 @@
 
 \blankpage
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Introduction}
 \label{sec:Introduction}
 \input{tex/Introduction.tex}
-\fi
+%\fi
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Overall choices for simplified models}
 \label{sec:SimplifiedModelsIntro} 
 \input{tex/SimplifiedModelsIntro.tex}
-\fi
+%\fi
 
 \chapter{Recommended models for all MET+X analyses}
 \label{subsec:MonojetLikeModels}
@@ -148,11 +148,11 @@
 % \label{subsec:ScalarModels}
 % \input{tex/ScalarModels}
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Specific models for signatures with EW bosons}
 \label{subsec:EWSpecificModels}
 \input{tex/EWSpecificModels}
-\fi
+%\fi
 
 \chapter{Specific models for signatures with heavy flavor quarks}
 \label{subsec:DMHFModels}
@@ -162,35 +162,35 @@
 % \label{subsec:SUSYModels}
 % \input{tex/SUSYModels}
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Validity of EFT approach}
 \label{sec:EFTValidity} 
 \input{tex/EFTValidity.tex}
-\fi
+%\fi
 
-% \chapter{Recommendations for expressing collider constraints}
-% \label{sec:ColliderConstraints} 
-% \input{tex/ColliderConstraints.tex}
+%% \chapter{Recommendations for expressing collider constraints}
+%% \label{sec:ColliderConstraints} 
+%% \input{tex/ColliderConstraints.tex}
 
 \appendix
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Appendix: Detailed studies on mono-jet signatures}
 \label{app:MonojetLikeModels_Appendix}
 \input{tex/MonojetLikeModels_Appendix.tex}
-\fi
+%\fi
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Appendix: Detailed studies for EW models}
 \label{app:EWSpecificModels_Appendix}
 \input{tex/EWSpecificModels_Appendix.tex}
-\fi 
+%\fi 
 
-\ifNotMonojetTTBarOnly
+%\ifNotMonojetTTBarOnly
 \chapter{Appendix: Table of cross sections for $t\bar{t}$+MET searches}
 \label{app:TTBar_Xsecs}
 \input{tex/TTBar_Xsecs_Appendix.tex}
-\fi 
+%\fi 
 
 %%FIXME: it does not understand Collaboration. Fix here rather than hacking bib file?
 % \bibliographystyle{unsrtnat}
