@@ -61,11 +61,13 @@ We assume that no additional visible or invisible decays contribute to the width
 where the individual contributions to this from the partial width are from
 
 \begin{align}
-\Gamma_{\bar{\chi}\chi}^{\rm{V}}&=\frac{\gDM^2 \mMed}{12\pi}\left(1+\frac{2 \mdm^2}{\mMed^2} \right)\sqrt{1-\frac{4 \mdm^2}{\mMed^2}}\\
-\Gamma_{\bar{q}q}^{\rm{V}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1+\frac{2 m_q^2}{\mMed^2} \right)\sqrt{1-\frac{4 m_q^2}{\mMed^2}}\\
-\Gamma_{\bar{\chi}\chi}^{\rm{A}}&=\frac{\gDM^2 \mMed}{12\pi} \left(1-\frac{4 \mdm^2}{\mMed^2}\right)^{3/2}\\
-\Gamma_{\bar{q}q}^{\rm{A}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2}\label{eq:Gamma4}\;.
+\Gamma_{\bar{\chi}\chi}^{\rm{V}}&=\frac{\gDM^2 \mMed}{12\pi}\left(1+\frac{2 \mdm^2}{\mMed^2} \right)\sqrt{1-\frac{4 \mdm^2}{\mMed^2}} \theta(\mMed-2\mdm)\\
+\Gamma_{\bar{q}q}^{\rm{V}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1+\frac{2 m_q^2}{\mMed^2} \right)\sqrt{1-\frac{4 m_q^2}{\mMed^2}} \theta(\mMed-2m_q)\\
+\Gamma_{\bar{\chi}\chi}^{\rm{A}}&=\frac{\gDM^2 \mMed}{12\pi} \left(1-\frac{4 \mdm^2}{\mMed^2}\right)^{3/2} \theta(\mMed-2\mdm)\\
+\Gamma_{\bar{q}q}^{\rm{A}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2} \theta(\mMed-2m_q)\;,
+\label{eq:GammaV}
 \end{align}
+where $\theta(x)$ denotes the Heaviside step function.
 Note the color factor 3 in the quark terms.
 Figure\,\ref{fig:monojet_width_V} shows the minimal width as a function of mediator mass for both vector and axial-vector mediators assuming couplings of 1. With this choice of the couplings, the dominant contribution to the minimal width comes from the quarks due to the color factor enhancement.
 
@@ -272,12 +274,24 @@ The matrix element implementation of the s-channel spin-0 mediated DM production
 %\end{align}
 %where $v=246$\,GeV denotes the Higgs vacuum expectation value.
 
-We choose to consider minimal mediator width given by Eq.\,\ref{eq:monojet_min}, where the individual contributions follow from
+We choose to consider minimal mediator width given by %Eq.\,\ref{eq:monojet_min},
+\begin{equation}
+\Gamma_{\rm{min}}=\Gamma_{\bar{\chi}\chi} + \sum_{q}\Gamma_{\bar{q}q} + \Gamma_{gg},
+\end{equation}
+where the individual contributions follow from
 \begin{align}
-\Gamma_{\bar{\chi}\chi}^{\rm{S}}&=\frac{\gDM^2 \mMed}{8\pi}\left(1-\frac{4 \mdm^2}{\mMed^2} \right)^{3/2}\\
-\Gamma_{\bar{q}q}^{\rm{S}}&= \frac{3 \gq^2 \mMed}{8\pi}\frac{m_q^2}{v^2}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2}\\
-\Gamma_{\bar{\chi}\chi}^{\rm{P}}&=\frac{\gDM^2 \mMed}{8\pi} \sqrt{1-\frac{4 \mdm^2}{\mMed^2}}\\
-\Gamma_{\bar{q}q}^{\rm{P}}&= \frac{3 \gq^2 \mMed}{8\pi}\frac{m_q^2}{v^2}\sqrt{1-\frac{4 m_q^2}{\mMed^2}}\label{eq:Gamma4}\;.
+\Gamma_{\bar{\chi}\chi}^{\rm{S}}&=\frac{\gDM^2 \mMed}{8\pi}\left(1-\frac{4 \mdm^2}{\mMed^2} \right)^{3/2} \theta(\mMed-2\mdm)\\
+\Gamma_{\bar{q}q}^{\rm{S}}&= \frac{3 \gq^2 \mMed}{8\pi}\frac{m_q^2}{v^2}\left(1-\frac{4 m_q^2}{\mMed^2}\right)^{3/2} \theta(\mMed-2m_q)\\
+\Gamma_{gg}^{\rm{S}}&= \frac{\gq^2 \alpha_s^2}{2\pi^3 v^2 \mMed} \left| \sum_q m_q^2 F_{\rm{S}} \left( \frac{4m_q^2}{\mMed^2} \right) \right|^2\\
+\Gamma_{\bar{\chi}\chi}^{\rm{P}}&=\frac{\gDM^2 \mMed}{8\pi} \sqrt{1-\frac{4 \mdm^2}{\mMed^2}} \theta(\mMed-2\mdm)\\
+\Gamma_{\bar{q}q}^{\rm{P}}&= \frac{3 \gq^2 \mMed}{8\pi}\frac{m_q^2}{v^2}\sqrt{1-\frac{4 m_q^2}{\mMed^2}} \theta(\mMed-2m_q)\\
+\Gamma_{gg}^{\rm{P}}&= \frac{\gq^2 \alpha_s^2}{2\pi^3 v^2 \mMed} \left| \sum_q m_q^2 F_{\rm{P}} \left( \frac{4m_q^2}{\mMed^2} \right) \right|^2\;,
+\label{eq:GammaS}
+\end{align}
+with the form factors defined as
+\begin{align}
+F_{\rm{S}}(x)&= 1+(1-x)\arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\\
+F_{\rm{P}}(x)&= \arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\;.
 \end{align}
 The minimal width for scalar and pseudo-scalar mediators with $\gq=\gDM=1$ are shown in Fig.\,\ref{fig:monojet_width_S}, illustrating the effect of the Higgs-like Yukawa couplings. For the mediator masses above twice the top quark mass $m_t$, the minimal width receives the dominant contribution from the top quark. For lighter mediator masses, Dark Matter dominates as the couplings to lighter quarks are Yukawa suppressed.
 Note that we decide to ignore the partial width coming from gluons through loops as it can be safely neglected\,\cite{Haisch:2015ioa}.
@@ -394,34 +408,38 @@ The results of the scan over the couplings presented in the previous sections in
 
 Let us now elaborate on a cross section scaling procedure.
 %TODO say something about the fact that this can work only for fixed masses
-The propagator on the s-channel exchange is written in a Breit-Wigner form as $\frac{1}{\sqrt{s}-\mMed^2 + i\mMed\Gamma}$. The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
+The propagator on the s-channel exchange is written in a Breit-Wigner form as $\frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the invariant mass of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
+The size of the momenum transfer with respect to the mediator mass allows to classify the production in the following way:
 \begin{itemize}
-\item off-shell production when $\sqrt{s} \gg \mMed$ leading to suppressed cross sections,
-\item on-shell production when $\sqrt{s} \sim \mMed$ leading to enhanced cross sections,
-\item effective field theory (EFT) limit when $\sqrt{s} \ll \mMed$.
+\item off-shell production when $q^2 \gg \mMed$ leading to suppressed cross sections,
+\item on-shell production when $q^2 \sim \mMed$ leading to enhanced cross sections,
+\item effective field theory (EFT) limit when $q^2 \ll \mMed$.
 \end{itemize}
 All three categories can be distinguished in Fig.\,\ref{fig:monojet_MstarMmed} showing the upper limit on the interaction scale $M^{*} \equiv \mMed/\sqrt{\gq\gDM}$ for vector mediator. 
 In the case of the off-shell production and the EFT limit, the first term in the propagator dominates which reduces the dependence on the mediator width. Therefore, in these cases one can approximate the cross section as
 \begin{equation}
 \sigma \propto \gq^2\gDM^2.
 \end{equation}
-The on-shell production regime is the most interesting one as it gives the best chances for a discovery at the LHC given the cross section enhancement. The propagator term with the width cannot be neglected in this case and, in the narrow width approximation, one can integrate
+The on-shell production regime is the most interesting one as it gives the best chances for a discovery at the LHC given the cross section enhancement. The propagator term with the width cannot be neglected in this case and, in the narrow width approximation which requires $\Gamma \ll \mMed$, one can integrate
 \begin{equation}
 \int \frac{ds}{(s-\mMed^2)^2 + \mMed^2\Gamma^2} = \frac{\pi}{\mMed\Gamma}
+\label{eq:monojet_int}
 \end{equation}
 which further implies the cross section scaling
 \begin{equation}
 \sigma \propto \frac{\gq^2\gDM^2}{\Gamma}.
 \label{eq:monojet_scaling}
 \end{equation}
+The narrow with approximation is important here as it ensures an integration over parton distribution functions (PDFs) can be neglected. In other words, it is assumed the integrant in Eq.\,\ref{eq:monojet_int} is non-zero only for a small region of $s$, such that the PDFs can be taken to be constant in this range.
 Since $\Gamma \sim \gq^2+\gDM^2$, one can simplify this rule in the extreme cases as follows
 \begin{eqnarray}
 \sigma &\propto& \frac{\gq^2\gDM^2}{\gq^2+\gDM^2} \xrightarrow{\gq \ll \gDM} \gq^2 \label{eq:monojet_gSM} \\
 \sigma &\propto& \frac{\gq^2\gDM^2}{\gq^2+\gDM^2} \xrightarrow{\gq \gg \gDM} \gDM^2 \label{eq:monojet_gDM} \;.
 \end{eqnarray}
-However, it is important to keep in mind that there is no simple scaling rule for how the cross section changes with the Dark Matter mass, mediator mass and the mediator width because PDFs matter in such cases as well.
+%However, it is important to keep in mind that there is no simple scaling rule for how the cross section changes with the Dark Matter mass, mediator mass and the mediator width because PDFs matter in such cases as well.
 %The only case where there is a simple scaling with mass is if one mass is much smaller than the other mass, in which case the cross section becomes independent of the smaller mass.
-Therefore, the scaling procedure outlined above is expected to work only for fixed masses and fixed mediator width.
+However, it is important to keep in mind that there is no simple scaling rule for how the cross section changes with the Dark Matter mass and the mediator mass, or for mediators with a large width, because PDFs matter in such cases as well.
+Therefore, the scaling procedure outlined above is expected to work only for fixed masses and fixed mediator width, assuming the narrow widht approximation applies.
 
 
 \begin{figure}
@@ -462,7 +480,7 @@ On the contrary, both the Standard Model and Dark Matter partial width have comp
 
 
 The performance of the cross section scaling is demonstrated in Fig.\,\ref{fig:monojet_scaling} %where two mass points $\mMed=100$\,GeV and 1\,TeV are chosen with $\mdm=10$\,GeV
-where the mass point $\mMed=1$\,TeV and $\mdm=10$\,GeV is chosen
+where two mass points $\mMed=100$\,GeV and 1\,TeV with $\mdm=10$\,GeV are chosen
 and rescaled from the starting point $\gq=\gDM=1$ according to Eq.\,\ref{eq:monojet_scaling} to populate the whole $\gq$--$\gDM$ plane. This means the width is not kept constant in this test and this is done in purpose in order to point out deviations from the scaling when the width is altered. For each mass point, the rescaled cross section is compared to the generator cross section and the ratio of the two is plotted.
 For the given choice of the mass points, the scaling seems to work approximately with the precision of $\sim20\%$ in the region where $\Gamma_{\rm{min}}<\mMed$.
 Constant colors indicate the lines along which the cross section scaling works precisely and there is a remarkable resemblance of the patterns shown in the plots of the mediator width. To prove the scaling along the lines of constant width works, one such line is chosen in Fig.\,\ref{fig:monojet_scaling_constwidth} for a scalar mediator, defined by $\mMed=300$\,GeV, $\mdm=100$\,GeV, $\gq=\gDM=1$, and the rescaled and generated cross sections are found to agree within 3\%.
@@ -520,7 +538,8 @@ The cross section for the sample with couplings $\gq$ and $\gDM$ and modified me
 \begin{equation}
 \sigma(\gq,\gDM, n\Gamma_{\rm{min}}(\gq,\gDM)) = \frac{1}{n^2} \sigma(\sqrt{n}\gq,\sqrt{n}\gDM,\Gamma_{\rm{min}}(\sqrt{n}\gq,\sqrt{n}\gDM))
 \end{equation}
-Advantage of doing this is again in the fact that no event selection and detector response needs to be simulated since the changes in couplings do not have an effect on the shapes of kinematic distributions.
+Here, it is again assumed the narrow width approximation applies.
+The advantage of doing this is in the fact that no event selection and detector response needs to be simulated since the changes in couplings do not have an effect on the shapes of kinematic distributions.
 
 
 
