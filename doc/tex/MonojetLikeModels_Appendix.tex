@@ -39,7 +39,7 @@ Two matching scales are tested at 30 and 80 GeV. The differential jet rates are 
 \begin{figure}[h!]
 	\centering  
 	\subfloat[$1\rightarrow2$ parton process]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet1to2_80.pdf}
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet1to2_30.pdf}
 	}
 	\hfill
 	\subfloat[$2\rightarrow3$ parton process]{%
@@ -53,7 +53,7 @@ Two matching scales are tested at 30 and 80 GeV. The differential jet rates are 
 	\subfloat[$4\rightarrow5$ parton process]{%
 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet4to5_30.pdf}
 	}
-	\caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 30 GeV. 0-, 1- and 2-parton emission cases are generated separatedly.}
+	\caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 30 GeV. 0-, 1- and 2-parton emission cases are generated separatedly. A vertical line is drawn at the matching scale.}
 	\label{fig:CKKW_D5_30}
 \end{figure}
 
@@ -75,10 +75,36 @@ Two matching scales are tested at 30 and 80 GeV. The differential jet rates are 
 	\subfloat[$4\rightarrow5$ parton process]{%
     \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet4to5_80.pdf}
 	}
-  \caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 80 GeV. 0-, 1- and 2-parton emission cases are generated separatedly.}
+  \caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 80 GeV. 0-, 1- and 2-parton emission cases are generated separatedly. A vertical line is drawn at the matching scale.}
   \label{fig:CKKW_D5_80}
 \end{figure}
 
+To compare the effect in a finer step, the matching scales at 30, 50, 70, 80 and 90 GeV are plotted in Fig\ref{fig:CKKW_D5_zoom}. Globally good agreement is seen among different matching scales, with some difference observed around the matching scale. A closer look in this range shows that the 80 and 90 GeV matching scales produce very close distributions, so it is safe to use 80 GeV as the baseline matching scale.
+
+\begin{figure}[h!]
+	\centering  
+	\subfloat[$1\rightarrow2$ parton process]{%
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_1.pdf}
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_1.pdf}
+	}
+	\hfill
+	\subfloat[$2\rightarrow3$ parton process]{%
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_2.pdf}
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_2.pdf}
+	}
+	\hfill
+	\subfloat[$3\rightarrow4$ parton process]{%
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_3.pdf}
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_3.pdf}
+	}
+	\hfill
+	\subfloat[$4\rightarrow5$ parton process]{%
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_4.pdf}
+		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_4.pdf}
+	}
+  \caption{Jet differential rates distributions for EFT D5 sample with CKKW matching scale at 30, 50, 70, 80 and 90 GeV. 0-, 1- and 2-parton emission cases are generated separatedly and the total merged contribution is shown. A closer look is shown around the matching scale.}
+  \label{fig:CKKW_D5_zoom}
+\end{figure}
 
 
 The MC distributions for the missing transverse energy and transverse momenta for the leading and subleading jets are plotted in Fig.. For the mono-jet analysis, usually a missing transverse energy cut larger than 300 GeV is applied for offline selection, which makes the contribution of the 0-parton emission case negligible in the mono-jet analysis.
@@ -107,7 +133,7 @@ In order to describe the signal kinematics correctly and save time in MC generat
 
 It is found that the 3- or more-parton emission cases are negligible in our intersted regions, but the 2-parton emission case has significant contributions. The 0- and 1-parton emissions are out of discussion since they give the baseline signature in this analysis. The impacts of 2- and 3-parton emissions are quantified in this section.
 
-Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requested in matching step with \texttt{Merging:nJetMax=3} and scale at 80 GeV in Pythia8. The kinematic distributions for MET, leading and subleading jet transverse momenta are plotted in Fig, while the jet multiplicity at different leading jet transverse momentum cuts is shown in Fig.
+Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requested in matching step with \texttt{Merging:nJetMax=3} and scale at 80 GeV in Pythia8for 0+1+2+3 parton emission case, while \texttt{Merging:nJetMax=2} requested for 0+1+2 case and \texttt{Merging:nJetMax=1} requested for 0+1 case. The kinematic distributions for MET, leading and subleading jet transverse momenta are plotted in Fig.\ref{fig:RatioKine_D5}, while the jet multiplicity at different leading jet transverse momentum cuts is shown in Fig.\ref{fig:RatioKine_D5_2}.
 
 \begin{figure}[h!]
 	\centering  
@@ -146,4 +172,4 @@ Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requeste
 	\label{fig:RatioKine_D5_2}
 \end{figure}
 
-With the ATLAS run-I baseline cut (MET and leading jet $p_{T}$ larger than 250 GeV, less than 4 jets), the 0+1 parton emission has 11.4\% yield less compared to 0+1+2+3 parton emission, while the 0+1+2 has only 0.4\% less. With MET$>$400 GeV, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 0.8\% less compared to 0+1+2+3 parton emission. With MET$>$600 GeV, 0+1 parton emission has 22.1\% yield less and 0+1+2 parton emission has 1.6\% less compared to 0+1+2+3 parton emission.
+With the ATLAS run-I baseline cut (MET and leading jet $p_{T}$ larger than 250 GeV, less than 4 jets), the 0+1 parton emission has 17.4\% yield less compared to 0+1+2+3 parton emission, while the 0+1+2 has 2.2\% less. With MET$>$400 GeV, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 2.4\% less compared to 0+1+2+3 parton emission. With MET$>$600 GeV, 0+1 parton emission has 16.5\% yield less and 0+1+2 parton emission has 2.9\% less compared to 0+1+2+3 parton emission. The same numbers hold if a sysmetric cut is added on leading jet transverse momentum.
