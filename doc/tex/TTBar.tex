@@ -27,13 +27,13 @@ As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudosc
 
 %Extending the SM Higgs sector to a two Higgs doublet model implies more complex couplings such as  $g_u = \cot \beta$ and $g_d = g_e = \tan \beta$ where $\tan \beta$ denotes the ratio of VEVs of the two Higgs doublets.  The case $g_u \neq  g_d \neq g_\ell$ requires more additional scalars with potentially large masses, and it is not covered here: for simplicity, we assume universal SM-mediator couplings $g_v = g_u = g_d = g_\ell$ in the remainder of this work. 
  
-The expected signal of DM pair production depends on the production rate defined by the dark matter mass $m_\chi$, mediator $m_{\phi/a}$, on the couplings $g_i$ and on the branching ration defined by the total decay width of the mediator $\phi/a$. We calculate the minimum possible width (assuming only decays into the dark matter and the Standard Model fermions) that is consistent with a given value of $g_\chi g_\textrm{SM}$. These are given by Eq.~\myeq{eq:width} \cite{Buckley:2014fba}. 
+The expected signal of DM pair production depends on the production rate defined by the dark matter mass $m_\chi$, mediator $m_{\phi/a}$, on the couplings $g_i$ and on the branching ratio defined by the total decay width of the mediator $\phi/a$. We calculate the minimum possible width (assuming only decays into the dark matter and the Standard Model fermions) that is consistent with a given value of $g_\chi g_q$, and assuming all couplings to SM particles equal $\gq = g_u = g_d = g_\ell$. These are given by Eq.~\myeq{eq:width} \cite{Buckley:2014fba}. 
 
 \begin{equation} \label{eq:width}
 \begin{split}
-\Gamma_{\phi,a}  = & \sum_f N_c \frac{y_f^2 g_v^2 m_{\phi,a}}{16 \pi} \left(1-\frac{4 m_f^2}{m_{\phi,a}^2}\right)^{3/2}
+\Gamma_{\phi,a}  = & \sum_f N_c \frac{y_f^2 g_q^2 m_{\phi,a}}{16 \pi} \left(1-\frac{4 m_f^2}{m_{\phi,a}^2}\right)^{3/2}
                    + \frac{g_\chi^2 m_{\phi,a}}{8 \pi} \left(1-\frac{4 m_\chi^2}{m_{\phi,a}^2}\right)^{3/2}\\
-                 & + \frac{\alpha_s^2 y_t^2 g_v^2 m_{\phi,a}^3}{32 \pi^3 v^2} \left| f_{\phi,a}\left(\tfrac{4m_t^2}{m_{\phi,a}^2} \right)\right|^2
+                 & + \frac{\alpha_s^2 y_t^2 g_q^2 m_{\phi,a}^3}{32 \pi^3 v^2} \left| f_{\phi,a}\left(\tfrac{4m_t^2}{m_{\phi,a}^2} \right)\right|^2
 \end{split}
 \end{equation}
 
@@ -44,7 +44,7 @@ f_\phi (\tau) = \tau \left [ 1+ (1-\tau) \arctan^2 \left ( \frac{1}{\sqrt{\tau-1
 f_a (\tau) =  \tau \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \,. 
 \eea
 
-The first term in each width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks and $N_c = 1$ for leptons. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last two terms correspond to decay into gluons.  Since we have assumed that $g_v = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
+The first term in each width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks and $N_c = 1$ for leptons. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last two terms correspond to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
 
 \subsection{Parameter scan}
 
@@ -52,21 +52,17 @@ As discussed in Sec.~\ref{sec:monojet_scalar}, the MFV assumption for spin-$0$ m
 The benchmark chosen for these searches follows the assumptions mentioned in the previous Section: we consider 
 a Dirac fermion DM particle, universal couplings to quarks, and minimum mediator width. 
  
-The benchmark points scanning the model parameters have been selected to ensure that the kinematic features of the parameter space are sufficiently represented. Detailed studies were performed to identify points in the \mdm, $m_{\phi,a}$, $\gdm$, $g_{v}$ (and $\Gamma_{\phi,a}$) parameter space that differ significantly from each other in terms of expected detector acceptance. Because missing transverse momentum is the key observable for searches, the mediator $p_{T}$ spectra is taken to represent the main kinematics of a model. Another consideration in determining the set of benchmarks is to focus on the phase space where we expect the searches to be sensitive during the 2015 LHC run. Based on a projected integrated luminosity of $30\,{\rm fb}^{-1}$ expected for 2015, we disregard model points with a cross section times branching ratio smaller than $0.1\,{\rm fb}$.
+The benchmark points scanning the model parameters have been selected to ensure that the kinematic features of the parameter space are sufficiently represented. Detailed studies were performed to identify points in the \mdm, $m_{\phi,a}$, $\gdm$, $\gq$ (and $\Gamma_{\phi,a}$) parameter space that differ significantly from each other in terms of expected detector acceptance. Because missing transverse momentum is the key observable for searches, the mediator $p_{T}$ spectra is taken to represent the main kinematics of a model. Another consideration in determining the set of benchmarks is to focus on the phase space where we expect the searches to be sensitive during the 2015 LHC run. Based on a projected integrated luminosity of $30\,{\rm fb}^{-1}$ expected for 2015, we disregard model points with a cross section times branching ratio smaller than $0.1\,{\rm fb}$.
 
 \subsection{Parameter scan}
 
-The kinematics is most dependent on the masses \mdm and $m_{\phi,a}$. Figure~\ref{fig:scanPhi} and~\ref{fig:scanPhiPseudo} show typical dependencies for scalar and pseudoscalar couplings respectively.
-
-The two relevant thresholds that are observed for the variation in the kinematic spectra 
-are $m_{\phi,a} = 2\mdm$ and $m_{\phi,a} = 2m_t$. When the mediator mass exceeds both 
-these thresholds then the $p_{T}$ spectra broadens with larger $m_{\phi,a}$ and the kinematics 
-for $\phi$ and $a$ are comparable. The mediator $p_{T}$ spectra changes significantly when 
-crossing these thresholds. In particular, the kinematics are different for an on-shell mediator 
-compared to an off-shell mediator ($m_{\phi,a}<2\mdm$). 
-Furthermore, the scalar case differs from the pseudoscalar one when $m_{\phi}<2m_t$. 
-Therefore, it is important to have benchmark points covering both sides of these thresholds
-with sufficient granularity.
+The kinematics is most dependent on the masses \mdm and $m_{\phi,a}$. Figure~\ref{fig:scanPhi} 
+and~\ref{fig:scanPhiPseudo} show typical dependencies for scalar and pseudoscalar couplings respectively.
+Typically, the mediator $p_T$ spectra broadens with larger $m_{\phi,a}$. 
+The kinematics are also quite different between on-shell and off-shell production. 
+Furthermore, the kinematic differences between scalar and pseudoscalar are large with light mediator 
+masses and are reduced for larger masses. It is therefore important to  
+benchmark points covering on-shell and off-shell production with sufficient granularity.
 
 \begin{figure}[!ht]
   \begin{center}
@@ -112,18 +108,18 @@ Another case where the width can impact the kinematics is when $m_{\phi,a}$ is s
   \begin{center}
     \includegraphics[scale=0.45]{figures/ttbar/ScalarWidth.pdf}
     \vspace{2mm}
-    \caption{\label{fig:widthlargescan} Dependence of the dependence of kinematics on the width of a scalar mediator. The width is increased up to the mediator mass. Choices of mediator and dark matter masses such that $m_{\phi,a}$ is slightly larger than $2m_\chi$ is the only case that shows a sizeable variation of the kinematics as a function of the width.  
+    \caption{\label{fig:widthlargescan} Dependence of the kinematics on the width of a scalar mediator. The width is increased up to the mediator mass. Choices of mediator and dark matter masses such that $m_{\phi,a}$ is slightly larger than $2m_\chi$ is the only case that shows a sizeable variation of the kinematics as a function of the width.  
     }
 \end{center}
 \end{figure}
 
-Given that the kinematics are similar for all couplings $\sim O(1)$, we recommend to generate only samples with $\gdm = g_{v} = 1$. It follows from this that these benchmark points should be a good approximation for non-unity couplings and for $\gdm \neq g_{v}$, provided that the sample is rescaled to the appropriate cross section times branching ratio. While a simple scaling function \textbf{[CD: which?]} is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), we also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to close to the perturbative limit.
+Given that the kinematics are similar for all couplings $\sim O(1)$, we recommend to generate only samples with $\gdm = \gq = 1$. It follows from this that these benchmark points should be a good approximation for non-unity couplings and for $\gdm \neq \gq$, provided that the sample is rescaled to the appropriate cross section times branching ratio. While the simple scaling function $\sigma'* BR' = [\sigma * BR] * (\gq'/\gq)^2 * (\gdm'/\gdm)^2 * (\Gamma/\Gamma')$ is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), we also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to close to the perturbative limit.
 
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[scale=0.45]{figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png}
 \vspace{2mm}
-\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the generator, for a scalar model with $m_{\phi}=400\,{\rm GeV}$ and $\mdm=1\,{\rm GeV}$. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
+\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the generator, for a scalar model with $m_{\phi}=400\,{\rm GeV}$, $\mdm=1\,{\rm GeV}$ and all couplings set to unity. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
 \end{center}
 \end{figure}
 
