@@ -4,23 +4,83 @@
 % http://arxiv.org/abs/arXiv:1402.2285, 
 % and http://arxiv.org/abs/arXiv:1409.2893
 
-The preceding sections discussed models containg a Dirac WIMP coupled to the SM through exchange of a neutral vector or scalar mediator in an $s$-channel process. A $t$-channel process may couple the SM and DM directly. Under the assumption that $\chi$ is a Standard Model (SM) singlet, the mediating particle, labeled $\phi$, is necessarily charged and coloured. 
-
-This model is parallel to, and partially motivated by, the squark of the MSSM, but in this case the $\chi$ is chosen to be Dirac as above. 
-
-An important difference with respect to the MSSM is that {\bf [illustrate that diagram is no longer forced to be small. Should forum provide formulae to relate our parameters to MSSM searches?]}. 
+The preceding sections address models containg a Dirac WIMP coupled to the SM through exchange of a neutral vector or scalar mediator in an $s$-channel process. A $t$-channel process may couple the SM and DM directly, leading to a different phenomenology. Under the assumption that $\chi$ is a Standard Model (SM) singlet, the mediating particle, labeled $\phi$, is necessarily charged and coloured. 
 
 Following the example of Ref.~\cite{Papucci:2014}, the interaction Lagrangian is written as
 
 \begin{equation}
 \mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2,3} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chi
 \end{equation}
-\todo{(Note: \cite{Papucci:2014} uses only i = 1,2, but I think it's fine to extend this to 3 here.)}
+\todo{Note: \cite{Papucci:2014} uses only i = 1,2, but I think it's fine to extend this to 3 here.}
 
 where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which (unlike the $s$-channel mediators) must be heavier than $\chi$. These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
 
+\vspace{5mm}
+
+As for the $s$-channel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour; the same logic also applies to the couplings $g$. The available parameters are then
+
+\begin{equation}
+\{ m_{\chi},\, M_{\phi},\, g\}.
+\end{equation}
+
+\vspace{5mm}
+
+In practice, the third mediator mass and coupling could be separated from the other two, if higher order corrections to the MFV prediction arise due to the large top Yukawa coupling --- a common variation is then to define this split between the first two generations and the third, so the parameters are extended to
+
+\begin{equation}
+\{ m_{\chi},\, M_{\phi_{1,2}},\,M_{\phi_3},\, g_{1,2},\, g_3\}.
+\end{equation}
+
+For the purposes of the rest of this section, we will assume the universal variant $M_{\phi_{1,2}} = M_{\phi_3}$, $g_{1,2} = g_3$.
+
+\vspace{5mm}
+
+The minimal width of each mediator is expressed, using the example of decay to an up quark, as
+
+\begin{equation}
+\begin{split}
+\Gamma (\phi_i \rightarrow \bar{u}_i \chi) &= \frac{g_i^2}{16 \pi M_{\phi_i}^3}(M_{\phi_i}^2 - m_{u_i}^2 - m_{\chi}^2) 		\\
+					   & \times \sqrt{M_{\phi_i}^4 + m_{u_i}^4 + m_{\chi}^4 - 2M_{\phi_i}^2m_{u_i}^2 - 2M_{\phi_i}^2m_{\chi}^2 - 2m_{u_i}^2m_{\chi}^2} \, ,
+\end{split}
+\end{equation}
+this reduces to 
+
+\begin{equation}
+\frac{g_i^2 M_{\phi_i}}{16 \pi} \left(1 - \frac{m_{\chi}^2}{M_{\phi_i}^2} \right)^2
+\end{equation}
+in the limit $M_{\phi_i}, m_{\chi} \gg m_{u_i}$.
+
+\vspace{5mm}
+
+The leading-order processes involved in MET+jet production are shown
+in Fig. \ref{fig:tchannelMonojet}. An interesting point of difference
+with the $s$-channel simplified models is that the mediator can
+radiate a SM object, such as a jet or gauge boson. The forum has also
+studied MET+$Z$ production where, in diagrams of the first type, one
+of the initial quarks radiates $Z$ boson instead of a gluon, or the
+boson is radiated off the internal scalar line \todo{cite published
+  ATLAS analysis}. This model can also give a signal in the di-jet +
+MET channel when, for example, the $\chi$ is exchanged in the
+$t$-channel and the resulting $\phi$ pair each decay to a jet +
+$\chi$. Fig.~\ref{tchannelDijet} shows the leading order diagrams.
+
+The model is parallel to, and partially motivated by, the squark of
+the MSSM, but in this case the $\chi$ is chosen to be Dirac as
+above. A second, crucial different with respect to the MSSM is the
+contribution from diagrams involving the exchange or production of a
+single squark $\phi$ and the importance of off-shell $\phi$. Searches for
+supersymmetry signals are typically optimised for squark pair
+production, since the equvialent of the DM coupling $g$ is constrained
+to be very small within the MSSM. In the more general theories
+considered here, $g$ is free to take on large values of order 1 or
+more, and thus diagrams neglected in MSSM simulation can occur at a
+much higher rate here. While constraints from SUSY jets+MET analyses
+on these models should be translated to this model, LHC experiments
+should also study analyses directly optimized for the diagrams which
+are relevant for large $g$.
+
 \begin{figure}
-  \unitlength=0.0045\linewidth
+  \unitlength=0.0043\linewidth
   \begin{feynmandiagram}[modelTmonojetA]
     \fmfleft{i1,i2}
     \fmfright{o1,o2}
@@ -59,7 +119,7 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmflabel{\Large $q$}{o1}
     \fmflabel{\Large $\bar{\chi}$}{o2}
     \fmfdot{v1,v2,v3}
-  \end{feynmandiagram}\\\vspace{\baselineskip}
+  \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTmonojetB]
     \fmfleft{i1,i2}
     \fmfright{o1,o2,o3}
@@ -97,16 +157,16 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmflabel{\Large $q$}{o2}
     \fmflabel{\Large $\bar{\chi}$}{o1}
     \fmfdot{v1,v2,v3}
-  \end{feynmandiagram}\quad
+  \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTmonojetE]
     \fmfleft{i1,i2}
     \fmfright{o1,o2,o3}
-    \fmf{fermion}{i2,v3,o2}
+    \fmf{fermion}{i2,v3,o3}
     \fmf{fermion}{o1,v1,i1}
     \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v1,v2}
     \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v2,v3}
     \fmf{gluon}{v2,o2}
-    \fmf{wiggly,tension=0}{v3,o2}
+    \fmf{wiggly,tension=0}{v3,o3}
     \fmf{wiggly,tension=0}{v1,o1}
     \fmflabel{\Large ${q}$}{i2}
     \fmflabel{\Large ${\bar{q}}$}{i1}
@@ -115,11 +175,11 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmflabel{\Large $\bar{\chi}$}{o1}
     \fmfdot{v1,v2,v3}
   \end{feynmandiagram}
-\caption{This is a caption.}
+\caption{Leading order mono-jet $t$-channel processes, adapted from {\cite:Papucci:2014}.}\label{fig:tchannelMonojet}
 \end{figure}
 
 \begin{figure}
-  \unitlength=0.0045\linewidth
+  \unitlength=0.0043\linewidth
   \begin{feynmandiagram}[modelTDijetA]
     \fmfleft{i1,i2}
     \fmfright{o1,o2,o3,o4}
@@ -144,8 +204,8 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
   \begin{feynmandiagram}[modelTDijetB]
     \fmfleft{i1,i2}
     \fmfright{o1,o2,o3,o4}
-    \fmf{gluon}{i2,v2}
-    \fmf{gluon}{i1,v1}
+    \fmf{fermion}{v2,i2}
+    \fmf{fermion}{i1,v1}
     \fmf{scalar}{v4,v2}
     \fmf{scalar}{v1,v3}
     \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v4,v2}
@@ -157,18 +217,17 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmf{fermion}{o2,v3,o1}
     \fmf{wiggly,tension=0}{v4,o4}
     \fmf{wiggly,tension=0}{v3,o2}
-    \fmflabel{\Large ${g}$}{i2}
-    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large ${\bar{q}}$}{i2}
+    \fmflabel{\Large ${q}$}{i1}
     \fmflabel{\Large $\chi$}{o4}
     \fmflabel{\Large $\bar{\chi}$}{o2}
     \fmflabel{\Large $\bar{q}$}{o3}
     \fmflabel{\Large $q$}{o1}
     \fmfdot{v1,v2,v3,v4}
-  \end{feynmandiagram}\\\vspace{\baselineskip}
+  \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTDijetC]
     \fmfleft{i1,i2}
-    \fmftop{o4,o3}
-    \fmfright{o1,o2}
+    \fmfright{o1,o2,o3,o4}
     \fmf{fermion}{i2,v4,v3}
     \fmf{gluon}{v4,o4}
     \fmf{fermion}{v3,o3}
@@ -186,12 +245,9 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmflabel{\Large $\bar{\chi}$}{o1}
     \fmfdot{v1,v2,v3,v4}
   \end{feynmandiagram}\quad
-
   \begin{feynmandiagram}[modelTDijetD]
     \fmfleft{i1,i2}
-    \fmftop{o4}
-    \fmfbottom{o1}
-    \fmfright{o2,o3}
+    \fmfright{o1,o2,o3,o4}
     \fmf{fermion}{i1,v1,v2}
     \fmf{fermion}{v3,v4,i2}
     \fmf{gluon}{v4,o4}
@@ -208,7 +264,7 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmflabel{\Large $\chi$}{o2}
     \fmflabel{\Large $\bar{\chi}$}{o3}
     \fmfdot{v1,v2,v3,v4}
-  \end{feynmandiagram}\\\vspace{\baselineskip}
+  \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTDijetE]
     \fmfleft{i1,i2}
     \fmfright{o1,o2,o3,o4}
@@ -226,42 +282,33 @@ where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^
     \fmflabel{\Large $\chi$}{o1}
     \fmflabel{\Large $\bar{\chi}$}{o4}
     \fmfdot{v1,v2,v3,v4}
-  \end{feynmandiagram}\\\vspace{\baselineskip}
-
-\caption{This is a caption.}
+  \end{feynmandiagram}
+\caption{Leading order two-jet $t$-channel processes, adapted from {\cite:Papucci:2014}.}\label{fig:tchannelDijet}
 \end{figure}
 
-\vspace{5mm}
+\newthought{Parameter scans}
 
-As for the $s$-channel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour; the same logic also applies to the couplings $g$. The available parameters are then
+Ref.~\cite{Pappuci:2014} studies the parameter space and obtains
+bounds on this model from LHC Run 1 mono-jet and dijets+MET data.
 
-\begin{equation}
-\{ m_{\chi},\, M_{\phi},\, g\}.
-\end{equation}
+As in the $s$-channel models, scans should be performed over
+$m_{\chi}$ and $m_{\phi}$. The viable ranges of both parameters nearly
+coincide with the scan proposed for the $s$-channel; for simplicity we
+recommend adopting the $s$-channel mono-jet grid.
 
-In practice, the third mediator mass and coupling could be separated from the other two, if higher order corrections to the MFV prediction arise due to the large top Yukawa coupling -- a common variation is then to define this split between the first two generations and the third, so the parameters are extended to
+The rates of the first three diagrams of
+Fig.~\ref{fig:tchannelMonojet} scale as one with the coupling $g$. In
+the heavy mediator limit, then, the kinematic distributions depend
+only indirectly on the coupling through the effect on the minimal
+mediator width. In contrast with the $s$-channel case, however, the
+bounds one obtains from X+MET searches depends strongly on the width
+of the mediator, as is visible in Figs.~5 and 6 of
+Ref.~\cite{Pappuci:2014}, except in the heavy mediator limit ($M_{\phi} \approx 2$\,TeV). A scan over the width was not available for this report; thus we recommend scanning a range of possible widths as discussed in a more-limited way for the $s$-channel mono-jet, spanning from the minimal width to a value approaching the particle limit (for example, $\Gamma \approx M_{\phi}/3$ in Ref.~\cite{Pappuci:2014}).
 
-\begin{equation}
-\{ m_{\chi},\, M_{\phi_{1,2}},\,M_{\phi_3},\, g_{1,2},\, g_3\}.
-\end{equation}
+\newhthought{Implementation}
 
-\vspace{5mm}
+The MadGraph implementation of the Ref.~\cite{Pappuci:2014} is
+available from the Forum repository \todo{cite}, following the
+matching and merging prescription described in its Section II and
+Appendix A.
 
-The width of each mediator is expressed, using the example of decay to an up quark, as
-
-\begin{equation}
-\begin{split}
-\Gamma (\phi_i \rightarrow \bar{u}_i \chi) &= \frac{g_i^2}{16 \pi M_{\phi_i}^3}(M_{\phi_i}^2 - m_{u_i}^2 - m_{\chi}^2) 		\\
-					   & \times \sqrt{M_{\phi_i}^4 + m_{u_i}^4 + m_{\chi}^4 - 2M_{\phi_i}^2m_{u_i}^2 - 2M_{\phi_i}^2m_{\chi}^2 - 2m_{u_i}^2m_{\chi}^2} \, ,
-\end{split}
-\end{equation}
-this reduces to 
-
-\begin{equation}
-\frac{g_i^2 M_{\phi_i}}{16 \pi} \left(1 - \frac{m_{\chi}^2}{M_{\phi_i}^2} \right)^2
-\end{equation}
-in the limit $M_{\phi_i}, m_{\chi} \gg m_{u_i}$.
-
-\vspace{5mm}
-
-An interesting point of difference with the $s$-channel simplified models is that the mediator can radiate a SM object, such as a jet or gauge boson, thus providing three separate mono-X diagrams which must be considered together in calculations. This model can also give a signal in the di-jet + MET channel when, for example, the $\chi$ is exchanged in the $t$-channel and the resulting $\phi$ pair each decay to a jet + $\chi$. 
