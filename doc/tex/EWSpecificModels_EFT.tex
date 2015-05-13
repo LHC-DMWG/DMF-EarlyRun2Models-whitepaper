@@ -8,7 +8,31 @@ Dirac DM, up to dimension 7, can be found in~\cite{Cotta:2012nj}.
 %%%%%%%%%%%Dimension 5 operators
 \subsection{Dimension 5 operators}
 
-The lowest dimension benchmark operators we may consider are effective dimension 5.  
+The lowest dimension benchmark operators we may consider are effective dimension 5,
+such as the one depicted in Figure~\ref{fig:modelMonoHEFT}.  
+
+\begin{figure}[!htb]
+	\centering
+	\unitlength=0.005\textwidth
+	\begin{feynmandiagram}[modelMonoHEFT]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,ohidden,o3}
+		\fmf{fermion}{i2,v1,i1}
+		\fmflabel{\Large $q,g$}{i2}
+		\fmflabel{\Large $\bar{q},g$}{i1}
+		\fmf{dashes}{v1,v2}
+		\fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30,label={\Large $\text{EFT}(\lambda,,\Lambda)$},label.a=30,label.d=15}{v2}
+		\fmf{dashes}{v2,o3}
+		\fmflabel{\Large $h$}{o3}
+		\fmf{fermion}{o2,v2,o1}
+		\fmflabel{\Large ${\bar{\chi}}$}{o1}
+		\fmflabel{\Large ${\chi}$}{o2}
+		\fmfdot{v1}
+	\end{feynmandiagram}
+	\caption{Diagram for a dimension 5 operator giving rise to a Higgs+MET signature.}
+	\label{fig:modelMonoHEFT}
+\end{figure}
+
 Following the notation of~\cite{Carpenter:2012rg},  models
 from this category have a Lagrangian that includes terms such as:
 
@@ -28,11 +52,9 @@ Concentrating  for the moment on mono-gauge boson signals, the above operator in
 MET in conjunction with Z and W bosons at tree level,
 while at loop level it induces couplings to photon pairs and $Z \gamma$ through W loops.
 In these models, a clear relation exists between final states with photons, EW bosons
-and Higgs boson. \textbf{[TODO: see if mono-Higgs studies exist for these operators, include them here]}.
+and Higgs boson. 
 
-\paragraph{Model implementation}
-
-The model can be found on the Forum SVN repository~\cite{ForumSVN_monoHEFTD5}.
+\subsubsection{Parameter scan}
 
 %%%%%%%%%%%%%Dimension 7 operators
 
@@ -183,3 +205,10 @@ There is then an S channel diagram where DM pairs couple to the singlet field S,
 which then mixes with a Higgs-sector field, and couples to W and Z bosons. 
 This diagram contains 2 insertions of EW symmetry breaking fields, 
 corresponding in form to the effective dimension-5 operator in the previous section.   
+
+\subsection{Model implementation}
+
+These models are generated at leading order with MadGraph 2.2.2, and parameter
+cards can be found on SVN \textbf{[TODO: Add SVN location]}.
+The parton shower is done using Pythia 8, with a matching scale of...
+\textbf{[TODO: To be completed.]}

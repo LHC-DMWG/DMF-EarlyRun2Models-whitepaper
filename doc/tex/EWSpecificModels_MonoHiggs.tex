@@ -2,12 +2,135 @@ Three benchmark simplified models \cite{Carpenter:2013xra,Berlin:2014cfa}
 are recommended for Higgs+MET searches:
 \begin{itemize}
 	\item A model where a vector mediator ($Z_B'$) is exchanged in the $s-$channel, 
-	radiates a Higgs or a $Z$ boson and decays into two DM particles;
+	radiates a Higgs or a $Z$ boson and decays into two DM particles (Fig.~\ref{fig:feyn_prod_monoH} (a));
 	\item A model where a scalar mediator $S$ couples to the SM only 
-	through the SM Higgs and decays to two DM particles;
+	through the SM Higgs and decays to two DM particles (Fig.~\ref{fig:feyn_prod_monoH_S});
 	\item A model where a vector $Z'$ is produced resonantly and decays into a Higgs boson
-	plus an intermediate heavy pseudoscalar particle $A^0$, in turn decaying into two DM particles. 
+	plus an intermediate heavy pseudoscalar particle $A^0$, in turn decaying into two DM particles (Fig. \ref{fig:feyn_prod_monoH} (b)). 
 \end{itemize}
+
+\begin{figure}[!h!tpd]
+	\centering
+	\unitlength=0.0046\textwidth
+	\subfloat[\label{subfig:modelMonoHZprimeqq}]{
+		\begin{feynmandiagram}[modelMonoHZprimeqq]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,o3}
+		\fmf{fermion}{i2,v1,i1}
+		\fmflabel{\Large $q$}{i2}
+		\fmflabel{\Large $\bar{q}$}{i1}
+		\fmf{dashes,label={\Large $Z,,Z^\prime$}}{v1,v2}
+		\fmf{dashes,label={\Large $Z,,Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
+		\fmf{dashes}{v2,o3}
+		\fmflabel{\Large $h$}{o3}
+		% \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
+		% \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+		\fmf{fermion}{o2,v3,o1}
+		\fmflabel{\Large ${\bar{\chi}}$}{o1}
+		\fmflabel{\Large ${\chi}$}{o2}
+		\fmfdot{v1,v2,v3}
+	\end{feynmandiagram}
+	}
+	%\\\vspace{\baselineskip}
+	\subfloat[\label{subfig:modelMonoHSimplifiedA0}]{
+	\begin{feynmandiagram}[modelMonoHSimplifiedA0]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,o3}
+		\fmf{fermion}{i2,v1,i1}
+		\fmflabel{\Large $q$}{i2}
+		\fmflabel{\Large $\bar{q}$}{i1}
+		\fmf{photon,label={\Large $Z^\prime$}}{v1,v2}
+		\fmf{dashes}{v2,o3}
+		\fmflabel{\Large $h$}{o3}
+		\fmf{dots_arrow,label={\Large $A_0$},label.side=right}{v2,v3}
+		\fmf{fermion,tension=2}{o2,v3,o1}
+		\fmflabel{\Large ${\bar{\chi}}$}{o1}
+		\fmflabel{\Large ${\chi}$}{o2}
+		\fmfdot{v1}
+	\end{feynmandiagram}
+	}
+	\caption
+	{
+		Feynman diagrams of leading order processes leading to Higgs+MET events: a model with a vector mediator ($Z'$) 
+		coupling with DM and with the Higgs boson $h$ \ref{subfig:modelMonoHZprimeqq}, and
+		a 2HDM model with a new invisibly decaying pseudoscalar $A^0$ 
+		from the decay of an on-shell resonance $Z'$ giving rise to a Higgs+MET signature~\ref{subfig:modelMonoHSimplifiedA0}.
+	}
+	\label{fig:feyn_prod_monoH}
+\end{figure}
+		
+\begin{figure}[!h!tpd]
+	\centering
+	\unitlength=0.0046\textwidth
+	\subfloat[\label{subfig:modelMonoHbaryonicqq}]{
+		\begin{feynmandiagram}[modelMonoHbaryonicqq]
+			\fmfleft{i1,i2}
+			\fmfright{o1,o2,o3}
+			\fmf{fermion}{i2,v1,i1}
+			\fmflabel{\Large $q$}{i2}
+			\fmflabel{\Large $\bar{q}$}{i1}
+			\fmf{dashes,label={\Large $h,,S$}}{v1,v2}
+			\fmf{dashes,label={\Large $h,,S$},label.side=right}{v2,v3}
+			\fmf{dashes}{v2,o3}
+			\fmflabel{\Large $h$}{o3}
+			\fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
+			\fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+			\fmf{fermion}{o2,v3,o1}
+			\fmflabel{\Large ${\bar{\chi}}$}{o1}
+			\fmflabel{\Large ${\chi}$}{o2}
+			\fmfdot{v1,v2,v3}
+		\end{feynmandiagram}
+	}\\\vspace{\baselineskip}
+	\subfloat[\label{subfig:modelMonoHbaryonicgg}]{
+		\begin{feynmandiagram}[modelMonoHbaryonicgg]
+			\fmfleft{i1,i2}
+			\fmfright{o1,o2,o3}
+			\fmf{gluon}{i1,vt1}
+			\fmf{gluon}{i2,vt2}
+			\fmflabel{\Large $g$}{i2}
+			\fmflabel{\Large $g$}{i1}
+			\fmf{fermion,label={\Large $t$}}{vt1,vt2}
+			\fmf{fermion}{vt2,v1,vt1}
+			\fmf{dashes,label={\Large $h,,S$},label.side=right}{v1,v2}
+			\fmf{dashes,label={\Large $h,,S$},label.side=right,label.d=5}{v2,v3}
+			\fmf{dashes}{v2,o3}
+			\fmflabel{\Large $h$}{o3}
+			\fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
+			\fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+			\fmf{fermion}{o2,v3,o1}
+			\fmflabel{\Large ${\bar{\chi}}$}{o1}
+			\fmflabel{\Large ${\chi}$}{o2}
+			\fmfdot{v1,v2,v3}
+		\end{feynmandiagram}
+	}
+	\subfloat[\label{subfig:modelMonoHbaryonicggS}]{
+	\begin{feynmandiagram}[modelMonoHbaryonicggS]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,o3}
+		\fmf{gluon}{i1,vt1}
+		\fmf{gluon}{i2,vt2}
+		\fmflabel{\Large $g$}{i2}
+		\fmflabel{\Large $g$}{i1}
+		\fmf{fermion,label={\Large $t$}}{vt1,vt2}
+		\fmf{fermion}{vt2,v2,v1,vt1}
+		\fmf{dashes}{v2,o3}
+		\fmflabel{\Large $h$}{o3}
+		\fmf{dashes,label={\Large $h,,S$},label.side=right,label.d=5}{v1,v3}
+		\fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+		\fmf{fermion}{o2,v3,o1}
+		\fmflabel{\Large ${\bar{\chi}}$}{o1}
+		\fmflabel{\Large ${\chi}$}{o2}
+		\fmfdot{v1,v2,v3,vt1,vt2}
+	\end{feynmandiagram}
+
+	}
+	\caption
+	{
+		Feynman diagrams of leading order processes leading to Higgs+MET events for a model with a scalar mediator ($S$) 
+		coupling with DM and with the Higgs boson $h$. 
+	}
+	\label{fig:feyn_prod_monoH_S}
+\end{figure}
 
 These models have a distinct kinematics, as shown in the comparison of the 
 MET spectra in Fig.~\ref{fig:METSimpMonoHiggs}, for high and low mediator masses. 
@@ -17,6 +140,7 @@ and DM mass of either 50 ($Z_B'$ and $A^0$ models) or 65 GeV (scalar mediator mo
 Figure ~\ref{fig:met_cmp_low} shows the MET distribution 
 for models with low mediator masses ($m_{Z_B'} = 100$ GeV, $m_{Z'} = 1$ TeV, $m_{A0} = 100$ GeV)
 and DM mass of 1 TeV for all models. 
+	
 
 \begin{figure}[hbpt!]
 	\centering
@@ -245,7 +369,10 @@ those are left to the individual analyses. \textbf{[TODO: can we get sensitivity
 
 In this simplified model~\cite{Berlin:2014cfa}, a new $Z'$ resonance decays to a Higgs boson $h$ 
 plus a heavy pseudoscalar state 
-$A$ in the 2HDM framework, which in turn decays to a DM pair. 
+$A$ in the 2HDM framework, which in turn decays to a DM pair. This model is 
+represented in the diagram in Figure~\ref{fig:modelMonoHSimplifiedA0}.
+
+
 The motivation for coupling the dark matter to the pseudoscalar is that dark matter coupling to higgs or $Z'$ is generically 
 constrained by other signal channels and direct detection. 
 An advantage of including this model is that it has different kinematics  due to the on-shell $Z'$ production, 
@@ -410,7 +537,7 @@ All LO cross sections for the various parameter scan points are reported in Appe
 The parameter scan excludes the off-shell region, as the cross-sections are suppressed and the LHC would not have any
 sensitivity to these benchmark points in early data. 
 
-The kinematic distributions with varying $M_{Z'}$ for fixed $M_{A^0}$ are shown in Fig.~\ref{fig:DMH_mzp}, while the dependency on $M_{A^0}$ is shown in Fig.~\ref{fig:DMH_ma0}. Both figures include plots before detector simulation. 
+The kinematic distributions with varying $M_{Z'}$ for fixed $M_{A^0}$ are shown in Fig.~\ref{fig:DMH_mzp}, while the dependency on $M_{A^0}$ is shown in Fig.~\ref{fig:DMH_ma0}. 
   
  \begin{figure}[h!]
  	\centering
@@ -484,158 +611,9 @@ namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  This signal process h
   	\label{fig:DMH_zpincl}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHSimplified]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{fermion}{i2,v1,i1}
-    \fmflabel{\Large $q$}{i2}
-    \fmflabel{\Large $\bar{q},$}{i1}
-    \fmf{photon,label={\Large $Z,,\gamma$}}{v1,v2}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    \fmf{fermion}{o2,v2,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1}
-  \end{feynmandiagram}
-\end{figure}
 
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHSimplifiedA0]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{fermion}{i2,v1,i1}
-    \fmflabel{\Large $q$}{i2}
-    \fmflabel{\Large $\bar{q}$}{i1}
-    \fmf{photon,label={\Large $Z^\prime$}}{v1,v2}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    \fmf{dots_arrow,label={\Large $A_0$},label.side=right}{v2,v3}
-    \fmf{fermion,tension=2}{o2,v3,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1}
-  \end{feynmandiagram}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHEFT]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,ohidden,o3}
-    \fmf{fermion}{i2,v1,i1}
-    \fmflabel{\Large $q,g$}{i2}
-    \fmflabel{\Large $\bar{q},g$}{i1}
-    \fmf{dashes}{v1,v2}
-    \fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30,label={\Large $\text{EFT}(\lambda,,\Lambda)$},label.a=30,label.d=15}{v2}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    \fmf{fermion}{o2,v2,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1}
-  \end{feynmandiagram}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHZprimeqq]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{fermion}{i2,v1,i1}
-    \fmflabel{\Large $q$}{i2}
-    \fmflabel{\Large $\bar{q}$}{i1}
-    \fmf{dashes,label={\Large $Z,,Z^\prime$}}{v1,v2}
-    \fmf{dashes,label={\Large $Z,,Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    % \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
-    % \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
-    \fmf{fermion}{o2,v3,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1,v2,v3}
-  \end{feynmandiagram}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHbaryonicqq]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{fermion}{i2,v1,i1}
-    \fmflabel{\Large $q$}{i2}
-    \fmflabel{\Large $\bar{q}$}{i1}
-    \fmf{dashes,label={\Large $h,,S$}}{v1,v2}
-    \fmf{dashes,label={\Large $h,,S$},label.side=right}{v2,v3}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
-    \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
-    \fmf{fermion}{o2,v3,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1,v2,v3}
-  \end{feynmandiagram}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHbaryonicgg]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{gluon}{i1,vt1}
-    \fmf{gluon}{i2,vt2}
-    \fmflabel{\Large $g$}{i2}
-    \fmflabel{\Large $g$}{i1}
-    \fmf{fermion,label={\Large $t$}}{vt1,vt2}
-    \fmf{fermion}{vt2,v1,vt1}
-    \fmf{dashes,label={\Large $h,,S$},label.side=right}{v1,v2}
-    \fmf{dashes,label={\Large $h,,S$},label.side=right,label.d=5}{v2,v3}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
-    \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
-    \fmf{fermion}{o2,v3,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1,v2,v3}
-  \end{feynmandiagram}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \unitlength=0.005\textwidth
-  \begin{feynmandiagram}[modelMonoHbaryonicggS]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{gluon}{i1,vt1}
-    \fmf{gluon}{i2,vt2}
-    \fmflabel{\Large $g$}{i2}
-    \fmflabel{\Large $g$}{i1}
-    \fmf{fermion,label={\Large $t$}}{vt1,vt2}
-    \fmf{fermion}{vt2,v2,v1,vt1}
-    \fmf{dashes}{v2,o3}
-    \fmflabel{\Large $h$}{o3}
-    \fmf{dashes,label={\Large $h,,S$},label.side=right,label.d=5}{v1,v3}
-    \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
-    \fmf{fermion}{o2,v3,o1}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
-    \fmfdot{v1,v2,v3,vt1,vt2}
-  \end{feynmandiagram}
-\end{figure}
   
- \subsubsection{Model implementation}
+ \subsection{Model implementation}
 
 All three Higgs+MET models are generated at leading
 order with MadGraph 2.2.2, using Pythia8 for the parton shower.
