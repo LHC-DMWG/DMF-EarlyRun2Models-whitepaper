@@ -26,7 +26,7 @@
 \usepackage{slashed}
 \usepackage{feynmp}
 % begin feynman diagram setup
-\usepackage{feynmp-auto}
+%%\usepackage{feynmp-auto}
 % before setting default graphics include widths, save the default to properly scale feynman diagrams with their labels
 \makeatletter
 \let\ginnatwidth\Gin@nat@width
@@ -100,9 +100,11 @@
 \newcommand{\bra}[1]{\langle #1|}
 \newcommand{\ket}[1]{|#1\rangle}
 \newcommand{\MET}{\slashed{E}_T}
-\newcommand{\mMed}{\ensuremath{M_{\rm{med}}}\xspace}
+%\newcommand{\mMed}{\ensuremath{M_{\rm{med}}}\xspace}
+\newcommand{\mMed}{\ensuremath{M_{{med}}}\xspace}
 \newcommand{\gDM}{\ensuremath{g_{\rm{DM}}}\xspace}
-\newcommand{\gq}{\ensuremath{g_{\rm q}}\xspace}
+%\newcommand{\gq}{\ensuremath{g_{\rm q}}\xspace}
+\newcommand{\gq}{\ensuremath{g_{q}}\xspace}
 \newcommand{\ifb}{\rm{fb}^{-1}}
 \newcommand{\mdm}{\ensuremath{m_{\rm{DM}}}\xspace}
 \newcommand{\mmed}{\ensuremath{m_{\rm{med}}}\xspace}
@@ -180,6 +182,19 @@
 \def\mvmet{\ensuremath{m(v_{\mathrm{met}})}}
 \def\vmet{\ensuremath{v_{\mathrm{met}}}}
 \def\fmet{\ensuremath{f_{\mathrm{met}}}}
+
+%%% Stuff for EFT
+\def\Qtr{Q_{\rm tr}}
+\def\pT{p_{\rm T}}
+\def\mx{m_{\rm DM}}
+\def\gx{g_{\rm DM}}
+
+ \def\be   {\begin{equation}}   \def\ee   {\end{equation}}
+ \def\ba   {\begin{array}}      \def\ea   {\end{array}}
+ \def\bea  {\begin{eqnarray}}   \def\eea  {\end{eqnarray}}
+ \def\bean {\begin{eqnarray*}}  \def\eean {\end{eqnarray*}}
+ \def\nn{\nonumber}
+\def\MCut{\ensuremath{M_\text{cut}}\xspace}
 
 
 \begin{document}
