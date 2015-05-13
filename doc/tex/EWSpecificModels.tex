@@ -74,7 +74,7 @@ the studies towards the choices of the parameters to be scanned,
 and finally point to the location of their Matrix Element
 implementation.
 
-\newthought{Simplified models with ISR boson radiation}
+\section{Simplified models with boson radiation}
 
 Searches in the jet+MET final state are generally more sensitive
 with respect to final states including bosons, due to the much
@@ -89,6 +89,7 @@ leptons from W and Z decays
 and W or Z bosons decaying hadronically
 allows to reject the background more effectively, making Z/gamma/W+MET searches
 still worth comparing with searches in the jet+MET final state.
+%TODO: Linda is writing sentence to make this stronger. 
 
 % The three commonly chosen EFT benchmarks for Dirac dark matter that are
 % kinematically distinct for what concerns the observables used in
@@ -98,7 +99,7 @@ still worth comparing with searches in the jet+MET final state.
 % the D1 (scalar SM/WIMP interaction), D5 (vector-vector interaction) and D9
 % (tensor interaction) operator.
 
-\paragraph{Vector mediator exchanged in the s-channel}
+\subsection{Vector mediator exchanged in the s-channel}
 
 The case for searches with W bosons in the final state has so far been strenghtened by the
 presence of particular choices of couplings between the WIMP and the up and
@@ -206,7 +207,7 @@ benchmark points are shown in Table~\ref{table:x-sec}
     \label{fig:DMV_EW_kinematics}
 \end{figure}
 
-\paragraph{Colored scalar mediator exchanged in the s-channel}
+\subsection{Colored scalar mediator exchanged in the s-channel}
 
 t-channel colored scalar, to be completed...
 
@@ -221,12 +222,16 @@ The parton shower is done using Pythia 8, with a matching scale of...
 % Linda 11/5/2015
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-\newthought{EFT models with direct DM-boson couplings}
+\section{EFT models with direct DM-boson couplings}
 
 A complete list of effective operators with direct DM/boson couplings for
 Dirac DM, up to dimension 7, can be found in~\cite{Cotta:2012nj}.
 
-The lowest dimension benchmark operators we may consider are effective dimension 5.  Following the notation of~\cite{Carpenter:2012rg},  models
+%%%%%%%%%%%Dimension 5 operators
+\subsection{Dimension 5 operators}
+
+The lowest dimension benchmark operators we may consider are effective dimension 5.  
+Following the notation of~\cite{Carpenter:2012rg},  models
 from this category have a Lagrangian that includes terms such as:
 
 \begin{eqnarray}
@@ -246,6 +251,14 @@ MET in conjunction with Z and W bosons at tree level,
 while at loop level it induces couplings to photon pairs and $Z \gamma$ through W loops.
 In these models, a clear relation exists between final states with photons, EW bosons
 and Higgs boson. \textbf{[TODO: see if mono-Higgs studies exist for these operators, include them here]}.
+
+\paragraph{Model implementation}
+
+The model can be found on the Forum SVN repository~\cite{ForumSVN_monoHEFTD5}.
+
+%%%%%%%%%%%%%Dimension 7 operators
+
+\subsection{Dimension 7 operators}
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Uli 3/5/2015
@@ -393,11 +406,7 @@ which then mixes with a Higgs-sector field, and couples to W and Z bosons.
 This diagram contains 2 insertions of EW symmetry breaking fields, 
 corresponding in form to the effective dimension-5 operator in the previous section.   
 
-\paragraph{Model implementation}
-
-The model can be found on the Forum SVN repository~\cite{ForumSVN_monoHEFTD5}.
-
-\newthought{Specific simplified models including EW bosons}
+\section{Specific simplified models including EW bosons}
 
 Three benchmark simplified models \cite{Carpenter:2013xra,Berlin:2014cfa} 
 are recommended for MET+Higgs searches:
@@ -433,7 +442,7 @@ and DM mass of 1 TeV for all models.
 \end{figure}
 
 
-\paragraph{MET+Higgs from a baryonic Z'}
+\subsection{MET+Higgs from a baryonic Z'}
 
 \textbf{[TODO for AB: add baryonic Higgs diagram]}
 
@@ -473,7 +482,7 @@ Baryonic Higgs vev.
 %	1- Mention sensitivity difference wrt monojet? 
 %	2- Mention why we don't consider the dark Z model?]}
 
-\textit{Parameter scan} 
+\subsubsection{Parameter scan} 
 
 Overall, this model is described by six parameters:
 \begin{enumerate}
@@ -530,7 +539,7 @@ those are left to the individual analyses.
 		\label{fig:metVectorMass} }
 \end{figure}
 
-\textit{Cross-section scaling}
+\subsubsection{Cross-section scaling}
 
 The dependence of the cross section of the $pp \rightarrow H\chi\bar{\chi}$ process 
 on $g_{hZ'Z'}$ is shown in Figure~\ref{fig:vectorXSdeps}. 
@@ -549,7 +558,7 @@ is $$y = 0.0012 - 2.4\times10^{-7}x + 1.5\times10^{-7}x^2$$
 		\label{fig:vectorXSdeps}}
 \end{figure}
 
-\paragraph{MET+Higgs from a scalar mediator}
+\subsection{MET+Higgs from a scalar mediator}
 
 A real scalar singlet $S$ coupling to DM can be introduced as a portal between SM and the dark sector 
 through the Higgs field. The new scalar mixes with the SM Higgs boson, and couples to DM through a Yukawa term $y_\chi$. 
@@ -579,7 +588,7 @@ At leading order of $\sin\theta$, the $h^2 S$ term is fixed once the mass eigenv
 and mixing angle are specified.  The $h S^2$ term is not fixed and remains a free parameter of the model, depending on 
 the new physics coupling $b$. 
 
-\textit{Parameter scan}
+\subsubsection{Parameter scan}
 
 This model is described by five parameters: 
 
@@ -642,7 +651,7 @@ those are left to the individual analyses. \textbf{[TODO: can we get sensitivity
 
 
 %%%
-\paragraph{Higgs+MET signal from 2HDM model with a Z' and a new pseudoscalar}
+\subsection{Higgs+MET signal from 2HDM model with a Z' and a new pseudoscalar}
 
 In this simplified model~\cite{Berlin:2014cfa}, a new $Z'$ resonance decays to a Higgs boson $h$ 
 plus a heavy pseudoscalar state 
@@ -721,7 +730,7 @@ $\lambda$ is the K\"{a}llen triangle function.
 % \quad
 % \end{align}
  
- \textit{Parameter scan}
+\subsubsection{Parameter scan}
  
  The model is described by five parameters:
  \begin{itemize}
@@ -1036,7 +1045,7 @@ namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  This signal process h
   \end{feynmandiagram}
 \end{figure}
   
- \paragraph{Model implementation}
+ \subsubsection{Model implementation}
 
 All three Higgs+MET models are generated at leading
 order with MadGraph 2.2.2, using Pythia8 for the parton shower.
