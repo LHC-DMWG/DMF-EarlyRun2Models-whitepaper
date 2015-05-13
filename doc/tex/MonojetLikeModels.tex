@@ -298,17 +298,14 @@ Since NLO calculations are available for the process in POWHEG, we recommend to 
 
 One of the most simple UV complete extensions of the effective field theory approach is the addition of a scalar/pseudoscalar mediator between DM and SM.
 A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle.
-In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. The kinematics of the two cases is sufficiently different to suggest that further investigation of the complex scalar case is needed but left for future studies. 
+In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. 
 
-%%CD: this sentence really belongs elsewhere: MG does not have the gluon loop
 Couplings to the SM fermions can be arranged by mixing with the SM Higgs. Such models have interesting connections with Higgs physics, and can be viewed as generalizations of the Higgs portal to DM. The most general scalar mediator models will have renormalizable interactions between the SM Higgs and the new scalar $\phi$ or pseudoscalar $a$, as well as $\phi/a$ interactions with electroweak gauge bosons. Such interactions are model dependent, often subject to constraints from electroweak precision tests, and would suggest specialized searches which cannot be generalized to a broad class of models (unlike, for instance, the $\missET+\textrm{jets}$ searches). As a result, for this class of minimal simplified models with spin-$0$ mediators, we will focus primarily on couplings to fermions and loop-induced couplings to gluons. %Possible couplings to the electroweak sector may also lead to interesting DM phenomenology that can be studied in the context of Higgs Portal DM.
 
 %\subsection{Model and assumption for fermionic DM}
 
-Minimal Flavor Violation (MFV) implies that scalar couplings to fermions will be proportional to the fermion mass.  However, they can differ for up- and down-type quarks and for charged leptons. 
+Working under the assumption of Minimal Flavor Violation (MFV) implies scalar couplings to fermions are proportional to the fermion mass.  However, the overall normalization constant of this coupling can differ for for up- and down-type quarks and charged leptons. Assuming that DM is a fermion $\chi$, which couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level Lagrangians compatible with the MFV assumption are~\cite{Cotta:2013jna,Abdullah:2014lla}:
 
-Following the assumption that DM is a fermion $\chi$, which couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level
-interaction Lagrangians compatible with the MFV assumption are~\citep{Cotta:2013jna,Abdullah:2014lla,Buckley:2014fba}:
  \begin{eqnarray}
 {\cal L}_{\phi} & = &
 %{\cal L}_{\rm SM}+i\bar{\chi} \slashed{\partial} \chi + m_\chi \bar{\chi}\chi + \left| \partial_\mu \phi \right|^2+\frac{1}{2}m_\phi^2 \phi^2 + \nonumber \\ 
@@ -326,13 +323,17 @@ the SM Yukawa structure,
 we parametrise the DM-mediator coupling as $g_\chi$, without any additional Yukawa structure between the mediator and the dark sector.
 
 %The most general Lagrangians including new scalars or pseudoscalars will have a potential containing interactions with the SM Higgs field $h$. 
-As already stated we only choose a minimal set of interactions that do not include interactions with the SM Higgs field. For simplicity, we also assume universal SM-mediator couplings $g_v = g_u = g_d = g_\ell$
+As already stated we only choose a minimal set of interactions that do not include interactions with the SM Higgs field. 
+For simplicity and ease of comparison, we assume universal SM-mediator couplings $g_v = g_u = g_d = g_\ell$ in the remainder of this work. This allows the relative discovery and exclusion power of each search to be directly compared, though again we emphasize the importance of multiple search channels, not an exclusive focus on the single most powerful under the assumption of universal couplings. %If there is no indication otherwise the easiest assumptions is always the most scientific to chose (also listening to some phenomenologists this seems not always to be the case ;-) )  
 
 Given these simplifications, the minimal set of parameters under consideration is
  \bea
   \left\{ m_\chi,~ m_{\phi/a},~ g_\chi,~ g_v \right\} \,.
  \eea
 %The simplest choice of couplings, known as Minimal Simplified Dark Matter model (MSDM) \textbf{[TODO: add references]}, is $g_u = g_d = g_\ell$, which is realized in singlet scalar extensions of the SM. 
+
+Despite our simplifying assumption, one should keep the more general possibility in mind, as even simple extensions of the mediating sector can result in $g_u \neq g_d \neq g_\ell$. A well-known realization of this would be the coupling of the pseudoscalar to up-type quarks (proportional to $m_u \cot\beta$) and down-type quarks and charged leptons (proportional to $m_{d/\ell}\tan\beta$) in two-Higgs doublet extensions of the SM. Here $\tan \beta$ denoting the ratio of VEVs of the two Higgs doublets. %The case $g_u \neq  g_d \neq g_\ell$ requires additional scalars with potentially large masses. 
+This possibility of non-equal couplings motivates searches in complementary channels which probe couplings to different flavors of quarks and leptons.
 
 %Extending the SM Higgs sector to a two Higgs doublet model implies more complex couplings such as  $g_u = \cot \beta$ and $g_d = g_e = \tan \beta$ where $\tan \beta$ denotes the ratio of VEVs of the two Higgs doublets.  The case $g_u \neq  g_d \neq g_\ell$ requires more additional scalars with potentially large masses, and it is not covered here: for simplicity, we assume universal SM-mediator couplings $g_v = g_u = g_d = g_\ell$ in the remainder of this work. 
 
@@ -368,6 +369,35 @@ with the form factors defined as
 F_{\rm{S}}(x)&= 1+(1-x)\arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\\
 F_{\rm{P}}(x)&= \arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\;.
 \end{align}
+
+%TODO: Sarah, could you check that the partial widths are consistent? 
+%TODO: Matt was talking about a problem in the exponents that were wrong between scalar and pseudoscalar, and his edits are below.
+%%Start Matt Buckley's edits 
+%\begin{equation} \label{eq:width}
+%\begin{split}
+%\Gamma_{\phi,a}  = & \sum_f N_c \frac{y_f^2 g_v^2 m_{\phi,a}}{16 \pi} \left(1-\frac{4 m_f^2}{m_{\phi,a}^2}\right)^{x/2}
+%+ \frac{g_\chi^2 m_{\phi,a}}{8 \pi} \left(1-\frac{4 m_\chi^2}{m_{\phi,a}^2}\right)^{x/2}\\
+%& + \frac{\alpha_s^2 y_t^2 g_v^2 m_{\phi,a}^3}{32 \pi^3 v^2} \left| f_{\phi,a}\left(\tfrac{4m_t^2}{m_{\phi,a}^2} \right)\right|^2
+%\end{split}
+%\end{equation}
+%
+%where $x=3$ for scalars and $x=1$ for pseudoscalars, and the loop integrals are
+%
+%\bea \label{eq:fphifa}
+%f_\phi (\tau) = \tau \left [ 1+ (1-\tau) \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \right ]  \,, \qquad 
+%f_a (\tau) =  \tau \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \,. 
+%\eea
+%
+%The first term in each width corresponds to the decay into SM fermions (the sum runs over all kinematically available fermions, $N_c = 3$ for quarks and $N_c = 1$ for leptons). The second term is the decay into DM (assuming that this decay is kinematically allowed). The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Higgs vev and the Yukawa couplings.
+%
+
+%%BP: Is this the best way to express that? I'd add:... due to spin dependencies. 
+%%MB: yes. I don't think it's a spin thing, it's just that we've defined v = 246, so the SM fermions get a $1/\sqrt{2}^2$ that DM doesn't.
+
+%The last two terms correspond to decay into gluons.  Since we have assumed that $g_v = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
+
+%%%End Matt Buckley's edits
+
 The minimal width for scalar and pseudo-scalar mediators with $\gq=\gDM=1$ are shown in Fig.\,\ref{fig:monojet_width_S}, illustrating the effect of choosing
 the SM Higgs-like Yukawa couplings for the SM fermions.
 For the mediator mass above twice the top quark mass $m_t$, the minimal width receives the dominant contribution from the top quark. For lighter mediator masses, Dark Matter dominates as the couplings to lighter quarks are Yukawa suppressed.
