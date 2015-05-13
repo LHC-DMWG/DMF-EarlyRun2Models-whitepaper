@@ -371,7 +371,7 @@ F_{\rm{P}}(x)&= \arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\;.
 The minimal width for scalar and pseudo-scalar mediators with $\gq=\gDM=1$ are shown in Fig.\,\ref{fig:monojet_width_S}, illustrating the effect of choosing
 the SM Higgs-like Yukawa couplings for the SM fermions.
 For the mediator mass above twice the top quark mass $m_t$, the minimal width receives the dominant contribution from the top quark. For lighter mediator masses, Dark Matter dominates as the couplings to lighter quarks are Yukawa suppressed.
-Note that the partial width coming from gluons through loops can be safely neglected\,\cite{Haisch:2015ioa}.
+%Note that the partial width coming from gluons through loops can be safely neglected\,\cite{Haisch:2015ioa}.
 
 
 \begin{figure}
@@ -634,14 +634,14 @@ The advantage of doing this is in the fact that no event selection and detector 
 
 This section describes specific settings for the Dark Matter models needed to run the POWHEG generation.
 \begin{itemize}
-\item The POWHEG implementation allows to generate a single sample that provides sufficient statistics in all mono-jet analysis signal regions. %by optimizing the following two parameters:
+\item The POWHEG implementation allows to generate a single sample that provides sufficient statistics in all signal regions. %by optimizing the following two parameters:
 %\begin{itemize}
 POWHEG generates weighted events and the \verb+bornsuppfact+ parameter is used to set the event suppression factor according to
 \begin{equation}
 F(k_{\rm{T}})=\frac{k_{\rm{T}}^2}{k_{\rm{T}}^2+\texttt{bornsuppfact}^2} \;.
 \end{equation}
-In this way, the events at low $\MET$ are suppressed and receive higher event weights which ensures higher statistics at high $\MET$. We recommend to set \verb+bornsuppfact+ to 1000.
-\item The \verb+bornktmin+ parameter allows to suppress the low $\MET$ region even further by starting the generation at a certain value of $k_{\rm{T}}$. It is recommended to set this parameter  to half the lower analysis $\MET$ cut, therefore the proposed value for \verb+bornktmin+ is 150.
+In this way, the events at, for instance low $\MET$, are suppressed and receive higher event weights which ensures higher statistics at high $\MET$. We recommend to set \verb+bornsuppfact+ to 1000.
+\item The \verb+bornktmin+ parameter allows to suppress the low $\MET$ region even further by starting the generation at a certain value of $k_{\rm{T}}$. It is recommended to set this parameter  to half the lower analysis $\MET$ cut, for the event selection used in the CMS/ATLAS monojet analyses for instance the proposed value for \verb+bornktmin+ is 150. However, this parameter should be set keeping in mind the event selection of all the analyses that will use these signal samples and hence a threshold lower than 150 may be required. 
 %\end{itemize}
 
 \item Set \verb+runningwidth+ to 0.
