@@ -28,10 +28,10 @@ The models considered can be divided in four categories:
  \item[Models including a contact operator, where the boson is directly coupled to DM]
  Shown in the bottom of Figure~\ref{fig:VPlusMET_EFT},
  these models allow for a contact interaction vertex that directly couples the boson to Dark Matter.
- \item[Simplified models where the boson is radiated from the initial state] These models follow those
- already described in Section~\ref{subsec:MonojetLikeModels}, replacing the initial state gluon with a boson.
+ \item[Simplified models with a boson radiated either from the initial state or from the mediator] These models follow those
+ already described in Section~\ref{subsec:MonojetLikeModels}, replacing the gluon with a boson.
  \item[V-specific simplified models] These models postulate direct couplings of new mediators
- to bosons, e.g. they couple the Higgs boson to a new scalar~\cite{Carpenter:2013xra}.
+ to bosons, e.g. they couple the Higgs boson to a new vector or to a new scalar~\cite{Carpenter:2013xra,Berlin:2014cfa}. 
 \end{description}
 
 The following Sections describe the models within these categories,
@@ -106,7 +106,7 @@ searches follow what already detailed in Section~\ref{subsec:MonojetLikeModels}.
 %  \item the mass of the DM particle ($m_{DM}$);
 %  \item the mediator mass ($m_{Med}$);
 %  \item the mediator width ($\Gamma_{Med}$);
-%  \item the couplings between the DM and the mediator ($g_{DM}$),
+%  \item the couplings between the DM and the mediator (\gdm),
 %  and between the mediator and the initial state quarks ($g_{SM}$);
 %  \item the chirality of the couplings between DM and mediator,
 %  and between mediator and initial state quarks (vector-vector, axial-vector, axial-axial, vector-axial).
@@ -122,7 +122,7 @@ comparing a width that is set to $\Gamma=M_{med}/3$ to the
 minimal width (the ratio between the two widths
 ranges from 1.05 to 1.5 with increasing mediator masses).
 
-% mMed : minW
+% mmed : minW
 % 10  : 3.5
 % 50 : 21.3
 % 100 : 42.4
@@ -202,7 +202,13 @@ from this category have a Lagrangian that includes terms such as:
 
 where $m_Z$ and $m_W$ are the masses of the $Z$ and $W$ boson, $W^{\mu}$ and $Z^{\mu}$
 are the fields of the gauge bosons, $\chi$ denote the Dark Matter fields
-and $\Lambda_5$ is the effective field theory scale.  Note that these operators are of true dimension 7, but reduce to effective dimension 5 once Higgs vevs, contained in the W and Z mass terms, are inserted.  As such , one expects  these that operators would naturally  arise in UV complete models where Dark Matter interacts via a Higgs portal where heavy mediators would couple to the Higgs or other fields in an extended Higgs sector. In such models the full theory may be expected to contain additional operators with Higgs-Dark Matter couplings. Concentrating  for the moment on mono-gauge boson signals, the above operator induces signatures with MET in conjunction with Z and W bosons at tree level,
+and $\Lambda_5$ is the effective field theory scale.  Note that these operators are of true dimension 7, 
+but reduce to effective dimension 5 once Higgs vevs, contained in the W and Z mass terms, are inserted.  
+As such , one expects  these that operators would naturally  arise in UV complete models where Dark Matter 
+interacts via a Higgs portal where heavy mediators would couple to the Higgs or other fields in an extended Higgs sector. 
+In such models the full theory may be expected to contain additional operators with Higgs-Dark Matter couplings. 
+Concentrating  for the moment on mono-gauge boson signals, the above operator induces signatures with 
+MET in conjunction with Z and W bosons at tree level,
 while at loop level it induces couplings to photon pairs and $Z \gamma$ through W loops.
 In these models, a clear relation exists between final states with photons, EW bosons
 and Higgs boson. \textbf{[TODO: see if mono-Higgs studies exist for these operators, include them here]}.
@@ -329,21 +335,369 @@ shown in Fig.~\ref{fig:DMV_EW_kinematics}.
     \label{fig:DMV_EW_kinematics}
 \end{figure}
 
-\paragraph{Specific simplified models}
+\paragraph{Completion and validity of EW contact operators}
 
-Mono-Higgs, to be completed...
+\textbf{[TODO: mention here discussion with Liantao yesterday]}
+
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %   Linda 11/5/15
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Higgs portals with scalar mediators are among the most concise versions of simplified models that produce couplings of Dark Matter to pairs of gauge-bosons.  Scalar fields may couple directly to pairs of electroweak gauge bosons, but must carry part of the electroweak vev.  One may thus consider a simple model where Dark Matter couples to a a scalar singlet mediator, which mixes with the fields in the Higgs sector.
+As an example of a simplified model corresponding to the dimension-5 EFT operator 
+described above, we consider a Higgs portal with a scalar mediator. Models of this kind
+are among the most concise versions of simplified models that produce 
+couplings of Dark Matter to pairs of gauge-bosons.  Scalar fields may couple directly to pairs of electroweak gauge bosons, 
+but must carry part of the electroweak vev.  One may thus consider a simple model where Dark Matter couples to a a scalar 
+singlet mediator, which mixes with the fields in the Higgs sector.
 \begin{equation}
 L\subset m_s S^2 + \lambda S^2H^2 +\lambda^{'} S H^2 + y S \chi \overline{\chi}
 \end{equation}
-Where H is a field in the Higgs sector that contains part of the electroweak vev, S is a heavy scalar singlet and $\chi$ is a Dark Matter field. 
-There is then an S channel diagram where DM pairs couple to the singlet field S, which then mixes with a  Higgs-sector field, and couples to W and Z bosons.  This diagram contains 2 insertions of EW symmetry breaking fields.  This diagram corresponds in form  to the  effective dimension-5 operator in the previous section.   
+Where H is a field in the Higgs sector that contains part of the electroweak vev, 
+S is a heavy scalar singlet and $\chi$ is a Dark Matter field. 
+There is then an S channel diagram where DM pairs couple to the singlet field S, 
+which then mixes with a Higgs-sector field, and couples to W and Z bosons. 
+This diagram contains 2 insertions of EW symmetry breaking fields, 
+corresponding in form to the effective dimension-5 operator in the previous section.   
+
+\paragraph{Model implementation}
+
+The model can be found on the Forum SVN repository~\cite{ForumSVN_monoHEFTD5}.
+
+\newthought{Specific simplified models including EW bosons}
+
+Three benchmark simplified models \cite{Carpenter:2013xra,Berlin:2014cfa} 
+are recommended for MET+Higgs searches:
+\begin{itemize}
+	\item A model where a vector mediator ($Z_B'$) is exchanged in the $s-$channel, 
+	radiates a Higgs or a $Z$ boson and decays into two DM particles;
+	\item A model where a scalar mediator $S$ couples to the SM only 
+	through the SM Higgs and decays to two DM particles;
+	\item A model where a vector $Z'$ is produced resonantly and decays into a Higgs boson
+	plus an intermediate heavy pseudoscalar particle $A^0$, in turn decaying into two DM particles. 
+\end{itemize}
+
+These models have a distinct kinematics, as shown in the comparison of the 
+MET spectra in Fig.~\ref{fig:METSimpMonoHiggs}, for high and low mediator masses. 
+Figure ~\ref{fig:met_cmp_high} shows the MET distribution 
+for models with high mediator masses ($m_{S} = 1$ TeV, $m_{Z'} = 1$ TeV, $m_{A0} = 1$ TeV)
+and DM mass of either 50 ($Z_B'$ and $A^0$ models) or 65 GeV (scalar mediator model).
+Figure ~\ref{fig:met_cmp_low} shows the MET distribution 
+for models with low mediator masses ($m_{Z_B'} = 100$ GeV, $m_{Z'} = 1$ TeV, $m_{A0} = 100$ GeV)
+and DM mass of 1 TeV for all models. 
+\textbf{[TODO: Is this sufficient to justify testing them all? Not clear which one should be prioritized.]}
+
+\begin{figure}[hbpt!]
+	\centering
+	\subfloat[High mediator mass]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/models_cmp_MET_et_Log} \label{fig:met_cmp_high}
+	}
+	\subfloat[Low mediator mass]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/models_cmp_low_MET_et_Log} \label{fig:met_cmp_low}
+	}
+	\caption{Comparison of the missing transverse momentum distributions at generator level in different 
+		simplified models leading to a Higgs+MET signature. The model parameter settings are detailed in the text.
+		\label{fig:METSimpMonoHiggs}}
+\end{figure}
 
 
+\paragraph{MET+Higgs from a baryonic Z'}
+
+\textbf{[TODO for AB: add baryonic Higgs diagram]}
+
+The first model, shown in Fig.~\ref{fig:monoH_baryonicZ} 
+postulates a new gauge boson $Z'$ corresponding to a new $U(1)_B$ baryon 
+number symmetry. The stable baryonic states included in this model are the DM candidate particles.
+The mass of the $Z'$ boson is acquired through a baryonic Higgs $h_B$, which mixes with the 
+SM Higgs boson. The interactions between the $Z'$, the quarks and the DM are described by 
+the following Lagrangian:   
+
+\be \label{ZprimeDM}
+%%\mathscr{
+	L =  g_q  \bar q \gamma^\mu q  Z_\mu' +
+%
+%\left\{ \begin{array}{cc}
+%	%i  g_\chi  \chi^\dagger \smash{ \overset{\leftrightarrow}{\partial^\mu}}  \chi  Z^\prime_\mu + g_\chi^2 |\chi|^2 Z^\prime_\mu Z^{\prime\mu} & {\rm scalar}  
+	 g_\chi  \bar\chi \gamma^\mu \chi Z_\mu' .
+\ee
+
+The quark couplings \gq are fixed to be equal to one third of the gauge coupling $g_B$, 
+while the DM coupling to the $Z'$ are proportional to the baryon number and to the gauge coupling 
+($g_{chi} = B g_B$). No leptonic couples of the $Z'$ are allowed, thus evading dilepton constraints. 
+After incorporating the mixing of the baryonic and SM Higgs bosons, this model is 
+is described by the following Lagrangian term at energies below $m_{Z^\prime}$: 
+ \be \label{U1Beft}
+ L_{\rm eff} = - \frac{g_q g_\chi }{m_{Z^\prime}^2} \bar{q} \gamma^\mu q \bar\chi \gamma_\mu \chi \Big( 1 + \frac{g_{h Z^\prime Z^\prime} }{m_{Z^\prime}^2} h \Big) \, ,
+ \ee
+
+The first term of this equation gives rise to a term that is equivalent to the 
+radiation of a jet (or another EW gauge boson) in the initial state. 
+The second term describes the interaction between the $Z'$ and the SM Higgs boson,
+via the coupling $g_{h Z^\prime Z^\prime} = \frac{m_Z'^2 sin\theta}{v_B}$, where
+$sin\theta$ is the mixing angle between the Higgs and the $Z'$ and $v_B$ is the
+Baryonic Higgs vev. 
+
+\textbf{[TODO: 
+	1- Mention sensitivity difference wrt monojet? 
+	2- Mention why we don't consider the dark Z model?]}
+
+\textit{Parameter scan} 
+
+Overall, this model is described by six parameters:
+\begin{enumerate}
+	\item the mediator mass \mmed, (also referred to as $m_{Z'}$)
+	\item mass of dark matter, $m_{DM}$
+	\item coupling of $Z'$ mediator to dark matter, \gdm
+	\item coupling of the mediator to quarks, $g_q$
+	\item mixing angle between baryonic Higgs and SM-like Higgs boson, $\sin\theta$
+	\item coupling of the mediator to SM-like Higgs boson, $g_{hZ'Z'}$
+\end{enumerate}
+The width of the mediator is calculated using all possible decays, 
+namely to quarks, to pairs of DM particles if kinematically allowed, 
+
+The dependence of the missing transverse momentum (MET) on the model parameters 
+is studied by varying the parameters one at a time. The variation of parameters 
+other than $m_{med}$ and $m_{DM}$ does not result in significant 
+variations of the MET spectrum, as shown in Figures~\ref{fig:metVectorCoupling}. 
+Figure~\ref{fig:metVectorMass} shows that for an on-shell mediator, 
+varying $m_{DM}$ with the other parameters fixed does not affect the MET distribution, while 
+the distribution broadens significantly in the case of an off-shell mediator. 
+For this reason, the same grid in \mmed, \mdm as for the vector mediator
+of the jet+MET search (Table~\ref{tab:mDMmmedScan_VA}) is chosen as a starting point. 
+The coupling between mediator and SM Higgs boson $g_{hZ'Z'}/ \mmed$ and the mediator-DM coupling \gdm are fixed to 1, the 
+mediator-quark $g_{q}$ coupling is fixed to 1/3. Other parameter values can be recasted starting from the results
+for those model parameters.
+More detailed studies are required to estimate the reach of the analysis with respect to all points in the grid
+and therefore decide on a smaller set of grid points to be generated; 
+those are left to the individual analyses. \textbf{[TODO: can we get sensitivity to all the points for all signatures?]}
+
+\begin{figure}[hbpt!]
+	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/z_gdm_MET_et_Log}
+	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/z_ratio_MET_et_Log}
+	\caption{Missing transverse momentum distributions at generator level in the vector 
+		mediator scenario for different values of: the mediator-dark matter coupling \gdm (left),
+		and the coupling between the mediator and the SM-like Higgs boson, scaled by the mediator mass, 
+		$g_{hZ'Z'}/m_{Z'}$ (right).
+		\label{fig:metVectorCoupling}}
+\end{figure}
+
+\begin{figure}[hbpt!]
+	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zprime_100_MET_et_Log}
+	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zprime_1000_MET_et_Log}
+	\caption{Missing transverse momentum distributions at generator level in the vector 
+		mediator scenario: for different values of the dark matter mass $m_{DM}$ 
+		and a mediator mass of \mmed = 100 GeV (left) and \mmed = 1 TeV (right).
+		\label{fig:metVectorMass} }
+\end{figure}
+
+\textit{Cross-section scaling (to be added)}
+
+\textit{Model implementation}
+
+\textbf{[SVN repo and MG details to be added here]} 
+
+\paragraph{MET+Higgs from a scalar mediator}
+
+A real scalar singlet $S$ coupling to DM can be introduced as a portal between SM and the dark sector 
+through the Higgs field. The new scalar mixes with the SM Higgs boson, and couples to DM through a Yukawa term $y_\chi$. 
+The relevant Lagrangian terms for this model are: 
+
+\be \label{LintScalar2}
+L \supset - y_\chi \bar\chi \chi (  cos\theta S - sin\theta h ) - \frac{m_q}{v} \bar q q (cos\theta h + sin\theta S )  \,
+\ee
+
+where $\theta$ is the mixing angle between the Higgs boson and the new scalar. Mono-Higgs signals arise
+\textbf{[TODO: add the Lagrangian explaining why $g_b$ is there]}
+
+\textit{Parameter scan}
+
+This model is described by five parameters: 
+
+\begin{enumerate}
+	\item the Yukawa coupling of heavy scalar to dark matter (DM), $g_{DM}$ (also referred to as $y_\chi$) 
+	\item the mixing angle between heavy scalar and SM-like Higgs boson, $\sin\theta$
+	\item the new physics coupling, $g_b$
+	\item mass of heavy scalar, $m_{med}$ 
+	\item mass of dark matter, $m_{DM}$ 
+	%(also referred to as $m_{\chi}$)
+\end{enumerate}
+
+The mixing angle  is constrained from current Higgs data
+to satisfy $\cos\theta = 1$ within 10\% and therefore $\sin\theta \lesssim 0.4$. This provides a starting point 
+for the parameter scan in this model: we recommend to set $\sin\theta = 0.3$. 
+Figure~\ref{fig:metScalarCoupling2} shows that
+there is no dependence of the kinematics from the value of this angle, and different values can be obtained via rescaling
+the results for this mixing angle according to the cross-section. It can also be observed from Figures~\ref{fig:metScalarMass} and~\ref{fig:metScalarCoupling} 
+that the kinematics of this model follows that of the equivalent jet+MET model: only small changes are observed
+in the on-shell region, while the relevant distributions diverge when the mediator is off-shell. 
+For this reason, the same grid in \mmed, \mdm as for the scalar mediator
+of the jet+MET search (Table~\ref{tab:mDMmmedScan_SP}) is chosen as a starting point. 
+The Yukawa coupling to DM $y_{DM}$ is set to 1, the 
+new physics coupling between scalar and SM Higgs $b$ = 3. Results for other values can be obtained via a 
+rescaling of the results for these parameters. 
+More detailed studies are required to estimate the reach of the analysis with respect to all points in the grid
+and therefore decide on a smaller set of grid points to be generated; 
+those are left to the individual analyses. \textbf{[TODO: can we get sensitivity to all the points for all signatures?]}
+
+\begin{figure}[hbpt!]
+	\begin{center}
+		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/s_gb_65_100_04_MET_et_Log}
+		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/s_gdm_MET_et_Log}
+		\caption{Missing transverse momentum distributions at generator level in the scalar 
+			mediator scenario, for different values of: the new physics coupling $g_b$ (left),
+			and the mediator-dark matter coupling $g_{DM}$ (right).
+			\label{fig:metScalarCoupling}}
+	\end{center}
+\end{figure}
+
+\begin{figure}[hbpt!]
+	\begin{center}
+		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/s_theta_65_100_2_MET_et_Log}
+		\caption{Missing transverse momentum distributions at generator level in the scalar 
+			mediator scenario: for different values of the mixing angle $\sin\theta$.
+			\label{fig:metScalarCoupling2} }
+	\end{center}
+\end{figure}
+
+\begin{figure}[hbpt!]
+	\begin{center}
+		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/scalar_100_MET_et_Log}
+		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/scalar_1000_MET_et_Log}
+		\caption{Missing transverse momentum distributions at generator level in the scalar 
+			mediator scenario: for different values of the dark matter mass $m_{DM}$ 
+			and a mediator mass of $m_{med}$ = 100 GeV (left) and $m_{med}$ = 1 TeV (right).
+			\label{fig:metScalarMass}}
+	\end{center}
+\end{figure}
+
+\textit{Cross-section scaling (to be added)}
+
+
+\textit{Model implementation}
+
+The Madgraph parameter cards can be found on the Forum repository. In this model, the contribution
+from the $gghS$ box is included through an effective Lagrangian evaluated in the large $m_t$ limit. 
+This may overestimate the rates of $h + \missET$ signal~\cite{Haisch:2012kf}, but a full evaluation
+is left to future studies. The parton shower for these models is implemented in Pythia. 
+It is recommended to let Pythia decay the Higgs boson, in order to make the BR consistent with HDECAY. 
+
+%%%
+\paragraph{Higgs+MET signal from 2HDM model with a Z' and a new pseudoscalar}
+
+In this simplified model, a new $Z'$ resonance decays to a Higgs plus an intermediate state 
+which in turn decays to a DM pair. Since a SM state decaying to DM would be highly constrained, 
+we consider a two-Higgs doublet extension to the standard model (2HDM), 
+where $Z'$ decays to $hA^0$, where $h$ is the SM Higgs boson with $m_h \sim 125$ GeV, 
+and $A^0$ is a heavy pseudoscalar with a large branching ratio to dark matter. 
+ 
+ This model comprises two doublets, where $\Phi_u$ couples to up-type quarks and $\Phi_d$ couples to down-type
+ quarks and leptons:
+ \begin{equation}
+ -{\cal L} \supset  y_u Q \tilde \Phi_u \bar u + y_d Q \Phi_d \bar d + y_e L \Phi_d \bar e  + {\rm h.c.}
+ \end{equation}
+ 
+ After electroweak symmetry breaking, the Higgs doublets attain vevs $v_u$ and $v_d$, and in unitary gauge the doublets are parametrized as
+ \begin{align}
+ \Phi_d &= \frac{1}{\sqrt{2}}
+ \begin{pmatrix}
+ -\sin{\beta} \ H^+ \\ v_d - \sin{\alpha} \ h + \cos{\alpha} \ H - i \sin{\beta} \ A^0
+ \end{pmatrix} 
+ \quad , \nonumber \\
+ \Phi_u &= \frac{1}{\sqrt{2}}
+ \begin{pmatrix}
+ \cos{\beta} \ H^+ \\ v_u + \cos{\alpha} \ h + \sin{\alpha} \ H + i \cos{\beta} \ A^0
+ \end{pmatrix}
+ \end{align}
+ where $h,H$ are neutral CP-even scalars and $A^0$ is a neutral CP-odd scalar. 
+ Furthermore, $\tan{\beta} \equiv v_u/v_d$, and $\alpha$ is the mixing angle that diagonalizes the $h - H$ mass squared matrix.
+  The remaining scalars $H, A^0, H^\pm$ are assumed to have masses around or above $300$ GeV, 
+  respecting $b \to s \gamma$ constraints \cite{Branco:2011iw}. 
+  We further take $\alpha = \beta - \pi/2$, the alignment limit where $h$ has SM-like couplings to fermions and 
+  gauge bosons as per Ref\cite{Craig:2013hca}, and $\tan{\beta} \ge 0.3$ as implied from the perturbativity of the top Yukawa coupling. 
+  %For the $ b \bar{b}$ decay channel, the signature of the signal we are searching for is a pair of boosted WIMPs recoiling against two $b$ jets. 
+ 
+ The Higgs vevs lead to $Z-Z'$ mass mixing. Diagonalizing the gauge
+ boson mass matrix, the tree-level masses of the $Z$ and $Z'$ bosons are given by
+ \begin{align}
+ M_Z^2 &\approx ( M_{Z}^0)^2  - \epsilon^2 \left[( M_{Z'}^0)^2 - ( M_{Z}^0)^2 \right] \nonumber \\
+ M_{Z'}^2 &\approx ( M_{Z'}^0)^2 + \epsilon^2 \left[( M_{Z'}^0)^2 - ( M_{Z}^0)^2 \right]
+ \quad ,
+ \label{eq:Zpmasses}
+ \end{align}
+ where $(M_Z^0)^2 = g^2(v_d^2+ v_u^2)/(4\cos^2{\theta_w}) $ and
+ $(M_{Z'}^0)^2 = g_z^2 ( z_d^2 v_d^2 + z_u^2 v_u^2 + z_\phi^2
+ v_\phi^2)$ are the mass-squared values in the absence of mixing. The
+ result above is accurate to order $\epsilon^2$, where $\epsilon$ is
+ a small mixing parameter given by
+ \begin{align}
+ \epsilon & \equiv \frac{1}{M_{Z'}^2 - M_Z^2} \frac{g g_z}{2 \cos{\theta_w}} ( z_d v_d^2 + z_u v_u^2) \nonumber \\
+ & =  \frac{(M_Z^0)^2}{M_{Z'}^2 - M_Z^2} \frac{2 g_z \cos \theta_w}{g}  z_u \sin^2 \beta.
+ \label{eq:epsilon}
+ \quad
+ \end{align}
+ 
+ \textit{Parameter scan}
+ 
+ The model is described by five parameters:
+ \begin{itemize}
+ 	\item the pseudoscalar mass $M_{A^0}$,
+ 	\item the DM mass \mdm, 	 
+ 	\item the $Z'$ mass, $M_{Z'}$,
+    \item $\tan{\beta} (\equiv v_u/v_d)$,
+ 	\item the $Z'$ coupling strength $g_z$. 
+ \end{itemize}
+
+ To study the signal production and kinematic dependencies on these parameters, 
+ we produced signal samples varying each of the five parameters through 
+ MadGraph for the matrix element, PYTHIA for the parton shower, and DELPHES\cite{deFavereau:2013fsa} 
+for a parameterized detector-level simulation.
+ 
+ As seen in Fig.~\ref{fig:DMH_tanbeta}, variations of $\tan{\beta}$ does not lead to any kinematic 
+ difference and the production cross section simply scales as a function of $\tan{\beta}$. Hence 
+we recommend to fix $\tan{\beta}$ to unity in signal generation. 
+
+%\begin{figure}[hbpt!]
+%	\centering
+%	\subfloat[High mediator mass]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/models_cmp_MET_et_Log} \label{fig:met_cmp_high}
+%	}
+%	\subfloat[Low mediator mass]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/models_cmp_low_MET_et_Log} \label{fig:met_cmp_low}
+%	}
+%	\caption{Comparison of the missing transverse momentum distributions at generator level in different 
+%		simplified models leading to a Higgs+MET signature. The model parameter settings are detailed in the text.
+%		\label{fig:METSimpMonoHiggs}}
+%\end{figure}
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.49\textwidth}
+	\centering 
+	\includegraphics[scale=0.45]{figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+	\centering 
+	\includegraphics[scale=0.45]{figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_dphi12}
+\end{minipage}
+\caption{Kinematic distributions of the signal process varying $\tan{\beta}$: no kinematic dependency on $\tan{\beta}$ is observed}
+\label{fig:DMH_tanbeta}
+\end{figure}
+
+Similarly, variations of $g_z$ do not lead to any kinematic changes,
+ and the production cross section scales as $(g_z)^2$, as the decay width for this process
+to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
+\begin{equation}
+\Gamma_{Z' \to hA^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{Z'}^2}.
+\end{equation}
+where the center of mass momentum for the decay products $|p| =
+\frac{1}{2 M_{Z'}} \lambda^{1/2}(M_{Z'}^2,m_h^2, m_{A^0}^2)$, and
+$\lambda$ is the K\"{a}llen triangle function.  
+ 
+ %%CD UP TO HERE
+ 
+ \textit{Model implementation}
+ 
+ \textbf{[Ask Yangyang for model / check she hasn't sent it already.]}
 %%%
 
 %%This is left here in case we want to recommend EFT benchmarks?

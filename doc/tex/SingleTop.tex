@@ -4,7 +4,7 @@ transverse momentum (monotop), some of them including dark matter candidates.
 A simplified model encompassing the processes leading to this phenomenology is described in Refs.~\cite{AndreaFuksMaltoni,Agram:2013wda,Boucheneb:2014wza},
 and is adopted as one of the benchmarks for Run 2 LHC searches. 
 
-A dark matter candidate \DMParticle and a new particle $M$ (vector or scalar) 
+A dark matter candidate \DMParticle{} and a new particle $M$ (vector or scalar) 
 are added to the SM, in a theory that respects the $\SUtwoUone$ symmetry 
 and produces a single top quark in association with either the DM particle or a new particle
 decaying invisibly. 
@@ -27,9 +27,9 @@ Within this model, two distinct processes can lead to monotop production:
 \caption
 {
 Feynman diagram of leading order processes leading to monotop events: production of
-a coloured scalar resonance $S$ decaying into a top quark and a spin-$1/2$ fermion $f_{met}$ (top),
-$s-$ and $t$-channel non resonant production of a top quark in association with
-a spin-1 boson $v_{met}$ (bottom).
+a coloured scalar resonance $S$ decaying into a top quark and a spin-$1/2$ fermion $f_{met}$ (a),
+$s-$ (b) and $t$-channel (b) non resonant production of a top quark in association with
+a spin-1 boson $v_{met}$.
 %Feynman diagram of leading order processes leading to monotop events: resonant production of
 %$t$ via resonant new particle $M$ decaying into a top quark and $\Xnew$, which is the dark matter fermion $\chi$ (left),
 %and $s$ and $t$ channel non-resonant production of a top quark in association with $\Xnew$, which is the new particle $M$ (middle and right).
@@ -66,7 +66,7 @@ In this case, a colored $2/3$-charged scalar ($\varphi^{\pm}$) is produced reson
 %
 + X_\mu \bar u \gmu
 \Big[a^{1/2}_{VR} + b^{1/2}_{VR} \gamma_5 \Big] \chi + 
-{\rm h.c.} \bigg] \ .
+{\rm h.c.} \bigg] 
 \esp\ee
 
 %\begin{eqnarray}
@@ -144,7 +144,7 @@ V_\mu \bar u \gmu \Big[a^1_{FC} \!+\! b^1_{FC} \gamma_5 \Big] u
 %+ X_\mu \bar u \gmu
 %\Big[a^{1/2}_{VR} + b^{1/2}_{VR} \gamma_5 \Big] \chi + 
 + \rm h.c. 
-\bigg] \ .
+\bigg] 
 \esp\ee
 
 The strength of the interactions among these two states and a pair
@@ -250,7 +250,7 @@ This Section describes the notations used in the MadGraph model convention,
 in term of the ones introduced in the previous Section.
 
 The Madgraph model~\cite{MGmodel} used for these benchmarks corresponds to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
-Each coupling constant of this dynamics can be set via the parameter card and 
+Each coupling constant of this model can be set via the parameter card and 
 the blocks which are relevant for the two models used for the experimental searches are described below.
 The relevant parameters in the MadGraph parameter cards, also expressed in the notation introduced in the 
 previous Section, are as follows for the two models considered.
@@ -306,7 +306,7 @@ The relevant parameters for the non-resonant model are:
 	and as a consequence to the width of the vector. 
 \end{itemize}	
 
-It has been checked for the non-resonant model that the relevant kinematics does not change when changing the width of the resonance. Figures~\ref{fig:appB:pTV} and~\ref{fig:appB:pTtop} show the $V$ mass distribution, the transverse momentum for $V$ and for the top quark from the $V\to t\bar{u}$ decay, for different $V$ masses and widths.
+It has been checked for the non-resonant model that the relevant kinematics does not change when changing the width of the resonance. Figures~\ref{fig:appB:Vmass}, \ref{fig:appB:pTV} and~\ref{fig:appB:pTtop} show the $V$ mass distribution, the transverse momentum for $V$ and for the top quark from the $V\to t\bar{u}$ decay, for different $V$ masses and widths.
 These figures are relevant independently of the $V$ decay mode (be it visible or invisible). 
 
 \begin{figure}[!h!tpd]
@@ -315,7 +315,7 @@ These figures are relevant independently of the $V$ decay mode (be it visible or
 	\caption{
 		Distribution of $V$ invariant mass for the $gu\to tV(\to t\bar{u})$ (on-shell V) 
 		for $m_V$ = {200, 600, 1000}~GeV (from left to right) and for three different
-		visible decay width (computed from Madgraph directly, $1\%$ and $10\%$).
+		visible decay width (computed from Madgraph directly according to the allowed decays and their couplings, $1\%$ and $10\%$).
 	}   
 	\label{fig:appB:Vmass}
 \end{figure}
@@ -344,8 +344,8 @@ These figures are relevant independently of the $V$ decay mode (be it visible or
 
 The limited timescale allowed to reach a consensus for
 the recommendations contained in this document has not allowed further studies on the 
-parameter scan of these models. The two Collaborations are however encouraged
-to continue the path started for those studies and agree on a common parameter scan,
+parameter scan of these models. The two Collaborations have however agreed to continue studying
+these models and agree on a common parameter scan,
 following the same path as for other models described in this document.  
 
 %\newthought{Parameter choices and cross sections}
