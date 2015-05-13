@@ -41,6 +41,11 @@
 \usepackage{subfig}
 \DeclareGraphicsRule{*}{mps}{*}{}
 
+\usepackage{xhfill}% http://ctan.org/pkg/xhfill
+%\newcommand{\ditto}[1][.4pt]{\xrfill{#1}~''~\xrfill{#1}}
+\newcommand{\ditto}{~''~}
+
+
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \usepackage{mathtools} % extended mathematics
 \usepackage{booktabs} % book-quality tables
@@ -72,7 +77,6 @@
   \end{fullwidth}
 }
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
-\newcommand{\svnfooter}{Last Changed Rev: \svnfilerev}
 \makeatletter
 \title{ATLAS+CMS Dark Matter Forum Recommendations} 
 \author{ATLAS+CMS Dark Matter Forum}
@@ -95,7 +99,7 @@
 \newcommand{\bra}[1]{\langle #1|}
 \newcommand{\ket}[1]{|#1\rangle}
 \newcommand{\MET}{\slashed{E}_T}
-\newcommand{\mMed}{M_{\rm{med}}}
+\newcommand{\mMed}{\ensuremath{M_{\rm{med}}}\xspace}
 \newcommand{\gDM}{\ensuremath{g_{\rm{DM}}}\xspace}
 \newcommand{\gq}{\ensuremath{g_{\rm q}}\xspace}
 \newcommand{\ifb}{\rm{fb}^{-1}}
@@ -206,15 +210,17 @@
 % \label{subsec:ScalarModels}
 % \input{tex/ScalarModels}
 
+
+\chapter{Specific models for signatures with heavy flavor quarks}
+\label{subsec:DMHFModels}
+\input{tex/DMHFModels}
+
 %\ifNotMonojetTTBarOnly
 \chapter{Specific models for signatures with EW bosons}
 \label{subsec:EWSpecificModels}
 \input{tex/EWSpecificModels}
 %\fi
 
-\chapter{Specific models for signatures with heavy flavor quarks}
-\label{subsec:DMHFModels}
-\input{tex/DMHFModels}
 
 %% \section{SUSY-inspired simplified models}
 %% \label{subsec:SUSYModels}
