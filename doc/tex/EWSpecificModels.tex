@@ -751,12 +751,8 @@ we leave it up to individual analyses on whether they generate benchmark points 
 %the dijet constraints dominate even at low $Z'$ masses. 
 
 Since the DM pair are produced as a result of the decay of $A^0$, there are minimal kinematic changes when varying $M_{DM}$ 
-as long as $M_{DM}<M_{A^0}/2$ so that $A^0$ production is on-shell, as shown in Fig.~\ref{fig:DMH_mdm} (before
-detector simulation). For this reason the DM mass is fixed it to 100 GeV. 
-For two "medium" $M_{Z'}$, $M_{A^0}$ value sets, we vary the DM mass to obtain sample cross section for rescaling results. 
-All LO cross sections for the various parameter scan points are reported in Appendix~\ref{app:}
-The parameter scan excludes the off-shell region, as the cross-sections are suppressed and the LHC would not have any
-sensitivity to these benchmark points in early data. 
+as long as $M_{DM}<M_{A^0}/2$ so that $A^0$ production is on-shell, as shown in Fig.~\ref{fig:DMH_mdm} and~
+\ref{fig:zprimeDecay} (before detector simulation). 
 
 \begin{figure}[h!]
 	\centering
@@ -771,7 +767,22 @@ sensitivity to these benchmark points in early data.
 	\label{fig:DMH_mdm}
 \end{figure}
  
+  \begin{figure}[hbpt!]
+  	\begin{center}
+  		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zp2hdm_a0_300_MET_et_Log}
+  		\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log}
+  		\caption{Missing transverse momentum distributions at generator level in the Z'+2HDM 
+  			scenario for different values of the dark matter mass $m_{DM}$, with 
+  			$m_{Z'}$ = 1 TeV and $m_{A_0}$ = 300 GeV (left) and $m_{A_0}$ = 1 TeV (right).
+  			\label{fig:zprimeDecay}}
+  	\end{center}
+  \end{figure}
+  
 We recommend to produce signal events for a fixed $g_z=0.8$, $\tan{\beta}=1$ and $M_{DM}=100$~GeV. For these values, we scan the 2-D parameter space of ${M_{Z'}, M_{A^0}}$ with $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV, and $M_{A^0}=300, 400, 500, 600, 700, 800$~GeV with $M_{A^0} < M_{Z'}-m_h$, for a total of 24 points. The choice of scan is justified by the sensitivity study in~\ref{Berlin2014cfa}: the expected LHC sensitivity for Run-2 is up to $M_{Z'} \sim 1.5$~TeV.
+For the parameter scan, the DM mass is fixed to 100 GeV. For two $M_{Z'}$, $M_{A^0}$ value sets, we vary the DM mass to obtain sample cross section for rescaling results. 
+All LO cross sections for the various parameter scan points are reported in Appendix~\ref{app:EWSpecificModels_Appendix}.
+The parameter scan excludes the off-shell region, as the cross-sections are suppressed and the LHC would not have any
+sensitivity to these benchmark points in early data. 
 
 The kinematic distributions with varying $M_{Z'}$ for fixed $M_{A^0}$ are shown in Fig.~\ref{fig:DMH_mzp}, while the dependency on $M_{A^0}$ is shown in Fig.~\ref{fig:DMH_ma0}. Both figures include plots before detector simulation. 
   
@@ -824,7 +835,7 @@ The kinematic distributions with varying $M_{Z'}$ for fixed $M_{A^0}$ are shown 
  \Gamma_{Z' \to hZ}  = (g_z \cos \alpha \sin \beta)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
  \end{equation}
 The values for the $Z'$ masses scanned for those samples should follow those of the previous samples, 
-namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  
+namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  This signal process has no $M_A$ dependence. 
  
 \begin{figure}[h!]
   	\centering
@@ -846,7 +857,7 @@ namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.
   	\caption{Kinematic distributions of $Z' \to A^0h$ exclusive production, $Z' \to Zh$ exclusive production and $Z'$ inclusive production for $M_{Z'}=1000$~GeV and $M_{A^0}=300$~GeV}
   	\label{fig:DMH_zpincl}
 \end{figure}
- 
+  
  \textit{Model implementation}
  
  \textbf{[Ask Yangyang for model / check she hasn't sent it already.]}
@@ -869,21 +880,20 @@ The nomenclature for the masses in the Madgraph model is:
  	\item \texttt{MX} - PDG ID 1000022 - dark matter particle
  \end{itemize}
  
- 
-%The other masses are not changed and do not impact the result. 
+The other masses are unchanged and do not impact the result. 
 % It is recommended to require the dark matter mass $M_X < M_A/2$ for a large enough signal rate, 
 % in which case the dark matter mass does not affect the kinematics. 
 % In addition, $M_{Z'} > M_A + M_h$ should be imposed on the scan. 
- 
- \ \\
- 
- \noindent Both $Z' \to hZ(\bar \nu \nu)$ and  $Z' \to hA(\bar XX)$ contribute to the final state. 
- They scale differently with model parameters.  
- It is more efficient to generate them separately, and then add together weighted by cross sections. The $hZ$ has no $M_A$ dependence. 
+  
+ Both $Z' \to hZ(\bar \nu \nu)$ and  $Z' \to hA(\bar \chi \chi)$ contribute to the final state, scaling
+ different with model parameters. We recommend to generate them separately, 
+ and then add the two signal processes together weighted by cross sections.
  % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence. 
  
  \ \\
- In addition, it is recommended not to handle the $h$ decay through MadGraph (which doesn't have the proper $h$ branching ratios), or, if using MadGraph, then the resulting cross section should be rescaled to match onto the correct branching ratio.
+ In addition, it is recommended not to handle the $h$ decay through MadGraph as
+ it does not include the proper $h$ branching ratios, or, if using MadGraph, then the 
+ resulting cross section should be rescaled to match onto the correct branching ratio.
  
 %%%
 
