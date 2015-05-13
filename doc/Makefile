@@ -11,7 +11,7 @@ pass1: $(tex_source) figures/*.pdf figures/svg/*.svg
 	pdflatex doc.tex
 	bibtex doc
 
-mp: pdf cleanMP 
+mp: doc.pdf cleanMP 
 	pdflatex doc.tex
 	pdflatex doc.tex
 
