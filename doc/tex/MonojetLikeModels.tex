@@ -28,8 +28,30 @@
 %\end{itemize}
 
 \begin{figure}[t!]
-%\centering
-\includegraphics[width=0.75\linewidth]{figures/monoLHC.pdf}
+\centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelVmonojetParameters]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmftop{isr}
+    \fmfbottom{pisr}
+    % \fmf{dashes,tension=0.6,label={$\substack{{\Large V,,A}\\(m_{med},,\Gamma_{min,,med})}$}}{v1,v2}
+    \fmf{dashes,tension=0.6,label={\Large $V,,A(m_{med})$}}{v1,v2}
+    \fmf{fermion}{o2,v2,o1}
+    \fmf{fermion}{i2,visr,v1}
+    \fmf{plain}{v1,pvisr,i1}
+    \fmf{fermion,tension=0}{v1,i1}
+    \fmfdot{v1,v2}
+    \fmflabel{\Large ${g_q}$}{v1}
+    \fmflabel{\Large ${g_{DM}}$}{v2}
+    \fmflabel{\Large ${\bar{q}}$}{i1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${\bar{\chi}(m_{DM})}$}{o1}
+    \fmflabel{\Large ${\chi(M_{DM})}$}{o2}
+    \fmf{gluon,tension=0}{visr,isr}
+    \fmf{phantom,tension=0}{pvisr,pisr}
+    \fmflabel{\Large ${g}$}{isr}
+  \end{feynmandiagram}
 %\caption[][\baselineskip]{Representative Feynman
 \caption{Representative Feynman
 diagram showing the pair production of dark matter particles in association with a parton from the initial state via a vector or axial-vector mediator.
