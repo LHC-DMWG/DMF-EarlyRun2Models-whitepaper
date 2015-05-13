@@ -884,6 +884,157 @@ namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  This signal process h
   	\caption{Kinematic distributions of $Z' \to A^0h$ exclusive production, $Z' \to Zh$ exclusive production and $Z'$ inclusive production for $M_{Z'}=1000$~GeV and $M_{A^0}=300$~GeV}
   	\label{fig:DMH_zpincl}
 \end{figure}
+
+right\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHSimplified]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{fermion}{i2,v1,i1}
+    \fmflabel{\Large $q$}{i2}
+    \fmflabel{\Large $\bar{q},$}{i1}
+    \fmf{photon,label={\Large $Z,,\gamma$}}{v1,v2}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    \fmf{fermion}{o2,v2,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1}
+  \end{feynmandiagram}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHSimplifiedA0]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{fermion}{i2,v1,i1}
+    \fmflabel{\Large $q$}{i2}
+    \fmflabel{\Large $\bar{q}$}{i1}
+    \fmf{photon,label={\Large $Z^\prime$}}{v1,v2}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    \fmf{dots_arrow,label={\Large $A_0$},label.side=right}{v2,v3}
+    \fmf{fermion,tension=2}{o2,v3,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1}
+  \end{feynmandiagram}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHEFT]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,ohidden,o3}
+    \fmf{fermion}{i2,v1,i1}
+    \fmflabel{\Large $q,g$}{i2}
+    \fmflabel{\Large $\bar{q},g$}{i1}
+    \fmf{dashes}{v1,v2}
+    \fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30,label={\Large $\text{EFT}(\lambda,,\Lambda)$},label.a=30,label.d=15}{v2}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    \fmf{fermion}{o2,v2,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1}
+  \end{feynmandiagram}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHZprimeqq]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{fermion}{i2,v1,i1}
+    \fmflabel{\Large $q$}{i2}
+    \fmflabel{\Large $\bar{q}$}{i1}
+    \fmf{dashes,label={\Large $Z,,Z^\prime$}}{v1,v2}
+    \fmf{dashes,label={\Large $Z,,Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    % \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
+    % \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+    \fmf{fermion}{o2,v3,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHbaryonicqq]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{fermion}{i2,v1,i1}
+    \fmflabel{\Large $q$}{i2}
+    \fmflabel{\Large $\bar{q}$}{i1}
+    \fmf{dashes,label={\Large $h,,S$}}{v1,v2}
+    \fmf{dashes,label={\Large $h,,S$},label.side=right}{v2,v3}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
+    \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+    \fmf{fermion}{o2,v3,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHbaryonicgg]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{gluon}{i1,vt1}
+    \fmf{gluon}{i2,vt2}
+    \fmflabel{\Large $g$}{i2}
+    \fmflabel{\Large $g$}{i1}
+    \fmf{fermion,label={\Large $t$}}{vt1,vt2}
+    \fmf{fermion}{vt2,v1,vt1}
+    \fmf{dashes,label={\Large $h,,S$},label.side=right}{v1,v2}
+    \fmf{dashes,label={\Large $h,,S$},label.side=right,label.d=5}{v2,v3}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
+    \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+    \fmf{fermion}{o2,v3,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelMonoHbaryonicggS]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{gluon}{i1,vt1}
+    \fmf{gluon}{i2,vt2}
+    \fmflabel{\Large $g$}{i2}
+    \fmflabel{\Large $g$}{i1}
+    \fmf{fermion,label={\Large $t$}}{vt1,vt2}
+    \fmf{fermion}{vt2,v2,v1,vt1}
+    \fmf{dashes}{v2,o3}
+    \fmflabel{\Large $h$}{o3}
+    \fmf{dashes,label={\Large $h,,S$},label.side=right,label.d=5}{v1,v3}
+    \fmfv{label={\Large $y_{\chi}$},label.a=-45,label.distance=5w}{v3}
+    \fmf{fermion}{o2,v3,o1}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1,v2,v3,vt1,vt2}
+  \end{feynmandiagram}
+\end{figure}
   
  \paragraph{Model implementation}
 
