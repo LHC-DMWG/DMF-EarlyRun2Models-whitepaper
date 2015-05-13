@@ -57,9 +57,9 @@
 \end{figure}
 
 
-There are several matrix element implementations of the s-channel vector mediated DM production. This is available in POWHEG, MADGRAPH and also MCFM.
+There are several matrix element implementations of the s-channel vector mediated DM production: POWHEG, MADGRAPH and also MCFM.
 The implementation in POWHEG generates DM pair production with 1 parton at next-to-leading order (NLO), whilst MADGRAPH and MCFM are at leading order (LO). As shown in POWHEG Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
-Since NLO calculations are available for the process in POWHEG, we recommend to proceed with POWHEG as the generator of choice. 
+Since NLO calculations are available for the process in POWHEG, we recommend to proceed with POWHEG as the generator of choice.{\bf [Comment on MadGraph uses: k-factors, allowed initial state partons, proper combination of LO ME with LO PDF?]}
 
 
 
@@ -594,7 +594,7 @@ In this way, the events at low $\MET$ are suppressed and receive higher event we
 \item Allow negative weights for the DMV model by setting \verb+withnegweights+ to 1.
 \item Since the DMS\_tloop model is a leading order process, set \verb+LOevents+ and \verb+bornonly+ are set to 1 internally.
 \end{itemize}
-
+{\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
 
 \section{Colored scalar mediator, t-channel exchange}
 
