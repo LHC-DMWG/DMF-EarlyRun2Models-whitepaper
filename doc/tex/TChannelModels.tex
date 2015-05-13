@@ -1,17 +1,239 @@
 
-% text initially from Amelia Brennan (amelia.jean.brennan@cern.ch)
+% text based on initial versions from
+% Amelia Brennan (amelia.jean.brennan@cern.ch),
+% http://arxiv.org/abs/arXiv:1402.2285, 
+% and http://arxiv.org/abs/arXiv:1409.2893
 
-An alternative set of simplified models exist where the mediator is exchanged in the $t$-channel, thereby coupling the quark and dark matter particle directly. Under the assumption that $\chi$ is a Standard Model (SM) singlet, the mediating particle, labeled $\phi$, is necessarily charged and coloured. This model is parallel to, and partially motivated by, the squark of the MSSM, but in this case the $\chi$ is chosen to be Dirac. An important difference with respect to the MSSM is that {\bf [illustrate that diagram is no longer forced to be small. Should forum provide formulae to relate our parameters to MSSM searches?]}. Following the example of Ref.~\cite{Papucci:2014}, the interaction Lagrangian is written as
+The preceding sections discussed models containg a Dirac WIMP coupled to the SM through exchange of a neutral vector or scalar mediator in an $s$-channel process. A $t$-channel process may couple the SM and DM directly. Under the assumption that $\chi$ is a Standard Model (SM) singlet, the mediating particle, labeled $\phi$, is necessarily charged and coloured. 
+
+This model is parallel to, and partially motivated by, the squark of the MSSM, but in this case the $\chi$ is chosen to be Dirac as above. 
+
+An important difference with respect to the MSSM is that {\bf [illustrate that diagram is no longer forced to be small. Should forum provide formulae to relate our parameters to MSSM searches?]}. 
+
+Following the example of Ref.~\cite{Papucci:2014}, the interaction Lagrangian is written as
 
 \begin{equation}
 \mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2,3} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chi
 \end{equation}
-\textcolor{red}{(Note: \cite{Papucci:2014} uses only i = 1,2, but I think it's fine to extend this to 3 here.)}
+\todo{(Note: \cite{Papucci:2014} uses only i = 1,2, but I think it's fine to extend this to 3 here.)}
+
 where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which (unlike the $s$-channel mediators) must be heavier than $\chi$. These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
+
+\begin{figure}
+  \unitlength=0.0045\linewidth
+  \begin{feynmandiagram}[modelTmonojetA]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmftop{isr}
+    \fmflabel{\Large ${\bar{q}}$}{i1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmf{fermion}{i2,visr,v2}
+    \fmf{phantom}{v2,pisr,o2}
+    \fmf{phantom,tension=0}{pisr,isr}
+    \fmf{fermion,tension=0}{v2,o2}
+    \fmf{wiggly,tension=0}{v2,o2}
+    \fmf{fermion}{i1,v1,o1}
+    \fmf{wiggly,tension=0}{v1,o1}
+    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v1,v2}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmfdot{v1,v2,visr}
+    \fmf{gluon,tension=0}{visr,isr}
+    \fmflabel{\Large ${g}$}{isr}
+    \fmfdot{v1,v2,visr}
+  \end{feynmandiagram}\quad
+  \begin{feynmandiagram}[modelTmonojetC]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{fermion}{i2,v3}
+    \fmf{fermion,tension=0}{v3,o3}
+    \fmf{wiggly}{v3,o3}
+    \fmf{gluon}{i1,v1}
+    \fmf{fermion}{v2,v1,o1}
+    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v3,v2}
+    \fmf{fermion,tension=0}{v2,o2}
+    \fmf{wiggly}{v2,o2}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $q$}{o1}
+    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}\\\vspace{\baselineskip}
+  \begin{feynmandiagram}[modelTmonojetB]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{gluon}{i1,v1}
+    \fmf{fermion}{i2,v1}
+    \fmf{fermion,tension=2}{v1,v2}
+    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v2,v3}
+    \fmf{fermion}{v3,o3}
+    \fmf{fermion,tension=0}{v2,o1}
+    \fmf{wiggly}{v2,o1}
+    \fmf{fermion,tension=0}{v3,o2}
+    \fmf{wiggly}{v3,o2}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large $\chi$}{o1}
+    \fmflabel{\Large $q$}{o3}
+    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}\quad
+  \begin{feynmandiagram}[modelTmonojetD]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{gluon}{i1,v1}
+    \fmf{fermion}{i2,v2}
+    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v2,v1}
+    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v1,v3}
+    \fmf{fermion}{v3,o2}
+    \fmf{fermion,tension=0}{v3,o1}
+    \fmf{wiggly}{v3,o1}
+    \fmf{fermion,tension=0}{v2,o3}
+    \fmf{wiggly}{v2,o3}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $q$}{o2}
+    \fmflabel{\Large $\bar{\chi}$}{o1}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}\quad
+  \begin{feynmandiagram}[modelTmonojetE]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{fermion}{i2,v3,o2}
+    \fmf{fermion}{o1,v1,i1}
+    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v1,v2}
+    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v2,v3}
+    \fmf{gluon}{v2,o2}
+    \fmf{wiggly,tension=0}{v3,o2}
+    \fmf{wiggly,tension=0}{v1,o1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${\bar{q}}$}{i1}
+    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $g$}{o2}
+    \fmflabel{\Large $\bar{\chi}$}{o1}
+    \fmfdot{v1,v2,v3}
+  \end{feynmandiagram}
+\caption{This is a caption.}
+\end{figure}
+
+\begin{figure}
+  \unitlength=0.0045\linewidth
+  \begin{feynmandiagram}[modelTDijetA]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3,o4}
+    \fmf{gluon}{i2,v2}
+    \fmf{gluon}{i1,v1}
+    \fmf{scalar}{v4,v2,v1,v3}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v2,v1}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v4,v2}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v1,v3}
+    \fmf{fermion}{o3,v4,o4}
+    \fmf{fermion}{o2,v3,o1}
+    \fmf{wiggly,tension=0}{v4,o4}
+    \fmf{wiggly,tension=0}{v3,o2}
+    \fmflabel{\Large ${g}$}{i2}
+    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large $\chi$}{o4}
+    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmflabel{\Large $\bar{q}$}{o3}
+    \fmflabel{\Large $q$}{o1}
+    \fmfdot{v1,v2,v3,v4}
+  \end{feynmandiagram}\quad
+  \begin{feynmandiagram}[modelTDijetB]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3,o4}
+    \fmf{gluon}{i2,v2}
+    \fmf{gluon}{i1,v1}
+    \fmf{scalar}{v4,v2}
+    \fmf{scalar}{v1,v3}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v4,v2}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v1,v3}
+    \fmf{phantom,tension=0,label={$\chi$}}{v2,v1}
+    \fmf{fermion}{v2,v1}
+    \fmf{wiggly,tension=0}{v2,v1}
+    \fmf{fermion}{o3,v4,o4}
+    \fmf{fermion}{o2,v3,o1}
+    \fmf{wiggly,tension=0}{v4,o4}
+    \fmf{wiggly,tension=0}{v3,o2}
+    \fmflabel{\Large ${g}$}{i2}
+    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large $\chi$}{o4}
+    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmflabel{\Large $\bar{q}$}{o3}
+    \fmflabel{\Large $q$}{o1}
+    \fmfdot{v1,v2,v3,v4}
+  \end{feynmandiagram}\\\vspace{\baselineskip}
+  \begin{feynmandiagram}[modelTDijetC]
+    \fmfleft{i1,i2}
+    \fmftop{o4,o3}
+    \fmfright{o1,o2}
+    \fmf{fermion}{i2,v4,v3}
+    \fmf{gluon}{v4,o4}
+    \fmf{fermion}{v3,o3}
+    \fmf{wiggly,tension=0}{v3,o3}
+    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v3,v2,v1}
+    \fmf{gluon}{i1,v2}
+    \fmf{fermion}{v1,o2}
+    \fmf{fermion}{o1,v1}
+    \fmf{wiggly,tension=0}{o1,v1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${g}$}{i1}
+    \fmflabel{\Large $g$}{o4}
+    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $q$}{o2}
+    \fmflabel{\Large $\bar{\chi}$}{o1}
+    \fmfdot{v1,v2,v3,v4}
+  \end{feynmandiagram}\quad
+
+  \begin{feynmandiagram}[modelTDijetD]
+    \fmfleft{i1,i2}
+    \fmftop{o4}
+    \fmfbottom{o1}
+    \fmfright{o2,o3}
+    \fmf{fermion}{i1,v1,v2}
+    \fmf{fermion}{v3,v4,i2}
+    \fmf{gluon}{v4,o4}
+    \fmf{gluon}{v1,o1}
+    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v2,v3}
+    \fmf{fermion}{o3,v3}
+    \fmf{wiggly,tension=0}{o3,v3}
+    \fmf{fermion}{v2,o2}
+    \fmf{wiggly,tension=0}{v2,o2}
+    \fmflabel{\Large ${\bar{q}}$}{i2}
+    \fmflabel{\Large $q$}{i1}
+    \fmflabel{\Large ${g}$}{o4}
+    \fmflabel{\Large ${g}$}{o1}
+    \fmflabel{\Large $\chi$}{o2}
+    \fmflabel{\Large $\bar{\chi}$}{o3}
+    \fmfdot{v1,v2,v3,v4}
+  \end{feynmandiagram}\\\vspace{\baselineskip}
+  \begin{feynmandiagram}[modelTDijetE]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3,o4}
+    \fmf{fermion}{i1,v1,o1}
+    \fmf{fermion}{o4,v4,i2}
+    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v1,v2,v3,v4}
+    \fmf{fermion}{v2,o2}
+    \fmf{fermion}{o3,v3}
+    \fmf{wiggly,tension=0}{v4,o4}
+    \fmf{wiggly,tension=0}{v1,o1}
+    \fmflabel{\Large ${\bar{q}}$}{i2}
+    \fmflabel{\Large $q$}{i1}
+    \fmflabel{\Large ${\bar{q}}$}{o3}
+    \fmflabel{\Large ${q}$}{o2}
+    \fmflabel{\Large $\chi$}{o1}
+    \fmflabel{\Large $\bar{\chi}$}{o4}
+    \fmfdot{v1,v2,v3,v4}
+  \end{feynmandiagram}\\\vspace{\baselineskip}
+
+\caption{This is a caption.}
+\end{figure}
 
 \vspace{5mm}
 
-Minimal Flavour Violation (MFV) requires that the mediator masses for each flavour be equal; the same logic also applies to the couplings $g$. The available parameters are then
+As for the $s$-channel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour; the same logic also applies to the couplings $g$. The available parameters are then
 
 \begin{equation}
 \{ m_{\chi},\, M_{\phi},\, g\}.
