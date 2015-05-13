@@ -97,45 +97,64 @@ ranges from 1.05 to 1.5 with increasing mediator masses).
 \end{figure}
 
 Examples of relevant kinematic distributions for selected benchmark points are
-shown in Fig.~\ref{fig:DMV_EW_kinematics};
-leading-order cross-sections for the chosen
-benchmark points are shown in Table~\ref{table:x-sec}
-\textbf{[TODO: Insert table of cross-sections]}.
+shown in Fig.~\ref{fig:DMV_EW_kinematics}. 
+leading-order cross-sections for the chosen 
+benchmark points are shown in Appendix~\ref{app:EWSpecificModels_Appendix}.
 
 \begin{figure}[h!]
-  \centering
-  \subfloat[Missing transverse momentum distribution for the photon+MET final state, for
-  different mediator mass choices, for a DM mass of 10 GeV.\label{fig:DMV_EW_gamma_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/EW/ptGamma_filter120GeV_dmV_dm10GeV}
-    }%TODO: add equivalent plot of MET to appendix
-    \hfill
-  \subfloat[Leading photon transverse momentum distribution for the photon+MET final state,
-  for different DM mass choices, with a mediator mass of 1 TeV.\label{fig:DMV_EW_gamma_pT}]{%
-      \includegraphics[width=0.45\textwidth]{figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV}
-    }%TODO: add equivalent plot of MET to appendix
-    \hfill
-  \subfloat[Missing transverse momentum distribution for the leptonic Z+MET final state.\label{fig:DMV_EW_Z_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/llug}
-    }
-  \subfloat[Transverse mass ($m_T$) for the leptonic W+MET final state.\label{fig:DMV_EW_Wlep_mT}]{%
-      \includegraphics[width=0.45\textwidth]{figures/gull}
-    }
-    \hfill
-  \subfloat[Missing transverse momentum distribution for the hadronic W+MET final state.\label{fig:DMV_EW_Whad_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/EW/monoWhad_Destructive/metPt}
-    }
-    \caption{Kinematic distributions relevant for searches with W, Z and photons in the final state,
-    for the simplified model with a vector mediator exchanged in the $s-$channel.}
-    \label{fig:DMV_EW_kinematics}
+	\centering  
+	\subfloat[Missing transverse momentum distribution for the photon+MET final state, for 
+	different mediator mass choices, for a DM mass of 10 GeV.\label{fig:DMV_EW_gamma_MET}]{%
+		\includegraphics[width=0.45\textwidth]{figures/EW/ptGamma_filter120GeV_dmV_dm10GeV}
+	}%TODO: add this + equivalent plot of MET to appendix
+	\hfill
+	\subfloat[Leading photon transverse momentum distribution for the photon+MET final state, 
+	for different DM mass choices, with a mediator mass of 1 TeV.\label{fig:DMV_EW_gamma_pT}]{%
+		\includegraphics[width=0.45\textwidth]{figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV}
+	}%TODO: add equivalent plot of MET to appendix
+	\hfill
+	\subfloat[Missing transverse momentum distribution for the leptonic Z+MET final state, 
+	for different mediator mass choices, for a DM mass of 15 GeV\label{fig:DMV_EW_Z_MET}]{%
+		\includegraphics[width=0.45\textwidth]{figures/EW/pt_vv_Mx15}
+	}    
+	\hfill
+	\subfloat[Missing transverse momentum distribution for the hadronic W+MET final state.\label{fig:DMV_EW_Whad_MET}]{%
+		\includegraphics[width=0.9\textwidth]{figures/EW/monoWhad_Destructive/metPt}
+	}    
+	\caption{Kinematic distributions relevant for searches with W, Z and photons in the final state, 
+		for the simplified model with a vector mediator exchanged in the $s-$channel.}
+	\label{fig:DMV_EW_kinematics}
 \end{figure}
 
 \subsection{Colored scalar mediator exchanged in the s-channel}
 
-t-channel colored scalar, to be completed...
+The model parameters with emission of an EW boson follow those in Section~\ref{subsec:MonojetLikeModels}.
+
+Figure~\ref{fig:TChan_EW_Zhad_MET} shows the MET distribution for the hadronic Z+MET final state, 
+with varying dark matter and mediator mass, before any selection. 
+The acceptance for a series of simplified analysis cuts 
+(MET$>$350 GeV, leading jet $p_T >$ 40 GeV, minimum azimuthal angle between jet and MET > 0.4) 
+applied at the generator level is shown in Figure~\ref{fig:TChan_EW_Zhad_acc}. 
+The parameter scan is still under discussion. 
+
+\begin{figure}[h!]
+	\centering  
+	\includegraphics[width=0.9\textwidth]{figures/EW/monoZhad_TChannel/metPt}
+	\caption{Missing transverse momentum distribution for the hadronic Z+MET final state,
+		for the simplified model with a colored scalar mediator exchanged in the $t-$channel.}
+	\label{fig:TChan_EW_Zhad_MET}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering  
+	\includegraphics[width=0.9\textwidth]{figures/EW/monoZhad_TChannel/acc}
+	\caption{Acceptance table for the hadronic Z+MET final state,
+		for the simplified model with a colored scalar mediator exchanged in the $t-$channel.}
+	\label{fig:TChan_EW_Zhad_acc}
+\end{figure}
 
 \subsection{Model implementation}
 
-These models are generated at leading order with MadGraph 2.2.2, and parameter
-cards can be found on SVN \textbf{[TODO: Add SVN location]}.
-The parton shower is done using Pythia 8, with a matching scale of...
-\textbf{[TODO: To be completed.]}
+These models are generated at leading
+order with MadGraph 2.2.2, using Pythia8 for the parton shower.
+Parameter cards can be found on the Forum SVN repository~\cite{TODO}.
