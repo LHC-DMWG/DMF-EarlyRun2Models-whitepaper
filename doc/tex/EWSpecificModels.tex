@@ -617,11 +617,15 @@ It is recommended to let Pythia decay the Higgs boson, in order to make the BR c
 %%%
 \paragraph{Higgs+MET signal from 2HDM model with a Z' and a new pseudoscalar}
 
-In this simplified model, a new $Z'$ resonance decays to a Higgs plus an intermediate state 
-which in turn decays to a DM pair. Since a SM state decaying to DM would be highly constrained, 
-we consider a two-Higgs doublet extension to the standard model (2HDM), 
-where $Z'$ decays to $hA^0$, where $h$ is the SM Higgs boson with $m_h \sim 125$ GeV, 
-and $A^0$ is a heavy pseudoscalar with a large branching ratio to dark matter. 
+In this simplified model~\cite{Berlin:2014cfa}, a new $Z'$ resonance decays to a Higgs boson $h$ 
+plus a heavy pseudoscalar state 
+$A$ in the 2HDM framework, which in turn decays to a DM pair. 
+The motivation for coupling the dark matter to the pseudoscalar is that dark matter coupling to higgs or $Z'$ is generically 
+constrained by other signal channels and direct detection. 
+An advantage of including this model is that it has different kinematics  due to the on-shell $Z'$ production, 
+where for heavy $Z'$ masses the MET and pT spectra are much harder.
+This model can satisfy electroweak precision tests and constraints from dijet resonance searches, 
+and still give a potentially observable Higgs+MET signal.
  
  This model comprises two doublets, where $\Phi_u$ couples to up-type quarks and $\Phi_d$ couples to down-type
  quarks and leptons:
@@ -642,32 +646,53 @@ and $A^0$ is a heavy pseudoscalar with a large branching ratio to dark matter.
  \end{pmatrix}
  \end{align}
  where $h,H$ are neutral CP-even scalars and $A^0$ is a neutral CP-odd scalar. 
- Furthermore, $\tan{\beta} \equiv v_u/v_d$, and $\alpha$ is the mixing angle that diagonalizes the $h - H$ mass squared matrix.
-  The remaining scalars $H, A^0, H^\pm$ are assumed to have masses around or above $300$ GeV, 
-  respecting $b \to s \gamma$ constraints \cite{Branco:2011iw}. 
-  We further take $\alpha = \beta - \pi/2$, the alignment limit where $h$ has SM-like couplings to fermions and 
-  gauge bosons as per Ref\cite{Craig:2013hca}, and $\tan{\beta} \ge 0.3$ as implied from the perturbativity of the top Yukawa coupling. 
+ In this framework, $\tan{\beta} \equiv v_u/v_d$, and $\alpha$ is the mixing angle that diagonalizes 
+ the $h - H$ mass squared matrix. 
+ %FIXME: this is an external constrain that may or may not be included 
+%The masses of the remaining scalars $H, A^0, H^\pm$ are assumed to be 
+%around or above $300$ GeV, respecting $b \to s \gamma$ constraints \cite{Branco:2011iw}.
+We take $\alpha = \beta - \pi/2$, in the 
+%alignment 
+limit where $h$ has SM-like couplings to fermions and 
+gauge bosons as per Ref.~\cite{Craig:2013hca}, and $\tan{\beta} \ge 0.3$ 
+as implied from the perturbativity of the top Yukawa coupling. 
   %For the $ b \bar{b}$ decay channel, the signature of the signal we are searching for is a pair of boosted WIMPs recoiling against two $b$ jets. 
- 
- The Higgs vevs lead to $Z-Z'$ mass mixing. Diagonalizing the gauge
- boson mass matrix, the tree-level masses of the $Z$ and $Z'$ bosons are given by
- \begin{align}
- M_Z^2 &\approx ( M_{Z}^0)^2  - \epsilon^2 \left[( M_{Z'}^0)^2 - ( M_{Z}^0)^2 \right] \nonumber \\
- M_{Z'}^2 &\approx ( M_{Z'}^0)^2 + \epsilon^2 \left[( M_{Z'}^0)^2 - ( M_{Z}^0)^2 \right]
- \quad ,
- \label{eq:Zpmasses}
- \end{align}
- where $(M_Z^0)^2 = g^2(v_d^2+ v_u^2)/(4\cos^2{\theta_w}) $ and
- $(M_{Z'}^0)^2 = g_z^2 ( z_d^2 v_d^2 + z_u^2 v_u^2 + z_\phi^2
- v_\phi^2)$ are the mass-squared values in the absence of mixing. The
- result above is accurate to order $\epsilon^2$, where $\epsilon$ is
- a small mixing parameter given by
+The Higgs vevs lead to $Z-Z'$ mass mixing, with a mixing parameter given by 
  \begin{align}
  \epsilon & \equiv \frac{1}{M_{Z'}^2 - M_Z^2} \frac{g g_z}{2 \cos{\theta_w}} ( z_d v_d^2 + z_u v_u^2) \nonumber \\
  & =  \frac{(M_Z^0)^2}{M_{Z'}^2 - M_Z^2} \frac{2 g_z \cos \theta_w}{g}  z_u \sin^2 \beta.
  \label{eq:epsilon}
  \quad
  \end{align}
+  
+The production cross section for this model scales as $(g_z)^2$, as the decay width for this process
+to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
+\begin{equation}
+\Gamma_{Z' \to hA^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{Z'}^2}.
+\end{equation}
+where the center of mass momentum for the decay products $|p| =
+\frac{1}{2 M_{Z'}} \lambda^{1/2}(M_{Z'}^2,m_h^2, m_{A^0}^2)$, and
+$\lambda$ is the K\"{a}llen triangle function.  
+   
+%  Diagonalizing the gauge
+% boson mass matrix, the tree-level masses of the $Z$ and $Z'$ bosons are given by
+% \begin{align}
+% M_Z^2 &\approx ( M_{Z}^0)^2  - \epsilon^2 \left[( M_{Z'}^0)^2 - ( M_{Z}^0)^2 \right] \nonumber \\
+% M_{Z'}^2 &\approx ( M_{Z'}^0)^2 + \epsilon^2 \left[( M_{Z'}^0)^2 - ( M_{Z}^0)^2 \right]
+% \quad ,
+% \label{eq:Zpmasses}
+% \end{align}
+% where $(M_Z^0)^2 = g^2(v_d^2+ v_u^2)/(4\cos^2{\theta_w}) $ and
+% $(M_{Z'}^0)^2 = g_z^2 ( z_d^2 v_d^2 + z_u^2 v_u^2 + z_\phi^2
+% v_\phi^2)$ are the mass-squared values in the absence of mixing. The
+% result above is accurate to order $\epsilon^2$, where $\epsilon$ is
+% a small mixing parameter given by
+% \begin{align}
+% \epsilon & \equiv \frac{1}{M_{Z'}^2 - M_Z^2} \frac{g g_z}{2 \cos{\theta_w}} ( z_d v_d^2 + z_u v_u^2) \nonumber \\
+% & =  \frac{(M_Z^0)^2}{M_{Z'}^2 - M_Z^2} \frac{2 g_z \cos \theta_w}{g}  z_u \sin^2 \beta.
+% \label{eq:epsilon}
+% \quad
+% \end{align}
  
  \textit{Parameter scan}
  
@@ -687,7 +712,7 @@ for a parameterized detector-level simulation.
  
  As seen in Fig.~\ref{fig:DMH_tanbeta}, variations of $\tan{\beta}$ does not lead to any kinematic 
  difference and the production cross section simply scales as a function of $\tan{\beta}$. Hence 
-we recommend to fix $\tan{\beta}$ to unity in signal generation. 
+we recommend to fix $\tan{\beta}$ to unity in the signal generation. 
 
 %\begin{figure}[hbpt!]
 %	\centering
@@ -704,34 +729,162 @@ we recommend to fix $\tan{\beta}$ to unity in signal generation.
 
 \begin{figure}[h!]
 \centering
-\begin{minipage}{0.49\textwidth}
-	\centering 
-	\includegraphics[scale=0.45]{figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met}
-\end{minipage}
+\subfloat[MET distribution]{
+	\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met}
+}
 \hfill
-\begin{minipage}{0.49\textwidth}
-	\centering 
-	\includegraphics[scale=0.45]{figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_dphi12}
-\end{minipage}
-\caption{Kinematic distributions of the signal process varying $\tan{\beta}$: no kinematic dependency on $\tan{\beta}$ is observed}
+\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
+	\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_dphi12}
+}
+\caption{Kinematic distributions of the signal process varying $\tan{\beta}$, in the case of a Higgs boson decaying into two $b$ quarks,
+	after parameterized detector simulation: no kinematic dependency is observed}
 \label{fig:DMH_tanbeta}
 \end{figure}
 
-Similarly, variations of $g_z$ do not lead to any kinematic changes,
- and the production cross section scales as $(g_z)^2$, as the decay width for this process
-to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
-\begin{equation}
-\Gamma_{Z' \to hA^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{Z'}^2}.
-\end{equation}
-where the center of mass momentum for the decay products $|p| =
-\frac{1}{2 M_{Z'}} \lambda^{1/2}(M_{Z'}^2,m_h^2, m_{A^0}^2)$, and
-$\lambda$ is the K\"{a}llen triangle function.  
+Similarly, variations of $g_z$ do not lead to any kinematic changes. 
+The value of $g_z$ for a given $M_{Z'}$ and $\tan \beta$ can be set according to the maximum value allowed by electroweak global 
+fits and dijet constraints, as described in~\cite{Berlin:2014cfa}. Since this parameter does not influence the kinematics, 
+we leave it up to individual analyses on whether they generate benchmark points only according to these external constraints
+\textbf{[TODO: add link to section as in summary. This is the same sentence we will put in for the mono-b model]}.   
+%For $Z'$ masses below $\sim 1.3$ TeV and larger $\tan \beta$, the $\rho_0$ constraint on $g_z$ is stronger than 
+%dijet limits, while for $\tan \beta \lesssim 0.6$,
+%the dijet constraints dominate even at low $Z'$ masses. 
+
+Since the DM pair are produced as a result of the decay of $A^0$, there are minimal kinematic changes when varying $M_{DM}$ 
+as long as $M_{DM}<M_{A^0}/2$ so that $A^0$ production is on-shell, as shown in Fig.~\ref{fig:DMH_mdm} (before
+detector simulation). For this reason the DM mass is fixed it to 100 GeV. 
+For two "medium" $M_{Z'}$, $M_{A^0}$ value sets, we vary the DM mass to obtain sample cross section for rescaling results. 
+All LO cross sections for the various parameter scan points are reported in Appendix~\ref{app:}
+The parameter scan excludes the off-shell region, as the cross-sections are suppressed and the LHC would not have any
+sensitivity to these benchmark points in early data. 
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[MET distribution]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/tanb1zp1000gz08_met}
+	}
+	\hfill
+	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/tanb1zp1000gz08_dphi12}
+	}
+	\caption{Kinematic distributions of the signal process varying $M_{DM}$: minimal kinematic dependency on $M_{DM}$ as expected when $A^0$ is produced on-shell. Plots shown for $M_{Z'}=1000$~GeV, $M_{A^0}=300$~GeV.}
+	\label{fig:DMH_mdm}
+\end{figure}
  
- %%CD UP TO HERE
+We recommend to produce signal events for a fixed $g_z=0.8$, $\tan{\beta}=1$ and $M_{DM}=100$~GeV. For these values, we scan the 2-D parameter space of ${M_{Z'}, M_{A^0}}$ with $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV, and $M_{A^0}=300, 400, 500, 600, 700, 800$~GeV with $M_{A^0} < M_{Z'}-m_h$, for a total of 24 points. The choice of scan is justified by the sensitivity study in~\ref{Berlin2014cfa}: the expected LHC sensitivity for Run-2 is up to $M_{Z'} \sim 1.5$~TeV.
+
+The kinematic distributions with varying $M_{Z'}$ for fixed $M_{A^0}$ are shown in Fig.~\ref{fig:DMH_mzp}, while the dependency on $M_{A^0}$ is shown in Fig.~\ref{fig:DMH_ma0}. Both figures include plots before detector simulation. 
+  
+ \begin{figure}[h!]
+ 	\centering
+ 	\subfloat[MET distribution]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_met}
+ 	}
+ 	\hfill
+ 	\subfloat[Leading $b-$jet $p_T$  distribution]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_p0}
+ 	}
+ 	\hfill
+ 	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_dphi12}
+ 	}
+ 	\hfill
+ 	\subfloat[Dijet invariant mass]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_mbb}
+ 	}
+ 	
+ 	\caption{Kinematic distributions of the signal process varying $M_{Z'}$, for $M_{DM}=100$~GeV, $M_{A^0}=300$~GeV.}
+ 	\label{fig:DMH_mzp}
+ \end{figure}
+  
+   \begin{figure}[h!]
+   	\centering
+   	\subfloat[MET distribution]{
+   		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_met}
+   	}
+   	\hfill
+   	\subfloat[Leading $b-$jet $p_T$ distribution]{
+   		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_p0}
+   	}
+   	\hfill
+   	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
+   		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_dphi12}
+   	}
+   	\hfill
+   	\subfloat[Dijet invariant mass]{
+   		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_mbb}
+   	}
+   	\caption{Kinematic distributions of the signal process varying $M_{A^0}$, for $M_{DM}=100$~GeV, $M_{Z'}=1000$~GeV.}
+   	\label{fig:DMH_ma0}
+   \end{figure}
+      
+ This model also allows for an additional source of Higgs plus MET signal with a similar kinematics (Fig.~\ref{fig:DMH_zpincl}, shown with detector simulation 
+ samples) to the signal process from the decay of $Z' \to h Z$, where the $Z$ decays invisibly. The partial decay width for the $Z'$ is:
+ \begin{equation}
+ \Gamma_{Z' \to hZ}  = (g_z \cos \alpha \sin \beta)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
+ \end{equation}
+The values for the $Z'$ masses scanned for those samples should follow those of the previous samples, 
+namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  
+ 
+\begin{figure}[h!]
+  	\centering
+  	\subfloat[MET distribution]{
+  		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_met}
+  	}
+  	\hfill
+  	\subfloat[Leading $b-$jet $p_T$ distribution]{
+  		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphimetj0}
+  	}
+  	\hfill
+  	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
+  		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphi12}
+  	}
+  	\hfill
+  	\subfloat[Dijet invariant mass]{
+  		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_mjj}
+  	}
+  	\caption{Kinematic distributions of $Z' \to A^0h$ exclusive production, $Z' \to Zh$ exclusive production and $Z'$ inclusive production for $M_{Z'}=1000$~GeV and $M_{A^0}=300$~GeV}
+  	\label{fig:DMH_zpincl}
+\end{figure}
  
  \textit{Model implementation}
  
  \textbf{[Ask Yangyang for model / check she hasn't sent it already.]}
+ 
+ The two couplings that can be changed in the Madgraph model follow the nomenclature below:
+ \begin{itemize}
+ 	\item \texttt{Tb} - $\tan \beta$
+ 	\item \texttt{gz} - $g_z$, gauge coupling of $Z'$ to quarks
+ \end{itemize}
+ The other couplings are not changed, including \texttt{gx} (the $A \bar \chi \chi$ coupling) which has little impact on the signal. 
+ $\sin \alpha$ is fixed internally such that $\cos (\beta-\alpha) = 0$. 
+ The width of the $Z'$ and $A$ can be computed automatically within Madgraph. 
+ The couplings here don't affect the signal kinematics, so they can be fixed to default values 
+ and then the signal rates can be scaled appropriately. 
+ 
+The nomenclature for the masses in the Madgraph model is:
+ \begin{itemize}
+ 	\item \texttt{MZp} - PDG ID 32 - $Z'$
+ 	\item \texttt{MA0} - PDG ID 28 - $A$
+ 	\item \texttt{MX} - PDG ID 1000022 - dark matter particle
+ \end{itemize}
+ 
+ 
+%The other masses are not changed and do not impact the result. 
+% It is recommended to require the dark matter mass $M_X < M_A/2$ for a large enough signal rate, 
+% in which case the dark matter mass does not affect the kinematics. 
+% In addition, $M_{Z'} > M_A + M_h$ should be imposed on the scan. 
+ 
+ \ \\
+ 
+ \noindent Both $Z' \to hZ(\bar \nu \nu)$ and  $Z' \to hA(\bar XX)$ contribute to the final state. 
+ They scale differently with model parameters.  
+ It is more efficient to generate them separately, and then add together weighted by cross sections. The $hZ$ has no $M_A$ dependence. 
+ % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence. 
+ 
+ \ \\
+ In addition, it is recommended not to handle the $h$ decay through MadGraph (which doesn't have the proper $h$ branching ratios), or, if using MadGraph, then the resulting cross section should be rescaled to match onto the correct branching ratio.
+ 
 %%%
 
 %%This is left here in case we want to recommend EFT benchmarks?
