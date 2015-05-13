@@ -7,7 +7,7 @@ doc.pdf: pass1 $(graphics_mp1) $(graphics_mp)
 	pdflatex doc.tex
 	pdflatex doc.tex
 
-pass1: $(tex_source) figures/*.pdf figures/svg/*.svg
+pass1: clean $(tex_source) figures/*.pdf figures/svg/*.svg
 	pdflatex doc.tex
 	bibtex doc
 
@@ -26,7 +26,7 @@ cleanMP: $(wildcard *.mp)
 	rm -f `ls -1 *.mp | sed 's/\.mp$\/\*/'`
 
 clean: cleanMP
-	rm -f doc.aux doc.blg doc.log doc.out doc.bbl
+	rm -f doc.aux doc.blg doc.log doc.out doc.bbl doc.toc
 	rm -f *~ tex/*~
 	rm -f doc.pdf 
 
