@@ -13,7 +13,41 @@ Section~\ref{subsec:MonojetLikeModels}.
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.5\textwidth]{figures/EW/VPlusMET_EFT}
+  \vspace{\baselineskip}
+  \unitlength=0.0045\textwidth
+  \begin{feynmandiagram}[modelVisr]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmftop{isr}
+    \fmfbottom{pisr}
+    \fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v1}
+    \fmf{fermion}{o2,v1,o1}
+    \fmf{fermion}{i2,visr,v1}
+    \fmf{plain}{v1,pvisr,i1}
+    \fmf{fermion,tension=0}{v1,i1}
+    \fmflabel{\Large ${\bar{q}}$}{i1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmf{photon,tension=0}{visr,isr}
+    \fmf{phantom,tension=0}{pvisr,pisr}
+    \fmflabel{\Large ${V}$}{isr}
+  \end{feynmandiagram}
+  \begin{feynmandiagram}[modelVeft5pt]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+    \fmf{photon,label={\Large $V$}}{v1,v2}
+    \fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v2}
+    \fmf{fermion}{i2,v1,i1}
+    \fmf{fermion}{o2,v2,o1}
+    \fmflabel{\Large ${\bar{q}}$}{i1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${\bar{\chi}}$}{o1}
+    \fmflabel{\Large ${\chi}$}{o2}
+    \fmf{photon}{o3,v2}
+    \fmflabel{\Large ${V}$}{o3}
+  \end{feynmandiagram}
+  \vspace{\baselineskip}
   \caption{Sketch of benchmark models including a contact interaction
   for V+MET searches, adapted from~\cite{Nelson:2013pqa}. \label{fig:VPlusMET_EFT}}
 \end{figure}

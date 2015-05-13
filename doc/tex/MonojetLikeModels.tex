@@ -27,12 +27,34 @@
 %The POWHEG and Madgraph implementations were compared and the yields obtained from both were found to be compatible.  
 %\end{itemize}
 
-\begin{figure*}[t!]
+\begin{figure}[t!]
 \centering
-\includegraphics[width=0.5\linewidth]{figures/monoLHC.pdf}
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelVmonojetParameters]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmftop{isr}
+    \fmfbottom{pisr}
+    % \fmf{dashes,tension=0.6,label={$\substack{{\Large V,,A}\\(m_{med},,\Gamma_{min,,med})}$}}{v1,v2}
+    \fmf{dashes,tension=0.6,label={\Large $V,,A(m_{med})$}}{v1,v2}
+    \fmf{fermion}{o2,v2,o1}
+    \fmf{fermion}{i2,visr,v1}
+    \fmf{plain}{v1,pvisr,i1}
+    \fmf{fermion,tension=0}{v1,i1}
+    \fmfdot{v1,v2}
+    \fmflabel{\Large ${g_q}$}{v1}
+    \fmflabel{\Large ${g_{DM}}$}{v2}
+    \fmflabel{\Large ${\bar{q}}$}{i1}
+    \fmflabel{\Large ${q}$}{i2}
+    \fmflabel{\Large ${\bar{\chi}(m_{DM})}$}{o1}
+    \fmflabel{\Large ${\chi(M_{DM})}$}{o2}
+    \fmf{gluon,tension=0}{visr,isr}
+    \fmf{phantom,tension=0}{pvisr,pisr}
+    \fmflabel{\Large ${g}$}{isr}
+  \end{feynmandiagram}
 \caption[][\baselineskip]{The diagram shows the pair production of dark matter particles in association with a parton from the initial state via an s-channel vector or axial-vector mediator. The process if specified by ($\mMed ,\, \mdm ,\, \gDM ,\, \gq)$, the mediator and dark matter masses, and the mediator couplings to dark matter and quarks respectively.}
 \label{fig:OP}
-\end{figure*}
+\end{figure}
 
 
 There are several matrix element implementations of the s-channel vector mediated DM production. This is available in POWHEG, MADGRAPH and also MCFM.
@@ -80,8 +102,8 @@ Figure\,\ref{fig:monojet_width_V} shows the minimal width as a function of media
 
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{figures/monojet/width_V.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/width_A.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/width_V.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/width_A.eps}
 \caption{Minimal width as a function of mediator mass for vector and axial-vector mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of 10\,GeV, 30\,GeV, 100\,GeV and 300\,GeV in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
 \label{fig:monojet_width_V}
 \end{figure}
@@ -98,7 +120,7 @@ Differences in kinematic distributions are expected only close to the transition
 %TODO check explicitly for V and A (generate corresponding samples)
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_g_V_10_1000.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_g_V_10_1000.eps}
 \caption{Scan over couplings. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_V_g}
 \end{figure}
@@ -119,14 +141,14 @@ the EFT model should give the correct answer. \textbf{[TODO: add results of ongo
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_g_V_10_5000.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_g_V_10_5000.eps}
 \caption{Scan over couplings. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_narrow}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
 \caption{Invariant mass of the Dark Matter pair in the samples with $\mMed=7$\,TeV and different coupling strengths.}
 \label{fig:monojet_mchichi}
 \end{figure}
@@ -142,14 +164,14 @@ For the fixed mediator mass and couplings, both the cross section and the kinema
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mDM_V_1000.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mDM_V_1000.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_V_mDM1000}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mDM_V_100.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mDM_V_100.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_V_mDM100}
 \end{figure}
@@ -162,14 +184,14 @@ On the other hand, the $\MET$ shapes are similar in the off-shell Dark Matter pr
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mMed_V_10.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mMed_V_10.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_V_mMed10}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mMed_V_1000.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mMed_V_1000.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_V_mMed1000}
 \end{figure}
@@ -194,8 +216,8 @@ The detailed studies of the impact of the parameter changes on the cross section
 
 % \begin{figure}
 % \centering
-% \includegraphics[width=0.45\linewidth]{figures/monojet/grid_V.eps}
-% \includegraphics[width=0.45\linewidth]{figures/monojet/grid_A.eps}
+% \includegraphics[width=0.45\textwidth]{figures/monojet/grid_V.eps}
+% \includegraphics[width=0.45\textwidth]{figures/monojet/grid_A.eps}
 % \caption{Proposed parameter grid for vector and axial-vector mediator in the $\mMed$--$\mdm$ plane.}
 % \label{fig:monojet_grid_V}
 % \end{figure}
@@ -306,8 +328,8 @@ Note that we decide to ignore the partial width coming from gluons through loops
 
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{figures/monojet/width_S.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/width_P.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/width_S.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/width_P.eps}
 \caption{Minimal width as a function of mediator mass for scalar and pseudo-scalar mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of 10\,GeV, 30\,GeV, 100\,GeV and 300\,GeV in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
 \label{fig:monojet_width_S}
 \end{figure}
@@ -323,35 +345,35 @@ No differences in the kinematic distributions are observed and also the cross se
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_g_S_10_500.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_g_S_10_500.eps}
 \caption{Scan over couplings. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_S_g}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mDM_S_500.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mDM_S_500.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_S_mDM1000}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mDM_S_100.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mDM_S_100.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_S_mDM100}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mMed_S_10.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mMed_S_10.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_S_mMed10}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/scan_mMed_S_1000.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/scan_mMed_S_1000.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$\,GeV and $\MET>500$\,GeV cut, respectively.}
 \label{fig:monojet_scan_S_mMed1000}
 \end{figure}
@@ -389,8 +411,8 @@ decaying to Dirac DM fermions in the scalar and pseudoscalar case, taking the mi
 
 % \begin{figure}
 % \centering
-% \includegraphics[width=0.45\linewidth]{figures/monojet/grid_S.eps}
-% \includegraphics[width=0.45\linewidth]{figures/monojet/grid_P.eps}
+% \includegraphics[width=0.45\textwidth]{figures/monojet/grid_S.eps}
+% \includegraphics[width=0.45\textwidth]{figures/monojet/grid_P.eps}
 % \caption{Proposed parameter grid for scalar and pseudo-scalar mediator in the $\mMed$--$\mdm$ plane.}
 % \label{fig:monojet_grid_S}
 % \end{figure}
@@ -451,7 +473,7 @@ Therefore, the scaling procedure outlined above is expected to work only for fix
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{figures/monojet/lambda_14TeV_SR1.eps}
+\includegraphics[width=0.9\textwidth]{figures/monojet/lambda_14TeV_SR1.eps}
 \caption{Comparison of the 95\% CL lower limits on the scale of the interaction of a $Z'$-like simplified model at 14\,TeV, in terms of the mediator mass. Corresponding limits from EFT models are shown on the same plot as green dashed lines to show equivalence between the two models for high mediator masses.
 Taken from Ref.\,\cite{ATL-PHYS-PUB-2014-007}.}
 \label{fig:monojet_MstarMmed}
@@ -465,10 +487,10 @@ On the contrary, both the Standard Model and Dark Matter partial width have comp
 
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_V_gg100.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_A_gg100.eps}\\
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_S_gg100.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_P_gg100.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_V_gg100.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_A_gg100.eps}\\
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_S_gg100.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_P_gg100.eps}
 \caption{Minimal width for vector, axial-vector, scalar and pseudo-scalar mediators as a function of the individual couplings $\gq$ and $\gDM$, assuming $\mMed=100$\,GeV and $\mdm=10$\,GeV.}
 %TODO indicate mMed=GammaMin in the plot (gDM = 6, gSM = 1.5 for V and gSM = gDM = 5 for S) 
 \label{fig:monojet_width100}
@@ -476,10 +498,10 @@ On the contrary, both the Standard Model and Dark Matter partial width have comp
 
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_V_gg1000.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_A_gg1000.eps}\\
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_S_gg1000.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/constantwidth_P_gg1000.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_V_gg1000.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_A_gg1000.eps}\\
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_S_gg1000.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/constantwidth_P_gg1000.eps}
 \caption{Minimal width for vector, axial-vector, scalar and pseudo-scalar mediators as a function of the individual couplings $\gq$ and $\gDM$, assuming $\mMed=1$\,TeV and $\mdm=10$\,GeV.}
 %TODO indicate mMed=GammaMin in the plot (gDM = 6, gSM = 1.5 for V and gSM = gDM = 5 for S) 
 \label{fig:monojet_width1000}
@@ -495,10 +517,10 @@ Constant colors indicate the lines along which the cross section scaling works p
 
 \begin{figure}
 \centering
-%\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_V_10_100.eps}
-%\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_V_10_1000.eps}\\
-\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_S_10_100.eps}
-\includegraphics[width=0.45\linewidth]{figures/monojet/scaling_S_10_1000.eps}\\
+%\includegraphics[width=0.45\textwidth]{figures/monojet/scaling_V_10_100.eps}
+%\includegraphics[width=0.45\textwidth]{figures/monojet/scaling_V_10_1000.eps}\\
+\includegraphics[width=0.45\textwidth]{figures/monojet/scaling_S_10_100.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/scaling_S_10_1000.eps}\\
 \caption{Ratio of the rescaled and generated cross sections in the $\gq$--$\gDM$ plane. The point at $\gq=\gDM=1$, taken as a reference for the rescaling, is denoted by a star symbol.
 Scalar model with $\mMed=100$\,GeV (left) and 1\,TeV (right) is plotted for $\mdm=10$\,GeV.
 The limiting case $\Gamma_{\rm{min}}=\mMed$ is shown as a black line.}
@@ -509,9 +531,9 @@ The limiting case $\Gamma_{\rm{min}}=\mMed$ is shown as a black line.}
 %The plots are produced with M_S = 300 GeV, m_chi = 100 GeV, gSM = gDM =4
 \begin{figure}
 \centering
-\includegraphics[page=1, trim=310 200 310 200, clip, width=0.3\linewidth]{figures/monojet/rescalingexercise.pdf}
-\includegraphics[page=2, trim=305 195 305 195, clip, width=0.3\linewidth]{figures/monojet/rescalingexercise.pdf}
-\includegraphics[page=3, trim=300 190 300 190, clip, width=0.3\linewidth]{figures/monojet/rescalingexercise.pdf}
+\includegraphics[page=1, trim=310 200 310 200, clip, width=0.3\textwidth]{figures/monojet/rescalingexercise.pdf}
+\includegraphics[page=2, trim=305 195 305 195, clip, width=0.3\textwidth]{figures/monojet/rescalingexercise.pdf}
+\includegraphics[page=3, trim=300 190 300 190, clip, width=0.3\textwidth]{figures/monojet/rescalingexercise.pdf}
 \caption{Scaling along the lines of constant width. The line of constant width for $\mMed=300$\,GeV and $\mdm=100$\,GeV, intercepting $\gq=\gDM=4$ is shown on left. The generated and rescaled cross sections are compared in the middle, the corresponding ratio is shown on right.}
 %TODO ask Uli for the color code
 \label{fig:monojet_scaling_constwidth}

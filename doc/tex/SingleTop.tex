@@ -17,13 +17,51 @@ Within this model, two distinct processes can lead to monotop production:
 
 \begin{figure}[!h!tpd]
 \centering
-%\includegraphics[width=0.31\textwidth]{figures/singletop/feyn_diags/fig_1a}
-%\includegraphics[width=0.31\textwidth]{figures/singletop/feyn_diags/fig_1b}
-%\includegraphics[width=0.31\textwidth]{figures/singletop/feyn_diags/fig_1c}
-
-\subfloat[\label{subfig:S1}]{\includegraphics[width=0.46\textwidth]{figures/singletop/feyn_diags/S1}}\\
-\subfloat[\label{subfig:S4s}]{\includegraphics[width=0.46\textwidth]{figures/singletop/feyn_diags/S4_s}}
-\subfloat[\label{subfig:S4t}]{\includegraphics[width=0.46\textwidth]{figures/singletop/feyn_diags/S4_t}}
+\unitlength=0.0046\textwidth
+\subfloat[\label{subfig:S1}]{
+  \begin{feynmandiagram}[modelS1]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmf{dashes,label={\Large $S$}}{v1,v2}
+    \fmf{fermion}{i2,v1,i1}
+    \fmf{fermion}{v2,o1}
+    \fmf{plain,tension=0}{v2,o2}
+    \fmf{wiggly}{v2,o2}
+    \fmfdot{v1,v2}
+    \fmflabel{\Large ${\bar{s}}$}{i1}
+    \fmflabel{\Large ${d}$}{i2}
+    \fmflabel{\Large ${t}$}{o1}
+    \fmflabel{\Large ${f_{met}}$}{o2}
+  \end{feynmandiagram}
+}\\\vspace{\baselineskip}
+\subfloat[\label{subfig:S4s}]{
+  \begin{feynmandiagram}[modelS4s]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmf{fermion,label={\Large $u$}}{v1,v2}
+    \fmf{gluon}{i2,v1}
+    \fmf{fermion}{i1,v1}
+    \fmf{wiggly}{v2,o2}
+    \fmf{fermion}{v2,o1}
+    \fmflabel{\Large $v_{met}$}{o2}
+    \fmflabel{\Large $t$}{o1}
+  \end{feynmandiagram}
+}
+\subfloat[\label{subfig:S4t}]{
+  \begin{feynmandiagram}[modelS4t]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmf{fermion}{i2,vup}
+    \fmflabel{\Large $u$}{i2}
+    \fmf{gluon,label={\Large $g$}}{i1,vdown}
+    \fmflabel{\Large $g$}{i1}
+    \fmf{fermion}{vup,vdown}
+    \fmf{fermion}{vdown,o1}
+    \fmflabel{\Large $t$}{o1}
+    \fmf{wiggly}{vup,o2}
+    \fmflabel{\Large $v_{met}$}{o2}
+  \end{feynmandiagram}
+}
 \caption
 {
 Feynman diagram of leading order processes leading to monotop events: production of
