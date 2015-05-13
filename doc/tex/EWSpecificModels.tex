@@ -418,7 +418,6 @@ and DM mass of either 50 ($Z_B'$ and $A^0$ models) or 65 GeV (scalar mediator mo
 Figure ~\ref{fig:met_cmp_low} shows the MET distribution 
 for models with low mediator masses ($m_{Z_B'} = 100$ GeV, $m_{Z'} = 1$ TeV, $m_{A0} = 100$ GeV)
 and DM mass of 1 TeV for all models. 
-\textbf{[TODO: Is this sufficient to justify testing them all? Not clear which one should be prioritized.]}
 
 \begin{figure}[hbpt!]
 	\centering
@@ -470,9 +469,9 @@ via the coupling $g_{h Z^\prime Z^\prime} = \frac{m_Z'^2 sin\theta}{v_B}$, where
 $sin\theta$ is the mixing angle between the Higgs and the $Z'$ and $v_B$ is the
 Baryonic Higgs vev. 
 
-\textbf{[TODO: 
-	1- Mention sensitivity difference wrt monojet? 
-	2- Mention why we don't consider the dark Z model?]}
+%TODO: 
+%	1- Mention sensitivity difference wrt monojet? 
+%	2- Mention why we don't consider the dark Z model?]}
 
 \textit{Parameter scan} 
 
@@ -497,12 +496,20 @@ varying $m_{DM}$ with the other parameters fixed does not affect the MET distrib
 the distribution broadens significantly in the case of an off-shell mediator. 
 For this reason, the same grid in \mmed, \mdm as for the vector mediator
 of the jet+MET search (Table~\ref{tab:mDMmmedScan_VA}) is chosen as a starting point. 
-The coupling between mediator and SM Higgs boson $g_{hZ'Z'}/ \mmed$ and the mediator-DM coupling \gdm are fixed to 1, the 
-mediator-quark $g_{q}$ coupling is fixed to 1/3. Other parameter values can be recasted starting from the results
-for those model parameters.
+The coupling $g_{hZ'Z'}$, along with $g_q$ and $g_{DM}$, are subject to perturbativity bounds:
+$$g_q, g_\chi < 4\pi $$ and $$  g_{hZ'Z'} < \sqrt{4\pi}m_{Z'}\sin\theta$$ 
+The value $g_{hZ'Z'}/m_{Z'} = 1.0$ is chosen as a benchmark value for the generation 
+of Monte Carlo samples since it maximizes the cross section (as shown in the following paragraph)
+without violating the bounds. The mediator-DM coupling \gdm is fixed to 1, and  
+the mediator-quark $g_{q}$ coupling is fixed to 1/3. 
+Since the kinematics does not change as a function of these parameters, 
+results for other values of  $g_{hZ'Z'}/m_{Z'}$, \gdm and \gq can be 
+obtained through rescaling by the appropriate cross sections. 
+
 More detailed studies are required to estimate the reach of the analysis with respect to all points in the grid
 and therefore decide on a smaller set of grid points to be generated; 
-those are left to the individual analyses. \textbf{[TODO: can we get sensitivity to all the points for all signatures?]}
+those are left to the individual analyses. 
+%TODO: can we get sensitivity to all the points for all signatures?
 
 \begin{figure}[hbpt!]
 	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/z_gdm_MET_et_Log}
@@ -523,24 +530,54 @@ those are left to the individual analyses. \textbf{[TODO: can we get sensitivity
 		\label{fig:metVectorMass} }
 \end{figure}
 
-\textit{Cross-section scaling (to be added)}
+\textit{Cross-section scaling}
 
-\textit{Model implementation}
+The dependence of the cross section of the $pp \rightarrow H\chi\bar{\chi}$ process 
+on $g_{hZ'Z'}$ is shown in Figure~\ref{fig:vectorXSdeps}. 
+The curves have been fitted to second-order polynomials. 
+For $m_{med} = 100$ GeV, the fit function is 
+$$y = -0.12 - 3.4\times10^{-3}x + 2.7\times10^{-4}x^2$$.
+For $m_{med} = 1$ TeV, the fit function is 
+is $$y = 0.0012 - 2.4\times10^{-7}x + 1.5\times10^{-7}x^2$$
 
-\textbf{[SVN repo and MG details to be added here]} 
+\begin{figure}[hbpt!]
+	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zprime_xs_med_100}
+	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zprime_xs_med_1000}
+	\caption{Cross section of the $pp \rightarrow H\chi\bar{\chi}$ process as a function of 
+		$g_{hZ'Z'}$ for $m_{Z'} = 100$ GeV (left) 
+		and $m_{Z'} = 1$ TeV (right). The fit functions are shown in the text. 
+		\label{fig:vectorXSdeps}}
+\end{figure}
 
 \paragraph{MET+Higgs from a scalar mediator}
 
 A real scalar singlet $S$ coupling to DM can be introduced as a portal between SM and the dark sector 
 through the Higgs field. The new scalar mixes with the SM Higgs boson, and couples to DM through a Yukawa term $y_\chi$. 
-The relevant Lagrangian terms for this model are: 
+The relevant terms in the scalar potential are
+\begin{align}
+&V \supset a |H|^2 S + b |H|^2 S^2 + \lambda_h |H|^4 \notag \\
+& \;\;\longrightarrow \tfrac{1}{2} a (h +  v)^2 S + \tfrac{1}{2}b (h +  v)^2 S^2 + \frac{\lambda_h}{4} (h +  v)^4 ,
+\label{singlethiggsmix}
+\end{align}
+where $a,b$ are new physics couplings and $\lambda_h$ is the Higgs quartic.  
 
+The additional Lagrangian terms for this model are: 
 \be \label{LintScalar2}
 L \supset - y_\chi \bar\chi \chi (  cos\theta S - sin\theta h ) - \frac{m_q}{v} \bar q q (cos\theta h + sin\theta S )  \,
 \ee
+where $\theta$ is the mixing angle between the Higgs boson and the new scalar. 
 
-where $\theta$ is the mixing angle between the Higgs boson and the new scalar. Mono-Higgs signals arise
-\textbf{[TODO: add the Lagrangian explaining why $g_b$ is there]}
+Mono-Higgs signals in this model arise through processes shown in Fig.~\ref{fig:effhSxx}(a,b), or through 
+the radiation of a Higgs boson from the  $t$ quark in the production loop. The first two processes
+depend on the $h^2 S$ and $h S^2$ cubic terms in Eq.~\eqref{singlethiggsmix}.  
+At leading order in $\sin\theta$, these terms are
+\be
+V_{\rm cubic} \approx \frac{\sin\theta}{v} ( 2 m_h^2 + m_S^2) h^2 S  + b v h S^2 + ...
+\ee
+with $a$ and $\lambda_h$ expressed in terms of $\sin\theta$ and $m_h^2$, respectively.  
+At leading order of $\sin\theta$, the $h^2 S$ term is fixed once the mass eigenvalues $m_h, m_S$ 
+and mixing angle are specified.  The $h S^2$ term is not fixed and remains a free parameter of the model, depending on 
+the new physics coupling $b$. 
 
 \textit{Parameter scan}
 
@@ -548,10 +585,10 @@ This model is described by five parameters:
 
 \begin{enumerate}
 	\item the Yukawa coupling of heavy scalar to dark matter (DM), $g_{DM}$ (also referred to as $y_\chi$) 
-	\item the mixing angle between heavy scalar and SM-like Higgs boson, $\sin\theta$
-	\item the new physics coupling, $g_b$
-	\item mass of heavy scalar, $m_{med}$ 
-	\item mass of dark matter, $m_{DM}$ 
+	\item the mixing angle between heavy scalar and SM-like Higgs boson, $\sin\theta$;
+	\item the new physics coupling, $b$;
+	\item mass of heavy scalar, $m_{S}$, also termed \mmed;
+	\item mass of dark matter, $m_{DM}$;
 	%(also referred to as $m_{\chi}$)
 \end{enumerate}
 
@@ -560,7 +597,7 @@ to satisfy $\cos\theta = 1$ within 10\% and therefore $\sin\theta \lesssim 0.4$.
 for the parameter scan in this model: we recommend to set $\sin\theta = 0.3$. 
 Figure~\ref{fig:metScalarCoupling2} shows that
 there is no dependence of the kinematics from the value of this angle, and different values can be obtained via rescaling
-the results for this mixing angle according to the cross-section. It can also be observed from Figures~\ref{fig:metScalarMass} and~\ref{fig:metScalarCoupling} 
+the results for this mixing angle according to the relevant cross-section. It can also be observed from Figures~\ref{fig:metScalarMass} and~\ref{fig:metScalarCoupling} 
 that the kinematics of this model follows that of the equivalent jet+MET model: only small changes are observed
 in the on-shell region, while the relevant distributions diverge when the mediator is off-shell. 
 For this reason, the same grid in \mmed, \mdm as for the scalar mediator
@@ -603,16 +640,6 @@ those are left to the individual analyses. \textbf{[TODO: can we get sensitivity
 	\end{center}
 \end{figure}
 
-\textit{Cross-section scaling (to be added)}
-
-
-\textit{Model implementation}
-
-The Madgraph parameter cards can be found on the Forum repository. In this model, the contribution
-from the $gghS$ box is included through an effective Lagrangian evaluated in the large $m_t$ limit. 
-This may overestimate the rates of $h + \missET$ signal~\cite{Haisch:2012kf}, but a full evaluation
-is left to future studies. The parton shower for these models is implemented in Pythia. 
-It is recommended to let Pythia decay the Higgs boson, in order to make the BR consistent with HDECAY. 
 
 %%%
 \paragraph{Higgs+MET signal from 2HDM model with a Z' and a new pseudoscalar}
@@ -858,10 +885,27 @@ namely values of $M_{Z'}=600, 800, 1000, 1200, 1400$~GeV.  This signal process h
   	\label{fig:DMH_zpincl}
 \end{figure}
   
- \textit{Model implementation}
- 
- \textbf{[Ask Yangyang for model / check she hasn't sent it already.]}
- 
+ \paragraph{Model implementation}
+
+All three Higgs+MET models are generated at leading
+order with MadGraph 2.2.2, using Pythia8 for the parton shower.
+The MadGraph implementations of the scalar and vector models can be found on the Forum SVN 
+repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found
+at this link~\cite{ThisLink}.
+
+In all cases, it is recommended not to handle the $h$ decay through MadGraph as
+it does not include the proper $h$ branching ratios, or, if using MadGraph, then the 
+resulting cross section should be rescaled to match onto the correct branching ratio.
+
+\textit{Madgraph details for scalar mediator Higgs+MET model}
+
+In this model, the contribution from the $gghS$ box is included through an effective 
+Lagrangian evaluated in the large $m_t$ limit. 
+This may overestimate the rates of $h + \missET$ signal~\cite{Haisch:2012kf}, but a full evaluation
+is left to future studies. 
+
+\textit{Madgraph details for 2HDM Higgs+MET model}
+  
  The two couplings that can be changed in the Madgraph model follow the nomenclature below:
  \begin{itemize}
  	\item \texttt{Tb} - $\tan \beta$
@@ -880,20 +924,11 @@ The nomenclature for the masses in the Madgraph model is:
  	\item \texttt{MX} - PDG ID 1000022 - dark matter particle
  \end{itemize}
  
-The other masses are unchanged and do not impact the result. 
-% It is recommended to require the dark matter mass $M_X < M_A/2$ for a large enough signal rate, 
-% in which case the dark matter mass does not affect the kinematics. 
-% In addition, $M_{Z'} > M_A + M_h$ should be imposed on the scan. 
-  
+The other masses are unchanged and do not affect the result. 
  Both $Z' \to hZ(\bar \nu \nu)$ and  $Z' \to hA(\bar \chi \chi)$ contribute to the final state, scaling
  different with model parameters. We recommend to generate them separately, 
  and then add the two signal processes together weighted by cross sections.
- % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence. 
- 
- \ \\
- In addition, it is recommended not to handle the $h$ decay through MadGraph as
- it does not include the proper $h$ branching ratios, or, if using MadGraph, then the 
- resulting cross section should be rescaled to match onto the correct branching ratio.
+ % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence.  
  
 %%%
 
