@@ -134,10 +134,10 @@ are recommended for Higgs+MET searches:
 
 These models have a distinct kinematics, as shown in the comparison of the 
 MET spectra in Fig.~\ref{fig:METSimpMonoHiggs}, for high and low mediator masses. 
-Figure ~\ref{fig:met_cmp_high} shows the MET distribution 
+Figure~\ref{fig:METSimpMonoHiggs} (a) shows the MET distribution 
 for models with high mediator masses ($m_{S} = 1$ TeV, $m_{Z'} = 1$ TeV, $m_{A0} = 1$ TeV)
 and DM mass of either 50 ($Z_B'$ and $A^0$ models) or 65 GeV (scalar mediator model).
-Figure ~\ref{fig:met_cmp_low} shows the MET distribution 
+Figure~\ref{fig:METSimpMonoHiggs} (b)  shows the MET distribution 
 for models with low mediator masses ($m_{Z_B'} = 100$ GeV, $m_{Z'} = 1$ TeV, $m_{A0} = 100$ GeV)
 and DM mass of 1 TeV for all models. 
 	
@@ -158,9 +158,7 @@ and DM mass of 1 TeV for all models.
 
 \subsection{MET+Higgs from a baryonic Z'}
 
-\textbf{[TODO for AB: add baryonic Higgs diagram]}
-
-The first model, shown in Fig.~\ref{fig:monoH_baryonicZ} 
+The model shown in Fig.~\ref{fig:feyn_prod_monoH} (a)
 postulates a new gauge boson $Z'$ corresponding to a new $U(1)_B$ baryon 
 number symmetry. The stable baryonic states included in this model are the DM candidate particles.
 The mass of the $Z'$ boson is acquired through a baryonic Higgs $h_B$, which mixes with the 
@@ -253,6 +251,64 @@ those are left to the individual analyses.
 		\label{fig:metVectorMass} }
 \end{figure}
 
+
+Figs~\ref{fig:VectorHbb_100} and ~\ref{fig:VectorHbb_1000} show the kinematic distributions for the two leading jets
+in the $H \to \bar b b$ decay channel, for two values of the mediator mass and varying the DM mass.  
+
+\begin{figure}[hbpt!]
+	\centering
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_leading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_leading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Angular distance between the two leading $b-$jets]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_bb_deltar} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\caption{Comparison of the kinematic distributions for the two leading jets from the Higgs decay in the vector $Z'$ simplified model, 
+		when fixing the $Z'$ mass to 100 GeV and varying the DM mass. 
+		\label{fig:VectorHbb_100}}
+\end{figure}
+
+\begin{figure}[hbpt!]
+	\centering
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_leading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_leading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Angular distance between the two leading $b-$jets]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_bb_deltar} %\label{fig:met_cmp_low}
+	}
+	\caption{Comparison of the kinematic distributions for the two leading jets from the Higgs decay in the vector $Z'$ simplified model, 
+		when fixing the $Z'$ mass to 1000 GeV and varying the DM mass. 
+		\label{fig:VectorHbb_1000}}
+\end{figure}
+
+
 \subsubsection{Cross-section scaling}
 
 The dependence of the cross section of the $pp \rightarrow H\chi\bar{\chi}$ process 
@@ -290,9 +346,9 @@ L \supset - y_\chi \bar\chi \chi (  cos\theta S - sin\theta h ) - \frac{m_q}{v} 
 \ee
 where $\theta$ is the mixing angle between the Higgs boson and the new scalar. 
 
-Mono-Higgs signals in this model arise through processes shown in Fig.~\ref{fig:effhSxx}(a,b), or through 
-the radiation of a Higgs boson from the  $t$ quark in the production loop. The first two processes
-depend on the $h^2 S$ and $h S^2$ cubic terms in Eq.~\eqref{singlethiggsmix}.  
+Mono-Higgs signals in this model arise through processes shown in Fig.~\ref{fig:feyn_prod_monoH_S} (a,b), or through 
+the radiation of a Higgs boson from the  $t$ quark in the production loop, in Fig.~\ref{fig:feyn_prod_monoH_S} (c). 
+The first two processes depend on the $h^2 S$ and $h S^2$ cubic terms in Eq.~\eqref{singlethiggsmix}.  
 At leading order in $\sin\theta$, these terms are
 \be
 V_{\rm cubic} \approx \frac{\sin\theta}{v} ( 2 m_h^2 + m_S^2) h^2 S  + b v h S^2 + ...
@@ -315,7 +371,7 @@ This model is described by five parameters:
 	%(also referred to as $m_{\chi}$)
 \end{enumerate}
 
-The mixing angle  is constrained from current Higgs data
+The mixing angle is constrained from current Higgs data
 to satisfy $\cos\theta = 1$ within 10\% and therefore $\sin\theta \lesssim 0.4$. This provides a starting point 
 for the parameter scan in this model: we recommend to set $\sin\theta = 0.3$. 
 Figure~\ref{fig:metScalarCoupling2} shows that
@@ -363,6 +419,62 @@ those are left to the individual analyses. \textbf{[TODO: can we get sensitivity
 	\end{center}
 \end{figure}
 
+Figs~\ref{fig:ScalarHbb_100} and ~\ref{fig:ScalarHbb_1000} show the kinematic distributions for the two leading jets
+in the $H \to \bar b b$ decay channel, for two values of the mediator mass and varying the DM mass.  
+
+\begin{figure}[hbpt!]
+	\centering
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_leading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_leading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Angular distance between the two leading $b-$jets]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_bb_deltar} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\caption{Comparison of the kinematic distributions for the two leading jets from the Higgs decay in the scalar simplified model, 
+		when fixing the new scalar mass to 100 GeV and varying the DM mass. 
+		\label{fig:ScalarHbb}}
+\end{figure}
+
+\begin{figure}[hbpt!]
+	\centering
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_leading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_leading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+	}
+	\hfill
+	\subfloat[Leading $b-$jet pseudorapidity]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+	}
+	\hfill
+	\subfloat[Angular distance between the two leading $b-$jets]{
+		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_bb_deltar} %\label{fig:met_cmp_low}
+	}
+	\caption{Comparison of the kinematic distributions for the two leading jets from the Higgs decay in the scalar simplified model, 
+		when fixing the new scalar mass to 1000 GeV and varying the DM mass. 
+		\label{fig:ScalarHbb_1000}}
+\end{figure}
+
 
 %%%
 \subsection{Higgs+MET signal from 2HDM model with a Z' and a new pseudoscalar}
@@ -370,7 +482,7 @@ those are left to the individual analyses. \textbf{[TODO: can we get sensitivity
 In this simplified model~\cite{Berlin:2014cfa}, a new $Z'$ resonance decays to a Higgs boson $h$ 
 plus a heavy pseudoscalar state 
 $A$ in the 2HDM framework, which in turn decays to a DM pair. This model is 
-represented in the diagram in Figure~\ref{fig:modelMonoHSimplifiedA0}.
+represented in the diagram in Fig. \ref{fig:feyn_prod_monoH} (b).
 
 
 The motivation for coupling the dark matter to the pseudoscalar is that dark matter coupling to higgs or $Z'$ is generically 
@@ -467,18 +579,6 @@ for a parameterized detector-level simulation.
  difference and the production cross section simply scales as a function of $\tan{\beta}$. Hence 
 we recommend to fix $\tan{\beta}$ to unity in the signal generation. 
 
-%\begin{figure}[hbpt!]
-%	\centering
-%	\subfloat[High mediator mass]{
-%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/models_cmp_MET_et_Log} \label{fig:met_cmp_high}
-%	}
-%	\subfloat[Low mediator mass]{
-%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/models_cmp_low_MET_et_Log} \label{fig:met_cmp_low}
-%	}
-%	\caption{Comparison of the missing transverse momentum distributions at generator level in different 
-%		simplified models leading to a Higgs+MET signature. The model parameter settings are detailed in the text.
-%		\label{fig:METSimpMonoHiggs}}
-%\end{figure}
 
 \begin{figure}[h!]
 \centering
@@ -619,20 +719,20 @@ All three Higgs+MET models are generated at leading
 order with MadGraph 2.2.2, using Pythia8 for the parton shower.
 The MadGraph implementations of the scalar and vector models can be found on the Forum SVN 
 repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found
-at this link~\cite{ThisLink}.
+at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
 
 In all cases, it is recommended not to handle the $h$ decay through MadGraph as
 it does not include the proper $h$ branching ratios, or, if using MadGraph, then the 
 resulting cross section should be rescaled to match onto the correct branching ratio.
 
-\textit{Madgraph details for scalar mediator Higgs+MET model}
+\newthought{Madgraph details for scalar mediator Higgs+MET model}
 
 In this model, the contribution from the $gghS$ box is included through an effective 
 Lagrangian evaluated in the large $m_t$ limit. 
-This may overestimate the rates of $h + \missET$ signal~\cite{Haisch:2012kf}, but a full evaluation
+This may overestimate the rates of the $h + \missET$ signal~\cite{Haisch:2012kf}, but a full evaluation
 is left to future studies. 
 
-\textit{Madgraph details for 2HDM Higgs+MET model}
+\newthought{Madgraph details for 2HDM Higgs+MET model}
   
  The two couplings that can be changed in the Madgraph model follow the nomenclature below:
  \begin{itemize}
