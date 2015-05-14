@@ -1,3 +1,10 @@
+\svnidlong
+{$HeadURL: $}
+{$LastChangedDate: $}
+{$LastChangedRevision: $}
+{$LastChangedBy: $}
+\svnid{$Id: $}   
+
 Three benchmark simplified models \cite{Carpenter:2013xra,Berlin:2014cfa} 
 are recommended for Higgs+MET searches:
 \begin{itemize}
@@ -309,9 +316,9 @@ Analyses should perform further studies, beyond those studies performed for the 
 
 \subsubsection{Cross-section scaling}
 
-The dependence of the cross section of the $pp \rightarrow H\chi\bar{\chi}$ process 
+The dependence of the cross section of the $pp \rightarrow H\chi\bar{\chi}+X$ process 
 on $g_{h Z^\prime Z^\prime}$ is shown in Figure~\ref{fig:vectorXSdeps}. 
-The curves have been fitted to second-order polynomials. 
+The curves have been fit to second-order polynomials. 
 For $m_{med} = 100$ GeV, the fit function is 
 $$y = -0.12 - 3.4\times10^{-3}x + 2.7\times10^{-4}x^2$$.
 For $m_{med} = 1$ TeV, the fit function is 
@@ -485,7 +492,7 @@ $A^0$ in the 2HDM framework, which in turn decays to a DM pair. This model is
 represented in the diagram in Fig. \ref{fig:feyn_prod_monoH} (b).
 
 
-The motivation for coupling the dark matter to the pseudoscalar is that dark matter coupling to higgs or $Z^\prime$ is generically 
+The motivation for coupling the dark matter to the pseudoscalar is that dark matter coupling to a Higgs or $Z^\prime$ boson is generically 
 constrained by other signal channels and direct detection. 
 An advantage of including this model is that it has different kinematics  due to the on-shell $Z^\prime$ production, 
 where for heavy $Z^\prime$ masses the MET and pT spectra are much harder.
@@ -537,7 +544,7 @@ to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
 \end{equation}
 where the center of mass momentum for the decay products $|p| =
 \frac{1}{2 M_{Z^\prime}} \lambda^{1/2}(M_{Z^\prime}^2,m_h^2, m_{A^0}^2)$, and
-$\lambda$ is the K\"{a}llen triangle function.\footnote{\begin{align*}\lambda(c_1,c_2,c_3) \equiv\;33& c_1^2 + c_2^2 + c_3^2\\ &- 2(c_1 c_2 + c_2 c_3 + c_3 c_1)\end{align*}}
+$\lambda$ is the K\"{a}llen triangle function.\footnote{\begin{align*}\lambda(c_1,c_2,c_3) \equiv\;c_1^2 + c_2^2 + c_3^2\\ &- 2(c_1 c_2 + c_2 c_3 + c_3 c_1)\end{align*}}
    
 %  Diagonalizing the gauge
 % boson mass matrix, the tree-level masses of the $Z$ and $Z^\prime$ bosons are given by
@@ -712,48 +719,3 @@ namely values of $M_{Z^\prime}=600, 800, 1000, 1200, 1400$~GeV.  This signal pro
 \end{figure}
 
   
- \subsection{Model implementation}
-
-All three Higgs+MET models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower.
-The MadGraph implementations of the scalar and vector models can be found on the Forum SVN 
-repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found
-at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
-
-In all cases, it is recommended not to handle the $h$ decay through MadGraph as
-it does not include the proper $h$ branching ratios, or, if using MadGraph, then the 
-resulting cross section should be rescaled to match onto the correct branching ratio.
-
-\newthought{Madgraph details for scalar mediator Higgs+MET model}
-
-In this model, the contribution from the $gghS$ box is included through an effective 
-Lagrangian evaluated in the large $m_t$ limit. 
-This may overestimate the rates of the $h + \missET$ signal~\cite{Haisch:2012kf}, but a full evaluation
-is left to future studies. 
-
-\newthought{Madgraph details for 2HDM Higgs+MET model}
-  
- The two couplings that can be changed in the Madgraph model follow the nomenclature below:
- \begin{itemize}
- 	\item \texttt{Tb} - $\tan \beta$
- 	\item \texttt{gz} - $g_z$, gauge coupling of $Z^\prime$ to quarks
- \end{itemize}
- The other couplings are not changed, including \texttt{gx} (the $A \bar \chi \chi$ coupling) which has little impact on the signal. 
- $\sin \alpha$ is fixed internally such that $\cos (\beta-\alpha) = 0$. 
- The width of the $Z^\prime$ and $A$ can be computed automatically within Madgraph. 
- The couplings here don't affect the signal kinematics, so they can be fixed to default values 
- and then the signal rates can be scaled appropriately. 
- 
-The nomenclature for the masses in the Madgraph model is:
- \begin{itemize}
- 	\item \texttt{MZp} - PDG ID 32 - $Z^\prime$
- 	\item \texttt{MA0} - PDG ID 28 - $A$
- 	\item \texttt{MX} - PDG ID 1000022 - dark matter particle
- \end{itemize}
- 
-The other masses are unchanged and do not affect the result. 
- Both $Z^\prime \to hZ(\bar \nu \nu)$ and  $Z^\prime \to hA(\bar \chi \chi)$ contribute to the final state, scaling
- different with model parameters. We recommend to generate them separately, 
- and then add the two signal processes together weighted by cross sections.
- % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence.  
- 

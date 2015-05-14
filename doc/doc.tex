@@ -24,9 +24,9 @@
 \usepackage{amsfonts}
 \usepackage{amsmath,amssymb}
 \usepackage{slashed}
-\usepackage{feynmp}
+%%\usepackage{feynmp}
 % begin feynman diagram setup
-%%\usepackage{feynmp-auto}
+\usepackage{feynmp-auto}
 % before setting default graphics include widths, save the default to properly scale feynman diagrams with their labels
 \makeatletter
 \let\ginnatwidth\Gin@nat@width
@@ -257,7 +257,7 @@
 \appendix
 
 %\ifNotMonojetTTBarOnly
-\chapter{Appendix: Detailed studies on mono-jet signatures}
+\chapter{Appendix: Implementation of Models}
 \label{app:MonojetLikeModels_Appendix}
 \input{tex/MonojetLikeModels_Appendix.tex}
 %\fi

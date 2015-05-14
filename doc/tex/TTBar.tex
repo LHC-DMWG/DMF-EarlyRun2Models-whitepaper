@@ -5,7 +5,40 @@
 {$LastChangedBy$}
 \svnid{$Id$}
 
-As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudoscalar particle mediating the DM-SM interactions is one of the simplest UV completions of our EFT models. 
+As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudoscalar particle mediating the DM-SM interactions is one of the simplest UV completions of our EFT models.  With the MFV assumption, the top quark plays
+a primary role in the phenomenology.   The model predicts not only
+the monojet process described earlier, but also production of dark matter
+in association with top pairs, as illustrated in Fig.~\ref{fig:TTbarPhi}.
+
+\begin{figure}[t!]
+\centering
+  \unitlength=0.005\textwidth
+  \begin{feynmandiagram}[modelTTbarMET]
+    \fmfleft{i1,i2}
+    \fmfright{o1,o4,o5,o3}
+    \fmf{gluon}{i1,v1}
+    \fmf{gluon}{i2,v2}
+    \fmf{fermion}{o1,v1,v3,v2,o3}
+    \fmf{scalar}{v3,v4}
+    \fmf{fermion}{o5,v4,o4}
+    \fmf{phantom,tension=0,label={$\phi/a$}}{v3,v4}    
+    \fmflabel{\Large $g$}{i1}
+    \fmflabel{\Large $g$}{i2}
+    \fmflabel{\Large $t$}{o1}
+    \fmflabel{\Large $\bar t$}{o3}
+    \fmflabel{\Large $\chi$}{o4}
+    \fmflabel{\Large $\bar \chi$}{o5}    
+  \end{feynmandiagram}
+%\caption[][\baselineskip]{Representative Feynman
+\caption{Representative Feynman
+diagram showing the pair production of dark matter particles in
+association with $t\bar t$.}
+\label{fig:TTbarPhi}
+\setfloatalignment{t}
+\end{figure}
+
+
+
 %one of the most simple UV complete extension of the effective field theory approach is the addition of a scalar mediator between DM and SM.
 %A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle.
 %In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. The kinematics of the two cases is sufficiently different to suggest that further investigation of the complex scalar case is needed but left for future studies. 

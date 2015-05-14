@@ -48,7 +48,21 @@
 %\section*{EFT Validity and Truncation Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Effective Field Theories (EFTs) are an extremely useful tool for DM searches at the LHC. Given the current lack of indications about the nature of the DM particle and its interactions, a model independent interpretation of the collider bounds appears mandatory, especially in complementarity with the reinterpretation of the exclusion limits within a choice of simplified models, which cannot exhaust the set of possible completions of an effective Lagrangian. However EFTs must be used with caution at LHC energies, where the energy scale of the interaction is at a scale where the EFT approximation can no longer be assumed to be valid. Here we summarise some methods that can be used to ensure the validity of the EFT approximation. These methods are described in detail in Refs.~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}.
+Effective Field Theories (EFTs) are an extremely useful tool for DM searches at the LHC. Given the current lack of indications about the nature of the DM particle and its interactions, a model independent interpretation of the collider bounds appears mandatory, especially in complementarity with the reinterpretation of the exclusion limits within a choice of simplified models, which cannot exhaust the set of possible completions of an effective Lagrangian. However EFTs must be used with caution at LHC energies, where the energy scale of the interaction is at a scale where the EFT approximation can no longer be assumed to be valid.
+To illustrate the problem, consider an effective interaction
+$$ (\bar\psi_{SM}\psi_{SM})(\bar\psi_{DM}\psi_{DM}) {g\over \Lambda^2}$$
+that couples SM and DM fields.   The strength of this interaction can
+be parametrized by $f={g\over \Lambda^2}$.
+A monojet signature can be generated
+by appling perturbation theory in the QCD coupling.   The resulting
+Feynman diagram will contain a quark propagator with virtuality
+$\sqrt{-q^2}$.   For a fixed $f$, a small value of $g$ will require
+a small value of $\Lambda$.   The EFT approximation breaks down
+if $\sqrt{-q^2}>\Lambda$.   On the other hand, large $\Lambda$
+implies large $g$, raising the question if perturbation theory
+is even applicable.   
+
+Here we summarise some methods that can be used to ensure the validity of the EFT approximation. These methods are described in detail in Refs.~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,7 +79,7 @@ this corresponds to setting
 %
 where $\Qtr$ is the momentum carried by the mediator, and $\gx$, $g_q$ are the DM-mediator and quark-mediator couplings respectively. Similar expressions exist for other operators. Clearly the condition that must be satisfied for this approximation to be valid is that $\Qtr^2 < M^2 = \gx g_q {M_*}^2$. 
 
-We can use this condition to enforce the validity of the EFT approximation by restricting the signal (after the imposition of the cuts of the analysis) to events for which $\Qtr^2 < M^2$. This truncated signal can then be used to derive the new, truncated limit on $M_*$ as a function of $(\mx, \gx g_q)$.
+We can use this condition to enforce the validity of the EFT approximation by restricting the signal (after the imposition of the event selection of the analysis) to events for which $\Qtr^2 < M^2$. This truncated signal can then be used to derive the new, truncated limit on $M_*$ as a function of $(\mx, \gx g_q)$.
 
 For the example D5-like operator, $\sigma \propto {M_*}^{-4}$, and so there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${M_*}$ if the original limit is based on a simple cut-and-count procedure. Defining $\sigma_{\rm EFT}^{\rm cut}$ as the cross section truncated such that all events pass the condition $\sqrt{\gx g_q} M_*^{\rm rescaled} > \Qtr$, we have
 %

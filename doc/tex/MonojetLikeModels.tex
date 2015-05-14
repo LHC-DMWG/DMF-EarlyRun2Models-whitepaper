@@ -322,7 +322,7 @@ Couplings to the SM fermions can be arranged by mixing with the SM Higgs. Such m
 
 %\subsection{Model and assumption for fermionic DM}
 
-Working under the assumption of Minimal Flavor Violation (MFV) implies scalar couplings to fermions are proportional to the fermion mass.  However, the overall normalization constant of this coupling can differ for for up- and down-type quarks and charged leptons. Assuming that DM is a fermion $\chi$, which couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level Lagrangians compatible with the MFV assumption are~\cite{Cotta:2013jna,Abdullah:2014lla}:
+Working under the assumption of Minimal Flavor Violation (MFV) implies scalar couplings to fermions are proportional to the fermion mass.  However, the overall normalization constant of this coupling can differ for for up- and down-type quarks and charged leptons. Assuming that DM is a fermion $\chi$ that couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level Lagrangians compatible with the MFV assumption are~\cite{Cotta:2013jna,Abdullah:2014lla}:
 
  \begin{eqnarray}
 {\cal L}_{\phi} & = &
@@ -342,7 +342,7 @@ we parametrise the DM-mediator coupling as $g_\chi$, without any additional Yuka
 
 %The most general Lagrangians including new scalars or pseudoscalars will have a potential containing interactions with the SM Higgs field $h$. 
 As already stated we only choose a minimal set of interactions that do not include interactions with the SM Higgs field. 
-For simplicity and ease of comparison, we assume universal SM-mediator couplings $g_v \equiv g_u = g_d = g_\ell$ in the remainder of this work. This allows the relative discovery and exclusion power of each search to be directly compared, though again we emphasize the importance of multiple search channels, not an exclusive focus on the single most powerful under the assumption of universal couplings. %If there is no indication otherwise the easiest assumptions is always the most scientific to chose (also listening to some phenomenologists this seems not always to be the case ;-) )  
+For simplicity and ease of comparison, we assume universal SM-mediator couplings $g_v \equiv g_u = g_d = g_\ell$ in the remainder of this work. This allows the relative discovery and exclusion power of each search to be directly compared, though again we emphasize the importance of multiple search channels, not an exclusive focus on the single, most powerful channel under the assumption of universal couplings. %If there is no indication otherwise the easiest assumptions is always the most scientific to chose (also listening to some phenomenologists this seems not always to be the case ;-) )  
 
 Given these simplifications, the minimal set of parameters under consideration is
  \bea
@@ -426,7 +426,7 @@ For the mediator mass above twice the top quark mass $m_t$, the minimal width re
 \centering
 \includegraphics[width=0.45\textwidth]{figures/monojet/width_S.eps}
 \includegraphics[width=0.45\textwidth]{figures/monojet/width_P.eps}
-\caption{Minimal width as a function of mediator mass for scalar and pseudo-scalar mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of 10\,GeV, 30\,GeV, 100\,GeV and 300\,GeV in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
+\caption{Minimal width as a function of mediator mass for scalar and pseudo-scalar mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of \mdm=10\,GeV, 30\,GeV, 100\,GeV and 300\,GeV in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
 \label{fig:monojet_width_S}
 \end{figure}
 
@@ -481,7 +481,8 @@ No differences in the kinematic distributions are observed and also the cross se
 
 
 The optimized parameter grid in the $\mMed$--$\mdm$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, taking again $\gq=\gDM=1$. Only the sensitivity to the highest mediator masses has to be revisited.
-The generator level cross section times the acceptance at $\MET>500$\,GeV for the model with couplings $\gq=\gDM=1$, light Dark Matter of 10\,GeV and 500\,GeV scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1\,TeV pushes the product $\sigma\times A$ down to approximately 0.1\,fb, beyond the LHC sensitivity. Therefore, we choose to remove the 2\,TeV mediator mass from the grid and present the final grid with 26 mass points only in Fig.\,\ref{tab:mDMmMedScan_SP}.
+The generator level cross section times the acceptance at $\MET>500$\,GeV for the model with couplings $\gq=\gDM=1$, light Dark Matter of \mdm=10\,GeV and
+a \mMed=500\,GeV scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1\,TeV pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2\,TeV mediator mass from the grid and present the final grid with 26 mass points only in Fig.\,\ref{tab:mDMmMedScan_SP}.
 One point at very high mediator mass (5 TeV) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs). 
 
 \begin{table}[!h]
@@ -520,9 +521,6 @@ decaying to Dirac DM fermions in the scalar and pseudoscalar case, taking the mi
 
 The proposal for the scan in the $\gq$--$\gDM$ plane is described in the following section.
 
-
-\paragraph{Implementation}
-The matrix element implementation of the s-channel spin-0 mediated DM production is available in POWHEG with the full top-loop calculation at LO\,\cite{Haisch:2015ioa}.
 
 
 
@@ -674,38 +672,6 @@ The cross section for the sample with couplings $\gq$ and $\gDM$ and modified me
 \end{equation}
 Here, it is again assumed the narrow width approximation applies.
 The advantage of doing this is in the fact that no event selection and detector response needs to be simulated since the changes in couplings do not have an effect on the shapes of kinematic distributions.
-
-
-
-
-\subsection{POWHEG settings}
-
-This section describes specific settings for the Dark Matter models needed to run the POWHEG generation.
-\begin{itemize}
-\item The POWHEG implementation allows to generate a single sample that provides sufficient statistics in all signal regions. %by optimizing the following two parameters:
-%\begin{itemize}
-POWHEG generates weighted events and the \verb+bornsuppfact+ parameter is used to set the event suppression factor according to
-\begin{equation}
-F(k_{\rm{T}})=\frac{k_{\rm{T}}^2}{k_{\rm{T}}^2+\texttt{bornsuppfact}^2} \;.
-\end{equation}
-In this way, the events at, for instance low $\MET$, are suppressed and receive higher event weights which ensures higher statistics at high $\MET$. We recommend to set \verb+bornsuppfact+ to 1000.
-\item The \verb+bornktmin+ parameter allows to suppress the low $\MET$ region even further by starting the generation at a certain value of $k_{\rm{T}}$. It is recommended to set this parameter  to half the lower analysis $\MET$ cut, for the event selection used in the CMS/ATLAS monojet analyses for instance the proposed value for \verb+bornktmin+ is 150. However, this parameter should be set keeping in mind the event selection of all the analyses that will use these signal samples and hence a threshold lower than 150 may be required. 
-%\end{itemize}
-
-\item Set \verb+runningwidth+ to 0.
-\item Set \verb+mass_low+ and \verb+mass_high+ to -1.
-\item The minimal values for \verb+ncall1+, \verb+itmx1+, \verb+ncall2+, \verb+itmx2+ are 250000, 5, 1000000, 5 for the DMV model, respectively. In order to increase speed, set \verb+foldsci+ and \verb+foldy+ to 2 and keep \verb+foldphi+ at 1. 
-\item The minimal values for \verb+ncall1+, \verb+itmx1+, \verb+ncall2+, \verb+itmx2+ are 100000, 5, 100000, 5 for the DMS\_tloop model, respectively.
-\item Allow negative weights for the DMV model by setting \verb+withnegweights+ to 1.
-\item Since the DMS\_tloop model is a leading order process, set \verb+LOevents+ and \verb+bornonly+ are set to 1 internally.
-\end{itemize}
-{\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
-
-\section{Implementation of s-channel models}
-There are several matrix element implementations of the s-channel vector mediated DM production. This is available in POWHEG, MADGRAPH and also MCFM.
-The implementation in POWHEG generates DM pair production with 1 parton at next-to-leading order (NLO), whilst MADGRAPH and MCFM are at leading order (LO). As shown in POWHEG Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
-Since NLO calculations are available for the process in POWHEG, we recommend to proceed with POWHEG as the generator of choice. 
-
 
 \section{Colored scalar mediator, t-channel exchange}
 
