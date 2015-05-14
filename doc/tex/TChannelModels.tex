@@ -18,14 +18,14 @@ leading to a different phenomenology.
 Here, we examine a model where $\chi$ is a Standard Model (SM) singlet,
 the mediating particle, labeled $\phi$, is charged and coloured, and
 the SM particle is a quark.
-Following the example of Ref.~\cite{Papucci:2014}, the interaction Lagrangian is written as
+Following the example of Ref.~\cite{Papucci:2014iwa}, the interaction Lagrangian is written as
 
 \begin{equation}
 \mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2,3} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chi
 \end{equation}
-\todo{Note: \cite{Papucci:2014} uses only i = 1,2, but I think it's fine to extend this to 3 here.}
+\Todo{Note: \cite{Papucci:2014iwa} uses only i = 1,2, but I think it's fine to extend this to 3 here.}
 
-where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which (unlike the $s$-channel mediators) must be heavier than $\chi$. These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
+where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which (unlike the $s$-channel mediators) must be heavier than $\chi$. These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014iwa, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
 
 \vspace{5mm}
 
@@ -73,7 +73,7 @@ the $b$ parton PDF.
 This model can also give a signal in the di-jet +
 MET channel when, for example, the $\chi$ is exchanged in the
 $t$-channel and the resulting $\phi$ pair each decay to a jet +
-$\chi$. Fig.~\ref{tchannelDijet} shows the leading order diagrams.
+$\chi$. Fig.~\ref{fig:tchannelDijet} shows the leading order diagrams.
 Except for the $gg$ induced process, di-jet production
 through $\phi^3_u$ is not possible, and production through $\phi^3_d$ is
 again suppressed.   The diagram involving the t-channel exchange
@@ -210,7 +210,7 @@ should also test their sensitivity to them.
     \fmflabel{\Large $\bar{\chi}$}{o1}
     \fmfdot{v1,v2,v3}
   \end{feynmandiagram}
-\caption{Leading order mono-jet $t$-channel processes, adapted from {\cite:Papucci:2014}.}\label{fig:tchannelMonojet}
+\caption{Leading order mono-jet $t$-channel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelMonojet}
 \end{figure}
 
 \begin{figure}
@@ -318,12 +318,12 @@ should also test their sensitivity to them.
     \fmflabel{\Large $\bar{\chi}$}{o4}
     \fmfdot{v1,v2,v3,v4}
   \end{feynmandiagram}
-\caption{Leading order two-jet $t$-channel processes, adapted from {\cite:Papucci:2014}.}\label{fig:tchannelDijet}
+\caption{Leading order two-jet $t$-channel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelDijet}
 \end{figure}
 
 \newthought{Parameter scans}
 
-Ref.~\cite{Pappuci:2014} studies the parameter space and obtains
+Ref.~\cite{Papucci:2014iwa} studies the parameter space and obtains
 bounds on this model from LHC Run 1 mono-jet and dijets+MET data.
 
 As in the $s$-channel models, scans should be performed over
@@ -338,12 +338,12 @@ only indirectly on the coupling through the effect on the minimal
 mediator width. In contrast with the $s$-channel case, however, the
 bounds one obtains from X+MET searches depends strongly on the width
 of the mediator, as is visible in Figs.~5 and 6 of
-Ref.~\cite{Pappuci:2014}, except in the heavy mediator limit ($M_{\phi} \approx 2$\,TeV). A scan over the width was not available for this report; thus we recommend scanning a range of possible widths as discussed in a more-limited way for the $s$-channel mono-jet, spanning from the minimal width to a value approaching the particle limit (for example, $\Gamma \approx M_{\phi}/3$ in Ref.~\cite{Pappuci:2014}).
+Ref.~\cite{Papucci:2014iwa}, except in the heavy mediator limit ($M_{\phi} \approx 2$\,TeV). A scan over the width was not available for this report; thus we recommend scanning a range of possible widths as discussed in a more-limited way for the $s$-channel mono-jet, spanning from the minimal width to a value approaching the particle limit (for example, $\Gamma \approx M_{\phi}/3$ in Ref.~\cite{Papucci:2014iwa}).
 
 \newthought{Implementation}
 
-The MadGraph implementation of the Ref.~\cite{Pappuci:2014} is
-available from the Forum repository \todo{cite}, following the
+The MadGraph implementation of the Ref.~\cite{Papucci:2014iwa} is
+available from the Forum repository~\cite{ForumSVN_TChannel}, following the
 matching and merging prescription described in its Section II and
 Appendix A.
 
