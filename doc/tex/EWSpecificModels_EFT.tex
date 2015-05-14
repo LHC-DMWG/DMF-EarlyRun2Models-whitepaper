@@ -21,6 +21,7 @@ replacement.
 
 %%%%%%%%%%%Dimension 5 operators
 \subsection{Dimension 5 operators}
+\label{sub:EW_EFT_Dim5}
 
 The lowest dimension benchmark operators we may consider are effective dimension 5,
 such as the one depicted in Figure~\ref{fig:modelMonoHEFT}.  
@@ -43,7 +44,7 @@ such as the one depicted in Figure~\ref{fig:modelMonoHEFT}.
 		\fmflabel{\Large ${\chi}$}{o2}
 		\fmfdot{v1}
 	\end{feynmandiagram}
-	\caption{Diagram for a dimension 5 operator giving rise to a Higgs+MET signature.}
+	\caption{Diagram for EFT operators giving rise to a Higgs+MET signature.}
 	\label{fig:modelMonoHEFT}
 \end{figure}
 
@@ -57,14 +58,11 @@ from this category have a Lagrangian that includes terms such as:
 
 where $m_Z$ and $m_W$ are the masses of the $Z$ and $W$ boson, $W^{\mu}$ and $Z^{\mu}$
 are the fields of the gauge bosons, $\chi$ denote the Dark Matter fields
-and $\Lambda_5$ is the effective field theory scale. Note that these operators are of true dimension 7, 
+and $\Lambda_5$ is the effective field theory scale~Todo{Nomenclature differs: $\Lambda_5$ vs $\lambda$}. Note that these operators are of true dimension 7, 
 but reduce to effective dimension 5 once Higgs vevs, contained in the W and Z mass terms, are inserted.  
-As such, one expects  these that operators would naturally  arise in UV complete models where Dark Matter 
+As such, one expects  these that operators would naturally arise in UV complete models where Dark Matter 
 interacts via a Higgs portal where heavy mediators would couple to the Higgs or other fields in an extended Higgs sector. 
 In such models the full theory may be expected to contain additional operators with Higgs-Dark Matter couplings. 
-
-The Madgraph model parameters are:
-xxhhg5, $\lambda$, $g_{DM} = \frac{(246 GeV)}{\lambda}$	
 
 Concentrating  for the moment on mono-gauge boson signals, the above operator induces signatures with 
 MET in conjunction with Z and W bosons at tree level,
@@ -78,11 +76,11 @@ a high-mass scalar mediator exchanged in the s-channel. For this reason,
 the list of benchmark models with direct boson-DM couplings for photon, Z and W 
 only includes dimension 7 operators: the scalar model with initial state radiation of an EW boson
 is already recommended and its results can be rescaled. The Higgs+MET analysis,
-however, will not use this model,
-as it would not be sensitive to a scalar mediator model. 
+however, will not consider the scalar simplified model as benchmark, due to the very low sensitivity 
+in early LHC analyses, and will instead use this dimension 5 operator. 
 
 \begin{figure}
-	\includegraphics[width=0.6\textwidth]{figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf}
+	\includegraphics[width=0.8\textwidth]{figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf}
 	\caption{Comparison of the missing transverse momentum for the simplified model
 		where a scalar mediator is exchanged in the s-channel and the model including 
 		a dimension-5 scalar contact operator, in the leptonic Z+MET final state}
@@ -91,42 +89,66 @@ as it would not be sensitive to a scalar mediator model.
 
 \subsubsection{Parameter scan}
 
-%\begin{figure}[!htbp]
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width = \linewidth]{xxhhg5/truth_leading_b_pt.eps}
-%	\end{minipage}
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width = \linewidth]{xxhhg5/truth_leading_b_eta.eps}
-%	\end{minipage}
-%\end{figure}
-%
-%\begin{figure}[!htbp]
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width = \linewidth]{xxhhg5/truth_subleading_b_pt.eps}
-%	\end{minipage}
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width = \linewidth]{xxhhg5/truth_subleading_b_eta.eps}
-%	\end{minipage}
-%\end{figure}
-%
-%\begin{figure}[!htbp]
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width = \linewidth]{xxhhg5/truth_bb_deltar.eps}
-%	\end{minipage}
-%\end{figure}
-%
-%\FloatBarrier
-%\clearpage
+The two parameters of this model are the scale of new physics $\lambda$ 
+and the DM particle mass. SM-DM coupling and new physics scale are related by 
+$\gdm = \frac{(246 GeV)}{\lambda}$\Todo{Clarify the reason why this happens 
+	in Madgraph through explicit Lagrangian terms?}.
 
+The initial value of the new physics scale $\lambda$ chosen 
+for the sample generation is 3 TeV; this does not affect the signal kinematics, 
+and the cross-section of the samples can be rescaled according to the 
+$\lambda^3$ dependence when deriving the constraints on this scale. 
+%From Andy
+%– Lambda=3 TeV. Essentially this is an arbitrary choice for most EFTs, 
+%however it does affect the mono-H analysis as some of their models 
+%have non-trivial scaling with Λ. More care should be given to the choice for mono-H. 
 
+The DM mass values for the benchmark points to be simulated are chosen to
+span a sufficient Dark Matter range leading to different kinematics, 
+that is within the LHC sensitivity for early searches and that is consistent across 
+the various signatures and EFT operators. We therefore start the mass scan
+at \mdm=1 GeV, where collider experiments are complementary to direct and indirect detection
+%TODO: we could kill the 1 GeV as the kinematics does not change from 10
+and choose the last point corresponding to a DM mass of 1 TeV. 
+We recommend a scan in seven mass points, namely:
+$$
+\mdm = { 1, 10, 50, 100, 200, 400, 800, 1300 } GeV. 	
+$$
+
+A set of kinematic distributions from the Higgs+MET signature where the Higgs decays 
+into two $b-$quarks is shown in Fig.~\ref{eq:Lc1c2}, for points similar to those of the grid scan proposed. 
+  
+ \begin{figure}[hbpt!]
+ 	\centering
+ 	\subfloat[Leading $b-$jet transverse momentum]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_leading_b_pt} %\label{fig:met_cmp_high}
+ 	}
+ 	\hfill
+ 	\subfloat[Leading $b-$jet pseudorapidity]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_leading_b_eta} %\label{fig:met_cmp_low}
+ 	}
+ 	\hfill
+ 	\subfloat[Leading $b-$jet transverse momentum]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+ 	}
+ 	\hfill
+ 	\subfloat[Leading $b-$jet pseudorapidity]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+ 	}
+ 	\hfill
+ 	\subfloat[Angular distance between the two leading $b-$jets]{
+ 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_bb_deltar} %\label{fig:met_cmp_low}
+ 	}
+ 	\hfill
+ 	\caption{Comparison of the kinematic distributions for the two leading $b-$ jets (from the Higgs decay) in the model with direct interactions
+ 		between the Higgs boson and the DM particle, when varying the DM mass. 
+ 		\label{fig:Hbb_Dim5}}
+ \end{figure}
+ 
 %%%%%%%%%%%%%Dimension 7 operators
 
 \subsection{Dimension 7 operators}
+\label{sub:EW_EFT_Dim7}
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Uli 3/5/2015
@@ -169,21 +191,28 @@ The coefficients $c_1$ and $c_2$ appearing in (\ref{eq:gViVj}) determine the rel
   \item Since numerically $c_w^2/s_w^2 \simeq 3.3$ the mono-photon channel is particularly sensitive to $c_1$.
 \end{itemize}
 
-
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\subsubsection{Parameter scan}
 
-The kinematic distributions for dimension-7 scalar and pseudoscalar operators
-only shows small differences, as shown in Fig.~\ref{fig:EW_EFT5_gamma_MET}.
+As stated above and shown in Ref.~\cite{Nelson:2013pqa}, 
+the kinematic distributions for dimension-7 scalar and pseudoscalar operators
+only shows small differences. This has been verified from a generator-level study:
+the signal acceptance after a simplified analysis selection 
+(MET$>$350 GeV, leading jet $p_T > $ 40 GeV, minimum azimuthal difference between
+either of the two jets and the MET direction $>$ 0.4) is roughly 70\% for both. 
+We therefore only suggest to generate one of the two models. 
+Todo{When we have the cross-sections for both, we can recommend the one with the highest cross-section.}
 
-\begin{figure}
-    \includegraphics[width=0.6\textwidth]{figures/llug}
-    \caption{Comparison of the missing transverse momentum for the scalar and pseudoscalar
-    operators with direct interaction between DM and photon, in the photon+MET final state}
-    \label{fig:EW_EFT5_gamma_MET}
-\end{figure}
+%as shown in Fig.~\ref{fig:EW_EFT5_gamma_MET}.
+%\begin{figure}
+%    \includegraphics[width=0.6\textwidth]{figures/llug}
+%    \caption{Comparison of the missing transverse momentum for the scalar and pseudoscalar
+%    operators with direct interaction between DM and photon, in the photon+MET final state}
+%    \label{fig:EW_EFT5_gamma_MET}
+%\end{figure}
 
-Similarly, the differences in kinematics for the various signatures
+The differences in kinematics for the various signatures
 are negligible when changing the coefficients $k_1$ and $k_2$, as shown
 in Figure~\ref{EFTD7_EW_kinematics}. Only the case $k_1=k_2=1$ is generated as benchmark;
 other cases are left for reinterpretation as they will only need a rescaling of the cross-sections
@@ -192,57 +221,57 @@ mass points considered.
 
 \begin{figure}[h!]
   \centering
-  \subfloat[Missing transverse momentum distribution for the photon+MET final state.\label{fig:EFTD7_EW_gamma_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/gull}
-    }
-    \hfill
-  \subfloat[Missing transverse momentum distribution for the leptonic Z+MET final state.\label{fig:EFTD7_EW_Z_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/llug}
-    }
-  \subfloat[Transverse mass ($m_T$) for the leptonic W+MET final state.\label{fig:EFTD7_EW_Wlep_mT}]{%
-      \includegraphics[width=0.45\textwidth]{figures/gull}
-    }
-    \caption{Kinematic distributions relevant for searches with W, Z and photons in the final state,
-    for for the scalar and pseudoscalar operators representing direct interactions between DM and bosons.}
+%  \subfloat[Missing transverse momentum distribution for the photon+MET final state.\label{fig:EFTD7_EW_gamma_MET}]{%
+%      \includegraphics[width=0.45\textwidth]{figures/gull}
+%    }
+%    \hfill
+  \subfloat[Missing transverse momentum distribution.\label{fig:EFTD7_EW_Z_MET}]{%
+  	\includegraphics[width=0.45\textwidth]{figures/EW/monoZhad_SP/accS}
+  }
+  \subfloat[Acceptance.\label{fig:EFTD7_EW_Z_acc}]{%
+  	\includegraphics[width=0.45\textwidth]{figures/EW/monoZhad_SP/metPt}
+  }
+    \caption{MET distribution and acceptance for the dimension-7 model with a hadronically decaying Z in the final state,
+    for the scalar and pseudoscalar operators representing direct interactions between DM and bosons.}
     \label{fig:EFTD7_EW_kinematics}
-
 \end{figure}
 
-Examples of relevant kinematic distributions for selected benchmark points are
-shown in Fig.~\ref{fig:DMV_EW_kinematics}.
-
-\begin{figure}[h!]
-  \centering
-  \subfloat[Missing transverse momentum distribution for the photon+MET final state.\label{fig:DMV_EW_gamma_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/gull}
-    }
-    \hfill
-  \subfloat[Missing transverse momentum distribution for the leptonic Z+MET final state.\label{fig:DMV_EW_Z_MET}]{%
-      \includegraphics[width=0.45\textwidth]{figures/llug}
-    }
-  \subfloat[Transverse mass ($m_T$) for the leptonic W+MET final state.\label{fig:DMV_EW_Wlep_mT}]{%
-      \includegraphics[width=0.45\textwidth]{figures/gull}
-    }
-    \hfill
-  \subfloat[Fat \textbf{[Insert algorithm]} jet mass ($m_T$) for the the hadronic W+MET final state.\label{fig:DMV_EW_Whad_jetMass}]{%
-      \includegraphics[width=0.45\textwidth]{figures/llug}
-    }
-    \caption{Kinematic distributions relevant for searches with W, Z and photons in the final state,
-    for the simplified model with a vector mediator exchanged in the $s-$channel.}
-    \label{fig:DMV_EW_kinematics}
-\end{figure}
 
 %%%%%%%%%%%%%Dimension 8 operators
 
 \subsection{Higher dimensional operators}
 
-Higher dimensional operators (dimension 8) have the form 
+Many higher dimensional operators can induce signals of photons or $W/Z/H$ bosons
+in the final state. A complete list can be found in Refs.~\ref{Carpenter:2013xra, Berlin:2014cfa, Petrov:2013nia}
+and references therein. 
 
-$$\bar{\chi} \gamma^{\mu} \chi B_{\mu \nu} H^{\dagger} D^{\nu} H$$
+Although with lower priority with respect to the operators above, 
+a representative dimension-8 operators can be chosen as benchmark, with the form:
+ 
+$$\frac{1}{\Lambda^4} \bar{\chi} \gamma^{\mu} \chi B_{\mu \nu} H^{\dagger} D^{\nu} H$$
 
-The Madgraph parameters are:
-xgxFhDh, $\Lambda$, $y_{\chi} = \frac{1}{\Lambda^{4}}$	
-
+In this case, the new physics scale is $\Lambda$ is connected with the coupling
+of the DM as $y_{\chi} = \frac{1}{\Lambda^{4}}$.Todo{Is more detail needed here?}
+An advantage of this operator is that it includes all signatures with EW bosons,
+allowing to assess the relative sensitivity of the various channels with the same model.  
+The kinematics for this operator is different with respect to other operators,
+leading to a harder MET spectrum, 
+as illustrated by comparing the leading $b-$jet distribution for the dimension 5 operator
+to the dimension 8 operator. 
+  
+   \begin{figure}[hbpt!]
+   	\centering
+   	\subfloat[Leading $b-$jet transverse momentum]{
+   		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_leading_b_pt} %\label{fig:met_cmp_high}
+   	}
+   	\hfill
+   	\subfloat[Leading $b-$jet transverse momentum]{
+   		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xgxFhDh/truth_leading_b_pt} %\label{fig:met_cmp_high}
+   	}
+   	\caption{Comparison of the transverse momentum for the leading $b-$ jet from the Higgs decay for a dimension 5 and dimension 7 operator
+   		with direct boson-DM couplings.}
+   	\end{figure}
+   	
 %\subsection{xgxFhDh Truth Kinematics}
 %
 %\begin{figure}[!htbp]
@@ -278,29 +307,38 @@ xgxFhDh, $\Lambda$, $y_{\chi} = \frac{1}{\Lambda^{4}}$
 %\clearpage
 
 
-\subsection{Completion and validity of EW contact operators}
+\subsection{Validity of EW contact operators and possible completions}
 
-\textbf{[TODO: mention here discussion with Liantao yesterday]}
+It is important to remember that the operators described in 
+this section may present problems in terms of the validity of the contact interaction
+approach for the energy scales reached at the LHC. 
 
-% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-%   Linda 11/5/15
-% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+As outlined in~\cite{Berlin:2014cfa}, designing very high MET search signal regions
+that are exclusively motivated by the hard MET spectra of the dimension 7 and 8 operators
+will mean that the momentum transfer in the selected events is larger. This in turn
+means that processes at that energy scale (mediators, particles exchanged in loops)
+are accessible, and a simple contact interaction will not be able to correctly
+describe the kinematics of these signals. 
 
-As an example of a simplified model corresponding to the dimension-5 EFT operator 
-described above, we consider a Higgs portal with a scalar mediator. Models of this kind
-are among the most concise versions of simplified models that produce 
-couplings of Dark Matter to pairs of gauge-bosons.  Scalar fields may couple directly to pairs of electroweak gauge bosons, 
-but must carry part of the electroweak vev.  One may thus consider a simple model where Dark Matter couples to a a scalar 
-singlet mediator, which mixes with the fields in the Higgs sector.
-\begin{equation}
-L\subset m_s S^2 + \lambda S^2H^2 +\lambda^{'} S H^2 + y S \chi \overline{\chi}
-\end{equation}
-Where H is a field in the Higgs sector that contains part of the electroweak vev, 
-S is a heavy scalar singlet and $\chi$ is a Dark Matter field. 
-There is then an S channel diagram where DM pairs couple to the singlet field S, 
-which then mixes with a Higgs-sector field, and couples to W and Z bosons. 
-This diagram contains 2 insertions of EW symmetry breaking fields, 
-corresponding in form to the effective dimension-5 operator in the previous section.   
+Contact interaction operators like the ones in this section 
+remain useful tools for comparison of the sensitivity of different search channels, 
+and for reinterpretation of other models under the correct assumptions. 
+To date, there are no UV-complete models available for most of those operators:
+the dimension-7 operators are particularly challenging since their completion involves loops.
+However, this may be the focus of future theoretical exploration: 
+an example of a complete model 
+for scalar DM corresponding to the dimension-5 operator 
+is provided in the Appendix~\ref{app:EWSpecificModels_Appendix}. 
+Providing results for the pure EFT limit of these models will prove useful
+to cross-check the implementation of future. 
+
+Given these considerations, the recommendations on the presentation of the results
+for these models are: 
+
+\begin{itemize}
+\item Assess the percentage of events that pass the EFT validity condition, and present results using a truncation of the invalid events using the procedure in Section~\ref{sec:EFTValidity} alongside pure EFT results;
+\item Deliver fiducial limits on the cross section of any new physics events, without any model assumption, according to the guidelines in Appendix~\ref{app:presentationOfResults}.  
+\end{itemize}
 
 \subsection{Model implementation}
 
