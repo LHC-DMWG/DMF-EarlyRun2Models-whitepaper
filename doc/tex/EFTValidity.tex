@@ -10,20 +10,35 @@
 %\section*{EFT Validity and Truncation Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Effective Field Theories (EFTs) are an extremely useful tool for DM searches at the LHC. Given the current lack of indications about the nature of the DM particle and its interactions, a model independent interpretation of the collider bounds appears mandatory, especially in complementarity with the reinterpretation of the exclusion limits within a choice of simplified models, which cannot exhaust the set of possible completions of an effective Lagrangian. However EFTs must be used with caution at LHC energies, where the energy scale of the interaction is at a scale where the EFT approximation can no longer be assumed to be valid.
+Effective Field Theories (EFTs) are an extremely useful
+framework for interpreting DM searches at the LHC.
+Given our current lack of knowledge about the nature of a DM particle and
+its interactions, a model independent interpretation of the collider bounds
+appears mandatory.  This approach should be complemented with
+an interpretation within a choice of simplified models.
+However, these models cannot exhaust the set of possible completions of
+an effective Lagrangian.
+EFTs must be used with caution at colliders, where the energy
+scale of the interaction can be above the point where the EFT
+approximation is valid.
 
 To illustrate the problem, consider an effective interaction
-$$ (\bar\psi_{SM}\psi_{SM})(\bar\psi_{DM}\psi_{DM}) {g\over \Lambda^2}$$
+$$ (\bar\psi\psi)(\bar\chi\chi) {g\over \Lambda^2}$$
 that couples SM and DM fields.   The strength of this interaction can
 be parametrized by $f={g\over \Lambda^2}$.
 A monojet signature can be generated
-by applying perturbation theory in the QCD coupling.   The resulting
-Feynman diagram will contain a quark propagator with virtuality
-$\sqrt{-q^2}$.   For a fixed $f$, a small value of $g$ will require
+by applying perturbation theory in the QCD coupling (assuming $\phi$ is
+a quark, for example).
+A mono-X analysis will place a limit on $f$.   
+For a fixed $f$, a small value of $g$ will require
 a small value of $\Lambda$.   The EFT approximation breaks down
-if $\sqrt{-q^2}>\Lambda$.   On the other hand, large $\Lambda$
+if $Q>\Lambda$, where $Q$ is a typical hard scale of the process.
+One reasonable choice is $\Qtr^2=p(\bar\chi\chi)^2$, i.e.
+the momentum flow through
+the s-channel.  
+On the other hand, large $\Lambda$
 implies large $g$, raising the question if perturbation theory
-is even applicable.   
+is even applicable.     
 
 Here we summarise some methods that can be used to ensure the validity of the EFT approximation. These methods are described in detail in Refs.~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}. We then propose a recommendation for the presentation of EFT results for Run-2 LHC benchmarks.
 
@@ -32,8 +47,11 @@ Here we summarise some methods that can be used to ensure the validity of the EF
 \label{sec:TruncationWithQTr}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-For a tree-level interaction between DM and the Standard Model (SM) via some mediator with mass $M$, the EFT approximation corresponds to expanding the propagator 
-in powers of $\Qtr^2/M^2$, truncating at lowest order, and combining the remaining parameters into a single parameter ${M_*}$ (also called $\Lambda$). For an example scenario with a $Z^\prime$-type mediator (leading to some combination of operators D5 to D8 in the EFT limit)
+A standard approach has been to consider a simplified model and work backwards to determine the validity of the EFT approximation.
+For a tree-level interaction between DM and the Standard Model (SM) via some mediator with mass \mMed, the EFT approximation corresponds to
+expanding the propagator for the mediator
+in powers of $\Qtr^2/M^2$, truncating at lowest order, and combining the remaining parameters into a single parameter ${M_*}$ (also called $\Lambda$).
+For an example scenario with a $Z^\prime$-type mediator (leading to some combination of operators D5 to D8 in the EFT limit)
 this corresponds to setting
 %
 \be
@@ -41,8 +59,16 @@ this corresponds to setting
 \ee
 %
 where $\Qtr$ is the momentum carried by the mediator, and $\gx$, $g_q$ are the DM-mediator and quark-mediator couplings respectively. Similar expressions exist for other operators. Clearly the condition that must be satisfied for this approximation to be valid is that $\Qtr^2 < M^2 = \gx g_q {M_*}^2$. 
+In this framework, there are clearly three regions to consider:
+\begin{itemize}
+\item $\Qtr^2 \sim M^2$, in which case the EFT misses a resonant enhancement, and it is conservative to ignore this enhancement;
+\item $\Qtr^2 \ll M^2$, in which case the EFT is valid; and
+\item $\Qtr^2 \gg M^2$, in which case the signal cross section should fall according to a power of $\Qtr^{-1}$ instead of $M^{-1}$.   This is the problematic kinematic region.
+\end{itemize}
 
-We can use this condition to enforce the validity of the EFT approximation by restricting the signal (after the imposition of the event selection of the analysis) to events for which $\Qtr^2 < M^2$. This truncated signal can then be used to derive the new, truncated limit on $M_*$ as a function of $(\mx, \gx g_q)$.
+We can use the condition $\Qtr^2 < M^2 = \gx g_q {M_*}^2$ to restrict the
+kinematics of the signal
+and enforce the validity of the EFT approximation (after the imposition of the event selection of the analysis).  This truncated signal can then be used to derive the new, truncated limit on $M_*$ as a function of $(\mx, \gx g_q)$.
  
 For the example D5-like operator, $\sigma \propto {M_*}^{-4}$, and so there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${M_*}$ if the original limit is based on a simple cut-and-count procedure. Defining $\sigma_{\rm EFT}^{\rm cut}$ as the cross section truncated such that all events pass the condition $\sqrt{\gx g_q} M_*^{\rm rescaled} > \Qtr$, we have
 %
@@ -66,7 +92,10 @@ In \cite{Racco:2015dxa} a procedure to extract model independent and consistent 
 The range of applicability of the EFT is defined by a mass scale $M_\text{cut}$, a parameter which marks the upper limit of the range of energy scales at which the EFT can be used reliably, independently of the particular completion of the model. 
 Regardless of the  details of the full theory, the energy scale probing the validity of the EFT is less than or equal to the centre-of-mass energy $E_\text{cm}$, 
 the total invariant mass of the hard final states of the reaction.
-Therefore, the condition ensuring the validity of the EFT is, by definition of $M_\text{cut}$,
+To be specific, consider the basic monojet process with kinematics
+$p_1 + p_2 \to k + p_{\bar\chi\chi}$.   $k$ is the momentum of the outgoing jet, whereas $p_{\bar\chi\chi}$ is the momentum of the $\bar\chi\chi$ pair and
+$p_{\bar\chi\chi}=\Qtr$.  $E_\text{cm}^2 = (p_1+p_2)^2 > \Qtr^2$.
+The condition ensuring the validity of the EFT is, by definition of $M_\text{cut}$,
 \begin{equation}
 \label{Ecm<Mcut}
 E_\text{cm}<M_\text{cut}\,.
@@ -84,6 +113,9 @@ The resulting plots are shown in \cite{Racco:2015dxa} for a particular effective
 
 The advantage of this procedure is that the obtained bounds can be directly and easily recast in any  completion of the EFT, by computing the parameters $M_*$, $M_\text{cut}$ in the full model as functions of the parameters of the complete theory. On the other hand, the resulting limits will be weaker than those obtained using $\Qtr$ and a specific UV completion.
 
+\section{Comments on Unitarity Considerations}
+Like the title says.
+
 \section{Recommendation for presentation of EFT results} %change this title
 \label{sec:RecommendationEFTResults}
 
@@ -99,7 +131,15 @@ of operators can be recast using simplified models with high mediator masses, th
 the need to explicitly simulate EFT events and provide experimental limits
 for those operators. For the second class of models, a truncation procedure 
 should be applied and the truncated results should be presented alongside 
-the naive EFT results. 
+the naive EFT results.
+
+Three proposals for the treatment of EFT have been stated so far:
+(1) truncate using $\Qtr$, (2) truncate and iterate using $\Qtr$, and
+(3) truncate using $E_\text{cm}$.   Another possibility is to
+present the raw EFT results, but qualify that they might not be
+valid.  Finally, one can quantify the validity of the EFT result
+by presenting the sensitivity to R, the fraction of events
+that satisfy $\hat{s} > \MCut ^2$, for example.
 
 \section{Recommendation for contact interaction theories with simplified models available}
 
@@ -108,7 +148,9 @@ will converge to the EFT. This can be seen in Fig.~\ref{fig:monojet_MstarMmed}, 
 the scale of the interaction of a $Z'$-like simplified model are presented in terms of the mediator mass. 
 The limits at high mediator mass for this model are equivalent to those of the corresponding EFT benchmark. 
 For this reason, experimental collaboration should deliver results for high-mass mediators instead of 
-pure EFT results, and leave further reinterpretation to theorists.  
+pure EFT results, and leave further reinterpretation to theorists.
+\Todo{The extrapolation to other couplings and mediator masses can be
+done using the $\Qtr$ prescription for that model.}
 
 We therefore recommend the addition of one point at very high mediator mass (5 TeV) to the scan, for each of the DM masses
 for the simplified models described in Section~\ref{subsec:MonojetLikeModels}. The truncation procedure in Section~\ref{sec:TruncationWithSHat} can be used to fine-tune the mediator mass to be simulated for this purpose. Studies are ongoing for $s-$channel vector mediators. 
@@ -117,17 +159,29 @@ for the simplified models described in Section~\ref{subsec:MonojetLikeModels}. T
 
 \section{Recommendation for truncation of theories with no simplified models available}
 
-Whenever a UV completion is not available, EFT results can still be a source of useful information as 
-described in Section~\ref{sub:validityEWContact}. However, the results should not be 
-compared to other experiment, and a truncation procedure should be applied to present constraints
-that acknowledge the validity of the benchmark used. The truncation procedure suggested for this purpose
-is described in Section~\ref{sec:TruncationWithSHat}, as it is independent from any UV completion details. 
+Whenever a UV completion is not available, EFT results can still
+be a source of useful information as 
+described in Section~\ref{sub:validityEWContact}. 
+However, we can only naively control the validity of the EFT operator.
+Despite the fact that a propagator was introduced to motivate
+the truncation procedure for s-channel models, the prescription
+is only dependent upon the simplified model to derive the
+energy scaling.   The simple fact remains that the effective
+coupling of the operator -- $g/\Lambda^n$ -- should not allow
+momentum flow $Q>\Lambda$ or $g>4\pi$.  Given our ignorance of
+the actual kinematics, 
+the truncation procedure suggested for this purpose
+is the one described in Section~\ref{sec:TruncationWithSHat},
+as it is independent from any UV completion details. 
 
-The parameter \MCut is related to physical couplings and masses only in a UV complete theory,
-and so it can effectively be treated as free if only the EFT description is available. 
+Because there is no UV completion,
+the parameter \MCut can be treated more freely than
+an explicit function of $g$ and $\Lambda$.
 It makes sense to choose \MCut such that we 
-identify the transition region where the EFT stops being a good description of UV complete 
-theories. This can be done using the ratio $R$, which is defined as the fraction of 
+identify the transition region where the EFT stops being
+a good description of UV complete 
+theories. This can be done using the ratio $R$, which is defined
+as the fraction of 
 events for which $s_{hat} > \MCut ^2$. 
 For large values of \MCut, no events are thrown away in the truncation 
 procedure, and R=1. As \MCut becomes smaller, eventually all events are thrown 

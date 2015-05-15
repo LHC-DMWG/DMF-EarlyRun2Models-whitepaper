@@ -27,7 +27,21 @@
 %The POWHEG and Madgraph implementations were compared and the yields obtained from both were found to be compatible.  
 %\end{itemize}
 
-\begin{figure}[t!]
+
+
+A simple extension of the Standard Model (SM) is an
+additional $U(1)$ gauge symmetry, where a dark matter (DM)
+candidate particle has charges only under this new group.
+Assuming that some SM particles are also charged under
+this group, then a new gauge boson can mediate interactions
+between the SM and DM.   
+
+
+%Lagrangian
+We consider the case of a DM particle that is a Dirac fermion and where the production proceeds via the exchange of a spin-1 mediator in
+the $s$-channel, illustrated in Fig.~\ref{fig:OP}.
+
+\begin{figure}[h!]
 \centering
   \unitlength=0.005\textwidth
   \begin{feynmandiagram}[modelVmonojetParameters]
@@ -36,7 +50,7 @@
     \fmftop{isr}
     \fmfbottom{pisr}
     % \fmf{dashes,tension=0.6,label={$\substack{{\Large V,,A}\\(m_{med},,\Gamma_{min,,med})}$}}{v1,v2}
-    \fmf{dashes,tension=0.6,label={\Large $V,,A(m_{med})$}}{v1,v2}
+    \fmf{wiggly,tension=0.6,label={\Large $V,,A(\mMed)$}}{v1,v2}
     \fmf{fermion}{o2,v2,o1}
     \fmf{fermion}{i2,visr,v1}
     \fmf{plain}{v1,pvisr,i1}
@@ -46,8 +60,8 @@
     \fmflabel{\Large ${g_{DM}}$}{v2}
     \fmflabel{\Large ${\bar{q}}$}{i1}
     \fmflabel{\Large ${q}$}{i2}
-    \fmflabel{\Large ${\bar{\chi}(m_{DM})}$}{o1}
-    \fmflabel{\Large ${\chi(m_{DM})}$}{o2}
+    \fmflabel{\Large ${\bar{\chi}(\mdm)}$}{o1}
+    \fmflabel{\Large ${\chi(\mdm)}$}{o2}
     \fmf{gluon,tension=0}{visr,isr}
     \fmf{phantom,tension=0}{pvisr,pisr}
     \fmflabel{\Large ${g}$}{isr}
@@ -61,17 +75,8 @@ the mediator and dark matter masses, and the mediator couplings to dark matter a
 \setfloatalignment{t}
 \end{figure}
 
-A simple extension of the Standard Model (SM) is an
-additional $U(1)$ gauge symmetry, where a dark matter (DM)
-candidate particle has charges only under this new group.
-Assuming that some SM particles are also charged under
-this group, then a new vector boson can mediate interactions
-between the SM and DM.   
 
-
-%Lagrangian
-We consider the case of a DM particle that is a Dirac fermion and where the production proceeds via the exchange of a spin-1 mediator in
-the $s$-channel.   We consider vector and axial-vector couplings
+We consider vector and axial-vector couplings
 between the spin-1 mediator and SM and DM fields, with
 the corresponding interaction Lagrangians:
 \begin{align}
@@ -79,7 +84,7 @@ the corresponding interaction Lagrangians:
 \mathcal{L}_{\mathrm{vector}} &= \gq \sum_{q=udscbt}  Z'_{\mu} \bar{q}\gamma^{\mu}q + \gDM Z'_{\mu} \bar{\chi}\gamma^{\mu}\chi \\
 \mathcal{L}_{\rm{axial-vector}} &= \gq \sum_{q=udscbt}  Z'_{\mu} \bar{q}\gamma^{\mu}\gamma^5q + \gDM Z'_{\mu} \bar{\chi}\gamma^{\mu}\gamma^5\chi.
 \end{align}
-The universal coupling \gq is assumed for quarks. 
+The coupling \gq is assumed to be universal to all quarks. 
 It is also possible to consider another model in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with the vector couplings only and axial vector couplings only. 
 \Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event.}
 
