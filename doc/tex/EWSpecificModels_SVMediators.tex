@@ -20,6 +20,7 @@ and W or Z bosons decaying hadronically
 allow backgrounds to be rejected more effectively,
 making Z/gamma/W+MET searches
 still worth comparing with searches in the jet+MET final state.
+\Todo{Additional motivations exist for this final state from SUSY searches.}
 %TODO: Linda is writing sentence to make this stronger. 
 
 % The three commonly chosen EFT benchmarks for Dirac dark matter that are
@@ -38,7 +39,7 @@ The interest for searches with W bosons in the final state
 has been elevated by the increased cross section
 for certain choices of couplings for a spin-1 mediator~\cite{Bai:2012xg}.
 Run-1 searches have considered three sample cases for the product of
-up and down quark couplings to the mediator $\xi$:
+up and down quark couplings to the mediator, denoted as $\xi$:
 \begin{itemize}
  \item No couplings between mediator and either up or down quarks~($\xi=0$);
  \item Same coupling between mediator and each of the quark types~ ($\xi=1$);
@@ -59,7 +60,7 @@ can still be considered as a benchmark for searches with a W boson if $\xi=1$.
 We leave the study of further models with cross-section enhancements due
 to different couplings to up and down quarks for studies beyond the early LHC searches
 covered in this document.
-An example of such model is the case of both DM and SM Higgs charged under a new U(1)',
+An example of such model is the case of both DM and SM Higgs charged under a new $U(1)'$,
 with a a small mass mixing between SM Z-boson and the new $Z^\prime$. This leads
 to different effective DM couplings to $u_L$ and $d_L$, proportional to
 their coupling to the Z boson, detailed in Appendix~\ref{app:EWSpecificModels_Appendix}.
@@ -126,16 +127,27 @@ benchmark points are shown in Appendix~\ref{app:EWSpecificModels_Appendix}.
 	\hfill
 	\subfloat[Missing transverse momentum distribution for the leptonic Z+MET final state, 
 	for different mediator mass choices, for a DM mass of 15 GeV\label{fig:DMV_EW_Z_MET_SVMed}]{%
-		\includegraphics[width=0.45\textwidth]{figures/EW/pt_vv_Mx15}
+		\includegraphics[width=0.7\textwidth]{figures/EW/pt_vv_Mx15}
 	}    
 	\hfill
 	\subfloat[Missing transverse momentum distribution for the hadronic W+MET final state.\label{fig:DMV_EW_Whad_MET_SVMed}]{%
-		\includegraphics[width=0.47\textwidth]{figures/EW/monoWhad_Destructive/metPt}
+		\includegraphics[width=0.7\textwidth]{figures/EW/monoWhad_Destructive/metPt}
 	}    
 	\caption{Kinematic distributions relevant for searches with W, Z and photons in the final state, 
 		for the simplified model with a vector mediator exchanged in the $s-$channel.}
 	\label{fig:DMV_EW_kinematics_SVMed}
 \end{figure}
+
+\subsection{Scalar mediator exchanged in the s-channel}
+\label{sub:EW_Scalar}
+
+We recommend to generate this model for W, Z and photon searches 
+in order to reproduce the kinematics of the dimension-5 contact operator
+described in Section~\ref{sub:EW_EFT_Dim5} in a simplified model framework.
+Results can then be recasted at the reinterpretation stage, by rescaling the cross-sections.  
+The scan in \mdm and \mMed should follow the one in Table~\ref{fig:DMV_EW_gamma_acceptance}, 
+although individual analyses may choose to reduce the granularity of the scan
+according to their expected sensitivity. 
 
 \subsection{Colored scalar mediator exchanged in the t-channel}
 
@@ -144,18 +156,14 @@ generally follow those in Section~\ref{subsec:MonojetLikeModels},
 even though fewer diagrams are involved.   
 A representative Feynman diagram can be
 constructed by replacing a gluon in Fig.~\ref{fig:tchannelMonojet}
-with a $\gamma,W,Z$ boson. See Ref.~\cite{Bell:2012rg} for a theoretical overview.
-
+with a $\gamma,W,Z$ boson. See Ref.~\cite{Bell:2012rg} for a theoretical overview
+of this model with specific examples for the Z+MET final state. 
 
 Figure~\ref{fig:TChan_EW_Zhad_MET} shows the MET distribution for the hadronic Z+MET final state, 
 with varying dark matter and mediator mass, before any selection. 
 The acceptance for a series of simplified analysis cuts 
 (MET$>$350 GeV, leading jet $p_T >$ 40 GeV, minimum azimuthal angle between jet and MET > 0.4) 
 applied at the generator level is shown in Figure~\ref{fig:TChan_EW_Zhad_acc}. 
-The parameter scan is still under discussion~\Todo{The parameter scan, 
-	and the conclusions that can be drawn from the plots below, need to be
-	cross-checked with those in the monojet channel.}
-
 
 \begin{figure}[h!]
 	\centering  
@@ -173,8 +181,15 @@ The parameter scan is still under discussion~\Todo{The parameter scan,
 	\label{fig:TChan_EW_Zhad_acc}
 \end{figure}
 
+The parameter scan for the $t-$ channel model is still under discussion~\Todo{The parameter scan, 
+	and the conclusions that can be drawn from the plots below, need to be
+	cross-checked with those in the monojet channel.}
+
 \subsection{Model implementation}
 
 These models are generated at leading
 order with MadGraph 2.2.2, using Pythia8 for the parton shower.
-Parameter cards can be found on the Forum SVN repository \textbf{[TODO~\cite{}]}.
+Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
+\Todo{Add models and instructions for other final states}.
+
+

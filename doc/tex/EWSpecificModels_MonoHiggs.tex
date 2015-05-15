@@ -16,8 +16,6 @@ are recommended for Higgs+MET searches:
 	plus an intermediate heavy pseudoscalar particle $A^0$, in turn decaying into two DM particles (Fig. \ref{fig:feyn_prod_monoH} (b)). 
 \end{itemize}
 
-\Todo{AB: remove the extra Z in the diagram for the MonoHZprimeqq}
-
 \begin{figure}[!h!tpd]
 	\centering
 	\unitlength=0.0046\textwidth
@@ -28,8 +26,8 @@ are recommended for Higgs+MET searches:
 		\fmf{fermion}{i2,v1,i1}
 		\fmflabel{\Large $q$}{i2}
 		\fmflabel{\Large $\bar{q}$}{i1}
-		\fmf{dashes,label={\Large $Z,,Z^\prime$}}{v1,v2}
-		\fmf{dashes,label={\Large $Z,,Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
+		\fmf{dashes,label={\Large $Z^\prime$}}{v1,v2}
+		\fmf{dashes,label={\Large $Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
 		\fmf{dashes}{v2,o3}
 		\fmflabel{\Large $h$}{o3}
 		% \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
@@ -277,19 +275,18 @@ Analyses should perform further studies, beyond those studies performed for the 
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}
-	\hfill
-	\subfloat[Leading $b-$jet transverse momentum]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-	}
-	\hfill
-	\subfloat[Leading $b-$jet pseudorapidity]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-	}
+%	\hfill
+%	\subfloat[Leading $b-$jet transverse momentum]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+%	}
+%	\hfill
+%	\subfloat[Leading $b-$jet pseudorapidity]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+%	}
 	\hfill
 	\subfloat[Angular distance between the two leading $b-$jets]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp100/truth_bb_deltar} %\label{fig:met_cmp_low}
 	}
-	\hfill
 	\caption{Comparison of the kinematic distributions for the two leading $b-$jets (from the Higgs decay) in the vector $Z^\prime$ simplified model, 
 		when fixing the $Z^\prime$ mass to 100 GeV and varying the DM mass. 
 		\label{fig:VectorHbb_100}}
@@ -304,14 +301,14 @@ Analyses should perform further studies, beyond those studies performed for the 
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}
-	\hfill
-	\subfloat[Leading $b-$jet transverse momentum]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-	}
-	\hfill
-	\subfloat[Leading $b-$jet pseudorapidity]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-	}
+%	\hfill
+%	\subfloat[Leading $b-$jet transverse momentum]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+%	}
+%	\hfill
+%	\subfloat[Leading $b-$jet pseudorapidity]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+%	}
 	\hfill
 	\subfloat[\text{Angular separation of the two leading $b$-jets}]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/zpzp1000/truth_bb_deltar} %\label{fig:met_cmp_low}
@@ -394,13 +391,13 @@ the results for this mixing angle according to the relevant cross-section. It ca
 that the kinematics of this model follows that of the equivalent jet+MET model: only small changes are observed
 in the on-shell region, while the relevant distributions diverge when the mediator is off-shell. 
 For this reason, the same grid in \mmed, \mdm as for the scalar mediator
-of the jet+MET search (Table~\ref{tab:mDMmMedScan_SP}) is chosen as a starting point. 
+of the jet+MET search (Table~\ref{tab:mDMmMedScan_SP}) is chosen as a starting point. \Todo{Estimate the sensitivity and possibly prune parameter scan.}
 The Yukawa coupling to DM $y_{DM}$ is set to 1, the 
 new physics coupling between scalar and SM Higgs $b$ = 3. Results for other values can be obtained via a 
 rescaling of the results for these parameters. 
-More detailed studies are required to estimate the reach of the analysis with respect to all points in the grid
-and therefore decide on a smaller set of grid points to be generated; 
-those are left to the individual analyses. \textbf{[TODO: can we get sensitivity to all the points for all signatures?]}
+%More detailed studies are required to estimate the reach of the analysis with respect to all points in the grid
+%and therefore decide on a smaller set of grid points to be generated; 
+%those are left to the individual analyses. 
 
 \begin{figure}[hbpt!]
 	\begin{center}
@@ -445,19 +442,19 @@ in the $H \to \bar b b$ decay channel, for two values of the mediator mass and v
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}
-	\hfill
-	\subfloat[Leading $b-$jet transverse momentum]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-	}
-	\hfill
-	\subfloat[Leading $b-$jet pseudorapidity]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-	}
+%	\hfill
+%	\subfloat[Leading $b-$jet transverse momentum]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+%	}
+%	\hfill
+%	\subfloat[Leading $b-$jet pseudorapidity]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+%	}
 	\hfill
 	\subfloat[Angular distance between the two leading $b-$jets]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar100/truth_bb_deltar} %\label{fig:met_cmp_low}
 	}
-	\hfill
+
 	\caption{Comparison of the kinematic distributions for the two leading jets from the Higgs decay in the scalar simplified model, 
 		when fixing the new scalar mass to 100 GeV and varying the DM mass. 
 		\label{fig:ScalarHbb_100}}
@@ -472,14 +469,14 @@ in the $H \to \bar b b$ decay channel, for two values of the mediator mass and v
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}
-	\hfill
-	\subfloat[Leading $b-$jet transverse momentum]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-	}
-	\hfill
-	\subfloat[Leading $b-$jet pseudorapidity]{
-		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-	}
+%	\hfill
+%	\subfloat[Leading $b-$jet transverse momentum]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+%	}
+%	\hfill
+%	\subfloat[Leading $b-$jet pseudorapidity]{
+%		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+%	}
 	\hfill
 	\subfloat[Angular distance between the two leading $b-$jets]{
 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/scalar1000/truth_bb_deltar} %\label{fig:met_cmp_low}
@@ -551,7 +548,9 @@ to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
 \end{equation}
 where the center of mass momentum for the decay products $|p| =
 \frac{1}{2 M_{Z^\prime}} \lambda^{1/2}(M_{Z^\prime}^2,m_h^2, m_{A^0}^2)$, and
-$\lambda$ is the K\"{a}llen triangle function.\footnote{\begin{align*}\lambda(c_1,c_2,c_3) \equiv\;c_1^2 + c_2^2 + c_3^2\\ &- 2(c_1 c_2 + c_2 c_3 + c_3 c_1)\end{align*}}
+$\lambda$ is the K\"{a}llen triangle function.
+\footnote{\begin{align*}\lambda(c_1,c_2,c_3) \equiv\;c_1^2 + c_2^2 + c_3^2\\ 
+																		&- 2(c_1 c_2 + c_2 c_3 + c_3 c_1)\end{align*}}
    
 %  Diagonalizing the gauge
 % boson mass matrix, the tree-level masses of the $Z$ and $Z^\prime$ bosons are given by
@@ -611,8 +610,8 @@ we recommend to fix $\tan{\beta}$ to unity in the signal generation.
 Similarly, variations of $g_z$ do not lead to any kinematic changes. 
 The value of $g_z$ for a given $M_{Z^\prime}$ and $\tan \beta$ can be set according to the maximum value allowed by electroweak global 
 fits and dijet constraints, as described in~\cite{Berlin:2014cfa}. Since this parameter does not influence the kinematics, 
-we leave it up to individual analyses on whether they generate benchmark points only according to these external constraints
-\textbf{[TODO: add link to section as in summary. This is the same sentence we will put in for the mono-b model]}.   
+we leave it up to individual analyses on whether they generate benchmark points only according to these external constraints.
+%\textbf{[TODO: add link to section as in summary. This is the same sentence we will put in for the mono-b model]}.   
 %For $Z^\prime$ masses below $\sim 1.3$ TeV and larger $\tan \beta$, the $\rho_0$ constraint on $g_z$ is stronger than 
 %dijet limits, while for $\tan \beta \lesssim 0.6$,
 %the dijet constraints dominate even at low $Z^\prime$ masses. 
@@ -724,5 +723,13 @@ namely values of $M_{Z^\prime}=600, 800, 1000, 1200, 1400$~GeV.  This signal pro
   	\caption{Kinematic distributions of $Z^\prime \to A^0h$ exclusive production, $Z^\prime \to Zh$ exclusive production and $Z^\prime$ inclusive production for $M_{Z^\prime}=1000$~GeV and $M_{A^0}=300$~GeV}
   	\label{fig:DMH_zpincl}
 \end{figure}
+
+\subsection{Model implementation}
+
+These models are generated at leading
+order with MadGraph 2.2.2, using Pythia8 for the parton shower. No matching is performed. 
+Parameter cards can be found on the Forum SVN 
+repository~\cite{ForumSVN_EWMonoHiggs_2HDM, ForumSVN_EWMonoHiggs}.
+
 
   

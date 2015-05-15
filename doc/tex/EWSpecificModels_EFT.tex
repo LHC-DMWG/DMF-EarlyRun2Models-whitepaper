@@ -23,7 +23,7 @@ replacement.
 \subsection{Dimension 5 operators}
 \label{sub:EW_EFT_Dim5}
 
-The lowest dimension benchmark operators we may consider are effective dimension 5,
+The lowest dimension benchmark operators we consider are effective dimension 5,
 such as the one depicted in Figure~\ref{fig:modelMonoHEFT}.  
 
 \begin{figure}[!htb]
@@ -58,8 +58,10 @@ from this category have a Lagrangian that includes terms such as:
 
 where $m_Z$ and $m_W$ are the masses of the $Z$ and $W$ boson, $W^{\mu}$ and $Z^{\mu}$
 are the fields of the gauge bosons, $\chi$ denote the Dark Matter fields
-and $\Lambda_5$ is the effective field theory scale~Todo{Nomenclature differs: $\Lambda_5$ vs $\lambda$}. Note that these operators are of true dimension 7, 
-but reduce to effective dimension 5 once Higgs vevs, contained in the W and Z mass terms, are inserted.  
+and $\Lambda_5$ is the effective field theory scale~\Todo{The nomenclature in different models differs from literature: 
+	$\Lambda_5$ vs $\lambda$}. Note that these operators are of true dimension 7, 
+but reduce to effective dimension 5 once the Higgs vacuum expectation values, 
+contained in the W and Z mass terms, are inserted.  
 As such, one expects  these that operators would naturally arise in UV complete models where Dark Matter 
 interacts via a Higgs portal where heavy mediators would couple to the Higgs or other fields in an extended Higgs sector. 
 In such models the full theory may be expected to contain additional operators with Higgs-Dark Matter couplings. 
@@ -72,8 +74,8 @@ and Higgs boson.
 
 As shown in Fig.~\ref{fig:EW_EFT5_Zlep_MET}
 kinematics of this model can be approximated by that of a simplified model including 
-a high-mass scalar mediator exchanged in the s-channel. For this reason, 
-the list of benchmark models with direct boson-DM couplings for photon, Z and W 
+a high-mass scalar mediator exchanged in the s-channel described in Section~\ref{sub:EW_Scalar}. 
+For this reason, the list of benchmark models with direct boson-DM couplings for photon, Z and W 
 only includes dimension 7 operators: the scalar model with initial state radiation of an EW boson
 is already recommended and its results can be rescaled. The Higgs+MET analysis,
 however, will not consider the scalar simplified model as benchmark, due to the very low sensitivity 
@@ -98,6 +100,9 @@ The initial value of the new physics scale $\lambda$ chosen
 for the sample generation is 3 TeV; this does not affect the signal kinematics, 
 and the cross-section of the samples can be rescaled according to the 
 $\lambda^3$ dependence when deriving the constraints on this scale. 
+However, more care should be given when rescaling Higgs+MET operators
+of higher dimensions, as different diagrams have a different $\lambda$  dependence. 
+\Todo{Include study of rescaling for dimension-8 operators by N. Whallon in dimension-8 section.}.
 %From Andy
 %– Lambda=3 TeV. Essentially this is an arbitrary choice for most EFTs, 
 %however it does affect the mono-H analysis as some of their models 
@@ -127,15 +132,16 @@ into two $b-$quarks is shown in Fig.~\ref{eq:Lc1c2}, for points similar to those
  	\subfloat[Leading $b-$jet pseudorapidity]{
  		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_leading_b_eta} %\label{fig:met_cmp_low}
  	}
- 	\hfill
- 	\subfloat[Leading $b-$jet transverse momentum]{
- 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_pt} %\label{fig:met_cmp_high}
- 	}
- 	\hfill
- 	\subfloat[Leading $b-$jet pseudorapidity]{
- 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_eta} %\label{fig:met_cmp_low}
- 	}
- 	\hfill
+% 	\hfill
+% 	\subfloat[Leading $b-$jet transverse momentum]{
+% 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_pt} %\label{fig:met_cmp_high}
+% 	}
+% 	\hfill
+% 	\subfloat[Leading $b-$jet pseudorapidity]{
+% 		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_eta} %\label{fig:met_cmp_low}
+% 	}
+% 	\hfill
+%TODO: put in appendix
  	\subfloat[Angular distance between the two leading $b-$jets]{
  		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_bb_deltar} %\label{fig:met_cmp_low}
  	}
@@ -226,10 +232,11 @@ mass points considered.
 %    }
 %    \hfill
   \subfloat[Missing transverse momentum distribution.\label{fig:EFTD7_EW_Z_MET}]{%
-  	\includegraphics[width=0.45\textwidth]{figures/EW/monoZhad_SP/accS}
+  	\includegraphics[width=0.7\textwidth]{figures/EW/monoZhad_SP/metPt}
   }
+  \hfill
   \subfloat[Acceptance.\label{fig:EFTD7_EW_Z_acc}]{%
-  	\includegraphics[width=0.45\textwidth]{figures/EW/monoZhad_SP/metPt}
+  	\includegraphics[width=0.7\textwidth]{figures/EW/monoZhad_SP/accS}
   }
     \caption{MET distribution and acceptance for the dimension-7 model with a hadronically decaying Z in the final state,
     for the scalar and pseudoscalar operators representing direct interactions between DM and bosons.}
@@ -261,11 +268,11 @@ to the dimension 8 operator.
   
    \begin{figure}[hbpt!]
    	\centering
-   	\subfloat[Leading $b-$jet transverse momentum]{
+   	\subfloat[Dimension 5 operator]{
    		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xxhhg5/truth_leading_b_pt} %\label{fig:met_cmp_high}
    	}
    	\hfill
-   	\subfloat[Leading $b-$jet transverse momentum]{
+   	\subfloat[Dimension 7 operator]{
    		\includegraphics[width=0.47\linewidth]{figures/EW/monoH/xgxFhDh/truth_leading_b_pt} %\label{fig:met_cmp_high}
    	}
    	\caption{Comparison of the transverse momentum for the leading $b-$ jet from the Higgs decay for a dimension 5 and dimension 7 operator
@@ -327,11 +334,10 @@ remain useful tools for comparison of the sensitivity of different search channe
 and for reinterpretation of other models under the correct assumptions. 
 To date, there are no UV-complete models available for most of those operators:
 the dimension-7 operators are particularly challenging since their completion involves loops.
-However, this may be the focus of future theoretical exploration: 
-an example of a complete model 
+However, this may be the focus of future theoretical exploration, as discussed in Ref.~\cite{Crivellin:2015wva}.
+An example of a complete model 
 for scalar DM corresponding to the dimension-5 operator 
-is provided in the Appendix~\ref{app:EWSpecificModels_Appendix}. 
-\Todo{Add references from Uli's paper, Rayleigh DM}.
+is provided in the Appendix~\ref{app:EWSpecificModels_Appendix}.
 Providing results for the pure EFT limit of these models will prove useful
 to cross-check the implementation of future. 
 
@@ -339,19 +345,14 @@ Given these considerations, the recommendations on the presentation of the resul
 for these models are: 
 
 \begin{itemize}
-\item Assess the percentage of events that pass the EFT validity condition, and present results using a truncation of the invalid events using the procedure in Section~\ref{sec:EFTValidity} alongside pure EFT results;
+\item Assess the percentage of events that pass the EFT validity condition, and present results using a truncation 
+of the invalid events using the procedure in Section~\ref{sec:EFTValidity} alongside pure EFT results;
 \item Deliver fiducial limits on the cross section of any new physics events, without any model assumption, according to the guidelines in Appendix~\ref{app:Presentation_Of_Experimental_Results}.  
 \end{itemize}
 
 \subsection{Model implementation}
 
 These models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower.
-Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWEFTD7} for dimension 5 operators
-and ~\cite{ForumSVN_EWEFTD7} for dimension 7 and 8.
-
-When generating the Higgs+MET processes using the dimension 8 operator, it is necessary to set $QED=3$ in the Madgraph command line:
-
-\begin{verbatim}
-generatepp>hxx QED=3,h>bb
-\end{verbatim}
+order with MadGraph 2.2.2, using Pythia8 for the parton shower. No matching is performed. 
+Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
+and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
