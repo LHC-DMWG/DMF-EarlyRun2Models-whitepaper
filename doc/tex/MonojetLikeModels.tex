@@ -8,26 +8,6 @@
 \section{Vector and axial vector mediator, s-channel exchange}
 \label{sec:monojet_V}
 
-%\begin{itemize}
-%\item Matrix Element implementations (with references)
-%\begin{itemize}
-% \item Production mechanism
-% \item Lagrangian
-% \item Definition of minimal width
-%\end{itemize}
-%\item Couplings
-%\item Parameter choices (for scan)
-%Vary mediator mass and DM mass 
-%\item Generator implementation
-%There are several matrix element implementations of the s-channel vector mediated DM production. This is available in POWHEG, MADGRAPH and also MCFM.
-%The implementation in POWHEG generates DM pair production with 1 parton at Next-to-Leading-Order, whilst Madgraph and MCFM are at leading order. As shown in POWHEG paper{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to leading-order (LO) and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalisation and factorisation scale and hence the theoretical uncertainty on the signal prediction. 
-%Since NLO calculations are available for the process in POWHEG, we recommend to proceed with POWHEG as the generator of choice. 
-%In addition to this, studies conducted within the DM forum have shown that POWHEG is more efficient for the generation of events all the way out to the tails of the kinematic distributions (https://indico.cern.ch/event/374678/session/0/material/3/1.pdf). 
-%The input configuration in POWHEG allows you to set parameters to not generate events below a given $k{T}$ cut ('bornktmin') and an additional parameter that ensures sufficient statistics at high transverse momentum ('bornsuppfact). With these flags set to appropriate variables, it is then possible to use a single POWHEG sample to generate the Monte Carlo for all signal regions, whereas with Madgraph more individual samples to be stitched together to achieve the required statistics out to the tails of the kinematic distributions. 
-%The POWHEG and Madgraph implementations were compared and the yields obtained from both were found to be compatible.  
-%\end{itemize}
-
-
 
 A simple extension of the Standard Model (SM) is an
 additional $U(1)$ gauge symmetry, where a dark matter (DM)
@@ -85,7 +65,8 @@ the corresponding interaction Lagrangians:
 \mathcal{L}_{\rm{axial-vector}} &= \gq \sum_{q=udscbt}  Z'_{\mu} \bar{q}\gamma^{\mu}\gamma^5q + \gDM Z'_{\mu} \bar{\chi}\gamma^{\mu}\gamma^5\chi.
 \end{align}
 The coupling \gq is assumed to be universal to all quarks. 
-It is also possible to consider another model in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with the vector couplings only and axial vector couplings only. 
+It is also possible to consider another model in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with
+pure vector couplings or pure axial vector couplings.
 \Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event.}
 
 
@@ -145,7 +126,7 @@ Differences in kinematic distributions are expected only close to the transition
 \label{fig:monojet_scan_V_g}
 \end{figure}
 
-The only situation requiring a more careful treatment
+One situation requiring a careful consideration
 is the case of 
 extremely heavy and narrow mediators, which can arise for
 small coupling strengths.
@@ -265,7 +246,7 @@ The generator level cross section times the acceptance at $\MET>500$\,GeV for th
 
 Based on these arguments, the following $\mMed$ grid points are chosen, roughly equidistant in the logarithmic scale: 10\,GeV, 20\,GeV, 50\,GeV,  100\,GeV, 200\,GeV, 300\,GeV, 500\,GeV, 1000\,GeV and 2000\,GeV. Given the fact that significant changes in cross section happen around the $\mMed=2\mdm$ threshold, the $\mdm$ grid points are taken at approximately $\mMed/2$, namely: 10\,GeV, 50\,GeV, 150\,GeV, 500\,GeV and 1000\,GeV. Points on the on-shell diagonal are always chosen to be 5 GeV away from the threshold, 
 to avoid numerical instabilities in the event generation. 
-The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and rely on interpolation. The optimised grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 29 mass points each. One point at very high mediator mass (5 TeV) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
+The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and rely on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 29 mass points each. One point at very high mediator mass (5 TeV) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
 
 % \begin{figure}
 % \centering
@@ -390,7 +371,7 @@ f_\phi (\tau) = \tau \left [ 1+ (1-\tau) \arctan^2 \left ( \frac{1}{\sqrt{\tau-1
 f_a (\tau) =  \tau \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right) \, 
 \eea
 for $\tau < 1$ and 
-\bea \label{eq:fphifa}
+\bea \label{eq:fphifb}
 f_\phi (\tau) = \tau \left [ 1+ (1-\tau)\left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) \right ]  \,\,, 
 f_a (\tau) =  \tau \left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) 
 \eea
@@ -461,7 +442,7 @@ For the mediator mass above twice the top quark mass $m_t$, the minimal width re
 
 Similarly as in the case of the vector and axial-vector couplings
 of spin-1 mediators, scans in the parameter space are performed also for the scalar and pseudo-scalar couplings of the spin-0 mediators
-in order to decide on the optimised parameter grid for the presentation of Run-2 results. Figures\,\ref{fig:monojet_scan_S_g}-
+in order to decide on the optimized parameter grid for the presentation of Run-2 results. Figures\,\ref{fig:monojet_scan_S_g}-
 %, fig:monojet_scan_S_mDM1000,fig:monojet_scan_S_mDM100, fig:monojet_scan_S_mMed10, 
 \ref{fig:monojet_scan_S_mMed1000} show the scans over the couplings, Dark Matter mass and mediator mass and the same conclusions apply as in Section\,\ref{sec:monojet_V}.
 
@@ -555,7 +536,10 @@ The proposal for the scan in the $\gq$--$\gDM$ plane is described in the followi
 \section{Cross section scaling}
 \label{sec:monojet_scaling}
 
-The aim of the parameter grid optimization is to find out whether certain parts of the parameter space can be omitted and one can rely on the neighboring grid points in order to populate the missing parts. There are two ways of doing this:
+The aim of the parameter grid optimization is to
+reduce the parameter space for simulation
+using neighboring grid points to populate the missing parts.
+Two ways of doing this are:
 \begin{itemize}
 \item Interpolation is used in-between the grid points that are close enough such that finer granularity is not needed for the presentation purposes, or between the points where smooth or no changes of the results are expected. The latter argument is exactly the one that motivates the reduction of the grid points in the $\mMed$--$\mdm$ plane.\\
 \item Recalculation of the results can be used when the dependencies with respect to the neighboring grid points are known.\\
@@ -569,7 +553,7 @@ if a parameterization of the cross section dependence from one grid point to ano
 Let us now elaborate on a cross section scaling procedure.~\Todo{This procedure needs a clarification: this can work only for fixed masses}
 %TODO say something about the fact that this can work only for fixed masses
 The propagator on the s-channel exchange is written in a Breit-Wigner form as $\frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the invariant mass of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
-The size of the momenum transfer with respect to the mediator mass allows to classify the production in the following way:
+The size of the momentum transfer with respect to the mediator mass allows to classify the production in the following way:
 \begin{itemize}
 \item off-shell production when $q^2 \gg \mMed$ leading to suppressed cross sections,
 \item on-shell production when $q^2 \sim \mMed$ leading to enhanced cross sections,
@@ -590,7 +574,7 @@ which further implies the cross section scaling
 \sigma \propto \frac{\gq^2\gDM^2}{\Gamma}.
 \label{eq:monojet_scaling}
 \end{equation}
-The narrow with approximation is important here as it ensures an integration over parton distribution functions (PDFs) can be neglected. In other words, it is assumed the integrant in Eq.\,\ref{eq:monojet_int} is non-zero only for a small region of $s$, such that the PDFs can be taken to be constant in this range.
+The narrow with approximation is important here as it ensures an integration over parton distribution functions (PDFs) can be neglected. In other words, it is assumed the integrand in Eq.\,\ref{eq:monojet_int} is non-zero only for a small region of $s$, such that the PDFs can be taken to be constant in this range.
 Since $\Gamma \sim \gq^2+\gDM^2$, one can simplify this rule in the extreme cases as follows
 \begin{eqnarray}
 \sigma &\propto& \frac{\gq^2\gDM^2}{\gq^2+\gDM^2} \xrightarrow{\gq \ll \gDM} \gq^2 \label{eq:monojet_gSM} \\

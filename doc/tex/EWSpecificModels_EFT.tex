@@ -18,6 +18,7 @@ the model independent approach of the EFTs is still relevant.
 Furthermore, not all EFT operators have a simplified model
 replacement.
 
+\newthought{Implementation discussed in the Appendix}
 
 %%%%%%%%%%%Dimension 5 operators
 \subsection{Dimension 5 operators}
@@ -53,7 +54,7 @@ from this category have a Lagrangian that includes terms such as:
 
 \begin{eqnarray}
 \frac{m_W^2}{\Lambda_5^3} ~\bar{\chi} \chi ~W^{+ \mu} W^{-}_\mu
-+ \frac{m_Z^2}{2 \Lambda_5^3} ~ \bar{\chi} \chi ~ Z^\mu Z_\mu ~.
++ \frac{m_Z^2}{2 \Lambda_5^3} ~ \bar{\chi} \chi ~ Z^\mu Z_\mu ~,
 \end{eqnarray}
 
 where $m_Z$ and $m_W$ are the masses of the $Z$ and $W$ boson, $W^{\mu}$ and $Z^{\mu}$
@@ -93,7 +94,7 @@ in early LHC analyses, and will instead use this dimension 5 operator.
 
 The two parameters of this model are the scale of new physics $\lambda$ 
 and the DM particle mass. SM-DM coupling and new physics scale are related by 
-$\gdm = \frac{(246 GeV)}{\lambda}$\Todo{Clarify the reason why this happens 
+$\gdm = {(246~\mathrm{GeV})}/{\lambda}$\Todo{Clarify the reason why this happens 
 	in Madgraph through explicit Lagrangian terms?}.
 
 The initial value of the new physics scale $\lambda$ chosen 
@@ -102,7 +103,7 @@ and the cross-section of the samples can be rescaled according to the
 $\lambda^3$ dependence when deriving the constraints on this scale. 
 However, more care should be given when rescaling Higgs+MET operators
 of higher dimensions, as different diagrams have a different $\lambda$  dependence. 
-\Todo{Include study of rescaling for dimension-8 operators by N. Whallon in dimension-8 section.}.
+\Todo{Include study of rescaling for dimension-8 operators by N. Whallon in dimension-8 section.}
 %From Andy
 %– Lambda=3 TeV. Essentially this is an arbitrary choice for most EFTs, 
 %however it does affect the mono-H analysis as some of their models 
@@ -173,7 +174,7 @@ where $\tilde B_{\mu \nu} = 1/2 \hspace{0.5mm} \epsilon_{\mu \nu  \lambda \rho} 
 
 The effective interactions introduced in (\ref{eq:Lc1c2}) and  (\ref{eq:Lc3c4}) appear  in models of Rayleigh DM~\cite{Weiner:2012cb}. Ultraviolet completions where the operators are generated through loops of states charged under $U(1)_Y$ and/or $SU(2)_L$  have been proposed in \cite{Weiner:2012gm} and their LHC signatures have been studied in \cite{Liu:2013gba}. If these new charged particles  are  light, the high-$p_T$ gauge bosons that participate in  the MET processes considered here are able to resolve the substructure of the loops. This generically suppresses the cross sections compared to the EFT predictions~\cite{Haisch:2012kf}, and thus will weaken the bounds on the interaction strengths of  DM and the EW gauge bosons  to some extent.  Furthermore, the light charged mediators may be produced  on-shell in $pp$ collisions, rendering direct LHC searches potentially more restrictive than MET searches. Making the above statements precise would require further studies beyond the timescale of this forum.
 
-Since for $\Lambda_S = \Lambda_P$ the effective interactions (\ref{eq:Lc1c2}) and (\ref{eq:Lc3c4}) predict essentially the same value of the mono-photon, mono-$Z$ and mono-$W$ cross section \cite{Carpenter:2012rg,Crivellin:2015wva}, we consider below only the former couplings. We emphasise however that measurements of the jet-jet azimuthal angle difference in  MET$+ 2 j$ events may be used to disentangle whether DM couples more strongly to the combination $B_{\mu \nu} B^{\mu \nu}$ ($W_{\mu \nu}^i W^{i, \mu \nu }$) or the product $B_{\mu \nu} \tilde B^{\mu \nu}$ ($W_{\mu \nu}^i \tilde W^{i, \mu \nu }$) of field strength tensors \cite{Cotta:2012nj,Crivellin:2015wva}.
+Since for $\Lambda_S = \Lambda_P$ the effective interactions (\ref{eq:Lc1c2}) and (\ref{eq:Lc3c4}) predict essentially the same value of the mono-photon, mono-$Z$ and mono-$W$ cross section \cite{Carpenter:2012rg,Crivellin:2015wva}, we consider below only the former couplings. We emphasize however that measurements of the jet-jet azimuthal angle difference in  MET$+ 2 j$ events may be used to disentangle whether DM couples more strongly to the combination $B_{\mu \nu} B^{\mu \nu}$ ($W_{\mu \nu}^i W^{i, \mu \nu }$) or the product $B_{\mu \nu} \tilde B^{\mu \nu}$ ($W_{\mu \nu}^i \tilde W^{i, \mu \nu }$) of field strength tensors \cite{Cotta:2012nj,Crivellin:2015wva}.
 
 After EW symmetry breaking the interactions (\ref{eq:Lc1c2}) induce direct couplings between pairs of DM particles and  gauge bosons.  The corresponding Feynman rule reads
 \begin{equation}  \label{eq:feynman}
@@ -350,9 +351,4 @@ of the invalid events using the procedure in Section~\ref{sec:EFTValidity} along
 \item Deliver fiducial limits on the cross section of any new physics events, without any model assumption, according to the guidelines in Appendix~\ref{app:Presentation_Of_Experimental_Results}.  
 \end{itemize}
 
-\subsection{Model implementation}
-
-These models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower. No matching is performed. 
-Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
-and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
+\newthought{Model implementation discussed in the appendix}

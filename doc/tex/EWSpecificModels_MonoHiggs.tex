@@ -26,8 +26,8 @@ are recommended for Higgs+MET searches:
 		\fmf{fermion}{i2,v1,i1}
 		\fmflabel{\Large $q$}{i2}
 		\fmflabel{\Large $\bar{q}$}{i1}
-		\fmf{dashes,label={\Large $Z^\prime$}}{v1,v2}
-		\fmf{dashes,label={\Large $Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
+		\fmf{photon,label={\Large $Z^\prime$}}{v1,v2}
+		\fmf{photon,label={\Large $Z^\prime$},label.angle=-100,label.distance=5}{v2,v3}
 		\fmf{dashes}{v2,o3}
 		\fmflabel{\Large $h$}{o3}
 		% \fmfv{label={\Large $b,,\theta$},label.a=120,label.distance=5w}{v2}
@@ -549,8 +549,8 @@ to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
 where the center of mass momentum for the decay products $|p| =
 \frac{1}{2 M_{Z^\prime}} \lambda^{1/2}(M_{Z^\prime}^2,m_h^2, m_{A^0}^2)$, and
 $\lambda$ is the K\"{a}llen triangle function.
-\footnote{\begin{align*}\lambda(c_1,c_2,c_3) \equiv\;c_1^2 + c_2^2 + c_3^2\\ 
-																		&- 2(c_1 c_2 + c_2 c_3 + c_3 c_1)\end{align*}}
+\footnote{\begin{align*}\lambda(c_1,c_2,c_3) \equiv&\;c_1^2 + c_2^2 + c_3^2\\ 
+						&- 2(c_1 c_2 + c_2 c_3 + c_3 c_1)\end{align*}}
    
 %  Diagonalizing the gauge
 % boson mass matrix, the tree-level masses of the $Z$ and $Z^\prime$ bosons are given by
@@ -724,12 +724,7 @@ namely values of $M_{Z^\prime}=600, 800, 1000, 1200, 1400$~GeV.  This signal pro
   	\label{fig:DMH_zpincl}
 \end{figure}
 
-\subsection{Model implementation}
-
-These models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower. No matching is performed. 
-Parameter cards can be found on the Forum SVN 
-repository~\cite{ForumSVN_EWMonoHiggs_2HDM, ForumSVN_EWMonoHiggs}.
+\newthought{Implementation discussed in the Appendix}
 
 
   

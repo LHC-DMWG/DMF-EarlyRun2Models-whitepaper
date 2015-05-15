@@ -10,7 +10,7 @@ a primary role in the phenomenology.   The model predicts not only
 the monojet process described earlier, but also production of dark matter
 in association with top pairs, as illustrated in Fig.~\ref{fig:TTbarPhi}.
 
-\begin{figure}[hbpt!]
+\begin{figure}[h!]
 \centering
   \unitlength=0.005\textwidth
   \begin{feynmandiagram}[modelTTbarMET]
@@ -88,7 +88,8 @@ association with $t\bar t$.}
 
 \subsection{Parameter scan}
 
-As discussed in Sec.~\ref{sec:monojet_scalar}, the MFV and universal coupling assumptions for spin-$0$ mediators leads to quark mass dependent Yukawa couplings and therefore dominant couplings to top quarks.Therefore DM+$t\bar{t}$ searches are strongly physically motivated and it is important to establish benchmarks for collider searches following the assumptions described in Sec.~\ref{sec:monojet_scalar}, in particular a Dirac fermion DM particle, universal couplings and minimum width, $\Gamma_{\phi,a}$.
+As discussed in Sec.~\ref{subsec:MonojetLikeModels}, the MFV and universal coupling assumptions for spin-$0$ mediators leads to quark mass dependent Yukawa couplings and therefore dominant couplings to top quarks.Therefore DM+$t\bar{t}$ searches are strongly physically motivated and it is important to establish benchmarks for collider searches following the assumptions described in
+Sec.~\ref{subsec:MonojetLikeModels}, in particular a Dirac fermion DM particle, universal couplings and minimum width, $\Gamma_{\phi,a}$.
 
 %The benchmark chosen for these searches follows the assumptions mentioned in the previous Section: we consider 
 %a Dirac fermion DM particle, universal couplings to quarks, and minimum mediator width. 
@@ -106,7 +107,7 @@ benchmark points covering on-shell and off-shell production with sufficient gran
 \begin{figure}[!ht]
   \begin{center}
     \includegraphics[width=0.7\textwidth]{figures/ttbar/MEt_chi1.pdf}
-    \caption{\label{fig:scanPhi} Example of the dependence of the kinematics on the scalar mediator mass. The Dark Matter mass is fixed to be $1 {\rm GeV}$.}
+    \caption{\label{fig:scanPhi} Example of the dependence of the kinematics on the scalar mediator mass. The Dark Matter mass is fixed to be \mdm=$1 {\rm GeV}$.}
 \end{center}
 \end{figure}
 
@@ -114,7 +115,7 @@ benchmark points covering on-shell and off-shell production with sufficient gran
 \begin{figure}[!ht]
   \begin{center}
     \includegraphics[width=0.7\textwidth]{figures/ttbar/MEt_chi1_pseudo.pdf}
-    \caption{\label{fig:scanPhiPseudo} Example of the dependence of the kinematics on the pseudoscalar mediator mass. The Dark Matter mass is fixed to be $1 {\rm GeV}$.
+    \caption{\label{fig:scanPhiPseudo} Example of the dependence of the kinematics on the pseudoscalar mediator mass. The Dark Matter mass is fixed to be \mdm=$1 {\rm GeV}$.
     }
 \end{center}
 \end{figure}
@@ -122,7 +123,7 @@ benchmark points covering on-shell and off-shell production with sufficient gran
 \begin{figure}[!ht]
   \begin{center}
     \includegraphics[width=0.7\textwidth]{figures/ttbar/MEt_diagonal_scan.pdf}
-    \caption{\label{fig:scanPhidiag} Example of the dependence of the kinematic for points of the grid proposed in Tab.~\ref{sec:monojet_scalar} close to the $m_{\phi,a} \sim 2m_\chi$ limit.3
+    \caption{\label{fig:scanPhidiag} Example of the dependence of the kinematic for points of the grid proposed in Tab.~\ref{sec:monojet_scalar} close to the $m_{\phi,a} \sim 2m_\chi$ limit.
     }
 \end{center}
 \end{figure}
@@ -149,7 +150,21 @@ Another case where the width can impact the kinematics is when $m_{\phi,a}$ is s
 \end{center}
 \end{figure}
 
-Given that the kinematics are similar for all couplings $\sim O(1)$, we recommend to generate only samples with $\gdm = \gq = 1$. It follows from this that these benchmark points should be a good approximation for non-unity couplings and for $\gdm \neq \gq$, provided that the sample is rescaled to the appropriate cross section times branching ratio. While the simple scaling function $\sigma'* BR' = [\sigma * BR] * (\gq'/\gq)^2 * (\gdm'/\gdm)^2 * (\Gamma/\Gamma')$ is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), we also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to close to the perturbative limit.
+Given that the kinematics are similar for all couplings $\sim O(1)$, we recommend to generate only samples with $\gdm = \gq = 1$.
+It follows from this that these benchmark points should be a good
+approximation for non-unity couplings and for $\gdm \neq \gq$, provided
+that the sample is rescaled to the appropriate cross section times
+branching ratio.
+
+While the simple scaling function
+
+\begin{equation}
+   \sigma'\times BR' = [\sigma \times BR]
+   \times {\gq' \over \gq}^2
+   \times {\gdm'\over \gdm}^2
+   \times {\Gamma\over\Gamma'}
+\end{equation}
+is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), we also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to close to the perturbative limit.
 
 \begin{figure}[!ht]
 \begin{center}
