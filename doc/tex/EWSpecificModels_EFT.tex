@@ -271,7 +271,8 @@ to the dimension 8 operator.
    	\caption{Comparison of the transverse momentum for the leading $b-$ jet from the Higgs decay for a dimension 5 and dimension 7 operator
    		with direct boson-DM couplings.}
    	\end{figure}
-   	
+  
+
 %\subsection{xgxFhDh Truth Kinematics}
 %
 %\begin{figure}[!htbp]
@@ -347,4 +348,10 @@ for these models are:
 These models are generated at leading
 order with MadGraph 2.2.2, using Pythia8 for the parton shower.
 Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWEFTD7} for dimension 5 operators
-and ~\cite{ForumSVN_EWEFTD7} for dimension 7.
+and ~\cite{ForumSVN_EWEFTD7} for dimension 7 and 8.
+
+When generating the Higgs+MET processes using the dimension 8 operator, it is necessary to set $QED=3$ in the Madgraph command line:
+
+\begin{verbatim}
+generatepp>hxx QED=3,h>bb
+\end{verbatim}

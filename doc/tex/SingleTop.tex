@@ -10,15 +10,15 @@ transverse momentum (monotop), some of them including dark matter candidates.
 A simplified model encompassing the processes leading to this phenomenology is described in Refs.~\cite{AndreaFuksMaltoni,Agram:2013wda,Boucheneb:2014wza},
 and is adopted as one of the benchmarks for Run 2 LHC searches. 
 
-A dark matter candidate \DMParticle{} and a new particle $M$ (vector or scalar) 
+A dark matter candidate \DMParticle{} and a new particle (vector or scalar) 
 are added to the SM, in a theory that respects the $\SUtwoUone$ symmetry 
 and produces a single top quark in association with either the DM particle or a new particle
 decaying invisibly. 
 
 Within this model, two distinct processes can lead to monotop production:
 \begin{itemize}
-	\item resonant production, as shown in the diagram of Fig.~\ref{fig:feyn_prod} (a), where a color triplet scalar (S in the figure, $\varphi$ in the following) or vector ($X$) field are exchanged in the s-channel, and decay into a spin 1/2 invisible new fermion (called $f_{met}$ in the figure) and a top quark;
-	\item non-resonant production, as shown in the diagrams of Fig.~~\ref{fig:feyn_prod} (b) and (c), where a flavor-changing interaction produces a top quark in association with a new colored scalar ($\Phi$) or vector ($V$). The new colored particles, called $v_{met}$ in the figure, decay invisibly, e.g. to a pair of DM particles. $v_{met}$ can also decay into a top quark and an up quark, leading to a same-sign top quark final state; a detailed study of the complementarity of this signature is beyond the scope of this Forum report.  
+	\item resonant production, as shown in the diagram of Fig.~\ref{fig:feyn_prod} (a), where a color triplet scalar $\varphi$ or vector field are exchanged in the s-channel, and decay into a spin 1/2 invisible new fermion $\chi$ and a top quark;
+	\item non-resonant production, as shown in the diagrams of Fig.~~\ref{fig:feyn_prod} (b) and (c), where a flavor-changing interaction produces a top quark in association with a new colored scalar or vector $V$. The new particles decay invisibly, e.g. to a pair of DM particles. $V$ can also decay into a top quark and an up quark, leading to a same-sign top quark final state; a detailed study of the complementarity of this signature is beyond the scope of this Forum report.  
 \end{itemize}
 
 \begin{figure}[!h!tpd]
@@ -28,7 +28,7 @@ Within this model, two distinct processes can lead to monotop production:
   \begin{feynmandiagram}[modelS1]
     \fmfleft{i1,i2}
     \fmfright{o1,o2}
-    \fmf{dashes,label={\Large $S$}}{v1,v2}
+    \fmf{dashes,label={\Large $\varphi$}}{v1,v2}
     \fmf{fermion}{i2,v1,i1}
     \fmf{fermion}{v2,o1}
     \fmf{plain,tension=0}{v2,o2}
@@ -37,7 +37,7 @@ Within this model, two distinct processes can lead to monotop production:
     \fmflabel{\Large ${\bar{s}}$}{i1}
     \fmflabel{\Large ${d}$}{i2}
     \fmflabel{\Large ${t}$}{o1}
-    \fmflabel{\Large ${f_{met}}$}{o2}
+    \fmflabel{\Large ${\chi}$}{o2}
   \end{feynmandiagram}
 }\\\vspace{\baselineskip}
 \subfloat[\label{subfig:S4s}]{
@@ -49,7 +49,7 @@ Within this model, two distinct processes can lead to monotop production:
     \fmf{fermion}{i1,v1}
     \fmf{wiggly}{v2,o2}
     \fmf{fermion}{v2,o1}
-    \fmflabel{\Large $v_{met}$}{o2}
+    \fmflabel{\Large $V$}{o2}
     \fmflabel{\Large $t$}{o1}
   \end{feynmandiagram}
 }
@@ -65,15 +65,15 @@ Within this model, two distinct processes can lead to monotop production:
     \fmf{fermion}{vdown,o1}
     \fmflabel{\Large $t$}{o1}
     \fmf{wiggly}{vup,o2}
-    \fmflabel{\Large $v_{met}$}{o2}
+    \fmflabel{\Large $V$}{o2}
   \end{feynmandiagram}
 }
 \caption
 {
 Feynman diagram of leading order processes leading to monotop events: production of
-a coloured scalar resonance $S$ decaying into a top quark and a spin-$1/2$ fermion $f_{met}$ (a),
+a coloured scalar resonance $\varphi$ decaying into a top quark and a spin-$1/2$ fermion $\chi$ (a),
 $s-$ (b) and $t$-channel (c) non resonant production of a top quark in association with
-a spin-1 boson $v_{met}$.
+a spin-1 boson $V$.
 %Feynman diagram of leading order processes leading to monotop events: resonant production of
 %$t$ via resonant new particle $M$ decaying into a top quark and $\Xnew$, which is the dark matter fermion $\chi$ (left),
 %and $s$ and $t$ channel non-resonant production of a top quark in association with $\Xnew$, which is the new particle $M$ (middle and right).
@@ -82,8 +82,8 @@ a spin-1 boson $v_{met}$.
 \end{figure}
 
 In the following, resonant and non-resonant production are treated independently as separate benchmarks. 
-Only the simpler case of a scalar resonance is considered as an early benchmark for the resonant model, while the case of vector 
-resonances can be studied in the future. 
+Only the simpler case of a scalar resonance and the non-resonant vector are considered as early benchmarks 
+for the resonant model; the other two cases with a more complicated phenomenology can be studied in the future. 
 %CD: why? the vector is better in "revisiting monotop"
 
 \newthought{Resonant production}
@@ -105,12 +105,13 @@ In this case, a colored $2/3$-charged scalar ($\varphi$) is produced and decays 
 \Big[a^q_{SR} + b^q_{SR} \gamma_5 \Big] d +
 \varphi \bar u \Big[a^{1/2}_{SR} + b^{1/2}_{SR} \gamma_5 \Big] \chi
 %
-\\ &
-+ X_\mu \bar d^c\gmu
-\Big[a^q_{VR} + b^q_{VR} \gamma_5 \Big] d
-%
-+ X_\mu \bar u \gmu
-\Big[a^{1/2}_{VR} + b^{1/2}_{VR} \gamma_5 \Big] \chi + 
+%\\ &
+%+ X_\mu \bar d^c\gmu
+%\Big[a^q_{VR} + b^q_{VR} \gamma_5 \Big] d
+%%
+%+ X_\mu \bar u \gmu
+%\Big[a^{1/2}_{VR} + b^{1/2}_{VR} \gamma_5 \Big] \chi 
++ 
 {\rm h.c.} \bigg] 
 \esp\ee
 
@@ -120,8 +121,8 @@ In this case, a colored $2/3$-charged scalar ($\varphi$) is produced and decays 
 %%%CD: problems with the original typesetting
 %\end{eqnarray}
 
-where $u$ ($d$) stands for any $up$-quark ($down$-quark), 
-the index $S$ ($V$) stands for scalar (vector) field, and the index $q$ 
+where $u$ ($d$) stands for any $up$ ($down$)-quark, 
+the index $S$ stands for scalar field, and the index $q$ 
 runs over the three quark generations, and the color indices are not shown. 
 
 %The first term leads to the production of the new particle and the last term allows its decay into a $up$-quark 
@@ -134,10 +135,10 @@ runs over the three quark generations, and the color indices are not shown.
 In the notation of~\cite{Agram:2013wda}, 
 the couplings of the new colored fields to down-type quarks are
 embedded into the $3\times 3$ antisymmetric matrices
-$a^q_{\{S,V\}R}$ (scalar/vector couplings) and $b^q_{\{S,V\}R}$ (pseudoscalar/axial vector couplings)
+$a^q_{\{S\}R}$ (scalar couplings) and $b^q_{\{S\}R}$ (pseudoscalar couplings)
 while those to the new fermion $\chi$ and one
 single up-type quarks are given by the three-component vectors
-$a^{1/2}_{\{S,V\}R}$ and $b^{1/2}_{\{S,V\}R}$
+$a^{1/2}_{\{S\}R}$ and $b^{1/2}_{\{S\}R}$
 in flavor space. 
 
 % 
@@ -154,7 +155,7 @@ between a top squark--top--neutralino.
 \label{sec:NonResonantProd}
 
 For the non-resonant production, the top quark is produced in association with the new particle:
-either a new scalar ($\phi$) or a new vector ($V$). For simplicity, we only consider the case of a vector new particle, 
+either a new scalar or a new vector ($V$). For simplicity, we only consider the case of a vector new particle, 
 as the scalar case would involve a mixing with the SM Higgs boson and therefore a larger number of free parameters. 
 The Lagrangian describing the dynamics of the non-resonant case is: 
 %%CD: Full explanation is below
@@ -180,28 +181,17 @@ The Lagrangian describing the dynamics of the non-resonant case is:
 %%
 %+ 
 \bigg[
-\phi \bar u \Big[a^0_{FC}\!+\!b^0_{FC} \gamma_5 \Big] u \!+\!
+%\phi \bar u \Big[a^0_{FC}\!+\!b^0_{FC} \gamma_5 \Big] u \!+\!
 V_\mu \bar u \gmu \Big[a^1_{FC} \!+\! b^1_{FC} \gamma_5 \Big] u  
 %
-%%&+ 
-%\varphi \bar d^c
-%\Big[a^q_{SR} + b^q_{SR} \gamma_5 \Big] d +
-%\varphi \bar u \Big[a^{1/2}_{SR} + b^{1/2}_{SR} \gamma_5 \Big] \chi
-%%
-%\\ &
-%+ X_\mu \bar d^c\gmu
-%\Big[a^q_{VR} + b^q_{VR} \gamma_5 \Big] d
-%%
-%+ X_\mu \bar u \gmu
-%\Big[a^{1/2}_{VR} + b^{1/2}_{VR} \gamma_5 \Big] \chi + 
 + \rm h.c. 
 \bigg] 
 \esp\ee
 
 The strength of the interactions among these two states and a pair
 of up-type quarks is modeled via two $3\times 3$
-symmetric matrices in flavor space $a^{\{0,1\}}_{FC}$ for the scalar/vector couplings
-and $b^{\{0,1\}}_{FC}$ for the pseudoscalar/axial vector couplings.
+symmetric matrices in flavor space $a^{\{1\}}_{FC}$ for the vector couplings
+and $b^{\{1\}}_{FC}$ for the axial vector couplings.
 
 %The dynamics of this case is described by the following Lagrangian:
 %\begin{equation}
@@ -250,7 +240,7 @@ and light quarks ($a_{FC}$), are set to non-zero values
 
 \be\label{eq:a}\bsp
 %& (a^0_{FC})_{13} = (a^0_{FC})_{31} = a
-%}%% (a^1_{FC})_{13} = (a^1_{FC})_{31} = a \ , \\
+ (a^1_{FC})_{13} = (a^1_{FC})_{31} = a \ , \\
 %% &  (a^q_{SR})_{12} = \ -(a^q_{SR})_{21} = (a^{1/2}_{SR})_3 =
 & (a^q_{SR})_{11} = (a^{1/2}_{SR})_3 = a
 \esp 
@@ -315,20 +305,19 @@ previous Section, are as follows for the two models considered.
   \begin{itemize}
   \item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavour space) fixing the coupling of the scalar $\phi$ ($S$ stands for scalar) and $down$-type quarks ($Q$ stands for quarks), previously called $a^q/b^q_{SR}$.
   \item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavour space) fixing the coupling of the new fermion $\chi$ (where $12$ stands for spin-$1/2$ fermion) and $up$-type quarks, previously called $a^{1/2}_{VR}$.
-  \item particle names: the scalar $\phi$ is labeled $S$ and the fermion $\chi$ is $f_{met}$
   \end{itemize}  
   
 \item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
 \begin{itemize}
 \item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavour space) fixing the coupling of the vector $V$ ($1$ stands for vector) and $up$-type quarks, previously called $a^1_{FC}$. 
-\item particle name: the vector $V$ is labelled $v_{met}$, while the dark matter candidate $\chi$ is not implemented (as this model assumes $\BR{V}{\chi\chi}=100\%$)
+\item particle name: the dark matter candidate $\chi$ is not implemented %(as this model assumes $\BR{V}{\chi\chi}=100\%$)
 \end{itemize}
 
 \end{enumerate}
 
 The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
 while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
-\textbf{[TODO: Can we reach a consensus between ATLAS and CMS?]}
+\Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
 
 %In the case of the non-resonant model and . 
 %Further studies will show whether to a top and an up quark 
@@ -362,8 +351,8 @@ The relevant parameters for the non-resonant model are:
 \end{itemize}	
 
 In the case of the non-resonant model, the current implementation
-of the model does not allow changing the DM mass directly as the
-new vector is treated as a particle that always decays invisibly. 
+of the model does not allow changing the new fermion mass directly 
+as it is not explicitly implemented. 
 
 It has been checked for the non-resonant model that the relevant kinematics 
 does not change when changing 
@@ -372,8 +361,7 @@ Figures~\ref{fig:appB:Vmass} and \ref{fig:appB:pTV} show
 the $V$ mass distribution, the transverse momentum for $V$ 
 %and for the top quark 
 in the case of the $V\to t\bar{u}$ decay, for different $V$ masses and widths.
-Since they only show kinematic quantities related to the mediator, these figures are relevant independently of the $V$ decay mode (be it visible or invisible). 
-
+Since they only show kinematic quantities related to the mediator, these figures are relevant independently of the $V$ decay mode (be it visible or invisible). \Todo{Pictures will be improved in the next drafts}.
 \begin{figure}[!h!tpd]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figures/singletop/m_Vmets}
