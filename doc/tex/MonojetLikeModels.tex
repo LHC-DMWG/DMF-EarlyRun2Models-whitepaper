@@ -165,7 +165,7 @@ In all cases, it is expected to observe a peak around the mediator mass with a t
 resonant production at $m_{\bar{\chi}\chi}=7$\,TeV is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7\,TeV is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chi}\chi}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes. This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
 In general, for such extreme parameter choices
 %as $\mMed=7$\,TeV and $\Gamma_{\rm{min}}=36$\,GeV,
-the EFT model should give the correct answer. \Todo{add results of ongoing study.}
+the EFT model should give the correct answer. \Todo{Refer to results of ongoing study in Section 6.}
 % In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
 
 %Uli: as fabio says, increasing bwcutoff might improve things in the case you are considering
@@ -258,7 +258,7 @@ is illustrated in Fig.\,\ref{fig:monojet_scan_V_mMed1000}. Therefore, a coarse b
 The final step in proposing a parameter grid is to evaluate the sensitivity
 of Run-2 LHC data with respect to rate and/or kinematics.
 %In order to motivate the highest mediator mass grid point, the expected sensitivity of Run-2 LHC data needs to be taken into account.
-Projected sensitivities for a 14\,TeV\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$\,GeV and $\MET>500$\,GeV, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 \Todo{this is just my guess, can we get more precise number and a citation? Is this in Sarah's V+jets paper?} when going from $\sqrt{s}=8$\,TeV to 13\,TeV, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
+Projected sensitivities for a 14\,TeV\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$\,GeV and $\MET>500$\,GeV, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 \Todo{Can we get more precise number and a citation? Is this in Sarah's V+jets paper?} when going from $\sqrt{s}=8$\,TeV to 13\,TeV, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
 The generator level cross section times the acceptance at $\MET>500$\,GeV for the model with couplings $\gq=\gDM=1$, light Dark Matter of
 \mdm=10\,GeV and a \mMed=1\,TeV vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$\,GeV for 5\,TeV vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC.
 
@@ -418,8 +418,6 @@ The first term in the width corresponds to the decay into SM fermions, and the s
 %F_{\rm{P}}(x)&= \arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\;.
 %\end{align}
 
-%TODO: Sarah, could you check that the partial widths are consistent? 
-%TODO: Matt was talking about a problem in the exponents that were wrong between scalar and pseudoscalar, and his edits are below.
 %%Start Matt Buckley's edits 
 %\begin{equation} \label{eq:width}
 %\begin{split}
@@ -568,7 +566,7 @@ However,
 the number of generated samples can be reduced even further
 if a parameterization of the cross section dependence from one grid point to another exists.
 
-Let us now elaborate on a cross section scaling procedure.
+Let us now elaborate on a cross section scaling procedure.~\Todo{This procedure needs a clarification: this can work only for fixed masses}
 %TODO say something about the fact that this can work only for fixed masses
 The propagator on the s-channel exchange is written in a Breit-Wigner form as $\frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the invariant mass of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
 The size of the momenum transfer with respect to the mediator mass allows to classify the production in the following way:
@@ -613,9 +611,11 @@ Taken from Ref.\,\cite{ATL-PHYS-PUB-2014-007}.}
 \end{figure}
 
 
+\Todo{Indicate mMed=GammaMin in the plots (gDM = 6, gSM = 1.5 for V and gSM = gDM = 5 for S)}
 
 Figures\,\ref{fig:monojet_width100} and \ref{fig:monojet_width1000} show the minimal width in the $\gq$--$\gDM$ plane for all vector, axial-vector, scalar and pseudo-scalar mediators for $\mMed=100$\,GeV and 1000\,GeV, respectively, taking $\mdm=10$\,GeV. The individual colors indicate the lines of constant width along which the cross section scaling works. For vector and axial-vector mediators, the minimal width is predominantly defined by $\gq$ due to the number of quark flavors and the color factor. %In this case, the scaling follows from Eq.\,\ref{eq:monojet_gDM}.
 On the contrary, both the Standard Model and Dark Matter partial width have comparable contributions in case of scalar and pseudo-scalar mediators if the top quark channel is open ($\mMed>2m_t$). However, mostly $\gDM$ defines the minimal width for $\mMed<2m_t$ due to the Yukawa-suppressed light quark couplings.
+
 
 
 \begin{figure}
@@ -678,7 +678,7 @@ The limiting case $\Gamma_{\rm{min}}=\mMed$ is shown as a black line.}
 We propose to present the results in the $\gq$--$\gDM$ plane using the following prescription:
 \begin{itemize}
 \item Since the shapes of kinematic quantities do not change for different couplings, use the acceptance and efficiency for the available $\mdm=50$\,GeV, $\mMed=300$\,GeV, $\gq=\gDM=1$ grid point from the $\mMed$--$\mdm$ plane for the scalar and pseudo-scalar mediator. In case of the vector and axial-vector mediator, use the grid point $\mdm=50$\,GeV, $\mMed=1$\,TeV, $\gq=\gDM=1$.
-\item Generate additional samples in order to get generator cross sections only. For scalar and pseudo-scalar mediator, choose $\mdm=50$\,GeV, $\mMed=300$\,GeV with the following values for $\gq=\gDM$: 0.1, 2, 3, 4, 5, 6. For vector and axial vector mediator, choose $\mdm=50$\,GeV, $\mMed=1$\,TeV with the following values for $\gq=\gDM$: 0.1, 0.25, 0.5, 0.75, 1.25, 1.5. The upper values are defined by the minimal width reaching the mediator mass.
+\item Generate additional samples in order to get generator cross sections only. For scalar and pseudo-scalar mediator, choose $\mdm=50$\,GeV, $\mMed=300$\,GeV with the following values for $\gq=\gDM$: 0.1, 2, 3, 4, 5, 6. For vector and axial vector mediator, choose $\mdm=50$\,GeV, $\mMed=1$\,TeV with the following values for $\gq=\gDM$: 0.1, 0.25, 0.5, 0.75, 1.25, 1.5. The upper values are defined by the minimal width reaching the mediator mass. \Todo{We may agree on a smaller set of coupling values to get the cross-sections (those samples are not fully simulated anyway, and maybe the Forum can provide this information centrally.).}
 \item Rescale the generator cross sections along the lines of constant width in order to populate the whole $\gq$--$\gDM$ plane.
 \end{itemize}
 
