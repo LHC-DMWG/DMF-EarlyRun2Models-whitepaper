@@ -212,9 +212,6 @@ and $b^{\{1\}}_{FC}$ for the axial vector couplings.
 The models considered as benchmarks for the first LHC searches
 contain further assumptions in terms of the flavour and chiral structure of the model
 with respect to the full Lagrangians of equations~\eqref{eq:lagrangianResonant} and~\eqref{eq:lagrangianNonResonantVector}.
-These assumptions are qualitatively discussed below. 
-
-\paragraph{Assumptions in the flavour and chiral structure of the models}
 
 We only consider right-handed quark components, in order to simplify the model phenomenology. 
 The representation of the left-handed components under the $\SUtwo$ symmetry would lead to a 
@@ -240,9 +237,8 @@ and light quarks ($a_{FC}$), are set to non-zero values
 
 \be\label{eq:a}\bsp
 %& (a^0_{FC})_{13} = (a^0_{FC})_{31} = a
- (a^1_{FC})_{13} = (a^1_{FC})_{31} = a \ , \\
-%% &  (a^q_{SR})_{12} = \ -(a^q_{SR})_{21} = (a^{1/2}_{SR})_3 =
-& (a^q_{SR})_{11} = (a^{1/2}_{SR})_3 = a
+(a^1_{FC})_{13} = (a^1_{FC})_{31} = a \ , \\
+(a^q_{SR})_{11} = (a^{1/2}_{SR})_3 = a
 \esp 
 \ee
 
@@ -288,12 +284,10 @@ and light quarks ($a_{FC}$), are set to non-zero values
 % \label{sec:chiralstructure}
 
 
-\newthought{Implementation}
+\subsection{Model implementation}
 
-This Section describes the notations used in the MadGraph model convention, 
-in term of the ones introduced in the previous Section.
-
-The Madgraph model~\cite{MGmodel} used for these benchmarks corresponds to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
+Card files for MadGraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
+corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
 Each coupling constant of this model can be set via the parameter card and 
 the blocks which are relevant for the two models used for the experimental searches are described below.
 The relevant parameters in the MadGraph parameter cards, also expressed in the notation introduced in the 
@@ -329,7 +323,7 @@ while the only allowed decay in the CMS implementation to the new fermion and a 
 %(in order to have $d-s-S$ couplings, and $t-S-f_{met}$ couplings) 
 %and $(\anonres)_{\mathrm{13}}=(\anonres)_{\mathrm{31}}\equiv \anonres$ (in order to have $v_{met}-t-u$ couplings). 
 
-\newthought{Parameter scan}
+\subsection{Parameter scan}
 
 The relevant parameters for the resonant model are:
 \begin{itemize}
@@ -361,7 +355,8 @@ Figures~\ref{fig:appB:Vmass} and \ref{fig:appB:pTV} show
 the $V$ mass distribution, the transverse momentum for $V$ 
 %and for the top quark 
 in the case of the $V\to t\bar{u}$ decay, for different $V$ masses and widths.
-Since they only show kinematic quantities related to the mediator, these figures are relevant independently of the $V$ decay mode (be it visible or invisible). \Todo{Pictures will be improved in the next drafts}.
+Since they only show kinematic quantities related to the mediator, these figures are relevant independently of the $V$ decay mode (be it visible or invisible). 
+\Todo{Pictures will be improved in the next drafts.}
 \begin{figure}[!h!tpd]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figures/singletop/m_Vmets}
