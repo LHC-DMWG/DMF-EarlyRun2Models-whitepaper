@@ -62,7 +62,10 @@
   \usepackage[protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true]{microtype}
 }{}
 \fvset{fontsize=\normalsize} % default font size for fancy-verbatim environments
+
 \usepackage[marginpar]{todo} % for todo list
+\let\nominalTodo\Todo
+\renewcommand\Todo[1]{\nominalTodo{\normalfont\footnotesize\sffamily\bf #1}}
 
 % Prints an asterisk that takes up no horizontal space.
 % Useful in tabular environments.
