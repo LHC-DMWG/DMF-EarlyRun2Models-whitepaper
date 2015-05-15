@@ -80,18 +80,19 @@ the corresponding interaction Lagrangians:
 \mathcal{L}_{\rm{axial-vector}} &= \gq \sum_{q=udscbt}  Z'_{\mu} \bar{q}\gamma^{\mu}\gamma^5q + \gDM Z'_{\mu} \bar{\chi}\gamma^{\mu}\gamma^5\chi.
 \end{align}
 The universal coupling \gq is assumed for quarks. 
-It is also possible to consider another model in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are vector whereas those to DM are axial-vector. As a starting point, we consider only the models with the vector couplings only and axial vector couplings only.
-%TODO Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event. 
+It is also possible to consider another model in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with the vector couplings only and axial vector couplings only. 
+\Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event.}
 
 
 %Definition of minimal width
-We assume that no additional visible or invisible decays contribute to the width of the mediator.  This is referred to as the minimal width and it is defined as follows for the vector and axial-vector models:
+When no additional visible or invisible decays contribute to the width of the mediator, the width is fixed by the choices of couplings $\gq$ and $\gDM$. We refer to the width in this situation as the minimal width\footnote{See page \pageref{paragraph:nonminimalwidth} for a discussion of the effect of larger widths.}. For the vector and axial-vector models,
 
 \begin{equation}
 %\Gamma_{\rm{min}}=\Gamma_{\bar{\chi}\chi} + \sum_{q}N_{c}\Gamma_{\bar{q}q}
 \Gamma_{\rm{min}}^{V/A}=\Gamma_{\bar{\chi}\chi}^{V/A} + \sum_{q}\Gamma_{\bar{q}q}^{V/A}.
 \label{eq:monojet_min}
 \end{equation}
+
 The leading order expressions for the partial widths are:
 
 \begin{align}
@@ -123,8 +124,7 @@ The simplified models described here have four free parameters: mediator mass $\
 \paragraph{Scan over the couplings}
 
 Figure\,\ref{fig:monojet_scan_V_g} reveals there are no differences in the shape of the $\MET$ distribution among the samples where the pair of \mdm=10\,GeV Dark Matter particles are produced on-shell from the mediator of \mMed=1\,TeV, generated with different choices of the coupling strength.
-This a generator-level prediction with no kinematic selections or detector simulation.
-The considered coupling values range from 0.1 to 1.45, where the latter value approximates the maximum allowed coupling value, holding $\gq=\gDM$, such that $\Gamma_{\rm{min}} < \mMed$.
+This a generator-level prediction with no kinematic selections or detector simulation. Coupling values in the range 0.1--1.45, holding $\gq=\gDM$, correspond to a rough estimate of the lower sensitivity of mono-jet analyses and a maximum coupling value such that $\Gamma_{\rm{min}} < \mMed$.
 Based on similar plots for different choices of
 \mMed and \mdm, we conclude that the shapes of
 kinematic distributions are not altered
@@ -160,7 +160,7 @@ In all cases, it is expected to observe a peak around the mediator mass with a t
 resonant production at $m_{\bar{\chi}\chi}=7$\,TeV is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7\,TeV is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chi}\chi}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes. This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
 In general, for such extreme parameter choices
 %as $\mMed=7$\,TeV and $\Gamma_{\rm{min}}=36$\,GeV,
-the EFT model should give the correct answer. \textbf{[TODO: add results of ongoing study.]}
+the EFT model should give the correct answer. \Todo{add results of ongoing study.}
 % In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
 
 %Uli: as fabio says, increasing bwcutoff might improve things in the case you are considering
@@ -191,6 +191,11 @@ with small couplings, but, also, the early part of Run-1 will not be
 sensitive to them.  We recommend a range of couplings that limit the
 calculated width of the mediator to be near or below \mMed.
 
+For direct mediator searches, asymmetric couplings ($\gq \ne \gDM$ )
+might also be considered. For example, one might fix the mediator mass
+and produce a scan in \gdm vs \gq. Such searches, such as those for
+dijet and ttbar resonances, may restrict \gq to a greater degree than
+\gDM.
 
 \paragraph{Scan over the Dark Matter mass}
 
@@ -248,10 +253,7 @@ is illustrated in Fig.\,\ref{fig:monojet_scan_V_mMed1000}. Therefore, a coarse b
 The final step in proposing a parameter grid is to evaluate the sensitivity
 of Run-2 LHC data with respect to rate and/or kinematics.
 %In order to motivate the highest mediator mass grid point, the expected sensitivity of Run-2 LHC data needs to be taken into account.
-The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$\,GeV and $\MET>500$\,GeV, respectively.
-The ATLAS projections for 14\,TeV\,\cite{ATL-PHYS-PUB-2014-007} predict
-a factor of two increase in sensitivity with the first $5\,\ifb$ of data already. Given the cross section for $V+$jets processes increases by roughly a factor 2 %TODO this is just my guess, can we get more precise number and a citation?
-when going from $\sqrt{s}=8$\,TeV to 13\,TeV, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
+Projected sensitivities for a 14\,TeV\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$\,GeV and $\MET>500$\,GeV, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 \Todo{this is just my guess, can we get more precise number and a citation? Is this in Sarah's V+jets paper?} when going from $\sqrt{s}=8$\,TeV to 13\,TeV, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
 The generator level cross section times the acceptance at $\MET>500$\,GeV for the model with couplings $\gq=\gDM=1$, light Dark Matter of
 \mdm=10\,GeV and a \mMed=1\,TeV vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$\,GeV for 5\,TeV vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC.
 
@@ -315,7 +317,7 @@ The presentation of the results in the $\gq$--$\gDM$ plane for fixed masses bene
 \label{sec:monojet_scalar}
 
 One of the simplest UV complete extensions of the effective field theory approach is the addition of a scalar/pseudoscalar mediator between DM and SM.
-A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle.
+A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle. See Refs.~\cite{Buckley:2014fba} for a thorough discussion}.
 In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. 
 
 Couplings to the SM fermions can be arranged by mixing with the SM Higgs. Such models have interesting connections with Higgs physics, and can be viewed as generalizations of the Higgs portal to DM. The most general scalar mediator models will have renormalizable interactions between the SM Higgs and the new scalar $\phi$ or pseudoscalar $a$, as well as $\phi/a$ interactions with electroweak gauge bosons. Such interactions are model dependent, often subject to constraints from electroweak precision tests, and would suggest specialized searches which cannot be generalized to a broad class of models (unlike, for instance, the $\missET+\textrm{jets}$ searches). As a result, for this class of minimal simplified models with spin-$0$ mediators, we will focus primarily on couplings to fermions and loop-induced couplings to gluons. %Possible couplings to the electroweak sector may also lead to interesting DM phenomenology that can be studied in the context of Higgs Portal DM.
@@ -660,7 +662,7 @@ We propose to present the results in the $\gq$--$\gDM$ plane using the following
 %choose mDM=50, mMed=300, gDM=gSM={0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5} for V (mMed=GammaMin is reached around 1.5)
 %choose mDM=50, mMed=1000, gDM=gSM={0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5} for V (mMed=GammaMin is reached around 1.4)
 
-\paragraph{Rescaling to different mediator width}
+\paragraph{Rescaling to different mediator width}\label{paragraph:nonminimalwidth}
 
 In general there may be an interest to consider larger mediator masses than $\Gamma_{\rm{min}}$ in order to accommodate further couplings of the mediator. The cross section scaling method described above can be used to reinterpret the results presented for the minimal width, since multiplying the width by factor $n$ is equivalent to changing the coupling strength by factor $\sqrt{n}$, i.e.
 \begin{equation}
@@ -676,4 +678,10 @@ The advantage of doing this is in the fact that no event selection and detector 
 \section{Colored scalar mediator, t-channel exchange}
 
 \input tex/TChannelModels.tex
+
+\section{Spin-2 mediator}
+
+In models with extra dimensions, the Kaluza-Klein excitations of the graviton could also serve as a mediator between the Standard Model and dark sector physics. Below a few TeV in mediator mass, production of a graviton with universal couplings is dominantly gluon-initiated, leading to forward-peaked angular distributions \cite{Allanach:2002gn} distinct from the other models considered above. This kind of model was not studied in the forum and is not included in the recommendations, but it and models such as Ref.~\cite{Lee:2013bua} may warrant further study on a longer timescale. 
+
+
 
