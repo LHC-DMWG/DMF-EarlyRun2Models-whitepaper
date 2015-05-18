@@ -37,8 +37,8 @@ diff20150515:
 #         about the property macros during each run. just hit enter
 #         each time and keep going. the use of 'nonstopmode' below
 #         will ignore these messages (and all other errors)
-	./latexdiff-vc --svn -r 194 --flatten doc.tex
-#   ./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f --flatten doc.tex
+	./latexdiff-vc --svn --flatten=yes -r 194 doc.tex
+#   ./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f --flatten=yes doc.tex
 #	./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f --only-changes --dir=changes-diff doc.tex
 	pdflatex --interaction=nonstopmode doc-diff.tex; bibtex doc-diff; pdflatex --interaction=nonstopmode doc-diff.tex; pdflatex --interaction=nonstopmode doc-diff.tex
 #	cd changes-diff; pdflatex doc.tex; bibtex doc; pdflatex doc.tex; pdflatex doc.tex; cd ..
