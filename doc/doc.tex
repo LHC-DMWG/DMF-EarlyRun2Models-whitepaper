@@ -6,12 +6,12 @@
 %\newif\ifNotMonojetTTBarOnly
 
 \usepackage[autokw=all]{svn-multi}[2015/05/12]
-\svnidlong
-{$HeadURL$}
-{$LastChangedDate$}
-{$LastChangedRevision$}
-{$LastChangedBy$}
-\svnid{$Id: doc.tex 128 2015-05-13 04:23:43Z mrenna $}
+%\svnidlong
+%{$HeadURL$}
+%{$LastChangedDate$}
+%{$LastChangedRevision$}
+%{$LastChangedBy$}
+%\svnid{$Id: doc.tex 128 2015-05-13 04:23:43Z mrenna $}
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
@@ -252,10 +252,13 @@ Appendix \ref{app:MonojetLikeModels_Appendix}.
 \input{tex/EFTValidity.tex}
 %\fi
 %
-%%% \chapter{Recommendations for expressing collider constraints}
-%%% \label{sec:ColliderConstraints} 
-%%% \input{tex/ColliderConstraints.tex}
-%
+ \chapter{Recommendations for evaluation of signal theoretical uncertainties}
+ \label{sec:TheoryUncertainties} 
+ \input{tex/TheoryUncertainties.tex}
+
+
+\input{tex/backmatter.tex}
+
 \appendix
 
 %\ifNotMonojetTTBarOnly
