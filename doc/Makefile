@@ -27,14 +27,19 @@ cleanMP: $(wildcard *.mp)
 
 clean: cleanMP
 	rm -f doc.aux doc.blg doc.log doc.out doc.bbl doc.toc
+	rm -f doc-diff.aux doc-diff.blg doc-diff.log doc-diff.out doc-diff.bbl doc-diff.toc
 	rm -f *~ tex/*~
-	rm -f doc.pdf 
+	rm -f doc.pdf doc-diff.pdf doc-diff.tex
 
 # diff with svn+ssh://svn.cern.ch/reps/LHCDMF/tags/v20150515_first_internal_circulation
 diff20150515:
-#	./latexdiff-vc --svn -r 194 --dir=diff doc.tex
-	./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f doc.tex
+#   note: if svn-multi is being used, pdflatex will give messages
+#         about the property macros during each run. just hit enter
+#         each time and keep going. the use of 'nonstopmode' below
+#         will ignore these messages (and all other errors)
+	./latexdiff-vc --svn -r 194 --flatten doc.tex
+#   ./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f --flatten doc.tex
 #	./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f --only-changes --dir=changes-diff doc.tex
-	pdflatex doc-diff.tex; bibtex doc-diff; pdflatex doc-diff.tex; pdflatex doc-diff.tex
+	pdflatex --interaction=nonstopmode doc-diff.tex; bibtex doc-diff; pdflatex --interaction=nonstopmode doc-diff.tex; pdflatex --interaction=nonstopmode doc-diff.tex
 #	cd changes-diff; pdflatex doc.tex; bibtex doc; pdflatex doc.tex; pdflatex doc.tex; cd ..
 
