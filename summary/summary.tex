@@ -252,9 +252,7 @@ formulae that will be provided by the forum.
 
 The parameter space of the $t-$channel model 
 has not yet been studied in the same detail as the
-$s-$channel models. 
-\textbf{[Point being finalized: This model, and its parameter scan, is still 
-under study.]}
+$s-$channel models, but a proposal will be available for the full Forum report. 
 %[AB: Comment on the relationship to SUSY parameter space]. 
 This model is parallel to, and partially motivated by, the
 squark of the MSSM. Since the $t$-channel model can produce signatures 
@@ -344,12 +342,9 @@ available in the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
 As noted earlier, the $t$-channel model produces both mono-jet and
 di-jet +MET signatures after applying cuts.  In the case when
 only a $b$-flavored mediator is accessible, both mono-$b$ and
-$b\bar b$+MET
-signatures are possible. 
-\textbf{[Point being finalized: The details for the implementation of these
-models is still under investigation. If the studies are not available in
-time for the Forum conclusions, this will be included as a model to be 
-investigated for future works.]}
+$b\bar b$+MET signatures are possible. 
+The details for the implementation of these
+models is still under investigation and will be provided for the full Forum report.
 
 \subsection{Specific models for analyses of MET+top(s)}
 \label{sub:SPttbar}
@@ -430,13 +425,12 @@ to those in DM and quarks. Fixing the branching fraction to DM particles to 100\
 to a single value for the coupling of the resonance to DM particles. $a_{res}^{1/2}$ 
 may however become a parameter to be scanned, after further studies on whether changing 
 the resonance width leads to significant changes in the kinematics of the model. 
-This point will be settled after further studies. 
 
 The only relevant parameters considered for the $s-$ and $t-$channel non-resonant production 
 are the coupling of the vector mediator to up-type quarks, all considered equal and denoted with $a_{non-res}$. 
 The width of the mediator does not affect the model kinematics. 
 A proposal for the scan in the parameters of these models will be prepared after further study 
-from the ATLAS and CMS analysers. 
+from the ATLAS and CMS analysers, possibly beyond the timescale of the Forum. 
 
 \paragraph{Technical implementation of the single top+MET models} 
 
@@ -522,11 +516,7 @@ These models are generated at leading
 order with MadGraph 2.2.2, using Pythia8 for the parton shower.
 Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EWEFTD7}.
 
-
 \subsubsection{MET+Higgs} 
-
-\textbf{[Point being finalized: These models, and their parameter scan, will be
-discussed at the next DM Forum meeting on Thursday May 4th.]}
 
 These searches should also consider models with an
 effective $VV\chi\chi$ vertex, with two Higgs bosons and two WIMPs coupled
@@ -542,6 +532,9 @@ are recommended for MET+Higgs searches:
  radiates a Higgs or a $Z$ boson and decays into two DM particles. 
  \item A model where a scalar mediator couples to the SM only 
  through the SM Higgs and decays to two DM particles. 
+\item A model where a vector $Z^\prime$ is produced resonantly and decays into a Higgs boson
+plus an intermediate heavy pseudoscalar particle $A^0$, in turn decaying into two DM particles. 
+ 	
 \end{itemize}
 
 Preliminary studies of these models show that the parameter scan for 
@@ -555,17 +548,18 @@ the other model parameters fixed to the following values:
  \item mediator-quark $g_{q}$ = 1/3
  \item mixing angle between the new baryonic Higgs in this model and the SM Higgs $sin(\theta)$ = 0.3
 \end{itemize}
-for the vector mediator model, and the following values: 
+for the vector mediator model, the following values: 
 \begin{itemize}
  \item Yukawa coupling to DM $y_{DM}$ = 1
  \item new physics coupling between scalar and SM Higgs $b$ = 3
  \item mixing angle $sin(\theta)$ = 0.3
 \end{itemize}
 for the scalar model. 
+For the scalar model, the parameter space scanned spans 10 points in $M_{Z^\prime}$, and $M_{A^0}$, with $M_{A^0} < M_{Z^\prime}-m_h$,
+comprising 24 points, as no dependence is observed on the other model parameters.  
 
 % \textbf{[Point being finalized: Update after wider discussion within the Forum, 
 % maybe mention correlations with diagrams yielding a MET+jet signature.]}
-
 
 \paragraph{Technical implementation of models with Higgs bosons in the final state} 
 
@@ -652,7 +646,7 @@ For the V/A and S/P simplified models, the highest mediator mass has
 been chosen to provide an equivalent of the D5/D8 and D1~\footnote{Following 
 the notation of Ref.~\cite{Goodman:2010ku}} EFT interpretations, 
 which are the limiting-cases of these models. 
-We recommend to cros$s-$check the kinematics of the highest-mass simplified model point 
+We recommend to cross-check the kinematics of the highest-mass simplified model point 
 with the corresponding contact interaction benchmark limit, after having ensured 
 the robustness of the contact interaction benchmark point tested (e.g. with the ratio 
 of valid events $R$ defined in~\cite{Aad:2015zva}). 
@@ -671,16 +665,22 @@ have to be applied to discard generated events, rather than rescaling the limit 
 for cut and count analyses. 
 \end{itemize}
 
-\textbf{[Point being finalized: when the completion involves loops, 
-the kinematics may vary significantly depending on the scale of the particles in 
-the loops, applying a truncation may not be as straight-forward as when we do have a simpler completion.]}
-
 With Run 1 analyses, both experiments are very familiar with
 simulation of the EFT contact operators. The forum has focused on
 validity procedures that may be applied at analysis-level after sample
 generation. Thus, so long as samples of contact operators are actually
 produced where required, the forum recommendations here have no direct
 bearing on MC requests.
+
+Whenever a UV completion is not available, EFT results can still
+be a source of useful information as in the case of the contact operators 
+for boson+MET studies. 
+However, in this case we can only naively control the validity of the EFT operator. 
+Given our ignorance of
+the actual kinematics, 
+the truncation procedure suggested for this purpose
+is the one described in ~\cite{Racco:2015dxa},
+as it is independent from any UV completion details. 
 
 % Still, at a lower priority than the simplified models, an EFT interpretation may be 
 %included for purposes of comparison with prior results.
