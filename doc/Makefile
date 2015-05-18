@@ -30,3 +30,11 @@ clean: cleanMP
 	rm -f *~ tex/*~
 	rm -f doc.pdf 
 
+# diff with svn+ssh://svn.cern.ch/reps/LHCDMF/tags/v20150515_first_internal_circulation
+diff20150515:
+#	./latexdiff-vc --svn -r 194 --dir=diff doc.tex
+	./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f doc.tex
+#	./latexdiff-vc --git -r c656bee807d9afaa020847256802d2dd544eb95f --only-changes --dir=changes-diff doc.tex
+	pdflatex doc-diff.tex; bibtex doc-diff; pdflatex doc-diff.tex; pdflatex doc-diff.tex
+#	cd changes-diff; pdflatex doc.tex; bibtex doc; pdflatex doc.tex; pdflatex doc.tex; cd ..
+

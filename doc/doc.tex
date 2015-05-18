@@ -93,6 +93,12 @@
 %Taken from: https://groups.google.com/forum/#!topic/tufte-latex/oEWGA6624-Y
 % \input{appendixCommands}
 
+
+
+% set header to mark pages "DRAFT" and include page numbers
+\fancyhead[LE]{\thepage\quad\smallcaps{\newlinetospace{{\color{red}DRAFT}\:SVN:\svndate\: r\svnrev}}}
+\fancyhead[RO]{\smallcaps{\newlinetospace{{\color{red}DRAFT}\:SVN:\svndate\:r\svnrev\quad}}\quad\thepage}
+% draft comes with line numbers
 \linenumbers
 
 
