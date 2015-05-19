@@ -11,7 +11,7 @@
 
 A complete list of effective operators with direct DM/boson couplings for
 Dirac DM, up to dimension 7, can be found in~\cite{Cotta:2012nj, Carpenter:2012rg, Crivellin:2015wva}. 
-Higher dimensional operators, up to dimension 8, leading to Higgs+MET signatures,
+Higher dimensional operators, up to dimension 8, leading to Higgs+\MET signatures,
 are mentioned in~\cite{Carpenter:2012rg, Berlin:2014cfa}.
 Despite the appearance of simplified models, we argue that
 the model independent approach of the EFTs is still relevant.
@@ -41,11 +41,11 @@ such as the one depicted in Figure~\ref{fig:modelMonoHEFT}.
 		\fmf{dashes}{v2,o3}
 		\fmflabel{\Large $h$}{o3}
 		\fmf{fermion}{o2,v2,o1}
-		\fmflabel{\Large ${\bar{\chi}}$}{o1}
-		\fmflabel{\Large ${\chi}$}{o2}
+		\fmflabel{\Large ${\bar{\chiDM}}$}{o1}
+		\fmflabel{\Large ${\chiDM}$}{o2}
 		\fmfdot{v1}
 	\end{feynmandiagram}
-	\caption{Diagram for EFT operators giving rise to a Higgs+MET signature.}
+	\caption{Diagram for EFT operators giving rise to a Higgs+\MET signature.}
 	\label{fig:modelMonoHEFT}
 \end{figure}
 
@@ -53,12 +53,12 @@ Following the notation of~\cite{Carpenter:2012rg},  models
 from this category have a Lagrangian that includes terms such as:
 
 \begin{eqnarray}
-\frac{m_W^2}{\Lambda_5^3} ~\bar{\chi} \chi ~W^{+ \mu} W^{-}_\mu
-+ \frac{m_Z^2}{2 \Lambda_5^3} ~ \bar{\chi} \chi ~ Z^\mu Z_\mu ~,
+\frac{m_W^2}{\Lambda_5^3} ~\bar{\chiDM} \chiDM ~W^{+ \mu} W^{-}_\mu
++ \frac{m_Z^2}{2 \Lambda_5^3} ~ \bar{\chiDM} \chiDM ~ Z^\mu Z_\mu ~,
 \end{eqnarray}
 
 where $m_Z$ and $m_W$ are the masses of the $Z$ and $W$ boson, $W^{\mu}$ and $Z^{\mu}$
-are the fields of the gauge bosons, $\chi$ denote the Dark Matter fields
+are the fields of the gauge bosons, $\chiDM$ denote the Dark Matter fields
 and $\Lambda_5$ is the effective field theory scale~\Todo{The nomenclature in different models differs from literature: 
 	$\Lambda_5$ vs $\lambda$}. Note that these operators are of true dimension 7, 
 but reduce to effective dimension 5 once the Higgs vacuum expectation values, 
@@ -68,25 +68,25 @@ interacts via a Higgs portal where heavy mediators would couple to the Higgs or 
 In such models the full theory may be expected to contain additional operators with Higgs-Dark Matter couplings. 
 
 Concentrating  for the moment on mono-gauge boson signals, the above operator induces signatures with 
-MET in conjunction with Z and W bosons at tree level,
+\MET in conjunction with Z and W bosons at tree level,
 while at loop level it induces couplings to photon pairs and $Z \gamma$ through W loops.
 In these models, a clear relation exists between final states with photons, EW bosons
 and Higgs boson. 
 
 As shown in Fig.~\ref{fig:EW_EFT5_Zlep_MET}
 kinematics of this model can be approximated by that of a simplified model including 
-a high-mass scalar mediator exchanged in the s-channel described in Section~\ref{sub:EW_Scalar}. 
+a high-mass scalar mediator exchanged in the \schannel described in Section~\ref{sub:EW_Scalar}. 
 For this reason, the list of benchmark models with direct boson-DM couplings for photon, Z and W 
 only includes dimension 7 operators: the scalar model with initial state radiation of an EW boson
-is already recommended and its results can be rescaled. The Higgs+MET analysis,
+is already recommended and its results can be rescaled. The Higgs+\MET analysis,
 however, will not consider the scalar simplified model as benchmark, due to the very low sensitivity 
 in early LHC analyses, and will instead use this dimension 5 operator. 
 
 \begin{figure}
 	\includegraphics[width=0.8\textwidth]{figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf}
 	\caption{Comparison of the missing transverse momentum for the simplified model
-		where a scalar mediator is exchanged in the s-channel and the model including 
-		a dimension-5 scalar contact operator, in the leptonic Z+MET final state}
+		where a scalar mediator is exchanged in the \schannel and the model including 
+		a dimension-5 scalar contact operator, in the leptonic Z+\MET final state}
 	\label{fig:EW_EFT5_Zlep_MET}
 \end{figure}
 
@@ -94,18 +94,18 @@ in early LHC analyses, and will instead use this dimension 5 operator.
 
 The two parameters of this model are the scale of new physics $\lambda$ 
 and the DM particle mass. SM-DM coupling and new physics scale are related by 
-$\gdm = {(246~\mathrm{GeV})}/{\lambda}$\Todo{Clarify the reason why this happens 
+$\gDM = {(246~\gev)}/{\lambda}$\Todo{Clarify the reason why this happens 
 	in Madgraph through explicit Lagrangian terms?}.
 
 The initial value of the new physics scale $\lambda$ chosen 
-for the sample generation is 3 TeV; this does not affect the signal kinematics, 
+for the sample generation is 3~\tev; this does not affect the signal kinematics, 
 and the cross-section of the samples can be rescaled according to the 
 $\lambda^3$ dependence when deriving the constraints on this scale. 
-However, more care should be given when rescaling Higgs+MET operators
+However, more care should be given when rescaling Higgs+\MET operators
 of higher dimensions, as different diagrams have a different $\lambda$  dependence. 
 \Todo{Include study of rescaling for dimension-8 operators by N. Whallon in dimension-8 section.}
 %From Andy
-%– Lambda=3 TeV. Essentially this is an arbitrary choice for most EFTs, 
+%– Lambda=3~\tev. Essentially this is an arbitrary choice for most EFTs, 
 %however it does affect the mono-H analysis as some of their models 
 %have non-trivial scaling with Λ. More care should be given to the choice for mono-H. 
 
@@ -113,15 +113,15 @@ The DM mass values for the benchmark points to be simulated are chosen to
 span a sufficient Dark Matter range leading to different kinematics, 
 that is within the LHC sensitivity for early searches and that is consistent across 
 the various signatures and EFT operators. We therefore start the mass scan
-at \mdm=1 GeV, where collider experiments are complementary to direct and indirect detection
-%TODO: we could kill the 1 GeV as the kinematics does not change from 10
-and choose the last point corresponding to a DM mass of 1 TeV. 
+at \mdm=1~\gev, where collider experiments are complementary to direct and indirect detection
+%TODO: we could kill the 1~\gev as the kinematics does not change from 10
+and choose the last point corresponding to a DM mass of 1~\tev. 
 We recommend a scan in seven mass points, namely:
 $$
-\mdm = { 1, 10, 50, 100, 200, 400, 800, 1300 } GeV. 	
+\mdm = { 1, 10, 50, 100, 200, 400, 800, 1300 } \gev. 	
 $$
 
-A set of kinematic distributions from the Higgs+MET signature where the Higgs decays 
+A set of kinematic distributions from the Higgs+\MET signature where the Higgs decays 
 into two $b-$quarks is shown in Fig.~\ref{eq:Lc1c2}, for points similar to those of the grid scan proposed. 
   
  \begin{figure}[hbpt!]
@@ -164,17 +164,17 @@ into two $b-$quarks is shown in Fig.~\ref{eq:Lc1c2}, for points similar to those
 The dimension-7 benchmark models  contain the $SU(2)_L \times U(1)_Y$ gauge-invariant couplings between 
 DM fields and the kinetic terms of the EW bosons. The CP-conserving scalar couplings of this type can be written as
 \begin{equation} \label{eq:Lc1c2}
-\frac{c_1}{\Lambda_S^3} \, \bar \chi \chi \, B_{\mu \nu} B^{\mu \nu }  + \frac{c_2}{\Lambda_S^3} \, \bar \chi \chi \, W_{\mu \nu}^i W^{i, \mu \nu }  \,.
+\frac{c_1}{\Lambda_S^3} \, \bar \chiDM \chiDM \, B_{\mu \nu} B^{\mu \nu }  + \frac{c_2}{\Lambda_S^3} \, \bar \chiDM \chiDM \, W_{\mu \nu}^i W^{i, \mu \nu }  \,.
 \end{equation}
 Here $B_{\mu \nu} = \partial_\mu B_\nu - \partial_\nu B_\mu$ and $W_{\mu \nu}^i =  \partial_\mu W_\nu^i - \partial_\nu W_\mu^i + g_2 \hspace{0.25mm} \epsilon^{ijk}  \hspace{0.25mm}  W_\mu^j \hspace{0.25mm} W_\mu^k$ are the $U(1)_Y$ and $SU(2)_L$ field strength tensor, respectively, and  $g_2$ denotes the weak coupling constant. In the case of the pseudoscalar couplings, one has instead
 \begin{equation} \label{eq:Lc3c4}
-\frac{c_1}{\Lambda_P^3} \, \bar \chi \gamma_5 \chi \, B_{\mu \nu} \tilde B^{\mu \nu }  + \frac{c_2}{\Lambda_P^3} \, \bar \chi \gamma_5 \chi \, W_{\mu \nu}^i \tilde W^{i, \mu \nu }  \,,
+\frac{c_1}{\Lambda_P^3} \, \bar \chiDM \gamma_5 \chiDM \, B_{\mu \nu} \tilde B^{\mu \nu }  + \frac{c_2}{\Lambda_P^3} \, \bar \chiDM \gamma_5 \chiDM \, W_{\mu \nu}^i \tilde W^{i, \mu \nu }  \,,
 \end{equation}
-where $\tilde B_{\mu \nu} = 1/2 \hspace{0.5mm} \epsilon_{\mu \nu  \lambda \rho}  \hspace{0.25mm}  B^{\lambda \rho}$ and $\tilde W_{\mu \nu}^i = 1/2 \hspace{0.5mm} \epsilon_{\mu \nu  \lambda \rho}  \hspace{0.25mm}  W^{i, \lambda \rho}$ are the dual  field strength tensors. In addition to the CP-conserving interactions (\ref{eq:Lc1c2}) and (\ref{eq:Lc3c4}), there are also four CP-violating couplings that are obtained from the above operators by the replacement $\bar \chi \chi \leftrightarrow \bar \chi \gamma_5 \chi$.
+where $\tilde B_{\mu \nu} = 1/2 \hspace{0.5mm} \epsilon_{\mu \nu  \lambda \rho}  \hspace{0.25mm}  B^{\lambda \rho}$ and $\tilde W_{\mu \nu}^i = 1/2 \hspace{0.5mm} \epsilon_{\mu \nu  \lambda \rho}  \hspace{0.25mm}  W^{i, \lambda \rho}$ are the dual  field strength tensors. In addition to the CP-conserving interactions (\ref{eq:Lc1c2}) and (\ref{eq:Lc3c4}), there are also four CP-violating couplings that are obtained from the above operators by the replacement $\bar \chiDM \chiDM \leftrightarrow \bar \chiDM \gamma_5 \chiDM$.
 
-The effective interactions introduced in (\ref{eq:Lc1c2}) and  (\ref{eq:Lc3c4}) appear  in models of Rayleigh DM~\cite{Weiner:2012cb}. Ultraviolet completions where the operators are generated through loops of states charged under $U(1)_Y$ and/or $SU(2)_L$  have been proposed in \cite{Weiner:2012gm} and their LHC signatures have been studied in \cite{Liu:2013gba}. If these new charged particles  are  light, the high-$p_T$ gauge bosons that participate in  the MET processes considered here are able to resolve the substructure of the loops. This generically suppresses the cross sections compared to the EFT predictions~\cite{Haisch:2012kf}, and thus will weaken the bounds on the interaction strengths of  DM and the EW gauge bosons  to some extent.  Furthermore, the light charged mediators may be produced  on-shell in $pp$ collisions, rendering direct LHC searches potentially more restrictive than MET searches. Making the above statements precise would require further studies beyond the timescale of this forum.
+The effective interactions introduced in (\ref{eq:Lc1c2}) and  (\ref{eq:Lc3c4}) appear  in models of Rayleigh DM~\cite{Weiner:2012cb}. Ultraviolet completions where the operators are generated through loops of states charged under $U(1)_Y$ and/or $SU(2)_L$  have been proposed in \cite{Weiner:2012gm} and their LHC signatures have been studied in \cite{Liu:2013gba}. If these new charged particles  are  light, the high-$p_T$ gauge bosons that participate in  the \MET processes considered here are able to resolve the substructure of the loops. This generically suppresses the cross sections compared to the EFT predictions~\cite{Haisch:2012kf}, and thus will weaken the bounds on the interaction strengths of  DM and the EW gauge bosons  to some extent.  Furthermore, the light charged mediators may be produced  on-shell in $pp$ collisions, rendering direct LHC searches potentially more restrictive than \MET searches. Making the above statements precise would require further studies beyond the timescale of this forum.
 
-Since for $\Lambda_S = \Lambda_P$ the effective interactions (\ref{eq:Lc1c2}) and (\ref{eq:Lc3c4}) predict essentially the same value of the mono-photon, mono-$Z$ and mono-$W$ cross section \cite{Carpenter:2012rg,Crivellin:2015wva}, we consider below only the former couplings. We emphasize however that measurements of the jet-jet azimuthal angle difference in  MET$+ 2 j$ events may be used to disentangle whether DM couples more strongly to the combination $B_{\mu \nu} B^{\mu \nu}$ ($W_{\mu \nu}^i W^{i, \mu \nu }$) or the product $B_{\mu \nu} \tilde B^{\mu \nu}$ ($W_{\mu \nu}^i \tilde W^{i, \mu \nu }$) of field strength tensors \cite{Cotta:2012nj,Crivellin:2015wva}.
+Since for $\Lambda_S = \Lambda_P$ the effective interactions (\ref{eq:Lc1c2}) and (\ref{eq:Lc3c4}) predict essentially the same value of the mono-photon, mono-$Z$ and mono-$W$ cross section \cite{Carpenter:2012rg,Crivellin:2015wva}, we consider below only the former couplings. We emphasize however that measurements of the jet-jet azimuthal angle difference in  \MET$+ 2 j$ events may be used to disentangle whether DM couples more strongly to the combination $B_{\mu \nu} B^{\mu \nu}$ ($W_{\mu \nu}^i W^{i, \mu \nu }$) or the product $B_{\mu \nu} \tilde B^{\mu \nu}$ ($W_{\mu \nu}^i \tilde W^{i, \mu \nu }$) of field strength tensors \cite{Cotta:2012nj,Crivellin:2015wva}.
 
 After EW symmetry breaking the interactions (\ref{eq:Lc1c2}) induce direct couplings between pairs of DM particles and  gauge bosons.  The corresponding Feynman rule reads
 \begin{equation}  \label{eq:feynman}
@@ -191,7 +191,7 @@ g_{WW} & = c_2 \,,
 \end{equation}
 with $s_w$ ($c_w$) the sine (cosine) of the weak mixing angle. Note that our coefficients $c_1$ and $c_2$ are identical to the coefficients $C_B$ and $C_W$ used in \cite{Crivellin:2015wva}, while they are related via $k_1 = \frac{1}{{c_w}^2} c_1$ and $k_2 = \frac{1}{{s_w}^2} c_2$ to the coefficients $k_1$ and $k_2$ introduced in \cite{Carpenter:2012rg}.
 
-The coefficients $c_1$ and $c_2$ appearing in (\ref{eq:gViVj}) determine the relative importance of each of the MET channels and their correlations. For example, one observes that:
+The coefficients $c_1$ and $c_2$ appearing in (\ref{eq:gViVj}) determine the relative importance of each of the \MET channels and their correlations. For example, one observes that:
 \begin{itemize}
  \item Only $c_2$ enters the coupling between DM and $W$ bosons, meaning that only models with $c_2 \neq 0$ predict a mono-$W$ signal;
  \item If $c_1 = c_2$ the mono-photon (mono-$Z$) signal does not receive contributions from diagrams involving $Z$ (photon) exchange;
@@ -206,8 +206,8 @@ As stated above and shown in Ref.~\cite{Nelson:2013pqa},
 the kinematic distributions for dimension-7 scalar and pseudoscalar operators
 only shows small differences. This has been verified from a generator-level study:
 the signal acceptance after a simplified analysis selection 
-(MET$>$350 GeV, leading jet $p_T > $ 40 GeV, minimum azimuthal difference between
-either of the two jets and the MET direction $>$ 0.4) is roughly 70\% for both. 
+(\MET$>$350~\gev, leading jet $p_T > $ 40~\gev, minimum azimuthal difference between
+either of the two jets and the \MET direction $>$ 0.4) is roughly 70\% for both. 
 We therefore only suggest to generate one of the two models. 
 Todo{When we have the cross-sections for both, we can recommend the one with the highest cross-section.}
 
@@ -215,7 +215,7 @@ Todo{When we have the cross-sections for both, we can recommend the one with the
 %\begin{figure}
 %    \includegraphics[width=0.6\textwidth]{figures/llug}
 %    \caption{Comparison of the missing transverse momentum for the scalar and pseudoscalar
-%    operators with direct interaction between DM and photon, in the photon+MET final state}
+%    operators with direct interaction between DM and photon, in the photon+\MET final state}
 %    \label{fig:EW_EFT5_gamma_MET}
 %\end{figure}
 
@@ -228,7 +228,7 @@ mass points considered.
 
 \begin{figure}[h!]
   \centering
-%  \subfloat[Missing transverse momentum distribution for the photon+MET final state.\label{fig:EFTD7_EW_gamma_MET}]{%
+%  \subfloat[Missing transverse momentum distribution for the photon+\MET final state.\label{fig:EFTD7_EW_gamma_MET}]{%
 %      \includegraphics[width=0.45\textwidth]{figures/gull}
 %    }
 %    \hfill
@@ -239,7 +239,7 @@ mass points considered.
   \subfloat[Acceptance.\label{fig:EFTD7_EW_Z_acc}]{%
   	\includegraphics[width=0.7\textwidth]{figures/EW/monoZhad_SP/accS}
   }
-    \caption{MET distribution and acceptance for the dimension-7 model with a hadronically decaying Z in the final state,
+    \caption{\MET distribution and acceptance for the dimension-7 model with a hadronically decaying Z in the final state,
     for the scalar and pseudoscalar operators representing direct interactions between DM and bosons.}
     \label{fig:EFTD7_EW_kinematics}
 \end{figure}
@@ -256,14 +256,14 @@ and references therein.
 Although with lower priority with respect to the operators above, 
 a representative dimension-8 operators can be chosen as benchmark, with the form:
  
-$$\frac{1}{\Lambda^4} \bar{\chi} \gamma^{\mu} \chi B_{\mu \nu} H^{\dagger} D^{\nu} H$$
+$$\frac{1}{\Lambda^4} \bar{\chiDM} \gamma^{\mu} \chiDM B_{\mu \nu} H^{\dagger} D^{\nu} H$$
 
 In this case, the new physics scale is $\Lambda$ is connected with the coupling
-of the DM as $y_{\chi} = \frac{1}{\Lambda^{4}}$.Todo{Is more detail needed here?}
+of the DM as $y_{\chiDM} = \frac{1}{\Lambda^{4}}$.Todo{Is more detail needed here?}
 An advantage of this operator is that it includes all signatures with EW bosons,
 allowing to assess the relative sensitivity of the various channels with the same model.  
 The kinematics for this operator is different with respect to other operators,
-leading to a harder MET spectrum, 
+leading to a harder \MET spectrum, 
 as illustrated by comparing the leading $b-$jet distribution for the dimension 5 operator
 to the dimension 8 operator. 
   
@@ -323,8 +323,8 @@ It is important to remember that the operators described in
 this section may present problems in terms of the validity of the contact interaction
 approach for the energy scales reached at the LHC. 
 
-As outlined in~\cite{Berlin:2014cfa}, designing very high MET search signal regions
-that are exclusively motivated by the hard MET spectra of the dimension 7 and 8 operators
+As outlined in~\cite{Berlin:2014cfa}, designing very high \MET search signal regions
+that are exclusively motivated by the hard \MET spectra of the dimension 7 and 8 operators
 will mean that the momentum transfer in the selected events is larger. This in turn
 means that processes at that energy scale (mediators, particles exchanged in loops)
 are accessible, and a simple contact interaction will not be able to correctly

@@ -3,7 +3,7 @@ Models of bottom-flavored Dark Matter have been proposed in Refs.~\cite{Lin:2013
 \Todo{Add Feynman diagrams.}
 
 The model contains a Dirac fermion transforming as a flavor triplet. The third component of the triplet $\chi_b$ comprises the cosmological DM. A flavor singlet, color triplet scalar field $\Phi$ mediates the interactions between the DM and the Standard Model quarks.The model is similar to the MSSM with a light bottom squark and neutralino, and is thus a flavor-specific
-example of a $t$-channel model. 
+example of a \tchannel model. 
 
 The Lagrangian considered is given by
 \begin{equation}
@@ -16,13 +16,13 @@ The Lagrangian considered is given by
 
 Within the framework of minimal flavor violation, the other fermions in the flavor triplet can be made sufficiently heavy and weakly-coupled that they can be neglected in the analysis.
 
-%Although the model is motivated by the GC excess, which prefers a DM mass of 30-70 GeV, the DM mass parameter of the model is a free parameter and all values $ m_b < m_{\chi_b} < m_\Phi -m_b$ should be considered.\Todo{Off-shell?}
+%Although the model is motivated by the GC excess, which prefers a DM mass of 30-70~\gev, the DM mass parameter of the model is a free parameter and all values $ m_b < m_{\chi_b} < MPhi -m_b$ should be considered.\Todo{Off-shell?}
 
 An annihilation cross section consistent with the gamma-ray excess can be achieved for perturbative values of the couplings while being consistent with LHC constraints on the colored mediator. For parameters capable of explaining the anomalous gamma-ray signal in terms of Dark Matter coupling preferentially to $b-$ quarks, the model predicts a direct detection cross section that is consistent with current constraints, but within the near future reach of Direct Detection experiments. The model will be decisively tested with data from the upcoming high-energy run at the LHC. 
 
 \subsection{Parameter scan}
 
-The nature of the model doesn't allow to derive a simple scaling behaviour which would allow us reduce the number of points to be simulated. This is because of the interference of diagrams with QCD production of the mediator (which scale as $g^2_s$) with diagrams that are proportional to the coupling $g$.~\Todo{1. Does the kinematic always change with mDM and coupling, in all cases? This model is close to a $t-$channel colored scalar mediator so the conclusions should be similar. 2. Is minimal width assumed for this model?}
+The nature of the model doesn't allow to derive a simple scaling behaviour which would allow us reduce the number of points to be simulated. This is because of the interference of diagrams with QCD production of the mediator (which scale as $g^2_s$) with diagrams that are proportional to the coupling $g$.~\Todo{1. Does the kinematic always change with \mDM and coupling, in all cases? This model is close to a \tchannel colored scalar mediator so the conclusions should be similar. 2. Is minimal width assumed for this model?}
 
 The coupling can be chosen as a discrete set of values $g=0.5,1,2,3...$ for each mass point, which would allow a bound on $g$ to be determined.  The coupling could also be chosen to fullfill constraints from the relic density (see Appendix~\ref{app:Relic_Density_bFDM}, with corresponding cross sections in Tables~\ref{tab:g_relic_13T} onwards). A sizable, $O(1)$ coupling benchmark such as $g=1$ should be considered for each mass point since this would be a distinctive feature of this benchmark from SUSY models with sbottom squarks.
 
@@ -50,21 +50,20 @@ The coupling can be chosen as a discrete set of values $g=0.5,1,2,3...$ for each
       \centering 
       \includegraphics[scale=0.32]{figures/bFDM/bfdm_35_500/Njets.eps}
     \end{minipage}
-    \caption{MET (left) and jet multiplicity (right) for $m_\textrm{DM}=35$~GeV and $m_\Phi=500$~GeV for couplings corresponding to relic density weights and also $g=1,2$ \label{fig:g_comp}}
+    \caption{MET (left) and jet multiplicity (right) for $\mDM=35$~GeV and $MPhi=500$~GeV for couplings corresponding to relic density weights and also $g=1,2$ \label{fig:g_comp}}
 \end{figure}
 
 In light of these considerations, we recommend to produce the following benchmark points in the parameter space for this model:~\Todo{Describe the coupling scan?}
 
 \begin{itemize}
-  \item $m_\textrm{DM}=10-500$ GeV with a binning of 50 GeV for $m_\textrm{DM}<100$ and  100 GeV otherwise; 
-  \item $m_\Phi=10-1300$ with a binning of 100 GeV;
-  \item $m_\Phi > m_{DM} + m_b$, since the cross-sections in the off-shell region are too small to be sensitive with early LHC data;
+  \item $\mDM=10-500$ GeV with a binning of 50 GeV for $\mDM<100$ and  100 GeV otherwise; 
+  \item $MPhi=10-1300$ with a binning of 100 GeV;
+  \item $MPhi > \mDM + m_b$, since the cross-sections in the off-shell region are too small to be sensitive with early LHC data;
 \end{itemize}
 
 Cross-sections for unit couplings can be found in Appendix~\ref{app:xsecs_bFDM}.
-The increase in the center of mass energy from 8 to 13 TeV leads to a cross-section increase that is a function of $m_\Phi$, 
-with a smaller dependency for $m_{\rm DM}$. Therefore, the sensitivity to this model will increase in early 
-13~TeV data compared to 8 TeV searches~\cite{Aad:2014vea}.
+The increase in the center of mass energy from 8 to 13 TeV leads to a cross-section increase that is a function of $MPhi$, 
+with a smaller dependency for \mDM. Therefore, the sensitivity to this model will increase in early 13~TeV data compared to 8 TeV searches~\cite{Aad:2014vea}.
 
 \subsection{Model implementation}
 

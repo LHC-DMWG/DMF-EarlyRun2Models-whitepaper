@@ -1,1 +1,198 @@
-A prescription for determining the theoretical uncertainties (PDF and scale) from the POWHEG weights is being documented by the POWHEG authors.
+% word count contributed by Emanuele Re
+
+A prescription for determining the theoretical uncertainties (PDF and scale) from the \powheg weights is being documented by the \powheg authors.
+
+Here, we document some specific settings needed to run the \powheg 
+generation for the Dark Matter models: 
+
+% \begin{itemize} 
+
+% \item \powheg can handle the generation of events (be it at LO or NLO) 
+% in the 2 different modes explained in the following. The second one 
+% is the recommended one. The relevant keywords in the input card are 
+% bornsuppfact and bornktmin. 
+
+% \begin{enumerate} 
+% \item unweighted events: keywords 
+
+% bornsuppfact: negative or absent 
+% bornktmin <PT> 
+
+% This corresponds to run the program in the more straightforward way, 
+% but most likely it is not the more convenient choice, as will be 
+% explained below. \powheg will generate unweighted events using a sharp 
+% lower cut (with value PT) on the leading-jet pt. Since this is a 
+% generation cut, the user should make sure that the value used for 
+% bornktmin is lower than the actual analysis cut to be eventually 
+% used. It is good practice to use as a value in the input card a 
+% transverse momentum 10-20 % smaller than the final analysis cut, and 
+% check that the final result is independent, by exploring an even 
+% smaller value of bornktmin. The drawback of this running mode is that 
+% it's difficult to populate well and in a single run both the low-pt 
+% region as well as the high-pt tail. 
+
+% \item weighted events: keywords 
+
+% bornsuppfact <PTS> 
+% bornktmin <PT> 
+
+% \powheg will now produce weighted events, thereby allowing to generate 
+% a single sample that provides sufficient statistics in all signal 
+% regions. Events are still generated with a sharp lower cut set by 
+% bornktmin, but the bornsuppfact parameter is used to set the event 
+% suppression factor according to 
+
+% --> keep eq A1 as is 
+
+% In this way, the events at, for instance, low Etmiss, are suppressed 
+% but receive an higher weight, which ensures at the same time higher 
+% statistics at high Etmiss. We recommend to set bornsuppfact to 1000. 
+
+% The bornktmin parameter allows to suppress the low Etmiss region 
+% even further by starting the generation at a certain value of kT also 
+% in this runnning mode. It is recommended to set this parameter to half 
+% the lower analysis Etmiss cut, for the event selection used in the 
+% CMS/ATLAS monojet analyses for instance the proposed value for 
+% bornktmin is 150. However, this parameter should be set keeping in 
+% mind the event selection of all the analyses that will use these 
+% signal samples and hence a threshold lower than 150 may be required. 
+
+% \end{enumerate} 
+
+% ======================= 
+
+% --> 
+% On the usage of fixed or running width. It is my opinion that one 
+% should use fixed widths. Although clearly there are limitations, I 
+% think this goes into the direction of making all as simple and 
+% transparent as possible. Moreover, all the discussions in the last 
+% months aw well as the large majority of runs were done with fixed 
+% widths. Since there was some interest over the last couple of weeks, 
+% here is my suggestion for the \powheg section. 
+% <-- 
+
+% \item Remove the runningwidth keyword, or set it to 0, which is the 
+% default value. 
+
+% Although running with fixed widths is the recommended option, a 
+% running width for the propagator of the \schannel mediator can be 
+% selected by setting runningwidth to 1. In this case the denominator 
+% of the mediator's propagator 
+
+% Q^2 - M^2 + complexi M \Gamma 
+
+% is replaced by 
+
+% Q^2 - M^2 + complexi Q^2 \Gamma / M 
+
+% where Q is the virtuality of the mediator, and M and \Gamma are its mass 
+% and width respectively. 
+
+% ======================= 
+
+% --> 
+% at line 1538-1539 and 1542-1543: 
+% <-- 
+
+% "In order to increase speed, set foldsci and foldy to 2 and keep 
+% foldphi at 1." 
+
+% should be removed, and, at line 1542-1543, I'd change from 
+
+% "Allow negative weights for the DMV model by setting withnegweights 
+% to 1." 
+
+% to 
+
+% "When NLO corrections are included (as for instance in DMV), 
+% negative-weighted event could happen and should be kept in the event 
+% sample, hence withnegweights should be set to 1. If needed, their 
+% fraction can be decreased by setting foldsci and foldy to bigger value 
+% (2 for instance). foldphi can be kept to 1." 
+
+% ================= 
+
+% --> 
+% on the last point on uncertainties, here is my suggested text. 
+% <-- 
+
+% A comprehensive and careful assessment of theoretical uncertainties 
+% plays a much more important role for the background estimations 
+% (especially when their evaluation is non-entirely data-driven) than it 
+% does for signal simulations. Nevertheless, using \powheg it is possible 
+% to study scale and PDF errors for the DM signal too. A fast 
+% reweighting machinery is available in {\sc POWHEG-BOX}, that allows to add, 
+% after each event, new weights according to different scale or PDF 
+% choices, without the need to regenerate all the events from scratch. 
+
+% To enable this possibilty, the variable storeinfo_rwgt should be set 
+% to 1 in the \powheg input file when the events are generated for the 
+% first time (notice that even if the variable is not present, by 
+% default it is set to one). After each event, a line starting with 
+
+% #rwgt 
+
+% is appended, containing the necessary information to generate extra 
+% weights. In order to obtain new weights, corresponding to different 
+% pdf’s or scale choice, after an event file has been generated, a line 
+
+% compute_rwgt 1 
+
+% should be added in the input file, and the parameters that need to be 
+% changed have to be changed too. For instance, renscfact and facscfact 
+% allow to study scale variations on the renormalisation and 
+% factorisation scales around a central value. By running the program 
+% again, a new event file will be generated, named 
+% <OriginalName>-rwgt.lhe, with one more line at the end of each event, 
+% of the form 
+
+% #new weight,renfact,facfact,pdf1,pdf2 
+
+% followed by five numbers and a character string. The first of these 
+% numbers is the weight of that event with the new parameters chosen. By 
+% running in sequence the program in the reweighting mode, several 
+% weights can be added on the same file. Two remarks are in order: 
+
+% \begin{itemize} 
+
+% \item the file with new weights is always named 
+% <OriginalName>-rwgt.lhe, hence care has to be taken to save it as 
+% <OriginalName>.lhe before each iteration of the reweighting procedure. 
+
+% \item due to the complexity of the environment where the program is 
+% likely to be run, it is strongly suggested as a self-consistency check 
+% that the first reweighting is done keeping the initial parameters. If 
+% the new weights are not exactly the same as the original ones, then 
+% some inconsistency must have happened, or some file was probably 
+% corrupted. 
+
+% \end{itemize} 
+
+% It is possible to also have weights written in the v3 Les Houches format. 
+% To do so, in the original run, at least the token 
+
+% lhrwgt_id ’ID’ 
+
+% must be present. The reweighting procedure is the same as described 
+% above, but now each new run can be tagged by using a different value 
+% for the lhrwgt_id keyword. After each event, the following lines will 
+% appear: 
+
+% <rwgt> 
+% <wgt id=’ID’> 
+% <wgt id=’ID1’> 
+% </rwgt> 
+
+% A more detailed explanation of what went into the computation of every 
+% single weight can be included in the <header> section of the event 
+% file by adding/changing the line 
+
+% lhrwgt_descr ’some info’ 
+
+% in the input card, before each "reweighting" run is performed. Other 
+% useful keywords to group together different weights are 
+% lhrwgt_group_name and lhrwgt_group_combine. 
+
+% More detailed information can be obtained by inspecting the document in 
+% {\sc /Docs/V2-paper.pdf} under the common {\sc POWHEG-BOX-V2} directory. 
+

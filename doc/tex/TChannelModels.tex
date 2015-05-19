@@ -12,11 +12,11 @@
 
 The preceding sections address models with a Dirac fermion coupled to
 the SM through exchange of a neutral spin-0 or spin-1 in an
-$s$-channel process.  A $t$-channel process may couple the SM and DM
+\schannel process.  A \tchannel process may couple the SM and DM
 directly, leading to a different phenomenology.  Here, we examine a
-model where $\chi$ is a Standard Model (SM) singlet, a Dirac
+model where $\chiDM$ is a Standard Model (SM) singlet, a Dirac
 fermion\footnote{Though outside the scope of this report, a colored
-  vector $t$-channel mediator with vector dark matter may also be
+  vector \tchannel mediator with vector dark matter may also be
   worthy of study. The UV completion of such models would look like an
   RS KK gluon,for example. In these case, it is expcted that the most
   interesting mediator masses will be of order several TeV.}; the
@@ -27,18 +27,18 @@ Refs.~\cite{An:2013xka,Papucci:2014iwa}.
 Following the example of Ref.~\cite{Papucci:2014iwa}, the interaction Lagrangian is written as
 
 \begin{equation}
-\mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2,3} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chi
+\mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2,3} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chiDM
 \end{equation}
 \Todo{Note: \cite{Papucci:2014iwa} uses only i = 1,2, but I think it's fine to extend this to 3 here.}
 
-where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which (unlike the $s$-channel mediators) must be heavier than $\chi$. These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014iwa, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
+where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which (unlike the \schannel mediators) must be heavier than $\chiDM$. These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014iwa, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
 
 \vspace{5mm}
 
-As for the $s$-channel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour; the same logic also applies to the couplings $g$. The available parameters are then
+As for the \schannel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour; the same logic also applies to the couplings $g$. The available parameters are then
 
 \begin{equation}
-\{ m_{\chi},\, M_{\phi},\, g\}.
+\{ \mDM,\, \Mphi,\, g\}.
 \end{equation}
 
 \vspace{5mm}
@@ -46,7 +46,7 @@ As for the $s$-channel models, we assume Minimal Flavour Violation (MFV), settin
 In practice, the third mediator mass and coupling could be separated from the other two, if higher order corrections to the MFV prediction arise due to the large top Yukawa coupling --- a common variation is then to define this split between the first two generations and the third, so the parameters are extended to
 
 \begin{equation}
-\{ m_{\chi},\, M_{\phi_{1,2}},\,M_{\phi_3},\, g_{1,2},\, g_3\}.
+\{ \mDM,\, M_{\phi_{1,2}},\,M_{\phi_3},\, g_{1,2},\, g_3\}.
 \end{equation}
 
 For the purposes of the rest of this section, we will assume the universal variant $M_{\phi_{1,2}} = M_{\phi_3}$, $g_{1,2} = g_3$.
@@ -57,18 +57,18 @@ The minimal width of each mediator is expressed, using the example of decay to a
 
 \begin{equation}
 \begin{split}
-\Gamma (\phi_i \rightarrow \bar{u}_i \chi) &= \frac{g_i^2}{16 \pi M_{\phi_i}^3}(M_{\phi_i}^2 - m_{u_i}^2 - m_{\chi}^2) 		\\
+\Gamma (\phi_i \rightarrow \bar{u}_i \chiDM) &= \frac{g_i^2}{16 \pi M_{\phi_i}^3}(M_{\phi_i}^2 - m_{u_i}^2 - \mDM^2) 		\\
 					   & \times
-%\sqrt{M_{\phi_i}^4 + m_{u_i}^4 + m_{\chi}^4 - 2M_{\phi_i}^2m_{u_i}^2 - 2M_{\phi_i}^2m_{\chi}^2 - 2m_{u_i}^2m_{\chi}^2} \, ,
-\sqrt{(M_{\phi_i}^2 - (m_{u_i} + m_{\chi})^2)(M_{\phi_i}^2 - (m_{u_i}-m_{\chi})^2)} \, ,
+%\sqrt{M_{\phi_i}^4 + m_{u_i}^4 + \mDM^4 - 2M_{\phi_i}^2m_{u_i}^2 - 2M_{\phi_i}^2\mDM^2 - 2m_{u_i}^2\mDM^2} \, ,
+\sqrt{(M_{\phi_i}^2 - (m_{u_i} + \mDM)^2)(M_{\phi_i}^2 - (m_{u_i}-\mDM)^2)} \, ,
 \end{split}
 \end{equation}
 which reduces to 
 
 \begin{equation}
-\frac{g_i^2 M_{\phi_i}}{16 \pi} \left(1 - \frac{m_{\chi}^2}{M_{\phi_i}^2} \right)^2
+\frac{g_i^2 M_{\phi_i}}{16 \pi} \left(1 - \frac{\mDM^2}{M_{\phi_i}^2} \right)^2
 \end{equation}
-in the limit $M_{\phi_i}, m_{\chi} \gg m_{u_i}$.
+in the limit $M_{\phi_i}, \mDM \gg m_{u_i}$.
 
 \vspace{5mm}
 
@@ -79,20 +79,20 @@ fermion(s).   Thus, mono-jet production via $\phi^3_u$ is not possible at
 this order, while production through $\phi^3_d$ is suppressed by
 the $b$ parton PDF.
 This model can also give a signal in the di-jet +
-MET channel when, for example, the $\chi$ is exchanged in the
-$t$-channel and the resulting $\phi$ pair each decay to a jet +
-$\chi$. Fig.~\ref{fig:tchannelDijet} shows the leading order diagrams.
+MET channel when, for example, the $\chiDM$ is exchanged in the
+\tchannel and the resulting $\phi$ pair each decay to a jet +
+$\chiDM$. Fig.~\ref{fig:tchannelDijet} shows the leading order diagrams.
 Except for the $gg$ induced process, di-jet production
 through $\phi^3_u$ is not possible, and production through $\phi^3_d$ is
-again suppressed.   The diagram involving the t-channel exchange
-of $\chi$ is strongly dependent upon the Dirac fermion assumption.
+again suppressed.   The diagram involving the \tchannel exchange
+of $\chiDM$ is strongly dependent upon the Dirac fermion assumption.
 For a Majorana fermion, $q\bar q,\bar q\bar q,$ and $qq$ production
 would be possible with the latter having a pronounced enhancement
 at the LHC.
 
 
 This model is similar to the MSSM with only light squarks and
-a neutralino, except for two distinct points:  the $\chi$ is
+a neutralino, except for two distinct points:  the $\chiDM$ is
 a Dirac fermion and the coupling $g$ is not limited to be
 weak scale.
 In the MSSM, most of these processes are sub-dominant, even
@@ -130,8 +130,8 @@ should also test their sensitivity to them.
     \fmf{fermion}{i1,v1,o1}
     \fmf{wiggly,tension=0}{v1,o1}
     \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v1,v2}
-    \fmflabel{\Large ${\bar{\chi}}$}{o1}
-    \fmflabel{\Large ${\chi}$}{o2}
+    \fmflabel{\Large ${\bar{\chiDM}}$}{o1}
+    \fmflabel{\Large ${\chiDM}$}{o2}
     \fmfdot{v1,v2,visr}
     \fmf{gluon,tension=0}{visr,isr}
     \fmflabel{\Large ${g}$}{isr}
@@ -150,9 +150,9 @@ should also test their sensitivity to them.
     \fmf{wiggly}{v2,o2}
     \fmflabel{\Large ${q}$}{i2}
     \fmflabel{\Large ${g}$}{i1}
-    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $\chiDM$}{o3}
     \fmflabel{\Large $q$}{o1}
-    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmflabel{\Large $\bar{\chiDM}$}{o2}
     \fmfdot{v1,v2,v3}
   \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTmonojetB]
@@ -169,9 +169,9 @@ should also test their sensitivity to them.
     \fmf{wiggly}{v3,o2}
     \fmflabel{\Large ${q}$}{i2}
     \fmflabel{\Large ${g}$}{i1}
-    \fmflabel{\Large $\chi$}{o1}
+    \fmflabel{\Large $\chiDM$}{o1}
     \fmflabel{\Large $q$}{o3}
-    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmflabel{\Large $\bar{\chiDM}$}{o2}
     \fmfdot{v1,v2,v3}
   \end{feynmandiagram}\quad
   \begin{feynmandiagram}[modelTmonojetD]
@@ -188,9 +188,9 @@ should also test their sensitivity to them.
     \fmf{wiggly}{v2,o3}
     \fmflabel{\Large ${q}$}{i2}
     \fmflabel{\Large ${g}$}{i1}
-    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $\chiDM$}{o3}
     \fmflabel{\Large $q$}{o2}
-    \fmflabel{\Large $\bar{\chi}$}{o1}
+    \fmflabel{\Large $\bar{\chiDM}$}{o1}
     \fmfdot{v1,v2,v3}
   \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTmonojetE]
@@ -205,12 +205,12 @@ should also test their sensitivity to them.
     \fmf{wiggly,tension=0}{v1,o1}
     \fmflabel{\Large ${q}$}{i2}
     \fmflabel{\Large ${\bar{q}}$}{i1}
-    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $\chiDM$}{o3}
     \fmflabel{\Large $g$}{o2}
-    \fmflabel{\Large $\bar{\chi}$}{o1}
+    \fmflabel{\Large $\bar{\chiDM}$}{o1}
     \fmfdot{v1,v2,v3}
   \end{feynmandiagram}
-\caption{Leading order mono-jet $t$-channel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelMonojet}
+\caption{Leading order mono-jet \tchannel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelMonojet}
 \end{figure}
 
 \begin{figure}
@@ -230,8 +230,8 @@ should also test their sensitivity to them.
     \fmf{wiggly,tension=0}{v3,o2}
     \fmflabel{\Large ${g}$}{i2}
     \fmflabel{\Large ${g}$}{i1}
-    \fmflabel{\Large $\chi$}{o4}
-    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmflabel{\Large $\chiDM$}{o4}
+    \fmflabel{\Large $\bar{\chiDM}$}{o2}
     \fmflabel{\Large $\bar{q}$}{o3}
     \fmflabel{\Large $q$}{o1}
     \fmfdot{v1,v2,v3,v4}
@@ -245,7 +245,7 @@ should also test their sensitivity to them.
     \fmf{scalar}{v1,v3}
     \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v4,v2}
     \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v1,v3}
-    \fmf{phantom,tension=0,label={$\chi$}}{v2,v1}
+    \fmf{phantom,tension=0,label={$\chiDM$}}{v2,v1}
     \fmf{fermion}{v2,v1}
     \fmf{wiggly,tension=0}{v2,v1}
     \fmf{fermion}{o3,v4,o4}
@@ -254,8 +254,8 @@ should also test their sensitivity to them.
     \fmf{wiggly,tension=0}{v3,o2}
     \fmflabel{\Large ${\bar{q}}$}{i2}
     \fmflabel{\Large ${q}$}{i1}
-    \fmflabel{\Large $\chi$}{o4}
-    \fmflabel{\Large $\bar{\chi}$}{o2}
+    \fmflabel{\Large $\chiDM$}{o4}
+    \fmflabel{\Large $\bar{\chiDM}$}{o2}
     \fmflabel{\Large $\bar{q}$}{o3}
     \fmflabel{\Large $q$}{o1}
     \fmfdot{v1,v2,v3,v4}
@@ -275,9 +275,9 @@ should also test their sensitivity to them.
     \fmflabel{\Large ${q}$}{i2}
     \fmflabel{\Large ${g}$}{i1}
     \fmflabel{\Large $g$}{o4}
-    \fmflabel{\Large $\chi$}{o3}
+    \fmflabel{\Large $\chiDM$}{o3}
     \fmflabel{\Large $q$}{o2}
-    \fmflabel{\Large $\bar{\chi}$}{o1}
+    \fmflabel{\Large $\bar{\chiDM}$}{o1}
     \fmfdot{v1,v2,v3,v4}
   \end{feynmandiagram}\quad
   \begin{feynmandiagram}[modelTDijetD]
@@ -296,8 +296,8 @@ should also test their sensitivity to them.
     \fmflabel{\Large $q$}{i1}
     \fmflabel{\Large ${g}$}{o4}
     \fmflabel{\Large ${g}$}{o1}
-    \fmflabel{\Large $\chi$}{o2}
-    \fmflabel{\Large $\bar{\chi}$}{o3}
+    \fmflabel{\Large $\chiDM$}{o2}
+    \fmflabel{\Large $\bar{\chiDM}$}{o3}
     \fmfdot{v1,v2,v3,v4}
   \end{feynmandiagram}\\\vspace{3\baselineskip}
   \begin{feynmandiagram}[modelTDijetE]
@@ -314,11 +314,11 @@ should also test their sensitivity to them.
     \fmflabel{\Large $q$}{i1}
     \fmflabel{\Large ${\bar{q}}$}{o3}
     \fmflabel{\Large ${q}$}{o2}
-    \fmflabel{\Large $\chi$}{o1}
-    \fmflabel{\Large $\bar{\chi}$}{o4}
+    \fmflabel{\Large $\chiDM$}{o1}
+    \fmflabel{\Large $\bar{\chiDM}$}{o4}
     \fmfdot{v1,v2,v3,v4}
   \end{feynmandiagram}
-\caption{Leading order two-jet $t$-channel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelDijet}
+\caption{Leading order two-jet \tchannel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelDijet}
 \end{figure}
 
 \newthought{Parameter scans}
@@ -326,19 +326,19 @@ should also test their sensitivity to them.
 Ref.~\cite{Papucci:2014iwa} studies the parameter space and obtains
 bounds on this model from LHC Run 1 mono-jet and dijets+MET data.
 
-As in the $s$-channel models, scans should be performed over
-$m_{\chi}$ and $m_{\phi}$. The viable ranges of both parameters nearly
-coincide with the scan proposed for the $s$-channel; for simplicity we
-recommend adopting the $s$-channel mono-jet grid.
+As in the \schannel models, scans should be performed over
+$\mDM$ and $\Mphi$. The viable ranges of both parameters nearly
+coincide with the scan proposed for the \schannel; for simplicity we
+recommend adopting the \schannel mono-jet grid.
 
 The rates of the first three diagrams of
 Fig.~\ref{fig:tchannelMonojet} scale as one with the coupling $g$. In
 the heavy mediator limit, then, the kinematic distributions depend
 only indirectly on the coupling through the effect on the minimal
-mediator width. In contrast with the $s$-channel case, however, the
+mediator width. In contrast with the \schannel case, however, the
 bounds one obtains from X+MET searches depends strongly on the width
 of the mediator, as is visible in Figs.~5 and 6 of
-Ref.~\cite{Papucci:2014iwa}, except in the heavy mediator limit ($M_{\phi} \approx 2$\,TeV). A scan over the width was not available for this report; thus we recommend scanning a range of possible widths as discussed in a more-limited way for the $s$-channel mono-jet, spanning from the minimal width to a value approaching the particle limit (for example, $\Gamma \approx M_{\phi}/3$ in Ref.~\cite{Papucci:2014iwa}).
+Ref.~\cite{Papucci:2014iwa}, except in the heavy mediator limit ($\Mphi \approx 2$\,TeV). A scan over the width was not available for this report; thus we recommend scanning a range of possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal width to a value approaching the particle limit (for example, $\Gamma \approx \Mphi/3$ in Ref.~\cite{Papucci:2014iwa}).
 
 \newthought{Implementation}
 
