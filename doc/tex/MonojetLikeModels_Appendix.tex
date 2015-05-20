@@ -21,33 +21,124 @@ in the 2 different modes explained in the following. The second one
 is the recommended one. The relevant keywords in the input card are 
 \bornsuppfact and \bornktmin. 
 
-\begin{itemize} 
+\begin{enumerate}
+\item unweighted events: keywords
 
-\item \powheg can handle the generation of events (be it at LO or NLO) 
-in the 2 different modes explained in the following. The second one 
-is the recommended one. The relevant keywords in the input card are 
-bornsuppfact and bornktmin. 
+\bornsuppfact: negative or absent\\
+\bornktmin <PT>
 
-% \begin{itemize}
-\item The \powheg implementation allows to generate a single sample that provides sufficient statistics in all signal regions. %by optimizing the following two parameters:
-%\begin{itemize}
-\powheg generates weighted events and the \bornsuppfact parameter is used to set the event suppression factor according to
+This runs the program in the most straightforward way,
+but most likely it is not the more convenient choice, as will be
+explained below. \powheg will generate unweighted events using a sharp
+lower cut (with value \texttt{PT}) on the leading-jet \pT. Since this is a
+generation cut, the user should make sure that the value used for
+\bornktmin is lower than the actual analysis cut to be eventually
+used. It is good practice to use as a value in the input card a
+transverse momentum 10-20\% smaller than the final analysis cut, and
+check that the final result is independent, by exploring an even
+smaller value of \bornktmin. The drawback of this running mode is that
+it's difficult to populate well and in a single run both the low-\pT
+region as well as the high-pt tail.
+
+\item weighted events: keywords
+
+\bornsuppfact <PTS>\\
+\bornktmin <PT>
+
+\powheg will now produce weighted events, thereby allowing to generate
+a single sample that provides sufficient statistics in all signal
+regions. Events are still generated with a sharp lower cut set by
+\bornktmin, but the \bornsuppfact parameter is used to set the event
+suppression factor according to
+
 \begin{equation}
 F(\kT)=\frac{\kT^2}{\kT^2+\bornsuppfact^2} \;.
 \end{equation}
-In this way, the events at, for instance low \MET, are suppressed and receive higher event weights which ensures higher statistics at high \MET. We recommend to set \bornsuppfact to 1000 (\gev).
-\item The \bornktmin parameter allows to suppress the low \MET region even further by starting the generation at a certain value of \kT. It is recommended to set this parameter  to half the lower analysis \MET cut, for the event selection used in the CMS/ATLAS monojet analyses for instance the proposed value for \bornktmin is 150. However, this parameter should be set keeping in mind the event selection of all the analyses that will use these signal samples and hence a threshold lower than 150 may be required. 
-%\end{itemize}
 
-\item Set \runningwidth to 0.
+In this way, the events at, for instance, low \MET, are suppressed
+but receive an higher weight, which ensures at the same time higher
+statistics at high \MET. We recommend to set \bornsuppfact to 1000.
+
+The \bornktmin parameter allows to suppress the low \MET region
+even further by starting the generation at a certain value of \kT also
+in this runnning mode. It is recommended to set this parameter to half
+the lower analysis \MET cut, for the event selection used in the
+CMS/ATLAS monojet analyses for instance the proposed value for
+\bornktmin is 150.  However, this parameter should be set keeping in
+mind the event selection of all the analyses that will use these
+signal samples and hence a threshold lower than 150 may be required.
+
+\end{enumerate}
+
+\Todo{Emanuele:``On the usage of fixed or running width. It is my opinion that one
+should use fixed widths. Although clearly there are limitations, I
+think this goes into the direction of making all as simple and
+transparent as possible. Moreover, all the discussions in the last
+months aw well as the large majority of runs were done with fixed
+widths. Since there was some interest over the last couple of weeks,
+here is my suggestion for the powheg section.''}
+
+\begin{itemize}
+\item Remove the \runningwidth keyword, or set it to 0, which is the
+  default value. Running with fixed widths is the recommended
+  option. Although there are limitations, this is the more
+  straightforward, simple, and transparent option, and it was used for
+  Forum studies. 
+
+  While not recommended, the alternative, a running width for the
+  propagator of the s-channel mediator, can be selected by setting
+  runningwidth to 1. In this case the denominator of the mediator's
+  propagator
+\begin{equation*}
+  Q^2 - M^2 + \complexi\,M\,\Gamma
+\end{equation*}
+
+is replaced by
+
+\begin{equation*}
+  Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M}
+\end{equation*}
+
+where $Q$ is the virtuality of the mediator, and $M$ and $\Gamma$ are
+its mass and width respectively.
+
 \item Set \masslow and \masshigh to -1.
-\item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the \modelDMV model, respectively. In order to increase speed, set \foldsci and \foldy to 2 and keep \foldphi at 1. 
+\item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the \modelDMV model, respectively.
 \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 100000, 5, 100000, 5 for the \modelDMStloop model, respectively.
-\item Allow negative weights for the \modelDMV model by setting \withnegweights to 1.
+\item "When NLO corrections are included (as for instance in the
+  \modelDMV model), negative-weighted events could happen and should
+  be kept in the event sample, hence \withnegweights should be set to
+  1. If needed, their fraction can be decreased by setting \foldsci
+  and \foldy to bigger value (2 for instance). \foldphi can be kept to
+  1."
 \item Since the \modelDMStloop model is a leading order process, set \LOevents and \bornonly are set to 1 internally.
 \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
+
 \end{itemize}
-{\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
+
+%%% end of emanuele's edits
+
+% \begin{itemize} 
+
+% % \begin{itemize}
+% \item The \powheg implementation allows to generate a single sample that provides sufficient statistics in all signal regions. %by optimizing the following two parameters:
+% %\begin{itemize}
+% \powheg generates weighted events and the \bornsuppfact parameter is used to set the event suppression factor according to
+% \begin{equation}
+% F(\kT)=\frac{\kT^2}{\kT^2+\bornsuppfact^2} \;.
+% \end{equation}
+% In this way, the events at, for instance low \MET, are suppressed and receive higher event weights which ensures higher statistics at high \MET. We recommend to set \bornsuppfact to 1000 (\gev).
+% \item The \bornktmin parameter allows to suppress the low \MET region even further by starting the generation at a certain value of \kT. It is recommended to set this parameter  to half the lower analysis \MET cut, for the event selection used in the CMS/ATLAS monojet analyses for instance the proposed value for \bornktmin is 150. However, this parameter should be set keeping in mind the event selection of all the analyses that will use these signal samples and hence a threshold lower than 150 may be required. 
+% %\end{itemize}
+
+% \item Set \runningwidth to 0.
+% \item Set \masslow and \masshigh to -1.
+% \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the \modelDMV model, respectively. In order to increase speed, set \foldsci and \foldy to 2 and keep \foldphi at 1. 
+% \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 100000, 5, 100000, 5 for the \modelDMStloop model, respectively.
+% \item Allow negative weights for the \modelDMV model by setting \withnegweights to 1.
+% \item Since the \modelDMStloop model is a leading order process, set \LOevents and \bornonly are set to 1 internally.
+% \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
+% \end{itemize}
 
 
 \section{CKKW parton matching implementation}
@@ -183,7 +274,7 @@ In order to describe the signal kinematics correctly and save time in MC generat
 
 It is found that the 3- or more-parton emission cases are negligible in our intersted regions, but the 2-parton emission case has significant contributions. The 0- and 1-parton emissions are out of discussion since they give the baseline signature in this analysis. The impacts of 2- and 3-parton emissions are quantified in this section.
 
-Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requested in matching step with \texttt{Merging:nJetMax=3} and scale at 80 \gev in Pythia8 for 0+1+2+3 parton emission case, while \texttt{Merging:nJetMax=2} requested for 0+1+2 case and \texttt{Merging:nJetMax=1} requested for 0+1 case. The MET distribution is plotted in Fig.\ref{fig:RatioKine_D5}, while the jet multiplicity with $p_{T}>$30GeV and $|\eta|<$2.8 requirement is shown in Fig.\ref{fig:RatioKine_D5_2}.
+Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requested in matching step with \texttt{Merging:nJetMax=3} and scale at 80~\gev in \pythiaEight for 0+1+2+3 parton emission case, while \texttt{Merging:nJetMax=2} requested for 0+1+2 case and \texttt{Merging:nJetMax=1} requested for 0+1 case. The MET distribution is plotted in Fig.\ref{fig:RatioKine_D5}, while the jet multiplicity with $p_{T}>$30~\gev and $|\eta|<$2.8 requirement is shown in Fig.\ref{fig:RatioKine_D5_2}.
 
 \begin{figure}[h!]
 	\centering  
@@ -222,19 +313,19 @@ Here the 0-, 1-, 2- and 3-parton emissions are generated separately and requeste
 	\label{fig:RatioKine_D5_2}
 \end{figure}
 
-With the ATLAS run-I baseline cut (MET and leading jet $p_{T}$ larger than 250 \gev, less than 4 jets), the 0+1 parton emission has 17.4\% yield less compared to 0+1+2+3 parton emission, while the 0+1+2 has 2.2\% less. With MET$>$400 \gev, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 2.4\% less compared to 0+1+2+3 parton emission. With MET$>$600 \gev, 0+1 parton emission has 16.5\% yield less and 0+1+2 parton emission has 2.9\% less compared to 0+1+2+3 parton emission. The same numbers hold if a symmetric cut is added on leading jet transverse momentum.
+With the ATLAS run-I baseline cut (\MET and leading jet \pT larger than 250 \gev, less than 4 jets), the 0+1 parton emission has 17.4\% yield less compared to 0+1+2+3 parton emission, while the 0+1+2 has 2.2\% less. With \MET$>$400~\gev, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 2.4\% less compared to 0+1+2+3 parton emission. With $\MET>600\,\gev$, 0+1 parton emission has 16.5\% yield less and 0+1+2 parton emission has 2.9\% less compared to 0+1+2+3 parton emission. The same numbers hold if a symmetric cut is added on leading jet transverse momentum.
 
 
 \section{Model implementation for mono-Higgs models}
 
-All three Higgs+MET models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower.
-The MadGraph implementations of the scalar and vector models can be found on the Forum SVN 
+All three Higgs+\MET models are generated at leading
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower.
+The \madgraph implementations of the scalar and vector models can be found on the Forum SVN 
 repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found
 at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
 
-In all cases, it is recommended not to handle the $h$ decay through MadGraph as
-it does not include the proper $h$ branching ratios, or, if using MadGraph, then the 
+In all cases, it is recommended not to handle the $h$ decay through \madgraph as
+it does not include the proper $h$ branching ratios, or, if using \madgraph, then the 
 resulting cross section should be rescaled to match onto the correct branching ratio.
 
 \newthought{Madgraph details for scalar mediator Higgs+MET model}
@@ -295,11 +386,11 @@ The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000).
 
 \section{Single Top Models}
 
-Card files for MadGraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
+Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
 corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
 Each coupling constant of this model can be set via the parameter card and 
 the blocks which are relevant for the two models used for the experimental searches are described below.
-The relevant parameters in the MadGraph parameter cards, also expressed in the notation introduced in the 
+The relevant parameters in the \madgraph parameter cards, also expressed in the notation introduced in the 
 previous Section, are as follows for the two models considered.
 
 \begin{enumerate}
@@ -325,13 +416,13 @@ while the only allowed decay in the CMS implementation to the new fermion and a 
 \section{EFT Mono-Higgs implementation}
 
 These models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower. No matching is performed. 
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
 Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
 and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
 
 \section{Simplified Models of Mono-Higgs}
 
 These models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower. No matching is performed. 
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
 Parameter cards can be found on the Forum SVN 
 repository~\cite{ForumSVN_EWMonoHiggs_2HDM, ForumSVN_EWMonoHiggs}.

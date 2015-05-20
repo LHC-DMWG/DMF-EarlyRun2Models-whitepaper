@@ -705,6 +705,7 @@
   \sodef\sotextsc{\scshape}{0.075em}{0.5em}{0.6em}%
   \renewcommand{\allcaps}[1]{\allcapsspacing{\MakeTextUppercase{##1}}}%
   \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{##1}}}%
+  \newcommand{\namecaps}[1]{{\scshape\MakeTextLowercase{##1}}}%
   \renewcommand{\textsc}[1]{\sotextsc{##1}}%
 }
 
@@ -716,6 +717,7 @@
   \renewcommand{\smallcapsspacing}[1]{\textls[50]{##1}}%
   \renewcommand{\allcaps}[1]{\allcapsspacing{\MakeTextUppercase{##1}}}%
   \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{##1}}}%
+  \newcommand{\namecaps}[1]{\textls[-10]{\scshape\MakeTextLowercase{##1}}}%
   \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{##1}}}%
 }
 
