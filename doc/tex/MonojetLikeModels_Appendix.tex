@@ -145,10 +145,10 @@ its mass and width respectively.
 % \end{itemize}
 
 
-\section{Parton matching in \madgraph}
+\section{Parton matching}
 \label{sec:monojet_parton_match}
 
-The parton matching techniques are implemented in the mono-jet like MC generation in \madgraph in order to avoid double counting the partons from matrix elements and parton showering.
+The parton matching techniques are implemented in the mono-jet like MC generation in \madgraph in order to avoid double counting the partons from matrix elements and parton showering in \pythiaEight.
 Based on the comparative study in Ref.\,\cite{Alwall:0706.2569}, we recommend using the CKKW-L matching scheme.
 %\cite{Alwall:1405.0301}
 
@@ -300,9 +300,9 @@ In order to describe the signal kinematics correctly and save time during MC pro
 A dedicated study comparing samples generated with up to 1-, 2-, or 3-parton multiplicities was performed, using again the settings for the CKKW-L $k_t$-merging with the 80\,\gev matching scale and the \texttt{Merging:nJetMax} parameter adjusted accordingly.
 Figure\,\ref{fig:RatioKine_D5} shows the \MET distribution of the samples at $\MET>250\,\gev$.
 
-While there is a $\sim10\%$ difference observed between the samples with up to 1 parton and up to 3 partons at low $\MET$, only marginal difference is seen between the samples generated with up to 2 and 3 partons.
+%While there is a $\sim10\%$ difference observed between the samples with up to 1 parton and up to 3 partons at low $\MET$, only marginal difference is seen between the samples generated with up to 2 and 3 partons.
 
-With an event selection requiring \MET and the leading jet \pT being larger than $250\,\gev$ and allowing for up to 4 jets with $\pt>30\,\gev$, the sample generated with up to 1 parton has 17.4\% smaller yield compared to the sample with up to 3 partons, while the yield of the sample with up to 2 partons is only 2.2\% smaller.%At \MET>400\,\gev$, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 2.4\% less compared to 0+1+2+3 parton emission. With $\MET>600\,\gev$, 0+1 parton emission has 16.5\% yield less and 0+1+2 parton emission has 2.9\% less compared to 0+1+2+3 parton emission. The same numbers hold if a symmetric cut is added on leading jet transverse momentum.
+With an event selection requiring \MET and the leading jet \pT being larger than $250\,\gev$ and allowing for up to 4 jets with $\pT>30\,\gev$, the sample generated with up to 1 parton has 17.4\% smaller yield compared to the sample with up to 3 partons, while the yield of the sample with up to 2 partons is only 2.2\% smaller.%At \MET>400\,\gev$, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 2.4\% less compared to 0+1+2+3 parton emission. With $\MET>600\,\gev$, 0+1 parton emission has 16.5\% yield less and 0+1+2 parton emission has 2.9\% less compared to 0+1+2+3 parton emission. The same numbers hold if a symmetric cut is added on leading jet transverse momentum.
 This justifies it is sufficient to produce samples with up to 2 parton emissions only at the generator level and ignore generating higher parton emissions.
 
 
@@ -339,7 +339,7 @@ This justifies it is sufficient to produce samples with up to 2 parton emissions
 	\includegraphics[width=0.8\linewidth]{figures/monojet_appendix/h_njet250.pdf}
 %	}
 %	\caption{Jet multiplicity distributions for EFT D5 sample with CKKW matching scale at 80 \gev. 0-, 1-, 2- and 3-parton emission cases are generated separatedly and added together by cross sections.}
-	\caption{Multiplicity of jets with $\pt>30\,\gev$ and $|\eta<2.8$ for EFT D5 sample with CKKW-L matching scale at 80\,\gev produced with maximum 1 (black), 2 (red) and 3 (blue) partons emitted at the generator level. The ratios are shown with respect to the latter sample. The leading jet $\pt$ is required to be larger than 250\,\gev.}
+	\caption{Multiplicity of jets with $\pT>30\,\gev$ and $|\eta<2.8$ for EFT D5 sample with CKKW-L matching scale at 80\,\gev produced with maximum 1 (black), 2 (red) and 3 (blue) partons emitted at the generator level. The ratios are shown with respect to the latter sample. The leading jet $\pT$ is required to be larger than 250\,\gev.}
 	\label{fig:RatioKine_D5_2}
 \end{figure}
 
