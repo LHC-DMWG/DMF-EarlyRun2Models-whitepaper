@@ -94,15 +94,16 @@ Sec.~\ref{subsec:MonojetLikeModels}, in particular a Dirac fermion DM particle, 
 %The benchmark chosen for these searches follows the assumptions mentioned in the previous Section: we consider 
 %a Dirac fermion DM particle, universal couplings to quarks, and minimum mediator width. 
  
-The benchmark points scanning the model parameters have been selected to ensure that the kinematic features of the parameter space are sufficiently represented. Detailed studies were performed to identify points in the \mdm, $m_{\phi,a}$, $\gDM$, $\gq$ (and $\Gamma_{\phi,a}$) parameter space that differ significantly from each other in terms of expected detector acceptance. Because missing transverse momentum is the key observable for searches, the mediator $p_{T}$ spectra is taken to represent the main kinematics of a model. Another consideration in determining the set of benchmarks is to focus on the phase space where we expect the searches to be sensitive during the 2015 LHC run. Based on a projected integrated luminosity of $30\,{\rm fb}^{-1}$ expected for 2015, we disregard model points with a cross section times branching ratio smaller than $0.1\,{\rm fb}$.
+The benchmark points scanning the model parameters have been selected to ensure that the kinematic features of the parameter space are sufficiently represented. Detailed studies were performed to identify points in the \mdm, $m_{\phi,a}$, $\gDM$, $\gq$ (and $\Gamma_{\phi,a}$) parameter space that differ significantly from each other in terms of expected detector acceptance. Because missing transverse momentum is the key observable for searches, the mediator $p_{T}$ spectra is taken to represent the main kinematics of a model. Another consideration in determining the set of benchmarks is to focus on the phase space where we expect the searches to be sensitive during the 2015 LHC run. Based on a projected integrated luminosity of $30\,{\rm fb}^{-1}$ expected for 2015, we disregard model points with a cross section times branching ratio smaller than $0.1\,{\rm fb}$, corresponding to a minimum of one expected event assuming a conservative 0.1\% signal efficiency. 
 
 The kinematics is most dependent on the masses \mdm and $m_{\phi,a}$. Figure~\ref{fig:scanPhi} 
 and~\ref{fig:scanPhiPseudo} show typical dependencies for scalar and pseudoscalar couplings respectively.
 Typically, the mediator $p_T$ spectra broadens with larger $m_{\phi,a}$. 
-The kinematics are also quite different between on-shell and off-shell production. 
-Furthermore, the kinematic differences between scalar and pseudoscalar are large with light mediator 
-masses and are reduced for larger masses. It is therefore important to  
-benchmark points covering on-shell and off-shell production with sufficient granularity.
+The kinematics are also different between on-shell ($\mMed>2\mdm$) and off-shell ($\mMed<2\mdm$) mediators. 
+Furthermore, the kinematic differences in \MET{} spectrum between scalar and pseudoscalar are larger for light mediator 
+masses with respect to heavier mediators. It is therefore important to  
+benchmark points covering on-shell and off-shell mediators with sufficient granularity, including the
+transition region between on-shell and off-shell mediators. %, as inFig.~\ref{fig:scanPhidiag}. 
 
 \begin{figure}[!ht]
   \begin{center}
@@ -120,13 +121,13 @@ benchmark points covering on-shell and off-shell production with sufficient gran
 \end{center}
 \end{figure}
 
-\begin{figure}[!ht]
-  \begin{center}
-    \includegraphics[width=0.7\textwidth]{figures/ttbar/MEt_diagonal_scan.pdf}
-    \caption{\label{fig:scanPhidiag} Example of the dependence of the kinematic for points of the grid proposed in Tab.~\ref{sec:monojet_scalar} close to the $m_{\phi,a} \sim 2m_\chi$ limit.
-    }
-\end{center}
-\end{figure}
+%\begin{figure}[!ht]
+%  \begin{center}
+%    \includegraphics[width=0.7\textwidth]{figures/ttbar/MEt_diagonal_scan.pdf}
+%    \caption{\label{fig:scanPhidiag} Example of the dependence of the kinematic for points of the grid proposed in Tab.~\ref{sec:monojet_scalar} close to the $m_{\phi,a} \sim 2m_\chi$ limit.
+%    }
+%\end{center}
+%\end{figure}
 
 Typically only weak dependencies on width or equivalently couplings are observed (see Fig~\ref{fig:widthsmallscan}), except for large mediator masses of $\sim 1.5\,{\rm TeV}$ or for very small couplings of $\sim 10^{-2}$. These regimes where width effects are significant have production cross sections that are too small to be relevant for $30\,{\rm fb}^{-1}$ and are not considered here. However, with the full Run-2 dataset, such models may be within reach. The weak dependence on the typical width values can be understood as the parton distribution function are the dominant effect on mediator production. In other words, for couplings $\sim O(1)$ the width is large enough that the $p_T$ of the mediator is determined mainly by the PDF.
 
@@ -138,19 +139,19 @@ Typically only weak dependencies on width or equivalently couplings are observed
 \end{center}
 \end{figure}
 
-Another case where the width can impact the kinematics is when $m_{\phi,a}$ is slightly larger than $2m_\chi$. Here, the width determines the relative contribution between on-shell and off-shell production. An example is given in Fig.~\ref{fig:widthlargescan}. 
+Another case where the width can impact the kinematics is when $m_{\phi,a}$ is slightly larger than $2m_\chi$. Here, the width determines the relative contribution between on-shell and off-shell mediators. An example is given in Fig.~\ref{fig:widthlargescan}. 
 %In our recommendations we propose to use for simplicity the minimal width, as this is represents the most conservative choice to interpret the LHC results. 
 
 \begin{figure}[!ht]
   \begin{center}
-    \includegraphics[scale=0.45]{figures/ttbar/ScalarWidth.pdf}
+    \includegraphics[width=0.7\textwidth]{figures/ttbar/ScalarWidth.pdf}
     \vspace{2mm}
     \caption{\label{fig:widthlargescan} Dependence of the kinematics on the width of a scalar mediator. The width is increased up to the mediator mass. Choices of mediator and dark matter masses such that $m_{\phi,a}$ is slightly larger than $2m_\chi$ is the only case that shows a sizeable variation of the kinematics as a function of the width.  
     }
 \end{center}
 \end{figure}
 
-Given that the kinematics are similar for all couplings $\sim O(1)$, we recommend to generate only samples with $\gDM = \gq = 1$.
+Given that the kinematics are similar for all couplings $g = \sim 1$, we recommend to generate only samples with $\gDM = \gq = 1$.
 It follows from this that these benchmark points should be a good
 approximation for non-unity couplings and for $\gDM \neq \gq$, provided
 that the sample is rescaled to the appropriate cross section times
@@ -164,7 +165,9 @@ While the simple scaling function
    \times {\gDM'\over \gDM}^2
    \times {\Gamma\over\Gamma'}
 \end{equation}
-is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), we also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to close to the perturbative limit.
+is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example). 
+This scaling is only approximate (up to 20\%)  and relies on the narrow width approximation, ignoring PDFs effects. 
+We also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to be close to but lower than the perturbative limit. 
 
 \begin{figure}[!ht]
 \begin{center}
@@ -176,7 +179,7 @@ is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_sca
 
 The points for the parameter scan chosen for this model are listed in Table~\ref{tab:mDMmMedScan_SP}, chosen
 to be harmonized with those for other analyses employing the same scalar model as benchmark. 
-Based on the sensitivity considerations above, DM masses are only simulated up to 500 GeV,
+Based on the sensitivity considerations above, DM masses are only simulated up to 500 GeV (but the 5 TeV mediator point is retained)
 leading to a total of 24 benchmark points.
 
 %In addition to the considerations discussed in the preceding subsections, very light DM fermions are included ($\mdm=10\,{\rm GeV}$) 

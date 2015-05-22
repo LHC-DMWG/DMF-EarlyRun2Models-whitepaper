@@ -69,8 +69,6 @@ The coupling \gq is assumed to be universal to all quarks.
 It is also possible to consider another model in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with
 pure vector couplings or pure axial vector couplings.
 \Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event.}
-
-
 %Definition of minimal width
 When no additional visible or invisible decays contribute to the width of the mediator, the width is fixed by the choices of couplings $\gq$ and $\gDM$. We refer to the width in this situation as the minimal width\footnote{See page \pageref{paragraph:nonminimalwidth} for a discussion of the effect of larger widths.}. For the vector and axial-vector models,
 
@@ -139,8 +137,7 @@ $\MET$ distribution for a \mMed=5~\tev mediator
 once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
 This, however, does not come from physics, but is an artifact of
 the generator implementation,
-where a cutoff for the regions far away from the mediator mass is sometimes
-used.
+where a cutoff for the regions far away from the mediator mass is generally used.
 This is illustrated in Fig.\,\ref{fig:monojet_mchichi} showing the invariant mass of the Dark Matter pair in the samples generated for a \mMed=7~\tev mediator
 with different coupling strengths.
 In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
@@ -240,14 +237,17 @@ is illustrated in Fig.\,\ref{fig:monojet_scan_V_mMed1000}. Therefore, a coarse b
 The final step in proposing a parameter grid is to evaluate the sensitivity
 of Run-2 LHC data with respect to rate and/or kinematics.
 %In order to motivate the highest mediator mass grid point, the expected sensitivity of Run-2 LHC data needs to be taken into account.
-Projected sensitivities for a 14~\tev\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$~\gev and $\MET>500$~\gev, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 \Todo{Can we get more precise number and a citation? Is this in Sarah's V+jets paper?} when going from $\sqrt{s}=8$~\tev to 13~\tev, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
+Projected sensitivities for a 14~\tev\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$~\gev and $\MET>500$~\gev, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 %\Todo{Can we get more precise number and a citation? Is this in Sarah's V+jets paper?} 
+when going from $\sqrt{s}=8$~\tev to 13~\tev, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
 The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, light Dark Matter of
 \mDM=10~\gev and a \mMed=1~\tev vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$~\gev for 5~\tev vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC.
 
 
 Based on these arguments, the following $\mMed$ grid points are chosen, roughly equidistant in the logarithmic scale: 10~\gev, 20~\gev, 50~\gev,  100~\gev, 200~\gev, 300~\gev, 500~\gev, 1000~\gev and 2000~\gev. Given the fact that significant changes in cross section happen around the $\mMed=2\mDM$ threshold, the $\mDM$ grid points are taken at approximately $\mMed/2$, namely: 10~\gev, 50~\gev, 150~\gev, 500~\gev and 1000~\gev. Points on the on-shell diagonal are always chosen to be 5~\gev away from the threshold, 
 to avoid numerical instabilities in the event generation. 
-The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 29 mass points each. One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
+The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 35
+%29 
+mass points each. One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
 
 % \begin{figure}
 % \centering
@@ -265,11 +265,11 @@ The detailed studies of the impact of the parameter changes on the cross section
 \multicolumn{1}{|c|}{\mDM/\gev} & \multicolumn{10}{c|}{\mmed/\gev} \\
 \hline
  1             &         10  & 20 & 50 & 100 & 200 & 300 & 500 &         1000  &                 2000   &         5000  \\
- 10   	       &         10  & 15 & 50 & 100 &     &     &     &               &                        &           \\
+ 10   	       &         10  & 15 & 50 & 100 &     &     &     &               &                        &     5000      \\
  50            &   10  & 
-& 50 &  95 & 200 & 300 &     &               &                        &           \\
- 150           &         10  &    &    &     & 200 & 295 & 500 &        &                  &           \\
- 500           &         10  &    &    &     &     &     & 500 &          995  &                 2000   &           \\
+& 50 &  95 & 200 & 300 &     &               &                        &    5000       \\
+ 150           &         10  &    &    &     & 200 & 295 & 500 &        &                  &     5000      \\
+ 500           &         10  &    &    &     &     &     & 500 &          995  &                 2000   &     5000      \\
  1000          &         10  &    &    &     &     &     &     &         1000  &                 1995   &         5000  \\
 \hline
 \end{tabular}
@@ -303,9 +303,68 @@ The presentation of the results in the $\gq$--$\gDM$ plane for fixed masses bene
 \section{Scalar and pseudoscalar mediator, \schannel exchange}
 \label{sec:monojet_scalar}
 
+\begin{figure}
+\centering
+\unitlength=0.005\linewidth
+	\subfloat[\label{subfig:modelMonoHbaryonicggS}]	{
+	\begin{feynmandiagram}[appendixmodelSmonojetTopTriangle]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2}
+		\fmftop{isr}
+		\fmfbottom{pisr}
+		\fmfpolyn{empty}{v}{3}
+		\fmf{fermion}{i2,v6}
+		\fmf{phantom}{i1,pv1,v1}
+		\fmf{gluon,tension=0}{i1,v1}
+		\fmf{gluon}{v6,v3}
+		\fmf{dashes,label={\LARGE $S,,P$}}{v2,v5}
+		\fmf{fermion,tension=1.2}{o2,v5,o1}
+		\fmfdot{v1,v6,v2,v3,v5}
+		\fmffreeze
+		\fmf{phantom}{pv1,pisr}
+		\fmf{fermion}{v6,isr}
+		\fmflabel{\LARGE ${g}$}{i1}
+		\fmflabel{\LARGE ${q}$}{i2}
+		\fmflabel{\LARGE ${q}$}{isr}
+		\fmflabel{\LARGE $\bar\chi$}{o1}
+		\fmflabel{\LARGE $\chi$}{o2}
+	\end{feynmandiagram}
+}
+
+
+	\subfloat[\label{subfig:modelMonoHbaryonicggS}]	{
+	\begin{feynmandiagram}[appendixmodelSmonojetTopBox]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,hisr,isr}
+		\fmfpolyn{empty}{v}{4}
+		\fmf{gluon}{i2,v4}
+		\fmf{gluon}{i1,v1}
+		\fmf{dashes,label={\LARGE $S,,P$}}{v2,vwimp}
+		\fmflabel{\LARGE ${g}$}{i1}
+		\fmflabel{\LARGE ${g}$}{i2}
+		\fmflabel{\LARGE ${g}$}{isr}
+		\fmflabel{\LARGE $\bar\chi$}{o1}
+		\fmflabel{\LARGE $\chi$}{o2}
+		\fmf{fermion}{o2,vwimp,o1}
+		\fmfdot{v1,v2,v3,v4,vwimp}
+		\fmf{gluon}{v3,isr}
+	\end{feynmandiagram}
+}
+\setfloatalignment{t}
+\vspace{0.5\baselineskip}
+	\caption
+	{
+		One-loop diagrams of processes exchanging a scalar ($S$) or pseudoscalar ($P$) mediator, leading to a mono-jet signature. 
+	}
+	\label{fig:feyn_prod_S}
+\end{figure}
+
+
 One of the simplest UV complete extensions of the effective field theory approach is the addition of a scalar/pseudoscalar mediator between DM and SM.
-A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle. See Refs.~\cite{Buckley:2014fba,Harris:2014hga} for a thorough discussion.
-In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. 
+A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. 
+The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle. See Refs.~\cite{Buckley:2014fba,Harris:2014hga} for a thorough discussion. One-loop diagrams leading to a \MET+X signature are shown in Fig.~\ref{fig:feyn_prod_S}.
+In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, 
+and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. 
 
 Couplings to the SM fermions can be arranged by mixing with the SM Higgs. Such models have interesting connections with Higgs physics, and can be viewed as generalizations of the Higgs portal to DM. The most general scalar mediator models will have renormalizable interactions between the SM Higgs and the new scalar $\phi$ or pseudoscalar $a$, as well as $\phi/a$ interactions with electroweak gauge bosons. Such interactions are model dependent, often subject to constraints from electroweak precision tests, and would suggest specialized searches which cannot be generalized to a broad class of models (unlike, for instance, the $\MET+\textrm{jets}$ searches). As a result, for this class of minimal simplified models with spin-$0$ mediators, we will focus primarily on couplings to fermions and loop-induced couplings to gluons. %Possible couplings to the electroweak sector may also lead to interesting DM phenomenology that can be studied in the context of Higgs Portal DM.
 
@@ -440,6 +499,19 @@ For the mediator mass above twice the top quark mass $m_t$, the minimal width re
 \label{fig:monojet_width_S}
 \end{figure}
 
+It can be seen in Fig.~\ref{fig:monojet_kinematics_SP} that the kinematics for the scalar and pseudoscalar models coincides.
+For this reason, we recommend to only generate only one of the two models, and report the cross-sections on HEPData 
+\todo{Clarify shape of model repository} for the other one. No preference is given between the two models as they have the
+same kinematics, although it is worth pointing out that the pseudo-scalar model has been used for a Dark Matter interpretation of the DAMA signal 
+and of the galactic center excess~\cite{Arina:2014yna}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{figures/monojet/scan_g_S_10_500.eps}
+	\caption{PLACEHOLDER: Comparison of the $\MET$ distributions for the scalar and pseudoscalar models for different DM and mediator masses. 
+	Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
+	\label{fig:monojet_kinematics_SP}
+\end{figure}
 
 Similarly as in the case of the vector and axial-vector couplings
 of spin-1 mediators, scans in the parameter space are performed also for the scalar and pseudo-scalar couplings of the spin-0 mediators
@@ -492,7 +564,9 @@ No differences in the kinematic distributions are observed and also the cross se
 
 The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, taking again $\gq=\gDM=1$. Only the sensitivity to the highest mediator masses has to be revisited.
 The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, light Dark Matter of \mDM=10~\gev and
-a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 26 mass points only in Fig.\,\ref{tab:mDMmMedScan_SP}.
+a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 32
+%26 
+mass points only, as shown in Tab.\,\ref{tab:mDMmMedScan_SP}.
 One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs). 
 
 \begin{table}[!h]

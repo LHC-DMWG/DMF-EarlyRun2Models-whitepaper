@@ -5,7 +5,8 @@ There are several matrix element implementations of the
 DM production through spin-0 and spin-1 mediators.
 
 For a spin-1 mediator, the implementation in \powheg generates
-DM pair production with 1 parton at next-to-leading order (NLO), whilst \madgraph and \mcfm are at leading order (LO). As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
+DM pair production with 1 parton at next-to-leading order (NLO), whilst \madgraph and \mcfm are at leading order (LO)~\footnote{Spin-0 and spin-1 mediator models will also be provided 
+in the near future to the same precision in MadGraph5\_aMC@NLO~\cite{Alwall:1405.0301}.}. As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
 Since NLO calculations are available for the process in \powheg, we recommend to proceed with \powheg as the generator of choice. 
 
 For a spin-0 mediator, the top-quark loop is the most important
@@ -168,10 +169,10 @@ To illustrate the settings related to parton matching, the EFT D5 samples are ge
 \texttt{mmjj=0} \\
 \texttt{ptj1min=0} \\
 
-\item On the parton showering side in \pythiaEight:
+\item On the parton showering side in \pythiaEight.2:
 \texttt{Merging:ktType           = 1}\\
 \texttt{Merging:TMS              = }matching scale\\
-\texttt{1000022:all = chi chi\~{ } 2 0 0 30.0 0.0 0.0 0.0 0.0}\\
+\texttt{1000022:all = chi chi\~{ } 2 0 0 30.0 0.0 0.0 0.0 0.0}, where 2 stands for the DM particle spin and 30 stands for its mass in GeV\\
 \texttt{1000022:isVisible = false}\\
 \texttt{Merging:doKTMerging      = on}\\
 \texttt{Merging:Process          = pp>\{chi,1000022\}\{chi\~{ },-1000022\}}\\
@@ -191,7 +192,7 @@ Note that the \madgraph cards and \pythiaEight commands are identical for all th
 
 \subsection{Matching scale}
 
-In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying differential jet rates. The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_t$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
+In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_t$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
 
 Two examples of differential jet rates, using matching scale 30\,\gev and 80\,\gev, from the EFT D5 sample generated as described in the previous section are given in Fig.\,\ref{fig:CKKW_D5_30} and \ref{fig:CKKW_D5_80}, respectively.
 Although a kink is visible around the matching scale value in both cases, the 80\,\gev scale leads to smoother distributions. 

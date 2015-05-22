@@ -10,16 +10,32 @@ transverse momentum (monotop), some of them including dark matter candidates.
 A simplified model encompassing the processes leading to this phenomenology is described in Refs.~\cite{AndreaFuksMaltoni,Agram:2013wda,Boucheneb:2014wza},
 and is adopted as one of the benchmarks for Run 2 LHC searches. 
 
-A dark matter candidate \chiDM and a new particle (vector or scalar) 
-are added to the SM, in a theory that respects the $\SUtwoUone$ symmetry 
-and produces a single top quark in association with either the DM particle or a new particle
-decaying invisibly. 
+The simplified model is constructed by imposing that the model Lagrangian
+respects the electroweak $SU(2)_L \times U(1)_Y$ gauge symmetry and by
+requiring minimality in terms of new states to supplement to the Standard
+Model fields. As a result, two monotop production mechanisms are possible.
+In the first case, the monotop system is constituted by an invisible (or
+long-lived with respect to detector distances) fermion $\chi$ and a top quark.
+It is produced, as shown in the diagram of \ref{fig:feyn_prod}~(a) where a colored
+resonance $\varphi$ lying in the triplet representation of $SU(3)_C$ decays
+into a top quark and a $\chi$ particle. In the second production mode, the
+monotop state is made of a top quark and a vector state $V$ connected to a
+hidden sector so that it could decay invisibly into, e.g., a pair of dark
+matter particles as studied in~\cite{Boucheneb:2014wza}. The production proceeds via
+flavor-changing neutral interactions of the top quark with a quark of the
+first or second generation and the invisible $V$ boson (see the diagrams of
+\ref{fig:feyn_prod}~(b) and (c)).
 
-Within this model, two distinct processes can lead to monotop production:
-\begin{itemize}
-	\item resonant production, as shown in the diagram of Fig.~\ref{fig:feyn_prod} (a), where a color triplet scalar $\varphi$ or vector field are exchanged in the \schannel, and decay into a spin 1/2 invisible new fermion $\chiDM$ and a top quark;
-	\item non-resonant production, as shown in the diagrams of Fig.~~\ref{fig:feyn_prod} (b) and (c), where a flavor-changing interaction produces a top quark in association with a new colored scalar or vector $V$. The new particles decay invisibly, e.g. to a pair of DM particles. $V$ can also decay into a top quark and an up quark, leading to a same-sign top quark final state; a detailed study of the complementarity of this signature is beyond the scope of this Forum report.  
-\end{itemize}
+%A dark matter candidate \chiDM and a new particle (vector or scalar) 
+%are added to the SM, in a theory that respects the $\SUtwoUone$ symmetry 
+%and produces a single top quark in association with either the DM particle or a new particle
+%decaying invisibly. 
+
+%Within this model, two distinct processes can lead to monotop production:
+%\begin{itemize}
+%	\item resonant production, as shown in the diagram of Fig.~\ref{fig:feyn_prod} (a), where a color triplet scalar $\varphi$ or vector field are exchanged in the \schannel, and decay into a spin 1/2 invisible new fermion $\chiDM$ and a top quark;
+%	\item non-resonant production, as shown in the diagrams of Fig.~~\ref{fig:feyn_prod} (b) and (c), where a flavor-changing interaction produces a top quark in association with a new colored scalar or vector $V$. The new particles decay invisibly, e.g. to a pair of DM particles. $V$ can also decay into a top quark and an up quark, leading to a same-sign top quark final state; a detailed study of the complementarity of this signature is beyond the scope of this Forum report.  
+%\end{itemize}
 
 \begin{figure}[!h!tpd]
 \centering
@@ -44,9 +60,11 @@ Within this model, two distinct processes can lead to monotop production:
   \begin{feynmandiagram}[modelS4s]
     \fmfleft{i1,i2}
     \fmfright{o1,o2}
-    \fmf{fermion,label={\Large $u$}}{v1,v2}
+    \fmf{fermion,label={\LARGE $u$}}{v1,v2}
     \fmf{gluon}{i2,v1}
+    \fmflabel{\LARGE $g$}{i2}
     \fmf{fermion}{i1,v1}
+    \fmflabel{\LARGE $u$}{i1}
     \fmf{wiggly}{v2,o2}
     \fmf{fermion}{v2,o1}
     \fmflabel{\Large $V$}{o2}
@@ -58,22 +76,22 @@ Within this model, two distinct processes can lead to monotop production:
     \fmfleft{i1,i2}
     \fmfright{o1,o2}
     \fmf{fermion}{i2,vup}
-    \fmflabel{\Large $u$}{i2}
-    \fmf{gluon,label={\Large $g$}}{i1,vdown}
-    \fmflabel{\Large $g$}{i1}
-    \fmf{fermion}{vup,vdown}
+    \fmflabel{\LARGE $u$}{i2}
+    \fmf{gluon}{i1,vdown}
+    \fmflabel{\LARGE $g$}{i1}
+    \fmf{fermion, label={\LARGE $t$}}{vup,vdown}
     \fmf{fermion}{vdown,o1}
     \fmflabel{\Large $t$}{o1}
     \fmf{wiggly}{vup,o2}
     \fmflabel{\Large $V$}{o2}
   \end{feynmandiagram}
-}
+  }
 \caption
 {
 Feynman diagram of leading order processes leading to monotop events: production of
 a coloured scalar resonance $\varphi$ decaying into a top quark and a spin-$1/2$ fermion $\chiDM$ (a),
 $s-$ (b) and \tchannel (c) non resonant production of a top quark in association with
-a spin-1 boson $V$.
+a spin-1 boson $V$ decaying invisibly.
 %Feynman diagram of leading order processes leading to monotop events: resonant production of
 %$t$ via resonant new particle $M$ decaying into a top quark and $\Xnew$, which is the dark matter fermion $\chiDM$ (left),
 %and $s$ and $t$ channel non-resonant production of a top quark in association with $\Xnew$, which is the new particle $M$ (middle and right).
@@ -81,9 +99,9 @@ a spin-1 boson $V$.
 \label{fig:feyn_prod}
 \end{figure}
 
-In the following, resonant and non-resonant production are treated independently as separate benchmarks. 
-Only the simpler case of a scalar resonance and the non-resonant vector are considered as early benchmarks 
-for the resonant model; the other two cases with a more complicated phenomenology can be studied in the future. 
+%In the following, resonant and non-resonant production are treated independently as separate benchmarks. 
+%Only the simpler case of a scalar resonance and the non-resonant vector are considered as early benchmarks 
+%for the resonant model; the other two cases with a more complicated phenomenology can be studied in the future. 
 %CD: why? the vector is better in "revisiting monotop"
 
 \newthought{Resonant production}
@@ -114,16 +132,14 @@ In this case, a colored $2/3$-charged scalar ($\varphi$) is produced and decays 
 + 
 {\rm h.c.} \bigg] 
 \esp\ee
-
 %\begin{eqnarray}
 %\label{eq:lagrangianResonant}
 %\mathcal{L} =  d^{C}_{i} \:  [ (g^{v}_{\phi d})^{ij} +  (g^{a}_{\phi d})^{ij} \gamma^{5} ] \: d_{j} \: \phi^{\pm}  +  u^{C}_{k}  [ (g^{v}_{u\chiDM})^{k} + (g^{a}_{u\chiDM})^{k} \gamma^{5} ] \: \chiDM \: \phi^{\pm}
 %%%CD: problems with the original typesetting
 %\end{eqnarray}
-
-where $u$ ($d$) stands for any $up$ ($down$)-quark, 
-the index $S$ stands for scalar field, and the index $q$ 
-runs over the three quark generations, and the color indices are not shown. 
+where $u$ ($d$) stands for any up-type (down-type) quark, the notation $SR$
+refers to the monotop production mechanism via a scalar resonance and all
+flavor and color indices are understood for clarity.
 
 %The first term leads to the production of the new particle and the last term allows its decay into a $up$-quark 
 %and a non interacting fermion (in particular to the top quark when $(g^{v/a}_{u\chiDM})^{k}$ 
@@ -135,29 +151,59 @@ runs over the three quark generations, and the color indices are not shown.
 In the notation of~\cite{Agram:2013wda}, 
 the couplings of the new colored fields to down-type quarks are
 embedded into the $3\times 3$ antisymmetric matrices
-$a^q_{\{S\}R}$ (scalar couplings) and $b^q_{\{S\}R}$ (pseudoscalar couplings)
+$a^q_{SR}$ (scalar couplings) and $b^q_{SR}$ (pseudoscalar couplings)
 while those to the new fermion $\chiDM$ and one
-single up-type quarks are given by the three-component vectors
+single up-type quark are given by the three-component vectors
 $a^{1/2}_{\{S\}R}$ and $b^{1/2}_{\{S\}R}$
 in flavor space. 
 
 % 
 % \com{Question/comment: in this resonant model, this is not so obvious to interpret $\phi_{\pm}$ as the new particle since there is a vertex $\phi-u-\chiDM$.
 % It is somehow breaking the concept of having a dark sector weakly coupled to ordinary matter via a new particle.}
-In the following, we only consider the model with a new colored scalar, as the requirement of invariance
-under $SU(2)_L \times U(1)_Y$ would require the introduction of further particles in the case of a new colored vector~\cite{Boucheneb:2014wza}.
-Note that the resulting model can be likened to the MSSM with
-an RPV coupling between a top squark and fermions and an RPC coupling
-between a top squark--top--neutralino.
 
+  Under the form of Eq.~\eqref{eq:lagrangianResonant}, the Lagrangian corresponds to the one
+  introduced in the original monotop search proposal~\cite{AndreaFuksMaltoni} and has been
+  used by the CMS for Run I analyses after neglecting the pseudoscalar component
+  of the coupling and adding the vector resonance case for which minimality
+  requirements are difficult to accomodate~\cite{CMSmonotop}. In contrast, the
+  study of  Ref.~\cite{Boucheneb:2014wza} has imposed electroweak gauge invariance and
+  requires minimality, which enforces all new couplings to be right-handed,
+  \begin{equation}
+  a^{1/2}_{SR} = b^{1/2}_{SR} = \frac12 y_s^*
+  \qquad\text{and}\qquad
+  a^q_{SR} = b^q_{SR} = \frac12 \lambda_s \ .
+  \end{equation}
+  where
+
+\todo{Missing sentence?}
+
+  This class of scenarios is the one that has been adopted by ATLAS for its
+  Run~I monotop searches~\cite{ATLASmonotop} and will be considered by both
+  collaboration for Run~II analyses. In this case, the object $\lambda_s$ is a
+  tridimensional vector whilst the Yukawa coupling $y_s$ is a $3\times 3$ matrix
+  in flavor space.
+
+%In the following, we only consider the model with a new colored scalar, as the requirement of invariance
+%under $SU(2)_L \times U(1)_Y$ would require the introduction of further particles in the case of a new colored vector~\cite{Boucheneb:2014wza}.
+%Note that the resulting model can be likened to the MSSM with
+%an RPV coupling between a top squark and fermions and an RPC coupling
+%between a top squark--top--neutralino.
+
+The resulting model can be likened to the MSSM with an $R$-parity violating of
+a top squark to the Standard Model down-type quarks and an $R$-parity
+conserving interaction of a top quark and a top-squark to a neutralino.
+  
 
 \newthought{Non-Resonant production}
 \label{sec:NonResonantProd}
 
-For the non-resonant production, the top quark is produced in association with the new particle:
-either a new scalar or a new vector ($V$). For simplicity, we only consider the case of a vector new particle, 
-as the scalar case would involve a mixing with the SM Higgs boson and therefore a larger number of free parameters. 
-The Lagrangian describing the dynamics of the non-resonant case is: 
+For non-resonant monotop production, the monotop state is produced via
+flavor-changing neutral interactions of the top quark, a lighter up-type
+quark and a new invisible vector particle $V$. 
+This is the only case considered, as having a new scalar 
+would involve a mixing with the SM Higgs boson and therefore a larger number of free parameters. 
+The Lagrangian describing the
+dynamics of this non-resonant monotop production case is:
 %%CD: Full explanation is below
 % First, the new particle can be a scalar field interacting with the SM field and the dark matter
 % candidate as described in this lagrangian:
@@ -187,10 +233,11 @@ V_\mu \bar u \gmu \Big[a^1_{FC} \!+\! b^1_{FC} \gamma_5 \Big] u
 + \rm h.c. 
 \bigg] 
 \esp\ee
+where the flavor and color indices are
+again understood for clarity.
 
 The strength of the interactions among these two states and a pair
-of up-type quarks is modeled via two $3\times 3$
-symmetric matrices in flavor space $a^{\{1\}}_{FC}$ for the vector couplings
+of up-type quarks is modeled via two $3\times 3$ matrices in flavor space $a^{\{1\}}_{FC}$ for the vector couplings
 and $b^{\{1\}}_{FC}$ for the axial vector couplings.
 
 %The dynamics of this case is described by the following Lagrangian:
@@ -207,17 +254,29 @@ and $b^{\{1\}}_{FC}$ for the axial vector couplings.
 %% 
 %% \com{Question for theorists: why it cannot mix with $\Zboson$ in case of vectorial new particle ?}
 
+As for the resonant case, the Lagrangian of Eq.~\eqref{eq:lagrangianNonResonantVector} is the one that
+has been used by CMS after reintroducing the scalar option for the invisible
+state and neglecting all pseudoscalar interactions~\cite{CMSmonotop}. as
+already mentioned, a simplified setup motivated by gauge invariance and
+minimality has been prefered so that, as shown in Ref.~\cite{Boucheneb:2014wza}, we
+impose all interactions to involve right-handed quarks only in order to simplify the model phenomenology,
+\begin{equation}
+a^1_{FC} = b^1_{FC} = \frac12 a_R
+\end{equation}
+where $a_R$ denotes a $3\times 3$ matrix in flavor space.
+
 \newthought{Model parameters and assumptions}
  
 The models considered as benchmarks for the first LHC searches
 contain further assumptions in terms of the flavour and chiral structure of the model
 with respect to the full Lagrangians of equations~\eqref{eq:lagrangianResonant} and~\eqref{eq:lagrangianNonResonantVector}.
 
-We only consider right-handed quark components, in order to simplify the model phenomenology. 
-The representation of the left-handed components under the $\SUtwo$ symmetry would lead to a 
-coupling to $down$-type quarks, since the effective theory is invariant under $\SUtwoUone$ 
-gauge symmetry. 
-%Having a coupling between the new particle and $down$-type quarks 
+%We only consider right-handed quark components, in order to simplify the model phenomenology. 
+%The representation of the left-handed components under the $\SUtwo$ symmetry would lead to a 
+%coupling to $down$-type quarks, since the effective theory is invariant under $\SUtwoUone$ 
+%gauge symmetry. 
+
+%%Having a coupling between the new particle and $down$-type quarks 
 %would complicate the collider phenomenology, adding the
 %$V \to b\bar{d} + \bar{b}d$ decay mode in addition to the invisible decay mode. 
 %This in turn sets the scalar (vector) and pseudoscalar (axial vector) matrices to have 
@@ -225,23 +284,40 @@ gauge symmetry.
 This implies the vector to be an SU(2)L singlet, hence in turn setting the vector and axial vector matrices 
 to have elements of equal values. 
 
-Furthermore, in order to be visible at the LHC in the monotop final state, 
-these models must include a strong coupling between the new particle $\phi$ and $t\chiDM$.
-%In the resonant case, the new particle must also couple to light quarks in order
-%to be produced at the LHC, leading to possible constraints from
-%dijet searches. 
-The same kind of assumption exists for the non-resonant production. 
-This means that only the couplings between the new scalar resonance and  
-light quarks ($a_{VR}, a_{SR}$), and the couplings between the new vector, the top quark 
-and light quarks ($a_{FC}$), are set to non-zero values 
+%Furthermore, in order to be visible at the LHC in the monotop final state, 
+%these models must include a strong coupling between the new particle $\phi$ and $t\chiDM$.
+%%In the resonant case, the new particle must also couple to light quarks in order
+%%to be produced at the LHC, leading to possible constraints from
+%%dijet searches. 
+%The same kind of assumption exists for the non-resonant production. 
+%This means that only the couplings between the new scalar resonance and  
+%light quarks ($a_{VR}, a_{SR}$), and the couplings between the new vector, the top quark 
+%and light quarks ($a_{FC}$), are set to non-zero values 
+%\be\label{eq:a}\bsp
+%%& (a^0_{FC})_{13} = (a^0_{FC})_{31} = a
+%(a^1_{FC})_{13} = (a^1_{FC})_{31} = a \ , \\
+%(a^q_{SR})_{11} = (a^{1/2}_{SR})_3 = a
+%\esp 
+%\ee
 
-\be\label{eq:a}\bsp
-%& (a^0_{FC})_{13} = (a^0_{FC})_{31} = a
-(a^1_{FC})_{13} = (a^1_{FC})_{31} = a \ , \\
-(a^q_{SR})_{11} = (a^{1/2}_{SR})_3 = a
-\esp 
-\ee
+In order to have an observable monotop signature at the LHC, the Lagrangians
+introduced above must include not too small couplings of the new particles to
+first and second generation quarks. For simplicity, we assumed that only
+channels enhanced by parton density effects will be considered, so that we fix
+\begin{equation}\bsp
+(a_R)_{13} = (a_R)_{31} = a \ , \\
+(\lambda_s)_{12} = - (\lambda_s)_{21} = \lambda
+\qquad\text{and}\qquad
+(y_s)_3 = y \ ,
+\esp\end{equation}
+all other elements of the matrices and vectors above being set to zero.
 
+\todo{There is still an on-going study that should be finished very soon (by the end
+	of the week). The point is that CMS is fixing the $y$ parameters in the way that
+	the branching ratio of the scalar resonance into a monotop system is close to
+	100\%, while ATLAS is fixing y = lambda. We are investigating both cases so to
+	conclude whether this is good to keep both options allowed.
+	}
 %  (on top of $V \to t\bar{u} + \bar{t}u$ and $V \to \chiDM\chiDM$). 
  
 %
@@ -318,19 +394,23 @@ The relevant parameters for the non-resonant model are:
 	related to the branching fraction of the vector into invisible and visible particle,
 	and as a consequence to the width of the vector. 
 \end{itemize}	
+%
+%In the case of the non-resonant model, the current implementation
+%of the model does not allow changing the new fermion mass directly 
+%as it is not explicitly implemented. 
 
-In the case of the non-resonant model, the current implementation
-of the model does not allow changing the new fermion mass directly 
-as it is not explicitly implemented. 
+In the case of the non-resonant model, the invisible vector is connected to
+a hidden sector that could be, in its simplest form, parameterized by a new
+fermion. This has effects on the width of the invisible $V$ state.
 
 It has been checked for the non-resonant model that the relevant kinematics 
 does not change when changing 
-the width of the resonance, for widths up to 10\% of the resonance mass. 
+the width of the resonance, for widths up to 10\% of the $V$ mass. 
 Figures~\ref{fig:appB:Vmass} and \ref{fig:appB:pTV} show 
 the $V$ mass distribution, the transverse momentum for $V$ 
 %and for the top quark 
 in the case of the $V\to t\bar{u}$ decay, for different $V$ masses and widths.
-Since they only show kinematic quantities related to the mediator, these figures are relevant independently of the $V$ decay mode (be it visible or invisible). 
+Since they only show kinematic quantities related to $V$, these figures are relevant independently of the $V$ decay mode (be it visible or invisible). 
 \Todo{Pictures will be improved in the next drafts.}
 \begin{figure}[!h!tpd]
 	\centering
