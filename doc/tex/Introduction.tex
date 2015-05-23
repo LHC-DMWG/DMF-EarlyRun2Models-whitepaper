@@ -29,7 +29,7 @@ From the Run 1 results, however, it has become clear
 \cite{Busoni:2013lha} that a contact interaction is often not the
 correct description for the signals to which the LHC is truly
 sensitive. The LHC is exploring a regime where the mediating process
-may play a more interesting role, leading to signals that can
+may play a significant role, leading to signals that can
 be kinematically distinct from those predicted by the EFT, as well as
 qualitatively different signatures requiring new search
 strategies. While the EFT integrates out the degrees of freedom of the
@@ -67,13 +67,13 @@ important to narrow the scope and timescale to the following:
   be agreed upon by both collaborations for Run-2 searches.
 \item The matrix element implementation of the simplified models
   should be standardized, and other common technical details (order of
-  the calculation, showering) harmonized as much as practical. It
-  would be desirable to have a common choice of LO/NLO, ME-parton
+  the calculation, showering) harmonized as much as practical. The forum should 
+  outline a common choice of LO/NLO, ME-parton
   shower matching and merging, factorization and renormalization
-  scales for each of the simplified models. This will also lead to a
+  scales for each of the simplified models. This leads to a
   single set of theory uncertainties, which will be easier to deal
   with when comparing results from the two collaborations.
-\item The forum could also discuss the conditions under which the EFT
+\item The forum should also discuss the conditions under which the EFT
   interpretation may still be desirable.
 \item The forum should prepare a report summarizing these items,
   suitable both as a reference for the internal ATLAS and CMS
@@ -89,22 +89,21 @@ Dark Matter itself: it is assumed to be a particle, stable on collider
 timescales and non-interacting with the detector, and a Dirac fermion.
 The latter is a practical choice, given that the Forum relied upon a
 large body of theoretical work which made this assumption. Many of the
-conclusions in this report should also apply to \MET{} signals of
+conclusions in this report also apply to \MET{} signals of
 Majorana fermion DM or scalar DM with some minor modification to
 account for their different angular distributions, especially when
-considering cut-and-count analysis. Thus the choice of Dirac fermion
+considering cut-and-count analyses. Thus the choice of Dirac fermion
 dark matter is deemed sufficient for the benchmarks aiding the design
 of the upcoming Run-2 searches. Nevertheless, a more complete set of
-models will certainly be required upon a discovery; see
-e.g.~\cite{Crivellin:2015wva} for an example of an observable that may
-distinguish the spin of the DM particle.
+models will certainly be required upon a discovery, as physics observables
+may be used to distinguish the spin of the DM particle~\cite{Crivellin:2015wva}. 
 
 We also assume that Minimal Flavor Violation (MFV) applies to the
 recommended models. This means that the flavor structure of the
 couplings between dark matter and ordinary particles follows the
 structure as the Standard Model. This choice is both natural, as there
 is no required additional theory of flavor beyond what is already
-present in the SM, and and it provides a mechanism to ensure that the
+present in the SM, and and it ensures that the
 models do not violate flavor constraints.  As a consequence, spin-0
 resonances exchanged in the \schannel must have Yukawa couplings to SM
 fermions. Flavor-safe models can still be constructed beyond the MFV
@@ -117,10 +116,10 @@ assumption of minimal width for the particles mediating the
 interaction between SM and DM.  This means that only the decays that
 are strictly necessary for the self-consistency of the model (e.g.  to
 DM and to quarks) are accounted for in the definition of the mediator
-width. In turn, this forbids any further decays to other invisible
-particles of the Dark Sector that may increase the width. However,
-studies within the Forum show that, for cut and count analyses, the
-kinematic distributions of many models and therefore the sensitivity
+width. In turn, this forbids any further decays of the mediator to other invisible
+particles of the Dark Sector that may increase its width. However,
+studies within the Forum show that, for many models in the cut and count analyses, the
+kinematic distributions and therefore the sensitivity
 of the search do not depend significantly on the mediator width up to
 extreme values where the particle nature of the mediator comes into
 question.
@@ -137,3 +136,28 @@ the self-consistency of single models (e.g. the mass generation for
 mediator particles), it is a starting point to prepare a set of
 distinct but yet complementary collider searches for Dark Matter, as
 it leads to benchmarks that are easily comparable across channels.
+
+\section{Structure of this document}
+
+The first chapter of the report is dedicated to simplified
+models with radiation of a hard object either from the initial state
+or from the mediator. These models produce primarily monojet signatures, 
+but are recommended for all \MET{}+X searches.
+Details of the implementation of these models in
+Monte Carlo generators are provided in
+Appendix \ref{app:MonojetLikeModels_Appendix}.
+Chapter~\ref{subsec:DMHFModels} describes the specific details of the general models
+for final states including heavy flavor quarks, leaving the implementation
+details to appendix~\ref{app:TTBar_Xsecs}.  
+Chapter~\ref{subsec:EWSpecificModels} contains the benchmark model
+recommendations and choices for final states containing an electroweak 
+boson ($W/Z/gamma/H$). Simplified models from chapter~\ref{subsec:MonojetLikeModels}
+are considered, together with contact interaction operators and specific simplified models leading
+to mono-boson signatures. The technical implementation and further models that can be studied
+beyond early searches are in appendix~\ref{app:EWSpecificModels_Appendix}. 
+The final chapter is devoted to the treatment of the validity of benchmark
+models from contact interaction operators.
+Appendix~\ref{app:Presentation_Of_Experimental_Results} contains the necessary elements that
+should be included in the results of experimental searches to allow for further reinterpretation. 
+
+

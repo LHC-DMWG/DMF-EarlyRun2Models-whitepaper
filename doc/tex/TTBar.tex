@@ -5,10 +5,13 @@
 {$LastChangedBy$}
 \svnid{$Id$}
 
-As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudoscalar particle mediating the DM-SM interactions is one of the simplest UV completions of our EFT models.  With the MFV assumption, the top quark plays
-a primary role in the phenomenology.   The model predicts not only
-the monojet process described earlier, but also production of dark matter
-in association with top pairs, as illustrated in Fig.~\ref{fig:TTbarPhi}.
+As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudoscalar particle 
+mediating the DM-SM interactions is one of the simplest UV completions of our EFT models.  
+With the MFV assumption, the top quark plays a primary role in the phenomenology: The model predicts not only
+ the monojet process described earlier, but also production of dark matter
+in association with top pairs, as illustrated in Fig.~\ref{fig:TTbarPhi}. 
+Dedicated searches including jets from heavy flavor quarks in the final state
+can be designed for this production mechanism. 
 
 \begin{figure}[h!]
 \centering
@@ -88,13 +91,20 @@ association with $t\bar t$.}
 
 \subsection{Parameter scan}
 
-As discussed in Sec.~\ref{subsec:MonojetLikeModels}, the MFV and universal coupling assumptions for spin-$0$ mediators leads to quark mass dependent Yukawa couplings and therefore dominant couplings to top quarks.Therefore DM+$t\bar{t}$ searches are strongly physically motivated and it is important to establish benchmarks for collider searches following the assumptions described in
-Sec.~\ref{subsec:MonojetLikeModels}, in particular a Dirac fermion DM particle, universal couplings and minimum width, $\Gamma_{\phi,a}$.
+As discussed in Sec.~\ref{subsec:MonojetLikeModels}, the MFV and universal coupling assumptions for spin-$0$ 
+mediators leads to quark mass dependent Yukawa couplings and therefore dominant couplings to top quarks.
 
-%The benchmark chosen for these searches follows the assumptions mentioned in the previous Section: we consider 
-%a Dirac fermion DM particle, universal couplings to quarks, and minimum mediator width. 
- 
-The benchmark points scanning the model parameters have been selected to ensure that the kinematic features of the parameter space are sufficiently represented. Detailed studies were performed to identify points in the \mdm, $m_{\phi,a}$, $\gDM$, $\gq$ (and $\Gamma_{\phi,a}$) parameter space that differ significantly from each other in terms of expected detector acceptance. Because missing transverse momentum is the key observable for searches, the mediator $p_{T}$ spectra is taken to represent the main kinematics of a model. Another consideration in determining the set of benchmarks is to focus on the phase space where we expect the searches to be sensitive during the 2015 LHC run. Based on a projected integrated luminosity of $30\,{\rm fb}^{-1}$ expected for 2015, we disregard model points with a cross section times branching ratio smaller than $0.1\,{\rm fb}$, corresponding to a minimum of one expected event assuming a conservative 0.1\% signal efficiency. 
+The parameter scan for the dedicated $t\bar{t}$+\MET{} searches has been studied in detail to target the production 
+mechanism of DM associated to heavy flavor quarks, still sharing many details of the scan for the scalar model with a gluon radiation 
+The benchmark points scanning the model parameters have been selected to ensure that the kinematic features of the 
+parameter space are sufficiently represented. Detailed studies were performed to identify points in the \mdm, 
+$m_{\phi,a}$, $\gDM$, $\gq$ (and $\Gamma_{\phi,a}$) parameter space that differ significantly from each other 
+in terms of expected detector acceptance. Because missing transverse momentum is the key observable for searches, the 
+mediator $p_{T}$ spectra is taken to represent the main kinematics of a model. Another consideration in determining the set 
+of benchmarks is to focus on the phase space where we expect the searches to be sensitive during the 2015 LHC run. 
+Based on a projected integrated luminosity of $30\,{\rm fb}^{-1}$ expected for 2015, we disregard model points with a 
+cross section times branching ratio smaller than $0.1\,{\rm fb}$, corresponding to a minimum of one expected event 
+assuming a conservative 0.1\% signal efficiency. 
 
 The kinematics is most dependent on the masses \mdm and $m_{\phi,a}$. Figure~\ref{fig:scanPhi} 
 and~\ref{fig:scanPhiPseudo} show typical dependencies for scalar and pseudoscalar couplings respectively.
@@ -151,6 +161,18 @@ Another case where the width can impact the kinematics is when $m_{\phi,a}$ is s
 \end{center}
 \end{figure}
 
+The points for the parameter scan chosen for this model are listed in Table~\ref{tab:mDMmMedScan_SP}, chosen
+to be harmonized with those for other analyses employing the same scalar model as benchmark. 
+Based on the sensitivity considerations above, DM masses are only simulated up to 500 GeV (but the 5 TeV mediator point is retained)
+leading to a total of 24 benchmark points. However for these searches we recommend to generate scalar and pseudoscalar
+models separately, as the kinematics differs due to the different coupling of the mediator to the final state top quarks in the two cases,
+as shown in Figs.~\ref{fig:scanPhi} and ~\ref{fig:scanPhiPseudo}.
+
+\section{Presentation of results for reinterpretation}
+
+The cross-section scaling considerations shown in~\ref{sec:monojet_scaling} still apply for this model. Here 
+we detail the specific studies done for this model. 
+
 Given that the kinematics are similar for all couplings $g = \sim 1$, we recommend to generate only samples with $\gDM = \gq = 1$.
 It follows from this that these benchmark points should be a good
 approximation for non-unity couplings and for $\gDM \neq \gq$, provided
@@ -160,27 +182,23 @@ branching ratio.
 While the simple scaling function
 
 \begin{equation}
-   \sigma'\times BR' = [\sigma \times BR]
-   \times {\gq' \over \gq}^2
-   \times {\gDM'\over \gDM}^2
-   \times {\Gamma\over\Gamma'}
+\sigma'\times BR' = [\sigma \times BR]
+\times {\gq' \over \gq}^2
+\times {\gDM'\over \gDM}^2
+\times {\Gamma\over\Gamma'}
 \end{equation}
 is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example). 
 This scaling is only approximate (up to 20\%)  and relies on the narrow width approximation, ignoring PDFs effects. 
 We also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to be close to but lower than the perturbative limit. 
 
 \begin{figure}[!ht]
-\begin{center}
-\includegraphics[scale=0.45]{figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png}
-\vspace{2mm}
-\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the generator, for a scalar model with $m_{\phi}=400\,{\rm GeV}$, $\mdm=1\,{\rm GeV}$ and all couplings set to unity. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
-\end{center}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png}
+		\vspace{2mm}
+		\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the generator, for a scalar model with $m_{\phi}=400\,{\rm GeV}$, $\mdm=1\,{\rm GeV}$ and all couplings set to unity. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
+	\end{center}
 \end{figure}
 
-The points for the parameter scan chosen for this model are listed in Table~\ref{tab:mDMmMedScan_SP}, chosen
-to be harmonized with those for other analyses employing the same scalar model as benchmark. 
-Based on the sensitivity considerations above, DM masses are only simulated up to 500 GeV (but the 5 TeV mediator point is retained)
-leading to a total of 24 benchmark points.
 
 %In addition to the considerations discussed in the preceding subsections, very light DM fermions are included ($\mdm=10\,{\rm GeV}$) 
 %as this is a region where colliders have a complementary sensitivity to current direct detection experiments. 

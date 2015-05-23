@@ -123,11 +123,6 @@
 %\fi
 
 \chapter{Recommended models for all \MET+X analyses}
-This chapter of the report is dedicated to simplified
-models that produced, primarily, monojet signatures.
-Details of the implementation of these models in
-Monte Carlo generators is provided in
-Appendix \ref{app:MonojetLikeModels_Appendix}.
 \label{subsec:MonojetLikeModels}
 \input{tex/MonojetLikeModels}
 
@@ -173,15 +168,15 @@ Appendix \ref{app:MonojetLikeModels_Appendix}.
 %\fi
 
 %\ifNotMonojetTTBarOnly
-\chapter{Appendix: Detailed studies for EW models}
-\label{app:EWSpecificModels_Appendix}
-\input{tex/EWSpecificModels_Appendix.tex}
-%\fi 
-
-%\ifNotMonojetTTBarOnly
 \chapter{\texorpdfstring{Appendix: Table of cross sections for $t\bar{t}$+\MET searches}{Appendix: Table of cross sections for  ttbar+\MET searches}}
 \label{app:TTBar_Xsecs}
 \input{tex/TTBar_Xsecs_Appendix.tex}
+%\fi 
+
+%\ifNotMonojetTTBarOnly
+\chapter{Appendix: Detailed studies for EW models}
+\label{app:EWSpecificModels_Appendix}
+\input{tex/EWSpecificModels_Appendix.tex}
 %\fi 
 
 \chapter{Appendix: Presentation of experimental results for reinterpretation}
@@ -191,6 +186,7 @@ Appendix \ref{app:MonojetLikeModels_Appendix}.
 %%FIXME: it does not understand Collaboration. Fix here rather than hacking bib file?
 % \bibliographystyle{unsrtnat}
 \bibliographystyle{alpha}
+%\bibliographystyle{JHEP}
 \bibliography{doc}
 
 \end{document}
