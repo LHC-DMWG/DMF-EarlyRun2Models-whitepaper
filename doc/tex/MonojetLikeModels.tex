@@ -5,6 +5,12 @@
 {$LastChangedBy$}
 \svnid{$Id$}
 
+
+% preamble
+
+In this chapter we review recommendations for final states of \MET{} recoiling against a particle extracted from initial state radiation. While the recommendations are general, the discussions in this chapter are made based on the monojet final state. Further details on the mono-$\gamma/W/Z$ final states from boson radiation are discussed in Sec.~\ref{sec:bosonrad}.
+
+
 \section{Vector and axial vector mediator, \schannel exchange}
 \label{sec:monojet_V}
 
@@ -69,7 +75,7 @@ The coupling \gq is assumed to be universal to all quarks.
 It is also possible to consider other models in which mixed vector and axial-vector couplings are considered, 
 for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with
 pure vector couplings or pure axial vector couplings.
-\Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event.}
+\Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event. Note, though, that in the mediator rest frame, the angular distribution of the DM relative to the mediator direction of motion has the form: $1+z^2+2*C*z$ ($z=\cos\theta$), with the second term only present in the mixed case. This may lead to acceptance differences.}
 %Definition of minimal width
 As mentioned in the introduction, when no additional visible or invisible decays contribute to the width of the mediator, 
 the minimal width is fixed by the choices of couplings $\gq$ and $\gDM$. The effect of larger 
@@ -196,7 +202,7 @@ simplified model is suppressed and the $\MET$ spectrum hardens, as demonstrated 
 \begin{itemize}
 \item A coarse binning along $\mDM$ is sufficient at $\mMed \gg 2\mDM$.
 \item Finer binning is needed in order to capture the changes in the cross section and kinematic quantities close to the production threshold on both sides around $\mMed=2\mDM$.
-\item Due to the significant cross section suppression of the off-shell Dark Matter pair production, it is not necessary to populate the parameter space $\mMed \ll 2\mDM$ since the LHC is not going to be able to probe the models there.
+\item Due to the significant cross section suppression of the off-shell Dark Matter pair production, it is not necessary to populate the parameter space $\mMed \ll 2\mDM$ since imminent LHC searches are not expected to be sensitive to these signals.
 \end{itemize}
 
 \begin{figure}
@@ -244,7 +250,7 @@ of Run-2 LHC data with respect to rate and/or kinematics.
 Projected sensitivities for a 14~\tev\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$~\gev and $\MET>500$~\gev, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 %\Todo{Can we get more precise number and a citation? Is this in Sarah's V+jets paper?} 
 when going from $\sqrt{s}=8$~\tev to 13~\tev, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
 The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, light Dark Matter of
-\mDM=10~\gev and a \mMed=1~\tev vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$~\gev for 5~\tev vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC.
+\mDM=10~\gev and a \mMed=1~\tev vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$~\gev for 5~\tev vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC in the early Run 2.
 
 
 Based on these arguments, the following $\mMed$ grid points are chosen, roughly equidistant in the logarithmic scale: 10~\gev, 20~\gev, 50~\gev,  100~\gev, 200~\gev, 300~\gev, 500~\gev, 1000~\gev and 2000~\gev. Given the fact that significant changes in cross section happen around the $\mMed=2\mDM$ threshold, the $\mDM$ grid points are taken at approximately $\mMed/2$, namely: 10~\gev, 50~\gev, 150~\gev, 500~\gev and 1000~\gev. Points on the on-shell diagonal are always chosen to be 5~\gev away from the threshold, 
@@ -368,13 +374,13 @@ One of the simplest UV complete extensions of the effective field theory approac
 A gauge singlet mediator can have tree-level interactions with a singlet DM particle that is either a Dirac or Majorana fermion, or DM that is a scalar itself. 
 The spin-$0$ mediator can either be a real or complex scalar; a complex scalar contains both scalar and pseudoscalar particles, whereas the real field only contains the scalar particle. See Refs.~\cite{Buckley:2014fba,Harris:2014hga} for a thorough discussion. One-loop diagrams leading to a \MET+X signature are shown in Fig.~\ref{fig:feyn_prod_S}.
 In this document we consider only two of the possible choices for this simplified model: one where the interaction with the SM is mediated by a real scalar, 
-and the second where we consider only a light pseudoscalar, assuming that the associated scalar is decoupled from the low-energy spectrum. 
+and the second where we consider only a pseudoscalar for which the associated scalar is assumed to be decoupled at higher energies. Note that this assumption does not hold in a UV complete model where the two components of the complex scalar mediator would be approximately degenerate.
 
 Couplings to the SM fermions can be arranged by mixing with the SM Higgs. Such models have interesting connections with Higgs physics, and can be viewed as generalizations of the Higgs portal to DM. The most general scalar mediator models will have renormalizable interactions between the SM Higgs and the new scalar $\phi$ or pseudoscalar $a$, as well as $\phi/a$ interactions with electroweak gauge bosons. Such interactions are model dependent, often subject to constraints from electroweak precision tests, and would suggest specialized searches which cannot be generalized to a broad class of models (unlike, for instance, the $\MET+\textrm{jets}$ searches). As a result, for this class of minimal simplified models with spin-$0$ mediators, we will focus primarily on couplings to fermions and loop-induced couplings to gluons. %Possible couplings to the electroweak sector may also lead to interesting DM phenomenology that can be studied in the context of Higgs Portal DM.
 
 %\subsection{Model and assumption for fermionic DM}
 
-Working under the assumption of Minimal Flavor Violation (MFV) implies scalar couplings to fermions are proportional to the fermion mass.  However, the overall normalization constant of this coupling can differ for for up- and down-type quarks and charged leptons. Assuming that DM is a fermion $\chiDM$ that couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level Lagrangians compatible with the MFV assumption are~\cite{Cotta:2013jna,Abdullah:2014lla}:
+Working under the assumption of Minimal Flavor Violation (MFV) implies scalar couplings to fermions are proportional to the fermion mass.  However, the overall normalization constant of this coupling can differ for for up- and down-type quarks and charged leptons. Assuming that DM is a fermion $\chiDM$ that couples to the SM only through a scalar $\phi$ or pseudoscalar $a$, the most general tree-level Lagrangians\footnote{Note that these includes couplings to leptons, while in the vector/axial-vector case discussed earlier this was resctricted to quarks only for historical reasons.} compatible with the MFV assumption are~\cite{Cotta:2013jna,Abdullah:2014lla}:
 
  \begin{eqnarray}
 {\cal L}_{\phi} & = &
@@ -441,7 +447,7 @@ f_a (\tau) =  \tau \left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-
 \eea
 for $\tau > 1$, where $\tau = 4 m_{t}^2/m_{\phi,a}^2$.
 
-The first term in the width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last two terms correspond to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
+The first term in the width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last term corresponds to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
 
 
 %\begin{equation}
@@ -639,11 +645,11 @@ The size of the momentum transfer with respect to the mediator mass allows to cl
 \item effective field theory (EFT) limit when $q^2 \ll \mMed$.
 \end{itemize}
 All three categories can be distinguished in Fig.\,\ref{fig:monojet_MstarMmed} showing the upper limit on the interaction scale $M^{*} \equiv \mMed/\sqrt{\gq\gDM}$ for vector mediator. 
-In the case of the off-shell production and the EFT limit, the first term in the propagator dominates which reduces the dependence on the mediator width. Therefore, in these cases one can approximate the cross section as
+In the case of the off-shell production and the EFT limit, the first and second term in the propagator dominate, respectively, which reduces the dependence on the mediator width. Therefore, in these cases one can approximate the cross section as
 \begin{equation}
 \sigma \propto \gq^2\gDM^2.
 \end{equation}
-The on-shell production regime is the most interesting one as it gives the best chances for a discovery at the LHC given the cross section enhancement. The propagator term with the width cannot be neglected in this case and, in the narrow width approximation which requires $\Gamma \ll \mMed$, one can integrate
+The on-shell production regime is the most interesting one as it gives the best chances for a discovery at the LHC given the cross section enhancement. The propagator term with the width cannot be neglected in this case and, in the narrow width approximation which requires $\Gamma \ll \mMed$ (this is not necessarily the case in the benchmarks considered in the scans), one can integrate
 \begin{equation}
 \int \frac{ds}{(s-\mMed^2)^2 + \mMed^2\Gamma^2} = \frac{\pi}{\mMed\Gamma}
 \label{eq:monojet_int}
@@ -742,7 +748,7 @@ We propose to present the results in the $\gq$--$\gDM$ plane using the following
 \begin{itemize}
 \item Since the shapes of kinematic quantities do not change for different couplings, use the acceptance and efficiency for the available $\mDM=50$~\gev, $\mMed=300$~\gev, $\gq=\gDM=1$ grid point from the $\mMed$--$\mDM$ plane for the scalar and pseudo-scalar mediator. In case of the vector and axial-vector mediator, use the grid point $\mDM=50$~\gev, $\mMed=1$~\tev, $\gq=\gDM=1$.
 \item Generate additional samples in order to get generator cross sections only. For scalar and pseudo-scalar mediator, choose $\mDM=50$~\gev, $\mMed=300$~\gev with the following values for $\gq=\gDM$: 0.1, 2, 3. For vector and axial vector mediator, choose $\mDM=50$~\gev, $\mMed=1$~\tev with the following values for $\gq=\gDM$: 0.1, 0.25, 0.5, 0.75, 1.25, 1.5. The upper values are defined by the minimal width reaching the mediator mass. \Todo{Waiting for scalar mediator calculation of perturbativity limit from J. Alcaraz.).}
-\item Rescale the generator cross sections along the lines of constant width in order to populate the whole $\gq$--$\gDM$ plane.
+\item Rescale the generator cross sections for on-shell resonance production along the lines of constant width in order to populate the whole $\gq$--$\gDM$ plane.
 \end{itemize}
 
 %choose mDM=50, mMed=300, gSM=0.1, gDM={0.1, 1, 2, 3, 4, 5, 6} for S (mMed=GammaMin is reached around 5)
