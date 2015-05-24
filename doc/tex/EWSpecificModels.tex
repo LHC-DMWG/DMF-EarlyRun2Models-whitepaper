@@ -11,61 +11,22 @@ Section~\ref{subsec:MonojetLikeModels}.
 
 %%%Classification of models
 
-\begin{figure}[h!]
-  \centering
-  \vspace{\baselineskip}
-  \unitlength=0.0045\textwidth
-  \begin{feynmandiagram}[modelVisr]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2}
-    \fmftop{isr}
-    \fmfbottom{pisr}
-    \fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v1}
-    \fmf{fermion}{o2,v1,o1}
-    \fmf{fermion}{i2,visr,v1}
-    \fmf{plain}{v1,pvisr,i1}
-    \fmf{fermion,tension=0}{v1,i1}
-    \fmflabel{\Large ${\bar{q}}$}{i1}
-    \fmflabel{\Large ${q}$}{i2}
-    \fmflabel{\Large ${\bar{\chiDM}}$}{o1}
-    \fmflabel{\Large ${\chiDM}$}{o2}
-    \fmf{photon,tension=0}{visr,isr}
-    \fmf{phantom,tension=0}{pvisr,pisr}
-    \fmflabel{\Large ${V}$}{isr}
-  \end{feynmandiagram}
-  \begin{feynmandiagram}[modelVeft5pt]
-    \fmfleft{i1,i2}
-    \fmfright{o1,o2,o3}
-    \fmf{photon,label={\Large $V$}}{v1,v2}
-    \fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v2}
-    \fmf{fermion}{i2,v1,i1}
-    \fmf{fermion}{o2,v2,o1}
-    \fmflabel{\Large ${\bar{q}}$}{i1}
-    \fmflabel{\Large ${q}$}{i2}
-    \fmflabel{\Large ${\bar{\chiDM}}$}{o1}
-    \fmflabel{\Large ${\chiDM}$}{o2}
-    \fmf{photon}{o3,v2}
-    \fmflabel{\Large ${V}$}{o3}
-  \end{feynmandiagram}
-
-  \vspace{\baselineskip}
-  \caption{Sketch of benchmark models including a contact interaction
-  for V+MET searches, adapted from~\cite{Nelson:2013pqa}. \label{fig:VPlusMET_EFT}}
-\end{figure}
 
 %
-The models considered can be divided into four categories:
+The models considered can be divided into three categories:
 \begin{description}
- \item[Models including a contact operator, where the boson is radiated from the initial state] As depicted in
- the left diagram of Figure~\ref{fig:VPlusMET_EFT}, these models follow the nomenclature and theory
- for the EFT benchmarks commonly used by MET+X searches~\cite{Goodman:2010ku}. These models
- have been used in past experimental searches~\cite{Khachatryan:2014rwa, Aad:2014vka,Khachatryan:2014tva, Aad:2014vka,
- ATLAS:2014wra, Aad:2013oja}, and they will not be described here~\cite{Cotta:2012nj, Carpenter:2012rg, Crivellin:2015wva,Berlin:2014cfa}.
+% \item[Models including a contact operator, where the boson is radiated from the initial state] As depicted in
+% the left diagram of Figure~\ref{fig:VPlusMET_EFT}, these models follow the nomenclature and theory
+% for the EFT benchmarks commonly used by MET+X searches~\cite{Goodman:2010ku}. These models
+% have been used in past experimental searches~\cite{Khachatryan:2014rwa, Aad:2014vka,Khachatryan:2014tva, Aad:2014vka,
+% ATLAS:2014wra, Aad:2013oja}, and they will not be described here.
  \item[Simplified models with a boson radiated either from the initial state or from the mediator] These models follow those
  already described in Section~\ref{subsec:MonojetLikeModels}, replacing the gluon with a boson.
+  \item[V-specific simplified models] These models postulate direct couplings of new mediators
+ to bosons, e.g. they couple the Higgs boson to a new vector or to a new scalar~\cite{Carpenter:2013xra,Berlin:2014cfa}. 
  \item[Models including a contact operator, where the boson is directly coupled to DM]
  Shown on the right-hand side of Figure~\ref{fig:VPlusMET_EFT},
- these models allow for a contact interaction vertex that directly couples the boson to Dark Matter.
+ these models allow for a contact interaction vertex that directly couples the boson to Dark Matter~\cite{Cotta:2012nj, Carpenter:2012rg, Crivellin:2015wva,Berlin:2014cfa}.
  These models are included in this report devoted to simplified models since 
  UV completions for most of these operators proceed through loops and are not available to date. 
  These models provide a benchmark to motivate signal regions that are unique to searches with
@@ -73,25 +34,63 @@ The models considered can be divided into four categories:
  as placeholders and emphasize model-independent results especially in signal regions tailored to these models. 
  Wherever results are interpreted in terms of these operators, a truncation procedure
  to ensure the validity of the EFT should be employed, as detailed in Section~\ref{sec:EFTValidity}. 
-  \item[V-specific simplified models] These models postulate direct couplings of new mediators
- to bosons, e.g. they couple the Higgs boson to a new vector or to a new scalar~\cite{Carpenter:2013xra,Berlin:2014cfa}. 
 \end{description}
+
+\begin{figure}[h!]
+	\centering
+	\vspace{\baselineskip}
+	\unitlength=0.0045\textwidth
+%	\begin{feynmandiagram}[modelVisr]
+%		\fmfleft{i1,i2}
+%		\fmfright{o1,o2}
+%		\fmftop{isr}
+%		\fmfbottom{pisr}
+%		\fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v1}
+%		\fmf{fermion}{o2,v1,o1}
+%		\fmf{fermion}{i2,visr,v1}
+%		\fmf{plain}{v1,pvisr,i1}
+%		\fmf{fermion,tension=0}{v1,i1}
+%		\fmflabel{\Large ${\bar{q}}$}{i1}
+%		\fmflabel{\Large ${q}$}{i2}
+%		\fmflabel{\Large ${\bar{\chiDM}}$}{o1}
+%		\fmflabel{\Large ${\chiDM}$}{o2}
+%		\fmf{photon,tension=0}{visr,isr}
+%		\fmf{phantom,tension=0}{pvisr,pisr}
+%		\fmflabel{\Large ${V}$}{isr}
+%	\end{feynmandiagram}
+	\begin{feynmandiagram}[modelVeft5pt]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,o3}
+		\fmf{photon,label={\Large $V$}}{v1,v2}
+		\fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v2}
+		\fmf{fermion}{i2,v1,i1}
+		\fmf{fermion}{o2,v2,o1}
+		\fmflabel{\Large ${\bar{q}}$}{i1}
+		\fmflabel{\Large ${q}$}{i2}
+		\fmflabel{\Large ${\bar{\chiDM}}$}{o1}
+		\fmflabel{\Large ${\chiDM}$}{o2}
+		\fmf{photon}{o3,v2}
+		\fmflabel{\Large ${V}$}{o3}
+	\end{feynmandiagram}
+	
+	\vspace{\baselineskip}
+	\caption{Sketch of benchmark models including a contact interaction
+		for V+MET searches, adapted from~\cite{Nelson:2013pqa}. \label{fig:VPlusMET_EFT}}
+\end{figure}
 
 The following Sections describe the models within these categories,
 the parameters for each of the benchmark models chosen,
-the studies towards the choices of the parameters to be scanned,
-and finally point to the location of their Matrix Element
-implementation.
+the studies towards the choices of the parameters to be scanned.
 
 \section{Simplified models with boson radiation} \label{sec:bosonrad}
 \input{tex/EWSpecificModels_SVMediators}
 
+\section{Specific simplified models including EW bosons, tailored to Higgs+MET searches}
+\input{tex/EWSpecificModels_MonoHiggs}
+
 \section{EFT models with direct DM-boson couplings}
 \label{sec:EFT_models_with_direct_DM_boson_couplings}
 \input{tex/EWSpecificModels_EFT}
-
-\section{Specific simplified models including EW bosons, tailored to Higgs+MET searches}
-\input{tex/EWSpecificModels_MonoHiggs}
 
 %%%
 
