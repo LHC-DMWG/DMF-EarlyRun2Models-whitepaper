@@ -89,6 +89,15 @@ association with $t\bar t$.}
 
 %The first term in each width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks and $N_c = 1$ for leptons. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last two terms correspond to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
 
+%\section{Specific models involving $b-$ quarks in the final state}
+
+In some theoretically motivated scenario (e.g. for high $tan\beta$ in 2HDM in the pMSSM), 
+spin-0 mediators might couple more strongly to down generation quarks.
+This assumption motivates the study of final states involving $b$-quarks 
+as a complementary search to the $t\bar
+t$+DM models presented in the previous section, to directly probe the $b-$ quark coupling. 
+An example of such a model can be found in Ref.~\cite{Buckley:2014fba}
+
 \subsection{Parameter scan}
 
 As discussed in Sec.~\ref{subsec:MonojetLikeModels}, the MFV and universal coupling assumptions for spin-$0$ 
@@ -169,10 +178,36 @@ leading to a total of 24 benchmark points. However for these searches we recomme
 models separately, as the kinematics differs due to the different coupling of the mediator to the final state top quarks in the two cases,
 as shown in Figs.~\ref{fig:scanPhi} and ~\ref{fig:scanPhiPseudo}.
 
-\section{Presentation of results for reinterpretation}
+Similar studies were performed in the $b \bar b$ case. It was found that they 
+show the same weak dependence of the kinematics of the event on the mediator width.
+The same benchmark parameters of the $t\bar t$ case could then be chosen.
+
+%%
+%[24/05/15 23:48:07] Caterina Doglioni: the plots are made with 5F, while we recommend 4F scheme
+%[24/05/15 23:49:04] Caterina Doglioni: even though the relevant parameters do not change 
+%(there are some plots due in the appendix for that, albeit with limited statistics), she doesn’t want to put them in 
+%and wouldn’t be able to remake them with the right flavor scheme.
+
+% Plots for bbar, if they make it
+% Removing these plots as they won't make it last-minute. 
+%\Todo{[TODO: The following figures are placeholders for now and will be added later].  If these are supporting material for the MC generation, put in the appendix}.
+%
+%\begin{figure}
+%    \vbox{\hfill}
+%    \caption{\label{fig:bbscanPhi} Example of the dependence of the kinematics on the scalar mediator mass. 
+%    	The Dark Matter mass is fixed to be $1 {\rm GeV}$.}
+%\end{figure}
+%
+%\begin{figure}[!ht]
+%    \vbox{\hfill}
+%    \caption{\label{fig:bbscanPhiPseudo} Example of the dependence of the kinematics on the pseudoscalar mediator mass. 
+%    	The Dark Matter mass is fixed to be $1 {\rm GeV}$.}
+%\end{figure}
+
+\subsection{Presentation of results for reinterpretation}
 
 The cross-section scaling considerations shown in~\ref{sec:monojet_scaling} still apply for this model. Here 
-we detail the specific studies done for this model. 
+we detail the specific studies done for the  $t\bar t$ model. 
 
 Given that the kinematics are similar for all couplings $g = \sim 1$, we recommend to generate only samples with $\gDM = \gq = 1$.
 It follows from this that these benchmark points should be a good
@@ -200,6 +235,9 @@ We also choose to provide instead a table of cross section times branching ratio
 	\end{center}
 \end{figure}
 
+\newthought{Implementation}
+There are some subtleties to the Monte Carlo simulation relevant for
+this case that are discussed in Appendix~\ref{app:MonojetLikeModels_Appendix}.
 
 %In addition to the considerations discussed in the preceding subsections, very light DM fermions are included ($\mdm=10\,{\rm GeV}$) 
 %as this is a region where colliders have a complementary sensitivity to current direct detection experiments. 
