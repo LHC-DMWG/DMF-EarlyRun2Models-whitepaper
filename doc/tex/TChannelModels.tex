@@ -15,7 +15,7 @@ the SM through exchange of a neutral spin-0 or spin-1 in an
 \schannel process.  A \tchannel process may couple the SM and DM
 directly, leading to a different phenomenology.  Here, we examine a
 model where $\chiDM$ is a Standard Model (SM) singlet, a Dirac
-fermion% dropped after comment from Tom Rizzo
+fermion% dropped after comments from Tom Rizzo and Uli Haisch
 %\footnote{Though outside the scope of this report, a colored
 %  vector \tchannel mediator with vector dark matter may also be
 %  worthy of study. The UV completion of such models would look like an
@@ -29,30 +29,20 @@ Refs.~\cite{An:2013xka,Papucci:2014iwa}.
 Following the example of Ref.~\cite{Papucci:2014iwa}, the interaction Lagrangian is written as
 
 \begin{equation}
-\mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2,3} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chiDM
+\mathcal{L}_{\mathrm{int}} = g \sum_{i=1,2} (\phi_L^i \bar{Q}_L^i + \phi_{uR}^i \bar{u}_R^i + \phi_{dR}^i \bar{d}_R^i) \chiDM
 \end{equation}
 
 where $Q_L^i$, $u_R^i$ and $d_R^i$ are the SM quarks and $\phi_L^i$, $\phi_{uR}^i$ and $\phi_{dR}^i$ are the corresponding mediators, which 
-(unlike the \schannel mediators) must be heavier than $\chiDM$. \Todo{Note: \cite{Papucci:2014iwa} uses only i = 1,2, but I think it's fine to extend this to 3 here.}
+(unlike the \schannel mediators) must be heavier than $\chiDM$. 
 These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied in the literature include coupling to the left-handed quarks only~\cite{Chang:2014, Busoni:2014haa}, to the $\phi_{uR}^i$ \cite{Tait:2013} or $\phi_{dR}^i$ \cite{Papucci:2014iwa, Yavin:14092893}, or some combination~\cite{Bai:201311171, An:201489115014}.
 
 \vspace{5mm}
 
-As for the \schannel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour equal; the same logic also applies to the couplings $g$. The free parameters are then
+As for the \schannel models, we assume Minimal Flavour Violation (MFV), setting the mediator masses for each flavour equal; the same logic also applies to the couplings $g$. Coupling to the third generation breaks the MFV assumption and is thus forbidden. The free parameters are then
 
 \begin{equation}
 \{ \mDM,\, \Mphi,\, g\}.
 \end{equation}
-
-\vspace{5mm}
-
-In practice, the third mediator mass and coupling could be separated from the other two, if higher order corrections to the MFV prediction arise due to the large top Yukawa coupling --- a common variation is then to define this split between the first two generations and the third, so the parameters are extended to
-
-\begin{equation}
-\{ \mDM,\, M_{\phi_{1,2}},\,M_{\phi_3},\, g_{1,2},\, g_3\}.
-\end{equation}
-
-For the purposes of the rest of this section, we will assume the universal variant $M_{\phi_{1,2}} = M_{\phi_3}$, $g_{1,2} = g_3$.
 
 \vspace{5mm}
 
@@ -101,7 +91,7 @@ at the LHC.
 This model is similar to the simplified model considered in SUSY searches, implemented as the MSSM with only light squarks and
 a neutralino, except for two distinct points:  the $\chiDM$ is
 a Dirac fermion and the coupling $g$ is not limited to be
-weak scale.
+weak scale ($g\ll 1$).
 In the MSSM, most of these processes are sub-dominant, even
 if resonantly enhanced, because the production is proportional
 to weak couplings.
@@ -136,7 +126,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{wiggly,tension=0}{v2,o2}
     \fmf{fermion}{i1,v1,o1}
     \fmf{wiggly,tension=0}{v1,o1}
-    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v1,v2}
+    \fmf{scalar,label={\Large $\phi_{1,,2}$}}{v1,v2}
     \fmflabel{\Large ${\bar{\chiDM}}$}{o1}
     \fmflabel{\Large ${\chiDM}$}{o2}
     \fmfdot{v1,v2,visr}
@@ -152,7 +142,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{wiggly}{v3,o3}
     \fmf{gluon}{i1,v1}
     \fmf{fermion}{v2,v1,o1}
-    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v3,v2}
+    \fmf{scalar,label={\Large $\phi_{1,,2}$}}{v3,v2}
     \fmf{fermion,tension=0}{v2,o2}
     \fmf{wiggly}{v2,o2}
     \fmflabel{\Large ${q}$}{i2}
@@ -168,7 +158,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{gluon}{i1,v1}
     \fmf{fermion}{i2,v1}
     \fmf{fermion,tension=2}{v1,v2}
-    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v2,v3}
+    \fmf{scalar,label={\Large $\phi_{1,,2}$}}{v2,v3}
     \fmf{fermion}{v3,o3}
     \fmf{fermion,tension=0}{v2,o1}
     \fmf{wiggly}{v2,o1}
@@ -186,8 +176,8 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmfright{o1,o2,o3}
     \fmf{gluon}{i1,v1}
     \fmf{fermion}{i2,v2}
-    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v2,v1}
-    \fmf{scalar,label={\Large $\phi_{1,,2,,3}$}}{v1,v3}
+    \fmf{scalar,label={\Large $\phi_{1,,2}$}}{v2,v1}
+    \fmf{scalar,label={\Large $\phi_{1,,2}$}}{v1,v3}
     \fmf{fermion}{v3,o2}
     \fmf{fermion,tension=0}{v3,o1}
     \fmf{wiggly}{v3,o1}
@@ -205,8 +195,8 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmfright{o1,o2,o3}
     \fmf{fermion}{i2,v3,o3}
     \fmf{fermion}{o1,v1,i1}
-    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v1,v2}
-    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v2,v3}
+    \fmf{scalar,label={$\phi_{1,,2}$}}{v1,v2}
+    \fmf{scalar,label={$\phi_{1,,2}$}}{v2,v3}
     \fmf{gluon}{v2,o2}
     \fmf{wiggly,tension=0}{v3,o3}
     \fmf{wiggly,tension=0}{v1,o1}
@@ -228,9 +218,9 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{gluon}{i2,v2}
     \fmf{gluon}{i1,v1}
     \fmf{scalar}{v4,v2,v1,v3}
-    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v2,v1}
-    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v4,v2}
-    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v1,v3}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2}$}}{v2,v1}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2}$}}{v4,v2}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2}$}}{v1,v3}
     \fmf{fermion}{o3,v4,o4}
     \fmf{fermion}{o2,v3,o1}
     \fmf{wiggly,tension=0}{v4,o4}
@@ -250,8 +240,8 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{fermion}{i1,v1}
     \fmf{scalar}{v4,v2}
     \fmf{scalar}{v1,v3}
-    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v4,v2}
-    \fmf{phantom,tension=0,label={$\phi_{1,,2,,3}$}}{v1,v3}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2}$}}{v4,v2}
+    \fmf{phantom,tension=0,label={$\phi_{1,,2}$}}{v1,v3}
     \fmf{phantom,tension=0,label={$\chiDM$}}{v2,v1}
     \fmf{fermion}{v2,v1}
     \fmf{wiggly,tension=0}{v2,v1}
@@ -274,7 +264,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{gluon}{v4,o4}
     \fmf{fermion}{v3,o3}
     \fmf{wiggly,tension=0}{v3,o3}
-    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v3,v2,v1}
+    \fmf{scalar,label={$\phi_{1,,2}$}}{v3,v2,v1}
     \fmf{gluon}{i1,v2}
     \fmf{fermion}{v1,o2}
     \fmf{fermion}{o1,v1}
@@ -294,7 +284,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmf{fermion}{v3,v4,i2}
     \fmf{gluon}{v4,o4}
     \fmf{gluon}{v1,o1}
-    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v2,v3}
+    \fmf{scalar,label={$\phi_{1,,2}$}}{v2,v3}
     \fmf{fermion}{o3,v3}
     \fmf{wiggly,tension=0}{o3,v3}
     \fmf{fermion}{v2,o2}
@@ -312,7 +302,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
     \fmfright{o1,o2,o3,o4}
     \fmf{fermion}{i1,v1,o1}
     \fmf{fermion}{o4,v4,i2}
-    \fmf{scalar,label={$\phi_{1,,2,,3}$}}{v1,v2,v3,v4}
+    \fmf{scalar,label={$\phi_{1,,2}$}}{v1,v2,v3,v4}
     \fmf{fermion}{v2,o2}
     \fmf{fermion}{o3,v3}
     \fmf{wiggly,tension=0}{v4,o4}
@@ -331,7 +321,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
 \newthought{Parameter scans}
 
 Ref.~\cite{Papucci:2014iwa} studies the parameter space and obtains
-bounds on this model from LHC Run 1 mono-jet and dijets+MET data.
+bounds on this model from LHC Run 1 mono-jet and dijets+MET data. The Forum did not exhaustively compare the kinematic distributions of this model as was done in the \schannel case. While this means the recommendations below should be taken with more caution, the model is plausibile and distinctive, and it should be included in the design of LHC searches.
 
 As in the \schannel models, scans should be performed over
 $\mDM$ and $\Mphi$. The viable ranges of both parameters nearly

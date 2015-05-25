@@ -8,7 +8,7 @@
 
 % preamble
 
-In this chapter we review recommendations for final states of \MET{} recoiling against a particle extracted from initial state radiation. While the recommendations are general, the discussions in this chapter are made based on the monojet final state. Further details on the mono-$\gamma/W/Z$ final states from boson radiation are discussed in Sec.~\ref{sec:bosonrad}.
+In this chapter we review recommendations for final states of \MET{} recoiling against a particle extracted from initial state radiation. While the recommendations are general, the discussions in this chapter are made based on the monojet final state. These studies and studies in subsequent sections are based on simulation of the models with the generators implementation recommended in each section and provided in a companion CERN SVN repository. Further details on the mono-$\gamma/W/Z$ final states from boson radiation are discussed in Sec.~\ref{sec:bosonrad}.
 
 
 \section{Vector and axial vector mediator, \schannel exchange}
@@ -68,13 +68,13 @@ between the spin-1 mediator and SM and DM fields, with
 the corresponding interaction Lagrangians:
 \begin{align}
 \label{eq:AV} 
-\mathcal{L}_{\mathrm{vector}} &= \gq \sum_{q=udscbt}  \Zprime_{\mu} \bar{q}\gamma^{\mu}q + \gDM \Zprime_{\mu} \bar{\chiDM}\gamma^{\mu}\chiDM \\
-\mathcal{L}_{\rm{axial-vector}} &= \gq \sum_{q=udscbt}  \Zprime_{\mu} \bar{q}\gamma^{\mu}\gamma^5q + \gDM \Zprime_{\mu} \bar{\chiDM}\gamma^{\mu}\gamma^5\chiDM.
+\mathcal{L}_{\mathrm{vector}} &= \gq \sum_{q={u,d,s,c,b,t}}  \Zprime_{\mu} \bar{q}\gamma^{\mu}q + \gDM \Zprime_{\mu} \bar{\chiDM}\gamma^{\mu}\chiDM \\
+\mathcal{L}_{\rm{axial-vector}} &= \gq \sum_{q={u,d,s,c,b,t}}  \Zprime_{\mu} \bar{q}\gamma^{\mu}\gamma^5q + \gDM \Zprime_{\mu} \bar{\chiDM}\gamma^{\mu}\gamma^5\chiDM.
 \end{align}
 The coupling \gq is assumed to be universal to all quarks. 
 It is also possible to consider other models in which mixed vector and axial-vector couplings are considered, 
-for instance the couplings to the quarks are vector whereas those to DM are axial-vector. We recommend the models with
-pure vector couplings or pure axial vector couplings.
+for instance the couplings to the quarks are axial-vector whereas those to DM are vector. We recommend the models with
+pure vector couplings or pure axial-vector couplings.
 \Todo{Studies have been performed to see if the case of a mixed coupling can be simply extracted from the other models by some reweighting procedure to take account of the difference in cross section. This would assume that the difference between the pure and mixed couplings case does not affect the kinematics of the event. Note, though, that in the mediator rest frame, the angular distribution of the DM relative to the mediator direction of motion has the form: $1+z^2+2*C*z$ ($z=\cos\theta$), with the second term only present in the mixed case. This may lead to acceptance differences.}
 %Definition of minimal width
 As mentioned in the introduction, when no additional visible or invisible decays contribute to the width of the mediator, 
@@ -146,9 +146,8 @@ about understanding the details of the generator tools.
 Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
 $\MET$ distribution for a \mMed=5~\tev mediator
 once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
-This, however, does not come from physics, but is an artifact of
-the generator implementation,
-where a cutoff for the regions far away from the mediator mass is generally used.
+This, however, does not come from physics, but is a consequence of under-sampling phase space in the generator implementation,
+where a cutoff for the regions far away from the mediator mass is generally used. One must take care to correctly set the width of the Breit-Wigner used for the sampling.
 This is illustrated in Fig.\,\ref{fig:monojet_mchichi} showing the invariant mass of the Dark Matter pair in the samples generated for a \mMed=7~\tev mediator
 with different coupling strengths.
 In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
@@ -183,13 +182,13 @@ Since kinematic distributions are robust to
 changes in the specific values of coupling, the choice of  \gq=\gDM is reasonable 
 to reduce the parameter space to be scanned. 
 There are no complications associated
-with small couplings, but, also, the early part of Run-1 will not be
-sensitive to them.  We recommend a range of couplings that limit the
+with small couplings, but, also, the early part of Run~2 will not be
+sensitive to them.  The range of couplings we recommend limit the
 calculated width of the mediator to be near or below \mMed.
 
 For direct mediator searches, asymmetric couplings ($\gq \ne \gDM$ )
 might also be considered. A scan in \gDM vs \gq can then be performed for a fixed mediator mass. Such searches, such as those for
-dijet and ttbar resonances, may restrict \gq to a greater degree than
+dijet resonances, may restrict \gq to a greater degree than
 \gDM.
 
 \paragraph{Scan over the Dark Matter mass}
@@ -443,12 +442,11 @@ where $x=3$ for scalars and $x=1$ for pseudoscalars, and the loop integrals are
 f_\phi (\tau) = \tau \left [ 1+ (1-\tau) \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \right ]  \,, \qquad 
 f_a (\tau) =  \tau \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right) \, 
 \eea
-for $\tau < 1$ and 
+where $\tau = 4 m_{t}^2/m_{\phi,a}^2$, and, for $\tau > 1$, 
 \bea \label{eq:fphifb}
 f_\phi (\tau) = \tau \left [ 1+ (1-\tau)\left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) \right ]  \,\,, 
-f_a (\tau) =  \tau \left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) 
+f_a (\tau) =  \tau \left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right).
 \eea
-for $\tau > 1$, where $\tau = 4 m_{t}^2/m_{\phi,a}^2$.
 
 The first term in the width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last term corresponds to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
 
@@ -533,11 +531,8 @@ in order to decide on the optimized parameter grid for the presentation of Run-2
 \ref{fig:monojet_scan_S_mMed1000} show the scans over the couplings, Dark Matter mass and mediator mass and the same conclusions apply as in Section\,\ref{sec:monojet_V}.
 
 %TODO does the discussion below make sense?
-Since the top quark gives the dominant contribution to the mediator
-width due to SM Higgs-like Yukawa couplings, the effect of the
-kinematic threshold at $\mMed = 2m_t$ was studied in detail.
-A scan over the mediator mass is shown in Fig.\,\ref{fig:monojet_scan_S_mMed1000} where \mMed = 300~\gev and 500~\gev are chosen to be below and above $2m_t$. The off-shell Dark Matter production regime is assumed by taking $\mDM=1$~\tev in order to study solely the effects of the couplings to quarks. 
-No differences in the kinematic distributions are observed and also the cross sections remain similar in this case. Therefore, it is concluded that no significant changes appear for mediator masses around the $2m_t$ threshold.
+A scan over the mediator mass is shown in Fig.\,\ref{fig:monojet_scan_S_mMed1000} where \mMed = 300~\gev and 500~\gev are chosen to be below and above $2m_t$. The off-shell Dark Matter production regime is assumed by taking an extreme limit ($\mDM=1$~\tev) in order to study solely the effects of the couplings to quarks. 
+No differences in the kinematic distributions are observed and also the cross sections remain similar in this case. No significant changes appear for mediator masses around the $2m_t$ threshold.
 
 \begin{figure}
 \centering
@@ -670,7 +665,7 @@ Since $\Gamma \sim \gq^2+\gDM^2$, one can simplify this rule in the extreme case
 \end{eqnarray}
 %However, it is important to keep in mind that there is no simple scaling rule for how the cross section changes with the Dark Matter mass, mediator mass and the mediator width because PDFs matter in such cases as well.
 %The only case where there is a simple scaling with mass is if one mass is much smaller than the other mass, in which case the cross section becomes independent of the smaller mass.
-However, it is important to keep in mind that there is no simple scaling rule for how the cross section changes with the Dark Matter mass and the mediator mass, or for mediators with a large width, because PDFs matter in such cases as well.
+However, it is important to keep in mind that this formula omits color and multiplicity factors as well as possible Yukawa suppression, and there is no simple scaling rule for how the cross section changes with the Dark Matter mass and the mediator mass, or for mediators with a large width, because PDFs matter in such cases as well.
 Therefore, the scaling procedure outlined above is expected to work only for fixed masses and fixed mediator width, assuming the narrow width approximation applies.
 
 
@@ -764,7 +759,7 @@ We propose to present the results in the $\gq$--$\gDM$ plane using the following
 
 \paragraph{Rescaling to different mediator width}\label{paragraph:nonminimalwidth}
 
-In general it is also important to consider a larger mediator width than $\Gamma_{\rm{min}}$ in order to accommodate additional interactions of the mediator with the visible and hidden sector particles~\cite{Buckley:2014fba,Harris:2014hga}. The cross section scaling method described above can be used to reinterpret the results presented for the minimal width, since multiplying the width by factor $n$ is equivalent to changing the coupling strength by factor $\sqrt{n}$, i.e.
+In general it is also important to consider a larger mediator width than $\Gamma_{\rm{min}}$ in order to accommodate additional interactions of the mediator with the visible and hidden sector particles~\cite{Buckley:2014fba,Harris:2014hga}. If the narrow width approxmation applies, the cross section scaling method described above can be used to reinterpret the results presented for the minimal width, since multiplying the width by factor $n$ is equivalent to changing the coupling strength by factor $\sqrt{n}$, i.e.
 \begin{equation}
 \sigma(\gq,\gDM, n\Gamma_{\rm{min}}(\gq,\gDM)) \propto \frac{\gq^2 \gDM^2}{\Gamma_{\rm{min}}(\sqrt{n}\gq,\sqrt{n}\gDM)} \;.
 \end{equation}
@@ -772,8 +767,10 @@ The cross section for the sample with couplings $\gq$ and $\gDM$ and modified me
 \begin{equation}
 \sigma(\gq,\gDM, n\Gamma_{\rm{min}}(\gq,\gDM)) = \frac{1}{n^2} \sigma(\sqrt{n}\gq,\sqrt{n}\gDM,\Gamma_{\rm{min}}(\sqrt{n}\gq,\sqrt{n}\gDM))
 \end{equation}
-Here, it is again assumed the narrow width approximation applies.
 The advantage of doing this is in the fact that no event selection and detector response needs to be simulated since the changes in couplings do not have an effect on the shapes of kinematic distributions.
+
+It should be noted again that this procedure is only useful when the narrow width approximation applies. Care must be taken to ensure that is the case. For example, in the \modelV and \modelA case, one quickly breaks this approxmation even for small $n$.
+
 
 \section{Colored scalar mediator, \tchannel exchange}
 \label{sec:monojet_t_channel}
