@@ -318,7 +318,7 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
 \caption{Leading order two-jet \tchannel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelDijet}
 \end{figure}
 
-\newthought{Parameter scans}
+\subsection{Parameter scan}
 
 Ref.~\cite{Papucci:2014iwa} studies the parameter space and obtains
 bounds on this model from LHC Run 1 mono-jet and dijets+MET data. The Forum did not exhaustively compare the kinematic distributions of this model as was done in the \schannel case. While this means the recommendations below should be taken with more caution, the model is plausibile and distinctive, and it should be included in the design of LHC searches.
@@ -335,12 +335,65 @@ only indirectly on the coupling through the effect on the minimal
 mediator width. In contrast with the \schannel case, however, the
 bounds one obtains from X+MET searches depends strongly on the width
 of the mediator, as is visible in Figs.~5 and 6 of
-Ref.~\cite{Papucci:2014iwa}, except in the heavy mediator limit ($\Mphi \approx 2$\,TeV). A scan over the width was not available for this report; thus we recommend scanning a range of possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal width to a value approaching the particle limit (for example, $\Gamma \approx \Mphi/3$ in Ref.~\cite{Papucci:2014iwa}).
+Ref.~\cite{Papucci:2014iwa}, except in the heavy mediator limit ($\Mphi \approx 2$\,TeV). 
+A scan over the width was not available for this report; thus we recommend scanning a range of 
+possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal 
+width to a value approaching the particle limit (for example, $\Gamma \approx \Mphi/3$ in Ref.~\cite{Papucci:2014iwa}).
 
-\newthought{Implementation}
+\subsection{Additional considerations for $V+\MET$ signatures}
+\label{sub:EW_TChannel}
 
-The \madgraph implementation of the Ref.~\cite{Papucci:2014iwa} is
-available from the Forum repository~\cite{ForumSVN_TChannel}, following the
-matching and merging prescription described in its Section II and
-Appendix A.
+The model parameters with emission of an EW boson 
+generally follow those in Section~\ref{subsec:MonojetLikeModels},
+even though fewer diagrams are involved.   
+A representative Feynman diagram can be
+constructed by replacing a gluon in Fig.~\ref{fig:tchannelMonojet}
+with a $\gamma,W,Z$ boson. See Ref.~\cite{Bell:2012rg} for a theoretical overview
+of this model with specific examples for the Z+\MET final state. 
 
+Figure~\ref{fig:TChan_EW_Zhad_MET} shows the \MET distribution for the hadronic Z+\MET final state, 
+with varying dark matter and mediator mass, before any selection. 
+The acceptance for a series of simplified analysis cuts 
+(\MET$>$350~\gev, leading jet $p_T >$ 40~\gev, minimum azimuthal angle between jet and \MET > 0.4) 
+applied at the generator level is shown in Figure~\ref{fig:TChan_EW_Zhad_acc}. 
+
+\begin{figure}[h!]
+	\centering  
+	\includegraphics[width=0.8\textwidth]{figures/EW/monoZhad_TChannel/metPt}
+	\caption{Missing transverse momentum distribution for the hadronic Z+\MET final state,
+		for the simplified model with a colored scalar mediator exchanged in the $t-$channel.}
+	\label{fig:TChan_EW_Zhad_MET}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering  
+	\includegraphics[width=0.8\textwidth]{figures/EW/monoZhad_TChannel/TChan_newplot.pdf}
+	\caption{Acceptance for the hadronic Z+\MET final state,
+		for the simplified model with a colored scalar mediator exchanged in the $t-$channel.}
+	\label{fig:TChan_EW_Zhad_acc}
+\end{figure}
+
+The parameter scan for the $t-$ channel model in the case of signatures including EW bosons
+follows that of the monojet case. 
+%with the difference that in this case the kinematics does 
+%not depend on the width. 
+
+%\begin{figure}[h!]
+%	\centering  
+%	\includegraphics[width=0.8\textwidth]{figures/EW/monoZhad_TChannel/metPt_Amelia_Normalized.png}
+%	\caption{Acceptance for the hadronic Z+\MET final state,
+%		for the simplified model with a colored scalar mediator exchanged in the $t-$channel, for different coupling values.}
+%	\label{fig:TChan_EW_Zhad_acc}
+%\end{figure}
+
+%\newthought{Implementation}
+%
+%The \madgraph implementation of the Ref.~\cite{Papucci:2014iwa} is
+%available from the Forum repository~\cite{ForumSVN_TChannel}, following the
+%matching and merging prescription described in its Section II and
+%Appendix A.
+%
+
+ \subsection{\texorpdfstring{Additional considerations for signatures with a single $b-$quark + MET}{Additional considerations for  with a single b-quark + MET}}
+ \label{sec:singleb}
+ \input{tex/SingleB.tex}

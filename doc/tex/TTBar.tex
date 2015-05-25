@@ -5,10 +5,10 @@
 {$LastChangedBy$}
 \svnid{$Id$}
 
-As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudoscalar particle 
-mediating the DM-SM interactions is one of the simplest UV completions of our EFT models.  
+%As described in Section~\ref{sec:monojet_scalar}, a model with a scalar/pseudoscalar particle 
+%mediating the DM-SM interactions is one of the simplest UV completions of our EFT models.  
 With the MFV assumption, the top quark plays a primary role in the phenomenology: The model predicts not only
- the monojet process described in Chapter~\ref{subsec:MonojetLikeModels}, but also production of dark matter
+the monojet process described in Section~\ref{sec:monojet_scalar}, but also production of dark matter
 in association with top pairs, as illustrated in Fig.~\ref{fig:TTbarPhi}. 
 Dedicated searches including jets from heavy flavor quarks in the final state
 can be designed for this production mechanism. 
@@ -98,10 +98,10 @@ as a complementary search to the $t\bar
 t$+DM models presented in the previous section, to directly probe the $b-$ quark coupling. 
 An example of such a model can be found in Ref.~\cite{Buckley:2014fba}
 
-\subsection{Parameter scan}
+%\subsubsection{Parameter scan}
 
-As discussed in Sec.~\ref{subsec:MonojetLikeModels}, the MFV and universal coupling assumptions for spin-$0$ 
-mediators lead to quark mass dependent Yukawa couplings and therefore dominant couplings to top quarks.
+%As discussed in Sec.~\ref{subsec:MonojetLikeModels}, the MFV and universal coupling assumptions for spin-$0$ 
+%mediators lead to quark mass dependent Yukawa couplings and therefore dominant couplings to top quarks.
 
 The parameter scan for the dedicated $t\bar{t}$+\MET{} searches has been studied in detail to target the production 
 mechanism of DM associated to heavy flavor quarks, still sharing many details of the scan for the scalar model with a gluon radiation 
@@ -148,7 +148,7 @@ transition region between on-shell and off-shell mediators. %, as inFig.~\ref{fi
 %\end{center}
 %\end{figure}
 
-Typically only weak dependencies on width or equivalently couplings are observed (see Fig~\ref{fig:widthsmallscan}), except for large mediator masses of $\sim 1.5\,{\rm TeV}$ or for very small couplings of $\sim 10^{-2}$. These regimes where width effects are significant have production cross sections that are too small to be relevant for $30\,{\rm fb}^{-1}$ and are not considered here. However, with the full Run-2 dataset, such models may be within reach. The weak dependence on the typical width values can be understood as the parton distribution function are the dominant effect on mediator production. As shown in Section~\ref{sec:monojet_scaling}, for couplings $\sim O(1)$ the width is large enough that the $p_T$ of the mediator is determined mainly by the PDF.
+Typically only weak dependencies on width or equivalently couplings are observed (see Fig~\ref{fig:widthsmallscan}), except for large mediator masses of $\sim 1.5\,{\rm TeV}$ or for very small couplings of $\sim 10^{-2}$. These regimes where width effects are significant have production cross sections that are too small to be relevant for $30\,{\rm fb}^{-1}$ and are not considered here. However, with the full Run-2 dataset, such models may be within reach. The weak dependence on the typical width values can be understood as the parton distribution function are the dominant effect on mediator production. As shown in Section~\ref{sub:parameter_scan_monojet}, for couplings $\sim O(1)$ the width is large enough that the $p_T$ of the mediator is determined mainly by the PDF.
 
 \begin{figure}[!ht]
   \begin{center}
@@ -204,40 +204,10 @@ The same benchmark parameters of the $t\bar t$ case could then be chosen.
 %    	The Dark Matter mass is fixed to be $1 {\rm GeV}$.}
 %\end{figure}
 
-\subsection{Presentation of results for reinterpretation}
 
-The cross-section scaling considerations shown in~\ref{sec:monojet_scaling} still apply for this model. Here 
-we detail the specific studies done for the  $t\bar t$ model. 
-
-Given that the kinematics are similar for all couplings $g = \sim 1$, we recommend to generate only samples with $\gDM = \gq = 1$.
-It follows from this that these benchmark points should be a good
-approximation for non-unity couplings and for $\gDM \neq \gq$, provided
-that the sample is rescaled to the appropriate cross section times
-branching ratio.
-
-While the simple scaling function
-
-\begin{equation}
-\sigma'\times BR' = [\sigma \times BR]
-\times {\gq' \over \gq}^2
-\times {\gDM'\over \gDM}^2
-\times {\Gamma\over\Gamma'}
-\end{equation}
-is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), 
-this scaling is only approximate (up to 20\%)  and relies on the narrow width approximation, ignoring PDFs effects. 
-We also choose to provide instead a table of cross section times branching ratio values over a large range of couplings to support interpretation of search results (see the Appendix~\ref{app:TTBar_Xsecs}). The table lists couplings from $g=0.1$ to $g=3.5$, where the upper limit is chosen to be close to but lower than the perturbative limit. 
-
-\begin{figure}[!ht]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png}
-		\vspace{2mm}
-		\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the generator, for a scalar model with $m_{\phi}=400\,{\rm GeV}$, $\mdm=1\,{\rm GeV}$ and all couplings set to unity. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
-	\end{center}
-\end{figure}
-
-\newthought{Implementation}
-There are some subtleties to the Monte Carlo simulation relevant for
-this case that are discussed in Appendix~\ref{app:MonojetLikeModels_Appendix}.
+%\newthought{Implementation}
+%There are some subtleties to the Monte Carlo simulation relevant for
+%this case that are discussed in Appendix~\ref{app:MonojetLikeModels_Appendix}.
 
 %In addition to the considerations discussed in the preceding subsections, very light DM fermions are included ($\mdm=10\,{\rm GeV}$) 
 %as this is a region where colliders have a complementary sensitivity to current direct detection experiments. 
