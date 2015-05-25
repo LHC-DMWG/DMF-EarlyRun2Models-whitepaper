@@ -6,7 +6,7 @@ DM production through spin-0 and spin-1 mediators.
 
 For a spin-1 mediator, the implementation in \powheg generates
 DM pair production with 1 parton at next-to-leading order (NLO), whilst \madgraph and \mcfm are at leading order (LO)~\footnote{Spin-0 and spin-1 mediator models will also be provided 
-in the near future to the same precision in MadGraph5\_aMC@NLO~\cite{Alwall:1405.0301}.}. As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
+in the near future to the same precision in \madgraph~\cite{Alwall:1405.0301}.}. As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
 Since NLO calculations are available for the process in \powheg, we recommend to proceed with \powheg as the generator of choice. 
 
 For a spin-0 mediator, the top-quark loop is the most important
@@ -157,7 +157,7 @@ Based on the comparative study in Ref.\,\cite{Alwall:0706.2569}, we recommend us
 \subsection{Implementation of the CKKW-L matching}
 \label{sec:match_implementation}
 
-To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraphFiveaMCNLO version 2.2.2 and showerd in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
+To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showerd in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
 \begin{itemize}
 \item On the generator side:\\
 \texttt{ickkw = 0} \\
@@ -178,7 +178,7 @@ To illustrate the settings related to parton matching, the EFT D5 samples are ge
 \texttt{Merging:Process          = pp>\{chi,1000022\}\{chi\~{ },-1000022\}}\\
 \texttt{Merging:nJetMax          = 2}\\
 \end{itemize}
-The matching scales should be the same for the generation and parton showering. In \madgraph5aMCNLO, the particle data group ID \texttt{1000022} is used for weakly interacting dark matter candidates. The dark matter particle is defined in \pythiaEight accordingly using the commands above that specify an invisible spin \textonehalf{} particle of 30\,\gev mass. The \texttt{Mergin:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. Therefore, the following three processes need to be generated in this case:\\
+The matching scales should be the same for the generation and parton showering. In \madgraph, the particle data group ID \texttt{1000022} is used for weakly interacting dark matter candidates. The dark matter particle is defined in \pythiaEight accordingly using the commands above that specify an invisible spin \textonehalf{} particle of 30\,\gev mass. The \texttt{Mergin:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. Therefore, the following three processes need to be generated in this case:\\
 
 \texttt{p p > chi chi\~{ }}\\
 
@@ -348,7 +348,7 @@ This justifies it is sufficient to produce samples with up to 2 parton emissions
 \section{Simplified models for EW final states.}
 
 These models are generated at leading
-order with MadGraph 2.2.2, using Pythia8 for the parton shower.
+order with \madgraph 2.2.2, using Pythia8 for the parton shower.
 Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
 \Todo{Add models and instructions for other final states}.
 
@@ -364,27 +364,27 @@ In all cases, it is recommended not to handle the $h$ decay through \madgraph as
 it does not include the proper $h$ branching ratios, or, if using \madgraph, then the 
 resulting cross section should be rescaled to match onto the correct branching ratio.
 
-\newthought{Madgraph details for scalar mediator Higgs+MET model}
+\newthought{\madgraph details for scalar mediator Higgs+MET model}
 
 In this model, the contribution from the $gghS$ box is included through an effective 
 Lagrangian evaluated in the large $m_t$ limit. 
 This may overestimate the rates of the $h + \MET$ signal~\cite{Haisch:2012kf}, but a full evaluation
 is left to future studies. 
 
-\newthought{Madgraph details for 2HDM Higgs+MET model}
+\newthought{\madgraph details for 2HDM Higgs+MET model}
   
- The two couplings that can be changed in the Madgraph model follow the nomenclature below:
+ The two couplings that can be changed in the implemented model follow the nomenclature below:
  \begin{itemize}
  	\item \texttt{Tb} - $\tan \beta$
  	\item \texttt{gz} - $g_z$, gauge coupling of \Zprime to quarks
  \end{itemize}
  The other couplings are not changed, including \texttt{gx} (the $A \bar \chiDM \chiDM$ coupling) which has little impact on the signal. 
  $\sin \alpha$ is fixed internally such that $\cos (\beta-\alpha) = 0$. 
- The width of the \Zprime and $A$ can be computed automatically within Madgraph. 
+ The width of the \Zprime and $A$ can be computed automatically within \madgraph. 
  The couplings here don't affect the signal kinematics, so they can be fixed to default values 
  and then the signal rates can be scaled appropriately. 
  
-The nomenclature for the masses in the Madgraph model is:
+The nomenclature for the masses in the implemented model is:
  \begin{itemize}
  	\item \texttt{MZp} - PDG ID 32 - \Zprime
  	\item \texttt{MA0} - PDG ID 28 - $A$
