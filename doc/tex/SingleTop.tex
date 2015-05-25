@@ -459,6 +459,37 @@ parameter scan of these models. The two Collaborations have however agreed to co
 these models and agree on a common parameter scan,
 following the same path as for other models described in this document.  
 
+\subsection{Single Top Models}
+
+\Todo{This section is being reworked by B. Fuks}
+
+Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
+corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
+Each coupling constant of this model can be set via the parameter card and 
+the blocks which are relevant for the two models used for the experimental searches are described below.
+The relevant parameters in the \madgraph parameter cards, also expressed in the notation introduced in the 
+previous Section, are as follows for the two models considered.
+
+\begin{enumerate}
+	
+	\item Resonant scalar model described by the Lagrangian~\eqref{eq:lagrangianResonant}
+	\begin{itemize}
+		\item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavour space) fixing the coupling of the scalar $\phi$ ($S$ stands for scalar) and $down$-type quarks ($Q$ stands for quarks), previously called $a^q/b^q_{SR}$.
+		\item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavor space) fixing the coupling of the new fermion $\chiDM$ (where $12$ stands for spin-$1/2$ fermion) and $up$-type quarks, previously called $a^{1/2}_{VR}$.
+	\end{itemize}  
+	
+	\item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
+	\begin{itemize}
+		\item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavor space) fixing the coupling of the vector $V$ ($1$ stands for vector) and $up$-type quarks, previously called $a^1_{FC}$. 
+		\item particle name: the dark matter candidate $\chiDM$ is not implemented %(as this model assumes $\BR{V}{\chiDM\chiDM}=100\%$)
+	\end{itemize}
+	
+\end{enumerate}
+
+The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
+while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
+\Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
+
 %\newthought{Parameter choices and cross sections}
 %
 %\textbf{[Open point: update with new numbers]}
@@ -566,5 +597,6 @@ following the same path as for other models described in this document.
 %  \item I am not aware of any work on systematic variation due to scale, PDF choice, showering (Maybe some was done in the monotop analysis?). Then I am not completely what to put here.
 % \end{itemize}
 % }
+
 
 
