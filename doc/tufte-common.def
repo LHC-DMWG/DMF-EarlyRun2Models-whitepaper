@@ -347,6 +347,7 @@
     {\RequirePackage[unicode,hyperfootnotes=false]{hyperref}}
   \hypersetup{%
     pdfborder = {0 0 0},
+    colorlinks = true,
     bookmarksdepth = section,
     citecolor = DarkGreen,
     linkcolor = DarkBlue,
@@ -360,7 +361,7 @@
 \ifthenelse{\boolean{@tufte@loadhyper}}{%
   \TufteLoadHyperref%
 }{% hyperfootnotes override our modifications to the \footnote* and \@footnote* commands.
-  \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+  \PassOptionsToPackage{hyperfootnotes=false,colorlinks = true}{hyperref}
 }
 
 %%
