@@ -1,16 +1,22 @@
-\section{Mono-jet model implementation}
-
+\section{Implementation of \schannel and \tchannel models for \MET+X analyses}
 
 There are several matrix element implementations of the
-DM production through spin-0 and spin-1 mediators.
+DM production through spin-0 and spin-1 mediators. This Appendix collects the 
+generator recommendations and available implementations
+of these models for different final states, together with studies 
+of the matching between the matrix element and the parton shower. 
+
+\subsection{Implementation of models for mono-jet signature}
+\label{sec:monojet_implementation}
 
 For a spin-1 mediator, the implementation in \powheg generates
-DM pair production with 1 parton at next-to-leading order (NLO), whilst \madgraph and \mcfm are at leading order (LO)~\footnote{Spin-0 and spin-1 mediator models will also be provided 
+DM pair production with 1 parton at next-to-leading order (NLO), 
+whilst \madgraph and \mcfm are at leading order (LO)~\footnote{Spin-0 and spin-1 
+mediator models will also be provided 
 in the near future to the same precision in \madgraph~\cite{Alwall:1405.0301}.}. As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
 Since NLO calculations are available for the process in \powheg, we recommend to proceed with \powheg as the generator of choice. 
 
-For a spin-0 mediator, the top-quark loop is the most important
-consideration.
+For a spin-0 mediator in the mono-jet final state, the top-quark loop is the most important consideration.
 The matrix element implementation of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} and \powheg~\cite{Haisch:2015ioa} with the full top-loop calculation at LO.
 The \powheg and \mcfm implementations include the finite
 top quark mass dependence for DM pair production with 1 parton at LO.
@@ -18,7 +24,10 @@ For consistency with the spin-1 generation, we recommend using \powheg
 for this case as well.
 
 Here, we document some specific settings needed to run the \powheg 
-generation for the Dark Matter models.
+generation for the Dark Matter models. Powheg parameter cards for all models
+can be found on the Forum SVN repository
+~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS, ForumSVN_DMGG}.
+
 
 \begin{itemize}
 \item \powheg can handle the generation of events (be it at LO or NLO) 
@@ -145,16 +154,16 @@ its mass and width respectively.
 % \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
 % \end{itemize}
 
-
-\section{Parton matching}
+\subsection{Parton matching studies}
 \label{sec:monojet_parton_match}
 
-The parton matching techniques are implemented in the mono-jet like MC generation in \madgraph in order to avoid double counting the partons from matrix elements and parton showering in \pythiaEight.
-Based on the comparative study in Ref.\,\cite{Alwall:0706.2569}, we recommend using the CKKW-L matching scheme.
+Whenever models for mono-jet final states are generated in  \madgraph,
+it is necessary to avoid double counting the partons from matrix elements and parton showering in \pythiaEight
+using a parton matching technique. Based on the comparative study 
+in Ref.\,\cite{Alwall:0706.2569}, we recommend using the CKKW-L matching scheme.
 %\cite{Alwall:1405.0301}
 
-
-\subsection{Implementation of the CKKW-L matching}
+\subsubsection{Implementation of the CKKW-L matching}
 \label{sec:match_implementation}
 
 To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showerd in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
@@ -187,10 +196,7 @@ The matching scales should be the same for the generation and parton showering. 
 \texttt{p p > chi chi\~{ } j j}\\
 Note that the \madgraph cards and \pythiaEight commands are identical for all three samples.
 
-
-
-
-\subsection{Matching scale}
+\subsubsection{Matching scale}
 
 In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_t$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
 
@@ -270,9 +276,7 @@ The largest differences among the samples are visible for the $1\rightarrow2$ je
 \end{figure}
 
 
-
-
-\subsection{Parton emission multiplicity}
+\subsubsection{Parton emission multiplicity}
 \label{sec:monojet_parton_emission}
 
 The prescription for the event generation given in Section\,\ref{sec:match_implementation} starts with the emission of 0 partons and ends with maxim 2 partons in addition. Producing the samples separately allows to investigate the relative composition of the individual samples in various parts of the phase space. Figure\,\ref{fig:Kine_D5_80} shows the \MET distribution of the EFT D5 sample with the matching scale at 80\,\gev. The plot reveals that the 0-parton sample gives the dominant contribution in the region below the matching scale value that rapidly decreases at higher \MET. Assuming the lowest analysis \MET cut in Run-2 mono-jet analyses at 300\,\gev, the generation of the 0-parton emission sample can be safely omitted as it only gives $<1\%$ contribution at $\MET>300\,\gev$. For the 1- and 2-parton emission samples, one can use a generator cut on the leading parton $\pT$, \texttt{ptj1min}, in order to avoid generating low \MET events that are irrelevant for the analysis.
@@ -344,18 +348,85 @@ This justifies it is sufficient to produce samples with up to 2 parton emissions
 	\label{fig:RatioKine_D5_2}
 \end{figure}
 
-
-\section{Simplified models for EW final states.}
+\subsection{Implementation of models for EW final states}
+\label{sec:EW_implementation}
 
 These models are generated at leading
 order with \madgraph 2.2.2, using Pythia8 for the parton shower.
 Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
-\Todo{Add models and instructions for other final states}.
+No parton matching is required. 
 
-\section{Model implementation for mono-Higgs models}
+\subsection{\texorpdfstring{Implementation of models with heavy flavor quark signatures}{Implementation of models for heavy flavor quark signatures}}
+\label{sec:TTBar_implementation}
+
+The models for the $t \bar{t}$ and $b \bar{b}$ signatures are generated at leading
+order with \madgraph 2.2.2, using Pythia8 for the parton shower. No matching is needed. 
+Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_DMTTBar}.
+No parton matching is required. 
+
+We simulate the bFDM model using the {\tt MG5\_aMC} v2.2.3, using Pythia8 for the parton shower. 
+No matching is needed. The corresponding card files can be found 
+on the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
+
+\subsubsection{Quark flavor scheme and masses}
+
+In this particular model we recommend an additional care when choosing
+the flavor scheme generation and whether quarks should be treated as massive or massless. 
+
+The production of DM+$b\bar{b}$, Dark Matter in association with $b$ jets via a decay of a (pseudo) scalar boson, 
+is dominated in simplified mediator models by the gluon-gluon initiated production, similar to the production of 
+Z+$b\bar{b}$ at the LHC. The Z+$b\bar{b}$ process has been studied in detail in the Z(ll)+$b$-jets final state, 
+which can be used to validate both the modeling of DM+bb and, its main background, Z(vv)+$b\bar{b}$. 
+In this context, the $p_\textrm{T}$ of the Z boson is related to the observed MET, whereas the $b$-jet kinematics 
+determines the ratio of mono-$b$/di-$b$ signatures in the detector.
+
+%suggestion: could add diagrams for Z+bb and Phi+bb production here%
+
+For basic kinematic criteria applied to Z+$b\bar{b}$ production, this process leads in $\sim90\%$ of 
+the events to a signature with only 1 $b$-jet in the acceptance ('Z+1$b$-jet production') and only in 
+$\sim10\%$ of the events to a signature with 2 $b$-jets in the detector ('Z+2$b$-jets production). 
+The production cross section of the Z+$b\bar{b}$ process are calculated in the 'five-flavor scheme', 
+where b quarks are assumed massless, and the 'four-flavor scheme', where massive b quarks are 
+used~\cite{Campbell:2003dd,Maltoni:2005wd,Campbell:2005zv}, 
+and data favor the cross-section predictions in the five-flavor scheme~\cite{Chatrchyan:2014dha}.
+We therefore recommend to calculate the cross sections of these
+models in the 5-flavor scheme, as in the repository. 
+The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
+
+It is found that the best modeling of two $b$-quarks final states is achieved using a 4-flavor scheme and a massive treatment of the $b$-quarks ~\cite{Chatrchyan:2014dha.Chatrchyan:2013zja,CMS:2015mba}. We recommend to use in the generation NNPDF3.0 set (lhaid 263400).
+Since figure~\ref{fig:4Fvs5F} shows that there is no significant difference in the kinematics between 
+either flavour scheme used for DM+$b\bar{b}$ production, we recommend the 4-flavor scheme to follow
+the observation in the Z+$b\bar{b}$ measurements. 
+
+%Table~\ref{tab:xsec_dmbb_g1} gives the production cross sections for all recommended samples with $g_\textrm{DM}=g_\textrm{SM}=1$.
+
+% We recommend to use in the generation NNPDF3.0 set (lhaid
+%263400).
+%In the $t bar t$ case we provide 
+%values for the suggested coupling scan. 
+
+\begin{figure}[h!]
+\begin{minipage}{0.49\textwidth}
+	\centering 
+	\includegraphics[scale=0.32]{figures/bbar/4Fvs5F_plots/Njets}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+	\centering 
+	\includegraphics[scale=0.32]{figures/bbar/4Fvs5F_plots/dR12}
+\end{minipage}
+\caption{Comparison of the jet multiplicity (left) and angular correction $\Delta R(j_1, j_2)$ (right) for the DM+$b\bar{b}$ scalar model generated in the 4-flavour and 5-scheme.
+	The samples are generated for $m_\chi=1$~GeV and $m_\phi=10$~GeV.
+	\label{fig:4Fvs5F}}
+\end{figure}
+
+\section{Implementation of specific models for $V+\MET$ analyses}
+
+\subsection{Model implementation for mono-Higgs models}
+\label{sub:monoHiggs}
 
 All three Higgs+\MET models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower.
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is needed. 
 The \madgraph implementations of the scalar and vector models can be found on the Forum SVN 
 repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found
 at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
@@ -397,30 +468,16 @@ The other masses are unchanged and do not affect the result.
  and then add the two signal processes together weighted by cross sections.
  % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence.  
 
+\subsection{Implementation of EFT models}
 
-\section{Heavy Flavor Models} 
-In this particular model we recommend an additional care when choosing
-the flavor scheme generation. 
-It is found that the best modeling of two $b$-quarks final states is
-achieved using a 4-flavor scheme and a massive treatment of the
-$b$-quarks \Todo{[TODO: Add reference]}.
-% We recommend to use in the generation NNPDF3.0 set (lhaid
-%263400).
-In addition, we recommend to calculate the cross sections of these
-models in the 5-flavor scheme, and as in the $t bar t$ case we provide 
-values for the suggested coupling scan in the appendix. 
-The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
-
-\Todo{[TODO: The following figures are placeholders for now and will be added later]}.
-
-\begin{figure}
-  \vbox{\hfill}
-  \caption{Comparison of the subleading jet $p_T$ and $b$-jet multiplicity
-    for $bb$+DM scalar model generated in the 4-flavor (left) and 5-flavor (right)
-    schemes, respectively}
-\end{figure}
+These models are generated at leading
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
+Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
+and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
 
 \section{Single Top Models}
+
+\Todo{This section is being reworked by B. Fuks}
 
 Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
 corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
@@ -448,29 +505,3 @@ previous Section, are as follows for the two models considered.
 The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
 while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
 \Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
-
-\section{EFT Mono-Higgs implementation}
-
-These models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
-Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
-and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
-
-\section{Simplified Models of Mono-Higgs}
-
-These models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
-Parameter cards can be found on the Forum SVN 
-repository~\cite{ForumSVN_EWMonoHiggs_2HDM, ForumSVN_EWMonoHiggs}.
-
-\subsection{Model implementation for bFDM model}
-
-We simulate the model using the {\tt MG5\_aMC} v2.2.3. The corresponding card files can be found 
-on the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
-
-\subsection{Model implementation for VASP models for EW bosons}
-
-These models are generated at leading
-order with \madgraph 2.2.2, using Pythia8 for the parton shower.
-Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
-\Todo{Add models and instructions for other final states}.
