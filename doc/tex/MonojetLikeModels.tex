@@ -278,7 +278,7 @@ The generator level cross section times the acceptance at $\MET>500$~\gev for th
 
 Based on these arguments, the following $\mMed$ grid points are chosen, roughly equidistant in the logarithmic scale: 10~\gev, 20~\gev, 50~\gev,  100~\gev, 200~\gev, 300~\gev, 500~\gev, 1000~\gev and 2000~\gev. Given the fact that significant changes in cross section happen around the $\mMed=2\mDM$ threshold, the $\mDM$ grid points are taken at approximately $\mMed/2$, namely: 10~\gev, 50~\gev, 150~\gev, 500~\gev and 1000~\gev. Points on the on-shell diagonal are always chosen to be 5~\gev away from the threshold, 
 to avoid numerical instabilities in the event generation. 
-The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 35
+The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 36
 %29 
 mass points each. One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
 
@@ -613,7 +613,7 @@ No differences in the kinematic distributions are observed and also the cross se
 
 The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, taking again $\gq=\gDM=1$. Only the sensitivity to the highest mediator masses has to be re-evaluated.
 The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, light Dark Matter of \mDM=10~\gev and
-a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 32
+a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 33
 %26 
 mass points only, as shown in Tab.\,\ref{tab:mDMmMedScan_SP}.
 One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs). 
@@ -627,7 +627,7 @@ One point at very high mediator mass (5~\tev) is added for each of the DM masses
  1             &         10  & 20 & 50 & 100 & 200 & 300 & 500 &         1000  &         5000  \\
  10   	       &         10  & 15 & 50 & 100 &     &     &     &               &         5000  \\
  50            &         10  &    & 50 &  95 & 200 & 300 &     &               &         5000  \\
- 150           &         10  &    &    &     & 200 & 295 & 500 &               &         5000  \\
+ 150           &         10  &    &    &     & 200 & 295 & 500 &         1000  &         5000  \\
  500           &         10  &    &    &     &     &     & 500 &          995  &         5000  \\
  1000          &         10  &    &    &     &     &     &     &         1000  &         5000  \\
 \hline
@@ -743,7 +743,7 @@ which further implies the cross section scaling
 \label{eq:monojet_scaling}
 \end{equation}
 The narrow with approximation is important here as it ensures an integration over parton distribution functions (PDFs) can be neglected. In other words, it is assumed the integrand in Eq.\,\ref{eq:monojet_int} is non-zero only for a small region of $s$, such that the PDFs can be taken to be constant in this range.
-Since $\Gamma \sim \gq^2+\gDM^2$, one can simplify this rule in the extreme cases as follows
+By simplifying the dependence of the minimal width on the couplings as $\Gamma \sim \gq^2+\gDM^2$, one can approximate this scaling rule in the extreme cases as follows
 
 \begin{eqnarray}
 \sigma &\propto& \frac{\gq^2\gDM^2}{\gq^2+\gDM^2} \xrightarrow{\gq \ll \gDM} \gq^2 \label{eq:monojet_gSM} \\
@@ -823,8 +823,12 @@ Constant colors indicate the lines along which the cross section scaling works p
 We propose to deliver collider results in the $\gq$--$\gDM$ plane using the following prescription, to ease reinterpretation through cross-section scaling:
 \begin{itemize}
 	\item Since the shapes of kinematic quantities do not change for different couplings, use the acceptance and efficiency for the available $\mDM=50$~\gev, $\mMed=300$~\gev, $\gq=\gDM=1$ grid point from the $\mMed$--$\mDM$ plane for the scalar and pseudo-scalar mediator. In case of the vector and axial-vector mediator, use the grid point $\mDM=50$~\gev, $\mMed=1$~\tev, $\gq=\gDM=1$.
-	\item Generate additional samples in order to get generator cross sections only. For scalar and pseudo-scalar mediator, choose $\mDM=50$~\gev, $\mMed=300$~\gev with the following values for $\gq=\gDM$: 0.1, 1, 2, 3. For vector and axial vector mediator, choose $\mDM=50$~\gev, $\mMed=1$~\tev with the following values for $\gq=\gDM$: 0.1, 0.25, 0.5, 0.75, 1.25, 1.5. The upper values are defined by the minimal width reaching the mediator mass. \Todo{Waiting for scalar mediator calculation of perturbativity limit from J. Alcaraz.).}
+	\item Generate additional samples in order to get generator cross sections only. For scalar and pseudo-scalar mediator, choose $\mDM=50$~\gev, $\mMed=300$~\gev with the following values for $\gq=\gDM$: 0.1, 2, 3. For vector and axial vector mediator, choose $\mDM=50$~\gev, $\mMed=1$~\tev with the following values for $\gq=\gDM$: 0.1, 0.25, 0.5, 0.75, 1.25, 1.5. The upper values are defined by the minimal width reaching the mediator mass. \Todo{Waiting for scalar mediator calculation of perturbativity limit from J. Alcaraz.).}
 	\item Rescale the generator cross sections for on-shell resonance production along the lines of constant width in order to populate the whole $\gq$--$\gDM$ plane.
+The scaling follows from Eq.\,\ref{eq:monojet_scaling} which for the constant width implies:
+\begin{equation}
+\sigma' = \sigma \times \frac{\gq'^2\gDM'^2}{\gq^2\gDM^2} \;.
+\end{equation}
 \end{itemize}
 
 %choose mDM=50, mMed=300, gSM=0.1, gDM={0.1, 1, 2, 3, 4, 5, 6} for S (mMed=GammaMin is reached around 5)
@@ -864,8 +868,8 @@ branching ratio.
 While the simple scaling function
 \begin{equation}
 \sigma'\times BR' = [\sigma \times BR]
-\times {\gq' \over \gq}^2
-\times {\gDM'\over \gDM}^2
+\times \left( {\gq' \over \gq} \right)^2
+\times \left( {\gDM'\over \gDM} \right)^2
 \times {\Gamma\over\Gamma'}
 \end{equation}
 is sufficient for a limited range of coupling values (see Fig.~\ref{fig:xsec_scaling} for example), 
