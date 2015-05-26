@@ -5,7 +5,7 @@
 
 {\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
 
-\section{Powheg}
+\section{POWHEG}
 
 A comprehensive and careful assessment of theoretical uncertainties
 plays a much more important role for the background estimations
@@ -17,7 +17,7 @@ allows one to add, after each event, new weights according to
 different scale or PDF choices, without the need to regenerate all the
 events from scratch. 
 
-To enable this possibilty, the variable \texttt{storeinfo\_rwgt} should be set 
+To enable this possibility, the variable \texttt{storeinfo\_rwgt} should be set 
 to 1 in the \powheg input file when the events are generated for the 
 first time\sidenote{Notice that even if the variable is not present, by 
 default it is set to 1.}. After each event, a line starting with 
@@ -36,7 +36,7 @@ compute_rwgt 1
 should be added in the input file along with the change in parameters
 that is desired. For instance, \texttt{renscfact} and
 \texttt{facscfact} allow one to study scale variations on the
-renormalisation and factorisation scales around a central value. By
+renormalization and factorization scales around a central value. By
 running the program again, a new event file will be generated, named
 \texttt{<OriginalName>-rwgt.lhe}, with one more line at the end of each event of the form
 

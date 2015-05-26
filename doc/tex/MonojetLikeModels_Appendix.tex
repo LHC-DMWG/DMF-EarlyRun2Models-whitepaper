@@ -24,7 +24,7 @@ For consistency with the spin-1 generation, we recommend using \powheg
 for this case as well.
 
 Here, we document some specific settings needed to run the \powheg 
-generation for the Dark Matter models. Powheg parameter cards for all models
+generation for the Dark Matter models. POWHEG parameter cards for all models
 can be found on the Forum SVN repository
 ~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS, ForumSVN_DMGG}.
 
@@ -52,7 +52,7 @@ transverse momentum 10-20\% smaller than the final analysis cut, and
 check that the final result is independent, by exploring an even
 smaller value of \bornktmin. The drawback of this running mode is that
 it's difficult to populate well and in a single run both the low-\pT
-region as well as the high-pt tail.
+region as well as the high-pT tail.
 
 \item weighted events: %keywords
 
@@ -65,6 +65,7 @@ regions. Events are still generated with a sharp lower cut set by
 \bornktmin, but the \bornsuppfact parameter is used to set the event
 suppression factor according to
 
+
 \begin{equation}
 F(\kT)=\frac{\kT^2}{\kT^2+\bornsuppfact^2} \;.
 \end{equation}
@@ -75,7 +76,7 @@ statistics at high \MET. We recommend to set \bornsuppfact to 1000.
 
 The \bornktmin parameter allows to suppress the low \MET region
 even further by starting the generation at a certain value of \kT also
-in this runnning mode. It is recommended to set this parameter to half
+in this running mode. It is recommended to set this parameter to half
 the lower analysis \MET cut. For instance for the event selection used in the
 CMS/ATLAS monojet analyses, assuming the lowest \MET region being defined above 300\,GeV, the proposed value for
 \bornktmin is 150.  However, this parameter should be set keeping in
@@ -88,9 +89,9 @@ signal samples and hence a threshold lower than 150 may be required.
 should use fixed widths. Although clearly there are limitations, I
 think this goes into the direction of making all as simple and
 transparent as possible. Moreover, all the discussions in the last
-months aw well as the large majority of runs were done with fixed
+months as well as the large majority of runs were done with fixed
 widths. Since there was some interest over the last couple of weeks,
-here is my suggestion for the powheg section.''}
+here is my suggestion for the POWHEG section.''}
 
 %\begin{itemize}
 \item Remove the \runningwidth keyword, or set it to 0, which is the
@@ -166,7 +167,7 @@ in Ref.\,\cite{Alwall:0706.2569}, we recommend using the CKKW-L matching scheme.
 \subsubsection{Implementation of the CKKW-L matching}
 \label{sec:match_implementation}
 
-To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showerd in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
+To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showered in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
 \begin{itemize}
 \item On the generator side:\\
 \texttt{ickkw = 0} \\
@@ -395,7 +396,7 @@ The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000).
 
 It is found that the best modeling of two $b$-quarks final states is achieved using a 4-flavor scheme and a massive treatment of the $b$-quarks ~\cite{Chatrchyan:2014dha.Chatrchyan:2013zja,CMS:2015mba}. We recommend to use in the generation NNPDF3.0 set (lhaid 263400).
 Since figure~\ref{fig:4Fvs5F} shows that there is no significant difference in the kinematics between 
-either flavour scheme used for DM+$b\bar{b}$ production, we recommend the 4-flavor scheme to follow
+either flavor scheme used for DM+$b\bar{b}$ production, we recommend the 4-flavor scheme to follow
 the observation in the Z+$b\bar{b}$ measurements. 
 
 %Table~\ref{tab:xsec_dmbb_g1} gives the production cross sections for all recommended samples with $g_\textrm{DM}=g_\textrm{SM}=1$.
@@ -415,7 +416,7 @@ the observation in the Z+$b\bar{b}$ measurements.
 	\centering 
 	\includegraphics[scale=0.32]{figures/bbar/4Fvs5F_plots/dR12}
 \end{minipage}
-\caption{Comparison of the jet multiplicity (left) and angular correction $\Delta R(j_1, j_2)$ (right) for the DM+$b\bar{b}$ scalar model generated in the 4-flavour and 5-scheme.
+\caption{Comparison of the jet multiplicity (left) and angular correction $\Delta R(j_1, j_2)$ (right) for the DM+$b\bar{b}$ scalar model generated in the 4-flavor and 5-scheme.
 	The samples are generated for $m_\chi=1$~GeV and $m_\phi=10$~GeV.
 	\label{fig:4Fvs5F}}
 \end{figure}
@@ -469,6 +470,59 @@ The other masses are unchanged and do not affect the result.
  % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence.  
 
 \subsection{Implementation of EFT models}
+
+\section{Heavy Flavor Models} 
+In this particular model we recommend an additional care when choosing
+the flavor scheme generation. 
+It is found that the best modeling of two $b$-quarks final states is
+achieved using a 4-flavor scheme and a massive treatment of the
+$b$-quarks \Todo{[TODO: Add reference]}.
+% We recommend to use in the generation NNPDF3.0 set (lhaid
+%263400).
+In addition, we recommend to calculate the cross sections of these
+models in the 5-flavor scheme, and as in the $t bar t$ case we provide 
+values for the suggested coupling scan in the appendix. 
+The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
+
+\Todo{[TODO: The following figures are placeholders for now and will be added later]}
+
+\begin{figure}
+  \vbox{\hfill}
+  \caption{Comparison of the subleading jet $p_T$ and $b$-jet multiplicity
+    for $bb$+DM scalar model generated in the 4-flavor (left) and 5-flavor (right)
+    schemes, respectively}
+\end{figure}
+
+\section{Single Top Models}
+
+Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
+corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
+Each coupling constant of this model can be set via the parameter card and 
+the blocks which are relevant for the two models used for the experimental searches are described below.
+The relevant parameters in the \madgraph parameter cards, also expressed in the notation introduced in the 
+previous Section, are as follows for the two models considered.
+
+\begin{enumerate}
+
+\item Resonant scalar model described by the Lagrangian~\eqref{eq:lagrangianResonant}
+  \begin{itemize}
+  \item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavor space) fixing the coupling of the scalar $\phi$ ($S$ stands for scalar) and $down$-type quarks ($Q$ stands for quarks), previously called $a^q/b^q_{SR}$.
+  \item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavor space) fixing the coupling of the new fermion $\chiDM$ (where $12$ stands for spin-$1/2$ fermion) and $up$-type quarks, previously called $a^{1/2}_{VR}$.
+  \end{itemize}  
+  
+\item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
+\begin{itemize}
+\item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavor space) fixing the coupling of the vector $V$ ($1$ stands for vector) and $up$-type quarks, previously called $a^1_{FC}$. 
+\item particle name: the dark matter candidate $\chiDM$ is not implemented %(as this model assumes $\BR{V}{\chiDM\chiDM}=100\%$)
+\end{itemize}
+
+\end{enumerate}
+
+The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
+while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
+\Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
+
+\section{EFT Mono-Higgs implementation}
 
 These models are generated at leading
 order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 

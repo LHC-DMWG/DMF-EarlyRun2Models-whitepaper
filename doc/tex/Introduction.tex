@@ -8,39 +8,56 @@
 \fancyhead{}
 \fancyhead[ol]{\svnrev;\svndate;\svnauthor}
 
-Dark matter has not yet been seen in particle physics experiments, and
+Many theories of physics beyond the Standard Model predict the existence
+of a stable, neutral, weakly-interacting and massive particle that is
+a putative dark matter candidate.   In the following, we refer to such
+matter as dark matter, even though the observation of such matter at a collider
+could only establish that it is neutral, weakly-interactive, massive and stable
+on the distance-scales of 10's of meters.
+Dark matter has not yet been observed in particle physics experiments, and
 there is not yet any evidence for non-gravitational interactions
 between dark matter and Standard Model particles.  If such
-interactions exist, pairs of dark matter particles could be produced
-at the LHC. Dark matter particles do not produce signals in the LHC
-detectors, so simple pair-production of dark matter particles would
-not be visible. However, there are many ways for a quark or gluon to
-emit a visible particle (X = g, q, gamma, Z, W, or h) before
-annihilating to form a dark matter pair. Such reactions, which are
-seen as particles or jets recoiling against an invisible state, are
+interactions exist, dark matter particles could be produced
+at the LHC. Dark matter particles of themselves do not produce signals
+in the LHC
+detectors, so simple pair-production of dark matter particles, for example,
+would
+not be visible.
+However, there are different mechanisms by which a
+visible SM particle X(=$g, q, \gamma, Z, W$, or $h$)
+could be produced in association with dark matter.
+Such reactions, which are
+observed as particles or jets recoiling against an invisible state, are
 called ``mono-X'' or \MET{}+X reactions.
 
-Early Run 1 searches for \MET{}+X signatures at ATLAS and CMS employed
-a set of effective field theories (EFTs) \cite{Goodman:2010ku} to
-model the possible signals. These EFTs assume that production of dark
-matter takes place through a contact interaction involving two quarks
-or gluons and two dark matter particles. In this case, the missing
-energy distribution of the signal depends only on the mass of the dark
-matter particles and the Lorentz structure of the interaction. Only the
-overall rate is a free parameter. Both experiments studied a variety
-EFTs with different spin structures. Provided that the contact
-interaction approximation holds, these EFTs also provide a
-straightforward way to compare results amongst different collider
-searches and with non-collider searches for dark matter.
 
-Nevertheless, it has become clear \cite{Bai:2010hh,Kopp:2011eu,Fox:2011fx,Fox:2011pm,Busoni:2013lha} that a contact
+Early Run 1 searches for \MET{}+X signatures at ATLAS and CMS employed
+a basis of operators in 
+effective field theories (EFTs) \cite{Goodman:2010ku} to
+calculate the possible signals.
+These particular EFTs assume that production of dark matter takes place through
+a contact interaction involving a quark-antiquark pair or two gluons and
+two dark matter particles.  In this case,
+the missing
+energy distribution of the signal is determined
+by the mass of the dark
+matter particles and the Lorentz structure of the interaction. Only the
+overall production rate is a free parameter. Both experiments studied a variety
+of EFTs with different spin structures. Provided that the contact
+interaction approximation holds, these EFTs also provide a
+straightforward way to compare the results from different collider
+searches with non-collider searches for dark matter.
+
+However, it has become clear \cite{Bai:2010hh,Kopp:2011eu,Fox:2011fx,Fox:2011pm,Busoni:2013lha} that a contact
 interaction is often not the correct description for the signals to
-which the LHC is sensitive. Limits from the LHC on particles that do
-not couple to QCD and do not decay to hard leptons are relatively
+which the LHC is sensitive.
+Limits from the LHC on particles that are
+QCD singlets and do not decay to hard leptons are relatively
 weak. Such particles can mediate reactions that produce dark matter
 particles. If the mass of the mediator is light, the kinematics of the
-pair-production reaction will differ from that due to a contact
-interaction, requiring new search strategies. While the EFT integrates
+pair-production reaction can differ substantially from that due to a contact
+interaction, modifying limits and possibly requiring new search strategies.
+While the EFT integrates
 out the degrees of freedom of the (heavy) intermediate particle,
 ``simplified models'' \cite{Alwall:2008ag,Alves:2011wf} with
 directly-accessible mediators describe this richer
@@ -48,8 +65,8 @@ phenomenology. Appropriate simplified models can be used both to
 interpret mono-X searches and to guide the design of complementary
 searches for additional signatures.
 
-Many proposals for such models began to emerge, for example
-Refs. \cite{An:2012va,An:2012ue,Tait:2013,Buchmueller:2013dya,Bai:2013iqa,Bai:2014osa,An:201489115014,Yavin:14092893,Malik:2014ggr,Harris:2014hga,Buckley:2014fba,Haisch:2015ioa}. At
+Many proposals for such models began to emerge (see, for example
+Refs. \cite{An:2012va,An:2012ue,Tait:2013,Buchmueller:2013dya,Bai:2013iqa,Bai:2014osa,An:201489115014,Yavin:14092893,Malik:2014ggr,Harris:2014hga,Buckley:2014fba,Haisch:2015ioa}). At
 the end of 2014, ATLAS and CMS organized a forum, the ATLAS-CMS Dark
 Matter Forum, to form a consensus with the participation of experts on
 theories of dark matter. This is the final report of that forum.
@@ -76,9 +93,9 @@ important to narrow the scope and timescale to the following:
   experimental results are provided should be specified, to facilitate theory reinterpretation 
   beyond the necessary model-independent limits that 
   should be provided by all LHC Dark Matter searches. 
-\item The forum should standardize the matrix element implementation
+\item The forum should standardize the event generator implementation
   of the simplified models and harmonize other common technical
-  details (order of the calculation, showering) as far as practical. It
+  details as far as practical. It
   would be desirable to have a common choice of LO/NLO, ME-parton
   shower matching and merging, factorization and renormalization
   scales for each of the simplified models. This will also lead to a
@@ -95,37 +112,17 @@ important to narrow the scope and timescale to the following:
 
 \section{Grounding Assumptions}
 
-There may not exist any interactions between Standard Model hadrons
+We assume that interactions exist between Standard Model hadrons
 and whatever it is that constitutes cosmological dark matter. If this
-is the case, then proton collisions will not produce dark matter
+is not the case, then proton collisions will not produce dark matter
 particles, and dark matter will not scatter off nuclei in direct
-detection experiments. Yet such interactions might exist, and one or
-both types of experiments may be able to study it. For obvious
-reasons, we study only the latter case in this report.
-
-One needs simplified models because the EFT approach, viable for the
-other types of dark matter searches, breaks down at the LHC. Another
-way of viewing this problem is that any BSM model of dark matter
-requires at least two particles: a dark matter candidate and a
-mediator of the interaction between the dark matter and the Standard
-Model. One strength of collider experiments lies in their ability to
-study the mediator, not the DM itself. A discovery of a \MET signature
-at the LHC would not uniquely imply discovery of dark matter, while at
-the same time discovery of an anomalous and annually-modulated signal
-in a direct-detection experiment would leave unanswered many questions
-about the nature of the interaction. The these two approaches, and
-other types of non-collider searches, provide complementary ways to
-approach the problem, and it is in this spirit that our focus is on
-the mediator. We systematically explore the basic possibilities for
-tree-level exchange: \schannel or \tchannel interactions, and
-mediators of the various possible spins. Though more varied and
-interesting possibilities are added to the literature almost daily,
-these basic building blocks account for much of the physics studied at
-hadron colliders in the past three decades.
+detection experiments.
 
 The Dark Matter itself is assumed to be a single particle, a Dirac
 fermion WIMP, stable on collider timescales and non-interacting with
-the detector. The former assumption is reductionistic. The rich
+the detector.  
+The former assumption is reductionistic.
+The rich
 particle content of the Standard Model is circumstantial evidence that
 the dark matter sector, which constitutes five times as much of the
 mass of the universe, may be more complex than a single particle or a
@@ -148,19 +145,50 @@ set of models will certainly be required upon a discovery; see
 e.g.~\cite{Cotta:2012nj,Haisch:2013fla,Crivellin:2015wva} for some
 studies of observables that may distinguish amongst these models.
 
+The weakness of the dark matter--visible matter interactions is explained
+by assuming a mediating force or particle that indirectly connects the
+two.  In the EFT approach, the mass scale of the mediator is assumed
+to be large compared to the typical momentum involved in the production
+of dark matter.
+Simplified models allow the exploration of scenarios where the
+mediating scale is not so large.
+%because the EFT approach, viable for the
+%other types of dark matter searches, breaks down at the LHC. Another
+%way of viewing this problem is that any BSM model of dark matter
+%requires at least two particles: a dark matter candidate and a
+%mediator of the interaction between the dark matter and the Standard
+%Model.
+One strength of collider experiments lies in the ability to
+study the mediator, not the DM itself. A discovery of a \MET signature
+at the LHC would not uniquely imply discovery of dark matter, while at
+the same time discovery of an anomalous and annually-modulated signal
+in a direct-detection experiment would leave unanswered many questions
+about the nature of the interaction. The these two approaches, and
+other types of non-collider searches, provide complementary ways to
+approach the problem, and it is in this spirit that our focus is on
+the mediator. We systematically explore the basic possibilities for
+tree-level exchange: \schannel or \tchannel interactions, and
+mediators of various possible spins.
+All models are assumed to produce pairs of dark matter particles.
+Though more varied and
+interesting possibilities are added to the literature almost daily,
+these basic building blocks account for much of the physics studied at
+hadron colliders in the past three decades.
+
+
 We also assume that Minimal Flavor Violation (MFV) \cite{Chivukula:1987py,Hall:1990ac,Buras:2000dm,D'Ambrosio:2002ex} applies to the
 recommended models. By this, we mean that the flavor structure of the
 couplings between dark matter and ordinary particles follows the same
 structure as the Standard Model. This choice is simple, since no
 additional theory of flavor is required, beyond what is already
 present in the SM, and it provides a mechanism to ensure that the
-models do not violate flavor constraints.  As a consequence, spin 0
+models do not violate flavor constraints.  As a consequence, spin-0
 resonances exchanged in the \schannel must have couplings to fermions proportional to the SM Higgs couplings. Flavor-safe models can still be constructed beyond the MFV
-assumption, for example ~\cite{Agrawal:2014aoa}, and deserve worth further study.
+assumption, for example ~\cite{Agrawal:2014aoa}, and deserve further study.
 %cite Dolan:2014ska? Also DM@LHC report, if out in time. 
 
 In the parameter scan for the recommended models, we make the
-assumption of minimal width for the particles mediating the
+assumption of a minimal decay width for the particles mediating the
 interaction between SM and DM.  By this, we mean that only decays
 strictly necessary for the self-consistency of the model (e.g.  to DM
 and to quarks) are accounted for in the definition of the mediator
@@ -170,6 +198,7 @@ show that, for cut and count analyses, the kinematic distributions of
 many models and therefore the sensitivity of the search do not depend
 significantly on the mediator width, as long as the width remains smaller
 than the mass of the particle.
+
 
 The particle content of the models chosen as benchmarks is limited to
 one single kind of DM whose self-interactions are not relevant for LHC
@@ -194,11 +223,9 @@ Model-independent results should be emphasized
 in the signal regions that are unique to these models, 
 and results should be considered with the necessary caution due to EFT 
 validity issues covered in the last chapter in this report. 
-Results from these models may nevertheless help validating the 
+Results from these models may nevertheless help validate the 
 contact interaction limit of new simplified models developed to complete 
 these specific operators. 
-
-\section{Structure of this document}
 
 The first chapter of the report is dedicated to simplified
 models with radiation of a hard object either from the initial state
@@ -221,7 +248,8 @@ The technical implementation and further models that can be studied
 beyond early searches are in appendix~\ref{app:EWSpecificModels_Appendix}. 
 Appendix~\ref{app:Presentation_Of_Experimental_Results} contains the necessary elements that
 should be included in the results of experimental searches to allow for further reinterpretation. 
-
+%The Appendices also collect information about the implementation of the
+%models in event generator tools, as well as tables of expected cross sections.
 %%This could be saved for monotop
 %Appendix~\ref{app:ExtraModels} contains a series of models that produce interesting \MET{}+X signatures. 
 %These models are not specifically recommended by the Forum as they
@@ -230,6 +258,5 @@ should be included in the results of experimental searches to allow for further 
 %They are therefore worth considering for early Run-2 searches, since they lead to unique signatures 
 %that are not produced by any other of the recommended models. 
 %\fi
-
 
 
