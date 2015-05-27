@@ -222,8 +222,8 @@ However, the complete story of generating heavy narrow mediators is a cautionary
 about understanding the details of the generator tools.
 Observations of kinematic changes or cross section suppression in the generated samples do not always come from physics, but may be a consequence of under-sampling phase space in the generator implementation,
 where a cutoff for the regions far away from the mediator mass is generally used. One must take care to correctly set the width of the Breit-Wigner used for the sampling.
-This is illustrated in Fig.\,\ref{fig:monojet_mchichi2} showing the invariant mass of the Dark Matter pair in the samples generated for a \mMed=7~\tev scalar mediator
-with different coupling strengths.
+This is illustrated in Fig.\,\ref{fig:monojet_mchichi2} showing the invariant mass of the Dark Matter pair in the samples generated in \madgraph for a $\mMed=7$~\tev scalar mediator
+with different coupling strengths, using the default settings \texttt{bwcutoff} equal to 15.
 In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
 resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7~\tev is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes.
 
@@ -262,7 +262,7 @@ resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppress
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
-\caption{Invariant mass of the Dark Matter pair in the scalar mediator samples with $\mDM=$~\gev, $\mMed=7$~\tev and different coupling strengths.}
+\caption{Invariant mass of the Dark Matter pair in the scalar mediator samples with $\mDM=1$~\gev, $\mMed=7$~\tev and different coupling strengths.}
 \label{fig:monojet_mchichi2}
 \end{figure}
 
