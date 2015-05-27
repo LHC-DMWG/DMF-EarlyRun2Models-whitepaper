@@ -207,20 +207,23 @@ is the case of
 extremely heavy and narrow mediators, which can arise for
 small coupling strengths.
 Upon close examination, it was determined that this case is
-not peculiar.  However, the complete story is a cautionary tale
-about understanding the details of the generator tools.
+not peculiar.
 Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
 $\MET$ distribution for a \mMed=5~\tev mediator
 once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
-This, however, does not come from physics, but is a consequence of under-sampling phase space in the generator implementation,
+This arises from the fact that the region of low invariant masses of the Dark Matter pair, $m_{\bar{\chiDM}\chiDM}$, is suppressed due to narrow Breit-Wigner peak. For wider mediators, the low mass region is significantly enhanced by parton distribution functions, as illustrated in Fig.\,\ref{fig:monojet_mchichi}.
+This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
+%In general, for such extreme parameter choices the EFT model should give the correct answer.
+
+However, the complete story is a cautionary tale
+about understanding the details of the generator tools.
+Observations of kinematic chagnes or cross section suppression in the generated samples do not always come from physics, but may be a consequence of under-sampling phase space in the generator implementation,
 where a cutoff for the regions far away from the mediator mass is generally used. One must take care to correctly set the width of the Breit-Wigner used for the sampling.
-This is illustrated in Fig.\,\ref{fig:monojet_mchichi} showing the invariant mass of the Dark Matter pair in the samples generated for a \mMed=7~\tev mediator
+This is illustrated in Fig.\,\ref{fig:monojet_mchichi2} showing the invariant mass of the Dark Matter pair in the samples generated for a \mMed=7~\tev scalar mediator
 with different coupling strengths.
 In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
-resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7~\tev is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes. This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
-In general, for such extreme parameter choices
-%as $\mMed=7$~\tev and $\Gamma_{\rm{min}}=36$~\gev,
-the EFT model should give the correct answer. 
+resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7~\tev is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes.
+
 %\Todo{Refer to results of ongoing study in Section 6.}
 %CD: commented out, we have to ask for having 7 TeV mediators
 % In case the simplified model calculation does not reproduce the EFT result, the phase space generation of the simplified model has to be carefully examined in order to understand the cause of the problem. Fortunately, this is a rather academic discussion as such extreme corners of the parameter space are not going to be considered for presentation of Run-2 results.
@@ -241,13 +244,20 @@ the EFT model should give the correct answer.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
-\caption{Invariant mass of the Dark Matter pair in the samples with $\mMed=7$~\tev and different coupling strengths.}
+\includegraphics[width=0.9\textwidth]{figures/monojet/mxx.eps}
+\caption{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths. The distributions are normalised to unit area.}
 \label{fig:monojet_mchichi}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
+\caption{Invariant mass of the Dark Matter pair in the scalar mediator samples with $\mDM=$~\gev, $\mMed=7$~\tev and different coupling strengths.}
+\label{fig:monojet_mchichi2}
+\end{figure}
+
 Since kinematic distributions are robust to
-changes in the specific values of coupling, the choice of  \gq=\gDM is reasonable 
+changes in the specific values of coupling as long as heavy narrow mediators are avoided, the choice of  \gq=\gDM is reasonable 
 to reduce the parameter space to be scanned. 
 There are no complications associated
 with small couplings, but, also, the early part of Run~2 will not be
