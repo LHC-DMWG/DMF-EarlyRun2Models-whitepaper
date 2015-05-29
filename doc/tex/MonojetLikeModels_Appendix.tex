@@ -93,6 +93,8 @@ months as well as the large majority of runs were done with fixed
 widths. Since there was some interest over the last couple of weeks,
 here is my suggestion for the POWHEG section.''}
 
+\Todo{Steve:  The reason I originally asked the question was because we saw about 20 years ago that there were cases when using this prescription was important.  Now, this is mainly for SM particles, but we apply it throughout for non-SM ones.   If we find no significant difference, then we can say it.  But, if we are starting from scratch, why shouldn't we include as much correct physics as we can?}
+
 %\begin{itemize}
 \item Remove the \runningwidth keyword, or set it to 0, which is the
   default value. Running with fixed widths is the recommended
@@ -115,7 +117,8 @@ is replaced by
 \end{equation*}
 
 where $Q$ is the virtuality of the mediator, and $M$ and $\Gamma$ are
-its mass and width respectively.
+its mass and width respectively.  See Ref.~\cite{Bardin:1989qr} for
+a discussion.
 
 \item Set the parameters defining the bounds on the invariant mass of the Dark Matter pair, \masslow and \masshigh, to -1. In this way, \powheg will assign values internally. 
 \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the \modelDMV model, respectively.
@@ -155,150 +158,194 @@ its mass and width respectively.
 % \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
 % \end{itemize}
 
+Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
+$\MET$ distribution for a $\mMed=5$~\tev mediator
+once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
+Such heavy mediators, although inacessible by the LHC data, are interesting since they provide a good approximation for benchmark EFT models.
+The observed difference among the simplified models in the plot arises from the fact that the region of low invariant masses of the Dark Matter pair, $m_{\bar{\chiDM}\chiDM}$, is suppressed due to narrow Breit-Wigner peak that only probes a narrow window of parton distribution functions. For wider mediators, the low mass region is significantly enhanced by parton distribution functions at low Bjorken $x$, as illustrated in Fig.\,\ref{fig:monojet_mchichi}.
+This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
+%In general, for such extreme parameter choices the EFT model should give the correct answer.
+Furthermore, Fig.\,\ref{fig:monojet_narrow} compares the vector model with 5~\tev mediator to the D5 EFT sample and reveals that the simplified models with larger mediator widths (e.g. for couplings of 1) are the ones resembling the kinematics of contact interactions. This is because the production in the EFT model is always off-shell, i.e. no peak in the $m_{\bar{\chiDM}\chiDM}$ distribution is present.
+
+However, the complete story of generating heavy narrow mediators is a cautionary tale
+about understanding the details of the generator tools.
+Observations of kinematic changes or cross section suppression in the generated samples do not always come from physics, but may be a consequence of under-sampling phase space in the generator implementation,
+where a cutoff for the regions far away from the mediator mass is generally used. One must take care to correctly set the width of the Breit-Wigner used for the sampling.
+This is illustrated in Fig.\,\ref{fig:monojet_mchichi2} showing the invariant mass of the Dark Matter pair in the samples generated in \madgraph for a $\mMed=7$~\tev scalar mediator
+with different coupling strengths, using the default settings \texttt{bwcutoff} equal to 15.
+In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
+resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7~\tev is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
+\caption{Invariant mass of the Dark Matter pair in the scalar mediator samples with $\mDM=1$~\gev, $\mMed=7$~\tev and different coupling strengths.}
+\label{fig:monojet_mchichi2}
+\end{figure}
+
+
+
+
 \subsection{Parton matching studies}
 \label{sec:monojet_parton_match}
 
 Whenever models for mono-jet final states are generated in  \madgraph,
 it is necessary to avoid double counting the partons from matrix elements and parton showering in \pythiaEight
 using a parton matching technique. Based on the comparative study 
-in Ref.\,\cite{Alwall:0706.2569}, we recommend using the CKKW-L matching scheme.
+in Ref.\,\cite{Alwall:0706.2569}, there is
+some advantage to using the CKKW-L matching scheme.
 %\cite{Alwall:1405.0301}
+However, the current CKKW-L matching scheme is not amenable to the
+event generation model of the experimental collaborations.
+Most large scale event generation is performed using LHE files that
+have a mix (or ``soup'') of different parton level processes in each file.
+This is easy to handle using the MLM matching scheme provided as
+a \pythiaEight plugin.
 
-\subsubsection{Implementation of the CKKW-L matching}
+\subsubsection{Implementation of MLM matching}
 \label{sec:match_implementation}
 
-To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showered in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
-\begin{itemize}
-\item On the generator side:\\
-\texttt{ickkw = 0} \\
-\texttt{ktdurham = }matching scale \\
-\texttt{dparameter = 0.4} \\
-\texttt{dokt = T} \\
-\texttt{ptj=20} \\
-\texttt{drjj=0} \\
-\texttt{mmjj=0} \\
-\texttt{ptj1min=0} \\
+Here, add the process generation steps, and the matching parameters for
+LHE file production.  Also, provide the \pythiaEight configuration to
+produce hadronic events.
 
-\item On the parton showering side in \pythiaEight.201:\\
-\texttt{Merging:ktType           = 1}\\
-\texttt{Merging:TMS              = }matching scale\\
-\texttt{1000022:all = chi chi\~{ } 2 0 0 30.0 0.0 0.0 0.0 0.0}\\%, where 2 stands for the DM particle spin and 30 stands for its mass in GeV\\
-\texttt{1000022:isVisible = false}\\
-\texttt{Merging:doKTMerging      = on}\\
-\texttt{Merging:Process          = pp>\{chi,1000022\}\{chi\~{ },-1000022\}}\\
-\texttt{Merging:nJetMax          = 2}\\
-\end{itemize}
-The matching scales should be the same for the generation and parton showering. In \madgraph, the particle data group ID \texttt{1000022} is used for weakly interacting dark matter candidates. The dark matter particle is defined in \pythiaEight accordingly using the commands above that specify an invisible spin \textonehalf{} particle of 30\,\gev mass. The \texttt{Mergin:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. Therefore, the following three processes need to be generated in this case:\\
-
-\texttt{p p > chi chi\~{ }}\\
-
-\texttt{p p > chi chi\~{ } j}\\
-
-\texttt{p p > chi chi\~{ } j j}\\
-Note that the \madgraph cards and \pythiaEight commands are identical for all three samples.
-
-\subsubsection{Matching scale}
-
-In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_t$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
-
-Two examples of differential jet rates, using matching scale 30\,\gev and 80\,\gev, from the EFT D5 sample generated as described in the previous section are given in Fig.\,\ref{fig:CKKW_D5_30} and \ref{fig:CKKW_D5_80}, respectively.
-Although a kink is visible around the matching scale value in both cases, the 80\,\gev scale leads to smoother distributions. 
-In order to find the optimal matching scale, additional samples with matching scale 50, 70, and 90\,\gev are generated as well and a detailed comparison of the differential jet rates close to the transition region is shown in Fig.\,\ref{fig:CKKW_D5_zoom}.
-The largest differences among the samples are visible for the $1\rightarrow2$ jets transition where the 30\,\gev and 50\,\gev scale lead to a drop of the rates around the matching scale values. On the contrary, there is a hint of an increased rate around the matching scale value in the sample generated with the 90\,\gev scale. Therefore, we recommend to use 80\,\gev as the baseline matching scale.
+The validation of matching has been performed extensively by the collaborations for a large number of SM and BSM models, and need not be reproduced here.
 
 
-\begin{figure}[h!]
-	\centering  
-	\subfloat[$1\rightarrow2$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet1to2_30.pdf}
-	}
-	\hfill
-	\subfloat[$2\rightarrow3$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet2to3_30.pdf}
-	}
-	\hfill
-	\subfloat[$3\rightarrow4$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet3to4_30.pdf}
-	}
-	\hfill
-	\subfloat[$4\rightarrow5$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet4to5_30.pdf}
-	}
-	\caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 30\,\gev. The 0-, 1- and 2-parton emission samples are generated separately and indicated in the plots as Prod 1, Prod 2 and Prod 3, respectively. A vertical line is drawn at the matching scale.}
-	\label{fig:CKKW_D5_30}
-\end{figure}
+%% \subsubsection{Implementation of the CKKW-L matching}
 
 
-\begin{figure}[h!]
-	\centering  
-	\subfloat[$1\rightarrow2$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet1to2_80.pdf}
-	}
-	\hfill
-	\subfloat[$2\rightarrow3$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet2to3_80.pdf}
-	}
-	\hfill
-	\subfloat[$3\rightarrow4$ jets]{%
-    \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet3to4_80.pdf}
-	}
-	\hfill
-	\subfloat[$4\rightarrow5$ jets]{%
-    \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet4to5_80.pdf}
-	}
-  \caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 80\,\gev. The 0-, 1- and 2-parton emission samples are generated separately and indicated in the plots as Prod 1, Prod 2 and Prod 3, respectively. A vertical line is drawn at the matching scale.}
-  \label{fig:CKKW_D5_80}
-\end{figure}
+%% To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showered in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
+%% \begin{itemize}
+%% \item On the generator side:\\
+%% \texttt{ickkw = 0} \\
+%% \texttt{ktdurham = }matching scale \\
+%% \texttt{dparameter = 0.4} \\
+%% \texttt{dokt = T} \\
+%% \texttt{ptj=20} \\
+%% \texttt{drjj=0} \\
+%% \texttt{mmjj=0} \\
+%% \texttt{ptj1min=0} \\
+
+%% \item On the parton showering side in \pythiaEight.201:\\
+%% \texttt{Merging:ktType           = 1}\\
+%% \texttt{Merging:TMS              = }matching scale\\
+%% \texttt{1000022:all = chi chi\~{ } 2 0 0 30.0 0.0 0.0 0.0 0.0}\\%, where 2 stands for the DM particle spin and 30 stands for its mass in GeV\\
+%% \texttt{1000022:isVisible = false}\\
+%% \texttt{Merging:doKTMerging      = on}\\
+%% \texttt{Merging:Process          = pp>\{chi,1000022\}\{chi\~{ },-1000022\}}\\
+%% \texttt{Merging:nJetMax          = 2}\\
+%% \end{itemize}
+%% The matching scales should be the same for the generation and parton showering. In \madgraph, the particle data group ID \texttt{1000022} is used for weakly interacting dark matter candidates. The dark matter particle is defined in \pythiaEight accordingly using the commands above that specify an invisible spin \textonehalf{} particle of 30\,\gev mass. The \texttt{Mergin:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. Therefore, the following three processes need to be generated in this case:\\
+
+%% \texttt{p p > chi chi\~{ }}\\
+
+%% \texttt{p p > chi chi\~{ } j}\\
+
+%% \texttt{p p > chi chi\~{ } j j}\\
+%% Note that the \madgraph cards and \pythiaEight commands are identical for all three samples.
+
+%% \subsubsection{Matching scale}
+
+%% In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_t$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
+
+%% Two examples of differential jet rates, using matching scale 30\,\gev and 80\,\gev, from the EFT D5 sample generated as described in the previous section are given in Fig.\,\ref{fig:CKKW_D5_30} and \ref{fig:CKKW_D5_80}, respectively.
+%% Although a kink is visible around the matching scale value in both cases, the 80\,\gev scale leads to smoother distributions. 
+%% In order to find the optimal matching scale, additional samples with matching scale 50, 70, and 90\,\gev are generated as well and a detailed comparison of the differential jet rates close to the transition region is shown in Fig.\,\ref{fig:CKKW_D5_zoom}.
+%% The largest differences among the samples are visible for the $1\rightarrow2$ jets transition where the 30\,\gev and 50\,\gev scale lead to a drop of the rates around the matching scale values. On the contrary, there is a hint of an increased rate around the matching scale value in the sample generated with the 90\,\gev scale. Therefore, we recommend to use 80\,\gev as the baseline matching scale.
 
 
-\begin{figure}[h!]
-	\centering  
-	\subfloat[$1\rightarrow2$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_1.pdf}
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_1.pdf}
-	}
-	\hfill
-	\subfloat[$2\rightarrow3$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_2.pdf}
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_2.pdf}
-	}
-	\hfill
-	\subfloat[$3\rightarrow4$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_3.pdf}
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_3.pdf}
-	}
-	\hfill
-	\subfloat[$4\rightarrow5$ jets]{%
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_4.pdf}
-		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_4.pdf}
-	}
-  \caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 30, 50, 70, 80 and 90\,\gev. A zoom of the region around the matching scale values is shown on right.}
-  \label{fig:CKKW_D5_zoom}
-\end{figure}
+%% \begin{figure}[h!]
+%% 	\centering  
+%% 	\subfloat[$1\rightarrow2$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet1to2_30.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$2\rightarrow3$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet2to3_30.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$3\rightarrow4$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet3to4_30.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$4\rightarrow5$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet4to5_30.pdf}
+%% 	}
+%% 	\caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 30\,\gev. The 0-, 1- and 2-parton emission samples are generated separately and indicated in the plots as Prod 1, Prod 2 and Prod 3, respectively. A vertical line is drawn at the matching scale.}
+%% 	\label{fig:CKKW_D5_30}
+%% \end{figure}
 
 
-\subsubsection{Parton emission multiplicity}
-\label{sec:monojet_parton_emission}
+%% \begin{figure}[h!]
+%% 	\centering  
+%% 	\subfloat[$1\rightarrow2$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet1to2_80.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$2\rightarrow3$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet2to3_80.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$3\rightarrow4$ jets]{%
+%%     \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet3to4_80.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$4\rightarrow5$ jets]{%
+%%     \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/HistoJet4to5_80.pdf}
+%% 	}
+%%   \caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 80\,\gev. The 0-, 1- and 2-parton emission samples are generated separately and indicated in the plots as Prod 1, Prod 2 and Prod 3, respectively. A vertical line is drawn at the matching scale.}
+%%   \label{fig:CKKW_D5_80}
+%% \end{figure}
 
-The prescription for the event generation given in Section\,\ref{sec:match_implementation} starts with the emission of 0 partons and ends with maxim 2 partons in addition. Producing the samples separately allows to investigate the relative composition of the individual samples in various parts of the phase space. Figure\,\ref{fig:Kine_D5_80} shows the \MET distribution of the EFT D5 sample with the matching scale at 80\,\gev. The plot reveals that the 0-parton sample gives the dominant contribution in the region below the matching scale value that rapidly decreases at higher \MET. Assuming the lowest analysis \MET cut in Run-2 mono-jet analyses at 300\,\gev, the generation of the 0-parton emission sample can be safely omitted as it only gives $<1\%$ contribution at $\MET>300\,\gev$. For the 1- and 2-parton emission samples, one can use a generator cut on the leading parton $\pT$, \texttt{ptj1min}, in order to avoid generating low \MET events that are irrelevant for the analysis.
 
-\begin{figure}[h!]
-	\centering  
-%	\subfloat[Missing transverse momentum]{%
-    \includegraphics[width=0.8\linewidth]{figures/monojet_appendix/MET_matching80.pdf}
-%	}
-%	\hfill
-%	\subfloat[Transverse momentum of leading jet]{%
-%    \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/jet1pt_matching80.pdf}
-%	}
-%	\hfill
-%	\subfloat[Transverse momentum of subleading jet]{%
-%    \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/jet2pt_matching80.pdf}
-%	}
-%	\caption{Kinematics distributions for EFT D5 sample with CKKW matching scale at 80 \gev. 0-, 1- and 2-parton emission cases are generated separately and added together by cross sections. The 0-parton emission case has very limited contribution for missing transverse energy larger than 300 \gev region.}
-	\caption{Missing transverse momentum distributions for EFT D5 sample with CKKW-L matching scale at 80\,\gev. Individual contributions from the 0-, 1- and 2-parton emission samples are shown.}
-	\label{fig:Kine_D5_80}
-\end{figure}
+%% \begin{figure}[h!]
+%% 	\centering  
+%% 	\subfloat[$1\rightarrow2$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_1.pdf}
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_1.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$2\rightarrow3$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_2.pdf}
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_2.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$3\rightarrow4$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_3.pdf}
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_3.pdf}
+%% 	}
+%% 	\hfill
+%% 	\subfloat[$4\rightarrow5$ jets]{%
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/compare_plot_4.pdf}
+%% 		\includegraphics[width=0.48\linewidth]{figures/monojet_appendix/window_plot_4.pdf}
+%% 	}
+%%   \caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 30, 50, 70, 80 and 90\,\gev. A zoom of the region around the matching scale values is shown on right.}
+%%   \label{fig:CKKW_D5_zoom}
+%% \end{figure}
+
+
+%% \subsubsection{Parton emission multiplicity}
+%% \label{sec:monojet_parton_emission}
+
+%% The prescription for the event generation given in Section\,\ref{sec:match_implementation} starts with the emission of 0 partons and ends with maxim 2 partons in addition. Producing the samples separately allows to investigate the relative composition of the individual samples in various parts of the phase space. Figure\,\ref{fig:Kine_D5_80} shows the \MET distribution of the EFT D5 sample with the matching scale at 80\,\gev. The plot reveals that the 0-parton sample gives the dominant contribution in the region below the matching scale value that rapidly decreases at higher \MET. Assuming the lowest analysis \MET cut in Run-2 mono-jet analyses at 300\,\gev, the generation of the 0-parton emission sample can be safely omitted as it only gives $<1\%$ contribution at $\MET>300\,\gev$. For the 1- and 2-parton emission samples, one can use a generator cut on the leading parton $\pT$, \texttt{ptj1min}, in order to avoid generating low \MET events that are irrelevant for the analysis.
+
+%% \begin{figure}[h!]
+%% 	\centering  
+%% %	\subfloat[Missing transverse momentum]{%
+%%     \includegraphics[width=0.8\linewidth]{figures/monojet_appendix/MET_matching80.pdf}
+%% %	}
+%% %	\hfill
+%% %	\subfloat[Transverse momentum of leading jet]{%
+%% %    \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/jet1pt_matching80.pdf}
+%% %	}
+%% %	\hfill
+%% %	\subfloat[Transverse momentum of subleading jet]{%
+%% %    \includegraphics[width=0.48\linewidth]{figures/monojet_appendix/jet2pt_matching80.pdf}
+%% %	}
+%% %	\caption{Kinematics distributions for EFT D5 sample with CKKW matching scale at 80 \gev. 0-, 1- and 2-parton emission cases are generated separately and added together by cross sections. The 0-parton emission case has very limited contribution for missing transverse energy larger than 300 \gev region.}
+%% 	\caption{Missing transverse momentum distributions for EFT D5 sample with CKKW-L matching scale at 80\,\gev. Individual contributions from the 0-, 1- and 2-parton emission samples are shown.}
+%% 	\label{fig:Kine_D5_80}
+%% \end{figure}
 
 
 
@@ -397,7 +444,7 @@ We therefore recommend to calculate the cross sections of these
 models in the 5-flavor scheme, as in the repository. 
 The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
 
-It is found that the best modeling of two $b$-quarks final states is achieved using a 4-flavor scheme and a massive treatment of the $b$-quarks ~\cite{Chatrchyan:2014dha.Chatrchyan:2013zja,CMS:2015mba}. We recommend to use in the generation NNPDF3.0 set (lhaid 263400).
+It is found that the best modeling of two $b$-quarks final states is achieved using a 4-flavor scheme and a massive treatment of the $b$-quarks ~\cite{Chatrchyan:2014dha,Chatrchyan:2013zja,CMS:2015mba}. We recommend to use in the generation NNPDF3.0 set (lhaid 263400).
 Since figure~\ref{fig:4Fvs5F} shows that there is no significant difference in the kinematics between 
 either flavor scheme used for DM+$b\bar{b}$ production, we recommend the 4-flavor scheme to follow
 the observation in the Z+$b\bar{b}$ measurements. 

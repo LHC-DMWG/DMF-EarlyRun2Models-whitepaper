@@ -8,11 +8,15 @@
 
 % preamble
 
-In this Chapter we review recommendations for final states of \MET{} recoiling against a particle extracted from initial state radiation, be it a gluon or an electroweak boson ($W/Z/\gamma/H$). Whist the recommendations are general, the discussions in this Chapter are made generally based on the monojet final state. 
+In this Chapter we review recommendations for
+models that yield $X$+\MET{} signatures,
+where $X$ is a QCD parton or $\gamma, W, Z$ or $h$.
+While the recommendations are general,
+the discussions in this Chapter are focused on the monojet final state. 
 Details on final states with EW boson radiation and with heavy flavor quarks from diagrams arising within these models are also discussed in this Chapter.
 %In the following paragraphs we present the peculiarities of these models that arise in the case of
 %boson radiation, and present some examples of the relevant distributions for these final states.
-These studies and studies in subsequent sections are based on simulation of the models with the generators implementation recommended in each section and provided in a companion CERN SVN repository. Further details on the implementation of these models can be found in Appendix~\ref{app:MonojetLikeModels_Appendix}. 
+These studies and those in subsequent sections are based on simulation of the models using the implementations recommended in Appendix~\ref{app:MonojetLikeModels_Appendix}. 
 
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
@@ -82,7 +86,9 @@ the corresponding interaction Lagrangians:
 \mathcal{L}_{\mathrm{vector}} &= \gq \sum_{q={u,d,s,c,b,t}}  \Zprime_{\mu} \bar{q}\gamma^{\mu}q + \gDM \Zprime_{\mu} \bar{\chiDM}\gamma^{\mu}\chiDM \\
 \mathcal{L}_{\rm{axial-vector}} &= \gq \sum_{q={u,d,s,c,b,t}}  \Zprime_{\mu} \bar{q}\gamma^{\mu}\gamma^5q + \gDM \Zprime_{\mu} \bar{\chiDM}\gamma^{\mu}\gamma^5\chiDM.
 \end{align}
-The coupling \gq is assumed to be universal to all quarks. 
+The coupling \gq is assumed to be universal to all quarks.
+For simplicity, we will sometimes refer to these as
+the models \modelDMV and \modelDMA, respectively.
 %It is also possible to consider other models in which mixed vector and axial-vector couplings are considered, 
 %for instance the couplings to the quarks are axial-vector whereas those to DM are vector. We recommend the models with
 %pure vector couplings or pure axial-vector couplings.
@@ -90,27 +96,21 @@ The coupling \gq is assumed to be universal to all quarks.
 %Definition of minimal width
 As mentioned in the Introduction, when no additional visible or invisible decays contribute to the width of the mediator, 
 the minimal width is fixed by the choices of couplings $\gq$ and $\gDM$. The effect of larger 
-widths is discussed on page \pageref{paragraph:nonminimalwidth}. 
-For the vector and axial-vector models, the minimal width is
-
-\begin{equation}
-%\Gamma_{\rm{min}}=\Gamma_{\bar{\chiDM}\chiDM} + \sum_{q}N_{c}\Gamma_{\bar{q}q}
-\Gamma_{\rm{min}}^{V/A}=\Gamma_{\bar{\chiDM}\chiDM}^{V/A} + \sum_{q}\Gamma_{\bar{q}q}^{V/A}.
-\label{eq:monojet_min}
-\end{equation}
-
-The leading order expressions for the partial widths are:
+widths is discussed on page \pageref{paragraph:nonminimalwidth}.
+\Todo{change reference here from page to subsection?}
+For the vector and axial-vector models, the minimal width is:
 
 \begin{align}
-\Gamma_{\bar{\chiDM}\chiDM}^{\rm{V}}&=\frac{\gDM^2 \mMed}{12\pi}\left(1+\frac{2 \mDM^2}{\mMed^2} \right)\beta_{DM} \theta(\mMed-2\mDM)\\
-\Gamma_{\bar{q}q}^{\rm{V}}&= \frac{3 \gq^2 \mMed}{12\pi}\left(1+\frac{2 m_q^2}{\mMed^2} \right)\beta_q \theta(\mMed-2m_q)\\
-\Gamma_{\bar{\chiDM}\chiDM}^{\rm{A}}&=\frac{\gDM^2 \mMed}{12\pi} \beta_{DM}^{3/2} \theta(\mMed-2\mDM)\\
-\Gamma_{\bar{q}q}^{\rm{A}}&= \frac{3 \gq^2 \mMed}{12\pi}\beta_q^{3/2} \theta(\mMed-2m_q)\;,
-\label{eq:GammaV}
+\label{eq:monojet_min}
+\Gamma^{\textrm{V}}_\textrm{min} &= 
+\frac{\gDM^2 \mMed}{12\pi}\left(1+\frac{2 \mDM^2}{\mMed^2} \right)\beta_{DM} \theta(\mMed-2\mDM)\\\nonumber
+ &+ \sum_q \frac{3 \gq^2 \mMed}{12\pi}\left(1+\frac{2 m_q^2}{\mMed^2} \right)\beta_q \theta(\mMed-2m_q),\\
+\Gamma_{\textrm{min}}^{\rm{A}}&=\frac{\gDM^2 \mMed}{12\pi} \beta_{DM}^{3/2} \theta(\mMed-2\mDM)\\\nonumber
+   &+ \sum_q \frac{3 \gq^2 \mMed}{12\pi}\beta_q^{3/2} \theta(\mMed-2m_q)\;.
 \end{align}
 $\theta(x)$ denotes the Heaviside step function, and
 $\beta_f=\sqrt{1-\frac{4 m_f^2}{\mMed^2}}$ is the velocity of the
-fermion $f$ in the mediator rest frame.
+fermion $f$ with mass $m_f$  in the mediator rest frame.
 Note the color factor 3 in the quark terms.
 Figure\,\ref{fig:monojet_width_V} shows the minimal width as a function of mediator mass for both vector and axial-vector mediators assuming
 \gq=\gDM=1. With this choice of the couplings, the dominant contribution to the minimal width comes from the quarks, due 
@@ -130,7 +130,7 @@ Therefore, the minimal set of parameters under consideration for these two model
 \bea
 \left\{ \mDM,~\mMed,~\gq, ~ \gDM\right\} \,.
 \eea
-See~\cite{Buchmueller:2014yoa} for a thorough discussion. 
+See~\cite{Buchmueller:2014yoa} for a thorough discussion of these models.
  
 %The two simplified models described here have four free parameters: mediator mass $\mMed$, Dark Matter mass $\mDM$, coupling of the mediator to quarks $\gq$ and coupling of the mediator to Dark Matter $\gDM$,
 
@@ -139,12 +139,15 @@ See~\cite{Buchmueller:2014yoa} for a thorough discussion.
 \subsection{Spin structure of the couplings}
 \label{sec:monojet_spin}
 
-In this section, the differences between the models with pure vector and axial-vector couplings are described.
-Furthermore, it is possible to consider other models in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are axial-vector whereas those to DM are vector. Such comparison is also presented.
+In this section, the differences between the models \modelDMV and \modelDMA
+are described.
+Furthermore, it is possible to consider other models in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are axial-vector whereas those to DM are vector. Such comparisons are also presented.
 
 The samples with pure vector and pure axial-vector couplings are compared for $\mMed=100$~\gev and different Dark Matter masses in Fig.\,\ref{fig:monojet_VAmodels}. %The minimal width between the samples with the same Dark Matter and mediator masses differ only at the percent level.
 No differences in the shape of the \MET distributions are observed between the samples with coincident masses. \Todo{Do we want to propose to generate one model only and refer to the cross section tables in HEPData repository for the other?}
 In the case of the on-shell Dark Matter pair production where $2\mDM\ll\mMed$, the cross sections of the pure vector and pure axial-vector models are similar. With increasing Dark Matter mass towards the $2\mDM=\mMed$ transition and beyond into the off-shell production regime, the relative difference between the cross sections of the two samples is increasing, with the vector samples having larger cross sections. 
+\Todo{This can be understood in the eikonal approximation since the A terms have an additional $v^2$ in front.}
+
 
 \begin{figure}
 \centering
@@ -153,10 +156,15 @@ In the case of the on-shell Dark Matter pair production where $2\mDM\ll\mMed$, t
 \label{fig:monojet_VAmodels}
 \end{figure}
 
-Figure\,\ref{fig:monojet_scan_VA_mMed1000} shows the samples generated with pure and mixed couplings for $\mDM=100$~\gev and $\mMed=1\,\tev$, i.e. where the Dark Matter pair is produced on-shell. The mediator width between the pure vector and pure axial-vector couplings differ only by 2\% in this case, and $<10\%$ agreement between the cross sections is found. The mediator widths for the samples with the same type coupling to quarks agree at better than 1\% since the width is dominated by the quark contribution, as expected from Eq.\,\ref{eq:GammaV}.
-In the mediator rest frame, the angular distribution of the DM relative to the mediator direction of motion has the form $1+z^2+2*C*z$, where $z=\cos\theta$, with the second term only present in the mixed case, which may lead to acceptance differences. However, no significant differences between the samples with same type Dark Matter coupling are seen, given the statistical precision of the generated samples.
+Figure\,\ref{fig:monojet_scan_VA_mMed1000} shows the samples generated with pure and mixed couplings for $\mDM=100$~\gev and $\mMed=1\,\tev$, i.e. where the Dark Matter pair is produced on-shell. The mediator width between the pure vector and pure axial-vector couplings differ only by 2\% in this case, and $<10\%$ agreement between the cross sections is found. The mediator widths for the samples with the same type coupling to quarks agree at better than 1\% since the width is dominated by the quark contribution, as expected from
+Eq.\,\ref{eq:monojet_min}.
+%In the mediator rest frame, the angular distribution of the DM relative to the mediator direction of motion has the form $1+z^2+2*C*z$, where $z=\cos\theta$, with the second term only present in the mixed case, which may lead to acceptance differences.
+No significant differences between the samples with same type Dark Matter coupling are seen, given the statistical precision of the generated samples.
+This is expected since the mediator is produced on-shell, and the details of the invisible decay are unimportant.
 
-For the off-shell Dark Matter pair production, shown in Fig.\,\ref{fig:monojet_scan_VA_mMed100} for $\mDM=100$~\gev and $\mMed=100$~\gev, approximately factor 2 difference between the cross-sections of the samples with pure couplings is observed. As in the previous case, the samples with the same type coupling to Dark Matter are similar both in terms of cross sections and \MET shape. Since the contribution to the mediator width from Dark Matter is closed in this case, only the quark couplings define the width. Only couplings to light quarks are opened in the case of $\mMed=100$~\gev for which the differences between the partial widths of vector and axial-vector couplings are marginal. This explains the similar minimal widths for all four samples stated in Fig.\,\ref{fig:monojet_scan_VA_mMed100}.
+For the off-shell Dark Matter pair production, shown in Fig.\,\ref{fig:monojet_scan_VA_mMed100} for $\mDM=100$~\gev and $\mMed=100$~\gev,
+there is approximately a factor 2 difference
+between the cross-sections of the samples with pure couplings is observed. As in the previous case, the samples with the same type coupling to Dark Matter are similar both in terms of cross sections and \MET shape. Since the contribution to the mediator width from Dark Matter is closed in this case, only the quark couplings define the width. Only couplings to light quarks are opened in the case of $\mMed=100$~\gev for which the differences between the partial widths of vector and axial-vector couplings are marginal. This explains the similar minimal widths for all four samples stated in Fig.\,\ref{fig:monojet_scan_VA_mMed100}.
 
 In general, the coupling to quarks is not expected to play an important role as it is only needed to produce the mediator which is confirmed by the observations above. On the contrary, the coupling to Dark Matter determines the form of the matrix element which explains the similarity of the samples with the same type Dark Matter couplings. 
 Based on these arguments, we recommend to consider only the models with pure vector couplings or pure axial-vector couplings.
@@ -184,8 +192,9 @@ In order to determine an optimal choice of the parameter grid for the simulation
 
 \paragraph{Scan over the couplings}
 
-Figure\,\ref{fig:monojet_scan_V_g} In order to study the dependence on the coupling strength, samples were generated where a pair of \mDM=10~\gev Dark Matter particles are produced on-shell from the mediator of \mMed=1~\tev.
-No differences in the shape of the \MET distribution are observed for the different choices of the coupling strength.
+To study the dependence on the coupling strength, samples were generated where a pair of \mDM=10~\gev Dark Matter particles are produced on-shell from the mediator of \mMed=1~\tev.
+From Figure~\ref{fig:monojet_scan_V_g}, we
+observe no difference in the shapes of the \MET distribution for the different choices of the coupling strength.
 This is a generator-level prediction with no kinematic selections or detector simulation. Coupling values in the scan range 0.1--1.45, holding $\gq=\gDM$, correspond to a rough estimate of the lower sensitivity of mono-jet analyses and a maximum coupling value such that $\Gamma_{\rm{min}} < \mMed$.
 Based on similar findings for different choices of
 \mMed and \mDM, we conclude that the shapes of
@@ -207,26 +216,9 @@ is the case of
 extremely heavy and narrow mediators, which can arise for
 small coupling strengths.
 Upon close examination, it was determined that this case is
-not peculiar.
-Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
-$\MET$ distribution for a $\mMed=5$~\tev mediator
-once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
-Such heavy mediators, although inacessible by the LHC data, are interesting since they provide a good approximation for benchmark EFT models.
-The observed difference among the simplified models in the plot arises from the fact that the region of low invariant masses of the Dark Matter pair, $m_{\bar{\chiDM}\chiDM}$, is suppressed due to narrow Breit-Wigner peak that only probes a narrow window of parton distribution functions. For wider mediators, the low mass region is significantly enhanced by parton distribution functions at low Bjorken $x$, as illustrated in Fig.\,\ref{fig:monojet_mchichi}.
-This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different $\MET$ shape.
-%In general, for such extreme parameter choices the EFT model should give the correct answer.
-Furthermore, Fig.\,\ref{fig:monojet_narrow} compares the vector model with 5~\tev mediator to the D5 EFT sample and reveals that the simplified models with larger mediator widths (e.g. for couplings of 1) are the ones resembling the kinematics of contact interactions. This is because the production in the EFT model is always off-shell, i.e. no peak in the $m_{\bar{\chiDM}\chiDM}$ distribution is present.
+not peculiar.   See the Appendix for details. \Todo{reference to place in appendix}
 
-
-\Todo{move this paragraph to appendix (and leave the previous one here as it talks about 5 TeV samples that we recommend and compares the shape to EFT)}
-However, the complete story of generating heavy narrow mediators is a cautionary tale
-about understanding the details of the generator tools.
-Observations of kinematic changes or cross section suppression in the generated samples do not always come from physics, but may be a consequence of under-sampling phase space in the generator implementation,
-where a cutoff for the regions far away from the mediator mass is generally used. One must take care to correctly set the width of the Breit-Wigner used for the sampling.
-This is illustrated in Fig.\,\ref{fig:monojet_mchichi2} showing the invariant mass of the Dark Matter pair in the samples generated in \madgraph for a $\mMed=7$~\tev scalar mediator
-with different coupling strengths, using the default settings \texttt{bwcutoff} equal to 15.
-In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
-resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7~\tev is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes.
+%\Todo{move this paragraph to appendix (and leave the previous one here as it talks about 5 TeV samples that we recommend and compares the shape to EFT)}
 
 %\Todo{Refer to results of ongoing study in Section 6.}
 %CD: commented out, we have to ask for having 7 TeV mediators
@@ -259,13 +251,7 @@ resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppress
 \caption{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths. The distributions are normalised to unit area.}
 \label{fig:monojet_mchichi}
 \end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
-\caption{Invariant mass of the Dark Matter pair in the scalar mediator samples with $\mDM=1$~\gev, $\mMed=7$~\tev and different coupling strengths.}
-\label{fig:monojet_mchichi2}
-\end{figure}
+\Todo{Now these figures seem out of place.   The point of the first plot seems to be that the EFT limit is only recovered for g=1.}
 
 Since kinematic distributions are robust to
 changes in the specific values of coupling as long as heavy narrow mediators are avoided, the choice of  \gq=\gDM is reasonable 
@@ -275,9 +261,11 @@ with small couplings, but, also, the early part of Run~2 will not be
 sensitive to them.  The range of couplings we recommend limit the
 calculated width of the mediator to be near or below \mMed.
 
-For direct mediator searches, asymmetric couplings ($\gq \ne \gDM$)
-might also be considered. A scan in \gDM vs \gq can then be performed for a fixed mediator mass. Such searches, such as those for
-dijet resonances, may restrict \gq to a greater degree than
+For direct mediator searches, such as $q\bar q\to Z^\prime \to q\bar q$, asymmetric couplings ($\gq \ne \gDM$)
+might also be considered. A scan in \gDM vs \gq can then be performed for a fixed mediator mass. Such searches
+%such as those for
+%dijet resonances,
+may restrict \gq to a greater degree than
 \gDM.
 
 \paragraph{Scan over the Dark Matter mass}
@@ -287,7 +275,7 @@ This simply reflects the fact that most mediators are produced on-shell, and the
 This is illustrated in Fig.\,\ref{fig:monojet_scan_V_mDM1000} for
 an example of \mMed=1~\tev 10~\gev $<\mDM<$ 300~\gev.
 It is observed that the cross section decreases as the \mDM approaches $\mMed/2$. Once the Dark Matter pair is produced off-shell, the cross section of the
-simplified model is suppressed and the $\MET$ spectrum hardens, as demonstrated with the choice of \mDM=1~\tev in the same plot. Figure\,\ref{fig:monojet_scan_V_mDM100} reveals the $\MET$ spectrum hardens further with increasing \mDM, accompanied by the gradual decrease of the cross section. From these observations one can conclude:
+simplified model is suppressed and the $\MET$ spectrum hardens, as demonstrated with the choice of \mDM=1~\tev in the same plot. Figure\,\ref{fig:monojet_scan_V_mDM100} demonstrates that the $\MET$ spectrum hardens further with increasing \mDM, accompanied by the gradual decrease of the cross section. From these observations one can conclude:
 \begin{itemize}
 \item A coarse binning along $\mDM$ is sufficient at $\mMed \gg 2\mDM$.
 \item Finer binning is needed in order to capture the changes in the cross section and kinematic quantities close to the production threshold on both sides around $\mMed=2\mDM$.
@@ -466,7 +454,8 @@ The presentation of the results in the $\gq$--$\gDM$ plane for fixed masses bene
 
 In this section, we consider a parallel situation to the \modelDMV and \modelDMA mediators in the previous sections: a real scalar or a pseudoscalar where the associated scalar is decoupled at higher energies\sidenote{This assumption does not hold in a UV-complete model where the two components of the complex scalar mediator would be approximately degenerate.  The complex scalar case could be studied separately in the case of heavy flavor final states given the sufficiently different kinematics.}. This section is largely based on Refs.~\cite{Buckley:2014fba,Harris:2014hga} which contain a thorough discussion of these models. 
 
-Under MFV, spin-$0$ resonances look like an alternate-reality version of the SM Higgs. Relative to the \modelDMV and \modelDMA discussed above, these \modelDMS and \modelDMP models are distinguished by the special consequences of the MFV assumption, the very narrow width of the mediator and its extreme sensitivity to which decays are kinematically available, and the loop-induced coupling to gluons. The interaction Lagrangians are
+With the MFV assumption,
+spin-$0$ resonances behave in a similar fashion as the SM Higgs boson. Relative to the \modelDMV and \modelDMA discussed above, these \modelDMS and \modelDMP models are distinguished by the special consequences of the MFV assumption, the very narrow width of the mediator and its extreme sensitivity to which decays are kinematically available, and the loop-induced coupling to gluons. The interaction Lagrangians are
 
  \begin{eqnarray}
 {\cal L}_{\phi} & = &
@@ -613,9 +602,12 @@ For the mediator mass above twice the top quark mass $m_t$, the minimal width re
 \end{figure}
 
 It can be seen in Fig.~\ref{fig:monojet_SPmodels} that the kinematics for the scalar and pseudoscalar models coincides when considering the diagrams in Fig.~\ref{fig:feyn_prod_S}. 
-For this reason, we recommend to only generate only one of the two models, and report the cross-sections on HEPData 
-\Todo{Clarify shape of model repository} for the other one. No preference is given between the two models as they have the
-same kinematics, although it is worth pointing out that the pseudo-scalar model has been used for a Dark Matter interpretation of the DAMA signal 
+For this reason, we recommend to only generate only one of the two models.
+%, and report the cross-sections on HEPData 
+\Todo{Clarify shape of model repository}
+%for the other one.
+No preference is given between the two models as they have the
+same kinematics, although it is worth noting that the pseudo-scalar model has been used for a Dark Matter interpretation of the DAMA signal 
 and of the galactic center excess~\cite{Arina:2014yna}.
 Like in the case of the vector and axial-vector models described in Section~\ref{sec:monojet_spin}, the differences between the cross sections for the scalar and pseudo-scalar samples with the same $\mDM$ and $\mMed$ are increasing with the Dark Matter mass for fixed mediator mass. The pseudo-scalar model gives larger cross sections. Also note the increasing differences between the minimal widths close to the $2\mDM=\mMed$ threshold.
 
@@ -721,8 +713,8 @@ decaying to Dirac DM fermions in the scalar and pseudoscalar case, taking the mi
 \subsection{Additional considerations for $V+\MET$ signatures}
 \label{sub:EW_Scalar}
 
-The parameters for the model with a scalar mediator exchanged in the $s-$ channel 
-follow those in Section~\ref{subsec:MonojetLikeModels}. 
+The discussion of parameters for the model with a color-singlet, spin-0 mediator
+parallels that in Section~\ref{subsec:MonojetLikeModels}. 
 
 Even though the sensitivity of mono-boson searches to this model is low and it may not
 be in reach of early LHC searches, we recommend to generate this model for W, Z and photon searches 
@@ -783,7 +775,8 @@ if a parameterization of the cross section dependence from one grid point to ano
 The following section describes the details of a cross section scaling procedure that
 can be used to reinterpret results for a fixed coupling for \schannel mediator models.
 
-The propagator for the \schannel exchange is written in a Breit-Wigner form as $\frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the invariant mass of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
+The propagator for the \schannel exchange is written in a Breit-Wigner
+form as $\displaystyle \frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the invariant mass of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
 The size of the momentum transfer with respect to the mediator mass allows to classify the production in the following way:
 \begin{itemize}
 	\item off-shell production when $q^2 \gg \mMed$ leading to suppressed cross sections,

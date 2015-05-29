@@ -10,10 +10,10 @@
 %\section*{EFT Validity and Truncation Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Most of this report has focused on simplified models as
-an alternative to EFTs.  Here, we wish to emphasize that
-Effective Field Theories (EFTs) can remain a useful
-tool in the interpretation of DM searches at the LHC.
+Most of this report has focused on simplified models.
+Here, we wish to emphasize the utility and applicability of
+Effective Field Theories (EFTs) 
+in the interpretation of DM searches at the LHC.
 Given our current lack of knowledge about the nature of a DM particle and
 its interactions, a model independent interpretation of the collider bounds
 appears mandatory.  This approach should be complemented with
@@ -22,14 +22,20 @@ cannot exhaust the set of possible completions of
 an effective Lagrangian.
 Even when the application of EFT is not appropriate for the prediction of kinematics or cross sections, it does predict specific final states and can motivate experimental searches.
 
-As we have learned, EFTs do not truly represent a model-independent representation of the data for the current collider sensitivity.   Ideally, experimental results would be cast into bounds of allowed signal events in different kinematic regions.   Until this is done systematically by the analyses, we present
+One problem that has arisen is the attempt to derive a limit on
+nucleon-dark matter scattering cross sections based on collider data.
+Experiments that directly probe the nucleon-dark matter scattering cross section are testing the regime of small momentum transfers, where the EFT approach is valid.  Collider experiments are sensitive to large momentum transfers, and it is problematic to interpolate an EFT result from high to low momentum.  This is a regime where careful treatment is necessary.
+
+
+%As we have learned, EFTs do not truly represent a model-independent representation of the data for the current collider sensitivity.
+Ideally, experimental results would be cast into bounds of allowed signal events in different kinematic regions.   Until this is done systematically by the analyses, we present
 several prescriptions in the literature
 that can be used to quote bounds on EFT operators.
 
-For the uninitiated, we illustrate the problem with EFTs by considering an effective interaction
+For the uninitiated, we illustrate the problem that can arise with EFTs at colliders by considering an effective interaction
 $$ (\bar\psi\psi)(\bar\chiDM\chiDM) {g\over \Lambda^2}$$
 that couples SM and DM fields.   The strength of this interaction can
-be parametrized by $f={g\over \Lambda^2}$.
+be parametrized by $\displaystyle f={g\over \Lambda^2}$.
 A monojet signature can be generated
 by applying perturbation theory in the QCD coupling (assuming $\psi$ is
 a quark, for example).
@@ -67,7 +73,7 @@ this corresponds to setting
 \ee
 %
 where $\Qtr$ is the momentum carried by the mediator, and $\gDM$, $\gq$ are the DM-mediator and quark-mediator couplings respectively. Similar expressions exist for other operators. Clearly the condition that must be satisfied for this approximation to be valid is that $\Qtr^2 < M^2 = \gDM \gq {\Mstar}^2$. 
-In this framework, there are clearly three regions to consider:
+In this framework, there are three regions to consider:
 \begin{itemize}
 \item $\Qtr^2 \sim M^2$, in which case the EFT misses a resonant enhancement, and it is conservative to ignore this enhancement;
 \item $\Qtr^2 \ll M^2$, in which case the EFT is valid; and
@@ -76,15 +82,20 @@ In this framework, there are clearly three regions to consider:
 
 We can use the condition $\Qtr^2 < M^2 = \gDM \gq {\Mstar}^2$ to restrict the
 kinematics of the signal
-and enforce the validity of the EFT approximation (after the imposition of the event selection of the analysis).  This truncated signal can then be used to derive the new, truncated limit on $\Mstar$ as a function of $(\mDM, \gDM \gq)$.
- 
+and improve the reliability of the validity of the EFT approximation (after the imposition of the event selection of the analysis).  This truncated signal can then be used to derive the new, truncated limit on $\Mstar$ as a function of $(\mDM, \gDM \gq)$.
+\Todo{I am uncomfortable with saying ``ensure the validity.''}
+
+
 For the example D5-like operator, $\sigma \propto {\Mstar}^{-4}$, and so there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${\Mstar}$ if the original limit is based on a simple cut-and-count procedure. Defining $\sigma_{\rm EFT}^{\rm cut}$ as the cross section truncated such that all events pass the condition $\sqrt{\gDM \gq} \Mstar^{\rm rescaled} > \Qtr$, we have
  
 \be
 \Mstar^{\rm rescaled} = \left(\frac{\sigma_{\rm EFT}}{\sigma_{\rm EFT}^{\rm cut}}\right)^{1/4} \Mstar^{\rm original},
 \ee
 %
-which can be solved for $\Mstar^{\rm rescaled}$ via either iteration or a scan (note that $\Mstar^{\rm rescaled}$ appears on both the LHS and RHS of the equation). Similar relations exist for a given UV completion of each operator. The details and application of this procedure to ATLAS results can be found in Ref.~\cite{Aad:2015zva} for a range of operators. Since this method uses the physical couplings and energy scale $\Qtr$, it gives the strongest possible constraints in the EFT limit while remaining robust by ensuring the validity of the EFT approximation. 
+which can be solved for $\Mstar^{\rm rescaled}$ via either iteration or a scan.
+%(note that $\Mstar^{\rm rescaled}$ appears on both the LHS and RHS of the equation).
+Similar relations exist for a given UV completion of each operator. The details and application of this procedure to ATLAS results can be found in Ref.~\cite{Aad:2015zva} for a range of operators. Since this method uses the physical couplings and energy scale $\Qtr$, it gives the strongest possible constraints in the EFT limit while remaining robust by ensuring the validity of the EFT approximation.
+\Todo{Too strong of a statement?}
 
 If a search is not simply a counting experiment and exploits the shapes of kinematic distributions, the condition on the momentum transfer should be applied on the benchmarks using generator level information, by discarding events that are invalid. This provides the necessary rescaling of the cross section while keeping the information on the change in the kinematic distributions due to the removal of the invalid events. 
 

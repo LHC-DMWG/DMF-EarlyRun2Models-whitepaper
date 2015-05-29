@@ -198,8 +198,9 @@ is described by the following Lagrangian term at energies below $m_{\Zprime}$:
  L_{\rm eff} = - \frac{\gq \gDM }{m_{\Zprime}^2} \bar{q} \gamma^\mu q \bar\chiDM \gamma_\mu \chiDM \Big( 1 + \frac{g_{h \Zprime \Zprime} }{m_{\Zprime}^2} h \Big) \, ,
 \ee
 
-The first term of this equation gives rise to a term that is equivalent to the 
-radiation of a jet (or another EW gauge boson) in the initial state. 
+The first term of this equation
+is the standard \modelDMV model in the large $M_{Z^\prime}$ limit.   It can lead
+to a monojet signature.
 The second term describes the interaction between the \Zprime and the SM Higgs boson,
 via the coupling $g_{h \Zprime \Zprime} = \frac{m_{\Zprime}2 \sin\theta}{v_B}$, where
 $\sin\theta$ is the mixing angle between the SM Higgs and the baryonic Higgs $h_B$, and $v_B$ is the
@@ -213,11 +214,15 @@ The predictions of the model depend upon the two additional
 parameters beyond an s-channel simplified model, namely the
 mixing angle between baryonic Higgs $h_B$ and the SM-like Higgs boson $\sin\theta$ and the coupling of the mediator to SM-like Higgs boson, $g_{h\Zprime \Zprime}$.
 Thus, a full model is specified by:
-($\mMed ,\, \mDM ,\, \gDM ,\, \gq ,\, \sin\theta ,\, g_{h\Zprime \Zprime})$.
+
+\be
+\left\{\mMed ,\, \mDM ,\, \gDM ,\, \gq ,\, \sin\theta ,\, g_{h\Zprime \Zprime}\right\}.
+\ee
 
 \subsubsection{Parameter scan} 
 
-The width of the \Zprime mediator is calculated using all possible decays to SM particles (quarks) and to pairs of DM particles if kinematically allowed.
+The width of the \Zprime mediator is calculated using all possible decays to SM particles (quarks) and to pairs of DM particles if kinematically allowed
+as in the \modelDMV model.
 
 The dependence of the missing transverse momentum (\MET) on the model parameters 
 is studied by varying the parameters one at a time. The variation of parameters 
@@ -229,7 +234,11 @@ the distribution broadens significantly in the case of an off-shell mediator.
 For this reason, the same grid in \mmed, \mdm as for the vector mediator
 of the jet+\MET search (Table~\ref{tab:mDMmMedScan_VA}) is chosen as a starting point. 
 The coupling $g_{h\Zprime \Zprime}$, along with \gq and \gDM, are subject to perturbativity bounds:
-$$\gq, \gDM < 4\pi $$ and $$  g_{h \Zprime \Zprime} < \sqrt{4\pi}m_{\Zprime}\sin\theta$$ 
+
+$$\gq, \gDM < 4\pi $$
+and
+
+$$  g_{h \Zprime \Zprime} < \sqrt{4\pi}m_{\Zprime}\sin\theta$$ 
 The value $g_{h \Zprime \Zprime}/m_{\Zprime} = 1$ is chosen as a benchmark value for the generation 
 of Monte Carlo samples since it maximizes the cross section (as shown in the following paragraph)
 without violating the bounds. The mediator-DM coupling \gDM is fixed to 1, and  
@@ -316,36 +325,9 @@ Analyses should perform further studies, beyond those studies performed for the 
 		\label{fig:VectorHbb_1000}}
 \end{figure}
 
-\subsubsection{Cross-section scaling}
 
-The dependence of the cross section of the $pp \rightarrow H\chiDM\bar{\chiDM}+X$ process 
-on $g_{h \Zprime \Zprime}$ is shown in Figure~\ref{fig:vectorXSdeps}. 
-The curves have been fit to second-order polynomials. 
-For $m_{med} = 100$~\gev, the fit function is 
-$$y = -0.12 - 3.4\times10^{-3}x + 2.7\times10^{-4}x^2$$.
-For $m_{med} = 1$~\tev, the fit function is 
-is $$y = 0.0012 - 2.4\times10^{-7}x + 1.5\times10^{-7}x^2$$
 
-\be
-y = -0.12 - 3.4\times10^{-3}x + 2.7\times10^{-4}x^2.
-\ee
-For $\mMed = 1$ TeV, the fit function is 
-is:
-
-\be
-y = 0.0012 - 2.4\times10^{-7}x + 1.5\times10^{-7}x^2.
-\ee
-
-\begin{figure}[hbpt!]
-	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zprime_xs_med_100}
-	\includegraphics[width=0.49\linewidth]{figures/EW/monoH/zprime_xs_med_1000}
-	\caption{Cross section of the $pp \rightarrow H\chiDM\bar{\chiDM}$ process as a function of 
-		$g_{h \Zprime \Zprime}$ for $m_{\Zprime} = 100$~\gev (left) 
-		and $m_{\Zprime} = 1$~\tev (right). The fit functions are shown in the text. 
-		\label{fig:vectorXSdeps}}
-\end{figure}
-
-\clearpage
+%%%%\clearpage
 
 \subsection{\MET+Higgs from a scalar mediator}
 
@@ -389,8 +371,8 @@ The model is described by five parameters:
 	\item the mixing angle between heavy scalar and SM-like Higgs boson, $\sin\theta$;
 	\item the new physics coupling, $b$;
 	\item mass of heavy scalar, $m_{S}$, also termed \mmed;
-	\item mass of dark matter, \mDM;
-	%(also referred to as $m_{\chiDM}$)
+	\item mass of dark matter. \mDM;
+	%(also referred to as $m_{\.chiDM}$)
 \end{enumerate}
 
 The mixing angle is constrained from current Higgs data
@@ -535,7 +517,8 @@ and still give a potentially observable Higgs+\MET signal.
  \cos{\beta} \ H^+ \\ v_u + \cos{\alpha} \ h + \sin{\alpha} \ H + i \cos{\beta} \ A^0
  \end{pmatrix}
  \end{align}
- where $h,H$ are neutral CP-even scalars and $A^0$ is a neutral CP-odd scalar. 
+ where $h,H$ are neutral CP-even scalars,
+ $H^\pm$ is a charged scalar, and $A^0$ is a neutral CP-odd scalar. 
  In this framework, $\tan{\beta} \equiv v_u/v_d$, and $\alpha$ is the mixing angle that diagonalizes 
  the $h - H$ mass squared matrix. 
  %FIXME: this is an external constrain that may or may not be included 
@@ -562,8 +545,10 @@ to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
 \Gamma_{\Zprime \to h A^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
 \end{equation}
 where the center of mass momentum for the decay products
-$|p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A^0})^2)
+$\displaystyle |p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A^0})^2)
 (M_{\Zprime}^2 - (m_h - m_{A^0})^2)}$.
+\Todo{Total width still comes from qqZ' and chichiZ' couplings?}
+
 
 %\frac{1}{2 M_{\Zprime}} \lambda^{1/2}(M_{\Zprime}^2,m_h^2, m_{A^0}^2)$, and
 %$\lambda$ is the K\"{a}llen triangle function\sidenote{\vskip -2.5\baselineskip%\begin{align*}\lambda(c_1,c_2,c_3) \equiv&\;c_1^2 + c_2^2 + c_3^2\\ 
@@ -599,6 +584,8 @@ $|p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A^0})^2)
         \item $\tan{\beta} (\equiv v_u/v_d)$,
  	\item the \Zprime coupling strength $g_z$. 
  \end{itemize}
+ \Todo{What about Z' coupling to q and DM?}
+ 
 
  To study the signal production and kinematic dependencies on these parameters, 
  we produced signal samples varying each of the five parameters through 
@@ -719,7 +706,8 @@ The kinematic distributions with varying $M_{\Zprime}$ for fixed $M_{A^0}$ are s
  \Gamma_{\Zprime \to hZ}  = (g_z \cos \alpha \sin \beta)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{\Zprime}^2} + 3 \frac{M_Z^2}{M_{\Zprime}^2} \right),
  \end{equation}
 The values for the \Zprime masses scanned for those samples should follow those of the previous samples, 
-namely values of $M_{\Zprime}=600, 800, 1000, 1200, 1400$~\gev.  This signal process has no $M_A$ dependence. 
+namely values of $M_{\Zprime}=600, 800, 1000, 1200, 1400$~\gev.  This signal process has no $M_A$ dependence.
+\Todo{What about visible decays of Z?   And isn't monojet still more sensitive?}
  
 \begin{figure}[h!]
   	\centering
