@@ -86,31 +86,34 @@ complementary constraints from collider and direct/indirect DM search
 experiments as well as relic density constraints. We discuss this model here both on its own merits and as an example of the flexibility of the simplified model approach.
 
 The idea of an inert Two-Higgs Doublet Model (i2HDM) was introduced
-more than 30 years ago in~\cite{Deshpande:1977rw,LopezHonorez:2006gr,Dolle:2009fn,Goudelis:2013uca,Balyaev:2015tap}. It is an extension of the SM with a second scalar doublet $\phi_2$ with no direct coupling to fermions.  This doublet has a discrete $Z_2$ symmetry, under which $\phi_2$ is odd and all the other fields are even. 
+more than 30 years ago in~\cite{Deshpande:1977rw,LopezHonorez:2006gr,Dolle:2009fn,Goudelis:2013uca,Belyaev:2015tap}. It is an extension of the SM with a second scalar doublet $\phi_2$ with no direct coupling to fermions.  This doublet has a discrete $Z_2$ symmetry, under which $\phi_2$ is odd and all the other fields are even. 
 The Lagrangian of the odd sector is,
-  \begin{equation}
+\begin{equation}
   \mathcal{L} = \frac{1}{2}(D_{\mu}\phi_2)^2 -V(\phi_1,\phi_2)
-  \end{equation}
+\end{equation}
 with the  potential $V$  containing mass terms and $\phi_1 - \phi_2$
 interactions:
-\begin{eqnarray}
-  V &=& -m_1^2 (\phi_1^{\dagger}\phi_1) - m_2^2 (\phi_2^{\dagger}\phi_2) + \lambda_1 (\phi_1^{\dagger}\phi_1)^2 + \lambda_2 (\phi_2^{\dagger}\phi_2)^2    \nonumber  \\
-  &+&  \lambda_3(\phi_2^{\dagger}\phi_2)(\phi_1^{\dagger}\phi_1)  + \lambda_4(\phi_2^{\dagger}\phi_1)(\phi_1^{\dagger}\phi_2) + 
-  \frac{\lambda_5}{2}\left[(\phi_1^{\dagger}\phi_2)^2 + (\phi_2^{\dagger}\phi_1)^2 \right],
-\end{eqnarray}
+\begin{fullwidth}
+  \begin{eqnarray}
+    V &=& -m_1^2 (\phi_1^{\dagger}\phi_1) - m_2^2 (\phi_2^{\dagger}\phi_2) + \lambda_1 (\phi_1^{\dagger}\phi_1)^2 + \lambda_2 (\phi_2^{\dagger}\phi_2)^2    \nonumber  \\
+      &+&  \lambda_3(\phi_2^{\dagger}\phi_2)(\phi_1^{\dagger}\phi_1)  + \lambda_4(\phi_2^{\dagger}\phi_1)(\phi_1^{\dagger}\phi_2) + 
+          \frac{\lambda_5}{2}\left[(\phi_1^{\dagger}\phi_2)^2 + (\phi_2^{\dagger}\phi_1)^2 \right],
+  \end{eqnarray}
+\end{fullwidth}
+
 where $\phi_1$ and  $\phi_2$ are SM and inert Higgs doublets respectively carrying the same hypercharge. These doublets can be parameterized as
 \begin{equation}
-\phi_1=\frac{1}{\sqrt{2}}
-\begin{pmatrix}
-0\\
-v+H 
-\end{pmatrix}
+  \phi_1=\frac{1}{\sqrt{2}}
+  \begin{pmatrix}
+    0\\
+    v+H 
+  \end{pmatrix}
   \qquad
   \phi_2= \frac{1}{\sqrt{2}}
-\begin{pmatrix}
- \sqrt{2}{h^+} \\
- h_1 + ih_2
-\end{pmatrix}
+  \begin{pmatrix}
+    \sqrt{2}{h^+} \\
+    h_1 + ih_2
+  \end{pmatrix}
 \end{equation}
 
 In addition to the SM, i2HDM brings four more degrees of
@@ -119,43 +122,44 @@ scalar $\textrm{h}^\pm$ and two neutral $Z_2$-odd scalars
 $\textrm{h}_1$ and $\textrm{h}_2$. The lightest neutral scalar, $h_1$
 is identified as the dark matter candidate. The i2HDM model has been explored at the
 phenomenological level from the perspective of collider DM searches
-\cite{Burgess:2000yq, Andreas:2008xy, Arhrib:2013ela, Belyaev:2015tap}. This model could produce \MET+jet, Z, and Higgs as well as \MET+VBF signatures at the LHC (see Figs.~\ref{fig:fd-monojet1,fig:fd-monojet2,fig:fd-mono-Z,fd:mono-H1,fd:mono-H2,fd-vbf}).
+\cite{Burgess:2000yq, Andreas:2008xy, Arhrib:2013ela, Belyaev:2015tap}. This model could produce \MET+jet, Z, and Higgs as well as \MET+VBF signatures at the LHC (see Figs.~\ref{fig:fdmonojet1}--\ref{fig:fdvbf}).
+%(see Figs.~\ref{fig:fdmonojet1,fig:fdmonojet2,fig:fdmonoZ,fig:fdmonoH1,fig:fdmonoH2,fig:fdvbf}).
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/EW/i2HDM/fd-mono-j1.pdf} 
 \caption{Feynman diagrams for $gg\to h_1 h_1+g$ process
-contributing to mono-jet signature.}
-\label{fig:fd-monojet1}
+contributing to mono-jet signature, adapted from \cite{Belyaev:2015tap}.}
+\label{fig:fdmonojet1}
 \end{figure}
 \begin{figure}[htb]
 \includegraphics[width=\textwidth]{figures/EW/i2HDM/fd-mono-j2.pdf} 
 \caption{Feynman diagrams for $q\bar{q}\to h_1 h_2+g$ ($gq\to h_1 h_2+q$) process 
-contributing to mono-jet signature.}
-\label{fig:fd-monojet2}
+contributing to mono-jet signature, adapted from \cite{Belyaev:2015tap}.}
+\label{fig:fdmonojet2}
 \end{figure}
 \begin{figure}[htb]
 \includegraphics[width=\textwidth]{figures/EW/i2HDM/fd-mono-z.pdf} 
 \caption{Feynman diagrams for $q\bar{q}\to h_1 h_1+Z$  process 
-contributing to mono-Z signature.}
-\label{fig:fd-mono-Z}
+contributing to mono-Z signature, adapted from \cite{Belyaev:2015tap}.}
+\label{fig:fdmonoZ}
 \end{figure}
 \begin{figure}[htb]
 \includegraphics[width=\textwidth]{figures/EW/i2HDM/fd-mono-h1.pdf} 
 \caption{Feynman diagrams for $gg\to h_1 h_1+H$  process 
-contributing to mono-Higgs signature.}
-\label{fig:fd-mono-H1}
+contributing to mono-Higgs signature, adapted from \cite{Belyaev:2015tap}.}
+\label{fig:fdmonoH1}
 \end{figure}
 \begin{figure}[htb]
 \includegraphics[width=\textwidth]{figures/EW/i2HDM/fd-mono-h2.pdf} 
 \caption{Feynman diagrams for $q\bar{q}\to h_1 h_2+H$  process 
-contributing to mono-Higgs signature.}
-\label{fig:fd-mono-H2}
+contributing to mono-Higgs signature, adapted from \cite{Belyaev:2015tap}.}
+\label{fig:fdmonoH2}
 \end{figure}
 \begin{figure}[htb]
 \includegraphics[width=\textwidth]{figures/EW/i2HDM/fd-vbf.pdf} 
 \caption{Diagrams for $qq\to qq h_1 h_1$ DM production in vector boson
-fusion process}
-\label{fig:fd-vbf}
+fusion process, adapted from \cite{Belyaev:2015tap}.}
+\label{fig:fdvbf}
 \end{figure}
 
 An experimental analysis of the parameter space has recently been
@@ -169,34 +173,28 @@ $gg\to h_1 h_1+g$ process (via Higgs mediator) and a
 $q\bar{q}\to h_1 h_2+g$ ($gq\to h_1 h_2+q$) process (using Z-boson
 mediator) to capture the physics relevant to the search.
 
+
 \begin{table*}[htb]
-\centering
-\begin{tabular}{|c||c|c|c|c|c|c|}
-\hline
- {\bf BM}                       &  {\bf 1}  & {\bf 2}  & {\bf 3}  & {\bf 4}  &  {\bf 5}  \\
-  \hline\hline 
-  $M_{h_{1}}$ (GeV)     & 45 & 53 & 66 & 82 & 120 \\ 
-  \hline
-  $M_{h_{2}}$ (GeV)     &  55  & 189  &  77  &  89  & 140 \\
-  \hline
-  $M_{h_{\pm}}$ (GeV)  & 130 & 182  &  122  &  150  &  200 \\
-  \hline
-  $\lambda_{2}$             &  0.8 & 1.0 & 1.1 & 0.9 & 1.0 \\  
-  \hline
-  $\lambda_{345}$         & $-0.010$ & $-0.024$  & $+0.022$ & $-0.090$  & $-0.100$      \\
-  \hline
-  $\Omega^{2}_{h}$       & $1.1 \times 10^{-1}$ &  $8.1 \times 10^{-2}$  & $9.9 \times 10^{-2}$  & $1.5 \times 10^{-2}$  &  $2.1 \times 10^{-3}$ \\
-  \hline 
-  $\sigma_{SI}$ (fb)        & $1.9 \times 10^{-7}$ &  $7.9 \times 10^{-7}$  & $4.2 \times 10^{-7}$  & $4.5 \times 10^{-7}$  &  $2.6 \times 10^{-6}$ \\
- \hline 
-  $\sigma_{LHC}$ (fb)     & $1.7 \times 10^{2}$ &  $7.7 \times 10^{2}$  & $4.3 \times 10^{-2}$  & $1.2 \times 10^{-1}$  &  $2.3 \times 10^{-2}$ \\
-  \hline\hline
-\end{tabular}
-\caption{Five benchmarks (BM) for i2HDM in  ($M_{h_{1}},M_{h_{2}},M_{h_{\pm}},\lambda_{2},\lambda_{345}$) parameter space.
- We also present the corresponding relic density ($\Omega_{h^2}$), the spin-independent cross section for DM scattering on the proton,
- and the LHC cross section at 13 TeV for mono-jet process $pp\to h_1,h_1+jet$ for $p_T^{jet}>100$~GeV cut.}
-\label{tab:i2HDMbenchMarks}
+  \fontfamily{ppl}\selectfont
+  \footnotesize
+  \begin{tabular}{lllllll}
+    \toprule
+    {Benchmark}                       &  {1}  & {2}  & {3}  & {4}  &  {5}  \\
+    \midrule
+    $M_{h_{1}}$ (\gev)     & 45 & 53 & 66 & 82 & 120 \\ 
+    $M_{h_{2}}$ (\gev)     &  55  & 189  &  77  &  89  & 140 \\
+    $M_{h_{\pm}}$ (\gev)  & 130 & 182  &  122  &  150  &  200 \\
+    $\lambda_{2}$             &  0.8 & 1.0 & 1.1 & 0.9 & 1.0 \\  
+    $\lambda_{345}$         & $-0.010$ & $-0.024$  & $+0.022$ & $-0.090$  & $-0.100$      \\
+    $\Omega^{2}_{h}$       & $1.1 \times 10^{-1}$ &  $8.1 \times 10^{-2}$  & $9.9 \times 10^{-2}$  & $1.5 \times 10^{-2}$  &  $2.1 \times 10^{-3}$ \\
+    $\sigma_{SI}$ (fb)        & $1.9 \times 10^{-7}$ &  $7.9 \times 10^{-7}$  & $4.2 \times 10^{-7}$  & $4.5 \times 10^{-7}$  &  $2.6 \times 10^{-6}$ \\
+    $\sigma_{LHC}$ (fb)     & $1.7 \times 10^{2}$ &  $7.7 \times 10^{2}$  & $4.3 \times 10^{-2}$  & $1.2 \times 10^{-1}$  &  $2.3 \times 10^{-2}$ \\
+    \bottomrule
+  \end{tabular}
+  \caption[][-92pt]{Five benchmarks for i2HDM in  ($M_{h_{1}},M_{h_{2}},M_{h_{\pm}},\lambda_{2},\lambda_{345}$) parameter space. We also present the corresponding relic density ($\Omega_{h^2}$), the spin-independent cross section for DM scattering on the proton, and the LHC cross section at 13~\tev for mono-jet process $pp\to h_1,h_1+jet$ for $p_T^{jet}>100$~\gev cut.}
+  \label{tab:i2HDMbenchMarks}
 \end{table*}
+
 \clearpage
 
 %\section{Tabulated cross-sections}
@@ -221,7 +219,7 @@ mediator) to capture the physics relevant to the search.
 %\begin{table}
 %	\centering
 %	\begin{tabular}{ccc}
-%		$m_{DM}$ [GeV] & $m_{med}$ [GeV] & $\sigma_{pp\rightarrow h\chiDM\bar{\chiDM}}$ [pb] \\ \hline
+%		$m_{DM}$ [\gev] & $m_{med}$ [\gev] & $\sigma_{pp\rightarrow h\chiDM\bar{\chiDM}}$ [pb] \\ \hline
 %		1 & 10 & 0.0003835 \\
 %		1 & 20 & 0.0003177 \\
 %		1 & 50 & 0.0001467 \\
@@ -277,7 +275,7 @@ mediator) to capture the physics relevant to the search.
 %\begin{table}
 %	\centering
 %	\begin{tabular}{ccc}
-%		$m_{DM}$ [GeV] & $m_{med}$ [GeV] & $\sigma_{pp\rightarrow h\chiDM\bar{\chiDM}}$ [pb] \\ \hline
+%		$m_{DM}$ [\gev] & $m_{med}$ [\gev] & $\sigma_{pp\rightarrow h\chiDM\bar{\chiDM}}$ [pb] \\ \hline
 %		1 & 10 & 2.389 \\
 %		1 & 20 & 2.483 \\
 %		1 & 50 & 2.98 \\
@@ -329,7 +327,7 @@ mediator) to capture the physics relevant to the search.
 %	\small
 %	\begin{tabular}{|c|c|c|}
 %		\hline
-%		$M_{\Zprime}$ (GeV) & $M_{A^0}(GeV)$ & $\sigma$ [pb] \\ \hline \hline
+%		$M_{\Zprime}$ (\gev) & $M_{A^0}(\gev)$ & $\sigma$ [pb] \\ \hline \hline
 %		600 & 300 & 1.55E-01  \\
 %		600 & 400 & 2.18E-02  \\
 %		800 & 300 & 8.30E-02  \\
@@ -357,7 +355,7 @@ mediator) to capture the physics relevant to the search.
 %		\hline
 %		\hline
 %	\end{tabular}
-%	\caption{LO cross-sections for $\Zprime \to A^0h$ samples, varying $M_{\Zprime}$ and $M_{A^0}$, keeping the DM mass fixed to 100 GeV. 
+%	\caption{LO cross-sections for $\Zprime \to A^0h$ samples, varying $M_{\Zprime}$ and $M_{A^0}$, keeping the DM mass fixed to 100 \gev. 
 %    The columns from left to right describe $M_{\Zprime}$, $M_{A^0}$ and the sample cross section in pb.}
 %   \label{tab:SigSamplesZpA0}
 %\end{table}
@@ -367,7 +365,7 @@ mediator) to capture the physics relevant to the search.
 %	\small
 %	\begin{tabular}{|c|c|c|c|}
 %		\hline
-%		$M_{\Zprime}$ (GeV) & $M_{A^0}(GeV)$ & $M_{DM} (GeV)$ & $\sigma$ [pb] \\ \hline \hline
+%		$M_{\Zprime}$ (\gev) & $M_{A^0}(\gev)$ & $M_{DM} (\gev)$ & $\sigma$ [pb] \\ \hline \hline
 %		1000 & 300 & 10 & 3.76E-02  \\
 %		1000 & 300 & 50 & 3.75E-02  \\
 %		1200 & 600 & 10 & 3.64E-03  \\
@@ -384,7 +382,7 @@ mediator) to capture the physics relevant to the search.
 %	\small
 %	\begin{tabular}{|c|c|}
 %		\hline
-%		$M_{\Zprime}$ (GeV) & $\sigma$ [pb] \\ \hline \hline
+%		$M_{\Zprime}$ (\gev) & $\sigma$ [pb] \\ \hline \hline
 %		600 & 1.15E-01  \\
 %		800 & 3.21E-02  \\
 %		1000 & 1.13E-02  \\
