@@ -154,7 +154,6 @@ and DM mass of either 50 ($Z_B'$ and $A^0$ models) or 65~\gev (scalar mediator m
 Figure~\ref{fig:METSimpMonoHiggs} (b)  shows the \MET distribution 
 for models with low pseudoscalar mediator masses ($m_{Z_B'} = 100$~\gev, $m_{\Zprime} = 1$~\tev, $m_{A^0} = 100$~\gev)
 and DM mass of 1~\tev for all models. 
-	
 
 \begin{figure}[hbpt!]
 	\centering
@@ -176,7 +175,9 @@ The model shown in Fig.~\ref{fig:feyn_prod_monoH} (a)
 postulates a new gauge boson \Zprime corresponding to a new $U(1)_B$ baryon 
 number symmetry. The stable baryonic states included in this model are the DM candidate particles.
 The mass of the \Zprime boson is acquired through a baryonic Higgs $h_B$, which mixes with the 
-SM Higgs boson. The interactions between the \Zprime, the quarks and the DM are described by 
+SM Higgs boson. 
+
+The interactions between the \Zprime, the quarks and the DM are described by 
 the following Lagrangian:   
 
 \be \label{ZprimeDM}
@@ -192,19 +193,26 @@ The quark couplings \gq are fixed to be equal to one third of the gauge coupling
 while the DM coupling to the \Zprime are proportional to the baryon number and to the gauge coupling 
 ($g_{\chiDM} = B g_B$). No leptonic couplings of the \Zprime are allowed, thus evading dilepton constraints. 
 After incorporating the mixing of the baryonic and SM Higgs bosons, this model is 
-is described by the following Lagrangian term at energies below $m_{\Zprime}$: 
+is described by the following Lagrangian term at energies below $m_{\Zprime}$~\footnote{The operator 
+	in Eqn.~\ref{U1Beft} is an effective one, to highlight the two main terms. The full dimension-4 simplified
+	model is used in the model for event generation.}: 
 
 \be \label{U1Beft}
  L_{\rm eff} = - \frac{\gq \gDM }{m_{\Zprime}^2} \bar{q} \gamma^\mu q \bar\chiDM \gamma_\mu \chiDM \Big( 1 + \frac{g_{h \Zprime \Zprime} }{m_{\Zprime}^2} h \Big) \, ,
 \ee
 
 The first term of this equation
-is the standard \modelDMV model in the large $M_{Z^\prime}$ limit.   It can lead
-to a monojet signature.
+is the standard \modelDMV model in the large $M_{Z^\prime}$ limit.  This term can lead
+to a monojet signature, which can be also used to constrain this model.
 The second term describes the interaction between the \Zprime and the SM Higgs boson,
 via the coupling $g_{h \Zprime \Zprime} = \frac{m_{\Zprime}2 \sin\theta}{v_B}$, where
 $\sin\theta$ is the mixing angle between the SM Higgs and the baryonic Higgs $h_B$, and $v_B$ is the
 Baryonic Higgs vacuum expectation value. 
+In its most general form, this model can lead to mono-Z signals as well. However, in this case
+there is no $Z-Z'$ mixing from the $h \Zprime \Zprime$ term, since this term arises only
+after $U(1)_B$ is broken. A mixing angle can come from terms involving 
+the field strengths of $Z$ and $Z'$: this is a free parameter, that is set to be small
+in the model considered for mono-Higgs signatures. 
 
 %TODO: 
 %	1- Mention sensitivity difference wrt monojet? 
@@ -250,7 +258,9 @@ obtained through rescaling by the appropriate cross sections.
 Figs~\ref{fig:VectorHbb_100} and ~\ref{fig:VectorHbb_1000} show the kinematic distributions for the two leading jets
 in the $H \to \bar b b$ decay channel, for two values of the mediator mass and varying the DM mass.  
 
-Analyses should perform further studies, beyond those studies performed for the forum, to estimate the reach of the analysis with respect to all points in the grid and therefore decide on a smaller set of grid points to be generated.
+Analyses should perform further studies, beyond those studies performed for the forum, 
+to estimate the reach of the analysis with respect to all points in the grid and therefore decide 
+on a smaller set of grid points to be generated.
 %TODO: can we get sensitivity to all the points for all signatures?
 
 \begin{figure}[hbpt!]
@@ -332,7 +342,13 @@ Analyses should perform further studies, beyond those studies performed for the 
 \subsection{\MET+Higgs from a scalar mediator}
 
 A real scalar singlet $S$ coupling to DM can be introduced as a portal between SM and the dark sector 
-through the Higgs field. The new scalar mixes with the SM Higgs boson, and couples to DM through a Yukawa term $y_\chiDM$. 
+through the Higgs field. The most general scalar potential is detailed in Ref.~\ref{O'Connell:2006wi}, 
+including terms that break \Ztwo. This report does not cover the case in which \Ztwo holds and
+therefore the new scalar can be the DM candidate, but follows Ref.~\ref{Carpenter:2013xra}
+introducing an additional coupling to DM that breaks \Ztwo and leads to a new invisible decay of $S$. 
+For this reason, no symmetry is broken and no new interactions arise, so there is no dependence on the vacuum
+expectation value of $S$: a shift in the field leads to a redefinition of the model couplings. 
+The new scalar $S$ mixes with the SM Higgs boson, and couples to DM through a Yukawa term $y_\chiDM$. 
 The relevant terms in the scalar potential are:
 
 \begin{align}
@@ -530,24 +546,27 @@ limit where $h$ has SM-like couplings to fermions and
 gauge bosons as per Ref.~\cite{Craig:2013hca}, and $\tan{\beta} \ge 0.3$ 
 as implied from the perturbativity of the top Yukawa coupling. 
   %For the $ b \bar{b}$ decay channel, the signature of the signal we are searching for is a pair of boosted WIMPs recoiling against two $b$ jets. 
-The Higgs vacuum expectation values lead to $Z-\Zprime$ mass mixing, with a mixing parameter given by 
+The Higgs vacuum expectation values lead to $Z-\Zprime$ mass mixing, with a small mixing parameter given by 
  \begin{align}
  \epsilon & \equiv \frac{1}{M_{\Zprime}^2 - M_Z^2} \frac{g g_z}{2 \cos{\theta_w}} ( z_d v_d^2 + z_u v_u^2) \nonumber \\
- & =  \frac{(M_Z^0)^2}{M_{\Zprime}^2 - M_Z^2} \frac{2 g_z \cos \theta_w}{g}  z_u \sin^2 \beta.
+ & =  \frac{(M_Z^0)^2}{M_{\Zprime}^2 - M_Z^2} \frac{2 g_z \cos \theta_w}{g}  z_u \sin^2 \beta, 
  \label{eq:epsilon}
  \quad
  \end{align}
-  
+ where $z_i$ are the $\Zprime$ charges of the two Higgs doublets, and  $g$ and $g_z$ related to the mass-squared
+ values in absence of mixing  $(M_Z^0)^2 = g^2(v_d^2+ v_u^2)/(4\cos^2{\theta_w}) $ and
+ $(M_{Z'}^0)^2 = g_z^2 ( z_d^2 v_d^2 + z_u^2 v_u^2 + z_\phi^2
+ v_\phi^2)$. 
+    
 The production cross section for this model scales as $(g_z)^2$, as the decay width for this process
 to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
-
 \begin{equation}
 \Gamma_{\Zprime \to h A^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
 \end{equation}
 where the center of mass momentum for the decay products
 $\displaystyle |p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A^0})^2)
 (M_{\Zprime}^2 - (m_h - m_{A^0})^2)}$.
-\Todo{Total width still comes from qqZ' and chichiZ' couplings?}
+\Todo{Steve Mrenna (?): Total width still comes from qqZ' and chichiZ' couplings? CD: what do you mean?}
 
 
 %\frac{1}{2 M_{\Zprime}} \lambda^{1/2}(M_{\Zprime}^2,m_h^2, m_{A^0}^2)$, and
@@ -584,9 +603,8 @@ $\displaystyle |p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A
         \item $\tan{\beta} (\equiv v_u/v_d)$,
  	\item the \Zprime coupling strength $g_z$. 
  \end{itemize}
- \Todo{What about Z' coupling to q and DM?}
+ \Todo{What about Z' coupling to q and DM? CD: isn't this the DMV model?}
  
-
  To study the signal production and kinematic dependencies on these parameters, 
  we produced signal samples varying each of the five parameters through 
  \madgraph for the matrix element, PYTHIA for the parton shower, and DELPHES\cite{deFavereau:2013fsa} 
@@ -730,7 +748,7 @@ namely values of $M_{\Zprime}=600, 800, 1000, 1200, 1400$~\gev.  This signal pro
   	\label{fig:DMH_zpincl}
 \end{figure}
 
-\newthought{Implementation discussed in the Appendix}
+\newthought{The implementation of these models is discussed in Appendix~\ref{sub:monoHiggs}.}
 
 
   
