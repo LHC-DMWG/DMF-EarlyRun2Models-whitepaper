@@ -205,7 +205,7 @@ Differences in kinematic distributions are expected only close to the transition
 \label{fig:monojet_scan_V_g}
 \end{figure}
 
-When small coupling strengths are combined with extremely heavy mediators, one must take particular care to integrate over all values of the dark matter pair invariant mass, down to the lowest values for which the \MET satisfies threshold requirements. See the Appendix \ref{sec:monojet_implementation} page \pagref{thought:heavynarrowmediators} for details.
+When small coupling strengths are combined with extremely heavy mediators, one must take particular care to integrate over all values of the dark matter pair invariant mass, down to the lowest values for which the \MET satisfies threshold requirements. See the Appendix \ref{sec:monojet_implementation} page \pageref{thought:heavynarrowmediators} for details.
 
 %\Todo{move this paragraph to appendix (and leave the previous one here as it talks about 5 TeV samples that we recommend and compares the shape to EFT)}
 
@@ -747,23 +747,26 @@ In models with extra dimensions, the Kaluza-Klein excitations of the graviton co
 \section{Presentation of results for reinterpretation of \schannel mediator models}
 \label{sec:monojet_scaling}
 
-The aim of the parameter grid optimization done for the \schannel models in the previous Sections is  to
-reduce the parameter space for simulation using neighboring grid points to populate the missing parts.
-There are two possible choices:
+The aim of the parameter grid optimization done for the \schannel models in the previous sections is to reduce the parameter space that must be simulated.  We then need a procedure for populating the full parameter space by using the simulated grid points.  We recommend doing this as follows:
+
 \begin{itemize}
-	\item Interpolation is used in-between the grid points that are close enough such that finer granularity is not needed for the presentation purposes, or between the points where smooth or no changes of the results are expected. The latter argument is exactly the one that motivates the reduction of the grid points in the $\mMed$--$\mDM$ plane.\\
-	\item Results can be recalculated when the dependencies with respect to the neighboring grid points are known.\\
+\item When the dependences on parameters are known, the cross
+  sections and efficiencies are general points can be calculated from
+  the grid data.
+\item In other cases, this information can be obtained by interpolation
+  between the grid points.  We have chosen the grid points so that the
+  dependence is sufficiently smooth that this will be possible.
 \end{itemize}
 
 The results of the scan over the couplings presented in the previous sections indicate there are no changes in kinematic distributions for different choices of the coupling strengths. This means that the acceptance remains the same in the whole $\gq$--$\gDM$ plane and it is sufficient to perform the detector simulation only for one single choice of $\gq, \gDM$. The resulting truth-level selection acceptance and the detector reconstruction efficiency can then be applied to all remaining grid points in the $\gq$--$\gDM$ plane where only the generator-level cross section needs to be known. This significantly reduces the computing time as the detector response is by far the most expensive part of the Monte Carlo sample production.
 However, the number of generated samples can be reduced even further
 if a parameterization of the cross section dependence from one grid point to another exists.
-The following section describes the details of a cross section scaling procedure that
+In this section, we describe the details of a cross section scaling procedure that
 can be used to reinterpret results for a fixed coupling for \schannel mediator models.
 
 The propagator for the \schannel exchange is written in a Breit-Wigner
-form as $\displaystyle \frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the invariant mass of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows to classify the production in the following way:
-The size of the momentum transfer with respect to the mediator mass allows to classify the production in the following way:
+form as $\displaystyle \frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the momentum of the Dark Matter pair. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows us to classify the production in the following way:
+The size of the momentum transfer with respect to the mediator mass allows us to classify the production in the following way:
 \begin{itemize}
 	\item off-shell production when $q^2 \gg \mMed$ leading to suppressed cross sections,
 	\item on-shell production when $q^2 \sim \mMed$ leading to enhanced cross sections,
