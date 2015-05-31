@@ -121,15 +121,15 @@ its mass and width respectively.  See Ref.~\cite{Bardin:1989qr} for
 a discussion.
 
 \item Set the parameters defining the bounds on the invariant mass of the Dark Matter pair, \masslow and \masshigh, to -1. In this way, \powheg will assign values internally. 
-\item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the \modelDMV model, respectively.
-\item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 100000, 5, 100000, 5 for the \modelDMStloop model, respectively.
+\item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the vector model, respectively.
+\item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 100000, 5, 100000, 5 for the scalar top-loop model, respectively.
 \item When NLO corrections are included (as for instance in the
-  \modelDMV model), negative-weighted events could happen and should
+  vector model), negative-weighted events could happen and should
   be kept in the event sample, hence \withnegweights should be set to
   1. If needed, their fraction can be decreased by setting \foldsci
   and \foldy to bigger value (2 for instance). \foldphi can be kept to
   1.
-\item Since the \modelDMStloop model is a leading order process, set \LOevents and \bornonly are set to 1 internally.
+\item Since the scalar model with top-loop is computed as a leading order process, set \LOevents and \bornonly are set to 1 internally.
 \item One can benefit from the automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs as described in Section\,\ref{sec:TheoryUncertainties}.
 
 \end{itemize}
@@ -158,6 +158,7 @@ a discussion.
 % \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
 % \end{itemize}
 
+\newthought{Sampling Considerations for Heavy Narrow Mediators}\label{thought:heavynarrowmediators}
 Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
 \MET distribution for a $\mMed=5$~\tev mediator
 once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
