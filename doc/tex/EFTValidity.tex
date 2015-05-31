@@ -40,7 +40,7 @@ Furthermore, mapping EFT results from high to low momentum requires particular c
 see Ref.~\ref{D'Eramo:2014aba} for a thorough discussion.}.
 
 %As we have learned, EFTs do not truly represent a model-independent representation of the data for the current collider sensitivity.
-Ideally, experimental results should be cast into bounds of allowed signal events in the kinematic regions considered for 
+Ideally, experimental constraints should be shown as bounds of allowed signal events in the kinematic regions considered for 
 the search, as detailed in Appendix~\ref{app:Presentation_Of_Experimental_Results}. 
 Constraints comparing different experiments should be expressed as a function of the model parameters 
 rather than on related observables, where the complementarity still be manifest, although this is a point
@@ -60,7 +60,7 @@ An experimental search will place a limit on $f$.
 For a fixed $f$, a small value of $g$ will correspond
 to a small value of $\Lambda$.   The EFT approximation breaks down
 if $Q>\Lambda$, where $Q$ is a typical hard scale of the process.
-One reasonable choice is $\Qtr^2=p(\bar\chiDM\chiDM)^2$, i.e.
+One possible example is $\Qtr^2=p(\bar\chiDM\chiDM)^2$, i.e.
 the momentum flow through
 the \schannel.
 Thus the limit on small $g$ can only be reliable if the
@@ -80,7 +80,7 @@ We then propose a recommendation for the presentation of EFT results for early R
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 A standard approach has been to consider a simplified model and use the connection that the model provides between
-mediator mass and scale of the interaction to determine the validity of the EFT approximation.
+mediator mass and scale of the interaction to determine the reliability of the EFT approximation.
 For a tree-level interaction between DM and the Standard Model (SM) via some mediator with mass \mMed, 
 the EFT approximation corresponds to expanding the propagator for the mediator
 in powers of $\Qtr^2/\mMed^2$, truncating at lowest order, and combining the remaining parameters into a single parameter \Mstar (also called $\Lambda$ in the literature).
@@ -95,7 +95,7 @@ where $\Qtr$ is the momentum carried by the mediator, and $\gDM$, $\gq$ are the 
 In this framework, there are three regions to consider:
 \begin{itemize}
 \item $\Qtr^2 \sim M^2$, in which case the EFT misses a resonant enhancement, and it is conservative to ignore this enhancement;
-\item $\Qtr^2 \ll M^2$, in which case the EFT is valid; and
+\item $\Qtr^2 \ll M^2$, in which case the EFT is a good approximation; and
 \item $\Qtr^2 \gg M^2$, in which case the signal cross section should fall according to a power of $\Qtr^{-1}$ instead of $M^{-1}$.   This is the problematic kinematic region.
 \end{itemize}
 
@@ -114,7 +114,7 @@ which can be solved for $\Mstar^{\rm rescaled}$ via either iteration or a scan.
 %(note that $\Mstar^{\rm rescaled}$ appears on both the LHS and RHS of the equation).
 Similar relations exist for a given UV completion of each operator. The details and application of this procedure to ATLAS results can be found in Ref.~\cite{Aad:2015zva} for a range of operators. Knowledge of the UV completion for a given is necessary for this procedure; this introduces a model-dependence that was not present in the not-truncated EFT results. 
 
-
+%CD: Tim's reasoning is below. 
 %You argued (well, reported on an argument) that the use of the EFT somehow is a barrier to collider searches being appreciated by colleagues who work on other detection strategies.  Of course, I do not know what the future will hold under any scenario, but I strongly believe that the rejection of the collider bounds is based entirely on politics by the direct detection community, who feels threatened that it weakens their designs to expand to lower mass.  Of course, so far they are getting funding to do that anyway, so they should not feel threatened, but they do not want the competition.
 %
 %My prediction is that by going from an EFT to a simplified model, the response from colleagues in other fields will be that the mapping is (self-evidently) model-dependent, and therefore they do not want to include it since it is at odds with their “direct” limits.  This objection is essentially false in the sense that even when they compare one experiment to each other, it is model-dependent, but it is true that the model is more manifestly important here.
@@ -124,7 +124,7 @@ Similar relations exist for a given UV completion of each operator. The details 
 %I also object to framing the discussion of the EFT as a discussion of “validity”.  The EFT is valid only as a proxy for a given model, and to ask the question as just the EFT being valid or invalid at the LHC is a question without any meaningful well-defined answer.  To ask how well it does requires one to know the model that describes higher energies, and this is a case where we don’t have that information — which is the point!  I appreciate that what you are advocating to do in practice is the correct thing (and what I have also advocated for all along), but to frame it as a question of validity of the LHC results on EFTs is very misleading and contributes ammunition to those people such as the one I mentioned before who are very confident shouting about things they do not understand.
  
 %Since this method uses the physical couplings and energy scale $\Qtr$, it gives the strongest possible constraints in the EFT limit while remaining robust by ensuring the validity of the EFT approximation.
-\Todo{Too strong of a statement? CD: more like - I don't think this parses. Rewritten.}
+%TODO: Too strong of a statement? CD: more like - this does not parse. Removed.
 
 If a search is not simply a counting experiment and exploits the shapes of kinematic distributions, the condition on the momentum transfer should be applied on the benchmarks using generator level information, by discarding events that are invalid. This provides the necessary rescaling of the cross section while keeping the information on the change in the kinematic distributions due to the removal of the invalid events. 
 
@@ -138,17 +138,19 @@ If a search is not simply a counting experiment and exploits the shapes of kinem
 In \cite{Racco:2015dxa} a procedure to extract model independent and consistent bounds within the EFT is described. This procedure can be applied to any effective Lagrangian describing the interactions between the DM and the SM, and provides limits that can be directly reinterpreted in any completion of the EFT.
 
 The range of applicability of the EFT is defined by a mass scale \Mcut, a parameter which marks the upper limit of the range of energy scales at which the EFT can be used reliably, independently of the particular completion of the model. 
-Regardless of the  details of the full theory, the energy scale probing the validity of the EFT is less than or equal to the center-of-mass energy $E_\text{cm}$, 
-the total invariant mass of the hard final states of the reaction.
-To be specific, consider the basic mono-jet process with kinematics
-$p_1 + p_2 \to k + p_{\bar\chiDM\chiDM}$: $k$ is the momentum of the outgoing jet, whereas $p_{\bar\chiDM\chiDM}$ is the momentum of the $\bar\chiDM\chiDM$ pair and
-$p_{\bar\chiDM\chiDM}=\Qtr$.  $E_\text{cm}^2 = (p_1+p_2)^2 > \Qtr^2$.
-The condition ensuring the validity of the EFT is, by definition of \Mcut,
+Regardless of the  details of the full theory, the energy scale for which the EFT is a good approximation is less than the center-of-mass energy $E_\text{cm}$, the total invariant mass of the hard final states of the reaction.%removed "or equal to"
+
+%To be specific, consider the basic mono-jet process with kinematics
+%$p_1 + p_2 \to k + p_{\bar\chiDM\chiDM}$: $k$ is the momentum of the outgoing jet, whereas $p_{\bar\chiDM\chiDM}$ is the momentum of the $\bar\chiDM\chiDM$ pair and
+%$p_{\bar\chiDM\chiDM}=\Qtr$.  $E_\text{cm}^2 = (p_1+p_2)^2 > \Qtr^2$.
+
+The condition ensuring that the EFT approximation is appropriate is, by definition of \Mcut,
 
 \begin{equation}
 \label{Ecm<Mcut}
 E_\text{cm}<M_\text{cut}\,.
 \end{equation}
+
 For example, in the specific case of a tree level mediation with a single mediator, \Mcut can be interpreted as the mass of that mediator.
 
 There are then at least three free parameters describing an EFT:~ 
@@ -165,7 +167,7 @@ The advantage of this procedure is that the obtained bounds can be directly and 
 \section{Comments on Unitarity Considerations}
 \todo{Waiting for comments from J. Alcaraz}
 
-\section{Recommendation for presentation of EFT results} %change this title
+\section{Presentation of EFT results} %change this title
 \label{sec:RecommendationEFTResults}
 
 A full discussion of the presentation of collider results is left to 
@@ -180,7 +182,7 @@ thus overlapping with the simplified models outlined in this report.
 Results for this first class of operators can be recast starting from simplified models with high mediator masses, 
 therefore removing the need to explicitly simulate EFT events but still effectively providing experimental limits
 for those operators. For the second class of models, a truncation procedure 
-should be applied for various hypotheses on the validity of the EFT in question, 
+should be applied for various hypotheses on the goodness of the EFT approximation, 
 and the truncated results presented alongside the full EFT results.
 
 Three proposals for the treatment of EFT have been stated so far,

@@ -204,6 +204,8 @@ a \pythiaEight plugin.
 \subsubsection{Implementation of MLM matching}
 \label{sec:match_implementation}
 
+\Todo{This is probably a TODO for Steve M.}
+
 Here, add the process generation steps, and the matching parameters for
 LHE file production.  Also, provide the \pythiaEight configuration to
 produce hadronic events.
@@ -520,62 +522,42 @@ The other masses are unchanged and do not affect the result.
  % These signals should be generated separately since they have different $\tan \beta, M_A$ dependence.  
 
 \subsection{Implementation of EFT models}
-
-\section{Heavy Flavor Models} 
-In this particular model we recommend an additional care when choosing
-the flavor scheme generation. 
-It is found that the best modeling of two $b$-quarks final states is
-achieved using a 4-flavor scheme and a massive treatment of the
-$b$-quarks \Todo{[TODO: Add reference]}.
-% We recommend to use in the generation NNPDF3.0 set (lhaid
-%263400).
-In addition, we recommend to calculate the cross sections of these
-models in the 5-flavor scheme, and as in the $t bar t$ case we provide 
-values for the suggested coupling scan in the appendix. 
-The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
-
-\Todo{[TODO: The following figures are placeholders for now and will be added later]}
-
-\begin{figure}
-  \vbox{\hfill}
-  \caption{Comparison of the subleading jet $p_T$ and $b$-jet multiplicity
-    for $bb$+DM scalar model generated in the 4-flavor (left) and 5-flavor (right)
-    schemes, respectively}
-\end{figure}
-
-\section{Single Top Models}
-
-Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
-corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
-Each coupling constant of this model can be set via the parameter card and 
-the blocks which are relevant for the two models used for the experimental searches are described below.
-The relevant parameters in the \madgraph parameter cards, also expressed in the notation introduced in the 
-previous Section, are as follows for the two models considered.
-
-\begin{enumerate}
-
-\item Resonant scalar model described by the Lagrangian~\eqref{eq:lagrangianResonant}
-  \begin{itemize}
-  \item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavor space) fixing the coupling of the scalar $\phi$ ($S$ stands for scalar) and $down$-type quarks ($Q$ stands for quarks), previously called $a^q/b^q_{SR}$.
-  \item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavor space) fixing the coupling of the new fermion $\chiDM$ (where $12$ stands for spin-$1/2$ fermion) and $up$-type quarks, previously called $a^{1/2}_{VR}$.
-  \end{itemize}  
-  
-\item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
-\begin{itemize}
-\item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavor space) fixing the coupling of the vector $V$ ($1$ stands for vector) and $up$-type quarks, previously called $a^1_{FC}$. 
-\item particle name: the dark matter candidate $\chiDM$ is not implemented %(as this model assumes $\BR{V}{\chiDM\chiDM}=100\%$)
-\end{itemize}
-
-\end{enumerate}
-
-The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
-while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
-\Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
-
-\section{EFT Mono-Higgs implementation}
+\label{sub:EFTModels}
 
 These models are generated at leading
 order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
 Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
 and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
+
+
+%\section{Single Top Models}
+%TODO: CD - this will go in the single top section
+%
+%Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
+%corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
+%Each coupling constant of this model can be set via the parameter card and 
+%the blocks which are relevant for the two models used for the experimental searches are described below.
+%The relevant parameters in the \madgraph parameter cards, also expressed in the notation introduced in the 
+%previous Section, are as follows for the two models considered.
+%
+%\begin{enumerate}
+%
+%\item Resonant scalar model described by the Lagrangian~\eqref{eq:lagrangianResonant}
+%  \begin{itemize}
+%  \item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavor space) fixing the coupling of the scalar $\phi$ ($S$ stands for scalar) and $down$-type quarks ($Q$ stands for quarks), previously called $a^q/b^q_{SR}$.
+%  \item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavor space) fixing the coupling of the new fermion $\chiDM$ (where $12$ stands for spin-$1/2$ fermion) and $up$-type quarks, previously called $a^{1/2}_{VR}$.
+%  \end{itemize}  
+%  
+%\item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
+%\begin{itemize}
+%\item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavor space) fixing the coupling of the vector $V$ ($1$ stands for vector) and $up$-type quarks, previously called $a^1_{FC}$. 
+%\item particle name: the dark matter candidate $\chiDM$ is not implemented %(as this model assumes $\BR{V}{\chiDM\chiDM}=100\%$)
+%\end{itemize}
+%
+%\end{enumerate}
+%
+%The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
+%while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
+%\Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
+
 
