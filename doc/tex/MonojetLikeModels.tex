@@ -11,13 +11,30 @@
 In this Chapter we review 
 models that yield $X$+\MET{} signatures,
 where $X$ is a QCD parton or $\gamma, W, Z$ or $h$.
-While the recommendations are general,
-the discussions in this Chapter are focused on the monojet final state. 
+
+The three main benchmark simplified models suggested in this Chapter for 
+early Run-2 searches   
+
+The primary simplified models suggested in this Chapter for Dirac fermion DM 
+comprise \spinzero and \spinone mediators. Section~\ref{sec:monojet_V} covers the
+\schannel exchange of a vector mediator~\footnote{Colored vector mediators 
+can be exchanged in the \tchannel, but there are no examples in literature so far.}, 
+while we consider both \schannel and \tchannel exchange for scalar mediators in
+Section~\ref{sec:monojet_scalar} and~\ref{sec:monojet_t_channel} respectively. 
+\Spintwo mediators are briefly mentioned in Section~\ref{sec:spintwo}.
+While these models are general and cover a broad set of signatures,
+the discussion and studies are focused on the monojet final state. 
 Details on final states with EW boson radiation and with heavy flavor quarks 
 from diagrams arising within these models are also discussed in this Chapter.
 %In the following paragraphs we present the peculiarities of these models that arise in the case of
 %boson radiation, and present some examples of the relevant distributions for these final states.
-These studies and those in subsequent sections are based on simulation of the models using the implementations recommended in Appendix~\ref{app:MonojetLikeModels_Appendix}. 
+
+The simplified model where a vector mediator is exchanged in the \schannel 
+is known to NLO accuracy in the case of DM pair production in association to one parton~\ref{Haisch:2013ata}. 
+All other models are currently known to leading order. Appendix~\ref{app:MonojetLikeModels_Appendix}
+details the recommended implementation of these models that
+have been used for the studies in this Chapter. A summary of the recommendation of the generation of this model
+is provided in Table~\ref{tab:models}.
 
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
@@ -471,7 +488,9 @@ Given these simplifications, the minimal set of parameters under consideration i
  \bea
   \left\{ \mDM,~ m_{\phi/a} = \mMed,~ \gdm,~ \gq \right\} \,.
  \eea
-Fig.~\ref{fig:feyn_prod_S} shows the one-loop diagrams producing a jet+X signature.
+Fig.~\ref{fig:feyn_prod_S} shows the one-loop diagrams producing a jet+X signature. 
+The full calculation of the top loop is available at LO for DM pair production in association with one parton. 
+
 
 %The simplest choice of couplings, known as Minimal Simplified Dark Matter model (MSDM) \textbf{[TODO: add references]}, is $g_u = g_d = g_\ell$, which is realized in singlet scalar extensions of the SM. 
 
@@ -590,7 +609,6 @@ For the mediator mass above twice the top quark mass $m_t$, the minimal width re
 It can be seen in Fig.~\ref{fig:monojet_SPmodels} that the kinematics for the scalar and pseudoscalar models coincides when considering the diagrams in Fig.~\ref{fig:feyn_prod_S}. 
 For this reason, we recommend to generate only one of the two models.
 %, and report the cross-sections on HEPData 
-\Todo{Clarify shape of model repository}
 %for the other one.
 No preference is given between the two models as they have the
 same kinematics, although it is worth noting that the pseudo-scalar model has been used for a Dark Matter interpretation of the DAMA signal 
@@ -730,7 +748,8 @@ described in Section~\ref{sub:EW_EFT_Dim5}, for later reinterpretation.
 \label{sec:monojet_t_channel}
 \input tex/TChannelModels.tex
 
-\section{Spin-$2$ mediator}
+\section{ \Spintwo mediator}
+\label{sec:spintwo}
 
 In models with extra dimensions, the Kaluza-Klein excitations of the graviton could also serve as a mediator between the Standard Model and dark sector physics. This kind of model was not studied in the forum and is not included in the recommendations, but it and models such as Ref.~\cite{Lee:2013bua} may warrant further study on a longer timescale. 
 

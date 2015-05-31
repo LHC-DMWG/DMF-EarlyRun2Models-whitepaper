@@ -11,15 +11,18 @@ of the matching between the matrix element and the parton shower.
 
 For a \spinone mediator, the implementation in \powheg generates
 DM pair production with 1 parton at next-to-leading order (NLO), 
-whilst \madgraph and \mcfm are at leading order (LO)~\footnote{Spin-$0$ and \spinone 
+whilst \madgraph and \mcfm are at leading order (LO)~\footnote{\spinzero and \spinone 
 mediator models will also be provided 
 in the near future to the same precision in \madgraph~\cite{Alwall:1405.0301}.}. As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
 Since NLO calculations are available for the process in \powheg, we recommend to proceed with \powheg as the generator of choice. 
 
 For a \spinzero mediator in the mono-jet final state, the top-quark loop is the most important consideration.
 The matrix element implementation of the \schannel \spinzero mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} and \powheg~\cite{Haisch:2015ioa} with the full top-loop calculation at LO.
-The \powheg and \mcfm implementations include the finite
-top quark mass dependence for DM pair production with 1 parton at LO.
+The \powheg and \mcfm implementations include 
+%the finite
+%top quark mass dependence 
+the full calculation of the top loop 
+for DM pair production with 1 parton at LO.
 For consistency with the \spinone generation, we recommend using \powheg
 for this case as well.
 
