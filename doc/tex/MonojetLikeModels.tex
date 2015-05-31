@@ -777,7 +777,7 @@ The aim of the parameter grid optimization done for the \schannel models in the 
   dependence is sufficiently smooth that this will be possible.
 \end{itemize}
 
-The results of the scan over the couplings presented in the previous sections indicate there are no changes in kinematic distributions for different choices of the coupling strengths. This means that the acceptance remains the same in the whole $\gq$--$\gDM$ plane and it is sufficient to perform the detector simulation only for one single choice of $\gq, \gDM$. The resulting truth-level selection acceptance and the detector reconstruction efficiency can then be applied to all remaining grid points in the $\gq$--$\gDM$ plane where only the generator-level cross section needs to be known. This significantly reduces the computing time as the detector response is by far the most expensive part of the Monte Carlo sample production.
+The results of the scan over the couplings presented in the previous sections indicate that there are no changes in kinematic distributions for different choices of the coupling strengths. This means that the acceptance remains the same in the whole $\gq$--$\gDM$ plane and it is sufficient to perform the detector simulation only for one single choice of $\gq, \gDM$. The resulting truth-level selection acceptance and the detector reconstruction efficiency can then be applied to all remaining grid points in the $\gq$--$\gDM$ plane where only the generator-level cross section needs to be known. This significantly reduces the computing time as the detector response is by far the most CPU-intensive part of the Monte Carlo sample production.
 However, the number of generated samples can be reduced even further
 if a parameterization of the cross section dependence from one grid point to another exists.
 In this section, we describe the details of a cross section scaling procedure that
@@ -870,7 +870,7 @@ On the contrary, both the Standard Model and Dark Matter partial width have comp
 The performance of the cross section scaling is demonstrated in Fig.\,\ref{fig:monojet_scaling} %where two mass points $\mMed=100$~\gev and 1~\tev are chosen with $\mDM=10$~\gev
 where two mass points $\mMed=100$~\gev and 1~\tev with $\mDM=10$~\gev are chosen
 and rescaled from the starting point $\gq=\gDM=1$ according to Eq.\,\ref{eq:monojet_scaling} to populate the whole $\gq$--$\gDM$ plane. This means the width is not kept constant in this test and this is done in purpose in order to point out deviations from the scaling when the width is altered. For each mass point, the rescaled cross section is compared to the generator cross section and the ratio of the two is plotted.
-For the given choice of the mass points, the scaling seems to work approximately with the precision of $\sim20\%$ in the region where $\Gamma_{\rm{min}}<\mMed$.
+For the given choice of the mass points, the scaling seems to work approximately within the precision of $\sim20\%$ in the region where $\Gamma_{\rm{min}}<\mMed$.
 %For the given choice of the mass points, the scaling seems to work approximately with the precision of $\sim5\%$ for $\Gamma_{\rm{min}}/\mMed<0.1$ and $\sim20\%$ in the region beyond until $\Gamma_{\rm{min}}=\mMed$.
 Constant colors indicate the lines along which the cross section scaling works precisely and there is a remarkable resemblance of the patterns shown in the plots of the mediator width. To prove the scaling along the lines of constant width works, one such line is chosen in Fig.\,\ref{fig:monojet_scaling_constwidth} for a scalar mediator, defined by $\mMed=300$~\gev, $\mDM=100$~\gev, $\gq=\gDM=1$, and the rescaled and generated cross sections are found to agree within 3\%.
 
@@ -939,10 +939,10 @@ It should be noted again that this procedure is only useful when the narrow widt
 
 \subsection{\texorpdfstring{Additional considerations for $t \bar{t}$ and $b \bar{b}$+\MET signatures}{Additional considerations for ttbar/bbbar+\MET signatures}}
 
-The cross-section scaling considerations shown in~\ref{sec:monojet_scaling} still apply for the reactions in the scalar and psuedoscalar models with explicit $b$ and $t$ quarks. Here 
+The cross-section scaling considerations shown in Sec.~\ref{sec:monojet_scaling} still apply for the reactions in the scalar and psuedoscalar models with explicit $b$ and $t$ quarks. Here 
 we detail the specific studies done for the  $t\bar t$ model. 
 
-Given that the kinematics are similar for all couplings $g = \sim 1$, we recommend to generate only samples with $\gDM = \gq = 1$. It follows from this that these benchmark points should be a good
+Given that the kinematics are similar for all couplings $g \simeq 1$, we recommend to generate only samples with $\gDM = \gq = 1$. It follows from this that these benchmark points should be a good
 approximation for non-unity couplings and for $\gDM \neq \gq$, provided
 that the sample is rescaled to the appropriate cross section times
 branching ratio.
@@ -962,6 +962,6 @@ We also choose to provide instead a table of cross section times branching ratio
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png}
 		\vspace{2mm}
-		\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the generator, for a scalar model with $m_{\phi}=400\,{\rm GeV}$, $\mdm=1\,{\rm GeV}$ and all couplings set to unity. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
+		\caption{\label{fig:xsec_scaling} An example comparing a simple cross section scaling versus the computation from the \madgraph generator, for a scalar $t \bar{t}$+\MET model with $m_{\phi}=400\,{\rm GeV}$, $\mdm=1\,{\rm GeV}$ and all couplings set to unity. In this example, the scaling relationship holds for $\Gamma_{\phi}/m_{\phi}$ below $0.2$, beyond which finite width effects become important and the simple scaling breaks down.}
 	\end{center}
 \end{figure}

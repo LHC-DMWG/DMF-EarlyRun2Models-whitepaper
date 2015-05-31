@@ -51,7 +51,7 @@ that can be used to quote bounds on EFT operators.
 
 We first illustrate the problem that can arise with EFTs at colliders by considering an effective interaction
 $$ (\bar\psi\psi)(\bar\chiDM\chiDM) {g\over \Lambda^2}$$
-that couples SM and DM fields.   The strength of this interaction can
+that couples SM $\Psi$ and DM $\chi$ fields.   The strength of this interaction can
 be parametrized by $\displaystyle f={g\over \Lambda^2}$.
 A monojet signature can be generated
 by applying perturbation theory in the QCD coupling (assuming $\psi$ is
@@ -60,7 +60,7 @@ An experimental search will place a limit on $f$.
 For a fixed $f$, a small value of $g$ will correspond
 to a small value of $\Lambda$.   The EFT approximation breaks down
 if $Q>\Lambda$, where $Q$ is a typical hard scale of the process.
-%One possible example is $\Qtr^2=p(\bar\chiDM\chiDM)^2$, i.e.
+%One possible example is $\Qtr^2=[p(\bar\chiDM\chiDM)]^2$, i.e.
 %the momentum flow through
 %the \schannel.% asked by Davide to remove this as its not correct.
 Thus the limit on small $g$ can only be reliable if the
@@ -91,7 +91,7 @@ this corresponds to setting
 \frac{\gDM \gq}{Q_{\rm tr}^2-M^2}=-\frac{\gDM \gq}{M^2}\left(1+\frac{Q^2_{\rm tr}}{M^2}+ \mathcal{O} \left(\frac{Q^4_{\rm tr}}{M^4}\right)\right) \simeq -\frac{1}{{\Mstar}^2},
 \ee
 %
-where $\Qtr$ is the momentum carried by the mediator, and $\gDM$, $\gq$ are the DM-mediator and quark-mediator couplings respectively. Similar expressions exist for other operators. Clearly the condition that must be satisfied for this approximation to be valid is that $\Qtr^2 < M^2 = \gDM \gq {\Mstar}^2$. 
+where $\Qtr$ is the momentum carried by the mediator, and $\gDM$, $\gq$ are the DM-mediator and quark-mediator couplings respectively. Similar expressions exist for other operators. The condition that must be satisfied for this approximation to be valid is that $\Qtr^2 < M^2 = \gDM \gq {\Mstar}^2$. 
 In this framework, there are three regions to consider:
 \begin{itemize}
 \item $\Qtr^2 \sim M^2$, in which case the EFT misses a resonant enhancement, and it is conservative to ignore this enhancement;
@@ -107,7 +107,7 @@ This leads to a smaller effective cross-section, after imposing the event select
 For the example D5-like operator, $\sigma \propto {\Mstar}^{-4}$, and so there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${\Mstar}$ if the original limit is based on a simple cut-and-count procedure. Defining $\sigma_{\rm EFT}^{\rm cut}$ as the cross section truncated such that all events pass the condition $\sqrt{\gDM \gq} \Mstar^{\rm rescaled} > \Qtr$, we have
  
 \be
-\Mstar^{\rm rescaled} = \left(\frac{\sigma_{\rm EFT}}{\sigma_{\rm EFT}^{\rm cut}}\right)^{1/4} \Mstar^{\rm original},
+\Mstar^{\rm rescaled} = \left(\frac{\sigma_{\rm EFT}}{\sigma_{\rm EFT}^{\rm cut}(\Mstar^{\rm rescaled})}\right)^{1/4} \Mstar^{\rm original},
 \ee
 %
 which can be solved for $\Mstar^{\rm rescaled}$ via either iteration or a scan.
@@ -154,7 +154,7 @@ E_\text{cm}<M_\text{cut}\,.
 For example, in the specific case of a tree level mediation with a single mediator, \Mcut can be interpreted as the mass of that mediator.
 
 There are then at least three free parameters describing an EFT:~ 
-the DM mass $m_\text{DM}$, the scale $\Mstar$ of the interaction, and the cutoff scale \Mcut.
+the DM mass $m_\text{DM}$, the scale $\Mstar$ of the interaction, and the scale \Mcut.
 
 We can use the same technique as above to restrict the signal to the events for which $E_\text{cm}<M_\text{cut}$,  using only these events to derive the exclusion limits on $\Mstar$ as a function of  $(m_\text{DM},M_{\rm cut})$. 
 %
@@ -240,7 +240,7 @@ It makes sense to choose \Mcut such that we
 identify the transition region where the EFT stops being
 a good description of UV complete 
 theories. This can be done using the ratio \Reft, which is defined
-as the fraction of events for which $s_{hat} > \Mcut^2$. 
+as the fraction of events for which $\hat{s} > \Mcut^2$. 
 For large values of \Mcut, no events are thrown away in the truncation 
 procedure, and R=1. As \Mcut becomes smaller, eventually all events are thrown 
 away in the truncation procedure, i.e. $\Reft=0$, and the EFT gives no 
