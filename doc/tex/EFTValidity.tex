@@ -70,12 +70,16 @@ is assumed so that the full kinematic region can be used, a large value of
 $g$ is required, raising the question if perturbation theory
 is even applicable.     
 
-In the first part of this Section, we summarize some methods that can be used to
-improve the reliability of the EFT approximation. These methods are described in detail in Refs.~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa,Berlin:2014cfa}. 
+In the first part of this Section, we summarize two methods that can be used to truncate events that 
+do not fulfill the condition necessary for the use of an EFT.% and improve the reliability of the approximation by delivering conservative results. 
+These methods are described in detail in Refs.~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa,Berlin:2014cfa}. 
 We then propose a recommendation for the presentation of EFT results for early Run-2 LHC searches.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\texorpdfstring{Outline of the procedure described in Refs.~\cite{Busoni:2014sya,Aad:2015zva}}{Outline of the procedure described in Refs.}}
+%\section{\texorpdfstring{Outline of the procedure described in Refs.~\cite{Busoni:2014sya,Aad:2015zva}}{Outline of the procedure described in Refs.}}
+%CD: qualify the procedure
+\subsection{EFT truncation using the momentum transfer and information on UV completion}
+
 \label{sec:TruncationWithQTr}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -131,11 +135,11 @@ If a search is not simply a counting experiment and exploits the shapes of kinem
 \clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\texorpdfstring{Outline of the procedure described in Ref.~\cite{Racco:2015dxa}}{Outline of the procedure described in Refs.}}
+\subsection{EFT truncation using the center of mass energy}
 \label{sec:TruncationWithSHat}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In \cite{Racco:2015dxa} a procedure to extract model independent and consistent bounds within the EFT is described. This procedure can be applied to any effective Lagrangian describing the interactions between the DM and the SM, and provides limits that can be directly reinterpreted in any completion of the EFT.
+In Ref.\cite{Racco:2015dxa} a procedure to extract model independent and consistent bounds within the EFT is described. This procedure can be applied to any effective Lagrangian describing the interactions between the DM and the SM, and provides limits that can be directly reinterpreted in any completion of the EFT.
 
 The range of applicability of the EFT is defined by a mass scale \Mcut, a parameter which marks the upper limit of the range of energy scales at which the EFT can be used reliably, independently of the particular completion of the model. 
 Regardless of the  details of the full theory, the energy scale for which the EFT is a good approximation is less than the center-of-mass energy $E_\text{cm}$, the total invariant mass of the hard final states of the reaction.%removed "or equal to"
@@ -164,17 +168,21 @@ The resulting plots are shown in \cite{Racco:2015dxa} for a particular effective
 
 The advantage of this procedure is that the obtained bounds can be directly and easily recast in any  completion of the EFT, by computing the parameters \Mstar, \Mcut in the full model as functions of the parameters of the complete theory. On the other hand, the resulting limits will be weaker than those obtained using \Qtr and a specific UV completion.
 
+\Todo{Insert example of figure using ATLAS limits from PUB note, applying the two truncation methods.}
+
 \section{Comments on Unitarity Considerations}
 \todo{Waiting for comments from J. Alcaraz}
 
-\section{Presentation of EFT results} %change this title
+\section{Recommendation for presentation of EFT results} %change this title
 \label{sec:RecommendationEFTResults}
 
-A full discussion of the presentation of collider results is left to 
-work beyond this Forum, where ATLAS, CMS, the theory community
+In this report we recommend two strategies for the presentation of collider results
+in terms of Effective Field Theories for the upcoming Run-2 searches. 
+A full discussion of the presentation of collider results in relation to other experiment
+is left to work beyond this Forum, where ATLAS, CMS, the theory community
 and the Direct and Indirect Detection communities are involved. 
-In this report we recommend two strategies for the presentation of results
-in terms of Effective Field Theories. We divide the EFT operators in two categories: 
+
+We divide the EFT operators in two categories: 
 those which can be mapped to one or more UV-complete simplified models, such as those
 commonly used in LHC searches so far and detailed in~\cite{Goodman:2010ku}, and those
 for which no UV completion is available, such as those outlined in Section~\ref{sec:EFT_models_with_direct_DM_boson_couplings}. The For the first case, the EFT is supposed to cover the cases where the mediating particles are heavy,
@@ -185,13 +193,7 @@ for those operators. For the second class of models, a truncation procedure
 should be applied for various hypotheses on the goodness of the EFT approximation, 
 and the truncated results presented alongside the full EFT results.
 
-Three proposals for the treatment of EFT have been stated so far,
-to complement raw EFT results: (1) truncate using \Qtr, (2) truncate and iterate using \Qtr, and
-(3) truncate using \Ecm.  The reliability of the EFT approximation can
-also be quantified by presenting the sensitivity of the results to \Reft, the fraction of events
-that satisfy $\hat{s} > \Mcut ^2$, for example.
-
-\section{Recommendation for contact interaction theories with simplified models available}
+\subsection{EFT benchmarks with corresponding simplified models available}
 
 \begin{figure}
 \centering
@@ -203,19 +205,64 @@ Taken from Ref.\,\cite{ATL-PHYS-PUB-2014-007}.}
 
 If a simplified model can be mapped to a given EFT, then the model's high-mediator-mass limit 
 will converge to the EFT. This can be seen in Fig.~\ref{fig:monojet_MstarMmed}, where the limits on 
-the scale of the interaction of a \Zprime-like simplified model are presented in terms of the mediator mass~\footnote{This plot only serves as exemplification of the convergence of the simplified model to a contact
-	interaction operator: before this report, ATLAS and CMS searches presented search results up to very high couplings and therefore high widths, potentially probing unphysical corners of phase space}. 
-The limits at high mediator mass for this model are equivalent to those of the corresponding EFT benchmark. 
-For this reason, experimental collaboration should deliver results for high-mass mediators instead of 
-pure EFT results, and leave further reinterpretation to theorists.
+the scale of the interaction for a vector mediator exchanged in the \schannel are presented in terms of the mediator 
+mass~\footnote{This plot only serves to exemplify the convergence of the simplified model to a contact
+	interaction operator: before this report, ATLAS and CMS searches presented search results up to very high couplings
+	and therefore large widths, potentially probing unphysical corners of phase space}. 
+It can be seen that the limits at high mediator mass for this model are equivalent to those of the corresponding EFT benchmark. 
+
+To fully reproduce the kinematics of a contact interaction and have no remaining dependence on the presence of a resonance
+that is as narrow as the choice made in Section~\ref{sub:parameter_scan_monojet} (\gq = 0.25 and \gDM = 1),
+the mediator mass needs to be at least 10 TeV. A comparison of the main kinematic variables for the \schannel vector 
+mediator model with a width of 0.1\mMed \footnote{The use of a fixed width rather than the minimal width is exclusive of these plots} 
+is shown in Fig.~\ref{fig:EFT_kinematics}.
+
+%CD: do we want to add more of the discussion here on why this happens? I would personally keep it short.
+
+\begin{figure}[hbpt!]
+	\centering
+	\subfloat[\MET{}]{
+		\includegraphics[width=0.7\linewidth]{figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.eps}
+	}
+		\hfill
+	\subfloat[Center of mass energy $E_cm$]{
+	   \includegraphics[width=0.47\linewidth]{figures/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.eps} 
+	}		
+	\subfloat[Mediator transverse momentum]{
+		\includegraphics[width=0.47\linewidth]{figures/EFT/TruthPt_compEFTvsZprime_DM150_narrow.eps}
+	}
+		\hfill
+	\subfloat[DM transverse momentum (leading)]{
+		\includegraphics[width=0.47\linewidth]{figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narrow.eps} 
+		}
+	\subfloat[DM transverse momentum (sub-leading)]{
+		\includegraphics[width=0.47\linewidth]{figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.eps} 
+	}
+	\caption{Comparison of the kinematic distributions for a narrow \schannel mediator (equivalent to \gq = 0.25 and \gDM = 1), 
+		at generator level for a jet+\MET{} signature. 
+		\label{fig:EFT_kinematics}}
+\end{figure}
+
+\Todo{Insert figure with varying \mDM, showing we need to simulate the various DM masses.}
+	
+Based on these studies, the Forum recommends experimental collaborations to deliver 
+results for mediators with a mass of 10 TeV instead of pure EFT results for each of the DM masses 
+considered in the scan, and leave further reinterpretation to theorists.
+%The mediator mass that we advise to use for this purpose reinterpretation is 10 TeV, 
+We therefore advise to add one grid scan point at very high mediator mass (10 \tev) to the scan, 
+for each of the DM masses for the simplified models described in Section~\ref{subsec:MonojetLikeModels}. 
+%The truncation procedure in Section~\ref{sec:TruncationWithSHat} can be used to fine-tune the mediator mass to be simulated for this purpose. 
+
 \Todo{The extrapolation to other couplings and mediator masses can be
-done using the \Qtr prescription for that model. CD: I think this was Steve M - what do you mean?}
+	done using the \Qtr prescription for that model. CD: I think this was Steve M - what do you mean?}
 
-We therefore recommend the addition of one point at very high mediator mass (5 \tev) to the scan, for each of the DM masses for the simplified models described in Section~\ref{subsec:MonojetLikeModels}. The truncation procedure in Section~\ref{sec:TruncationWithSHat} can be used to fine-tune the mediator mass to be simulated for this purpose. 
+\subsection{EFT benchmarks with no corresponding simplified models available}
 
-\Todo{Add studies by Cora Fischer}
-
-\section{Recommendation for truncation of EFT benchmarks with no simplified models available}
+Three proposals for the treatment of EFT have been stated so far,
+to complement raw EFT results: (1) truncate using \Qtr, (2) truncate and iterate using \Qtr, and
+(3) truncate using \Ecm.  The reliability of the EFT approximation can
+also be quantified by presenting the sensitivity of the results to \Reft, the fraction of events
+that satisfy $\hat{s} > \Mcut ^2$, for example.
 
 Whenever a UV completion is not available, EFT results can still
 be a source of useful information as 

@@ -12,11 +12,8 @@ In this Chapter we review
 models that yield $X$+\MET{} signatures,
 where $X$ is a QCD parton or $\gamma, W, Z$ or $h$.
 
-The three main benchmark simplified models suggested in this Chapter for 
-early Run-2 searches   
-
-The primary simplified models suggested in this Chapter for Dirac fermion DM 
-comprise \spinzero and \spinone mediators. Section~\ref{sec:monojet_V} covers the
+The primary simplified models  for Dirac fermion DM endorsed by this Forum are detailed in this Chapter, 
+comprising \spinzero and \spinone mediators. Section~\ref{sec:monojet_V} covers the
 \schannel exchange of a vector mediator~\footnote{Colored vector mediators 
 can be exchanged in the \tchannel, but there are no examples in literature so far.}, 
 while we consider both \schannel and \tchannel exchange for scalar mediators in
@@ -34,7 +31,7 @@ is known to NLO accuracy in the case of DM pair production in association to one
 All other models are currently known to leading order. Appendix~\ref{app:MonojetLikeModels_Appendix}
 details the recommended implementation of these models that
 have been used for the studies in this Chapter. A summary of the recommendation of the generation of this model
-is provided in Table~\ref{tab:models}.
+is provided in Table~\ref{tab:summaryModels}.
 
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
@@ -112,8 +109,7 @@ The coupling \gq is assumed to be universal to all quarks.
 %Definition of minimal width
 As mentioned in the Introduction, when no additional visible or invisible decays contribute to the width of the mediator, 
 the minimal width is fixed by the choices of couplings \gq and \gDM. The effect of larger 
-widths is discussed on page \pageref{paragraph:nonminimalwidth}. 
-\Todo{change reference here from page to subsection?} 
+widths is discussed in Section~\ref{paragraph:nonminimalwidth}. 
 For the vector and axial-vector models, the minimal width is:
 
 \begin{align}
@@ -338,9 +334,11 @@ The generator level cross section times the acceptance at $\MET>500$~\gev for th
 \mDM=10~\gev and a \mMed=1~\tev vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$~\gev for 5~\tev vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC in the early Run 2. However, models with high enough mediators are still useful to reproduce the EFT result.
 
 Following these arguments, \mMed grid points are chosen, roughly equidistant in a logarithmic scale: 10~\gev, 20~\gev, 50~\gev,  100~\gev, 200~\gev, 300~\gev, 500~\gev, 1000~\gev and 2000~\gev. In the threshold regime $\mMed=2\mDM$, the $\mDM$ grid points are taken at approximately $\mMed/2$, namely: 10~\gev, 50~\gev, 150~\gev, 500~\gev and 1000~\gev. Points on the on-shell diagonal are always chosen to be 5~\gev away from the threshold, to avoid numerical instabilities in the event generation. 
-The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 36
+The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}.
+% containing 36
 %29 
-mass points each. One point at very high mediator mass (10~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
+%mass points each. 
+One point at very high mediator mass (10~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs), as discussed in Section~\ref{sec:RecommendationEFTResults}. 
 
 % \begin{figure}
 % \centering
@@ -685,7 +683,7 @@ The generator level cross section times the acceptance at $\MET>500$~\gev for th
 a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 33
 %26 
 mass points only, as shown in Tab.\,\ref{tab:mDMmMedScan_SP}.
-One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs). 
+One point at very high mediator mass (10~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs). 
 
 \begin{table}[!h]
 \centering
@@ -870,7 +868,6 @@ On the contrary, both the Standard Model and Dark Matter partial width have comp
 %	\label{fig:monojet_width1000}
 %\end{figure}
 
-\Todo{Reduce plots to mMed<GammaMin region}
 %in the plots (gDM = 6, gSM = 1.5 for $V$ and gSM = gDM = 5 for $S$)}
 
 
@@ -907,7 +904,7 @@ Constant colors indicate the lines along which the cross section scaling works p
 \end{figure}
 
 
-\paragraph{Proposed parameter grid for cross-section scaling}
+\subsection{Proposed parameter grid for cross-section scaling}
 
 We propose to deliver collider results in the $\gq$--$\gDM$ plane using the following prescription, to ease reinterpretation through cross-section scaling:
 \begin{itemize}
@@ -928,7 +925,8 @@ The scaling follows from Eq.\,\ref{eq:monojet_scaling} which for the constant wi
 %choose mDM=50, mMed=300, gDM=gSM={0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5} for V (mMed=GammaMin is reached around 1.5)
 %choose mDM=50, mMed=1000, gDM=gSM={0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5} for V (mMed=GammaMin is reached around 1.4)
 
-\paragraph{Rescaling to different mediator width}\label{paragraph:nonminimalwidth}
+\subsection{Rescaling to different mediator width}
+\label{paragraph:nonminimalwidth}
 
 In general it is also important to consider a larger mediator width than $\Gamma_{\rm{min}}$ in order to accommodate additional interactions of the mediator with the visible and hidden sector particles~\cite{Buckley:2014fba,Harris:2014hga}. If the narrow width approximation applies, the cross section scaling method described above can be used to reinterpret the results presented for the minimal width, since multiplying the width by factor $n$ is equivalent to changing the coupling strength by factor $\sqrt{n}$, i.e.
 
