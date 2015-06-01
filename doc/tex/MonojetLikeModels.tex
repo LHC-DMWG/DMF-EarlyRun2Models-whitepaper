@@ -253,11 +253,16 @@ When small coupling strengths are combined with extremely heavy mediators, one m
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{figures/monojet/mxx.eps}
-\caption{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths. The distributions are normalised to unit area.}
+\includegraphics[width=0.45\textwidth]{figures/monojet/mxx.eps}
+\includegraphics[width=0.45\textwidth]{figures/monojet/TruthShat_compEFTvsZprime_DM150_narrow.eps}
+\caption{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths (left).
+Similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$. An EFT sample is also displayed in the latter case. The distributions are normalised to unit area.}
 \label{fig:monojet_mchichi}
 \end{figure}
-\Todo{Now these figures seem out of place.   The point of the first plot seems to be that the EFT limit is only recovered for $g=1$.}
+\Todo{describe the plots (update the right one) and add back the paragraph relevant for the choice of the sample resembling EFT!!!}
+
+
+
 
 Since kinematic distributions are robust to
 changes in the specific values of coupling as long as heavy narrow mediators are avoided, the choice of $\gq=\gDM$ is reasonable 
@@ -278,9 +283,9 @@ may restrict \gq to a greater degree than
 
 For a fixed mediator mass \mMed and couplings, the Dark Matter mass falls into three regimes:
 \begin{itemize}
-\item[On-shell] When $\Mmed \gg 2 \mDM$, most mediators are produced on-shell. The hardness of the ISR is set by \Mmed, and the kinematic distributions do not strongly depend on \mDM. This is illustrated in Fig.~\ref{fig:monojet_scan_V_mDM1000} for an example of \mMed=1~\tev 10~\gev $<\mDM<$ 300~\gev. The cross section decreases as the \mDM approaches $\mMed/2$. A coarse binning along $\mDM$ is sufficient.
-\item[Threshold] When $\Mmed \approx 2\mDM$, the production is resonantly enhanced, and both the cross section and kinematic distributions change more rapidly as a function of the two masses, and finer binning is needed in order to capture the changes.
-\item[Off-shell] When $\Mmed ll 2 \mDM$, the Dark Matter pair is produced off-shell. The mediator propagator gives an explicit suppression of $(\Mmed/Q)^4$ that suppresses hard ISR. The $\mDM=1$~\tev case, shown in Fig.~\ref{fig:monojet_scan_V_mDM1000}, and Figure\,\ref{fig:monojet_scan_V_mDM100} demonstrates that the \MET spectrum hardens with increasing \mDM, accompanied by the gradual decrease of the cross section. Due to the significant cross section suppression, it is not necessary to fully populate the parameter space. Imminent LHC searches are not expected to be sensitive to these signals.
+\item[On-shell:] When $\Mmed \gg 2 \mDM$, most mediators are produced on-shell. The hardness of the ISR is set by \Mmed, and the kinematic distributions do not strongly depend on \mDM. This is illustrated in Fig.~\ref{fig:monojet_scan_V_mDM1000} for an example of \mMed=1~\tev 10~\gev $<\mDM<$ 300~\gev. The cross section decreases as the \mDM approaches $\mMed/2$. A coarse binning along $\mDM$ is sufficient.
+\item[Threshold:] When $\Mmed \approx 2\mDM$, the production is resonantly enhanced, and both the cross section and kinematic distributions change more rapidly as a function of the two masses, and finer binning is needed in order to capture the changes.
+\item[Off-shell:] When $\Mmed ll 2 \mDM$, the Dark Matter pair is produced off-shell. The mediator propagator gives an explicit suppression of $(\Mmed/Q)^4$ that suppresses hard ISR. The $\mDM=1$~\tev case, shown in Fig.~\ref{fig:monojet_scan_V_mDM1000}, and Figure\,\ref{fig:monojet_scan_V_mDM100} demonstrates that the \MET spectrum hardens with increasing \mDM, accompanied by the gradual decrease of the cross section. Due to the significant cross section suppression, it is not necessary to fully populate the parameter space. Imminent LHC searches are not expected to be sensitive to these signals.
 \end{itemize}
 
 \begin{figure}
@@ -325,15 +330,17 @@ of Run-2 LHC data with respect to rate and/or kinematics.
 The parameter scan focuses on two important regions, the light mediator region and  the heavy mediator limit to reproduce the EFT limit, 
 and takes into account the projected sensitivities for the mono-jet analysis.
 
+Considering simplified models also allows to discuss constraints from different search channels. In the case of the \schannel exchange, the results from the mono-jet final states, where the mediator decays to a DM pair, one can also take into account dijet constraints on the processes where the mediator decays back to Standard Model particles. The importance of the dijet results depend on the magnitude of the coupling $\gq$. We recommend to keep the two channels rather independent by choosing $\gq=0.25$ and $\gDM=1$, based on the findings given in Ref.\,\ref{Chala:2015ama}. Furthermore, it is also important to mention this choice leads to $\Gamma_{\rm{min}}/\mMed \lsim 0.06$. Note that the usual choice of $\gq=\gDM=1$ used in literature leads to $\Gamma_{\rm{min}}/\mMed \sim 0.5$, which makes the applicability of the narrow with approximation questionable.
+
 Projected sensitivities for a 14~\tev\, mono-jet analysis are available from ATLAS~\cite{ATL-PHYS-PUB-2014-007}. The expected upper limit at 95\% confidence level on the product of cross section, acceptance and efficiency, $\sigma\times A\times\epsilon$, in the final Run-1 ATLAS mono-jet analysis\,\cite{Aad:2015zva} is 51\,fb and 7.2\,fb  for $\MET>300$~\gev and $\MET>500$~\gev, respectively. ATLAS estimates a factor of two increase in sensitivity with the 2015 data. Given that cross section for $V+$jets processes increases by roughly a factor 2 %\Todo{Can we get more precise number and a citation? Is this in Sarah's V+jets paper?} 
 when going from $\sqrt{s}=8$~\tev to 13~\tev, similar fiducial cross section limits can be expected with the first Run-2 data as from the final Run-1 analysis.
-The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, a light Dark Matter particle of
-\mDM=10~\gev and a \mMed=1~\tev vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$~\gev for 5~\tev vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC in the early Run 2 but is still useful to reproduce the EFT result.
+The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=0.25$ and $\gDM=1$, a light Dark Matter particle of
+\mDM=10~\gev and a \mMed=1~\tev vector mediator is at the order of 100\,fb, i.e. the early Run-2 mono-jet analysis is going to be sensitive to heavier mediators than this. The value of $\sigma\times A$ at $\MET>500$~\gev for 5~\tev vector mediator is at the order of 0.1\,fb, therefore this model probably lies beyond the reach of the LHC in the early Run 2. However, models with high enough mediators are still useful to reproduce the EFT result.
 
 Following these arguments, \mMed grid points are chosen, roughly equidistant in a logarithmic scale: 10~\gev, 20~\gev, 50~\gev,  100~\gev, 200~\gev, 300~\gev, 500~\gev, 1000~\gev and 2000~\gev. In the threshold regime $\mMed=2\mDM$, the $\mDM$ grid points are taken at approximately $\mMed/2$, namely: 10~\gev, 50~\gev, 150~\gev, 500~\gev and 1000~\gev. Points on the on-shell diagonal are always chosen to be 5~\gev away from the threshold, to avoid numerical instabilities in the event generation. 
 The detailed studies of the impact of the parameter changes on the cross section and kinematic distributions presented earlier in this section support removing some of the grid points and relying on interpolation. The optimized grids proposed for the vector and axial-vector mediators are given in Table.\,\ref{tab:mDMmMedScan_VA}, containing 36
 %29 
-mass points each. One point at very high mediator mass (5~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
+mass points each. One point at very high mediator mass (10~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs) as discussed in Section~\ref{sec:RecommendationEFTResults}. 
 
 % \begin{figure}
 % \centering
@@ -350,18 +357,18 @@ mass points each. One point at very high mediator mass (5~\tev) is added for eac
 \hline
 \multicolumn{1}{|c|}{\mDM/\gev} & \multicolumn{10}{c|}{\mmed/\gev} \\
 \hline
- 1             &         10  & 20 & 50 & 100 & 200 & 300 & 500 &         1000  &                 2000   &         5000  \\
- 10   	       &         10  & 15 & 50 & 100 &     &     &     &               &                        &     5000      \\
+ 1             &         10  & 20 & 50 & 100 & 200 & 300 & 500 &         1000  &                 2000   &         10000  \\
+ 10   	       &         10  & 15 & 50 & 100 &     &     &     &               &                        &     10000      \\
  50            &   10  & 
-& 50 &  95 & 200 & 300 &     &               &                        &    5000       \\
- 150           &         10  &    &    &     & 200 & 295 & 500 &    1000    &                  &     5000      \\
- 500           &         10  &    &    &     &     &     & 500 &          995  &                 2000   &     5000      \\
- 1000          &         10  &    &    &     &     &     &     &         1000  &                 1995   &         5000  \\
+& 50 &  95 & 200 & 300 &     &               &                        &    10000       \\
+ 150           &         10  &    &    &     & 200 & 295 & 500 &    1000    &                  &     10000      \\
+ 500           &         10  &    &    &     &     &     & 500 &          995  &                 2000   &     10000      \\
+ 1000          &         10  &    &    &     &     &     &     &         1000  &                 1995   &         10000  \\
 \hline
 \end{tabular}
 }
 \caption{Simplified model benchmarks for \schannel simplified models (\spinone mediators 
-decaying to Dirac DM fermions in the V and A case, taking the minimum width for \gq = \gDM = 1)}.
+decaying to Dirac DM fermions in the V and A case, taking the minimum width for \gq = 0.25 and \gDM = 1)}.
 % Points in \textbf{bold} are only generated for the vector/axial vector cases, while points in 
 % \textit{italics} are generated for the monojet analysis 
 % but not for the search including heavy quarks. This table corresponds to 29 points for monojet vector/axial vector models,
@@ -673,7 +680,7 @@ No differences in the kinematic distributions are observed and also the cross se
 \end{figure}
 
 
-The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, taking again $\gq=\gDM=1$. Only the sensitivity to the highest mediator masses has to be re-evaluated.
+The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, taking again $\gq=0.25$ and $\gDM=1$. Only the sensitivity to the highest mediator masses has to be re-evaluated.
 The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, light Dark Matter of \mDM=10~\gev and
 a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 33
 %26 
@@ -686,17 +693,17 @@ One point at very high mediator mass (5~\tev) is added for each of the DM masses
 \hline
 \multicolumn{1}{|c|}{\mDM (\gev)} & \multicolumn{9}{c|}{\mmed (\gev)} \\
 \hline
- 1             &         10  & 20 & 50 & 100 & 200 & 300 & 500 &         1000  &         5000  \\
- 10   	       &         10  & 15 & 50 & 100 &     &     &     &               &         5000  \\
- 50            &         10  &    & 50 &  95 & 200 & 300 &     &               &         5000  \\
- 150           &         10  &    &    &     & 200 & 295 & 500 &         1000  &         5000  \\
- 500           &         10  &    &    &     &     &     & 500 &          995  &         5000  \\
- 1000          &         10  &    &    &     &     &     &     &         1000  &         5000  \\
+ 1             &         10  & 20 & 50 & 100 & 200 & 300 & 500 &         1000  &         10000  \\
+ 10   	       &         10  & 15 & 50 & 100 &     &     &     &               &         10000  \\
+ 50            &         10  &    & 50 &  95 & 200 & 300 &     &               &         10000  \\
+ 150           &         10  &    &    &     & 200 & 295 & 500 &         1000  &         10000  \\
+ 500           &         10  &    &    &     &     &     & 500 &          995  &         10000  \\
+ 1000          &         10  &    &    &     &     &     &     &         1000  &         10000  \\
 \hline
 \end{tabular}
 
 \caption{Simplified model benchmarks for \schannel simplified models (\spinzero mediators 
-decaying to Dirac DM fermions in the scalar and pseudoscalar case, taking the minimum width for \gq = \gDM = 1)}.
+decaying to Dirac DM fermions in the scalar and pseudoscalar case, taking the minimum width for \gq = 0.25 and \gDM = 1)}.
 % Points in \textbf{bold} are only generated for the vector/axial vector cases, while points in 
 % \textit{italics} are generated for the monojet analysis 
 % but not for the search including heavy quarks. This table corresponds to 29 points for monojet vector/axial vector models,
@@ -904,7 +911,7 @@ Constant colors indicate the lines along which the cross section scaling works p
 
 We propose to deliver collider results in the $\gq$--$\gDM$ plane using the following prescription, to ease reinterpretation through cross-section scaling:
 \begin{itemize}
-	\item Since the shapes of kinematic quantities do not change for different couplings, use the acceptance and efficiency for the available $\mDM=50$~\gev, $\mMed=300$~\gev, $\gq=\gDM=1$ grid point from the $\mMed$--$\mDM$ plane for the scalar and pseudo-scalar mediator. In case of the vector and axial-vector mediator, use the grid point $\mDM=150$~\gev, $\mMed=1$~\tev, $\gq=0.25$, $\gDM=1$.
+	\item Since the shapes of kinematic quantities do not change for different couplings, use the acceptance and efficiency for the available $\mDM=50$~\gev, $\mMed=300$~\gev, $\gq=0.25$, $\gDM=1$ grid point from the $\mMed$--$\mDM$ plane for the scalar and pseudo-scalar mediator. In case of the vector and axial-vector mediator, use the grid point $\mDM=150$~\gev, $\mMed=1$~\tev, $\gq=0.25$, $\gDM=1$.
 	\item Generate additional samples in order to get generator cross sections only. For scalar and pseudo-scalar mediator, choose $\mDM=50$~\gev, $\mMed=300$~\gev with the following values for $\gq=\gDM$: 0.1, 1, 2, 3. For vector and axial vector mediator, choose $\mDM=150$~\gev, $\mMed=1$~\tev with the following values for $\gq=\gDM$: 0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5. The upper values are defined by the minimal width reaching the mediator mass. \Todo{Waiting for scalar mediator calculation of perturbativity limit from J. Alcaraz.).}
 	\item Rescale the generator cross sections for on-shell resonance production along the lines of constant width in order to populate the whole $\gq$--$\gDM$ plane in the region $\Gamma_{\rm{min}}<\mMed$.
 The scaling follows from Eq.\,\ref{eq:monojet_scaling} which for the constant width implies:
