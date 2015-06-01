@@ -1,0 +1,144 @@
+{
+//=========Macro generated from canvas: canvas5/canvas5
+//=========  (Thu May 28 17:08:15 2015) by ROOT version5.34/25
+   TCanvas *canvas5 = new TCanvas("canvas5", "canvas5",546,22,700,500);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   canvas5->SetHighLightColor(2);
+   canvas5->Range(-86.74699,-3.66957,636.1446,0.002326075);
+   canvas5->SetFillColor(0);
+   canvas5->SetBorderMode(0);
+   canvas5->SetBorderSize(2);
+   canvas5->SetLogy();
+   canvas5->SetTickx(1);
+   canvas5->SetTicky(1);
+   canvas5->SetLeftMargin(0.12);
+   canvas5->SetRightMargin(0.05);
+   canvas5->SetTopMargin(0.05);
+   canvas5->SetBottomMargin(0.16);
+   canvas5->SetFrameBorderMode(0);
+   canvas5->SetFrameBorderMode(0);
+   
+   TH1F *histo_3pt50__11 = new TH1F("histo_3pt50__11","histo_3pt50",30,0,600);
+   histo_3pt50__11->SetBinContent(0,6.551324);
+   histo_3pt50__11->SetBinContent(2,0.3410596);
+   histo_3pt50__11->SetBinContent(3,0.3476821);
+   histo_3pt50__11->SetBinContent(4,0.1788079);
+   histo_3pt50__11->SetBinContent(5,0.07450331);
+   histo_3pt50__11->SetBinContent(6,0.03145695);
+   histo_3pt50__11->SetBinContent(7,0.01324503);
+   histo_3pt50__11->SetBinContent(8,0.006622517);
+   histo_3pt50__11->SetBinContent(9,0.004966888);
+   histo_3pt50__11->SetBinContent(11,0.001655629);
+   histo_3pt50__11->SetBinError(0,0.1041468);
+   histo_3pt50__11->SetBinError(2,0.02376275);
+   histo_3pt50__11->SetBinError(3,0.02399235);
+   histo_3pt50__11->SetBinError(4,0.0172058);
+   histo_3pt50__11->SetBinError(5,0.0111063);
+   histo_3pt50__11->SetBinError(6,0.00721672);
+   histo_3pt50__11->SetBinError(7,0.004682826);
+   histo_3pt50__11->SetBinError(8,0.003311258);
+   histo_3pt50__11->SetBinError(9,0.002867634);
+   histo_3pt50__11->SetBinError(11,0.001655629);
+   histo_3pt50__11->SetEntries(4561);
+   histo_3pt50__11->SetDirectory(0);
+   histo_3pt50__11->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#0000ff");
+   histo_3pt50__11->SetLineColor(ci);
+   histo_3pt50__11->SetLineWidth(2);
+   histo_3pt50__11->SetMarkerStyle(20);
+   histo_3pt50__11->SetMarkerSize(1.2);
+   histo_3pt50__11->GetXaxis()->SetTitle("3rd leading jet p_{T}");
+   histo_3pt50__11->GetXaxis()->SetLabelFont(42);
+   histo_3pt50__11->GetXaxis()->SetLabelSize(0.05);
+   histo_3pt50__11->GetXaxis()->SetTitleSize(0.05);
+   histo_3pt50__11->GetXaxis()->SetTitleFont(42);
+   histo_3pt50__11->GetYaxis()->SetTitle("Events");
+   histo_3pt50__11->GetYaxis()->SetLabelFont(42);
+   histo_3pt50__11->GetYaxis()->SetLabelSize(0.05);
+   histo_3pt50__11->GetYaxis()->SetTitleSize(0.05);
+   histo_3pt50__11->GetYaxis()->SetTitleFont(42);
+   histo_3pt50__11->GetZaxis()->SetLabelFont(42);
+   histo_3pt50__11->GetZaxis()->SetLabelSize(0.05);
+   histo_3pt50__11->GetZaxis()->SetTitleSize(0.05);
+   histo_3pt50__11->GetZaxis()->SetTitleFont(42);
+   histo_3pt50__11->Draw("HIST");
+   
+   TH1F *histo_3pt400__12 = new TH1F("histo_3pt400__12","histo_3pt400",30,0,600);
+   histo_3pt400__12->SetBinContent(0,5.786232);
+   histo_3pt400__12->SetBinContent(2,0.3454106);
+   histo_3pt400__12->SetBinContent(3,0.3454106);
+   histo_3pt400__12->SetBinContent(4,0.160628);
+   histo_3pt400__12->SetBinContent(5,0.07487923);
+   histo_3pt400__12->SetBinContent(6,0.04347826);
+   histo_3pt400__12->SetBinContent(7,0.02173913);
+   histo_3pt400__12->SetBinContent(8,0.007246377);
+   histo_3pt400__12->SetBinContent(11,0.001207729);
+   histo_3pt400__12->SetBinError(0,0.08359547);
+   histo_3pt400__12->SetBinError(2,0.02042456);
+   histo_3pt400__12->SetBinError(3,0.02042456);
+   histo_3pt400__12->SetBinError(4,0.01392822);
+   histo_3pt400__12->SetBinError(5,0.009509671);
+   histo_3pt400__12->SetBinError(6,0.007246377);
+   histo_3pt400__12->SetBinError(7,0.005123962);
+   histo_3pt400__12->SetBinError(8,0.002958321);
+   histo_3pt400__12->SetBinError(11,0.001207729);
+   histo_3pt400__12->SetEntries(5619);
+   histo_3pt400__12->SetDirectory(0);
+   histo_3pt400__12->SetStats(0);
+
+   ci = TColor::GetColor("#ff0000");
+   histo_3pt400__12->SetLineColor(ci);
+   histo_3pt400__12->SetLineWidth(2);
+   histo_3pt400__12->SetMarkerStyle(20);
+   histo_3pt400__12->SetMarkerSize(1.2);
+   histo_3pt400__12->GetXaxis()->SetLabelFont(42);
+   histo_3pt400__12->GetXaxis()->SetLabelSize(0.05);
+   histo_3pt400__12->GetXaxis()->SetTitleSize(0.05);
+   histo_3pt400__12->GetXaxis()->SetTitleFont(42);
+   histo_3pt400__12->GetYaxis()->SetLabelFont(42);
+   histo_3pt400__12->GetYaxis()->SetLabelSize(0.05);
+   histo_3pt400__12->GetYaxis()->SetTitleSize(0.05);
+   histo_3pt400__12->GetYaxis()->SetTitleFont(42);
+   histo_3pt400__12->GetZaxis()->SetLabelFont(42);
+   histo_3pt400__12->GetZaxis()->SetLabelSize(0.05);
+   histo_3pt400__12->GetZaxis()->SetTitleSize(0.05);
+   histo_3pt400__12->GetZaxis()->SetTitleFont(42);
+   histo_3pt400__12->Draw("SAMEHIST");
+   
+   TLegend *leg = new TLegend(0.55,0.65,0.9,0.9,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextFont(62);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(0);
+   TLegendEntry *entry=leg->AddEntry("histo_3pt50","EFT D5 m_{DM} = 150 GeV","l");
+
+   ci = TColor::GetColor("#0000ff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(2);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(62);
+   entry=leg->AddEntry("histo_3pt400","Z' m_{DM} = 150 GeV","l");
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(2);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(62);
+   leg->Draw();
+   canvas5->Modified();
+   canvas5->cd();
+   canvas5->SetSelected(canvas5);
+}
