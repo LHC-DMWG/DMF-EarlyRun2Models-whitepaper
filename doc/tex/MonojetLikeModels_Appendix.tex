@@ -161,7 +161,8 @@ a discussion.
 % \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
 % \end{itemize}
 
-\newthought{Sampling Considerations for Heavy Narrow Mediators}\label{thought:heavynarrowmediators}
+\subsection{Sampling Considerations for Heavy Narrow Mediators}
+\label{thought:heavynarrowmediators}
 %Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
 %\MET distribution for a $\mMed=5$~\tev mediator
 %once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
@@ -214,6 +215,8 @@ LHE file production.  Also, provide the \pythiaEight configuration to
 produce hadronic events.
 
 The validation of matching has been performed extensively by the collaborations for a large number of SM and BSM models, and need not be reproduced here.
+
+\Todo{CD: I would like to uncomment the details on the implementation of CKKW-L matching as this is what was done in ATLAS so far. }
 
 
 %% \subsubsection{Implementation of the CKKW-L matching}
@@ -361,7 +364,7 @@ Figure\,\ref{fig:RatioKine_D5} shows the \MET distribution of the samples at $\M
 %While there is a $\sim10\%$ difference observed between the samples with up to 1 parton and up to 3 partons at low $\MET$, only marginal difference is seen between the samples generated with up to 2 and 3 partons.
 
 With an event selection requiring \MET and the leading jet \pT being larger than $250\,\gev$ and allowing for up to 3 jets with $\pT>30\,\gev$, the sample generated with up to 1 parton has 17.4\% smaller yield compared to the sample with up to 3 partons, while the yield of the sample with up to 2 partons is only 2.2\% smaller.
-Note the jet multiplicity cut is importnat here as the agreement between the two samples improves at higher \MET when the cut is not applied.
+Note the jet multiplicity cut is important here as the agreement between the two samples improves at higher \MET when the cut is not applied.
 %At \MET>400\,\gev$, 0+1 parton emission has 16.8\% yield less and 0+1+2 parton emission has 2.4\% less compared to 0+1+2+3 parton emission. With $\MET>600\,\gev$, 0+1 parton emission has 16.5\% yield less and 0+1+2 parton emission has 2.9\% less compared to 0+1+2+3 parton emission. The same numbers hold if a symmetric cut is added on leading jet transverse momentum.
 A similar comparison is shown in Fig.\,\ref{fig:RatioKine_D5_2} for the jet multiplicity in the events with the leadning jet $\pT>250\,\gev$, where an agreement at the level of $\sim3\%$ between the samples with up to 2 and 3 parton emissions is observed for number of jets up to 7.
 This justifies it is sufficient to produce samples with up to 2 parton emissions only at the generator level and ignore generating higher parton emissions.
