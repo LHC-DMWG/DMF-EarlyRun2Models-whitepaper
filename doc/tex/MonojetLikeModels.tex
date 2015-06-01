@@ -218,9 +218,19 @@ Differences in kinematic distributions are expected only close to the transition
 \label{fig:monojet_scan_V_g}
 \end{figure}
 
-When small coupling strengths are combined with extremely heavy mediators, one must take particular care to integrate over all values of the dark matter pair invariant mass, down to the lowest values for which the \MET satisfies threshold requirements. See the Appendix \ref{sec:monojet_implementation} page \pageref{thought:heavynarrowmediators} for details.
+%When small coupling strengths are combined with extremely heavy mediators, one must take particular care to integrate over all values of the dark matter pair invariant mass, down to the lowest values for which the \MET satisfies threshold requirements. See the Appendix \ref{sec:monojet_implementation} page \pageref{thought:heavynarrowmediators} for details.
 
-%\Todo{move this paragraph to appendix (and leave the previous one here as it talks about 5 TeV samples that we recommend and compares the shape to EFT)}
+Special care needs to be taken when coupling strengths are combined with extremely heavy mediators.
+Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
+\MET distribution for a $\mMed=5$~\tev mediator
+once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
+Such heavy mediators, although inacessible by the LHC data, are interesting since they provide a good approximation for benchmark EFT models.
+The observed difference among the simplified models in the plot arises from the fact that the region of low invariant masses of the Dark Matter pair, $m_{\bar{\chiDM}\chiDM}$, is suppressed due to narrow Breit-Wigner peak that only probes a narrow window of parton distribution functions. For wider mediators, the low mass region is significantly enhanced by parton distribution functions at low Bjorken $x$, as illustrated in Fig.\,\ref{fig:monojet_mchichi}(a).
+This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different \MET shape.
+%In general, for such extreme parameter choices the EFT model should give the correct answer.
+Furthermore, Fig.\,\ref{fig:monojet_narrow} compares the vector model with 5~\tev mediator to the D5 EFT sample and reveals that the simplified models with larger mediator widths (e.g. for couplings of 1 where $\Gamma_{\rm{min}}/\mMed\sim0.5$) are the ones resembling the kinematics of contact interactions. This is because the production in the EFT model is always off-shell, i.e. no peak in the $m_{\bar{\chiDM}\chiDM}$ distribution is present.
+In case of narrow width mediators, e.g. $\Gamma_{\rm{min}}/\mMed\sim0.05$, even larger mediator masses need to be chosen in order to significantly suppress the peak in the $m_{\bar{\chiDM}\chiDM}$ distribution and reproduce the kinematic shapes of an EFT model. Figure\,\ref{fig:monojet_mchichi}(b) verifies that the choice of 10~\tev mediator mass is sufficient to achieve that.
+
 
 %\Todo{Refer to results of ongoing study in Section 6.}
 %CD: commented out, we have to ask for having 7 TeV mediators
@@ -249,13 +259,17 @@ When small coupling strengths are combined with extremely heavy mediators, one m
 
 \begin{figure}
 \centering
+\subfloat[]{
 \includegraphics[width=0.45\textwidth]{figures/monojet/mxx.eps}
+\label{fig:monojet_mchichi_a}}
+\hfill
+\subfloat[]{
 \includegraphics[width=0.45\textwidth]{figures/monojet/TruthShat_compEFTvsZprime_DM150_narrow.eps}
-\caption{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths (left).
-Similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$. An EFT sample is also displayed in the latter case. The distributions are normalised to unit area.}
+\label{fig:monojet_mchichi_b}}
+\caption{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths (a).
+Similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$ (b). An EFT sample is also displayed in the latter case. The distributions are normalised to unit area.}
 \label{fig:monojet_mchichi}
 \end{figure}
-\Todo{describe the plots (update the right one) and add back the paragraph relevant for the choice of the sample resembling EFT!!!}
 
 
 
