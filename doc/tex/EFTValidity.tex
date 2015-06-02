@@ -40,9 +40,9 @@ based on collider data~\footnote{Comparisons between constraints from different 
 Experiments that directly probe the nucleon-dark matter scattering cross section 
 are testing the regime of small momentum transfers, where the EFT approximation always holds.  
 Collider experiments, though, are sensitive to large momentum transfers: this is a regime where careful 
-treatment is necessary since the condition of applicability of the EFT may not hold~\footnote{
+treatment is necessary since the condition of applicability of the EFT may not hold.\footnote{
 Furthermore, mapping EFT results from high to low momentum requires particular care for some of the operators, 
-see Ref.~\cite{D'Eramo:2014aba} for a thorough discussion.}.
+see Ref.~\cite{D'Eramo:2014aba} for a thorough discussion.}
 Therefore, especially in the case when constraints from different experiments are compared, 
 we suggest to assess the applicability of EFT benchmark models, rather than abandon them.
 %As we have learned, EFTs do not truly represent a model-independent representation of the data for the current collider sensitivity.
@@ -52,13 +52,14 @@ using one
 of the several prescriptions in the literature~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}, 
 especially when constraints from other experiments are compared.
 
-We first illustrate the problem that can arise with EFTs at colliders by considering an effective interaction
-$$ {\cal L}_\textrm{int} = (\bar\psi\gamma_\mu\psi)(\bar\chiDM\gamma^\mu\chiDM) {g\over \Lambda^2}$$
-that couples SM $\psi$ and DM $\chi$ fields.\footnote{The \textit{exact} operator chosen is not important.}   The strength of this interaction can
-be parametrized by $\displaystyle {1\over \Mstar^2} = {g\over \Lambda^2}$.
+We first illustrate the complications
+that can arise with EFTs at colliders by considering an effective interaction
+$$ {\cal L}_\textrm{int} = {(\bar q\gamma_\mu q)(\bar\chiDM\gamma^\mu\chiDM) \over \Mstar^2}
+= (\bar q\gamma_\mu q)(\bar\chiDM\gamma^\mu\chiDM) {g\over \Lambda^2}$$
+that couples quarks and DM $\chi$ fields.\footnote{The \textit{exact} operator chosen is not important.}   The strength of this interaction is
+parametrized by $\displaystyle {1\over \Mstar^2} = {g\over \Lambda^2}$.
 A monojet signature can be generated from this operator
-by applying perturbation theory in the QCD coupling (assuming $\psi$ is
-a quark, for example).
+by applying perturbation theory in the QCD coupling.
 An experimental search will place a limit on \Mstar.   
 For a fixed \Mstar, a small value of $g$ will correspond
 to a small value of $\Lambda$.   The EFT approximation breaks down
@@ -69,7 +70,8 @@ if $Q>\Lambda$, where $Q$ is a typical hard scale of the process.
 The limit on small $g$ can only be reliable if the
 kinematic region $Q>\Lambda$ is removed from the event generation.
 However, if a fraction of events is removed from the prediction,
-the corresponding value of $g$ must increase.
+the corresponding value of $g$ must increase to match the experimental
+limit on \Mstar.
 On the other hand, if, for the same value of \Mstar, a large $\Lambda$
 is assumed so that the full set of events fulfill the EFT validity condition,
 a large value of
@@ -98,8 +100,8 @@ We then propose a recommendation for the presentation of EFT results for early R
 %and can be viewed as a stop-gap measure until the simplified models could be fully simulated.
 %CD: I am not sure of this sentence, because the simplified models were there but we were just not using them. 
 In the approach described in Ref.~\cite{Busoni:2014sya},
-the main modification to the EFT prediction is to incorporate the
-propagator of a relatively light mediator.
+the EFT prediction is modified to incorporate the effect of a
+propagator for a relatively light mediator.
 For a tree-level interaction between DM and
 the SM via some mediator with mass \mMed, 
 the EFT approximation corresponds to expanding the propagator
@@ -131,7 +133,9 @@ to derive a new, more conservative limit on
 $\Mstar$ as a function of $(\mDM, \gDM \gq)$.
 %TODO SM: I am uncomfortable with saying ``ensure the validity.'' CD: me too. However "improve the reliability of the validity" is cumbersome so I changed it.
 
-For the example D5-like operator, $\sigma \propto \Mstar^{-4}$, and there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${\Mstar}$.
+For the example D5-like operator,
+where the cross section $\sigma$ scales as $\Mstar^{-4}$,
+there is a simple rule for converting a rescaled cross section into a rescaled constraint on ${\Mstar}$.
 if the original limit is based on a simple cut-and-count procedure.
 %CD: I would keep it
 Defining $\sigma_{\rm EFT}^{\rm cut}$ as the cross section truncated such that all events pass the condition $\sqrt{\gDM \gq} \Mstar^{\rm rescaled} > \Qtr$, we have
@@ -160,11 +164,14 @@ in the non-truncated EFT results.
 %Since this method uses the physical couplings and energy scale $\Qtr$, it gives the strongest possible constraints in the EFT limit while remaining robust by ensuring the validity of the EFT approximation.
 %TODO: Too strong of a statement? CD: more like - this does not parse. Removed.
 
-Currently, simplified models are available for comparison with
-the data, and since knowledge of the simplified models is needed,
+Currently, simplified models (including the full effect
+of the mediator propagator) are available for comparison with
+the data, and since knowledge of the simplified models is needed
+for the truncation procedure,
 there is no reason to apply this prescription.   Instead, the
 simplified model limit for large \Mstar can be presented for
 interpretation in terms of EFT operators.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{EFT truncation using the center of mass energy}
@@ -180,7 +187,6 @@ it is more conservative to place a limit on the total center
 of mass energy $E_\text{cm}$ of the DM production process.
 Furthermore, the direct connection between the mass scale of
 the EFT validity, \Mcut, and the
-
 mass scale that normalizes the EFT operator, \Mstar, is unknown.
 For such cases,~Refs.\cite{Racco:2015dxa,Berlin:2014cfa} proposed
 a procedure to extract model independent and consistent bounds within the EFT
@@ -241,6 +247,8 @@ the DM velocity \cite{Shoemaker:2011vi}.
 Constraints for other operators have also been derived \cite{Endo:2014mja}.
 This constraint on \Mstar still is open to interpretation, since the
 relation to \Mcut is not resolved, except for a specific simplified model.
+Derived limits on \Mstar should be compared to this unitarity bound to
+check for consistency.
 
 
 \section{Recommendation for presentation of EFT results} %change this title
@@ -287,9 +295,10 @@ Numerically, for 14 TeV studies, we have
 determined that to fully reproduce the kinematics of a contact
 interaction and have no remaining dependence on the presence of a resonance
 that is as narrow as the choice made in Section~\ref{sub:parameter_scan_monojet} (\gq = 0.25 and \gDM = 1),
-the mediator mass needs to be at least 10 TeV. A comparison of the main kinematic variables for the \schannel vector 
-mediator model with a width of 0.1 \mMed~\footnote{The use of a fixed width rather than the minimal width is exclusive of these plots} 
-is shown in Fig.~\ref{fig:EFT_kinematics}.
+the mediator mass needs to be at least 10 TeV.
+A comparison of the main kinematic variables for the \schannel vector 
+mediator model with a width of 0.1 \mMed
+is shown in Fig.~\ref{fig:EFT_kinematics}.\footnote{The use of a fixed width rather than the minimal width is exclusive of these plots.} 
 
 %CD: do we want to add more of the discussion here on why this happens? I would personally keep it short.
 

@@ -1,42 +1,57 @@
-\section{\texorpdfstring{Implementation of \schannel and \tchannel models for \MET+X analyses}{Implementation of \schannel and \tchannel models for MET+X analyses}}
+\section{\texorpdfstring{Implementation of \schannel and other models for \MET+X analyses}{Implementation of \schannel and \tchannel models for MET+X analyses}}
 
-There are several matrix element implementations of the
-DM production through \spinzero and \spinone mediators. This Appendix collects the 
-generator recommendations and available implementations
-of these models for different final states, together with studies 
-of the matching between the matrix element and the parton shower. 
+In the studies to date, a fair number of different Monte Carlo tools have
+been used to simulate signals.   In this Chapter, we make recommendations
+and provide settings to promote uniformity in the simulations produced by
+the collaborations.  These recommendations are based on the current
+status of the available codes.   We also aim for simplicity, so that fewer
+tools need be used if the theoretical quality does not suffer.
 
-\subsection{Implementation of models for mono-jet signature}
+
+\subsection{Implementation of ``s-channel'' models for mono-jet signature}
 \label{sec:monojet_implementation}
 
-For a \spinone mediator, the implementation in \powheg generates
-DM pair production with 1 parton at next-to-leading order (NLO), 
-whilst \madgraph and \mcfm are at leading order (LO)~\footnote{\spinzero and \spinone 
+These models include those referred to as \modelDMV, \modelDMA, \modelDMS and
+\modelDMP and discussed in Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar}.
+The necessary simulations are geared for monojet analyses, i.e. those with a few jets and \MET{}.   In particular, the \MET{} spectrum depends upon the accurate simulation of parton radiation from the initial state.   For the \modelDMV and
+\modelDMA models, we recommend \powheg \cite{Haisch:2013ata},
+since it includes NLO corrections for these models.
+The NLO corrections result in a substantial reduction
+in the dependence on the choice of the renormalization and factorization
+scale and hence the theoretical uncertainty on the signal prediction.
+For the central choice of renormalization and factorization scales,
+the NLO corrections also provide a minor enhancement in the cross section.\footnote{\spinzero and \spinone 
 mediator models will also be provided 
-in the near future to the same precision in \madgraph~\cite{Alwall:1405.0301}.}. As shown in \powheg Ref.\,\cite{Haisch:2013ata}, including NLO corrections result in an enhancement in the cross section as compared to LO and though this is not significant, it does lead to a substantial reduction in the dependence on the choice of the renormalization and factorization scale and hence the theoretical uncertainty on the signal prediction. 
-Since NLO calculations are available for the process in \powheg, we recommend to proceed with \powheg as the generator of choice. 
+in the near future to the same precision in \madgraph~\cite{Alwall:1405.0301}.}
 
-For a \spinzero mediator in the mono-jet final state, the top-quark loop is the most important consideration.
-The matrix element implementation of the \schannel \spinzero mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} and \powheg~\cite{Haisch:2015ioa} with the full top-loop calculation at LO.
-The \powheg and \mcfm implementations include 
-%the finite
-%top quark mass dependence 
-the full calculation of the top loop 
-for DM pair production with 1 parton at LO.
-For consistency with the \spinone generation, we recommend using \powheg
-for this case as well.
+For the \modelDMS and \modelDMP models, the lowest order process
+already involves a one-loop amplitude in QCD.
+Because of this complexity, NLO calculations for these signals do not
+yet exist with a parton shower interface.
+For these spin-0 mediators in the mono-jet final state,
+the top-quark loop is the most important consideration.
+The matrix element implementation of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} and \powheg~\cite{Haisch:2015ioa} with the full top-loop calculation at LO.
+The \powheg and \mcfm implementations include the finite
+top quark mass dependence for DM pair production with 1 parton at LO.
+For consistency with the spin-1 generation, we recommend using \powheg.
 
 Here, we document some specific settings needed to run the \powheg 
 generation for the Dark Matter models. POWHEG parameter cards for all models
-can be found on the Forum SVN repository
-~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
+can be found on the Forum SVN
+repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
 
+\subsubsection{\powheg configuration for DM models}
+
+The lastest \powheg release is available for download using the
+instructions at
+\url{http://powhegbox.mib.infn.it/}.   The forum recommends
+using at least version \texttt{x.xxx}.
 
 \begin{itemize}
-\item \powheg can handle the generation of events (be it at LO or NLO) 
-in two different modes explained in the following. The second one 
-is the recommended one. The relevant keywords in the input card are 
-\bornsuppfact and \bornktmin. 
+
+\item \powheg can generate either unweighted (uniformly--weighted) or
+weighted events.  
+The relevant keywords in the input card are \bornsuppfact and \bornktmin. 
 
 \begin{enumerate}
 \item unweighted events: %keywords
@@ -45,17 +60,17 @@ is the recommended one. The relevant keywords in the input card are
 \bornktmin <PT>
 
 This runs the program in the most straightforward way,
-but most likely it is not the more convenient choice, as will be
+but it is likely not the more convenient choice, as will be
 explained below. \powheg will generate unweighted events using a sharp
 lower cut (with value \texttt{PT}) on the leading-jet \pT. Since this is a
-generation cut, the user should make sure that the value used for
-\bornktmin is lower than the actual analysis cut to be eventually
-used. It is good practice to use as a value in the input card a
-transverse momentum 10-20\% smaller than the final analysis cut, and
-check that the final result is independent, by exploring an even
-smaller value of \bornktmin. The drawback of this running mode is that
-it's difficult to populate well and in a single run both the low-\pT
-region as well as the high-pT tail.
+generation cut, the user must check that the choice of \bornktmin
+does not change the cross section for signal events passing analysis selections.
+It is good practice to use as a value in the input card a
+transverse momentum 10-20\% smaller than the final analysis selection
+on \MET{}, and check that the final result is independent, by exploring an even
+smaller value of \bornktmin. The drawback of using this mode is that
+it is difficult to populate well, and in a single run, both the low-\pT
+region as well as the high-\pT tail.
 
 \item weighted events: %keywords
 
@@ -74,51 +89,38 @@ F(\kT)=\frac{\kT^2}{\kT^2+\bornsuppfact^2} \;.
 \end{equation}
 
 In this way, the events at, for instance, low \MET, are suppressed
-but receive an higher weight, which ensures at the same time higher
+but receive higher weight, which ensures at the same time higher
 statistics at high \MET. We recommend to set \bornsuppfact to 1000.
 
-The \bornktmin parameter allows to suppress the low \MET region
-even further by starting the generation at a certain value of \kT also
-in this running mode. It is recommended to set this parameter to half
-the lower analysis \MET cut. For instance for the event selection used in the
+The \bornktmin parameter can be used in conjunction with \bornsuppfact to suppress the low \MET region
+even further.  It is recommended to set \bornktmin to one--half the value of
+the lowest \MET selection. For instance,  for the event selection used in the
 CMS/ATLAS monojet analyses, assuming the lowest \MET region being defined above 300\,GeV, the proposed value for
 \bornktmin is 150.  However, this parameter should be set keeping in
 mind the event selection of all the analyses that will use these
-signal samples and hence a threshold lower than 150 may be required.
+signal samples, and hence a threshold lower than 150 may be required.
 
 \end{enumerate}
 
-%\Todo{Emanuele:``On the usage of fixed or running width. It is my opinion that one
-%	should use fixed widths. Although clearly there are limitations, I
-%	think this goes into the direction of making all as simple and
-%	transparent as possible. Moreover, all the discussions in the last
-%	months as well as the large majority of runs were done with fixed
-%	widths. Since there was some interest over the last couple of weeks,
-%	here is my suggestion for the POWHEG section.''}
-%
-%\Todo{Steve:  The reason I originally asked the question was because we saw about 20 years ago that there were cases when using this prescription was important.  Now, this is mainly for SM particles, but we apply it throughout for non-SM ones.   If we find no significant difference, then we can say it.  But, if we are starting from scratch, why shouldn't we include as much correct physics as we can?}
+
 
 %\begin{itemize}
+
 \item Remove the \runningwidth keyword, or set it to 0, which is the
   default value. Running with fixed widths is the recommended
   option. Although there are limitations, this is the more
   straightforward, simple and transparent option, and it was used for these
   Forum studies. 
 
-  While not recommended, the alternative, a running width for the
+  %  While not recommended,
+  The alternative, a running width for the
   propagator of the \schannel mediator, can be selected by setting
   runningwidth to 1. In this case the denominator of the mediator's
-  propagator
+  propagator is modified:
+  
 \begin{equation*}
-  Q^2 - M^2 + \complexi\,M\,\Gamma
+  Q^2 - M^2 + \complexi\,M\,\Gamma \to   Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M},
 \end{equation*}
-
-is replaced by
-
-\begin{equation*}
-  Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M}
-\end{equation*}
-
 where $Q$ is the virtuality of the mediator, and $M$ and $\Gamma$ are
 its mass and width respectively.  See Ref.~\cite{Bardin:1989qr} for
 a discussion.
@@ -133,135 +135,124 @@ a discussion.
   and \foldy to bigger value (2 for instance). \foldphi can be kept to
   1.
 \item Since the scalar model with top-loop is computed as a leading order process, set \LOevents and \bornonly are set to 1 internally.
-\item One can benefit from the automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs as described in Section\,\ref{sec:TheoryUncertainties}.
+\item One should use the automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs as described in Section\,\ref{sec:TheoryUncertainties}.
+
+\item \texttt{idDM} is the integer that identifies the DM particle in the Monte Carlo event record.  This should be chosen so that other tools can process the \powheg output properly.
 
 \end{itemize}
 
-%%% end of emanuele's edits
 
-% \begin{itemize} 
+\powheg in itself is not an event generator and must be interfaced with a tool that provides parton showering, hadronization, \textit{etc.}   For some time, a
+\pythiaEight \cite{Sjostrand:2014zea} interface
+has existed for \powheg.  The \pythiaEight runtime configuration is
+the following:
 
-% % \begin{itemize}
-% \item The \powheg implementation allows to generate a single sample that provides sufficient statistics in all signal regions. %by optimizing the following two parameters:
-% %\begin{itemize}
-% \powheg generates weighted events and the \bornsuppfact parameter is used to set the event suppression factor according to
-% \begin{equation}
-% F(\kT)=\frac{\kT^2}{\kT^2+\bornsuppfact^2} \;.
-% \end{equation}
-% In this way, the events at, for instance low \MET, are suppressed and receive higher event weights which ensures higher statistics at high \MET. We recommend to set \bornsuppfact to 1000 (\gev).
-% \item The \bornktmin parameter allows to suppress the low \MET region even further by starting the generation at a certain value of \kT. It is recommended to set this parameter  to half the lower analysis \MET cut, for the event selection used in the CMS/ATLAS monojet analyses for instance the proposed value for \bornktmin is 150. However, this parameter should be set keeping in mind the event selection of all the analyses that will use these signal samples and hence a threshold lower than 150 may be required. 
-% %\end{itemize}
+\begin{verbatim}
+POWHEG:veto = 1
+POWHEG:pTdef = 1
+POWHEG:emitted = 0
+POWHEG:pTemt = 0
+POWHEG:pThard = 0
+POWHEG:vetoCount = 100
+SpaceShower:pTmaxMatch = 2
+TimeShower:pTmaxMatch = 2
+\end{verbatim}
+As always, it is recommended to use the latest \pythiaEight release,
+available at \url{http://home.thep.lu.se/~torbjorn/Pythia.html}.
+At the time of this report, the latest version is \texttt{8.209}.
 
-% \item Set \runningwidth to 0.
-% \item Set \masslow and \masshigh to -1.
-% \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the \modelDMV model, respectively. In order to increase speed, set \foldsci and \foldy to 2 and keep \foldphi at 1. 
-% \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 100000, 5, 100000, 5 for the \modelDMStloop model, respectively.
-% \item Allow negative weights for the \modelDMV model by setting \withnegweights to 1.
-% \item Since the \modelDMStloop model is a leading order process, set \LOevents and \bornonly are set to 1 internally.
-% \item Automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs.
-% \end{itemize}
-
-\subsection{Sampling Considerations for Heavy Narrow Mediators}
-\label{thought:heavynarrowmediators}
-%Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
-%\MET distribution for a $\mMed=5$~\tev mediator
-%once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
-%Such heavy mediators, although inacessible by the LHC data, are interesting since they provide a good approximation for benchmark EFT models.
-%The observed difference among the simplified models in the plot arises from the fact that the region of low invariant masses of the Dark Matter pair, $m_{\bar{\chiDM}\chiDM}$, is suppressed due to narrow Breit-Wigner peak that only probes a narrow window of parton distribution functions. For wider mediators, the low mass region is significantly enhanced by parton distribution functions at low Bjorken $x$, as illustrated in Fig.\,\ref{fig:monojet_mchichi}.
-%This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different \MET shape.
-%%In general, for such extreme parameter choices the EFT model should give the correct answer.
-%Furthermore, Fig.\,\ref{fig:monojet_narrow} compares the vector model with 5~\tev mediator to the D5 EFT sample and reveals that the simplified models with larger mediator widths (e.g. for couplings of 1) are the ones resembling the kinematics of contact interactions. This is because the production in the EFT model is always off-shell, i.e. no peak in the $m_{\bar{\chiDM}\chiDM}$ distribution is present.
-
-%However, the complete story of generating heavy narrow mediators is a cautionary tale about understanding the details of the generator tools.
-Observations of kinematic changes or cross section suppression in the generated samples do not always come from physics, but may be a consequence of under-sampling phase space in the generator implementation,
-where a cutoff for the regions far away from the mediator mass is generally used. One must take care to correctly set the width of the Breit-Wigner used for the sampling.
-This is illustrated in Fig.\,\ref{fig:monojet_mchichi2} showing the invariant mass of the Dark Matter pair in the samples generated in \madgraph for a $\mMed=7$~\tev scalar mediator
-with different coupling strengths, using the default settings \texttt{bwcutoff} equal to 15.
-In all cases, it is expected to observe a peak around the mediator mass with a tail extending to $m_{\bar{\chiDM}\chiDM}\rightarrow0$, significantly enhanced by parton distribution functions at low Bjorken $x$. For coupling strength 1 and 3, the massive enhancement at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ implies that
-resonant production at $m_{\bar{\chiDM}\chiDM}=7$~\tev is statistically suppressed such that barely any events are generated there. However, for narrower mediators with couplings below 1, the peak around 7~\tev is clearly visible in the generated sample and the dominant tail at $m_{\bar{\chiDM}\chiDM}\rightarrow0$ is artificially cut off, leading to unphysical cross section predictions and kinematic shapes.
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.95\textwidth]{figures/monojet/mphi_vs_g_xsecwgt_7tev.eps}
-\caption{Invariant mass of the Dark Matter pair in the scalar mediator samples with $\mDM=1$~\gev, $\mMed=7$~\tev and different coupling strengths.}
-\label{fig:monojet_mchichi2}
-\end{figure}
-
-
-
-
-\subsection{Parton matching studies}
+\subsection{Implementation of models with matching}
 \label{sec:monojet_parton_match}
 
-%Whenever models for mono-jet final states are generated in  \madgraph,
-%it is necessary to avoid double counting the partons from matrix elements and parton showering in \pythiaEight
-%using a parton matching technique. Based on the comparative study 
-%in Ref.\,\cite{Alwall:0706.2569}, there is
-%some advantage to using the CKKW-L matching scheme.
-%%\cite{Alwall:1405.0301}
-%However, the current CKKW-L matching scheme is not amenable to the
-%event generation model of the experimental collaborations.
-%Most large scale event generation is performed using LHE files that
-%have a mix (or ``soup'') of different parton level processes in each file.
-%This is easy to handle using the MLM matching scheme provided as
-%a \pythiaEight plugin.
+For the models discussed in the previous section, it is important
+to calculate the hard process as accurately as possible in QCD.
+For many other signal models, the \MET{} signature depends more
+upon the production and decay of the mediator.  Also, for some models,
+no NLO+parton shower implementations currently exist.  In these cases,
+one usually resorts to a LO+parton shower implementation, sometimes
+supplemented by several LO processes matched with the parton shower.
 
-Since \madgraph provides a flexible and easy to use framework for implementing new models via the {\sc FeynRules} package, it is highly relevant to comment on parton matching which is important to consider whenever events with jets in the final state are produced. The parton matching is performed in order to avoid double counting of the partons from matrix elements and parton showering in \pythiaEight.
+Here, we consider the example of an EFT model produced in association
+with up to 2 additional QCD partons.   A Monte Carlo sample based on
+this model could be used to cross-check a similar \powheg sample, for example.
+The methodology described here could also be used for the \tchannel model
+discussed in Sec.~\ref{sec:monojet_t_channel},
+
+For the calculation of tree-level, signal models, we recommend
+\madgraph.
+\madgraph provides a flexible and easy--to--use framework for implementing
+new models via the {\sc FeynRules} package.
+\madgraph can produce both LO and NLO calculations, though not all signal models
+can be generated currently at NLO.\footnote{For truly NLO, matched samples, a different
+  matching scheme would be used.}
+The parton matching is performed in order to avoid double counting of the
+partons from matrix elements and parton showering.
 Several parton matching techniques are available.
-Based on the comparative study in Ref.\,\cite{Alwall:0706.2569}, there is some advantage to using the CKKW-L matching scheme.
-The text below describes in detail the implementation of the CKKW-L matching in \madgraph and \pythiaEight. On an example of mono-jet EFT model, it also provides a template study of finding the optimal matching scale for the event generation and discusses the impact of the parton emission multiplicity chosen at the matrix element level. Similar studies may be performed for the MLM matching.
+Based on some comparative studies \,\cite{Alwall:0706.2569},
+there is some advantage to using the CKKW-L matching scheme \cite{Lonnblad:2011xx}
+implemented in \pythiaEight.  Alternatively, one can use the $k_T$-MLM scheme also
+implemented in \pythiaEight.
 
 
-%\subsubsection{Implementation of MLM matching}
-%\label{sec:match_implementation}
-%
-%\Todo{This is probably a TODO for Steve M.}
-%
-%Here, add the process generation steps, and the matching parameters for
-%LHE file production.  Also, provide the \pythiaEight configuration to
-%produce hadronic events.
-%
-%The validation of matching has been performed extensively by the collaborations for a large number of SM and BSM models, and need not be reproduced here.
-%
-%\Todo{CD: I would like to uncomment the details on the implementation of CKKW-L matching as this is what was done in ATLAS so far. }
+\subsubsection{Generation of the LHE file}
+
+The example presented here is a D5 EFT model, and
+includes tree-level diagrams with $\chi\bar\chi$+0,1,2 partons.
+The model is encapsulated as a UFO file in the SVN repository (ref here).
+\madgraph, like \powheg, is not in itself and event generator, but must be interfaced
+with an event generator through an LHE file.  The production of the LHE file proceeds
+through setting the process parameters and the run parameters.
+
+The process parameters are:
+\begin{verbatim}
+import model MODELNAME
+generate p p > chi chi~ [QCD] @0
+add process p p > chi chi~ j [QCD] @1
+add process p p > chi chi~ j j [QCD] @2
+\end{verbatim}
+
+The runtime parameters are more numerous, and define the
+collider properties, PDF sets, etc.   The specific parameters
+needed for matching are, for example:
+\begin{verbatim}
+ickkw = 0
+ktdurham = matching scale
+dparameter = 0.4
+dokt = T
+ptj=20
+drjj=0
+mmjj=0
+ptj1min=0
+\end{verbatim}
+For different kinds of matching, a different choice of \texttt{ickkw} and
+related parameters would be made.
 
 
 \subsubsection{Implementation of the CKKW-L matching}
 \label{sec:match_implementation}
 
 
- To illustrate the settings related to parton matching, the EFT D5 samples are generated with \madgraph version 2.2.2 and showered in \pythiaEight.201. The technical implementation of the CKKW-L $k_t$-merging scheme is shown below.
- \begin{itemize}
- \item On the generator side:\\
- \texttt{ickkw = 0} \\
- \texttt{ktdurham = }matching scale \\
- \texttt{dparameter = 0.4} \\
- \texttt{dokt = T} \\
- \texttt{ptj=20} \\
- \texttt{drjj=0} \\
- \texttt{mmjj=0} \\
- \texttt{ptj1min=0} \\
+To illustrate the settings related to parton matching, the EFT D5 samples were generated with \madgraph version 2.2.2 and showered in \pythiaEight.201.
 
- \item On the parton showering side in \pythiaEight.201:\\
- \texttt{Merging:ktType           = 1}\\
- \texttt{Merging:TMS              = }matching scale\\
- \texttt{1000022:all = chi chi\~{ } 2 0 0 30.0 0.0 0.0 0.0 0.0}\\%, where 2 stands for the DM particle spin and 30 stands for its mass in GeV\\
- \texttt{1000022:isVisible = false}\\
- \texttt{Merging:doKTMerging      = on}\\
- \texttt{Merging:Process          = pp>\{chi,1000022\}\{chi\~{ },-1000022\}}\\
- \texttt{Merging:nJetMax          = 2}\\
- \end{itemize}
- The matching scales should be the same for the generation and parton showering. In \madgraph, the particle data group ID \texttt{1000022} is used for weakly interacting dark matter candidates. The dark matter particle is defined in \pythiaEight accordingly using the commands above that specify an invisible spin \textonehalf{} particle of 30\,\gev mass. The \texttt{Mergin:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. Therefore, the following three processes need to be generated in this case:\\
+The \pythiaEight parameters for the CKKW-L $k_T$-merging scheme are:
+\begin{verbatim}
+Merging:ktType           = 1
+Merging:TMS              = matching scale
+1000022:all = chi chi~ 2 0 0 30.0 0.0 0.0 0.0 0.0 
+1000022:isVisible = false
+Merging:doKTMerging      = on
+Merging:Process          = pp>{chi,1000022}{chi~ -1000022}
+Merging:nJetMax          = 2
+\end{verbatim}
+The matching scales should be the same for the generation and parton showering.
+In the model implementation, the particle data group ID \texttt{1000022} is used for weakly
+interacting dark matter candidates.   Since this is a Majorana particle by default (with no
+corresponding anti-particle), and the model produces a DM Dirac fermion, the particle properties
+are changed accordingly.  Also, the DM mass is set to 30\,\gev.
+The \texttt{Merging:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. 
 
- \texttt{p p > chi chi\~{ }}\\
 
- \texttt{p p > chi chi\~{ } j}\\
-
- \texttt{p p > chi chi\~{ } j j}\\
- Note that the \madgraph cards and \pythiaEight commands are identical for all three samples.
-
- \subsubsection{Matching scale}
-
- In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_t$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
+ In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_T$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
 
  Two examples of differential jet rates, using matching scale 30\,\gev and 80\,\gev, from the EFT D5 sample generated as described in the previous section are given in Fig.\,\ref{fig:CKKW_D5_30} and \ref{fig:CKKW_D5_80}, respectively.
  Although a kink is visible around the matching scale value in both cases, the 80\,\gev scale leads to smoother distributions. 
@@ -339,8 +330,8 @@ The text below describes in detail the implementation of the CKKW-L matching in 
  \end{figure}
 
 
- \subsubsection{Parton emission multiplicity}
- \label{sec:monojet_parton_emission}
+%% \subsubsection{Parton emission multiplicity}
+%% \label{sec:monojet_parton_emission}
 
  The prescription for the event generation given in Section\,\ref{sec:match_implementation} starts with the emission of 0 partons and ends with maxim 2 partons in addition. Producing the samples separately allows to investigate the relative composition of the individual samples in various parts of the phase space. Figure\,\ref{fig:Kine_D5_80} shows the \MET distribution of the EFT D5 sample with the matching scale at 80\,\gev. The plot reveals that the 0-parton sample gives the dominant contribution in the region below the matching scale value that rapidly decreases at higher \MET. Assuming the lowest analysis \MET cut in Run-2 mono-jet analyses at 300\,\gev, the generation of the 0-parton emission sample can be safely omitted as it only gives $<1\%$ contribution at $\MET>300\,\gev$. For the 1- and 2-parton emission samples, one can use a generator cut on the leading parton $\pT$, \texttt{ptj1min}, in order to avoid generating low \MET events that are irrelevant for the analysis.
 
@@ -365,7 +356,7 @@ The text below describes in detail the implementation of the CKKW-L matching in 
 
 
 In order to describe the signal kinematics correctly and save time during MC production, the parton emissions will only be generated up to a certain multiplicity. The higher multiplicity samples usually have small enough cross sections and the corresponding parts of the phase space can be sufficiently approximated by parton showering in \pythiaEight.
-A dedicated study comparing samples generated with up to 1-, 2-, or 3-parton multiplicities was performed, using again the settings for the CKKW-L $k_t$-merging with the 80\,\gev matching scale and the \texttt{Merging:nJetMax} parameter adjusted accordingly.
+A dedicated study comparing samples generated with up to 1-, 2-, or 3-parton multiplicities was performed, using again the settings for the CKKW-L $k_T$-merging with the 80\,\gev matching scale and the \texttt{Merging:nJetMax} parameter adjusted accordingly.
 Figure\,\ref{fig:RatioKine_D5} shows the \MET distribution of the samples at $\MET>250\,\gev$.
 
 %While there is a $\sim10\%$ difference observed between the samples with up to 1 parton and up to 3 partons at low $\MET$, only marginal difference is seen between the samples generated with up to 2 and 3 partons.
@@ -414,27 +405,27 @@ This justifies it is sufficient to produce samples with up to 2 parton emissions
 	\label{fig:RatioKine_D5_2}
 \end{figure}
 
-
-
-
 \subsection{Implementation of models for EW final states}
 \label{sec:EW_implementation}
 
 These models are generated at leading
-order with \madgraph 2.2.2, using Pythia8 for the parton shower.
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower.
 Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
-No parton matching is required. 
+No parton matching is currently implemented, since the visible signal comes from
+the production of a heavy SM boson.   As a result, no special runtime configuration is needed
+for \pythiaEight.
 
 \subsection{\texorpdfstring{Implementation of models with heavy flavor quark signatures}{Implementation of models for heavy flavor quark signatures}}
 \label{sec:TTBar_implementation}
 
 The models for the $t \bar{t}$ and $b \bar{b}$ signatures are generated at leading
-order with \madgraph 2.2.2, using Pythia8 for the parton shower. No matching is needed. 
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is currently
+implemented.
 Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_DMTTBar}.
-No parton matching is required in this case. 
 
-We simulate the bFDM model at LO+PS using the {\tt MG5\_aMC} v2.2.3 generator and Pythia8 for the parton shower. 
-Parton matching is needed in the case of the $b\bar{b}$+\MET{} final state, but it has not been studied within the Forum. 
+We simulate the bFDM model at LO+PS using \madgraph v2.2.3 and \pythiaEight for the parton shower. 
+Parton matching is needed in the case of the $b\bar{b}$+\MET{} final state, but it has not been
+studied within the Forum. 
 The corresponding card files can be found 
 on the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
 
@@ -505,14 +496,14 @@ In all cases, it is recommended not to handle the $h$ decay through \madgraph as
 it does not include the proper $h$ branching ratios, or, if using \madgraph, then the 
 resulting cross section should be rescaled to match onto the correct branching ratio.
 
-\newthought{\madgraph details for scalar mediator Higgs+MET model}
+\subsubsection{\madgraph details for scalar mediator Higgs+MET model}
 
 In this model, the contribution from the $gghS$ box is included through an effective 
 Lagrangian evaluated in the large $m_t$ limit. 
 This may overestimate the rates of the $h + \MET$ signal~\cite{Haisch:2012kf}, but a full evaluation
 is left to future studies. 
 
-\newthought{\madgraph details for 2HDM Higgs+MET model}
+\subsubsection{\madgraph details for 2HDM Higgs+MET model}
   
  The two couplings that can be changed in the implemented model follow the nomenclature below:
  \begin{itemize}
@@ -542,39 +533,9 @@ The other masses are unchanged and do not affect the result.
 \label{sub:EFTModels}
 
 These models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is performed. 
-Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is currently
+implemented.
+Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs}
+for operators with Higgs+MET final states
 and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
-
-
-%\section{Single Top Models}
-%TODO: CD - this will go in the single top section
-%
-%Card files for \madgraph are provided on the Forum SVN repository~\cite{ForumSVN_EWMonoTop}, 
-%corresponding to the Lagrangian from~\cite{AndreaFuksMaltoni}. 
-%Each coupling constant of this model can be set via the parameter card and 
-%the blocks which are relevant for the two models used for the experimental searches are described below.
-%The relevant parameters in the \madgraph parameter cards, also expressed in the notation introduced in the 
-%previous Section, are as follows for the two models considered.
-%
-%\begin{enumerate}
-%
-%\item Resonant scalar model described by the Lagrangian~\eqref{eq:lagrangianResonant}
-%  \begin{itemize}
-%  \item \texttt{AQS} and \texttt{BQS}: $3\times 3$ matrices (flavor space) fixing the coupling of the scalar $\phi$ ($S$ stands for scalar) and $down$-type quarks ($Q$ stands for quarks), previously called $a^q/b^q_{SR}$.
-%  \item \texttt{A12S} and \texttt{B12S}: $3\times 1$ matrices (flavor space) fixing the coupling of the new fermion $\chiDM$ (where $12$ stands for spin-$1/2$ fermion) and $up$-type quarks, previously called $a^{1/2}_{VR}$.
-%  \end{itemize}  
-%  
-%\item Non-resonant vectorial model described by the Lagrangian~\eqref{eq:lagrangianNonResonantVector}
-%\begin{itemize}
-%\item \texttt{A1FC} and \texttt{B1FC}: $3\times 3$ matrices (flavor space) fixing the coupling of the vector $V$ ($1$ stands for vector) and $up$-type quarks, previously called $a^1_{FC}$. 
-%\item particle name: the dark matter candidate $\chiDM$ is not implemented %(as this model assumes $\BR{V}{\chiDM\chiDM}=100\%$)
-%\end{itemize}
-%
-%\end{enumerate}
-%
-%The width of the scalar resonance and of the new vector are set to all allowed decays in the ATLAS implementation,
-%while the only allowed decay in the CMS implementation to the new fermion and a top quark for the resonant model. 
-%\Todo{Continue discussion between ATLAS and CMS to reach an agreement, or include instructions to compare results.}
-
 
