@@ -154,9 +154,10 @@ In this section, the differences between the vector and axial-vector models are 
 Furthermore, it is possible to consider other models in which mixed vector and axial-vector couplings are considered, for instance the couplings to the quarks are axial-vector whereas those to DM are vector. Such comparisons are also presented.
 
 The samples with pure vector and pure axial-vector couplings are compared for $\mMed=100$~\gev and different Dark Matter masses in Fig.\,\ref{fig:monojet_VAmodels}. %The minimal width between the samples with the same Dark Matter and mediator masses differ only at the percent level.
-No differences in the shape of the \MET distributions are observed between the samples with coincident masses. \Todo{Do we want to propose to generate one model only and refer to the cross section tables in HEPData repository for the other?}
+No differences in the shape of the \MET distributions are observed between the samples with coincident masses. 
+%\Todo{Do we want to propose to generate one model only and refer to the cross section tables in HEPData repository for the other?}
 In the case of the on-shell Dark Matter pair production where $2\mDM\ll\mMed$, the cross sections of the pure vector and pure axial-vector models are similar. With increasing Dark Matter mass towards the $2\mDM=\mMed$ transition and beyond into the off-shell production regime, the relative difference between the cross sections of the two samples is increasing, with the vector samples having larger cross sections. 
-\Todo{This can be understood in the eikonal approximation since the A terms have an additional $v^2$ in front.}
+%TODO \Todo{This can be understood in the eikonal approximation since the A terms have an additional $v^2$ in front.}
 
 \begin{figure*}
 \centering
@@ -257,25 +258,25 @@ In case of narrow width mediators, e.g. $\Gamma_{\rm{min}}/\mMed\sim0.05$, even 
 \label{fig:monojet_narrow}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure}
 \centering
 \subfloat[]{
-\includegraphics[width=0.49\textwidth]{figures/monojet/mxx.eps}% width = 0.73 => regular textwidth of figure environment. figure* used to avoid overlapping captions.
+\includegraphics[width=0.8\textwidth]{figures/monojet/mxx.eps}% width = 0.73 => regular textwidth of figure environment. figure* used to avoid overlapping captions.
 \label{fig:monojet_mchichi_a}}
 \hfill
 \subfloat[]{
-\includegraphics[width=0.49\textwidth]{figures/monojet/TruthShat_compEFTvsZprime_DM150_narrow.eps}
+\includegraphics[width=0.8\textwidth]{figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.eps}
 \label{fig:monojet_mchichi_b}}
 \caption[][14pt]{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths (a).
-Similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$ (b). An EFT sample is also displayed in the latter case. The distributions are normalised to unit area.}
+Similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$ 
+(b). An EFT sample is also displayed in the latter case. The distributions are normalised to unit area.}
 \label{fig:monojet_mchichi}
-\end{figure*}
-
-
+\end{figure}
 
 
 Since kinematic distributions are robust to
-changes in the specific values of coupling as long as heavy narrow mediators are avoided, the choice of $\gq=\gDM$ is reasonable 
+changes in the specific values of coupling as long as heavy narrow mediators are generated correctly (see Appendix~\ref{thought:heavynarrowmediators} for discussion), 
+the choice of $\gq=\gDM$ is reasonable 
 to reduce the parameter space to be scanned. 
 There are no complications associated
 with small couplings, but, also, the early part of Run~2 will not be
@@ -659,35 +660,39 @@ in order to decide on the optimized parameter grid for the presentation of Run-2
 A scan over the mediator mass is shown in Fig.\,\ref{fig:monojet_scan_S_mMed1000} where \mMed = 300~\gev and 500~\gev are chosen to be below and above $2m_t$. The off-shell Dark Matter production regime is assumed by taking an extreme limit ($\mDM=1$~\tev) in order to study solely the effects of the couplings to quarks. 
 No differences in the kinematic distributions are observed and also the cross sections remain similar in this case. No significant changes appear for mediator masses around the $2m_t$ threshold.
 
-\begin{figure*}
+\begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_S_10_500.eps}
 \caption{Scan over couplings. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_g}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mDM_S_500.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mDM1000}
 \end{figure*}
 
-\begin{figure*}
+\clearpage
+
+\begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mDM_S_100.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mDM100}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mMed_S_10.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mMed10}
 \end{figure*}
 
-\begin{figure*}
+\clearpage 
+
+\begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mMed_S_1000.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
