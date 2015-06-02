@@ -103,10 +103,10 @@ useful keywords to group together different weights are
 More detailed information can be obtained by inspecting the document in 
 {\namecaps /Docs/V2-paper.pdf} under the common {\namecaps POWHEG-BOX-V2} directory. 
 
-\section{\madgraph and \syscalc}
+\section{The SysCalc package}
 
-
-\syscalc is a package for use with \madgraph that can calculate dedicated event weights for certain theoretical systematic uncertainties. The output is an XML-based file with all relative weights embedded. These weights can then be used to account for the different systematic uncertainties, namely variations on the $\alpha_s$ emission scale factors, factorization ($\mu_F$) and normalization ($\mu_R$) scales,  matching scales, and different parton distribution function (PDF) sets.
+\syscalc is a post-processing package for parton-level events as obtained from leading-order calculations in \madgraph.  It can associate to each event a series of weights corresponding to the evaluation of a certain class of theoretical uncertainties. The event files in input and output are compliant with  the Les Houches v3 format.
+For NLO calculations, PDF and scale uncertainties are instead evaluated automatically by setting corresponding instructions in the \texttt{run\_card.dat} and no post-processing is needed (or possible).
 
 The requirements of the package as inputs are : 
 \begin{itemize}
@@ -137,7 +137,7 @@ alpsfact:\\
 0.5 1 2\\
 \#   matching scales\\
 matchscale:\\
-30 40 80\\
+30 60 120\\
 \# PDF sets and number of members (optional)\\
 PDF:\\
 CT10.LHgrid 53\\
@@ -183,20 +183,22 @@ The variations for the PDF are given by the corresponding weights associated to 
 \end{equation}
 where $f_{\rm i,new}$ is the new PDF probability associated to parton $i$.
 
-In presence of matching, \madgraph performs already a scale and PDF rescaling, such that the scale of the strong interaction is set according to a parton shower history (selected via a $k_T$ clustering). \syscalc can perform the associated re-weighting (parameter \texttt{alpsfact}) by dividing and multiplying by the associated factor.
+In presence of matching, \madgraph associates one history of radiation (initial and/or final state radiation) obtained by a $k_T$ clustering algorithm, and calculates $\alpha_s$ at each vertex of the history to a scale given by the aforementioned clustering algorithm. Furthermore, \madgraph reweights the PDF in a fashion similar to what a parton shower would do. \syscalc can perform the associated re-weighting (parameter \texttt{alpsfact}) by dividing and multiplying by the associated factor.
 
-For each vertex of the clustering (associated to a scale $\mu_i$), this corresponds to the following factor for a Final State Radiation :
+For each step in the history of the radiation (associated to a scale $\mu_i = k_{T,i}$), this corresponds to the following expression for a Final State Radiation (FSR):
 \begin{equation}
 \mathcal{W}^{\rm FSR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)}  * \mathcal{W}_{\rm orig},
 \end{equation}
-and the following expression for Initial State Radiation (associated to a scale $\mu_i$ and fraction of energy $x_i$):
+and to the following expression for Initial State Radiation  (ISR), associated to a scale $\mu_i$ and fraction of energy $x_i$:
 \begin{equation}
-\mathcal{W}^{\rm ISR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)} \frac{ \frac{f_a(x_i,\Delta*\mu_i)}{f_b(x_i,\Delta*\mu_{i+1})}} { \frac{f_a(x_i, \mu_i)}{f_b(x_i, \mu_{i+1)}} }
+\mathcal{W}^{\rm ISR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)} \frac{ \frac{f_a(x_i,\Delta*\mu_i)}{f_b(x_i,\Delta*\mu_{i+1})}} { \frac{f_a(x_i, \mu_i)}{f_b(x_i, \mu_{i+1})} }
   *\mathcal{W}_{\rm orig},
 \end{equation}
-where $\mu_{i+1}$ is the scale of the next vertex in the initial state clustering history.
+where $\mu_{i+1}$ is the scale of the next step in the (initial state) history of radiation.
 
-\syscalc can include the weight associated to different merging scales in the MLM matching/merging mechanism (for output of the \texttt{pythia6} package or \texttt{pythia-pgs} package). In that case, the parton-shower keeps track of the scale of the first emission and applies then a veto to account for the minimal allowed value for the matching scale according to the cut performed at parton-level. \syscalc\ will then test for each of the values specified in the parameter \texttt{matchscale} if the event passes the MLM criteria or not. If it does not, then a zero weight is associated to the event, while if it does, then a weight 1 is kept. As a reminder,  those weights are the equivalent of having a (approximate) Sudakov form-factor and removing at the same time the double counting between the events belonging to different multiplicities.\\
+\syscalc can include the weight associated to different merging scales in the MLM matching/merging mechanism (for output of the \texttt{pythia6} package or \texttt{pythia-pgs} package). 
+
+In that case, the parton shower does not veto any event according to the MLM algorithm, although in the output file the scale of the first emission is retained. Having this information, \syscalc can test each value of the specified matching scales under the \texttt{matchscale} parameter block. \syscalc\ will then test for each of the values specified in the parameter \texttt{matchscale} if the event passes the MLM criteria or not. If it does not, then a zero weight is associated to the event, while if it does, then a weight 1 is kept. As a reminder,  those weights are the equivalent of having a (approximate) Sudakov form-factor and removing at the same time the double counting between the events belonging to different multiplicities.\\
 
 Finally, we give an example of the \syscalc output which follows the LHEF v3 format. The following block appears in the header of the output file:
 
