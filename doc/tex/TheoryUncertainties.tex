@@ -1,18 +1,23 @@
 
+A comprehensive and careful assessment of theoretical uncertainties
+plays in general a more important role for the background estimations
+(especially when their evaluation is non-entirely data-driven) than it
+does for signal simulations. Nevertheless, also for signal samples theoretical uncertainties are relevant, and may become even dominant in certain regions of phase space.
+
+In this chapter, we provide technical details on how theoretical systematic uncertainties can be assessed for events generated with \powheg and \madgraph.
+
 \Todo{This section describes the technical details of how to vary
   input parameters, but it does not describe the overall strategy of
-  what parameters to vary or by how much.}
+  what parameters to vary or by how much. SL.: We are not going to reach a conclusion on this; we could still have a pdf recommendation, maybe?
+  {\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
+  }
 
-{\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
 
 \section{POWHEG}
 
-A comprehensive and careful assessment of theoretical uncertainties
-plays a much more important role for the background estimations
-(especially when their evaluation is non-entirely data-driven) than it
-does for signal simulations. Nevertheless, when using \powheg it is
+When using \powheg~\cite{Frixione:2007vw,Alioli:2010xd,Nason:2004rx}, it is
 possible to study scale and PDF errors for the dark matter signals. A
-fast reweighting machinery is available in {\sc POWHEG-BOX} that
+fast reweighting machinery is available in \namecaps{POWHEG-BOX} that
 allows one to add, after each event, new weights according to
 different scale or PDF choices, without the need to regenerate all the
 events from scratch. 
@@ -21,17 +26,14 @@ To enable this possibility, the variable \texttt{storeinfo\_rwgt} should be set
 to 1 in the \powheg input file when the events are generated for the 
 first time\sidenote{Notice that even if the variable is not present, by 
 default it is set to 1.}. After each event, a line starting with 
-
 \begin{verbatim}
-#rwgt 
+   #rwgt 
 \end{verbatim}
-
 is appended, containing the necessary information to generate extra 
 weights. In order to obtain new weights, corresponding to different 
 PDFs or scale choice, after an event file has been generated, a line 
-
 \begin{verbatim}
-compute_rwgt 1 
+   compute_rwgt 1 
 \end{verbatim}
 should be added in the input file along with the change in parameters
 that is desired. For instance, \texttt{renscfact} and
@@ -39,11 +41,9 @@ that is desired. For instance, \texttt{renscfact} and
 renormalization and factorization scales around a central value. By
 running the program again, a new event file will be generated, named
 \texttt{<OriginalName>-rwgt.lhe}, with one more line at the end of each event of the form
-
 \begin{verbatim}
-#new weight,renfact,facfact,pdf1,pdf2 
+   #new weight,renfact,facfact,pdf1,pdf2 
 \end{verbatim}
-
 followed by five numbers and a character string. The first of these 
 numbers is the weight of that event with the new parameters chosen. By 
 running in sequence the program in the reweighting mode, several 
@@ -51,14 +51,10 @@ weights can be added on the same file. Two remarks are in order.
 
 \begin{itemize} 
 
-\item The file with new weights is always named 
-\begin{verbatim}
-<OriginalName>-rwgt.lhe
-\end{verbatim}
-hence care has to be taken to save it as 
-\begin{verbatim}
-<OriginalName>.lhe
-\end{verbatim}
+\item The file with new weights is always named \\
+\texttt{<OriginalName>-rwgt.lhe}\\
+hence care has to be taken to save it as \\
+\texttt{<OriginalName>.lhe}\\
 before each iteration of the reweighting procedure. 
 
 \item Due to the complexity of the environment where the program is 
@@ -71,37 +67,31 @@ corrupted.
 \end{itemize} 
 
 \noindent It is possible to also have weights written in the version 3 Les Houches format. 
-To do so, in the original run, at least the token 
-
-\begin{verbatim}
-lhrwgt_id 'ID'
-\end{verbatim}
-must be present. The reweighting procedure is the same as described 
+To do so, in the original run, at least the token\\
+\texttt{lhrwgt\_id 'ID'}\\
+\noindent must be present. The reweighting procedure is the same as described 
 above, but now each new run can be tagged by using a different value 
 for the \texttt{lhrwgt\_id} keyword. After each event, the following lines will 
 appear: 
-
+\small{
 \begin{verbatim}
-<rwgt> 
-<wgt id='ID'>
-<wgt id='ID1'>
-</rwgt> 
-\end{verbatim}
+  <rwgt> 
+  <wgt id='ID'>
+  <wgt id='ID1'>
+  </rwgt> 
+\end{verbatim}}
+\normalsize
 
 A more detailed explanation of what went into the computation of every 
-single weight can be included in the <header> section of the event 
-file by adding/changing the line 
-
-\begin{verbatim}
-lhrwgt_descr 'some info'
-\end{verbatim}
-
-in the input card, before each "reweighting" run is performed. Other 
+single weight can be included in the \texttt{<header>} section of the event 
+file by adding/changing the line \\
+\texttt{lhrwgt\_descr 'some info'}\\
+\noindent in the input card, before each ``reweighting'' run is performed. Other 
 useful keywords to group together different weights are 
 \texttt{lhrwgt\_group\_name} and \texttt{lhrwgt\_group\_combine}. 
 
 More detailed information can be obtained by inspecting the document in 
-{\namecaps /Docs/V2-paper.pdf} under the common {\namecaps POWHEG-BOX-V2} directory. 
+\texttt{/Docs/V2-paper.pdf} under the common \namecaps{POWHEG-BOX-V2} directory. 
 
 \section{The SysCalc package}
 
