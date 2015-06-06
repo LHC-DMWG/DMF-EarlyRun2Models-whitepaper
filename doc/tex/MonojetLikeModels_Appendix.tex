@@ -1,51 +1,45 @@
 \section{\texorpdfstring{Implementation of \schannel and other models for \MET+X analyses}{Implementation of \schannel and \tchannel models for MET+X analyses}}
 
-In the studies to date, a fair number of different Monte Carlo tools have
-been used to simulate signals.   In this Chapter, we make recommendations
-and provide settings to promote uniformity in the simulations produced by
-the collaborations.  These recommendations are based on the current
-status of the available codes.   We also aim for simplicity, so that fewer
-tools need be used if the theoretical quality does not suffer.
-
+In the studies to date, a number of different Monte Carlo tools have
+been used to simulate DM signals.  In this Chapter, we make recommendations 
+on the accuracy at which simulations should be performed for different final states. We 
+also provide explicit examples  of codes and implementations (including specific settings) that could be used  by
+the collaborations.  We stress that these recommendations are based on the current
+status of publicly available codes and users should always check whether new results
+at a better accuracy have appeared in the meantime. In that case, we recommend to update
+the corresponding analyses  directly using the new releases and/or codes, and in case this would not be possible,
+to at least take into account the new information in the analysis (e.g., via a MC comparison with the latest predictions, 
+or by effectively or using global/local $K$-factors).
 
 \subsection{Implementation of ``s-channel'' models for mono-jet signature}
 \label{sec:monojet_implementation}
 
 These models include those referred to as \modelDMV, \modelDMA, \modelDMS and
 \modelDMP and discussed in Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar}.
-The necessary simulations are geared for monojet analyses, i.e. those with a few jets and \MET{}.   In particular, the \MET{} spectrum depends upon the accurate simulation of parton radiation from the initial state.   For the \modelDMV and
-\modelDMA models, we recommend \powheg \cite{Haisch:2013ata},
-since it includes NLO corrections for these models.
-The NLO corrections result in a substantial reduction
-in the dependence on the choice of the renormalization and factorization
-scale and hence the theoretical uncertainty on the signal prediction.
-For the central choice of renormalization and factorization scales,
-the NLO corrections also provide a minor enhancement in the cross section.\footnote{\spinzero and \spinone 
-mediator models will also be provided 
-in the near future to the same precision in \madgraph~\cite{Alwall:1405.0301}.}
+In monojet analyses, i.e. when final states are selected with a few jets and \MET{}, observables and in particular the \MET{} spectrum depend upon the accuracy of the simulation of QCD radiation from the initial state.
+For the \modelDMV and \modelDMA models, the current state of the art is  NLO+PS. It is particularly simple to obtain simulations for these processes at NLO+PS and even for merged samples at NLO accuracy, starting from SM implementations.  We therefore recommend simulations to be performed at NLO+PS, and in case multi-jet observables are employed,  by merging samples with different multiplicities. 
+Results at such accuracy can be obtained either in dedicated implementations, such as that of  \powheg \cite{Haisch:2013ata}, or via general purpose NLO tools like \madgraph employing currently available UFO models at NLO.~\footnote{The validation of a dedicated DM UFO model at NLO using the notation of Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar} is in progress.}
+
+A study using POWHEG~\cite{Haisch:2013ata} has shown that the NLO corrections result in a substantial reduction in the dependence on the choice of the renormalization and factorization scales and hence a reduced theoretical uncertainty on the signal prediction. For the central choice of renormalization and factorization scales,
+the NLO corrections also provide a minor enhancement in the cross section.
 
 For the \modelDMS and \modelDMP models, the lowest order process
 already involves a one-loop amplitude in QCD.
-Because of this complexity, NLO calculations for these signals do not
-yet exist with a parton shower interface.
-For these spin-0 mediators in the mono-jet final state,
+Because of the complexity of performing NLO calculations for this class of processes and in particular the absence of general methods for computing two-loop virtual contributions, only LO predictions are currently available. These can be interfaced to shower programs exactly as usual tree-level Born computations, i.e. by considering one parton multiplicity at the time
+or by merging different parton multiplicities via CKKW or MLM schemes to generate inclusive samples with jet rates at LO accuracy.  For spin-0 mediators in the mono-jet final state,
 the top-quark loop is the most important consideration.
-The matrix element implementation of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} and \powheg~\cite{Haisch:2015ioa} with the full top-loop calculation at LO.
-The \powheg and \mcfm implementations include the finite
-top quark mass dependence for DM pair production with 1 parton at LO.
-For consistency with the spin-1 generation, we recommend using \powheg.
+The matrix element implementation with exact top-loop dependence of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} at fixed order and in \powheg~\cite{Haisch:2015ioa} and \madgraph~\cite{HC} for  event generation at LO+PS level. The \powheg and \mcfm implementations include the finite
+top quark mass dependence for DM pair production and 1 extra parton at LO. The same processes are available in \madgraph v2.3 and in {\sc Sherpa+OpenLoops/GoSam}, including  up to 2 extra partons in the final state. Samples can be merged employing CKKW, $K_T$-MLM  and MEPS@LO procedures.
+%For consistency with the spin-1 generation, we recommend using \powheg.
 
-Here, we document some specific settings needed to run the \powheg 
-generation for the Dark Matter models. POWHEG parameter cards for all models
-can be found on the Forum SVN
-repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
+Most of the results that have been presented in this document for these processes at NLO+PS accuracy have been obtained with POWHEG interfaced to \pythiaEight. For future reference, we document the specific settings needed to run the \powheg generation for the Dark Matter models. Those will serve as nominal benchmarks for the early Run-2 ATLAS and CMS DM analyses. \powheg parameter cards for all models can be found on the Forum SVN repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
 
 \subsubsection{\powheg configuration for DM models}
 
 The lastest \powheg release is available for download using the
 instructions at
 \url{http://powhegbox.mib.infn.it/}.   The forum recommends
-using at least version \texttt{x.xxx}.
+using at least version \texttt{3059}.
 
 \begin{itemize}
 
@@ -161,47 +155,43 @@ As always, it is recommended to use the latest \pythiaEight release,
 available at \url{http://home.thep.lu.se/~torbjorn/Pythia.html}.
 At the time of this report, the latest version is \texttt{8.209}.
 
-\subsection{Implementation of models with matching}
+\subsection{Merging samples with different parton multiplicities}
 \label{sec:monojet_parton_match}
 
 For the models discussed in the previous section, it is important
 to calculate the hard process as accurately as possible in QCD.
 For many other signal models, the \MET{} signature depends more
-upon the production and decay of the mediator.  Also, for some models,
-no NLO+parton shower implementations currently exist.  In these cases,
-one usually resorts to a LO+parton shower implementation, sometimes
-supplemented by several LO processes matched with the parton shower.
+upon the production and decay of the mediator. In some cases, observables
+built in terms of the jets present in the final state are considered, something that assumes inclusive samples accurate in higher jet multiplicities are available.  In these cases, one can employ LO+PS simulations where different parton multiplicities are merged and then matched to parton shower, using schemes such as CKKW or MLM merging.
 
 Here, we consider the example of an EFT model produced in association
 with up to 2 additional QCD partons.   A Monte Carlo sample based on
-this model could be used to cross-check a similar \powheg sample, for example.
+this method could be used in alternative to a NLO+PS sample for describing shapes 
+and jet distributions (but not for the overall normalisation which would still be at LO).
 The methodology described here could also be used for the \tchannel model
-discussed in Sec.~\ref{sec:monojet_t_channel},
+discussed in Sec.~\ref{sec:monojet_t_channel}.
 
-For the calculation of tree-level, signal models, we recommend
-\madgraph.
+For the calculation of tree-level merged samples for DM signals, tools that can  
+read UFO files and implement multi-parton merging should be employed, such 
+that \madgraph (+\pythiaEight or {\sc HERWIG++}) and {\sc Sherpa}~\cite{Hoche:2014kca}.
+In this report we have mostly employed \madgraph. 
 \madgraph provides a flexible and easy--to--use framework for implementing
 new models via the {\sc FeynRules} package.
-\madgraph can produce both LO and NLO calculations, though not all signal models
-can be generated currently at NLO.\footnote{For truly NLO, matched samples, a different
-  matching scheme would be used.}
-The parton matching is performed in order to avoid double counting of the
-partons from matrix elements and parton showering.
-Several parton matching techniques are available.
-Based on some comparative studies \,\cite{Alwall:0706.2569},
-there is some advantage to using the CKKW-L matching scheme \cite{Lonnblad:2011xx}
-implemented in \pythiaEight.  Alternatively, one can use the $k_T$-MLM scheme also
-implemented in \pythiaEight.
+\madgraph can perform both LO and NLO calculations in QCD, matched/merged to parton showers. For NLO ones, dedicated UFO model implementations at NLO should be used. Several UFO models at NLO are publicly available that while not developed specifically for DM, are suitable to make mode independent simulations at NLO accuracy, including multiparton merging 
+via the FxFx technique~\cite{Frederix:2012ps}. A dedicated DM UFO implementation 
+has been developed and its release being finalised.
 
+Merging events generated via matrix elements with different number of partons in the final state can be achieved by a judicious procedure that  avoids double counting of the partons from matrix elements and parton showering.
+Several merging techniques are available. Based on some comparative studies \,\cite{Alwall:0706.2569}, there is some advantage to using the CKKW-L merging scheme \cite{Lonnblad:2011xx} implemented in \pythiaEight.  Alternatively, one can use the $k_T$-MLM scheme also available in \pythiaEight.
 
 \subsubsection{Generation of the LHE file}
 
 The example presented here is a D5 EFT model, and
 includes tree-level diagrams with $\chi\bar\chi$+0,1,2 partons.
-The model is encapsulated as a UFO file in the SVN repository (ref here).
-\madgraph, like \powheg, is not in itself and event generator, but must be interfaced
-with an event generator through an LHE file.  The production of the LHE file proceeds
-through setting the process parameters and the run parameters.
+%The model is encapsulated as a UFO file in the SVN repository.
+We stress that \madgraph, like \powheg, is not in itself and event generator, but must be interfaced 
+with an event generator through an LHE file.  The production of the LHE file proceeds through setting the 
+process parameters and the run parameters.
 
 The process parameters are:
 \begin{verbatim}
@@ -228,11 +218,10 @@ For different kinds of matching, a different choice of \texttt{ickkw} and
 related parameters would be made.
 
 
-\subsubsection{Implementation of the CKKW-L matching}
+\subsubsection{Implementation of the CKKW-L merging}
 \label{sec:match_implementation}
+To illustrate the settings related to merging different multipliticities, the EFT D5 samples were generated with \madgraph version 2.2.2 and showered in \pythiaEight.201.
 
-
-To illustrate the settings related to parton matching, the EFT D5 samples were generated with \madgraph version 2.2.2 and showered in \pythiaEight.201.
 
 The \pythiaEight parameters for the CKKW-L $k_T$-merging scheme are:
 \begin{verbatim}
@@ -250,7 +239,6 @@ interacting dark matter candidates.   Since this is a Majorana particle by defau
 corresponding anti-particle), and the model produces a DM Dirac fermion, the particle properties
 are changed accordingly.  Also, the DM mass is set to 30\,\gev.
 The \texttt{Merging:Process} command specifies the lowest parton emission process generated in \madgraph and \texttt{Merging:nJetMax = 2} gives the maximum number of additional parton emissions with respect to the lowest parton emission process. 
-
 
  In general, it is desired to take the hard parton emissions from the matrix element generation in \madgraph and allow \pythiaEight to take care of soft emissions only. The transition between these two regimes is defined by the matching scale and its optimal value can be determined by studying the cross-section as a function of the number of jets (differential jet rates). The differential rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ give the number of events which pass from $i$ jets to $j$ jets as the $k_T$ value increases beyond $k_\textrm{cut}$. An optimal matching scale should lead to smooth differential jet rates.
 
@@ -354,7 +342,6 @@ The \texttt{Merging:Process} command specifies the lowest parton emission proces
  \end{figure}
 
 
-
 In order to describe the signal kinematics correctly and save time during MC production, the parton emissions will only be generated up to a certain multiplicity. The higher multiplicity samples usually have small enough cross sections and the corresponding parts of the phase space can be sufficiently approximated by parton showering in \pythiaEight.
 A dedicated study comparing samples generated with up to 1-, 2-, or 3-parton multiplicities was performed, using again the settings for the CKKW-L $k_T$-merging with the 80\,\gev matching scale and the \texttt{Merging:nJetMax} parameter adjusted accordingly.
 Figure\,\ref{fig:RatioKine_D5} shows the \MET distribution of the samples at $\MET>250\,\gev$.
@@ -407,59 +394,71 @@ This justifies it is sufficient to produce samples with up to 2 parton emissions
 	\label{fig:RatioKine_D5_2}
 \end{figure}
 
-\subsection{Implementation of models for EW final states}
+\subsection{Simulations for EW final states}
 \label{sec:EW_implementation}
 
-These models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower.
-Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
-No parton matching is currently implemented, since the visible signal comes from
-the production of a heavy SM boson.   As a result, no special runtime configuration is needed
-for \pythiaEight.
+Currently, simulations for most of these models are available via LO UFO implementations, allowing event generation at the LO+PS accuracy. 
+We note, however, that inclusion of NLO corrections would be straightforward. In \madgraph, for example, this amounts to simply upgrading 
+the currently employed UFO models to NLO, something that trivial for this class of processes. However, this has not been done within
+the timescale of the Forum. 
 
-\subsection{\texorpdfstring{Implementation of models with heavy flavor quark signatures}{Implementation of models for heavy flavor quark signatures}}
+In this review, we have used LO UFO implementations within \madgraph 2.2.2 interfaced to \pythiaEight for the parton shower.
+Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_EW_DMV}.
+In the examples that follow we have not merged samples with different parton multiplicities  
+since the visible signal comes from the production of a heavy SM boson whose transverse momentum distribution is sufficiently 
+well described at LO+PS level.  As a result, no special runtime configuration is needed for \pythiaEight.
+
+\subsection{\texorpdfstring{Implementation of models with heavy flavor quark signatures}{Simulations for models with heavy flavor quark signatures}}
 \label{sec:TTBar_implementation}
 
-The models for the $t \bar{t}$ and $b \bar{b}$ signatures are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is currently
-implemented.
+Dedicated implementations for DM signals in this final state are available at LO+PS accuracy. 
+However,  the state of the art of the simulations for $t \bar{t}$ and $b \bar{b}$  + a generic scalar and vector is NLO+PS accuracy. 
+For example, simulations for $t \bar{t}$ + scalar can be obtained via \powheg and {\sc sherpa} starting from the SM implementations. 
+In \madgraph,  all final relevant final states, spin-0 (scalar and pseudo scalar) and spin-1, (vector and axial) are available  at NLO+PS 
+via the HC model~\cite{Artoisenet:2013puc} implementation while a dedicated NLO UFO  for DM is being released at the time of writing).
+
+In our work simulations for the $t \bar{t}$ and $b \bar{b}$ signatures have been 
+generated at leading order with \madgraph 2.2.2, using \pythiaEight for the parton shower. 
+Merging has been used. 
+\Todo{Cross-check with Priscilla that this is the case} 
 Parameter cards can be found on the Forum SVN repository~\cite{ForumSVN_DMTTBar}.
 
-We simulate the bFDM model at LO+PS using \madgraph v2.2.3 and \pythiaEight for the parton shower. 
-Parton matching is needed in the case of the $b\bar{b}$+\MET{} final state, but it has not been
-studied within the Forum. 
-The corresponding card files can be found 
-on the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
+We have simulated the bFDM model at LO+PS using \madgraph v2.2.3 and \pythiaEight for the parton shower.  
+Multi-parton merging is recommended in the case of the $b\bar{b}$+\MET{} final state, 
+but it has not been studied within the Forum. 
+The corresponding card files can be found on the Forum SVN repository~\cite{ForumSVN_DMSingleB}.
 
 \subsubsection{Quark flavor scheme and masses}
 
-In this particular model we recommend an additional care when choosing
-the flavor scheme generation and whether quarks should be treated as massive or massless. 
+In the case of $b \bar{b}$ final state an additional care should be taken when choosing the flavor scheme 
+generation and whether quarks should be treated as massive or massless.
 
 The production of DM+$b\bar{b}$, Dark Matter in association with $b$ jets via a decay of a (pseudo) scalar boson, 
 is dominated in simplified mediator models by the gluon-gluon initiated production, similar to the production of 
-Z+$b\bar{b}$ at the LHC. The Z+$b\bar{b}$ process has been studied in detail in the Z(ll)+$b$-jets final state, 
+Z+$b\bar{b}$ at the LHC. The Z+$b\bar{b}$ process has been studied in detail in the Z(ll)+$b$-jets final state,  
 which can be used to validate both the modeling of DM+bb and, its main background, Z(vv)+$b\bar{b}$. 
 In this context, the $p_\textrm{T}$ of the Z boson is related to the observed MET, whereas the $b$-jet kinematics 
 determines the ratio of mono-$b$/di-$b$ signatures in the detector.
 
 %suggestion: could add diagrams for Z+bb and Phi+bb production here%
 
-For basic kinematic criteria applied to Z+$b\bar{b}$ production, this process leads in $\sim90\%$ of 
-the events to a signature with only 1 $b$-jet in the acceptance ('Z+1$b$-jet production') and only in 
-$\sim10\%$ of the events to a signature with 2 $b$-jets in the detector ('Z+2$b$-jets production). 
-The production cross section of the Z+$b\bar{b}$ process are calculated in the 'five-flavor scheme', 
+For basic kinematic criteria applied to Z+$b\bar{b}$ production, 
+this process leads in $\sim90\%$ of the events to a signature with only 1 $b$-jet in the acceptance (
+'Z+1$b$-jet production') and only in  $\sim10\%$ of the events to a signature with 2 $b$-jets in the detector ('Z+2$b$-jets production). 
+The production cross section of the Z+$b\bar{b}$ process can be calculated in the 'five-flavor scheme', 
 where b quarks are assumed massless, and the 'four-flavor scheme', where massive b quarks are 
-used~\cite{Campbell:2003dd,Maltoni:2005wd,Campbell:2005zv}, 
-and data favor the cross-section predictions in the five-flavor scheme~\cite{Chatrchyan:2014dha}.
-We therefore recommend to calculate the cross sections of these
-models in the 5-flavor scheme, as in the repository. 
+used~\cite{Campbell:2003dd,Maltoni:2005wd,Campbell:2005zv}.
+Data slightly favour the cross-section predictions in the five-flavor scheme~\cite{Chatrchyan:2014dha} for the 1 $b$-jet signature. 
+In this document we have preferred the 5-flavor scheme due to its simplicity and 
+cross sections and models in the 5-flavor scheme are available in the repository. 
 The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
 
-It is found that the best modeling of two $b$-quarks final states is achieved using a 4-flavor scheme and a massive treatment of the $b$-quarks ~\cite{Chatrchyan:2014dha,Chatrchyan:2013zja,CMS:2015mba}. We recommend to use in the generation NNPDF3.0 set (lhaid 263400).
-Since figure~\ref{fig:4Fvs5F} shows that there is no significant difference in the kinematics between 
-either flavor scheme used for DM+$b\bar{b}$ production, we recommend the 4-flavor scheme to follow
-the observation in the Z+$b\bar{b}$ measurements. 
+On the other hand, both data~\cite{Chatrchyan:2014dha,Chatrchyan:2013zja,CMS:2015mba} 
+and theoretical studies~\cite{Frederix:2011qg,Wiesemann:2014ioa} suggest that the best modelling of  an 
+inclusive Z+$b\bar{b}$ sample especially for what concerns $b$-quark observables, is achieved at NLO+PS using a 4-flavor scheme 
+and a massive treatment of the $b$-quarks.  
+In Figure~\ref{fig:4Fvs5F} we show that, at LO, as expected, no appreciable difference is visible in the kinematics between 
+either flavor scheme used for DM+$b\bar{b}$. In our generation we have used  NNPDF3.0 set (lhaid 263400).
 
 %Table~\ref{tab:xsec_dmbb_g1} gives the production cross sections for all recommended samples with $g_\textrm{DM}=g_\textrm{SM}=1$.
 
@@ -488,26 +487,34 @@ the observation in the Z+$b\bar{b}$ measurements.
 \subsection{Model implementation for mono-Higgs models}
 \label{sub:monoHiggs}
 
-All three Higgs+\MET models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is needed. 
-The \madgraph implementations of the scalar and vector models can be found on the Forum SVN 
-repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found
-at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
+Currently, simulations for most of these models are available via LO UFO implementations, allowing event generation at the 
+LO+PS accuracy. We note, however, that the inclusion of NLO corrections would be straightforward but not available in time for the conclusion of these studies. 
+In \madgraph, for example, this amounts to simply upgrading the currently employed UFO models to NLO, something trivial for this class of processes. Simulation of  loop-induced associated production of DM and Higgs is also possible with the exact top-quark mass dependence. In  \madgraph, for example, this can be obtained from the NLO UFO SM and 2HDM implementations. 
 
-In all cases, it is recommended not to handle the $h$ decay through \madgraph as
-it does not include the proper $h$ branching ratios, or, if using \madgraph, then the 
-resulting cross section should be rescaled to match onto the correct branching ratio.
+In this work all three Higgs+\MET models have been generated at leading
+order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No merging procedure has been employed.
+The LO UFO implementations of the scalar and vector models can be found on the Forum SVN  
+repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
+
+As a final technical remark, we suggest always to let the shower program handle the  $h$ decay 
+(and therefore to generate a stable $h$ at the matrix element level).  
+In so doing a much faster generation is achieved and the $h$ branching ratios are more accurately 
+accounted for by the shower program. 
 
 \subsubsection{\madgraph details for scalar mediator Higgs+MET model}
 
-In this model, the contribution from the $gghS$ box is included through an effective 
-Lagrangian evaluated in the large $m_t$ limit. 
-This may overestimate the rates of the $h + \MET$ signal~\cite{Haisch:2012kf}, but a full evaluation
-is left to future studies. 
+The case of the associated production of a Higgs and scalar mediator via a top-quark loop can be either considered 
+exactly or via an effective Lagrangian where the top-quark is integrated out. While this latter model has 
+been shown not to be reliable~\cite{Haisch:2012kf,Hespel:2014sla}, for simplicity we have chosen to perform
+the study in this tree-level effective formulation. A full study of the process including
+finite top-quark mass and parton shower effects is possible yet left for future work.
 
 \subsubsection{\madgraph details for 2HDM Higgs+MET model}
+
+While a 2HDM UFO implementation at NLO accuracy to be used with \madgraph is 
+available~\cite{FeynRulesWebPage}, in this work we have only considered LO simulations.
   
- The two couplings that can be changed in the implemented model follow the nomenclature below:
+The two couplings that can be changed in the implemented model follow the nomenclature below:
  \begin{itemize}
  	\item \texttt{Tb} - $\tan \beta$
  	\item \texttt{gz} - $g_z$, gauge coupling of \Zprime to quarks
@@ -515,8 +522,7 @@ is left to future studies.
  The other couplings are not changed, including \texttt{gx} (the $A \bar \chiDM \chiDM$ coupling) which has little impact on the signal. 
  $\sin \alpha$ is fixed internally such that $\cos (\beta-\alpha) = 0$. 
  The width of the \Zprime and $A$ can be computed automatically within \madgraph. 
- The couplings here don't affect the signal kinematics, so they can be fixed to default values 
- and then the signal rates can be scaled appropriately. 
+ The couplings here don't affect the signal kinematics, so they can be fixed to default values  and then the signal rates can be scaled appropriately. 
  
 The nomenclature for the masses in the implemented model is:
  \begin{itemize}
@@ -534,10 +540,10 @@ The other masses are unchanged and do not affect the result.
 \subsection{Implementation of EFT models}
 \label{sub:EFTModels}
 
-These models are generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No matching is currently
-implemented.
-Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs}
-for operators with Higgs+MET final states
+The state of the art for these models is LO+PS. NLO+PS can be achieved
+without difficulty but the corresponding implementation is not yet available.
+In our simulations we have implemented the models in the corresponding
+UFO files and  generated events at LO via \madgraph 2.2.2, using \pythiaEight for the parton shower. We have not generated events with extra patrons and merging.
+Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
 and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
 
