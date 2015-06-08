@@ -1,23 +1,6 @@
 #!/usr/bin/python
 from collections import OrderedDict
 
-#cheatsheet
-EmailNameDic = {	"andrea.desimone@sissa.it"	:	 "Andrea de Simone",
-					"antonio.riotto@unige.ch"	 :	"Antonio Riotto",
-					"c.mccabe@uva.nl"	 :	"Christopher McCabe",
-					"cacciapa@ipnl.in2p3.fr"	:	 "Giacomo Cacciapaglia",
-					"davide.racco@unige.ch"	 :	"Davide Racco",
-					"deandrea@ipnl.in2p3.fr"	:	 "Aldo Deandrea",
-					"felix.kahlhoefer@desy.de"	:	 "Felix Kahlhoefer",
-					"kzurek@berkeley.edu"	 :	"Kathryn Zurek",
-					"mpapucci@lbl.gov"	:	 "Michele Papucci",
-					"schsu@uw.edu"	:	 "Shih-Chieh Hsu",
-					"spliew@lbl.gov"	:	 "Seng Pei Liew",
-					"thomas.jacques@unige.ch"	 :	"Thomas Jacques",
-					"ttait@uci.edu"	 :	"Tim Tait",
-					"ulrich.haisch@physics.ox.ac.uk"	:	 "Ulrich Haisch",
-					"valya.khoze@durham.ac.uk"	:	 "Valentin Khoze"
-					}
 
 NameEmailInstitutionDic = {}
 
@@ -49,34 +32,33 @@ for inFileName in inFileNames :
 		
 		lastFirstName = None
 		email = None
-		institution = None
+		institution = ""
+                country = ""
 		
-		theCSV = line.strip("\n").split(",")
+		theCSV = line.strip("\n").split("|")
 		
-		#there are three kinds of entries:
-		#['E', ' ', 'valya.khoze@durham.ac.uk', '', '', '\n']
+		#there two kinds of entries:
 		#['E', 'Anthony DiFranzo', 'adifranz@uci.edu', '', '', '\n']
 		#['P', '', '', '757895', 'Theo Jean Megy', 'megy@clermont.in2p3.fr\n']
-		
+
 		if theCSV[0] == "E" :
 			email = theCSV[2]
-			institute = theCSV[3]
-			#case 1: does not have a name: look it up in the cheatsheet
-			if theCSV[1] == " " :
-				lastFirstName = getLastFirstName(EmailNameDic[theCSV[2]])
-			else :
-				lastFirstName = getLastFirstName(theCSV[1])
+			institution = theCSV[3]
+                        country = theCSV[5]
+			lastFirstName = getLastFirstName(theCSV[1])
 		
 		elif theCSV[0] == "P" :
-		    email = theCSV[5]
-		    lastFirstName = getLastFirstName(theCSV[4])  
+			email = theCSV[5]
+			lastFirstName = getLastFirstName(theCSV[4])  
 	    
 		else :
 			continue #this is the contributors mailing list
 		
-		NameEmailInstitutionDic[lastFirstName] = [email, institution]
+		if institution == "" : institution = "NO INSTITUTE"
+                if country     == "" : country     = "NO COUNTRY"
+		NameEmailInstitutionDic[lastFirstName] = [email, institution, country]
 		
-##### Now format - keep institution for later
+
 
 SortedNameEmailInstitutionDic = OrderedDict(sorted(NameEmailInstitutionDic.items(), key=lambda l: l[0]))
 
@@ -86,7 +68,11 @@ for key, value in SortedNameEmailInstitutionDic.iteritems() :
 	lastName = key[0]
 	email = value[0]
 	institution = value[1]
+        country = value[2]
 	
-	print "\\href{mailto:"+email+"}{"+firstName+" "+lastName+"}"
+#	print "\\href{mailto:"+email+"}{"+firstName+" "+lastName+"}"
+
+	print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
+        print "\\emph{"+institution+", "+country+"}\\\\"
 
  

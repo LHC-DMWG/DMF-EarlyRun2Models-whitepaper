@@ -1,93 +1,91 @@
-E, ,andrea.desimone@sissa.it,,,
-E, ,antonio.riotto@unige.ch,,,
-E, ,c.mccabe@uva.nl,,,
-E, ,cacciapa@ipnl.in2p3.fr,,,
-E, ,davide.racco@unige.ch,,,
-E, ,deandrea@ipnl.in2p3.fr,,,
-E, ,felix.kahlhoefer@desy.de,,,
-E, ,kzurek@berkeley.edu,,,
-E, ,mpapucci@lbl.gov,,,
-E, ,schsu@uw.edu,,,
-E, ,spliew@lbl.gov,,,
-E, ,thomas.jacques@unige.ch,,,
-E, ,ttait@uci.edu,,,
-E, ,ulrich.haisch@physics.ox.ac.uk,,,
-E, ,valya.khoze@durham.ac.uk,,,
-E,Anthony DiFranzo,adifranz@uci.edu,,,
-E,Daniel Whiteson,daniel@uci.edu,,,
-E,Emanuele Re,emanuele.re@physics.ox.ac.uk,,,
-E,Enrico Morgante,enrico.morgante@unige.ch,,,
-E,Giorgio Busoni,giorgio.busoni@sissa.it,,,
-E,Kentarou Mawatari,kentarou.mawatari@vub.ac.be,,,
-E,LianTao Wang,liantaow@uchicago.edu,,,
-E,Linda Carpenter,lmc@physics.osu.edu,,,
-E,Marc Thomas,mct1g11@soton.ac.uk,,,
-E,Matthew Buckley,mbuckley@physics.rutgers.edu,,,
-E,Mihailo Backovic,mbackovic@gmail.com,,,
-E,Patrick Fox,pjfox@fnal.gov,,,
-E,Tongyan Lin,tongylin@gmail.com,,,
-E,William Shepherd,will.shepherd@gmail.com,,,
-E,Yang Bai,yangbai@physics.wisc.edu,,,
-P,,,371777,Patrizia Azzi,Patrizia.Azzi@cern.ch
-P,,,400602,Kerstin Hoepfner,Kerstin.Hoepfner@cern.ch
-P,,,418751,Sergio Novaes,Sergio.Novaes@cern.ch
-P,,,441865,Sau Lan Wu,sau.lan.wu@cern.ch
-P,,,442824,Zhiqing Philippe Zhang,zhangzq@lal.in2p3.fr
-P,,,444681,Oliver Buchmueller,oliver.buchmuller@cern.ch
-P,,,454259,Swagato Banerjee,swagato.banerjee@gmail.com
-P,,,474486,Fabio Maltoni,Fabio.Maltoni@cern.ch
-P,,,532076,Alexander Belyaev,Alexander.Belyaev@cern.ch
-P,,,537425,Thomas Rizzo,rizzo@slac.stanford.edu
-P,,,561662,Kristian Hahn,kristian.hahn@cern.ch
-P,,,583567,Marco Zanetti,Marco.Zanetti@cern.ch
-P,,,599457,Marie-Helene Genest,genest@lpsc.in2p3.fr
-P,,,617928,Alexander Schmidt,Alexander.Schmidt@cern.ch
-P,,,620868,Lashkar Kashif,Lashkar.Kashif@cern.ch
-P,,,628708,Phat Srimanobhas,Norraphat.Srimanobhas@cern.ch
-P,,,630045,Barbara Alvarez Gonzalez,barbara.alvarez.gonzalez@cern.ch
-P,,,630610,Philip Coleman Harris,philip.coleman.harris@cern.ch
-P,,,631201,Khristian Kotov,khristian.kotov@cern.ch
-P,,,633465,David Salek,David.Salek@cern.ch
-P,,,654884,Mingshui Chen,Mingshui.Chen@cern.ch
-P,,,654885,Alexis Kalogeropoulos,Alexis.Kalogeropoulos@cern.ch
-P,,,658085,Dmytro Kovalskyi,dmytro.kovalskyi@cern.ch
-P,,,661950,Nhan Viet Tran,nhan.viet.tran@cern.ch
-P,,,664719,Yong Yang,Yong.Yang@cern.ch
-P,,,666112,Andy Nelson,andrew.james.nelson@cern.ch
-P,,,666241,Alessandro Vichi,alessandro.vichi@cern.ch
-P,,,668497,Daniele Trocino,Daniele.Trocino@cern.ch
-P,,,669401,Michele De Gruttola,michele.degruttola@cern.ch
-P,,,670948,Regina Caputo,Regina.Caputo@cern.ch
-P,,,671305,Kevin Kai Hong Sung,kevin.kai.hong.sung@cern.ch
-P,,,674792,Johannes Erdmann,Johannes.Erdmann@cern.ch
-P,,,678588,Benjamin Fuks,Benjamin.Fuks@cern.ch, Universit\'e de Strasbourg/CNRS-IN2P3
-P,,,679537,Arturos Sanchez Pineda,Arturo.Rodolfo.Sanchez.Pineda@cern.ch
-P,,,682191,Sarah Malik,sarah.alam.malik@cern.ch
-P,,,683660,Annapaola De Cosa,annapaola.de.cosa@cern.ch
-P,,,690101,Johanna Gramling,johanna.gramling@cern.ch
-P,,,692050,Priscilla Pani,Priscilla.Pani@cern.ch
-P,,,693299,Valerio Ippolito,valerio.ippolito@cern.ch
-P,,,694649,Shin-Shan Yu,Shin-Shan.Yu@cern.ch
-P,,,695583,Klaas Ole Padeken,klaas.ole.padeken@cern.ch
-P,,,696366,Timothee Theveneaux-Pelzer,Timothee.Theveneaux-Pelzer@cern.ch
-P,,,698372,Xiangyang Ju,Xiangyang.Ju@cern.ch
-P,,,703603,Livia Soffi,Livia.Soffi@cern.ch
-P,,,703912,Deborah Pinna,Deborah.Pinna@cern.ch
-P,,,706548,Raman Khurana,Raman.Khurana@cern.ch
-P,,,706551,Bhawna Gomber,Bhawna.Gomber@cern.ch
-P,,,708778,Bjorn Penning,Bjoern.Penning@cern.ch
-P,,,709798,Emanuele Re,emanuele.re@physics.ox.ac.uk
-P,,,710963,Hongtao Yang,Hongtao.Yang@cern.ch
-P,,,710964,Fuquan Wang,Fuquan.Wang@cern.ch
-P,,,713827,Steven Randolph Schramm,Steven.Schramm@cern.ch
-P,,,715610,Gurpreet Singh,gurpreet.singh@cern.ch
-P,,,731411,Romain Madar,romain.madar@cern.ch
-P,,,737412,Rainer Roehrig,rainer.roehrig@cern.ch
-P,,,738738,Amelia Jean Brennan,amelia.jean.brennan@cern.ch
-P,,,742242,Renjie Wang,renjie.wang@cern.ch
-P,,,742703,Mengqing Wu,mengqing.wu@cern.ch
-P,,,748524,Daniel Robert Abercrombie,daniel.abercrombie@cern.ch
-P,,,757001,Siddharth M Narayanan,siddharth.m.narayanan@cern.ch
-P,,,757895,Theo Jean Megy,megy@clermont.in2p3.fr
-P,,,762719,Ece Akilli,ece.akilli@cern.ch
-S,lhc-dmf-admin,lhc-dmf-admin@cern.ch,690121,Antonio Boveia,antonio.boveia@cern.ch
+E|Andrea de Simone|andrea.desimone@sissa.it|SISSA and INFN, Sezione di Trieste|via Bonomea 265, I-34136 Trieste|Italy
+E|Antonio Riotto|antonio.riotto@unige.ch|Department of Theoretical Physics, University of Geneva|24 quai Ernest  Ansermet, CH 1211 Geneva 23|Switzerland
+E|Christopher McCabe|c.mccabe@uva.nl|||
+E|Giacomo Cacciapaglia|cacciapa@ipnl.in2p3.fr|Universit\'e de Lyon and Universit\'e Lyon 1, CNRS/IN2P3, UMR5822, IPNL|F-69622 Lyon and F-69622 Villeurbanne Cedex|France
+E|Davide Racco|davide.racco@unige.ch|D\'epartement de Physique Th\'eorique and Center for Astroparticle Physics, Universit\'e de Gen\`eve|24 quai Ansermet, CH-1211 Gen\`eve 4|Switzerland
+E|Aldo Deandrea|deandrea@ipnl.in2p3.fr|Universit\'e de Lyon and Universit\'e Lyon 1, CNRS/IN2P3, UMR5822, IPNL|F-69622 Lyon and F-69622 Villeurbanne Cedex|France
+E|Felix Kahlhoefer|felix.kahlhoefer@desy.de|||
+E|Kathryn Zurek|kzurek@berkeley.edu|||
+E|Michele Papucci|mpapucci@lbl.gov|||
+E|Shih-Chieh Hsu|schsu@uw.edu|||
+E|Seng Pei Liew|spliew@lbl.gov|Department of Physics, University of Tokyo|Bunkyo-ku, Tokyo 113-0033|Japan
+E|Thomas Jacques|thomas.jacques@unige.ch|||
+E|Tim Tait|ttait@uci.edu|||
+E|Ulrich Haisch|ulrich.haisch@physics.ox.ac.uk|||
+E|Valentin Khoze|valya.khoze@durham.ac.uk|Institute of Particle Physics Phenomenology, Durham University|DH1 3LE|United Kingdom
+E|Anthony DiFranzo|adifranz@uci.edu|Department of Physics and Astronomy, University of California, Irvine and Theoretical Physics Department, Fermilab|Irvine CA 92697 and Batavia, Illinois 60510|USA
+# E|Daniel Whiteson|daniel@uci.edu|| # in reviewers
+E|Emanuele Re|emanuele.re@physics.ox.ac.uk|Rudolf Peierls Centre for Theoretical Physics, University of Oxford|OX1 3NP Oxford|United Kingdom
+E|Enrico Morgante|enrico.morgante@unige.ch|D\'epartement de Physique Th\'eorique and Centre for Astroparticle Physics (CAP), Universit\'e de Gen\`eve|Geneva|Switzerland
+E|Giorgio Busoni|giorgio.busoni@sissa.it|||
+E|Kentarou Mawatari|kentarou.mawatari@vub.ac.be|||
+E|LianTao Wang|liantaow@uchicago.edu|||
+E|Linda Carpenter|lmc@physics.osu.edu|Ohio State University||USA
+E|Marc Thomas|mct1g11@soton.ac.uk|||
+E|Matthew Buckley|mbuckley@physics.rutgers.edu|||
+E|Mihailo Backovic|mbackovic@gmail.com|||
+E|Patrick Fox|pjfox@fnal.gov|||
+E|Tongyan Lin|tongylin@gmail.com|Kavli Institute for Cosmological Physics, University of Chicago|Chicago, IL 60637|USA
+E|William Shepherd|will.shepherd@gmail.com|||
+E|Yang Bai|yangbai@physics.wisc.edu|||
+E|Patrizia Azzi|Patrizia.Azzi@cern.ch|INFN Padova||Italy
+P|||400602|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch
+E|S\'ergio F. Novaes|Sergio.Novaes@cern.ch|Universidade Estadual Paulista||
+P|||441865|Sau Lan Wu|sau.lan.wu@cern.ch
+P|||442824|Zhiqing Philippe Zhang|zhangzq@lal.in2p3.fr
+# P|||444681|Oliver Buchmueller|oliver.buchmuller@cern.ch # also in private email contributers
+P|||454259|Swagato Banerjee|swagato.banerjee@gmail.com|swagato.banerjee@cern.ch|University of Wisconsin, Madison||USA
+P|||474486|Fabio Maltoni|Fabio.Maltoni@cern.ch
+P|||532076|Alexander Belyaev|Alexander.Belyaev@cern.ch
+#|||537425|Thomas Rizzo|rizzo@slac.stanford.edu # already in reviewers
+P|||561662|Kristian Hahn|kristian.hahn@cern.ch
+# P|||583567|Marco Zanetti|Marco.Zanetti@cern.ch # also in private mail contributers
+P|||599457|Marie-Helene Genest|genest@lpsc.in2p3.fr
+P|||617928|Alexander Schmidt|Alexander.Schmidt@cern.ch
+P|||620868|Lashkar Kashif|Lashkar.Kashif@cern.ch
+P|||628708|Phat Srimanobhas|Norraphat.Srimanobhas@cern.ch
+E|Barbara Alvarez Gonzalez|barbara.alvarez.gonzalez@cern.ch|||
+P|||630610|Philip Coleman Harris|philip.coleman.harris@cern.ch
+P|||631201|Khristian Kotov|khristian.kotov@cern.ch
+E|David Salek|David.Salek@cern.ch|Nikhef and GRAPPA|Amsterdam|The Netherlands
+P|||654884|Mingshui Chen|Mingshui.Chen@cern.ch
+P|||654885|Alexis Kalogeropoulos|Alexis.Kalogeropoulos@cern.ch
+P|||658085|Dmytro Kovalskyi|dmytro.kovalskyi@cern.ch
+P|||661950|Nhan Viet Tran|nhan.viet.tran@cern.ch
+P|||664719|Yong Yang|Yong.Yang@cern.ch
+P|||666112|Andy Nelson|andrew.james.nelson@cern.ch
+E|Alessandro Vichi|alessandro.vichi@cern.ch|Theory division, CERN|1211 Geneva|Switzerland 
+P|||668497|Daniele Trocino|Daniele.Trocino@cern.ch
+P|||669401|Michele De Gruttola|michele.degruttola@cern.ch
+E|Regina Caputo|Regina.Caputo@cern.ch|Santa Cruz Institute for Particle Physics, Department of Physics and Department of Astronomy and Astrophysics, University of California at Santa Cruz|Santa Cruz, CA 95064|USA
+E|Kevin Sung|kevin.kai.hong.sung@cern.ch|Northwestern University||USA
+P|||674792|Johannes Erdmann|Johannes.Erdmann@cern.ch
+P|||678588|Benjamin Fuks|Benjamin.Fuks@cern.ch| Universit\'e de Strasbourg/CNRS-IN2P3
+P|||679537|Arturos Sanchez Pineda|Arturo.Rodolfo.Sanchez.Pineda@cern.ch
+#P|||682191|Sarah Malik|sarah.alam.malik@cern.ch # in editors
+P|||683660|Annapaola De Cosa|annapaola.de.cosa@cern.ch
+E|Johanna Gramling|johanna.gramling@cern.ch|Universit\'e de Gen\`eve, Ecole de Physique|CH-1211 Geneva|Switzerland
+E|Priscilla Pani|Priscilla.Pani@cern.ch|Stockholm University||Sweden
+P|||693299|Valerio Ippolito|valerio.ippolito@cern.ch
+P|||694649|Shin-Shan Yu|Shin-Shan.Yu@cern.ch
+P|||695583|Klaas Ole Padeken|klaas.ole.padeken@cern.ch
+P|||696366|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch
+P|||698372|Xiangyang Ju|Xiangyang.Ju@cern.ch
+P|||703603|Livia Soffi|Livia.Soffi@cern.ch
+E|Deborah Pinna|Deborah.Pinna@cern.ch|University of Zurich||Switzerland
+P|||706548|Raman Khurana|Raman.Khurana@cern.ch
+P|||706551|Bhawna Gomber|Bhawna.Gomber@cern.ch
+P|||708778|Bj\"orn Penning|Bjoern.Penning@cern.ch
+P|||710963|Hongtao Yang|Hongtao.Yang@cern.ch
+P|||710964|Fuquan Wang|Fuquan.Wang@cern.ch
+P|||713827|Steven Randolph Schramm|Steven.Schramm@cern.ch
+P|||715610|Gurpreet Singh|gurpreet.singh@cern.ch
+E|Romain Madar|romain.madar@cern.ch|||
+P|||737412|Rainer Roehrig|rainer.roehrig@cern.ch
+P|||738738|Amelia Jean Brennan|amelia.jean.brennan@cern.ch
+E|Ren-Jie Wang|renjie.wang@cern.ch|Department of Physics, Northeastern University|Boston, MA 02115|USA
+P|||742703|Mengqing Wu|mengqing.wu@cern.ch
+P|||748524|Daniel Robert Abercrombie|daniel.abercrombie@cern.ch
+P|||757001|Siddharth M Narayanan|siddharth.m.narayanan@cern.ch
+E|Th\'eo Jean Megy|megy@clermont.in2p3.fr|||
+P|||762719|Ece Akilli|ece.akilli@cern.ch
