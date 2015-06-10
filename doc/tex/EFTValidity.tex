@@ -38,19 +38,19 @@ based on collider data~\footnote{Comparisons between constraints from different 
 	a function of the model parameters rather than on derived observables;
 	however this is a point that should be developed further after the conclusion of the work of this Forum.}. 
 Experiments that directly probe the nucleon-dark matter scattering cross section 
-are testing the regime of small momentum transfers, where the EFT approximation always holds.  
+are testing the regime of small momentum transfers, where the EFT approximation typically holds.  
 Collider experiments, though, are sensitive to large momentum transfers: this is a regime where careful 
 treatment is necessary since the condition of applicability of the EFT may not hold.\footnote{
-Furthermore, mapping EFT results from high to low momentum requires particular care for some of the operators, 
-see Ref.~\cite{D'Eramo:2014aba} for a thorough discussion.}
+Furthermore, mapping EFT results from high to low momentum requires the use of the renormalization group, 
+see Ref.~\cite{Hill:2014yka,D'Eramo:2014aba} for a thorough discussion.}
 Therefore, especially in the case when constraints from different experiments are compared, 
 we suggest to assess the applicability of EFT benchmark models, rather than abandon them.
 %As we have learned, EFTs do not truly represent a model-independent representation of the data for the current collider sensitivity.
 %Until the various communities have agreed upon how to present this comparison, 
-Therefore, whenever EFT models are used, collider experiments should always assess their applicability 
-using one 
-of the several prescriptions in the literature~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}, 
-especially when constraints from other experiments are compared.
+Therefore, whenever EFT models are used and especially in comparison to constraints from other experiments,
+collider experiments should present their results as a function of the
+fraction of events for which the EFT approximation holds, according to one of the several prescriptions in the 
+literature~\cite{Busoni:2013lha,Busoni:2014sya,Busoni:2014haa,Aad:2015zva,Racco:2015dxa}.
 
 We first illustrate the complications
 that can arise with EFTs at colliders by considering an effective interaction
@@ -74,9 +74,7 @@ the corresponding value of $g$ must increase to match the experimental
 limit on \Mstar.
 On the other hand, if, for the same value of \Mstar, a large $\Lambda$
 is assumed so that the full set of events fulfill the EFT validity condition,
-a large value of
-$g$ is required, raising the question if perturbation theory
-is even applicable.     
+a larger value of g is required.  For large enough g, computations based on perturbation theory become unreliable.
 
 In the first part of this Chapter, we summarize two methods that
 have been advocated to truncate events that 
@@ -294,11 +292,10 @@ If a simplified model can be mapped to a given EFT, then the model's high-mediat
 %% 	interaction operator: before this report, ATLAS and CMS searches presented search results up to very high couplings
 %% 	and therefore large widths, potentially probing unphysical corners of phase space}. 
 %% It can be seen that the limits at high mediator mass for this model are equivalent to those of the corresponding EFT benchmark.
-Numerically, for 14 TeV studies, we have
-determined that to fully reproduce the kinematics of a contact
-interaction and have no remaining dependence on the presence of a resonance
-that is as narrow as the choice made in Section~\ref{sub:parameter_scan_monojet} (\gq = 0.25 and \gDM = 1),
-the mediator mass needs to be at least 10 TeV.
+
+A study of 14 TeV benchmarks for narrow resonances with \gq = 0.25 and \gDM = 1 (see Section~\ref{sub:parameter_scan_monojet})
+shows that a mediator with a mass of at least 10 TeV fully reproduces the kinematics of a contact
+interaction and has no remaining dependence on the presence of a resonance. 
 A comparison of the main kinematic variables for the \schannel vector 
 mediator model with a width of 0.1 \mMed
 is shown in Fig.~\ref{fig:EFT_kinematics}.\footnote{The use of a fixed width rather than the minimal width is exclusive of these plots.} 
@@ -364,12 +361,13 @@ both in the simplified model and in the EFT case. This can be seen in Fig.~\ref{
 
 \vskip20pt
 	
-Based on these studies, the Forum recommends experimental collaborations to deliver 
-results for mediators with a mass of 10 TeV instead of fully simulated EFT results for each of the DM masses 
-considered in the scan, and leave further reinterpretation to theorists.
+Based on these studies, the Forum recommends experimental collaborations to 
+add one grid scan point at very high mediator mass (10 \tev) to the scan, 
+for each of the DM masses for the \schannel simplified models described in Section~\ref{subsec:MonojetLikeModels}. 
+This will allow to reproduce the results of an equivalent contact interaction
+as a simple extension of the existing parameter scan. 
+
 It should be checked that the high-mass mediator case for the simplified model is correctly implemented 
-We therefore advise to add one grid scan point at very high mediator mass (10 \tev) to the scan, 
-for each of the DM masses for the simplified models described in Section~\ref{subsec:MonojetLikeModels}. 
 %The truncation procedure in Section~\ref{sec:TruncationWithSHat} can be used to fine-tune the mediator mass to be simulated for this purpose. 
 
 %\Todo{The extrapolation to other couplings and mediator masses can be
@@ -383,10 +381,10 @@ for each of the DM masses for the simplified models described in Section~\ref{su
 %% also be quantified by presenting the sensitivity of the results to \Reft, the fraction of events
 %% that satisfy $\hat{s} > \Mcut ^2$, for example.
 
-Whenever a UV completion is not available, EFT results are still
-a source of useful information as 
-described in Section~\ref{sub:validityEWContact}. 
-However, we can only roughly control how well the EFT approximation holds.
+Whenever a UV completion is not available, an EFT still
+captures a range of possible theories beyond the simplified models that we already consider. 
+However, in the case of the dimension-7 operators detailed in Section~\ref{sec:sec:EFT_models_with_direct_DM_boson_couplings}
+we can only roughly control how well the EFT approximation holds, as described in Section~\ref{sub:validityEWContact}.
 Despite the fact that a propagator was introduced to motivate
 the truncation procedure for \schannel models, the prescription from Sec.~\ref{sub:EFT_withSimp}
 depends upon the simplified model to derive the
@@ -415,7 +413,7 @@ exclusion limits for the chosen acceptance.
 We propose a rough scan over \Mcut, such that we find the values of \Mcut 
 for which \Reft ranges from 0.1 to 1. The analysis can then perform a scan over 
 several values of \Mcut, and show the truncated limit 
-for each one of them alongside the naive limit corresponding to \Reft = 1. 
+for each one of them. 
 
 %When \Reft=0, there is no limit. When \Reft reaches 1, the truncated limit 
 %is identical to the original limit. (<== These last two sentences may be overkill. 
