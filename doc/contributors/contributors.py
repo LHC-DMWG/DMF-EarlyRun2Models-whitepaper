@@ -10,7 +10,12 @@ def getLastFirstName (fullName) :
 	if len( splitName ) == 2 :
 		return (splitName[1], splitName[0])
 	if len( splitName ) == 3 :
-		return (splitName[2], splitName[0]+" "+ splitName[1])
+        	if (splitName[1] == "de" or splitName[1] == "De" or splitName[1] == "du" or
+                    splitName[1] == "Cortes" or splitName[1] == "Alvarez" or
+                    splitName[1] == "Martinez" or splitName[1] == "Sanchez" ):
+			return (splitName[1]+" "+splitName[2], splitName[0])
+                else:
+			return (splitName[2], splitName[0]+" "+ splitName[1])
 	if len( splitName ) == 4 :
 		return (splitName[3], splitName[0]+" "+ splitName[1]+" "+ splitName[2])
 	else :
@@ -57,10 +62,9 @@ for inFileName in inFileNames :
 		if institution == "" : institution = "NO INSTITUTE"
                 if country     == "" : country     = "NO COUNTRY"
 		NameEmailInstitutionDic[lastFirstName] = [email, institution, country]
-		
 
 
-SortedNameEmailInstitutionDic = OrderedDict(sorted(NameEmailInstitutionDic.items(), key=lambda l: l[0]))
+SortedNameEmailInstitutionDic = OrderedDict(sorted(NameEmailInstitutionDic.items(), key=lambda l: (str.lower(l[0][0]),str.lower(l[0][1]))))
 
 for key, value in SortedNameEmailInstitutionDic.iteritems() :
 	
@@ -70,8 +74,6 @@ for key, value in SortedNameEmailInstitutionDic.iteritems() :
 	institution = value[1]
         country = value[2]
 	
-#	print "\\href{mailto:"+email+"}{"+firstName+" "+lastName+"}"
-
 	print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
 	if country == "skip":
 	        print "\\emph{"+institution+"}\\\\"
