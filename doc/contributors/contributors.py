@@ -73,6 +73,9 @@ for key, value in SortedNameEmailInstitutionDic.iteritems() :
 #	print "\\href{mailto:"+email+"}{"+firstName+" "+lastName+"}"
 
 	print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
-        print "\\emph{"+institution+", "+country+"}\\\\"
+	if country == "skip":
+	        print "\\emph{"+institution+"}\\\\"
+        else:
+	        print "\\emph{"+institution+", "+country+"}\\\\"
 
  
