@@ -10,10 +10,6 @@
 % http://arxiv.org/abs/arXiv:1402.2285, 
 % and http://arxiv.org/abs/arXiv:1409.2893
 
-\textbf{\color{red}Note from the organizers: \color{black} we've recently uncovered discrepancies in the two models 
-used in the t-channel section. This will require further changes to this section that will be circulated separately
-in the next few days.}
-
 The preceding sections address models with a Dirac fermion coupled to
 the SM through exchange of a neutral \spinzero or \spinone particle in an
 \schannel process.  A \tchannel process may couple the SM and DM
@@ -43,26 +39,12 @@ where $Q_{(i),L}$, $u_{(i),R}$ and $d_{(i),R}$ are the SM quarks of the $i$-th g
 These mediators have SM gauge representations under $(SU(3), SU(2))_Y$ of $(3,2)_{-1/6}$, $(3,1)_{2/3}$ and $(3,1)_{-1/3}$ respectively. Variations of the model previously studied in the literature include coupling to the left-handed quarks only~\cite{Chang:2013oia, Busoni:2014haa}, to the $\phi_{(i),u,R}$ \cite{Tait:2013} or $\phi_{(i),d,R}$ \cite{Papucci:2014iwa, Yavin:14092893}, or some combination~\cite{Bai:2013iqa, An:2013xka}.
 
 %\vspace{5mm}
-
-As for the \schannel models, we assume Minimal Flavor Violation (MFV),
-setting the mediator masses for each flavor equal;
-the same logic also applies to the couplings $g$. 
-%Coupling to the third generation breaks the MFV assumption and is thus forbidden.
-The free parameters are then
-
-\begin{equation}
-\{ \mDM,\, \Mphi,\, g\}.
-\end{equation}
-
-%\Todo{What about Tait model?}
-%\vspace{5mm}
-
 The minimal width of each mediator is expressed, using the example of decay to an up quark, as
 
 \begin{equation}
 \begin{split}
 \Gamma (\phi_{(i)} \rightarrow \bar{u}_{(i)} \chiDM) &= \frac{g_{(i)}^2}{16 \pi M_{\phi_{(i)}}^3}(M_{\phi_{(i)}}^2 - m_{u_{(i)}}^2 - \mDM^2) 		\\
-					   & \times
+& \times
 %\sqrt{M_{\phi_{(i)}}^4 + m_{u_{(i)}}^4 + \mDM^4 - 2M_{\phi_{(i)}}^2m_{u_{(i)}}^2 - 2M_{\phi_{(i)}}^2\mDM^2 - 2m_{u_{(i)}}^2\mDM^2} \, ,
 \sqrt{(M_{\phi_{(i)}}^2 - (m_{u_{(i)}} + \mDM)^2)(M_{\phi_{(i)}}^2 - (m_{u_{(i)}}-\mDM)^2)} \, ,
 \end{split}
@@ -76,28 +58,42 @@ in the limit $M_{\phi_{(i)}}, \mDM \gg m_{u_{(i)}}$.
 
 %\vspace{5mm}
 
-The leading-order processes involved in \MET{}+jet production are shown
-in Fig. \ref{fig:tchannelMonojet}.
-Note that the generation index $i$ for $\phi_{(i)}$ is linked to the incoming
+The generation index $i$ for $\phi_{(i)}$ is linked to the incoming
 fermion(s), and it runs on all three quark generations due to 
 the MFV assumption. 
+Ref.~\cite{Papucci:2014iwa} considers two extreme cases for this model in terms of cross-sections: 
+the case in which all squarks are present, leading to the maximal cross-section, and
+the case in which only right-handed down-type squarks are present. 
+Neither of the models in this reference do not include coupling to the third quark generation,
+leading to a violation of the MFV assumption. However, the models are still safe from flavor constraints,
+and the addition of the third generation would lead to a model that is qualitatively similar and only differs
+by production cross-section~\Todo{Ask A. Vichi again for justification text}. The studies in this Section
+are performed using a model with a mediator coupling to all three generators, following Ref.~\ref{Bell:2012rg}. 
+The LO UFO model is interfaced to \madgraph{} v2.2.3, but no parton shower simulation is employed. 
+Further differences between the two models (hypercharge, chirality) only lead to a change in the cross-section. 
+
+%\Todo{What about Tait model?}
+%\vspace{5mm}
+
+The leading-order processes involved in \MET{}+jet production are shown
+in Fig. \ref{fig:tchannelMonojet}. 
 %Thus, mono-jet production via $\phi_{(3),u}$ is not possible at
 %this order, while production through $\phi_{(3),d}$ is suppressed by
 %the $b$ parton PDF.
 %fermion(s).
 %CD: probably not needed? It's clear we need all three quarks. 
 %However, coupling to the third generation is required by MFV. 
-However, if the coupling $g$ includes a Yukawa coupling proportional to the quark mass, 
-and $g$ is sufficiently large, LHC searches will still be sensitive to this model, 
-as explained in Section~\ref{sec:singleb}.
-
 This model can also give a signal in the \MET + di-jet
 channel when, for example, the \chiDM is exchanged in the
 \tchannel and the resulting $\phi$ pair each decay to a jet +
 \chiDM. Fig.~\ref{fig:tchannelDijet} shows the leading order diagrams.
 Except for the $gg$ induced process, di-jet production
-through the third-generation mediator $\phi_{(3),u}$ is not possible, and production through $\phi_{(3),d}$ is
-again suppressed. 
+through the third-generation mediator $\phi_{(3),u}$ is not possible, 
+and production through $\phi_{(3),d}$ is suppressed. 
+However, if the coupling $g$ includes a Yukawa coupling proportional to the quark mass, 
+and $g$ is sufficiently large, LHC searches will still be sensitive to this model, 
+as explained in Section~\ref{sec:singleb}.
+
 The diagram involving the \tchannel exchange
 of $\chiDM$ is strongly dependent upon the Dirac fermion assumption.
 For a Majorana fermion, $q\bar q,\bar q\bar q,$ and $qq$ production
@@ -105,7 +101,8 @@ would be possible with the latter having a pronounced enhancement
 at the LHC.
 %\Todo{Get clarification of the case similar to a top squark -> will be later}
 
-This model is similar to the simplified model considered in SUSY searches, implemented as the MSSM with only light squarks and
+This model is similar to the simplified model considered in SUSY searches, 
+implemented as the MSSM with only light squarks and
 a neutralino, except for two distinct points:  the $\chiDM$ is
 a Dirac fermion and the coupling $g$ is not limited to be
 weak scale ($g\ll 1$).
@@ -381,13 +378,29 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
 
 \subsection{Parameter scan}
 
+As for the \schannel models, we adopt the simplifying assumption that the mediator masses and 
+couplings are equal for each flavor and handedness. 
+%Coupling to the third generation breaks the MFV assumption and is thus forbidden.
+The free parameters are then
+
+\begin{equation}
+\{ \mDM,\, \Mphi,\, g\}.
+\end{equation}
+
 Ref.~\cite{Papucci:2014iwa} studies the parameter space and obtains
-bounds on this model from LHC Run 1 mono-jet and dijets+\MET data. The Forum did not exhaustively compare the kinematic distributions of this model as was done in the \schannel case. While this means the recommendations below should be taken with more caution, the model is plausible and distinctive, and it should be included in the design of LHC searches.
+bounds on this model from LHC Run 1 mono-jet and dijets+\MET data. 
+The Forum did not exhaustively compare the kinematic distributions of the \tchannel models 
+as done in the \schannel case. 
+In particular, the absence of a parton shower simulation can affect some of the conclusions on
+the points and sensitivity chosen. 
+While this means the conclusions on the parameter scan below should be taken with more caution, 
+the model is plausible and distinctive, and it should be included in the design of early Run-2 LHC searches.
 
 As in the \schannel models, scans should be performed over
 $\mDM$ and $\Mphi$. The viable ranges of both parameters nearly
 coincide with the scan proposed for the \schannel; for simplicity we
-recommend adopting the \schannel mono-jet grid.
+recommend adopting a subset of the \schannel mono-jet grid that accounts
+for the on-shell and off-shell regions.
 %Sentence not needed? 
 %Reshuffled after Tongyan's comments.
 %In the heavy mediator limit, the kinematic distributions depend
@@ -396,24 +409,85 @@ recommend adopting the \schannel mono-jet grid.
 In contrast to the \schannel case, the
 bounds one obtains from \MET{}+X searches depend strongly on the width
 of the mediator, as is visible in Figs.~5 and 6 of
-Ref.~\cite{Papucci:2014iwa}, except in the heavy mediator limit ($\Mphi \approx 2$\,TeV). 
+Ref.~\cite{Papucci:2014iwa} and in Fig.~\ref{fig:monojet_tchannel} (a), 
+except in the heavy mediator limit ($\Mphi \approx 2$\,TeV). This figure has been obtained applying
+a simplified analysis selection (cuts on the leading jet \pT$>$150 GeV and $\eta <$ 2.8, \MET{}$>$150 GeV.) using MadAnalysis~\ref{Conte:2014zja,Dumont:2014tja}.
 %In the heavy mediator limit, the rates of the first three diagrams of
 %Fig.~\ref{fig:tchannelMonojet} scale as one with the coupling $g$. 
-A scan over the width was not available for this report.  Thus we recommend scanning a range of 
-possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal 
-width to a value approaching the particle limit (for example, $\Gamma \approx \Mphi/3$ in Ref.~\cite{Papucci:2014iwa}).
+%A scan over the width was not available for this report.  Thus we recommend scanning a range of 
+%possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal 
+%width to a value approaching the particle limit (for example, $\Gamma \approx \Mphi/3$ in Ref.~\cite{Papucci:2014iwa}).
+Figure~\ref{fig:monojet_tchannel} (b) also shows that, if the DM mass is low and the mediator width is narrow and produced on-shell,
+the cross-section is dominated by $qg \rightarrow q\chi\chi$ diagram. The mediator energy is then
+split evenly between the light DM particles and the quark, leading to a broad enhancement at \mMed/2. 
+
+\begin{figure}
+	\centering
+	\subfloat[\MET{} distribution for a 200 GeV \tchannel mediator, when varying the couplings.]{
+		\includegraphics[width=0.8\textwidth]{figures/monojet/tchannel_coupling}% width = 0.73 => regular textwidth of figure environment. figure* used to avoid overlapping captions.
+		\label{fig:monojet_tchannel_coupling}}
+	\hfill
+	\subfloat[Leading jet \pT distribution for a 2 TeV \tchannel mediator with small ($g$=0.5) to large ($g$=7) couplings with a DM mass of 1 GeV]{
+		\includegraphics[width=0.8\textwidth]{figures/monojet/tchannel_edge}
+		\label{fig:monojet_tchannel_edge}}
+	\caption[][14pt]{Kinematic distributions normalized to unit area from the \tchannel model from Ref.~\cite{Bell:2012rg}, using MadAnalysis \cite{} and simplified
+		analysis cuts on the leading jet \pT$>$150 GeV and $\eta <$ 2.8, \MET{}$>$150 GeV.}
+	\label{fig:monojet_tchannel}
+\end{figure}
+
+Points with distinct kinematic distributions for a preliminary scan in \{ \mDM,\, \Mphi,\, g\} are selected 
+taking into account the expected sensitivity of Run-2 searches, and requiring at least 100 events
+to pass the kinematic cuts outlined for Fig.~\ref{fig:monojet_tchannel} in 25 \invfb of collected data.
+They are outlined in Table~\ref{tab:tchannel_parameter_scan}.\Todo{Is 9 a reasonable, perturbative coupling?} 
+
+
+\begin{table}[!h]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{| l |r r r r r r r |c|}
+			\hline
+			\multicolumn{1}{|c|}{\mDM/\gev} & \multicolumn{7}{c|}{\mmed/\gev} & \multicolumn{1}{c|} {couplings} \\
+			\hline
+			1             &         10  &  50 & 100 & 300 &     &        &          & 0.1,  1, 3, 7 \\
+			1             &             &     &     &     & 500 & 1000   &          & 0.25, 1, 3, 7 \\
+			1             &             &     &     &     &     &        &  2000    &    1, 3, 7\\
+			\hline
+			50            &             &  55 &     &     &     &        &          & 0.1, 1, 3, 4$\pi$ \\
+			50            &             &     & 200 & 300 &     &        &          & 0.1, 1, 3, 7      \\
+			\hline
+			500           &             &     &     &     & 550 &        &          & 1, 3 \\
+			500           &             &     &     &     &     &  1000  &          & 0.25, 1, 3, 9 \\
+			500          &              &     &     &     &     &        &  2000    & 3           \\
+			\hline
+			1000           &             &     &     &    &     &  1100  &          & 3, 4$\pi$ \\
+			1000           &             &     &     &    &     &        & 2000     & 4$\pi$ \\
+			\hline
+		\end{tabular}
+	}
+	\caption{Simplified model benchmark points for \tchannel simplified model (\spinzero mediators 
+		coupling to Dirac DM fermions, taking the minimum width.)}.	
+	\label{tab:tchannel_parameter_scan}
+\end{table}
+
 
 \subsection{Additional considerations for $V+\MET$ signatures}
 \label{sub:EW_TChannel}
 
-The model parameters with emission of an EW boson 
+The models and parameters with emission of an EW boson 
 generally follow those in Section~\ref{sec:monojet_t_channel}.
-even though fewer diagrams are involved.   
+even though different diagrams are involved.  
 A representative Feynman diagram can be
 constructed by replacing a final-state gluon in Fig.~\ref{fig:tchannelMonojet}
-with a $\gamma,W,Z$ boson. See Ref.~\cite{Bell:2012rg} for a theoretical overview
-of this model with specific examples for the Z+\MET final state. 
+with a $\gamma,W,Z$ boson, but radiation of electroweak bosons directly from the mediator 
+also leads to a mono-boson signature. 
 
+The models considered in Section~\ref{sec:monojet_t_channel}
+present a relevant difference concerning final states with an electroweak boson.
+In the model in~\cite{Bell:2012rg}, both right- and left-handed mediators can radiate a Z boson,
+while only the left-handed mediator in~\cite{Bell:2012rg} allows for W and Z radiation.~\Todo{Check why this happens: question asked to A. Vichi.}
+
+The studies in this Section use the LO+PS UFO model from~\cite{Bell:2012rg} in \madgraph v2.2.3, 
+using \pythia 8 for the parton shower.
 Figure~\ref{fig:TChan_EW_Zhad_MET} shows the \MET distribution for the hadronic Z+\MET final state, 
 with varying dark matter and mediator mass, before any selection. 
 The acceptance for a series of basic analysis selections
@@ -438,7 +512,8 @@ applied at the generator level is shown in Figure~\ref{fig:TChan_EW_Zhad_acc}.
 
 The discussion of the parameter scan for the \tchannel model
 in the case of signatures including EW bosons
-parallels that of the monojet case. 
+parallels that of the monojet case for mediator and dark matter masses,
+but no kinematic dependence on the width is observed, so a coupling scan is not needed. 
 %with the difference that in this case the kinematics does 
 %not depend on the width. 
 
