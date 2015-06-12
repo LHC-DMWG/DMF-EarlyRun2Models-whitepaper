@@ -2,62 +2,92 @@
 
 \begin{footnotesize}
  
-\begin{table}
+\begin{table*}[!p]
 	\centering\scriptsize
-\begin{tabular}{llrr} \toprule \multicolumn{4}{c}{\textbf{Benchmark models for ATLAS and CMS Run-2 DM searches}}\\
+\noindent
+\begin{tabular}{llrl} \toprule \multicolumn{4}{c}{\textbf{Benchmark models for ATLAS and CMS Run-2 DM searches}}\\
 	
 	
-	\cmidrule(r){2-4} 
-	\multicolumn{4}{c}{vector/axial vector mediator, \schannel}\\
-	\cmidrule(r){2-4} 
-
-	Signature & State of the art calculation & Link to implementation & References \\ 
 	\cmidrule(r){1-4} 
-    jet + \MET{} & \textbf{NLO+PS (\powheg, r3059)} & \cite{ForumSVN_DMA, ForumSVN_DMV} & \cite{Haisch:2013ata,Alioli:2010xd,Nason:2004rx,Frixione:2007vw,Haisch:2015ioa} \\ 
-	& NLO (\mcfm) & TBC & \cite{Fox:2012ru} \\ 
-	& LO+PS (\madgraph, v2.2.3) &TBC & \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} \\ 		
-    $W/Z/\gamma$ + \MET{} & \textbf{LO+PS (\madgraph), v2.2.3} & \cite{ForumSVN_EW_DMV} & \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}  \\ 
+	\multicolumn{4}{c}{vector/axial vector mediator, \schannel (Sec.~\ref{sec:monojet_V})}\\
+	\cmidrule(r){1-4} 
+
+	Signature & State of the art calculation and tools & Link to implementation & References \\ 
+	\cmidrule(r){1-4} 
+    jet + \MET{} & \textbf{NLO+PS (\powheg, r3059)} & \cite{ForumSVN_DMA, ForumSVN_DMV} & \parbox{4cm} {\cite{Haisch:2013ata,Haisch:2015ioa,Alioli:2010xd,Nason:2004rx,Frixione:2007vw} }\\ 
+	& NLO+PS (UFO + \madgraph) & Not yet available & \parbox{4cm} {\cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} } \\ 		
+	& NLO (\mcfm) & Not yet available & \parbox{4cm} {\cite{Fox:2012ru,Harris:2014hga} }\\ 
+	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EW_DMV} & 
+	\parbox{4cm} {\cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }  \\ 
 
 
-	\cmidrule(r){2-4} 
-	\multicolumn{4}{c}{scalar/pseudoscalar mediator, \schannel}\\
-	\cmidrule(r){2-4} 
-	Signature & State of the art calculation & Link to implementation & References \\ 
+%	\cmidrule(r){1-4} 
+%	\multicolumn{4}{c}{scalar/pseudoscalar mediator, \schannel (Sec.~\ref{sec:monojet_scalar})}\\
+%	\cmidrule(r){1-4} 
+%	Signature & State of the art calculation and tools& Link to implementation & References \\ 
+%		\cmidrule(r){1-4} 
+%		
+%	jet + \MET{} & \textbf{LO+PS, top loop (\powheg, r3059)} &  \cite{ForumSVN_DMS_tloop, ForumSVN_DMP_tloop} &  \parbox{4cm} {\cite{Haisch:2013ata,Haisch:2015ioa,Alioli:2010xd,Nason:2004rx,Frixione:2007vw} } \\ 
+%	& LO, top loop (\mcfm) & Not yet available & \cite{Fox:2012ru,Harris:2014hga} \\ 
+%	& NLO+PS (UFO+\madgraph) & Not yet available (?) & \parbox{4cm} {\cite{Alwall:2014hca,Hirschi:2011pa,Alloul:2013bka,Degrande:2011ua} }\\ 		
+%	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3}) & \cite{} & \parbox{4cm} { \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+%    $t\bar{t},b\bar{b}$+ \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3}) &  \cite{ForumSVN_DMTTBar} & \parbox{4cm} { \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+%%    DMS contains S and P mediators that couple to the quark in a Yukawa-like way (at NLO). 
+%%    Since top quarks are not present in the proton, here the processes that dominate at tree-level are
+%%    b bbar -> chi chibar g (via S or P)
+%%    g b -> chi chibar b (via S or P)
+%%    and also bottom <-> charm processes.
+%%    Since the b and c yukawa are very small, cross sections here are extremelly small, and hence this process is less interesting than DMS_tloop in the monojet context.
+%
+	\cmidrule(r){1-4} 
+	\multicolumn{4}{c}{scalar mediator, \tchannel (Sec.~\ref{sec:monojet_t_channel})}\\
+	\cmidrule(r){1-4} 
+	Signature & State of the art calculation and tools & Link to implementation & References \\ 
 		\cmidrule(r){1-4} 
 		
-	jet + \MET{} & \textbf{LO+PS, top loop (\powheg, r3059)} &  \cite{ForumSVN_DMS_tloop, ForumSVN_DMP_tloop} &  \cite{Haisch:2013ata,Alioli:2010xd,Nason:2004rx,Frixione:2007vw,Haisch:2015ioa} \\ 
-	& NLO (\mcfm) & TBC & \cite{Fox:2012ru} \\ 
-	& NLO+PS (\madgraph, v2.3.0) & TBC & \cite{Alwall:2014hca,Hirschi:2011pa,Alloul:2013bka,Degrande:2011ua} \\ 		
-	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (\madgraph), v2.2.3} & TBC  & \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} \\ 
-    $t\bar{t},b\bar{b}$+ \MET{} & \textbf{LO+PS (\madgraph), v2.2.3} & TBC & \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}\\ 
-    & NLO+PS (\powheg, r3059) & TBC & \cite{Haisch:2013ata,Alioli:2010xd,Nason:2004rx,Frixione:2007vw,Haisch:2015ioa} \\ 
-%    DMS contains S and P mediators that couple to the quark in a Yukawa-like way (at NLO). 
-%    Since top quarks are not present in the proton, here the processes that dominate at tree-level are
-%    b bbar -> chi chibar g (via S or P)
-%    g b -> chi chibar b (via S or P)
-%    and also bottom <-> charm processes.
-%    Since the b and c yukawa are very small, cross sections here are extremelly small, and hence this process is less interesting than DMS_tloop in the monojet context.
+	jet(s) + \MET{} (2 quark generations) & LO+PS (UFO + \madgraph v2.2.3) & \cite{ForumSVN_TChannel_PapucciVichiZurek}&  \parbox{4cm} {\cite{Papucci:2014iwa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+	jet(s) + \MET{} (3 quark generations) & \textbf{LO+PS (UFO + \madgraph v2.2.3} & \cite{ForumSVN_TChannel_Amelia}&  \parbox{4cm} {\cite{Bell:2012rg,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} } \\ 
+	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3} & TBC  & \parbox{4cm} {\cite{Bell:2012rg, Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}}\\ 
+    $b$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3} & \cite{ForumSVN_DMSingleB}  & \parbox{4cm} {\cite{Lin:2013sca,Agrawal:2014una, Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}}\\ 
+			
+	\cmidrule(r){1-4} 
+	\multicolumn{4}{c}{Specific simplified models with EW bosons (Sec.~\ref{sec:monoHiggs})}\\
+	\cmidrule(r){1-4} 
+	Signature and model & State of the art calculation and tools & Link to implementation & References \\ 
+	\cmidrule(r){1-4} 
+	
+	Higgs + \MET{}, vector mediator & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWMonoHiggs}& \parbox{4cm} {\cite{Carpenter:2013xra,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+	Higgs + \MET{}, scalar mediator & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWMonoHiggs}& \parbox{4cm} {\cite{Carpenter:2013xra,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+	Higgs + \MET{}, 2HDM & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWMonoHiggs_2HDM}& \parbox{4cm} {\cite{Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}} \\ 
 
-	\cmidrule(r){2-4} 
-	\multicolumn{4}{c}{scalar mediator, \tchannel}\\
-	\cmidrule(r){2-4} 
-	Signature & State of the art calculation & Link to implementation & References \\ 
-		\cmidrule(r){1-4} 
-		
-	jet(s) + \MET{} & \textbf{LO+PS (\madgraph), v2.2.3} & \cite{ForumSVN_TChannel}& \cite{Papucci:2014iwa} \\ 
-	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (\madgraph), v2.2.3} & TBC  & \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}\\ 
-		
-%	
-%	\midrule  scalar mediator, \tchannel &  jet(s) + \MET{} & \textbf{LO+PS (\madgraph)} & link &Ref \\ 
-%	 $W/Z/\gamma$ + \MET{} & \textbf{LO+PS (\madgraph)} & link &Ref \\ 
+
+	\cmidrule(r){1-4} 
+	\multicolumn{4}{c}{Contact interaction operators with EW bosons (Sec.~\ref{sec:monoHiggs})}\\
+	\cmidrule(r){1-4} 
+	Signature and model & State of the art calculation and tools & Link to implementation & References \\ 
+	\cmidrule(r){1-4} 
+	
+	 $W/Z/\gamma$ + \MET{}, dimension-7& \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWEFTD7}& \parbox{4cm} {\cite{Cotta:2012nj, Carpenter:2012rg, Crivellin:2015wva,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+	 Higgs + \MET{}, dimension 4 and 5 & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_monoHEFTD5}& \parbox{4cm} {\cite{Carpenter:2013xra,Petrov:2013nia,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+	 Higgs + \MET{}, dimension 8 & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWMonoHiggs}&
+	 \parbox{4cm} {\cite{Carpenter:2013xra,Petrov:2013nia,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
+
 	
 	\bottomrule 
 	\end{tabular}
-	\label{tab:summaryModels}
-\end{table}
+	
+	\begin{center}
+	%\caption{
+		\normalsize 
+		Table 6.1: 
+		Summary table for available benchmark models considered within the works of this Forum. 
+		The results in this document have been obtained with the implementations in bold. 	
+		\label{tab:summaryModels}
+	%}
+	\end{center}
+	
+\end{table*}
 
 \end{footnotesize}
 
-\begin{center}
-	Table 6.1: Summary table for available benchmark models considered within the works of this Forum. Experimental collaborations will use the implementation in bold for Run-2 searches. 
-\end{center}
+

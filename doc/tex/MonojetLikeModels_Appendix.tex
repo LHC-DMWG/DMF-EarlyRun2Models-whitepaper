@@ -14,25 +14,24 @@ or by effectively or using global/local $K$-factors).
 \subsection{Implementation of ``s-channel'' models for mono-jet signature}
 \label{sec:monojet_implementation}
 
-These models include those referred to as \modelDMV, \modelDMA, \modelDMS and
-\modelDMP and discussed in Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar}.
+These models include those discussed in Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar}.
 In monojet analyses, i.e. when final states are selected with a few jets and \MET{}, observables and in particular the \MET{} spectrum depend upon the accuracy of the simulation of QCD radiation from the initial state.
-For the \modelDMV and \modelDMA models, the current state of the art is  NLO+PS. It is particularly simple to obtain simulations for these processes at NLO+PS and even for merged samples at NLO accuracy, starting from SM implementations.  We therefore recommend simulations to be performed at NLO+PS, and in case multi-jet observables are employed,  by merging samples with different multiplicities. 
+For the vector and axial vector models, the current state of the art is  NLO+PS. It is particularly simple to obtain simulations for these processes at NLO+PS and even for merged samples at NLO accuracy, starting from SM implementations.  We therefore recommend simulations to be performed at NLO+PS, and in case multi-jet observables are employed,  by merging samples with different multiplicities. 
 Results at such accuracy can be obtained either in dedicated implementations, such as that of  \powheg \cite{Haisch:2013ata}, or via general purpose NLO tools like \madgraph employing currently available UFO models at NLO.~\footnote{The validation of a dedicated DM UFO model at NLO using the notation of Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar} is in progress.}
 
 A study using POWHEG~\cite{Haisch:2013ata} has shown that the NLO corrections result in a substantial reduction in the dependence on the choice of the renormalization and factorization scales and hence a reduced theoretical uncertainty on the signal prediction. For the central choice of renormalization and factorization scales,
 the NLO corrections also provide a minor enhancement in the cross section.
 
-For the \modelDMS and \modelDMP models, the lowest order process
+For the scalar and pseudoscalar models, the lowest order process
 already involves a one-loop amplitude in QCD.
 Because of the complexity of performing NLO calculations for this class of processes and in particular the absence of general methods for computing two-loop virtual contributions, only LO predictions are currently available. These can be interfaced to shower programs exactly as usual tree-level Born computations, i.e. by considering one parton multiplicity at the time
 or by merging different parton multiplicities via CKKW or MLM schemes to generate inclusive samples with jet rates at LO accuracy.  For spin-0 mediators in the mono-jet final state,
 the top-quark loop is the most important consideration.
-The matrix element implementation with exact top-loop dependence of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} at fixed order and in \powheg~\cite{Haisch:2015ioa} and \madgraph~\cite{HC} for  event generation at LO+PS level. The \powheg and \mcfm implementations include the finite
-top quark mass dependence for DM pair production and 1 extra parton at LO. The same processes are available in \madgraph v2.3 and in {\sc Sherpa+OpenLoops/GoSam}, including  up to 2 extra partons in the final state. Samples can be merged employing CKKW, $K_T$-MLM  and MEPS@LO procedures.
+The matrix element implementation with exact top-loop dependence of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga} at fixed order and in \powheg~\cite{Haisch:2015ioa} and \madgraph~\cite{} for  event generation at LO+PS level. The \powheg and \mcfm implementations include the finite
+top quark mass dependence for DM pair production and 1 extra parton at LO. The same processes are available in \madgraph v2.3 and in {\sc Sherpa+OpenLoops/GoSam}, including  up to 2 extra partons in the final state. Samples can be merged employing CKKW, $K_T$-MLM  and MEPS@LO procedures.\Todo{Uli's comment: are those public?}
 %For consistency with the spin-1 generation, we recommend using \powheg.
 
-Most of the results that have been presented in this document for these processes at NLO+PS accuracy have been obtained with POWHEG interfaced to \pythiaEight. For future reference, we document the specific settings needed to run the \powheg generation for the Dark Matter models. Those will serve as nominal benchmarks for the early Run-2 ATLAS and CMS DM analyses. \powheg parameter cards for all models can be found on the Forum SVN repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
+Most of the results that have been presented in this document for these processes at NLO+PS accuracy have been obtained with POWHEG interfaced to \pythiaEight. For future reference, we document the specific settings needed to run the \powheg generation for the Dark Matter models so they can serve as nominal benchmarks for the early Run-2 ATLAS and CMS DM analyses. \powheg parameter cards for all models can be found on the Forum SVN repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
 
 \subsubsection{\powheg configuration for DM models}
 
@@ -292,7 +291,7 @@ The \texttt{Merging:Process} command specifies the lowest parton emission proces
  \end{figure}
 
 
- \begin{figure}[h!]
+ \begin{figure*}[h!]
  	\centering  
  	\subfloat[$1\rightarrow2$ jets]{%
  		\includegraphics[width=0.45\linewidth]{figures/monojet_appendix/compare_plot_1.pdf}
@@ -315,7 +314,7 @@ The \texttt{Merging:Process} command specifies the lowest parton emission proces
  	}
    \caption{Distributions of differential jet rates $\frac{dN_{i\to j}}{d \log_{10}(k_\textrm{cut})}$ for EFT D5 sample with CKKW-L matching scale at 30, 50, 70, 80 and 90\,\gev. A zoom of the region around the matching scale values is shown on right.}
    \label{fig:CKKW_D5_zoom}
- \end{figure}
+ \end{figure*}
 
 
 %% \subsubsection{Parton emission multiplicity}
@@ -512,7 +511,7 @@ finite top-quark mass and parton shower effects is possible yet left for future 
 \subsubsection{\madgraph details for 2HDM Higgs+MET model}
 
 While a 2HDM UFO implementation at NLO accuracy to be used with \madgraph is 
-available~\cite{FeynRulesWebPage}, in this work we have only considered LO simulations.
+available~\cite{FeynRulesWebPage}\Todo{Uli doesn't find it.}, in this work we have only considered LO simulations.
   
 The two couplings that can be changed in the implemented model follow the nomenclature below:
  \begin{itemize}
@@ -546,4 +545,3 @@ In our simulations we have implemented the models in the corresponding
 UFO files and  generated events at LO via \madgraph 2.2.2, using \pythiaEight for the parton shower. We have not generated events with extra patrons and merging.
 Parameter cards can be found on the Forum SVN repository:~\cite{ForumSVN_EWMonoHiggs} for operators with Higgs+MET final states
 and ~\cite{ForumSVN_EWEFTD7} for $W/Z/\gamma$ final states.
-
