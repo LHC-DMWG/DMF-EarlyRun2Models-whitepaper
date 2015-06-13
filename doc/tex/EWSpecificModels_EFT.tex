@@ -15,7 +15,7 @@ The EFT operators considered in this section do not have a simplified model
 completion for Dirac fermion Dark Matter available to date. 
 They provide kinematic distributions that 
 are unique to mono-boson signatures, and that in most cases 
-are not reproduced by an equivalent simplified model.\footnote{Wherever this is
+are not reproduced by an equivalent simplified model.\sidenote{Wherever this is
 the case, for practical reasons one can only generation a simplified model result 
 in the limiting EFT case, as the results can be rescaled and reinterpreted.}
 
@@ -24,7 +24,7 @@ Dirac DM, up to dimension 7, can be found in~\cite{Cotta:2012nj, Carpenter:2012r
 Higher dimensional operators, up to dimension 8, leading to Higgs+\MET signatures,
 are mentioned in~\cite{Carpenter:2012rg, Berlin:2014cfa}. The first part of this Section outlines
 the main characteristics for a limited number of these models that could be 
-considered in Run-2 searches. 
+considered in early Run-2 searches. 
 However, the EFT approximation made for these operators can be problematic, see Ref.~\cite{Berlin:2014cfa} for discussion.
 For this reason, model-independent results as in Appendix~\ref{app:Presentation_Of_Experimental_Results} 
 should be privileged over considering these operators as realistic benchmarks. 
@@ -32,11 +32,15 @@ should be privileged over considering these operators as realistic benchmarks.
 
 However, another consideration that emerged from the Forum discussion was that the EFT approach allows
 more model-independence when reinterpreting results, making it worth still having
-results available in terms of these operators. Furthermore, once simplified models are available
+interpretation of the results available in terms of these operators. Furthermore, once simplified models are available
 for those operators, EFT results can be used as a limiting case for consistency checks. 
 We devote the end of this Section to a discussion on the presentation of results 
 from this model, including an assessment of their reliability 
 using a conservative procedure that is only dependent on EFT parameters.
+
+These models are known at LO, and they can be interfaced to a parton shower. The studies in this Section
+have been performed using a model within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  
+The implementation of these models is discussed further in Appendix~\ref{sub:EFTModels}.
 
 %CD: what is this?
 %\newthought{Implementation discussed in the Appendix}
@@ -123,24 +127,21 @@ $\gDM = {(246~\gev)}/{\lambda}$.
 	in \madgraph through explicit Lagrangian terms?}.
 
 The initial value of the new physics scale $\lambda$ chosen 
-for the sample generation is 3~\tev; this is a convention and does not affect the signal kinematics;
-\Todo{Waiting for plot by Bhawna Gomber showing this}
+for the sample generation is 3~\tev. This is a convention and does not affect the signal kinematics:
 the cross-section of the samples can be rescaled according to the 
 $\lambda^3$ dependence when deriving the constraints on this scale. 
 However, more care should be given when rescaling Higgs+\MET operators
-of higher dimensions, as different diagrams have a different $\lambda$  dependence. 
-\Todo{Include unpublished study of rescaling for dimension-8 operators by N. Whallon in dimension-8 section.}
+of higher dimensions, as different diagrams have a different $\lambda$ dependence. 
 %From Andy
 %– Lambda=3~\tev. Essentially this is an arbitrary choice for most EFTs, 
 %however it does affect the mono-H analysis as some of their models 
 %have non-trivial scaling with Λ. More care should be given to the choice for mono-H. 
 
 The DM mass values for the benchmark points to be simulated are chosen to
-span a sufficient Dark Matter range leading to different kinematics, 
+span a sufficient range leading to different kinematics, 
 that is within the LHC sensitivity for early searches and that is consistent across 
 the various signatures and EFT operators. We therefore start the mass scan
 at \mdm=1~\gev, where collider experiments are complementary to direct and indirect detection
-%TODO: we could kill the 1~\gev as the kinematics does not change from 10
 and choose the last point corresponding to a DM mass of 1~\tev. 
 We recommend a scan in seven mass points, namely:
 $$
@@ -168,7 +169,7 @@ into two $b-$quarks is shown in Fig.~\ref{fig:Hbb_Dim5}, for points similar to t
 % 		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/xxhhg5/truth_subleading_b_eta} %\label{fig:met_cmp_low}
 % 	}
 % 	\hfill
-%TODO: put in appendix
+
  	\subfloat[Angular distance between the two leading $b-$jets]{
  		\includegraphics[width=0.8\linewidth]{figures/EW/monoH/xxhhg5/truth_bb_deltar} %\label{fig:met_cmp_low}
  	}
@@ -385,14 +386,13 @@ is provided in the Appendix~\ref{app:EWSpecificModels_Appendix}.
 Providing results for the pure EFT limit of these models will prove useful
 to cross-check the implementation of future. 
 
-Given these considerations, the recommendations on the presentation of the results
-for these models are: 
+Given these considerations, we recommend to present results 
+for these models as follows: 
 
 \begin{itemize}
 \item Deliver fiducial limits on the cross section of any new physics events, without any model assumption, according to the guidelines in Appendix~\ref{app:Presentation_Of_Experimental_Results}.  
 \item Assess the percentage of events that pass a condition of validity for the EFT approximation that only depends, and present results removing 
-of the invalid events using the procedure in Section~\ref{sec:EFTValidity} alongside the raw EFT results;
+of the invalid events using the procedure in Section~\ref{sec:EFTValidity} alongside the raw EFT results.
 \end{itemize}
 
-\newthought{The implementation for these models is discussed in Appendix~\ref{sub:EFTModels}.}
 

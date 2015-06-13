@@ -37,13 +37,17 @@ The Lagrangian considered is given by
 
 %The QCD production of the colored mediator introduces a tree-level $b$+MET diagram with a $g_s*g$ dependence, which could be scaled. 
 %However, the bb+MET (which often also falls in the b+MET signal region) has both pure QCD production of the colored mediator 
-%($g_s^2$) and also possibly diagrams that scale as $g_s^2*g$. 
+%($g_s^2$) and also possibly diagrams that scale as $g_s^2*g$.
 
-\paragraph{Parameter scan}
+This model is known at LO+PS accuracy, and the studies in this Section use a LO model implementation within \madgraph v2.2.3
+interfaced to \pythia 8. Further implementation details can be found in Section~\label{sec:TTBar_implementation}.
+ 
+
+\subsubsection{Parameter scan}
 
 The nature of the model is not conducive to a simple scaling behavior that would allow us to reduce the number of points to be simulated. This is because of the interference of diagrams with QCD production of the mediator (which scale as $g^2_s$) with diagrams that are proportional to the coupling $g$ in the $b+$\MET{} and $b\bar{b}$+\MET{} final states. Fixing the couplings also fixes the mediator width, when adopting the minimal width assumption. 
 
-A full study of the parameter scan for this model was not available for this report; thus we recommend scanning a range of  possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal width to a value approaching the particle limit, e.g. $g=0.5,1,2,3$. A coupling benchmark such as $g=1$ should be considered for each mass point since this would be a distinctive feature of this benchmark from SUSY models with sbottom squarks (see Section~\ref{sec:monojet_t_channel} for further discussion).
+A full study of the parameter scan for this model was not available for this report; thus for early Run-2 searches we recommend scanning a range of possible widths as discussed in a more limited way than for the \tchannel mono-jet, spanning from the minimal width to a value approaching the particle limit, e.g. $g=0.5,1,2,3$. A coupling benchmark such as $g=1$ should be considered for each mass point since this would be a distinctive feature of this benchmark from SUSY models with sbottom squarks (see Section~\ref{sec:monojet_t_channel} for further discussion).
 %: Cross-sections for unit couplings can be found in Appendix~\ref{app:xsecs_bFDM}. 
 %The coupling could also be chosen to fulfill constraints from the relic density (see Appendix~\ref{app:Relic_Density_bFDM}, with corresponding cross sections in Tables~\ref{tab:g_relic_13T} onwards). 
 
@@ -64,7 +68,7 @@ A scan of Dark Matter and mediator masses should be done in the on-shell region 
 \begin{figure*}[h!]
   \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_35_500/missing_et.eps}\quad
   \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_35_500/Njets.eps}
-  \caption{\MET (left) and jet multiplicity (right) for $\mDM=35$~GeV and $\MPhi=500$~GeV for couplings corresponding to relic density weights and also $g=1,2$} \label{fig:g_comp}
+  \caption{\MET (left) and jet multiplicity (right) for $\mDM=35$~GeV and $\MPhi=500$~GeV for couplings corresponding to relic density weights, with varying $g=1,2$} \label{fig:g_comp}
 \end{figure*}
 
 %The following benchmark points could be produced as a starting point for the parameter space for this model:
