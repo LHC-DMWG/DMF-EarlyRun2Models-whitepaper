@@ -518,7 +518,8 @@ Given these simplifications, the minimal set of parameters under consideration i
   \left\{ \mDM,~ m_{\phi/a} = \mMed,~ \gdm,~ \gq \right\} \,.
  \eea
 Fig.~\ref{fig:feyn_prod_S} shows the one-loop diagrams producing a jet+X signature. 
-The full calculation of the top loop is available at LO for DM pair production in association with one parton. 
+The full calculation of the top loop is available at LO for DM pair production in association 
+with one parton. 
 
 
 %The simplest choice of couplings, known as Minimal Simplified Dark Matter model (MSDM) \textbf{[TODO: add references]}, is $g_u = g_d = g_\ell$, which is realized in singlet scalar extensions of the SM. 
@@ -626,33 +627,10 @@ the SM Higgs-like Yukawa couplings for the SM fermions.
 For the mediator mass above twice the top quark mass $m_t$, the minimal width receives the dominant contribution from the top quark. For lighter mediator masses, Dark Matter dominates as the couplings to lighter quarks are Yukawa suppressed.
 %Note that the partial width coming from gluons through loops can be safely neglected\,\cite{Haisch:2015ioa}.
 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.95\textwidth]{figures/monojet/width_S.eps}
-\includegraphics[width=0.95\textwidth]{figures/monojet/width_P.eps}
-\caption{Minimal width as a function of mediator mass for scalar and pseudo-scalar mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of \mDM=10~\gev, 30~\gev, 100~\gev and 300~\gev in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted beige line shows the contribution from the coupling to gluons. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
-\label{fig:monojet_width_S}
-\end{figure}
-
-It can be seen in Fig.~\ref{fig:monojet_SPmodels} that the kinematics for the scalar and pseudoscalar models coincides when considering the diagrams in Fig.~\ref{fig:feyn_prod_S}. 
-For this reason, we recommend to generate only one of the two models.
-%, and report the cross-sections on HEPData 
-%for the other one.
-No preference is given between the two models as they have the
-same kinematics, although it is worth noting that the pseudo-scalar model has been used for a Dark Matter interpretation of the DAMA signal 
-and of the galactic center excess~\cite{Arina:2014yna}.
-Like in the case of the vector and axial-vector models described in Section~\ref{sec:monojet_spin}, the differences between the cross sections for the scalar and pseudo-scalar samples with the same $\mDM$ and $\mMed$ are increasing with the Dark Matter mass for fixed mediator mass. The pseudo-scalar model gives larger cross sections. Also note the increasing differences between the minimal widths close to the $2\mDM=\mMed$ threshold.
-
-\begin{figure*}
-	\centering
-	\includegraphics[width=0.95\textwidth]{figures/monojet/compareModels_SP_300.eps}
-	\caption{Comparison of the $\MET$ distributions for the scalar and pseudoscalar models for different $\mMed=300\,\gev$ and different Dark Matter masses. 
-	Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
-	\label{fig:monojet_SPmodels}
-\end{figure*}
-
-
+As shown in the diagram of Fig.~\ref{fig:feyn_prod_S}, the lowest order process of these models
+already involves a one-loop amplitude in QCD, and only LO predictions are currently available. 
+The generator used for the studies in this Section is \powheg~\cite{Haisch:2015ioa}; within this implementation,
+early Run-2 scalar and pseudoscalar mediator benchmark models are known at LO+PS accuracy. 
 
 \subsection{Parameter scan}
 
@@ -662,7 +640,6 @@ in order to decide on the optimized parameter grid for the presentation of Run-2
 %, fig:monojet_scan_S_mDM1000,fig:monojet_scan_S_mDM100, fig:monojet_scan_S_mMed10, 
 \ref{fig:monojet_scan_S_mMed1000} show the scans over the couplings, Dark Matter mass and mediator mass and the same conclusions apply as in Section\,\ref{sec:monojet_V}.
 
-%TODO does the discussion below make sense?
 A scan over the mediator mass is shown in Fig.\,\ref{fig:monojet_scan_S_mMed1000} where \mMed = 300~\gev and 500~\gev are chosen to be below and above $2m_t$. The off-shell Dark Matter production regime is assumed by taking an extreme limit ($\mDM=1$~\tev) in order to study solely the effects of the couplings to quarks. 
 No differences in the kinematic distributions are observed and also the cross sections remain similar in this case. No significant changes appear for mediator masses around the $2m_t$ threshold.
 
@@ -680,8 +657,6 @@ No differences in the kinematic distributions are observed and also the cross se
 \label{fig:monojet_scan_S_mDM1000}
 \end{figure*}
 
-\clearpage
-
 \begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mDM_S_100.eps}
@@ -696,8 +671,6 @@ No differences in the kinematic distributions are observed and also the cross se
 \label{fig:monojet_scan_S_mMed10}
 \end{figure*}
 
-\clearpage 
-
 \begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mMed_S_1000.eps}
@@ -705,9 +678,34 @@ No differences in the kinematic distributions are observed and also the cross se
 \label{fig:monojet_scan_S_mMed1000}
 \end{figure*}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{figures/monojet/width_S.eps}
+	\includegraphics[width=0.95\textwidth]{figures/monojet/width_P.eps}
+	\caption{Minimal width as a function of mediator mass for scalar and pseudo-scalar mediator assuming couplings of 1. The total width is shown as solid lines for Dark Matter masses of \mDM=10~\gev, 30~\gev, 100~\gev and 300~\gev in black, red, brown and green, respectively. The individual contributions from Dark Matter are indicated by dotted lines with the same colors. The contribution from all quarks but top is shown as magenta dotted line and the contribution from top quarks only is illustrated by the dotted blue line. The dotted beige line shows the contribution from the coupling to gluons. The dotted black line shows the extreme case $\Gamma_{\rm{min}}=\mMed$.}
+	\label{fig:monojet_width_S}
+\end{figure}
+
+It can be seen in Fig.~\ref{fig:monojet_SPmodels} that the kinematics for the scalar and pseudoscalar models coincides when considering the diagrams in Fig.~\ref{fig:feyn_prod_S}. 
+For this reason, we recommend to fully simulate only one of the two models.
+%, and report the cross-sections on HEPData 
+%for the other one.
+No preference is given between the two models as they have the
+same kinematics, although it is worth noting that the pseudo-scalar model has been used for a Dark Matter interpretation of the DAMA signal 
+and of the galactic center excess~\cite{Arina:2014yna}.
+Like in the case of the vector and axial-vector models described in Section~\ref{sec:monojet_spin}, the differences between the cross sections for the scalar and pseudo-scalar samples with the same $\mDM$ and $\mMed$ are increasing with the Dark Matter mass for fixed mediator mass, with the pseudo-scalar model yielding larger cross sections. There is an increasing difference between the minimal widths close to the $2\mDM=\mMed$ threshold.
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.95\textwidth]{figures/monojet/compareModels_SP_300.eps}
+	\caption{Comparison of the $\MET$ distributions for the scalar and pseudoscalar models for different $\mMed=300\,\gev$ and different Dark Matter masses. 
+		Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
+	\label{fig:monojet_SPmodels}
+\end{figure*}
+
+\subsubsection{Proposed parameter grid}
 
 The optimized parameter grid in the $\mMed$--$\mDM$ plane for scalar and pseudo-scalar mediators is motivated by similar arguments as in the previous section. Therefore, a similar pattern is followed here, with the exception of taking $\gq=\gDM=1$. The choice of $\gq=0.25$ for the vector and axial-vector models is motivated by suppressing constraints from di-jets, which is not a concern in the scalar and pseudo-scalar mediator case. Here a di-jet signal emerges only at the 2-loop level through diagrams where the mediator is produced via gluon-gluon fusion and decays back into two gluons through a top loop. The strong loop suppression renders such signals unobservable at the LHC. Further constraints on the scalar and pseudo-scalar mediators may emerge from searches in $t\bar{t}$ final states. Studies of the electroweak effects to $t\bar{t}$ production suggest that one can only expect percent level contributions for $\gq \sim O(1)$ \cite{Haisch:2013fla}. Therefore, keeping $\gq=\gDM=1$ is a reasonable choice in the case of the scalar and pseudo-scalar mediators. Contrary to the vector and axial-vector models, note that couplings of 1 lead to $\Gamma_{\rm{min}}/\mMed \lsim 0.04$, ensuring the narrow width approximation is applicable. Furthermore, the sensitivity to the highest mediator masses has to be re-evaluated. The generator level cross section times the acceptance at $\MET>500$~\gev for the model with couplings $\gq=\gDM=1$, light Dark Matter of \mDM=10~\gev and a \mMed=500~\gev scalar mediator is at the order of 10\,fb, i.e. just at the edge of the early Run-2 sensitivity. Increasing the mediator mass to 1~\tev pushes the product $\sigma\times A$ down to approximately 0.1\,fb, below the LHC sensitivity. Therefore, we choose to remove the 2~\tev mediator mass from the grid and present the final grid with 33 mass points only, as shown in Tab.\,\ref{tab:mDMmMedScan_SP}. One point at very high mediator mass (10~\tev) is added for each of the DM masses scanned, to aid the reinterpretation of results in terms of contact interaction operators (EFTs).
-
 
 \begin{table}[!h]
 \centering
@@ -750,9 +748,9 @@ The discussion of parameters for the model with a color-singlet, \spinzero media
 parallels that in Section~\ref{subsec:MonojetLikeModels}. 
 
 Even though the sensitivity of mono-boson searches to this model is low and it may not
-be in reach of early LHC searches, we recommend to generate this model for W, Z and photon searches 
+be in reach of early LHC searches, this model can be generated for W, Z and photon searches 
 in order to reproduce the kinematics of contact interaction operators that are further 
-described in Section~\ref{sub:EW_EFT_Dim5}, for later reinterpretation.  
+described in Section~\ref{sub:EW_EFT_Dim5}, to aid later reinterpretation.  
 
 %\subsection{Model implementation}
 %
@@ -780,7 +778,7 @@ described in Section~\ref{sub:EW_EFT_Dim5}, for later reinterpretation.
 \section{ \Spintwo mediator}
 \label{sec:spintwo}
 
-In models with extra dimensions, the Kaluza-Klein excitations of the graviton could also serve as a mediator between the Standard Model and dark sector physics. This kind of model was not studied in the forum and is not included in the recommendations, but it and models such as Ref.~\cite{Lee:2013bua} may warrant further study on a longer timescale. 
+In models with extra dimensions, the Kaluza-Klein excitations of the graviton could also serve as a mediator between the Standard Model and dark sector physics. This kind of model was not studied in the forum and is not included in the recommendations, but models such as Ref.~\cite{Lee:2013bua} may warrant further study on a longer timescale. 
 
 % \begin{figure}
 %   \centering
