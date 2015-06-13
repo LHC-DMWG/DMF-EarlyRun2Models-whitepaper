@@ -9,44 +9,65 @@
  model results as building blocks for more complete models (e.g. signal cutflows,
  acceptances, etc). This point is detailed further in this appendix.
 \item Provide model-independent results in terms of limits on
-  cross-section times acceptance of new phenomena for all cases, but
-  especially when EFTs are employed as benchmarks. See
+  cross-section times efficiency times acceptance of new phenomena for all cases, but
+  especially when EFTs are employed as benchmarks. This recommendation has been issued before: see
   Ref.~\cite{Kraml:2012sg} for detailed suggestions.
  \end{itemize}
 
-It is important to consider what information phenomenologists need in order to reinterpret the LHC searches. The following is a non-exhaustive list of recommendations in order to ensure reinterpretation is possible, efficient, and fast. This appendix describes considerations for reimplementation of the analyses as well as for using the simplified model results directly given by the collaborations. 
+%It is important to consider what information phenomenologists need in order to reinterpret the LHC searches. The following is a non-exhaustive list of recommendations in order to ensure reinterpretation is possible, efficient, and fast. 
+This appendix describes further considerations for reinterpretation and reimplementation of the analyses, 
+as well as for the use of simplified model results directly given by the collaborations. 
 
-One of the important developments in recent years is an active development of the analyses recasting codes~\cite{Dumont:2014tja, Conte:2014zja, Kim:2015wza,Cranmer:2010hk,ATOM}. The aim of these codes is to provide a public library of LHC analyses that have been reimplemented and validated, often by the collaborations themselves. Such libraries can then be used to analyze validity of a BSM scenario in a systematic and effective manner. The availability of public libraries further facilitates a unified framework and can lead to an organized and central structure to preserve LHC information long term.
+\section{Reinterpretation of analyses}
 
-In order to be able to develop such codes, it is important to get complete and systematic information from the collaborations. 
-\begin{itemize}
-	\item	\textbf{Data digitization}: Availability of digitized data is one of the primary requirements. All information given by collaborations in the form of plots should be made available in a digitized format. Platforms such as HepData can be used in oder to maintain a centralized manner. In case when HepData can not be used, digitized data can be provided via analyses twiki pages. This information primarily includes expected and observed exclusion lines along with their $\pm 1 \sigma$ uncertainty, expected and observed upper limits in case of simplified models, efficiency maps and all kinematic distributions as reported in the analysis. Units should be clearly specified. If the digitized figures are made available as a C macro or a ROOT file, the names of the objects should be clearly identifiable e.g. expected upper limits of a particular topology/model given  as a ROOT file can be labeled as \texttt{KEY: TH2D	ExpectedUpperLimit;1}. Furthermore, these digitized files can potentially contain more information (larger axes ranges) than displayed on the plot. This will help facilitate understand what happens beyond the limits displayed in the plot, e.g. a distribution for number of jets can be artificially limited to a point in the plot (for the purpose of clarity of figure) , however, this artificial limit leads to a sharp cutoff in the plot. While validating the analysis it is often necessary to compare the distributions beyond such artificial limits, having this information digitized will be of a great help in such cases. 
-\end{itemize}
+In the case of reinterpretation for models different than those provided by the experimental collaborations,
+the information needed primarily includes expected and observed exclusion lines along with their $\pm 1 \sigma$ uncertainty, 
+expected and observed upper limits in case of simplified models. If the kinematic
+of the new model to be used for the reinterpretation is similar to that of the original model provided by the collaboration, 
+the results provided can be rescaled to match the new model cross-section. 
 
-\section{Reimplementing analyses}
-This section lists information necessary in order to reimplement an analysis. Analysis reimplementation usually consists of several stages. Usually, one starts with reading the analysis note carefully, following which the preselection and event selection cuts are identified. These are then mimicked using a code typically written in C++. The detector simulation is carried out by using public detector simulation software e.g.  Delphes~\cite{deFavereau:2013fsa}.  The resulting ROOT file is then analyzed using the C++ code written in the previous step.
-\begin{itemize}
-\item \textbf{Analysis documentation}: The collaborations should provide a cutflow table with every analysis, such a cutflow table will naturally define the order of cuts implemented in an analysis. There are several preselection criteria which can not be easily simulated in phenomenology, e.g. MET cleaning. Numbers should be provided after such cuts so that theorists can rescale their number of events in order to account for such cuts. Efficiencies of several reconstructed objects are given as an input to detector simulation software like Delphes. It is thus very useful to get parametrized efficiencies for reconstructed objects (as a function of the rapidity $\eta$ and/or transverse momentum $p_T$), along with the working points at which they were evaluated (e.g. loose, tight selection). Object definitions should be clearly identifiable. 
-\item \textbf{Validation}: Validation corresponds to re-deriving the results as given by collaborations in order to verify that the implementation of the analysis is correct. Usually most of the bug catching takes place in the phase of validation. The following items are necessary in order to recreate the results. 
+\section{Reimplementation of analyses}
+
+One of the important developments in recent years is an active development of software codes~\cite{Dumont:2014tja, Conte:2014zja, Kim:2015wza,Cranmer:2010hk,ATOM} necessary for recasting analyses. The aim of these codes is to provide a public library of LHC analyses that have been reimplemented and validated, often by the collaborations themselves. Such libraries can then be used to analyze validity of a BSM scenario in a systematic and effective manner. The availability of public libraries further facilitates a unified framework and can lead to an organized and central structure to preserve LHC information long term.
+The reimplementation of an analysis consists of several stages. Typically, the analysis note is used as a basis for the implementation of the preselection and event selection cuts in the user analysis code within the recasting frameworks. Signal events are generated, and passed through a parameterized detector simulation using software such as Delphes~\cite{deFavereau:2013fsa}. The reconstructed objects are then analyzed using the code written in the previous step, and the results in terms of number of events are passed through a statistical analysis framework to compare with the backgrounds provided by the collaborations. 
+
+In order to be able to effectively use such codes, it is important to get a complete set of information from the collaborations. 
+
+For what concerns the generation of the models, it is desirable to have the following items as used by the collaborations:
 \begin {itemize}
 	\item Monte Carlo generators: Monte Carlo generators along with the exact versions used to produce the event files should be listed. 
-	\item Production cross sections: The order of production cross sections (e.g. LO,NLO,NLL) as well as the codes which were used to compute them should be provided. A table of reference cross sections for several values of particle masses such as ones provided by SUSY cross section working group will be highly appreciated.
+	\item Production cross sections: The order of production cross sections (e.g. LO,NLO,NLL) as well as the codes which were used to compute them should be provided. Tables of reference cross sections for several values of particle masses are useful as well. 
 	\item Process Generation: Details of the generated process, detailing number of additional partons generated. 
-	\item Availability of the LHE files: selected LHE files (detailing at least a few events if not the entire file) corresponding to the benchmarks listed in the analysis should be made available in order to cross check process generation. Experimental collaborations may generate events on-the-fly without saving the intermediate LHE file; we advocate that the cross-check of process generation is straight-forward if this information is present, so we encourage the generation of a few selected benchmark points allowing for a LHE file to be saved. For models concerning SUSY, corresponding SLHA files of benchmark files should also be details. Special attention should be paid to list the parameters which change the production cross section or kinematics of the process e.g. mixing angles. 
-	\item Process cards: Process cards includes PDF choices, details of matching algorithms and scales and details of process generation. If process cards are not available, above items should be clearly identified. 
-	\item model files: For models which are not already implemented in \madgraph, availability of the corresponding model files in UFO format~\cite{Degrande:2011ua} is highly desired. It details the exact notation used in the model and hence sets up a complete framework. In case \madgraph is not used, enough information should be provided in order to clearly identify the underlying model used for interpretations. 
+	\item LHE files: selected LHE files (detailing at least a few events if not the entire file) corresponding to the benchmarks listed in the analysis could also be made available in order to cross check process generation. Experimental collaborations may generate events on-the-fly without saving the intermediate LHE file; we advocate that the cross-check of process generation is straight-forward if this information is present, so we encourage the generation of a few selected benchmark points allowing for a LHE file to be saved. Special attention should be paid to list the parameters which change the production cross section or kinematics of the process e.g. mixing angles. 
+	\item Process cards: Process cards including  PDF choices, details of matching algorithms and scales and details of process generation. If process cards are not available, the above items should be clearly identified. 
+	\item Model files: For models which are not already implemented in \madgraph, the availability of the corresponding model files in the UFO format~\cite{Degrande:2011ua} is highly desired. This format details the exact notation used in the model and hence sets up a complete framework. In case \madgraph is not used, enough information should be provided in order to clearly identify the underlying model used for interpretations and reproduce the generation. 
 \end{itemize}
+The ATLAS/CMS Dark Matter Forum provides most of the information needed within its SVN repository~\cite{ForumSVN} and on a dedicated HEPData~\cite{HEPData} page dedicated to the results in this report.
 
-\item \textbf{Limit setting}: Detailed description of the likelihood used in order to derive the limits should be given, this can contain statistical procedure within the analysis text itself, however direct availability of the limit setting code as a workspace in RooStats or HistFitter~\cite{Baak:2014wma} is highly desirable. 
-\item \textbf{Binned backgrounds}: For analyses using techniques such as sliding windows or an unbinned technique, the Standard Model backgrounds should be given in the form of bins. These backgrounds can then be interpolated. 
-\item \textbf{Recast code}: Finally, the collaborations can provide an analysis code directly implemented in one of the public recasting codes detailed above. Such codes can be published via INSPIRE in order to track the versioning and citations. 
-\end{itemize}
+Efficiency maps and relevant kinematic distributions as reported in the analysis, with clearly specified units.
+If selection criteria cannot be easily simulated through parameterized detector simulation, the collaborations should provide the efficiency of such cuts. 
+Overall reconstruction and identification efficiencies of physics objects are given as an input to the detector simulation software. 
+It is thus very useful to get parametrized efficiencies for reconstructed objects (as a function of the rapidity $\eta$ and/or transverse momentum $p_T$), 
+along with the working points at which they were evaluated (e.g. loose, tight selection). Object definitions should be clearly identifiable. 
+Digitized kinematic distributions are often necessary for the validation of the analysis so that the results from the collaboration are obtained, 
+and so are tables containing the events passing each of the cuts. 
+
+The availability of digitized data and backgrounds is one of the primary requirements for fast and efficient recasting. 
+Platforms such as HepData~\cite{HEPData} can be used as a centralized repository; alternatively, analysis public pages and tables can be used
+for dissemination of results. Both data and Standard Model backgrounds should be provided in the form of binned histogram that can be interpolated if needed. 
+
+A detailed description of the likelihood used in order to derive the limits from the comparison of data to signal plus background should be given. 
+This can be inferred from the analysis documentation itself, however direct availability of the limit setting code as a workspace in RooStats or HistFitter~\cite{Baak:2014wma} is highly desirable. 
+
+Finally, the collaborations can also provide an analysis code directly implemented in one of the public recasting codes detailed above. 
+Such codes can be published via INSPIRE~\cite{INSPIRE} in order to track versioning and citations. 
 
 \section{Simplified model interpretations}
-The analyses almost always provide at least one simplified model interpretation along with the search results. These interpretations are simple and can be used in order to take a quick survey of viability of parameter space. Codes such as~\cite{Kraml:2013mwa, Kraml:2014sna, Papucci:2014rja} can make use of the simplified model results given in the form of 95\% Confidence Level (CLs) upper limit  or efficiency maps in order to test Beyond the Standard Model parameter space. It will thus be extremely useful if the results are given in a form as easily usable by the theory community. 
-\begin{itemize}
-\item \textbf{Direct usability of the results}: The results given should be as useful as possible. For example, for a simplified model containing dark matter mass \mDM, mediator mass \Mmed and couplings \gDM, \gq it will be extremely useful to have 95\% CLs upper limits on the product of couplings $\sqrt{\gDM\gq}$ or cross section times branching ratio as a function of \mDM, \Mmed. Limits on visible cross sections of the simplified models considered for interpretations should be made available.
-\item \textbf{Smooth grids}: The usage of simplified model results relies on interpolating between upper limit values. In order to facilitate the interpolation, regions where large variation of upper limits is observed should contain denser grid, if a uniform grid over the entire plane is not possible. For simplified model involving more than three parameters (two masses and product of couplings), slices of upper limits in the additional dimensions will be very useful e.g. for a simplified model involving one step cascade decay, upper limits can be provided for several values of intermediate mass in the plane of mother - daughter masses. Results with only one slice often render invalid to be used in a general model testing.  
-%\item Plane definitions useful for reinterpretations
-\item \textbf{Availability of acceptance and efficiency maps}: Finally, acceptance and efficiency maps for all the signal regions involved in the analysis should be made available. These results are not only useful for model testing using simplified models but also to validate implementation of the analysis. Information about the most sensitive signal region as a function of masses is also very useful in order to determine the validity of approximate limit setting procedures being used by theorists (in the absence of any other sophisticated limit setting technique). 
-\end{itemize}
+
+Dark Matter searches at the LHC will include simplified model interpretations in their search results. These interpretations are simple and can be used for a survey of viability of parameter space. Codes such as~\cite{Kraml:2013mwa, Kraml:2014sna, Papucci:2014rja} can make use of the simplified model results given in the form of 95\% Confidence Level (CLs) upper limit  or efficiency maps in order to test Beyond the Standard Model parameter space. It will thus be extremely useful if the results are given in a form that is easily usable by the theory community. 
+
+The parameter space of these models should be clearly specified. For example, for a simplified model containing dark matter mass \mDM, mediator mass \Mmed and couplings \gDM, \gq it will be very useful to have upper limits on the product of couplings $\sqrt{\gDM\gq}$ or cross section times branching ratio as a function of \mDM, \Mmed. Limits on visible cross sections of the simplified models considered for interpretations should be made available.
+
+The usage of simplified model results relies on interpolating between upper limit values. In order to facilitate the interpolation, regions where large variation of upper limits is observed should contain denser grid, if a uniform grid over the entire plane is not possible. For simplified model involving more than three parameters (two masses and product of couplings), slices of upper limits in the additional dimensions will be very useful. 
+
+As detailed in the Section above, acceptance and efficiency maps for all the signal regions involved in the analysis should be made available. These results are not only useful for model testing using simplified models but also to validate implementation of the analysis. Information about the most sensitive signal region as a function of masses is also very useful in order to determine the validity of approximate limit setting procedures commonly used by theorists. 
