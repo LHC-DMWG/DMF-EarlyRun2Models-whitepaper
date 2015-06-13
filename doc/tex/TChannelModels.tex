@@ -18,7 +18,7 @@ For completeness, we examine a
 model where $\chiDM$ is a Standard Model (SM) singlet, a Dirac
 fermion% dropped after comments from Tom Rizzo and Uli Haisch
 %\footnote{Though outside the scope of this report, a colored
-%  vector \tchannel mediator with vector dark matter may also be
+%  vector \tchannel mediator with vector DM may also be
 %  worthy of study. The UV completion of such models would look like an
 %  RS KK gluon,for example. In these case, it is expcted that the most
 %  interesting mediator masses will be of order several TeV.}
@@ -376,6 +376,10 @@ DM searches should also directly test their sensitivity to the MSSM benchmark mo
 \caption{Leading order two-jet \tchannel processes, adapted from \cite{Papucci:2014iwa}.}\label{fig:tchannelDijet}
 \end{figure}
 
+The state of the art calculation for these models is LO and they can be interfaced with a parton shower program.
+The studies in this Section use a LO model implementation within \madgraph v2.2.3, but no parton shower could be employed
+in the time-frame of the conclusions of this Forum. Further implementation details can be found in Section~\label{sec:tchannel_implementation}
+
 \subsection{Parameter scan}
 
 As for the \schannel models, we adopt the simplifying assumption that the mediator masses and 
@@ -388,7 +392,7 @@ The free parameters are then
 \end{equation}
 
 Ref.~\cite{Papucci:2014iwa} studies the parameter space and obtains
-bounds on this model from LHC Run 1 mono-jet and dijets+\MET data. 
+bounds on this model from LHC Run-1 mono-jet and dijets+\MET data. 
 The Forum did not exhaustively compare the kinematic distributions of the \tchannel models 
 as done in the \schannel case. 
 In particular, the absence of a parton shower simulation can affect some of the conclusions on
@@ -398,8 +402,8 @@ the model is plausible and distinctive, and it should be included in the design 
 
 As in the \schannel models, scans should be performed over
 $\mDM$ and $\Mphi$. The viable ranges of both parameters nearly
-coincide with the scan proposed for the \schannel; for simplicity we
-recommend adopting a subset of the \schannel mono-jet grid that accounts
+coincide with the scan proposed for the \schannel. For the early Run-2 searches, we
+recommend to generate and fully simulate a subset of the \schannel mono-jet grid that accounts
 for the on-shell and off-shell regions.
 %Sentence not needed? 
 %Reshuffled after Tongyan's comments.
@@ -489,7 +493,7 @@ while only the left-handed mediator in~\cite{Bell:2012rg} allows for W and Z rad
 The studies in this Section use the LO+PS UFO model from~\cite{Bell:2012rg} in \madgraph v2.2.3, 
 using \pythia 8 for the parton shower.
 Figure~\ref{fig:TChan_EW_Zhad_MET} shows the \MET distribution for the hadronic Z+\MET final state, 
-with varying dark matter and mediator mass, before any selection. 
+with varying DM and mediator mass, before any selection. 
 The acceptance for a series of basic analysis selections
 (\MET$>$350~\gev, leading jet $p_T >$ 40~\gev, minimum azimuthal angle between jet and \MET > 0.4) 
 applied at the generator level is shown in Figure~\ref{fig:TChan_EW_Zhad_acc}. 
@@ -512,7 +516,7 @@ applied at the generator level is shown in Figure~\ref{fig:TChan_EW_Zhad_acc}.
 
 The discussion of the parameter scan for the \tchannel model
 in the case of signatures including EW bosons
-parallels that of the monojet case for mediator and dark matter masses,
+parallels that of the monojet case for mediator and DM masses,
 but no kinematic dependence on the width is observed, so a coupling scan is not needed. 
 %with the difference that in this case the kinematics does 
 %not depend on the width. 
