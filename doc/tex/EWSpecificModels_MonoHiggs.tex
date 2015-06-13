@@ -168,6 +168,9 @@ and DM mass of 1~\tev for all models.
 		\label{fig:METSimpMonoHiggs}}
 \end{figure}
 
+These models are known at LO, and they can be interfaced to a parton shower. The studies in this Section
+have been performed using a model within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  
+The implementation details for these models are discussed in Section~\ref{sec:monoHImplementation}.
 
 \subsection{\MET+Higgs from a baryonic \Zprime}
 
@@ -217,7 +220,7 @@ Baryonic Higgs vacuum expectation value.
 
 In its most general form, this model can contribute to mono-Z signals due to the \Zprime mixing with the Z or photon. Note that EWSB and $ U(1)_B $ breaking do not lead to this mixing at tree-level. Instead, kinetic mixing occurs between the $ U(1)_Y $ and $ U(1)_B $ gauge bosons due to the gauge invariant term $ F^{\mu\nu}_Y F_{B\mu\nu} $. This mixing is a free parameter which we assume to be small in order to focus on the mono-Higgs signature. Mixing may also occur due to radiative corrections, however this is model dependent so we choose to ignore this here.
 
-%TODO: 
+%Left for later
 %	1- Mention sensitivity difference wrt monojet? 
 %	2- Mention why we don't consider the dark Z model?]}
 
@@ -264,7 +267,6 @@ in the $H \to \bar b b$ decay channel, for two values of the mediator mass and v
 Analyses should perform further studies, beyond those studies performed for the forum, 
 to estimate the reach of the analysis with respect to all points in the grid and therefore decide 
 on a smaller set of grid points to be generated.
-%TODO: can we get sensitivity to all the points for all signatures?
 
 \begin{figure}[htpb!]
 	\includegraphics[width=0.75\linewidth]{figures/EW/monoH/z_gdm_MET_et_Log}\\
