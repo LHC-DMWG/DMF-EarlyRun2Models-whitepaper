@@ -189,7 +189,7 @@ Based on these arguments, we recommend to consider only the models with pure vec
 \begin{figure*}
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/compareVA_100_100.eps}
-\caption[][-28pt]{Comparison of the pure vector, V-V, and pure axial-vector, A-A, couplings with mixed couplings, A-V and V-A where the first (second) letter indicates the Standard Model (Dark Sector) vertex. The $\MET$ distribution is shown for the samples generated with $\mDM=100$~\gev and $\mMed=100$~\gev. Ratios of the normalized distributions are shown for A-V over V-V and for V-A over A-A. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
+\caption[][-28pt]{Comparison of the pure vector, V-V, and pure axial-vector, A-A, couplings with mixed couplings, A-V and V-A where the first (second) letter indicates the Standard Model (Dark Sector) vertex. The $\MET$ distribution is shown for the samples generated with $\mDM=100$~\gev and $\mMed=100$~\gev. Ratios of the normalized distributions are shown for A-V over V-V and for V-A over A-A. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively. The suppression by $\beta^3$ for $\mDM\sim\mMed$ can be seen for the curves representing axial DM coupling.}
 \label{fig:monojet_scan_VA_mMed100}
 \end{figure*}
 %%% end of the new section by DS
@@ -557,7 +557,7 @@ where $x=3$ for scalars and $x=1$ for pseudoscalars. The loop integrals are
   \right) \, 
   \eea
 \end{fullwidth}
-for $\tau < 1$, where $\tau = 4 m_{t}^2/m_{\phi,a}^2$, and, for $\tau > 1$, 
+for mediator masses above the top threshold, $\tau > 1$, where $\tau = 4 m_{t}^2/m_{\phi,a}^2$, and, for mediator masses below the top threshold, $\tau < 1$, 
 \begin{fullwidth}
   \bea \label{eq:fphifb}
   f_\phi (\tau) &=& \tau \left [ 1+ (1-\tau)\left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) \right ]  \,\,,\\
@@ -794,7 +794,7 @@ The aim of the parameter grid optimization done for the \schannel models in the 
 
 \begin{itemize}
 \item When the dependences on parameters are known, the cross
-  sections and efficiencies are general points can be calculated from
+  sections and efficiencies at general points can be calculated from
   the grid data.
 \item In other cases, this information can be obtained by interpolation
   between the grid points.  We have chosen the grid points so that the
@@ -811,9 +811,9 @@ The propagator for the \schannel exchange is written in a Breit-Wigner
 form as $\displaystyle \frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the momentum of the Dark Matter pair~\footnote{Using a running width and replacing the denominator of the propagator with $q^2 - \mMed^2 + \complexi\,Q^2\,\frac{\Gamma}{\mMed}$ should be considered in the case of wide mediators~\cite{Bardin:1989qr}.}. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows us to classify the production in the following way:
 The size of the momentum transfer with respect to the mediator mass allows us to classify the production in the following way:
 \begin{itemize}
-	\item off-shell production when $q^2 \gg \mMed$ leading to suppressed cross sections,
-	\item on-shell production when $q^2 \sim \mMed$ leading to enhanced cross sections,
-	\item effective field theory (EFT) limit when $q^2 \ll \mMed$.
+	\item off-shell production when $q^2 \gg \mMed^2$ leading to suppressed cross sections,
+	\item on-shell production when $q^2 \sim \mMed^2$ leading to enhanced cross sections,
+	\item effective field theory (EFT) limit when $q^2 \ll \mMed^2$.
 \end{itemize}
 All three categories can be distinguished in Fig.\,\ref{fig:monojet_MstarMmed} showing the upper limit on the interaction scale $M^{*} \equiv \mMed/\sqrt{\gq\gDM}$ for vector mediator. 
 In the case of the off-shell production and the EFT limit, the first and second term in the propagator dominate, respectively, which reduces the dependence on the mediator width. Therefore, in these cases one can approximate the cross section as
