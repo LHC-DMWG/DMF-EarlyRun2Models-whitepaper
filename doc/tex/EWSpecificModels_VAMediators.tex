@@ -11,7 +11,7 @@ is radiated from the initial state partons instead of a gluon.
 The experimental signature is identified as \textit{V+\MET} and it
 has been sought by ATLAS and CMS in Refs.~\cite{Khachatryan:2014rwa,Aad:2014tda,Khachatryan:2014tva,ATLAS:2014wra,Aad:2013oja,Aad:2014vka}. 
 This signature is also produced by the models described in 
-Section~\ref{subsec:EWSpecificModels}.
+Section~\ref{subsec:EWSpecificModels}. 
 
 Monojet searches are generally more sensitive
 with respect to final states including bosons, due to the much
@@ -28,17 +28,6 @@ allow backgrounds to be rejected more effectively,
 making Z/gamma/W+\MET searches
 still worth comparing with searches in the jet+\MET final state.
 
-%\Todo{Additional motivations exist for this final state from SUSY searches.}
-%TODO: Linda is writing sentence to make this stronger. 
-
-% The three commonly chosen EFT benchmarks for Dirac dark matter that are
-% kinematically distinct for what concerns the observables used in
-% \MET+X searches~\footnote{[CD: we would need a plot here, or a reference to
-% monojet section where this is shown]} and span a wide range of \MET spectrum in
-% the boson+\MET searches are, in the notation of ~\cite{Goodman:2010ku},
-% the D1 (scalar SM/WIMP interaction), D5 (vector-vector interaction) and D9
-% (tensor interaction) operator.
-
 In the case of a \spinone mediator,
 an example Feynman diagram for these processes can be constructed by taking
 Fig.~\ref{fig:OP} and replacing the gluon with $\gamma,W$ or $Z$.
@@ -53,7 +42,7 @@ Fig.~\ref{fig:OP} and replacing the gluon with $\gamma,W$ or $Z$.
 %
 %Contemplation of $\xi=-1$ heightened interest in searches for \spinone mediators with $W^\pm$ bosons in the final state. This choice enhances the cross-section significantly above the other choices and hardens the distribution of missing transverse energy used in the searches. The sensitivity of the $W+\MET$ search then surpasses that of the jet$+$\MET search. However, the situation $\xi=-1$ does not appear in an $\mathrm{SU}(2)$-gauge-invariant simplified model.\sidenote{It is well-known that the diagrams in which the $W$ couples to $u$ and $\bar{d}$ have opposite sign. This is what gives rise to the ``helicity zero'' in $u \bar{d} \rightarrow W g$. The relative sign is set by $\mathrm{SU}(2)$ and the statement that the mediator is an $\mathrm{SU}(2)$ singlet. We can increase the cross section by changing the sign, but to do so we have to give the mediator some $\mathrm{SU}(2)$ quantum number, making it, and the associated $\chi$, visible.} The simplified model with a vector mediator exchanged in the \schannel model is still viable when $\xi=1$\sidenote{The $W^\pm$ couples to the initial state quarks as $V$-$A$. If the mediator couples to quarks as $V$+$A$ then one expects the process to vanish completely in the massless quark limit.}. Ref.~\cite{Bell:2015sza} discusses the viability of departures $\xi < 1$ from both gauge-invariance and experimental points of view. An example of a model that arranges different effective DM couplings to $u_L$ and $d_L$ is detailed in Appendix~\ref{app:EWSpecificModels_Appendix}.
 
-When the initial state radiation is a W boson, Run 1 searches have considered three benchmark cases, varying the relative coupling of the $W$ to $u$ and ${d}$ quarks.
+When the initial state radiation is a W boson, Run-1 searches have considered three benchmark cases, varying the relative coupling of the $W$ to $u$ and ${d}$ quarks.
 The simplified model with a vector mediator mediator exchanged in the s-channel includes only the simplest of these cases, in which the $W$ coupling to $u$ and ${d}$ quarks is identical, as required naively by $\mathrm{SU}(2)$ gauge invariance.  With some more complex model building, other cases are possible.  The case in which the $u$ and ${d}$ couplings have opposite sign is particularly interesting, since this enhances the $W+\MET$ signal over the jet$+$\MET signal~\cite{Bell:2015sza, Bai:2012xg}. Models of this type are discussed in Appendix~\ref{app:monoWExtramodel}.
 
 %The scan in the parameters that characterize this simplified model for EW boson + \MET
@@ -72,7 +61,15 @@ The simplified model with a vector mediator mediator exchanged in the s-channel 
 %  and between mediator and initial state quarks (vector-vector, axial-vector, axial-axial, vector-axial).
 % \end{itemize}
 
-In these $V$+\MET models, as in the case of the jet+\MET models, \pT of the boson or the \MET does not depend strongly on the width of the mediator. An example of the particle-level analysis acceptance using the
+The results shown in this Section
+have been obtained using a LO UFO model in \madgraph 2.2.3 interfaced to \pythiaEight
+for the parton shower, as detailed in Section\cite{sec:EW_implementation}
+None of these models requires merging samples with different parton multiplicities  
+since the visible signal comes from the production of a heavy SM boson whose transverse momentum distribution is sufficiently 
+well described at LO+PS level.  As a result, no special runtime configuration is needed for \pythiaEight. 
+
+In these $V$+\MET models, as in the case of the jet+\MET models, \pT of the boson or the \MET does not depend 
+strongly on the width of the mediator. An example of the particle-level analysis acceptance using the
 generator-level cuts from Ref.~\cite{Aad:2014tda}
 for the photon+\MET analysis, but raising the photon $p_T$ cut
 to 150~\gev, is shown in Figure~\ref{fig:DMV_EW_gamma_acceptance},
@@ -119,8 +116,6 @@ $\Gamma=\mMed/3$} \\ \hline
 
 Examples of relevant kinematic distributions for selected benchmark points are
 shown in Fig.~\ref{fig:DMV_EW_kinematics_SVMed}. 
-Leading-order cross-sections for the chosen 
-benchmark points are shown in Appendix~\ref{app:EWSpecificModels_Appendix}.
 
 \begin{figure*}[h!]
 \centering  
