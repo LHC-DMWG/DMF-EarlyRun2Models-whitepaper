@@ -12,7 +12,9 @@ def getLastFirstName (fullName) :
 	if len( splitName ) == 3 :
         	if (splitName[1] == "de" or splitName[1] == "De" or splitName[1] == "du" or
                     splitName[1] == "Cortes" or splitName[1] == "Alvarez" or
-                    splitName[1] == "Martinez" or splitName[1] == "Sanchez" ):
+                    splitName[1] == "Martinez" or splitName[1] == "Sanchez" or
+                    splitName[1] == "Alzaraz" or
+                    splitName[1] == "Lowette" or splitName[1] == "Doglioni" or splitName[1] == "Malik" or splitName[1] == "Boveia" or splitName[1] == "Mrenna"):
 			return (splitName[1]+" "+splitName[2], splitName[0])
                 else:
 			return (splitName[2], splitName[0]+" "+ splitName[1])
