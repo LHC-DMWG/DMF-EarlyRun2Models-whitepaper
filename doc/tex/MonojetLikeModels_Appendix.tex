@@ -3,13 +3,19 @@
 In the studies to date, a number of different Monte Carlo tools have
 been used to simulate DM signals.  In this Chapter, we make recommendations 
 on the accuracy at which simulations should be performed for different final states. We 
-also provide explicit examples  of codes and implementations (including specific settings) that could be used  by
-the collaborations.  We stress that these recommendations are based on the current
+also provide explicit examples  of codes and implementations (including specific settings) 
+that have been used to obtain the results in this report.
+%that could be used  by
+%the collaborations.  
+We stress that these recommendations are based on the current
 status of publicly available codes and users should always check whether new results
 at a better accuracy have appeared in the meantime. In that case, we recommend to update
 the corresponding analyses  directly using the new releases and/or codes, and in case this would not be possible,
 to at least take into account the new information in the analysis (e.g., via a MC comparison with the latest predictions, 
-or by effectively using global/local $K$-factors). 
+or by effectively using global/local $K$-factors). For all models included in this report, 
+\pythiaEight has been used to provide the parton shower simulation. Nevertheless, 
+we note that showering matrix element events with Herwig~\cite{Corcella:2000bw} should be considered as 
+an equally valid alternative.
 
 \subsection{Implementation of  \schannel  models for mono-jet signature}
 \label{sec:monojet_implementation}
@@ -17,8 +23,9 @@ or by effectively using global/local $K$-factors).
 These models include those discussed in Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar}.
 In monojet analyses, i.e. when final states are selected with a few jets and \MET{}, observables and in particular the \MET{} spectrum depend upon the accuracy of the simulation of QCD radiation.
 For the vector and axial vector models, the current state of the art is  NLO+PS. It is particularly simple to obtain simulations for these processes at NLO+PS and even for merged samples at NLO accuracy, starting from SM implementations.  We therefore recommend simulations to be performed at NLO+PS, and in case multi-jet observables are employed,  by merging samples with different multiplicities. 
-Results at such accuracy can be obtained either in dedicated implementations, such as that of  \powheg \cite{Haisch:2013ata}, or via general purpose NLO tools like \madgraph employing available UFO models at NLO~\footnote{The validation of a dedicated DM UFO model at NLO using the notation of Secs.~\ref{sec:monojet_V} and \ref{sec:monojet_scalar} is in progress: 
-In June 2015, a testing version of the full set of these UFO models has been made available \cite{NewMadgraphModels}. This implementation has not been used for the studies within this Forum and will not be used as early Run-2 benchmark for LHC searches. Nevertheless we recommend further testing for ATLAS and CMS searches on a longer timescale.}.
+Results at such accuracy can be obtained either in dedicated implementations, such as that of  \powheg \cite{Haisch:2013ata}, or via general purpose NLO tools like \madgraph employing available UFO models at NLO 
+\footnote{A testing version of the full set of these UFO models has been made available
+only in June 2015 \cite{NewMadgraphModels}. For this reason, it was not used as part of the studies of this Forum on initial Run-2 benchmark models. Nevertheless, we encourage further study of these UFO models by the ATLAS and CMS collaborations.}.
 
 A study using POWHEG~\cite{Haisch:2013ata,Fox:2012ru} has shown that the NLO corrections result in a substantial reduction in the dependence on the choice of the renormalization and factorization scales and hence a reduced theoretical uncertainty on the signal prediction. For the central choice of renormalization and factorization scales, the NLO corrections also provide a minor enhancement in the cross section due to the jet veto that has been so far employed in Run-1 analyses.
 
@@ -28,7 +35,9 @@ Because of the complexity of performing NLO calculations for this class of proce
 or by merging different parton multiplicities via CKKW or MLM schemes to generate inclusive samples with jet rates at LO accuracy.  For spin-0 mediators in the mono-jet final state,
 the top-quark loop is the most important consideration.
 The matrix element implementation with exact top-loop dependence of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga}~\footnote{Only the scalar mediator is available in the public release.} at fixed order and in \powheg~\cite{Haisch:2015ioa} and \madgraph~\cite{NewMadgraphModels} for event generation at LO+PS level. The \powheg and \mcfm implementations include the finite
-top quark mass dependence for DM pair production and one extra parton at LO. The same processes are available in \madgraph v2.3 and in {\sc Sherpa+OpenLoops/GoSam}, including  up to two extra partons in the final state. Samples can be merged employing CKKW, $K_T$-MLM  and MEPS@LO procedures.\Todo{Uli's comment: are those public?}
+top quark mass dependence for DM pair production and one extra parton at LO. 
+The same processes are available in \madgraph v2.3 and could be made
+available in the future in codes like {\sc Sherpa+OpenLoops/GoSam}, including up to two extra partons in the final state. Samples can be merged employing CKKW, $K_T$-MLM procedures.
 %For consistency with the spin-1 generation, we recommend using \powheg.
 
 Most of the results that have been presented in this document for these processes have been obtained with \powheg interfaced to \pythiaEight, matching the state of the art calculation as of Spring 2015. For future reference, we document the specific settings needed to run the \powheg generation for the Dark Matter models so they can serve as nominal benchmarks for the early Run-2 ATLAS and CMS DM analyses. \powheg parameter cards for all models can be found on the Forum SVN repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
@@ -412,7 +421,7 @@ well described at LO+PS level.  As a result, no special runtime configuration is
 \label{sec:TTBar_implementation}
 
 Dedicated implementations for DM signals in this final state are available at LO+PS accuracy. 
-However, the state of the art of the simulations for $t \bar{t}$ and $b \bar{b}$ with a generic scalar and vector mediator is NLO+PS accuracy. For example, simulations for $t \bar{t}$ + scalar can be obtained via \powheg and {\sc sherpa} starting from the SM implementations. In \madgraph,  all final relevant final states, spin-0 (scalar and pseudo scalar) and spin-1, (vector and axial) are available  at NLO+PS via the HC model~\cite{Artoisenet:2013puc} implementation while the testing version for the dedicated NLO UFO for DM has been released in June 2015~\cite{NewMadgraphModels}).
+However, the state of the art of the simulations for $t \bar{t}$ and $b \bar{b}$ with a generic scalar and vector mediator is NLO+PS accuracy. For example, simulations for $t \bar{t}$ + scalar can be obtained via \powheg and {\sc sherpa} starting from the SM implementations. In \madgraph,  all final relevant final states, spin-0 (scalar and pseudo scalar) and spin-1, (vector and axial) are available  at NLO+PS via the dedicated NLO UFO for DM has been released in June 2015~\cite{NewMadgraphModels}).
 
 In the work of this Forum, simulations for the $t \bar{t}$ and $b \bar{b}$ signatures of the scalar mediator model have been 
 generated starting from a leading order UFO with \madgraph 2.2.2, using \pythiaEight for the parton shower. 

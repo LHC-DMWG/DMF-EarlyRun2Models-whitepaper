@@ -23,10 +23,10 @@ fermion% dropped after comments from Tom Rizzo and Uli Haisch
 %  RS KK gluon,for example. In these case, it is expcted that the most
 %  interesting mediator masses will be of order several TeV.}
 ; the
-mediating particle, labeled $\phi$, is charged and colored; and the
+mediating particle, labeled $\phi$, is a charged scalar color triplet and the
 SM particle is a quark. Such models have been studied in
 Refs.~\cite{An:2013xka,Papucci:2014iwa,Bai:2013iqa,Tait:2013,Chang:2013oia,Bell:2012rg}. 
-However, this model has not been studied extensively in this forum.
+However, these models have not been studied as extensively as others in this Forum.
 
 Following the example of Ref.~\cite{Papucci:2014iwa}, the interaction Lagrangian is written as
 
@@ -62,15 +62,18 @@ The generation index $i$ for $\phi_{(i)}$ is linked to the incoming
 fermion(s), and it runs on all three quark generations due to 
 the MFV assumption. 
 Ref.~\cite{Papucci:2014iwa} considers two extreme cases for this model in terms of cross-sections: 
-the case in which all squarks are present, leading to the maximal cross-section, and
-the case in which only right-handed down-type squarks are present. 
-Neither of the models in this reference do not include coupling to the third quark generation,
-leading to a violation of the MFV assumption. However, the models are still safe from flavor constraints,
-and the addition of the third generation would lead to a model that is qualitatively similar and only differs
-by production cross-section~\Todo{Ask A. Vichi again for justification text}. The studies in this Section
-are performed using a model with a mediator coupling to all three generators, following Ref.~\ref{Bell:2012rg}. 
-The LO UFO model is interfaced to \madgraph{} v2.2.3, but no parton shower simulation is employed. 
+the case in which all mediator flavors are present, leading to the maximal cross-section, and
+the case in which only right-handed down-type mediators are present. 
+
+Neither of the models in this reference include couplings to the third quark generation, leading to a violation of the MFV assumption. In the case of purely down-type right-handed squarks this is still safe from flavor constraints. Furthermore, reintroducing the third generation squarks would lead to models that produce qualitatively similar signals in the mono-jet and SUSY squark searches, the main difference being the production cross-section. At the same time the presence of third generation squarks will lead to further constraints from other searches such as those for mono-bjets, for stops and for sbottoms, as discussed in Sec.~\ref{sec:singleb}. 
+The studies in this Section
+are performed using a model with a mediator coupling to all three generation, following Ref.~\ref{Bell:2012rg}. 
 Further differences between the two models (hypercharge, chirality) only lead to a change in the cross-section. 
+The LO UFO model is interfaced to \madgraph{} v2.2.3, but it was not possible to go beyond parton-level studies
+and interface those models to a parton shower in time for the conclusion of this Forum. 
+The state of the art for calculating these models is LO+PS, and the implementation of
+multi-parton merging has been studied in detail~\cite{Maltoni:2015twa,deAquino:2012ru,Alwall:2008qv,Papucci:2014iwa},
+and further studies should be undertaken prior to generating signal samples for early Run-2 LHC searches. 
 
 %\Todo{What about Tait model?}
 %\vspace{5mm}
@@ -435,14 +438,15 @@ split evenly between the light DM particles and the quark, leading to a broad en
 		\includegraphics[width=0.8\textwidth]{figures/monojet/tchannel_edge}
 		\label{fig:monojet_tchannel_edge}}
 	\caption[][14pt]{Kinematic distributions normalized to unit area from the \tchannel model from Ref.~\cite{Bell:2012rg}, using MadAnalysis \cite{} and simplified
-		analysis cuts on the leading jet \pT$>$150 GeV and $\eta <$ 2.8, \MET{}$>$150 GeV.}
+		analysis cuts on the leading jet \pT$>$150 GeV and $\eta <$ 2.8, \MET{}$>$150 GeV. For these models, a LO UFO model is interfaced to \madgraph{} v2.2.3, and studies are at parton-level only. }
 	\label{fig:monojet_tchannel}
 \end{figure}
 
 Points with distinct kinematic distributions for a preliminary scan in \{ \mDM,\, \Mphi,\, g\} are selected 
 taking into account the expected sensitivity of Run-2 searches, and requiring at least 100 events
-to pass the kinematic cuts outlined for Fig.~\ref{fig:monojet_tchannel} in 25 \invfb of collected data.
-They are outlined in Table~\ref{tab:tchannel_parameter_scan}.\Todo{Is 9 a reasonable, perturbative coupling?} 
+to pass the kinematic cuts outlined for Fig.~\ref{fig:monojet_tchannel} in 25 \invfb of collected data, and respect $\Gamma/\mMed < 1$.
+They are outlined in Table~\ref{tab:tchannel_parameter_scan}. The conclusions in this table may change
+when a parton shower is employed together with multiparton matching. 
 
 
 \begin{table}[!h]
@@ -460,7 +464,7 @@ They are outlined in Table~\ref{tab:tchannel_parameter_scan}.\Todo{Is 9 a reason
 			50            &             &     & 200 & 300 &     &        &          & 0.1, 1, 3, 7      \\
 			\hline
 			500           &             &     &     &     & 550 &        &          & 1, 3 \\
-			500           &             &     &     &     &     &  1000  &          & 0.25, 1, 3, 9 \\
+			500           &             &     &     &     &     &  1000  &          & 0.25, 1, 3 \\%, 9 \\
 			500          &              &     &     &     &     &        &  2000    & 3           \\
 			\hline
 			1000           &             &     &     &    &     &  1100  &          & 3, 4$\pi$ \\

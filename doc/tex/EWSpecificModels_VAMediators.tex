@@ -61,12 +61,8 @@ The simplified model with a vector mediator mediator exchanged in the s-channel 
 %  and between mediator and initial state quarks (vector-vector, axial-vector, axial-axial, vector-axial).
 % \end{itemize}
 
-The results shown in this Section
-have been obtained using a LO UFO model in \madgraph 2.2.3 interfaced to \pythiaEight
-for the parton shower, as detailed in Section\cite{sec:EW_implementation}
-None of these models requires merging samples with different parton multiplicities  
-since the visible signal comes from the production of a heavy SM boson whose transverse momentum distribution is sufficiently 
-well described at LO+PS level.  As a result, no special runtime configuration is needed for \pythiaEight. 
+Simulations for the models in this Section have been done at the LO+PS level using  \madgraph 2.2.3 interfaced to \pythiaEight, 
+and therefore no special runtime configuration is needed for pythia 8. Even though merging samples with different parton multiplicities is possible,  this has not been deemed necessary as the visible signal comes from the production of a heavy SM boson whose transverse momentum distribution is sufficiently well described at LO+PS level. 
 
 In these $V$+\MET models, as in the case of the jet+\MET models, \pT of the boson or the \MET does not depend 
 strongly on the width of the mediator. An example of the particle-level analysis acceptance using the
@@ -103,7 +99,9 @@ $\Gamma=\mMed/3$} \\ \hline
 \hline
 \end{tabular}
     \caption{Analysis acceptance ratios for the photon+\MET analysis when varying the mediator width, in the
-    case of a vector mediator exchanged in the \schannel}%This plot will come from Marie-Helene
+    case of a vector mediator exchanged in the \schannel. The figures shown in this Section
+    have been obtained using a LO UFO model in \madgraph 2.2.3 interfaced to \pythiaEight
+    for the parton shower.}%This plot will come from Marie-Helene
     \label{fig:DMV_EW_gamma_acceptance}
 \end{table}
 

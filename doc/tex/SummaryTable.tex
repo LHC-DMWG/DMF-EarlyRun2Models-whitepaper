@@ -12,24 +12,25 @@
 	\multicolumn{4}{c}{vector/axial vector mediator, \schannel (Sec.~\ref{sec:monojet_V})}\\
 	\cmidrule(r){1-4} 
 
-	Signature & State of the art calculation and tools & Link to implementation & References \\ 
+	Signature & State of the art calculation and tools & Implementation & References \\ 
 	\cmidrule(r){1-4} 
-    jet + \MET{} & \textbf{NLO+PS (\powheg, r3059)} & \cite{ForumSVN_DMA, ForumSVN_DMV} & \parbox{4cm} {\cite{Haisch:2013ata,Haisch:2015ioa,Alioli:2010xd,Nason:2004rx,Frixione:2007vw} }\\ 
-	& NLO+PS (UFO + \madgraph) & \cite{NewMadgraphModels} & \parbox{4cm} {\cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} } \\ 		
-	& NLO (\mcfm) & Not yet available & \parbox{4cm} {\cite{Fox:2012ru,Harris:2014hga} }\\ 
-	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EW_DMV} & 
+    jet + \MET{} & \textbf{NLO+PS (\powheg, SVN r3059)} & \cite{ForumSVN_DMA, ForumSVN_DMV} & \parbox{4cm} {\cite{Haisch:2013ata,Haisch:2015ioa,Alioli:2010xd,Nason:2004rx,Frixione:2007vw} }\\ 
+	& NLO+PS (\textit{DMsimp} UFO + \madgraph v2.3.3) & \cite{NewMadgraphModels} & \parbox{4cm} {\cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} } \\ 		
+	& NLO (\mcfm v7.0) & Upon request & \parbox{4cm} {\cite{Fox:2012ru,Harris:2014hga} }\\ 
+	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.3.3)} & \cite{ForumSVN_EW_DMV} & 
 	\parbox{4cm} {\cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }  \\ 
-
+	$W/Z/\gamma$ + \MET{} & NLO+PS (\textit{DMsimp} UFO + \madgraph v2.3.3) & \cite{NewMadgraphModels} & 
+	\parbox{4cm} {\cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }  \\ 
 
 	\cmidrule(r){1-4} 
 	\multicolumn{4}{c}{scalar/pseudoscalar mediator, \schannel (Sec.~\ref{sec:monojet_scalar})}\\
 	\cmidrule(r){1-4} 
-	Signature & State of the art calculation and tools& Link to implementation & References \\ 
+	Signature & State of the art calculation and tools& Implementation & References \\ 
 		\cmidrule(r){1-4} 
 		
 	jet + \MET{} & \textbf{LO+PS, top loop (\powheg, r3059)} &  \cite{ForumSVN_DMS_tloop, ForumSVN_DMP_tloop} &  \parbox{4cm} {\cite{Haisch:2013ata,Haisch:2015ioa,Alioli:2010xd,Nason:2004rx,Frixione:2007vw} } \\ 
-	& LO, top loop (\mcfm) & Not yet available & \cite{Fox:2012ru,Harris:2014hga} \\ 
-	& NLO+PS (UFO+\madgraph) & \cite{NewMadgraphModels} & \parbox{4cm} {\cite{Alwall:2014hca,Hirschi:2011pa,Alloul:2013bka,Degrande:2011ua} }\\ 		
+	& LO, top loop (\mcfm v7.0) & Upon request & \cite{Fox:2012ru,Harris:2014hga} \\ 
+	& LO+PS, top loop (\textit{DMsimp} UFO+\madgraph) & \cite{NewMadgraphModels} & \parbox{4cm} {\cite{Alwall:2014hca,Hirschi:2011pa,Alloul:2013bka,Degrande:2011ua} }\\ 		
 	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3}) & \cite{} & \parbox{4cm} { \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
     $t\bar{t},b\bar{b}$+ \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3}) &  \cite{ForumSVN_DMTTBar} & \parbox{4cm} { \cite{Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
     
@@ -43,18 +44,18 @@
 	\cmidrule(r){1-4} 
 	\multicolumn{4}{c}{scalar mediator, \tchannel (Sec.~\ref{sec:monojet_t_channel})}\\
 	\cmidrule(r){1-4} 
-	Signature & State of the art calculation and tools & Link to implementation & References \\ 
+	Signature & State of the art calculation and tools & Implementation & References \\ 
 		\cmidrule(r){1-4} 
 		
 	jet(s) + \MET{} (2 quark generations) & LO+PS (UFO + \madgraph v2.2.3) & \cite{ForumSVN_TChannel_PapucciVichiZurek}&  \parbox{4cm} {\cite{Papucci:2014iwa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
-	jet(s) + \MET{} (3 quark generations) & \textbf{LO+PS (UFO + \madgraph v2.2.3} & \cite{ForumSVN_TChannel_Amelia}&  \parbox{4cm} {\cite{Bell:2012rg,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} } \\ 
-	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3} & TBC  & \parbox{4cm} {\cite{Bell:2012rg, Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}}\\ 
-    $b$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3} & \cite{ForumSVN_DMSingleB}  & \parbox{4cm} {\cite{Lin:2013sca,Agrawal:2014una, Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}}\\ 
+	jet(s) + \MET{} (3 quark generations) & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_TChannel_Amelia}&  \parbox{4cm} {\cite{Bell:2012rg,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} } \\ 
+	$W/Z/\gamma$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & TBC  & \parbox{4cm} {\cite{Bell:2012rg, Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}}\\ 
+    $b$ + \MET{} & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_DMSingleB}  & \parbox{4cm} {\cite{Lin:2013sca,Agrawal:2014una, Alwall:2014hca,Alloul:2013bka,Degrande:2011ua}}\\ 
 			
 	\cmidrule(r){1-4} 
 	\multicolumn{4}{c}{Specific simplified models with EW bosons (Sec.~\ref{sec:monoHiggs})}\\
 	\cmidrule(r){1-4} 
-	Signature and model & State of the art calculation and tools & Link to implementation & References \\ 
+	Signature and model & State of the art calculation and tools & Implementation & References \\ 
 	\cmidrule(r){1-4} 
 	
 	Higgs + \MET{}, vector mediator & \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWMonoHiggs}& \parbox{4cm} {\cite{Carpenter:2013xra,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 
@@ -65,7 +66,7 @@
 	\cmidrule(r){1-4} 
 	\multicolumn{4}{c}{Contact interaction operators with EW bosons (Sec.~\ref{sec:monoHiggs})}\\
 	\cmidrule(r){1-4} 
-	Signature and model & State of the art calculation and tools & Link to implementation & References \\ 
+	Signature and model & State of the art calculation and tools & Implementation & References \\ 
 	\cmidrule(r){1-4} 
 	
 	 $W/Z/\gamma$ + \MET{}, dimension-7& \textbf{LO+PS (UFO + \madgraph v2.2.3)} & \cite{ForumSVN_EWEFTD7}& \parbox{4cm} {\cite{Cotta:2012nj, Carpenter:2012rg, Crivellin:2015wva,Berlin:2014cfa,Alwall:2014hca,Alloul:2013bka,Degrande:2011ua} }\\ 

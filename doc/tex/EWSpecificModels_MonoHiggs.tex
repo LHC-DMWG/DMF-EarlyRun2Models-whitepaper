@@ -164,11 +164,11 @@ and DM mass of 1~\tev for all models.
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/models_cmp_low_MET_et_Log} \label{fig:met_cmp_low}
 	}
 	\caption{Comparison of the missing transverse momentum distributions at generator level in different 
-		simplified models leading to a Higgs+\MET signature. The model parameter settings are detailed in the text.
+		simplified models leading to a Higgs+\MET signature. The model parameter settings are detailed in the text. The figures in this Section have been obtained using LO UFO models within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  		
 		\label{fig:METSimpMonoHiggs}}
 \end{figure}
 
-These models are known at LO, and they can be interfaced to a parton shower. The studies in this Section
+Predictions for this class of models have been so far considered at LO+PS, even though they could be extended to NLO+PS in the near future. The studies in this Section
 have been performed using a model within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  
 The implementation details for these models are discussed in Section~\ref{sec:monoHImplementation}.
 
@@ -366,7 +366,7 @@ The additional Lagrangian terms for this model are:
 \be \label{LintScalar2}
 L \supset - y_\chiDM \bar\chiDM \chiDM (  \cos\theta\:S - \sin\theta\: h ) - \frac{m_q}{v} \bar q q (\cos\theta\: h + \sin\theta\: S )  \,
 \ee
-where $\theta$ is the mixing angle between the Higgs boson and the new scalar. 
+where $\theta$ is the mixing angle between the Higgs boson and the new scalar.
 
 Mono-Higgs signals in this second model arise through processes shown in Fig.~\ref{fig:feyn_prod_monoH_S} (a,b), or through 
 the radiation of a Higgs boson from the  $t$ quark in the production loop, in Fig.~\ref{fig:feyn_prod_monoH_S} (c). 
@@ -564,20 +564,22 @@ The Higgs vacuum expectation values lead to $Z-\Zprime$ mass mixing, with a smal
  where $z_i$ are the $\Zprime$ charges of the two Higgs doublets, and  $g$ and $g_z$ related to the mass-squared
  values in absence of mixing  $(M_Z^0)^2 = g^2(v_d^2+ v_u^2)/(4\cos^2{\theta_w}) $ and
  $(M_{Z'}^0)^2 = g_z^2 ( z_d^2 v_d^2 + z_u^2 v_u^2 + z_\Phi^2
- v_\Phi^2)$. 
+ v_\Phi^2)$. %In the limit where $\alpha = \beta - \pi/2$,
     
 The production cross section for this model scales as $(g_z)^2$, as the decay width for this process
 to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
 \begin{equation}
-\Gamma_{\Zprime \to h A^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
+%\Gamma_{\Zprime \to h A^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
+\Gamma_{\Zprime \to h A^0} =  (g_z \sin \beta \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
 \end{equation}
 where the center of mass momentum for the decay products
 $\displaystyle |p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A^0})^2)
 (M_{\Zprime}^2 - (m_h - m_{A^0})^2)}$.
 The $\Zprime$ can also decay to $Zh$, leading to the same signature if the $Z$ decays invisibly. The partial width for this decay is:
 \begin{equation}
-\Gamma_{Z' \to hZ}  = (g_z \cos \alpha \sin \beta)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
-\end{equation}. We recommend to generating these two decays separately and combine them at a later stage. 
+%\Gamma_{Z' \to hZ}  = (g_z \cos \alpha \sin \beta)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
+\Gamma_{Z' \to hZ}  = (g_z \sin \beta^2)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
+\end{equation}. We recommend to generate these two decays separately and combine them at a later stage. 
 
 %\frac{1}{2 M_{\Zprime}} \lambda^{1/2}(M_{\Zprime}^2,m_h^2, m_{A^0}^2)$, and
 %$\lambda$ is the K\"{a}llen triangle function\sidenote{\vskip -2.5\baselineskip%\begin{align*}\lambda(c_1,c_2,c_3) \equiv&\;c_1^2 + c_2^2 + c_3^2\\ 
@@ -613,12 +615,11 @@ The $\Zprime$ can also decay to $Zh$, leading to the same signature if the $Z$ d
         \item $\tan{\beta} (\equiv v_u/v_d)$,
  	\item the \Zprime coupling strength $g_z$. 
  \end{itemize}
- \Todo{What about Z' coupling to q and DM? CD: isn't this the DMV model?}
+% \Todo{What about Z' coupling to q and DM? CD: isn't this the DMV model?}
  
  To study the signal production and kinematic dependencies on these parameters, 
  we produced signal samples varying each of the five parameters through 
- \madgraph for the matrix element, PYTHIA for the parton shower, and DELPHES\cite{deFavereau:2013fsa} 
-for a parameterized detector-level simulation.
+ \madgraph for the matrix element, \pythiaEight for the parton shower, and DELPHES\cite{deFavereau:2013fsa}  for a parameterized detector-level simulation.
  
  As seen in Fig.~\ref{fig:DMH_tanbeta}, variations of $\tan{\beta}$ does not lead to any kinematic 
  difference and the production cross section simply scales as a function of $\tan{\beta}$. Hence 
@@ -753,7 +754,6 @@ namely values of $M_{\Zprime}=600, 800, 1000, 1200, 1400$~\gev.  This signal pro
   	\label{fig:DMH_zpincl}
 \end{figure}
 
-\newthought{The implementation of these models is discussed in Appendix~\ref{sub:monoHiggs}.}
 
 
   

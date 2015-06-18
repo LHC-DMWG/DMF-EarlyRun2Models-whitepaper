@@ -150,7 +150,7 @@ A thorough discussion of these models and their parameters can also be found in~
 %The two simplified models described here have four free parameters: mediator mass $\mMed$, Dark Matter mass $\mDM$, coupling of the mediator to quarks $\gq$ and coupling of the mediator to Dark Matter $\gDM$,
 
 These simplified models are known and available in event generators at NLO + PS accuracy, as detailed in Section~\ref{sec:monojet_implementation}. 
-Results in this Section have been obtained using the model implementation within the \powheg generator (\textsc{v3359}) \cite{Haisch:2013ata}.
+Results in this Section have been obtained using the model implementation within the \powheg generator (\textsc{v3359}) \cite{Haisch:2013ata},  interfaced to \pythiaEight~\cite{Sjostrand:2007gs} for the parton shower.
 
 In addition, for the vector models considered, initial and final state radiation of a $Z'$ can occur which can appear as a narrow jet if it decays hadronically and may not be distinguishable from a QCD jet, thus accounting for some fraction of the monojet signal. The ISR and FSR of $Z'$ becomes more important at large values of the couplings~\cite{Bai:2015nfa}. 
 
@@ -174,7 +174,7 @@ Differences in kinematic distributions are expected only close to the transition
 \begin{figure*}
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_V_10_1000.eps}
-\caption[][-28pt]{Scan over couplings. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
+\caption[][-28pt]{Scan over couplings. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively. All figures in this Section have been obtained using the model implementation within the \powheg generator (\textsc{v3359}) \cite{Haisch:2013ata}, interfaced to \pythiaEight~\cite{Sjostrand:2007gs} for the parton shower. }
 \label{fig:monojet_scan_V_g}
 \end{figure*}
 
@@ -530,7 +530,7 @@ Tables\,\ref{tab:widthV} and \ref{tab:widthA} give the $\Gamma_{\rm{min}}/\mMed$
 	\label{fig:feyn_prod_S}
 \end{figure}
 
-In this section, we consider a parallel situation to the vector and axial-vector mediators in the previous sections: a real scalar or a pseudoscalar where the associated scalar is decoupled at higher energies\sidenote{This assumption does not hold in a UV-complete model where the two components of the complex scalar mediator would be approximately degenerate.  The complex scalar case could be studied separately in the case of heavy flavor final states given the sufficiently different kinematics.}. This section is largely based on Refs.~\cite{Buckley:2014fba,Harris:2014hga} which contain a thorough discussion of these models. 
+In this section, we consider a parallel situation to the vector and axial-vector mediators in the previous sections: a real scalar or a pseudoscalar where the associated scalar is decoupled at higher energies\sidenote{This assumption does not hold in a UV-complete model where the two components of the complex scalar mediator would be approximately degenerate.  The complex scalar case could be studied separately in the case of heavy flavor final states given the sufficiently different kinematics.}. This section is largely based on Refs.~\cite{Buckley:2014fba,Harris:2014hga,Haisch:2015ioa} which contain a thorough discussion of these models. 
 
 Assuming MFV, \spinzero resonances behave in a similar fashion as the SM Higgs boson. Relative to the vector and axial-vector models discussed above, the scalar models are distinguished by the special consequences of the MFV assumption: the very narrow width of the mediator and its extreme sensitivity to which decays are kinematically available, and the loop-induced coupling to gluons. The interaction Lagrangians are
 
@@ -603,7 +603,7 @@ The minimal mediator width is given by %Eq.\,\ref{eq:monojet_min},
     \end{split}
   \end{equation}
 \end{fullwidth}
-where $x=3$ for scalars and $x=1$ for pseudoscalars. The loop integrals are
+where $x=3$ for scalars and $x=1$ for pseudoscalars. The loop integrals, with $f$ as complex functions, are
 \begin{fullwidth}
   \bea \label{eq:fphifa}
   f_\phi (\tau) &=& \tau \left [ 1+ (1-\tau) \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \right ]  \,, \\
@@ -611,14 +611,17 @@ where $x=3$ for scalars and $x=1$ for pseudoscalars. The loop integrals are
   \right) \, 
   \eea
 \end{fullwidth}
-for mediator masses above the top threshold, $\tau > 1$, where $\tau = 4 m_{t}^2/m_{\phi,a}^2$, and, for mediator masses below the top threshold, $\tau < 1$, 
-\begin{fullwidth}
-  \bea \label{eq:fphifb}
-  f_\phi (\tau) &=& \tau \left [ 1+ (1-\tau)\left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) \right ]  \,\,,\\
-  f_a (\tau) &=& \tau
-  \left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right).
-  \eea
-\end{fullwidth}
+
+where $\tau = 4 m_{t}^2/m_{\phi,a}^2$. 
+
+%for mediator masses above the top threshold, $\tau > 1$, where $\tau = 4 m_{t}^2/m_{\phi,a}^2$, and, for mediator masses below the top threshold, $\tau < 1$, 
+%\begin{fullwidth}
+%  \bea \label{eq:fphifb}
+%  f_\phi (\tau) &=& \tau \left [ 1+ (1-\tau)\left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right) \right ]  \,\,,\\
+%  f_a (\tau) &=& \tau
+%  \left(-\frac{1}{4}\left(\log\frac{1+\sqrt{1-\tau}}{1-\sqrt{1-\tau}}+i\pi\right)^2\right).
+%  \eea
+%\end{fullwidth}
 
 
 % If this is in the DM@LHC write-up, it is unnecessary here.
@@ -677,7 +680,9 @@ For the mediator mass above twice the top quark mass $m_t$, the minimal width re
 
 As shown in the diagram of Fig.~\ref{fig:feyn_prod_S}, the lowest order process of these models
 already involves a one-loop amplitude in QCD, and only LO predictions are currently available. 
-The generator used for the studies in this Section is \powheg~\cite{Haisch:2015ioa}; within this implementation,
+The generator used for the studies for the jet+\MET{} signature is \powheg\cite{Haisch:2013ata,Haisch:2015ioa,Alioli:2010xd,Nason:2004rx,Frixione:2007vw},
+with \pythiaEight~\cite{Sjostrand:2007gs} for the parton shower; 
+within this implementation,
 the scalar and pseudoscalar mediator benchmark models are known at LO+PS accuracy. 
 
 \subsection{Parameter scan}
@@ -694,7 +699,8 @@ No differences in the kinematic distributions are observed and also the cross se
 \begin{figure*}[!htpb]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_S_10_500.eps}
-\caption{Scan over couplings. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
+\caption{Scan over couplings. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively. Studies in all figures for the jet+\MET{} signature is \powheg,
+	with \pythiaEight for the parton shower; }
 \label{fig:monojet_scan_S_g}
 \end{figure*}
 
@@ -910,6 +916,7 @@ However, the number of generated samples can be reduced even further
 if a parameterization of the cross section dependence from one grid point to another exists.
 In this section, we describe the details of a cross section scaling procedure that
 can be used to reinterpret results for a fixed coupling for \schannel mediator models.
+The studies in this section employ the \powheg~\cite{Haisch:2015ioa} generator. 
 
 The propagator for the \schannel exchange is written in a Breit-Wigner
 form as $\displaystyle \frac{1}{q^2-\mMed^2 + i\mMed\Gamma}$, where $q$ is the momentum transfer calculated from the two partons entering the hard process after the initial state radiation, which is equivalent to the momentum of the Dark Matter pair~\footnote{Using a running width and replacing the denominator of the propagator with $q^2 - \mMed^2 + \complexi\,Q^2\,\frac{\Gamma}{\mMed}$ should be considered in the case of wide mediators~\cite{Bardin:1989qr}.}. %The relative size of the center-of-mass energy defined by the two partons entering the hard process and the mediator mass allows us to classify the production in the following way:

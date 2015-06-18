@@ -38,8 +38,8 @@ We devote the end of this Section to a discussion on the presentation of results
 from this model, including an assessment of their reliability 
 using a conservative procedure that is only dependent on EFT parameters.
 
-These models are known at LO, and they can be interfaced to a parton shower. The studies in this Section
-have been performed using a model within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  
+The studies in this Section
+have been performed using a UFO model within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  
 The implementation of these models is discussed further in Section~\ref{sub:EFTModels}.
 
 %CD: what is this?
@@ -113,7 +113,8 @@ in early LHC analyses, and will instead use this dimension 5 operator.
 	\includegraphics[width=0.95\textwidth]{figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf}
 	\caption{Comparison of the missing transverse momentum for the simplified model
 		where a scalar mediator is exchanged in the \schannel and the model including 
-		a dimension-5 scalar contact operator, in the leptonic Z+\MET final state}
+		a dimension-5 scalar contact operator, in the leptonic Z+\MET final state. All figures in this Section
+		have been performed using a UFO model within \madgraph v2.2.3, interfaced to \pythiaEight for the parton shower.  }
 	\label{fig:EW_EFT5_Zlep_MET}
 \end{figure}
 
@@ -122,13 +123,11 @@ in early LHC analyses, and will instead use this dimension 5 operator.
 The two parameters of this model are the scale of new physics $\lambda$ 
 and the DM particle mass. SM-DM coupling and new physics scale are related by 
 $\gDM = {(246~\gev)}/{\lambda}$. 
-\Todo{Clarify the reason why this happens 
-	in \madgraph through explicit Lagrangian terms?}.
+
 
 The initial value of the new physics scale $\lambda$ chosen 
 for the sample generation is 3~\tev. This is a convention and does not affect the signal kinematics:
-the cross-section of the samples can be rescaled according to the 
-$\lambda^3$ dependence when deriving the constraints on this scale. 
+the cross-section of the samples can be rescaled when deriving the constraints on this scale. 
 However, more care should be given when rescaling Higgs+\MET operators
 of higher dimensions, as different diagrams have a different $\lambda$ dependence. 
 %From Andy
@@ -369,14 +368,13 @@ describe the kinematics of these signals.
 Contact interaction operators like the ones in this section 
 remain useful tools for comparison of the sensitivity of different search channels, 
 and for reinterpretation of other models under the correct assumptions. 
-To date, there are no UV-complete models available for most of those operators:
-dimension-7 operators are particularly challenging since their completion involves loops~\sidenote{
+To date, while UV-complete models are known, their phenomenology has
+not been studied in full detail as their completion involves loops~\sidenote{
 An example case for the need of loop completions is a simplified model with an additional scalar exchanged at tree level.
 The scalar couples to $WW$ and $ZZ$ in a gauge-invariant way, Integrating out the mediator 
 does not lead to the Lorentz structure of a dimension-7 operator, so it is not possible
 to generate dimension-7 operators that satisfy gauge and Lorentz invariance at the same time.
-A model with a \spinone mediator cannot be considered as an candidate for completion either, since dimension-7 operators
-only have scalar or pseudoscalar couplings.}. 
+A model with a \spinone mediator cannot be considered as an candidate for completion either, since dimension-7 operators only have scalar or pseudoscalar couplings.}. 
 
 However, this may be the focus of future theoretical exploration, as discussed in Ref.~\cite{Crivellin:2015wva}.
 An example of a complete model 
