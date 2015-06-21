@@ -59,7 +59,7 @@ The relevant keywords in the input card are \bornsuppfact and \bornktmin.
 \item unweighted events: %keywords
 
 \bornsuppfact: negative or absent\\
-\bornktmin <PT>
+\bornktmin PT
 
 This runs the program in the most straightforward way,
 but it is likely not the more convenient choice, as will be
@@ -76,8 +76,8 @@ region as well as the high-\pT tail.
 
 \item weighted events: %keywords
 
-\bornsuppfact <PTS>\\
-\bornktmin <PT>
+\bornsuppfact PTS\\
+\bornktmin PT
 
 \powheg will now produce weighted events, thereby allowing to generate
 a single sample that provides sufficient statistics in all signal
@@ -108,24 +108,36 @@ signal samples, and hence a threshold lower than 150 may be required.
 
 %\begin{itemize}
 
-\item Remove the \runningwidth keyword, or set it to 0, which is the
-  default value. Running with fixed widths is the recommended
-  option. Although there are limitations, this is the more
-  straightforward, simple and transparent option, and it was used for these
-  Forum studies. 
+\item The \powheg monojet implementations can generate events using two expressions for the mediator propagators. The default setup (i.e if the keyword \runningwidth is absent, commented out or set to 0) is such that a normal Breit-Wigner function is used for the propagator: in this case, the expression
+\begin{equation*}
+  Q^2 - M^2 + \complexi\,M\,\Gamma
+\end{equation*}
+is used for the propagator's denominator, where Q is the virtuality of the mediator, and M and $\Gamma$ are its mass and width, respectively.
+This is the more straightforward, simple and transparent option, and it was used for the Forum studies. It should be the method of choice, unless one approaches regions of parameter space where gamma/M starts to approach order 1 values. In those cases, a more accurate modelling (or at least a check of the validity of the fixed width approach) can be achieved by using a running width: by setting the \runningwidth token to 1, \powheg uses as the denominator of the mediator’s propagator the expression
+\begin{equation*}
+ Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M},
+\end{equation*}
+which is known to give a more realistic description. See Ref.~\cite{Bardin:1989qr} for a discussion.
+
+
+%Remove the \runningwidth keyword, or set it to 0, which is the
+%  default value. Running with fixed widths is the recommended
+%  option. Although there are limitations, this is the more
+%  straightforward, simple and transparent option, and it was used for these
+%  Forum studies. 
 
   %  While not recommended,
-  The alternative, a running width for the
-  propagator of the \schannel mediator, can be selected by setting
-  runningwidth to 1. In this case the denominator of the mediator's
-  propagator is modified:
+%  The alternative, a running width for the
+%  propagator of the \schannel mediator, can be selected by setting
+%  runningwidth to 1. In this case the denominator of the mediator's
+%  propagator is modified:
   
-\begin{equation*}
-  Q^2 - M^2 + \complexi\,M\,\Gamma \to   Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M},
-\end{equation*}
-where $Q$ is the virtuality of the mediator, and $M$ and $\Gamma$ are
-its mass and width respectively.  See Ref.~\cite{Bardin:1989qr} for
-a discussion.
+%\begin{equation*}
+%  Q^2 - M^2 + \complexi\,M\,\Gamma \to   Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M},
+%\end{equation*}
+%where $Q$ is the virtuality of the mediator, and $M$ and $\Gamma$ are
+%its mass and width respectively.  See Ref.~\cite{Bardin:1989qr} for
+%a discussion.
 
 \item Set the parameters defining the bounds on the invariant mass of the Dark Matter pair, \masslow and \masshigh, to -1. In this way, \powheg will assign values internally. 
 \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the vector model, respectively.
@@ -136,7 +148,7 @@ a discussion.
   1. If needed, their fraction can be decreased by setting \foldsci
   and \foldy to bigger value (2 for instance). \foldphi can be kept to
   1.
-\item Since the scalar model with top-loop is computed as a leading order process, set \LOevents and \bornonly are set to 1 internally.
+%\item Since the scalar model with top-loop is computed as a leading order process, set \LOevents and \bornonly are set to 1 internally.
 \item One should use the automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs as described in Section\,\ref{sec:TheoryUncertainties}.
 
 \item \texttt{idDM} is the integer that identifies the DM particle in the Monte Carlo event record.  This should be chosen so that other tools can process the \powheg output properly.
