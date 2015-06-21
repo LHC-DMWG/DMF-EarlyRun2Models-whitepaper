@@ -234,12 +234,14 @@ An EFT sample is also displayed in the latter case. The distributions are normal
 
 
 Since kinematic distributions are robust to
-changes in the specific values of coupling as long as heavy narrow mediators are generated correctly (see Appendix~\ref{thought:heavynarrowmediators} for discussion), 
+changes in the specific values of coupling~\footnote{This applies
+as long as heavy narrow mediators are generated without any truncation
+of low-mass tails at the generator-level.},
 the choice of $\gq=\gDM$ is reasonable 
 to reduce the parameter space to be scanned. 
 There are no complications associated
 with small couplings, but, also, the early part of Run~2 will not be
-sensitive to them.  The range of couplings we recommend limit the
+sensitive to them.  The range of couplings we recommend to generate limit the
 calculated width of the mediator to be near or below \mMed.
 
 For direct mediator searches, such as $q\bar q\to Z^\prime \to q\bar q$, asymmetric couplings ($\gq \ne \gDM$)
@@ -255,7 +257,7 @@ For a fixed mediator mass \mMed and couplings, the Dark Matter mass falls into t
 \begin{itemize}
 \item[On-shell:] When $\Mmed \gg 2 \mDM$, most mediators are produced on-shell. The hardness of the ISR is set by \Mmed, and the kinematic distributions do not strongly depend on \mDM. This is illustrated in Fig.~\ref{fig:monojet_scan_V_mDM1000} for an example of \mMed=1~\tev 10~\gev $<\mDM<$ 300~\gev. The cross section decreases as the \mDM approaches $\mMed/2$. A coarse binning along $\mDM$ is sufficient.
 \item[Threshold:] When $\Mmed \approx 2\mDM$, the production is resonantly enhanced, and both the cross section and kinematic distributions change more rapidly as a function of the two masses, and finer binning is needed in order to capture the changes.
-\item[Off-shell:] When $\Mmed \ll 2 \mDM$, the Dark Matter pair is produced off-shell. The mediator propagator gives an explicit suppression of $(\Mmed/Q)^2$ that suppresses hard ISR. The $\mDM=1$~\tev case, shown in Fig.~\ref{fig:monojet_scan_V_mDM1000}, and Figure\,\ref{fig:monojet_scan_V_mDM100} demonstrates that the \MET spectrum hardens with increasing \mDM, accompanied by the gradual decrease of the cross section. Due to the significant cross section suppression, it is not necessary to fully populate the parameter space. Imminent LHC searches are not expected to be sensitive to these signals.
+\item[Off-shell:] When $\Mmed \ll 2 \mDM$, the Dark Matter pair is produced by an off-shell mediator. The mediator propagator gives an explicit suppression of $(\Mmed/Q)^2$ that suppresses hard ISR. The $\mDM=1$~\tev case, shown in Fig.~\ref{fig:monojet_scan_V_mDM1000}, and Figure\,\ref{fig:monojet_scan_V_mDM100} demonstrates that the \MET spectrum hardens with increasing \mDM, accompanied by the gradual decrease of the cross section. Due to the significant cross section suppression, it is not necessary to fully populate the parameter space. Imminent LHC searches are not expected to be sensitive to these signals.
 \end{itemize}
 
 \begin{figure*}
@@ -532,7 +534,7 @@ Tables\,\ref{tab:widthV} and \ref{tab:widthA} give the $\Gamma_{\rm{min}}/\mMed$
 
 In this section, we consider a parallel situation to the vector and axial-vector mediators in the previous sections: a real scalar or a pseudoscalar where the associated scalar is decoupled at higher energies\sidenote{This assumption does not hold in a UV-complete model where the two components of the complex scalar mediator would be approximately degenerate.  The complex scalar case could be studied separately in the case of heavy flavor final states given the sufficiently different kinematics.}. This section is largely based on Refs.~\cite{Buckley:2014fba,Harris:2014hga,Haisch:2015ioa} which contain a thorough discussion of these models. 
 
-Assuming MFV, \spinzero resonances behave in a similar fashion as the SM Higgs boson. Relative to the vector and axial-vector models discussed above, the scalar models are distinguished by the special consequences of the MFV assumption: the very narrow width of the mediator and its extreme sensitivity to which decays are kinematically available, and the loop-induced coupling to gluons. The interaction Lagrangians are
+Assuming MFV, \spinzero resonances behave in a similar fashion as the SM Higgs boson~\footnote{If the mediators are pure singlets of the SM, their interactions with quarks are not $SU(2)_L$ invariant. To restore this invariance, one could include the mixing of such mediators with the Higgs sector. This leads to extra interactions and a more complex phenomenology with respect to what considered in this Section (for a more complete discussion, see Refs.~\ref{Buckley:2014fba,Haisch:2015ioa}). In the interest of simplicity, we do not include models including those interactions in this report towards early Run-2 benchmark models, but we give an example of a model of this kind in Appendix~\ref{sec:i2HDM}.}. Relative to the vector and axial-vector models discussed above, the scalar models are distinguished by the special consequences of the MFV assumption: the very narrow width of the mediator and its extreme sensitivity to which decays are kinematically available, and the loop-induced coupling to gluons. The interaction Lagrangians are
 
 \begin{fullwidth}
   \begin{eqnarray} \mathcal{L}_{\phi} & = &
@@ -556,7 +558,7 @@ However, we again emphasize the importance of searching the
 full set of allowed channels in case violations of these simplifying assumptions
 lead to significant modifications of the decay rates that
 unexpectedly favor different
-channels than the mix obtained under our assumptions. The coupling $\gdm$ parameterizes the entire dependence on the structure between the mediator and the dark sector.
+channels than the mix obtained under our assumptions. The coupling $\gdm$ parametrizes the entire dependence on the structure between the mediator and the dark sector.
 
 %The most general Lagrangians including new scalars or pseudoscalars will have a potential containing interactions with the SM Higgs field $h$. 
  %If there is no indication otherwise the easiest assumptions is always the most scientific to chose (also listening to some phenomenologists this seems not always to be the case ;-) )  
@@ -696,7 +698,7 @@ in order to decide on the optimized parameter grid for the presentation of Run-2
 A scan over the mediator mass is shown in Fig.\,\ref{fig:monojet_scan_S_mMed1000} where \mMed = 300~\gev and 500~\gev are chosen to be below and above $2m_t$. The off-shell Dark Matter production regime is assumed by taking an extreme limit ($\mDM=1$~\tev) in order to study solely the effects of the couplings to quarks. 
 No differences in the kinematic distributions are observed and also the cross sections remain similar in this case. No significant changes appear for mediator masses around the $2m_t$ threshold.
 
-\begin{figure*}[!htpb]
+\begin{figure*}[!htbp]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_S_10_500.eps}
 \caption{Scan over couplings. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively. Studies in all figures for the jet+\MET{} signature is \powheg,
@@ -704,33 +706,33 @@ No differences in the kinematic distributions are observed and also the cross se
 \label{fig:monojet_scan_S_g}
 \end{figure*}
 
-\begin{figure*}[!htpb]
+\begin{figure}[!p]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mDM_S_500.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mDM1000}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[!htpb]
+\begin{figure}[!p]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mDM_S_100.eps}
 \caption{Scan over Dark Matter mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mDM100}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[!htpb]
+\begin{figure}[!p]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mMed_S_10.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mMed10}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[!htpb]
+\begin{figure}[!p]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/monojet/scan_mMed_S_1000.eps}
 \caption{Scan over mediator mass. The $\MET$ distribution is compared for the scalar mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
 \label{fig:monojet_scan_S_mMed1000}
-\end{figure*}
+\end{figure}
 
 \begin{figure}
 	\centering
@@ -944,7 +946,7 @@ which further implies the cross section scaling
 \sigma \propto \frac{\gq^2\gDM^2}{\Gamma}.
 \label{eq:monojet_scaling}
 \end{equation}
-The narrow with approximation is important here as it ensures an integration over parton distribution functions (PDFs) can be neglected. In other words, it is assumed the integrand in Eq.\,\ref{eq:monojet_int} is non-zero only for a small region of $s$, such that the PDFs can be taken to be constant in this range.
+The narrow width approximation is important here as it ensures an integration over parton distribution functions (PDFs) can be neglected. In other words, it is assumed the integrand in Eq.\,\ref{eq:monojet_int} is non-zero only for a small region of $s$, such that the PDFs can be taken to be constant in this range.
 By simplifying the dependence of the minimal width on the couplings as $\Gamma \sim \gq^2+\gDM^2$, one can approximate this scaling rule in the extreme cases as follows
 
 \begin{eqnarray}

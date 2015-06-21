@@ -43,17 +43,16 @@ The Lagrangian considered is given by
 This model is known at LO+PS accuracy, and the studies in this Section use a LO model implementation within \madgraph v2.2.3
 interfaced to \pythiaEight for the parton shower. Further implementation details can be found in Section~\ref{sec:TTBar_implementation}.
  
-
 \subsubsection{Parameter scan}
 
-In this model, the interference of diagrams with QCD production of the mediator (which scale as $g^2_s$) with diagrams that are proportional to the coupling $g$ in the $b+$\MET{} and $b\bar{b}$+\MET{} final states. In the case of large couplings, this is not conducive to a simple scaling behavior that would allow us to reduce the number of points to be simulated. 
+In this model, the interference of diagrams with QCD production of the mediator (which scale as $g^2_s$) with diagrams that are proportional to the coupling $g$ in the $b+$\MET{} and $b\bar{b}$+\MET{} final states. In the case of large couplings, this is not conducive to a simple scaling behavior that would allow us to reduce the number of points to be simulated. This can be seen in Fig.~\ref{fig:g_comp}.
 %Fixing the couplings also fixes the mediator width, when adopting the minimal width assumption. 
 
 A full study of the parameter scan for this model was not available for this report; thus for early Run-2 searches we recommend scanning a range of possible widths as discussed in a more limited way than for the \tchannel mono-jet, spanning from the minimal width to a value approaching the particle limit, e.g. $g=0.5,1,2,3$. A coupling benchmark such as $g=1$ should be considered for each mass point since this would be a distinctive feature of this benchmark from SUSY models with sbottom squarks (see Section~\ref{sec:monojet_t_channel} for further discussion).
 %: Cross-sections for unit couplings can be found in Appendix~\ref{app:xsecs_bFDM}. 
 %The coupling could also be chosen to fulfill constraints from the relic density (see Appendix~\ref{app:Relic_Density_bFDM}, with corresponding cross sections in Tables~\ref{tab:g_relic_13T} onwards). 
 
-A scan of Dark Matter and mediator masses should be done in the on-shell region $\MPhi > \mDM + m_b$, since the cross-sections in the off-shell region are too small to be probed with early LHC data, spanning from 10 to 500 GeV in \mDM and from 10 to 1300 GeV in \MPhi. 
+A scan of Dark Matter and mediator masses should be done in the on-shell region $\MPhi > \mDM + m_b$, since the cross-sections in the off-shell region are too small to be probed with early LHC data, spanning from 10 to 500 GeV in \mDM and from 10 to 1300 GeV in \MPhi. Examples of the kinematic distributions produced by this model are shown in Fig.~\ref{fig:relic}~\footnote{Following the grounding assumptions in this report, the normalization to the relic density is considered only in these example plots rather than as a necessary ingredient for the parameter scan of this model.}.
 
 %  \item $\mDM=10-500$ GeV with a binning of 50 GeV for $\mDM<100$ and  100 GeV otherwise; 
 %  \item $\MPhi=10-1300$ with a binning of 100 GeV;
@@ -64,7 +63,8 @@ A scan of Dark Matter and mediator masses should be done in the on-shell region 
 \begin{figure*}[h!]
   \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_relic/missing_et.eps}\quad
   \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_relic/Njets.eps}
-  \caption{\MET (left) and jet multiplicity (right) for various DM and mediator masses and couplings normalized to the relic density observed in the early universe.}\label{fig:relic}
+  \caption{\MET (left) and jet multiplicity (right) for various DM and mediator masses and couplings normalized to the relic density observed in the early universe. Studies in this section use a LO UFO model implementation within \madgraph v2.2.3
+  	interfaced to \pythiaEight for the parton shower.}\label{fig:relic}
 \end{figure*}
 
 \begin{figure*}[h!]
