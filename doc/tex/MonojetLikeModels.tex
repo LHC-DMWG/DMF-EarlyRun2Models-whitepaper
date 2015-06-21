@@ -164,6 +164,13 @@ In order to determine an optimal choice of the parameter grid for the simulation
 To study the dependence of kinematic distributions on the coupling strength, samples were generated where a pair of $\mDM=10$~\gev Dark Matter particles is produced on-shell from the mediator of $\mMed=1$~\tev. 
 Figure~\ref{fig:monojet_scan_V_g} compares the shapes of the \MET distribution for the different choices of the coupling strength. This is a generator-level prediction with no kinematic selections or detector simulation. Coupling values in the scan range 0.1--1.45, fixing $\gq=\gDM$, correspond to a rough estimate of the lower sensitivity of mono-jet analyses and a maximum coupling value such that $\Gamma_{\rm{min}} < \mMed$. We observe that the shapes of the \MET or jet \pT distributions do not depend on the couplings (and consequently the width) in the ranges considered. A large width of the mediator implies a broad integral over the contributing parton distributions, which might not be well approximated by the midpoint of this integral.  This study shows that the effect, in the \pT distribution of the observed gluon, is not important.
 
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_V_10_1000.eps}
+	\caption[][-28pt]{Scan over couplings. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively. All figures in this Section have been obtained using the model implementation within the \powheg generator (\textsc{v3359}) \cite{Haisch:2013ata}, interfaced to \pythiaEight~\cite{Sjostrand:2007gs} for the parton shower. }
+	\label{fig:monojet_scan_V_g}
+\end{figure*}
+
 Based on similar findings for different choices of
 \mMed and \mDM, we conclude that the shapes of
 kinematic distributions are not altered
@@ -171,20 +178,23 @@ by coupling variations, neither for the on-shell mediator case where $\mMed>2\mD
 nor for the off-shell case where $\mMed<2\mDM$. Only the production cross sections change.
 Differences in kinematic distributions are expected only close to the transition region between on-shell and off-shell mediators.
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_V_10_1000.eps}
-\caption[][-28pt]{Scan over couplings. The $\MET$ distribution is compared for the vector mediator models using the parameters as indicated. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively. All figures in this Section have been obtained using the model implementation within the \powheg generator (\textsc{v3359}) \cite{Haisch:2013ata}, interfaced to \pythiaEight~\cite{Sjostrand:2007gs} for the parton shower. }
-\label{fig:monojet_scan_V_g}
-\end{figure*}
 
 %When small coupling strengths are combined with extremely heavy mediators, one must take particular care to integrate over all values of the Dark Matter pair invariant mass, down to the lowest values for which the \MET satisfies threshold requirements. See the Appendix \ref{sec:monojet_implementation} page \pageref{thought:heavynarrowmediators} for details.
+
 
 Special care needs to be taken when coupling strengths are combined with extremely heavy mediators.
 Figure\,\ref{fig:monojet_narrow} suggests a change in the shape of the
 \MET distribution for a $\mMed=5$~\tev mediator
 once $\Gamma_{\rm{min}}/\mMed$ is of the order of a percent or lower.
-Such heavy mediators, although inacessible by the LHC data, are interesting since they provide a good approximation for benchmark EFT models.
+
+\begin{figure*}[!h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_EFT_10_5000.eps}
+	\caption[][-28pt]{Comparison of the $\MET$ distributions from the D5 EFT sample and the vector models with 5~\tev heavy mediator of various widths. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
+	\label{fig:monojet_narrow}
+\end{figure*}
+
+Such heavy mediators, although inaccessible with early LHC data, are interesting since they provide a good approximation for benchmark EFT models.
 The observed difference among the simplified models in the plot arises from the fact that the region of low invariant masses of the Dark Matter pair, $m_{\bar{\chiDM}\chiDM}$, is suppressed due to narrow Breit-Wigner peak that only probes a narrow window of parton distribution functions. For wider mediators, the low mass region is significantly enhanced by parton distribution functions at low Bjorken $x$, as illustrated in Fig.\,\ref{fig:monojet_mchichi}(a).
 This explains why the sample with the narrowest mediator in Fig.\,\ref{fig:monojet_narrow} is heavily suppressed in terms of production cross section and also gives different \MET shape.
 %In general, for such extreme parameter choices the EFT model should give the correct answer.
@@ -210,27 +220,20 @@ In case of narrow width mediators, e.g. $\Gamma_{\rm{min}}/\mMed\sim0.05$, even 
 %\label{fig:monojet_narrow}
 %\end{figure}
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.95\textwidth]{figures/monojet/scan_g_EFT_10_5000.eps}
-\caption[][-28pt]{Comparison of the $\MET$ distributions from the D5 EFT sample and the vector models with 5~\tev heavy mediator of various widths. Ratios of the normalized distributions with respect to the first one are shown. $A_{300}$ and $A_{500}$ in the table denote the acceptance of the $\MET>300$~\gev and $\MET>500$~\gev cut, respectively.}
-\label{fig:monojet_narrow}
-\end{figure*}
-
-\begin{figure}
+\begin{figure*}[!p]
 \centering
 \subfloat[]{
-\includegraphics[width=0.8\textwidth]{figures/monojet/mxx.eps}% width = 0.73 => regular textwidth of figure environment. figure* used to avoid overlapping captions.
+\includegraphics[width=0.7\textwidth]{figures/monojet/mxx.eps}% width = 0.73 => regular textwidth of figure environment. figure* used to avoid overlapping captions. You wish, it still overlaps. Moved figures to new page, had to change the figure env in the other one and move it upwards.
 \label{fig:monojet_mchichi_a}}
 \hfill
 \subfloat[]{
-\includegraphics[width=0.8\textwidth]{figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.eps}
+\includegraphics[width=0.7\textwidth]{figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.eps}
 \label{fig:monojet_mchichi_b}}
 \caption[][14pt]{Invariant mass of the Dark Matter pair in the vector mediator samples with $\mDM=10$~\gev, $\mMed=5$~\tev and different coupling strengths (a).
-Similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$ and $0.1$ (b).
+A similar comparison is shown for the samples with different mediator masses considering $\Gamma_{\rm{min}}/\mMed=0.05$ and $0.1$ (b).
 An EFT sample is also displayed in the latter case. The distributions are normalised to unit area.}
 \label{fig:monojet_mchichi}
-\end{figure}
+\end{figure*}
 
 
 Since kinematic distributions are robust to
@@ -438,7 +441,6 @@ Tables\,\ref{tab:widthV} and \ref{tab:widthA} give the $\Gamma_{\rm{min}}/\mMed$
 		{Minimal width of the vector mediator exchanged in \schannel divided by its mass, assuming $\gq=0.25$ and $\gDM=1$. The numbers tabulated under $2\mDM=\mMed$ correspond to the width calculated for $\mMed-5$~\gev.}
 		\label{tab:widthV}
 	\end{table}
-	\vspace{4cm}
 	
 	\begin{table}
 		\centering
@@ -461,7 +463,6 @@ Tables\,\ref{tab:widthV} and \ref{tab:widthA} give the $\Gamma_{\rm{min}}/\mMed$
 			{Minimal width of the axial-vector mediator exchanged in \schannel divided by its mass, assuming $\gq=0.25$ and $\gDM=1$. The numbers tabulated under $2\mDM=\mMed$ correspond to the width calculated for $\mMed-5$~\gev.}
 			\label{tab:widthA}
 		\end{table}
-		\vspace{4cm}
 
 \subsection{Additional considerations for $V$+\MET{} signatures}
 \label{sec:bosonrad}
@@ -824,7 +825,6 @@ For the parameter grid for scalar and pseudo-scalar mediator \schannel exchange,
 		{Minimal width of the scalar mediator exchanged in \schannel divided by its mass, assuming $\gq=0.25$ and $\gDM=1$. The loop-induced gluon contribution is ignored. The numbers tabulated under $2\mDM=\mMed$ correspond to the width calculated for $\mMed-5$~\gev.}
 		\label{tab:widthS}
 	\end{table}
-	\vspace{4cm}
 	
 	
 	\begin{table}
@@ -848,7 +848,6 @@ For the parameter grid for scalar and pseudo-scalar mediator \schannel exchange,
 			{Minimal width of the pseudo-scalar mediator exchanged in \schannel divided by its mass, assuming $\gq=0.25$ and $\gDM=1$. The loop-induced gluon contribution is ignored. The numbers tabulated under $2\mDM=\mMed$ correspond to the width calculated for $\mMed-5$~\gev.}
 			\label{tab:widthP}
 		\end{table}
-		\vspace{4cm}
 		
 
 

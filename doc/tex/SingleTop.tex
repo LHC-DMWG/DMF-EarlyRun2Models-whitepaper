@@ -243,7 +243,6 @@ In the case of the non-resonant model, the invisible vector is connected to
 a hidden sector that could be, in its simplest form, parameterized by a new
 fermion~\cite{Boucheneb:2014wza}. This has effects on the width of the invisible $V$ state.
 
-
 A consensus between the ATLAS and CMS collaborations has been reached in
 the case of non-resonant monotop production. The results have been
 described above. In contrast, discussions in the context of resonant
@@ -252,45 +251,53 @@ contains four parameters and must thus be further simplified for practical
 purposes. Several options are possible and a choice necessitates additional
 studies that will be achieved in a near future.
 
-
-
 It has been verified that the kinematics do not depend on the width of the
 invisible state in the case where this width is at most 10\% of the
-$V$-mass. This is illustrated in Figures~\ref{fig:appB:Vmass} and \ref{fig:appB:pTV},
-where we respectively show the invariant-mass and transverse-momentum
+$V$-mass. This is illustrated in Fig.~\ref{fig:appB:pTV},
+where we show the transverse-momentum
 spectra of the $V$-boson when it decays into a top-up final state and for
-different $V$-boson masses. The results are however independent of the
+different $V$-boson masses. The results are independent of the
 visible or invisible decay modes as we are only concerned with the
-kinematical properties of the invisible state.
+kinematic properties of the invisible state.
 
-\begin{figure}[!h!tpd]
+%\begin{figure*}[!h!tpb]
+%	\centering
+%	\includegraphics[width=0.3\textwidth]{figures/singletop/Width/c_Mvmet200GeV_IsLog}
+%	\includegraphics[width=0.3\textwidth]{figures/singletop/Width/c_Mvmet600GeV_IsLog}
+%	\includegraphics[width=0.3\textwidth]{figures/singletop/Width/c_Mvmet1000GeV_IsLog}
+%	\caption{
+%Distributions of the invariant mass of the $V$ boson in the case of
+%the process $p p \to tV \to t (t\bar u + {\rm c.c.})$. We have imposed
+%that the $V$-boson is produced on-shell and have chosen its mass to be
+%$m_V = 200$, 600 and 1000~GeV (left, central and right panels).
+%Moreover, we have considered three possible cases for the total width
+%of the $V$-boson, which has been fixed to 0.61\%, 0.1\% and 10\% of the
+%mass.
+%}   
+%	\label{fig:appB:Vmass}
+%\end{figure*}
+
+
+\begin{figure*}[!htb]
 	\centering
-	\includegraphics[width=1.0\textwidth]{figures/singletop/m_Vmets}
+	\includegraphics[width=0.3\textwidth]{figures/singletop/Width/c_PTvmet200GeV_IsLog}
+	\includegraphics[width=0.3\textwidth]{figures/singletop/Width/c_PTvmet600GeV_IsLog}
+	\includegraphics[width=0.3\textwidth]{figures/singletop/Width/c_PTvmet1000GeV_IsLog}
 	\caption{
-Distributions of the invariant mass of the $V$ boson in the case of
+
+Distributions of the transverse momentum of the $V$ boson in the case of
 the process $p p \to tV \to t (t\bar u + {\rm c.c.})$. We have imposed
 that the $V$-boson is produced on-shell and have chosen its mass to be
 $m_V = 200$, 600 and 1000~GeV (left, central and right panels).
-Moreover, we have considered three possible cases for the total width
+We have considered three possible cases for the total width
 of the $V$-boson, which has been fixed to 0.61\%, 0.1\% and 10\% of the
 mass.
-}   
-	\label{fig:appB:Vmass}
-\end{figure}
-
-
-\begin{figure}[!h!tpd]
-	\centering
-	\includegraphics[width=1.0\textwidth]{figures/singletop/Vmets_pt}
-	\caption{
-Same as Figure~\ref{fig:appB:Vmass} in the case of the transverse-momentum
-distribution of the $V$-boson.
-	}
+}
 	\label{fig:appB:pTV}
-\end{figure}
+\end{figure*}
 
 
-\subsection{Single Top Models}
+\subsection{Single Top Model implementation}
   Card files for \madgraph are provided on the Forum SVN
   repository~\cite{ForumSVN_EWMonoTop} and correspond to the Lagrangian that has
   been implemented in {\sc FeynRules}. Each coupling constant of the model can
