@@ -418,7 +418,10 @@ This justifies it is sufficient to produce samples with up to 2 parton emissions
 \subsection{Implementation of \tchannel models for the jet+\MET{} final state}
 \label{sec:tchannel_implementation}
 
-The simulations for \tchannel models are available via LO UFO implementations, where events are generated at LO+PS accuracy. The UFO file and parameter cards for the \tchannel models with couplings to light quarks only~\cite{Papucci:2014iwa} can be found on the Forum SVN repository~\cite{ForumSVN_TChannel_PapucciVichiZurek}. The model files from Ref.~\cite{Bell:2012rg} can also be found on the repository~\cite{ForumSVN_TChannel_Amelia}. The latter is the implementation that will be used for early Run-2 LHC Dark Matter searches: there are only cross section differences between this model and the model in~\cite{ForumSVN_TChannel_PapucciVichiZurek}.~\Todo{This is being checked with the authors.}
+The simulations for \tchannel models are available via LO UFO implementations, where events are generated at LO+PS accuracy. The UFO file and parameter cards for the \tchannel models with couplings to light quarks only~\cite{Papucci:2014iwa} can be found on the Forum SVN repository~\cite{ForumSVN_TChannel_PapucciVichiZurek}. The model files from Ref.~\cite{Bell:2012rg} can also be found on the repository~\cite{ForumSVN_TChannel_Amelia}. The latter is the implementation that has been used for the studies in this report: in the monojet case there are only cross section differences between this model and the model in~\cite{ForumSVN_TChannel_PapucciVichiZurek}. 
+%while the model from~\cite{Bell:2012rg} has been due to its treatment of boson radiation for the 
+ 
+%~\Todo{This is being checked with the authors.}
 Multi-parton simulation and merging are necessary and require particular care for this model: this has not been a topic of detailed studies within the Forum, and we suggest to follow the procedure outlined in Ref.~\cite{Papucci:2014iwa}. 
 
 \subsection{Implementation of \schannel and  \tchannel models with EW bosons in the final state}
@@ -528,7 +531,7 @@ finite top-quark mass and parton shower effects is possible yet left for future 
 \label{sec:monoHImplementation}
 
 While a 2HDM UFO implementation at NLO accuracy to be used with \madgraph has been made available at the end of the work
-of the Forum~\cite{NewMadgraphModels}, in this work we have only considered LO simulations.~\Todo{Not sure this is available yet?}
+of the Forum~\cite{NewMadgraphModels}, in this work we have only considered LO simulations.%~\Todo{Not sure this is available yet?}
   
 The two couplings that can be changed in the implemented model follow the nomenclature below:
  \begin{itemize}
