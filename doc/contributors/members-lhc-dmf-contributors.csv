@@ -52,7 +52,7 @@ E|Bhawna Gomber|Bhawna.Gomber@cern.ch|University of Wisconsin-Madison||USA
 E|Bj\"orn Penning|Bjoern.Penning@cern.ch|Imperial College London||United Kingdom
 E|Hongtao Yang|Hongtao.Yang@cern.ch|University of Wisconsin-Madison||USA
 E|Fuquan Wang|Fuquan.Wang@cern.ch|University of Wisconsin-Madison||USA
-E|Steven Randolph Schramm|Steven.Schramm@cern.ch|Université de Genève|Geneva|Switzerland
+E|Steven Randolph Schramm|Steven.Schramm@cern.ch|Universit\'e de Gen\`eve, DPNC|Geneva|Switzerland
 E|Gurpreet Singh|gurpreet.singh@cern.ch|Chulalongkorn University||Thailand
 E|Romain Madar|romain.madar@cern.ch|Laboratoire de Physique Corpusculaire, Clermont-Ferrand||France
 E|Rainer Roehrig|rainer.roehrig@cern.ch|Max-Planck-Institut für Physik||Germany
@@ -60,7 +60,7 @@ E|Amelia Jean Brennan|amelia.jean.brennan@cern.ch|The University of Melbourne||A
 E|Ren-Jie Wang|renjie.wang@cern.ch|Department of Physics, Northeastern University|Boston, MA 02115|USA
 E|Mengqing Wu|mengqing.wu@cern.ch|Laboratoire de Physique Subatomique et de Cosmologie, Universit\'e Grenoble-Alpes, CNRS/IN2P3|Grenoble|France
 E|Th\'eo Megy|megy.theo@gmail.com|Laboratoire de Physique Corpusculaire, Clermont-Ferrand||France
-E|Ece Akilli|ece.akilli@cern.ch|Universit\'e de Gen\`eve, D\'epartement de Physique Nucl\'eaire et Corpusculaire||Switzerland
+E|Ece Akilli|ece.akilli@cern.ch|Universit\'e de Gen\`eve, DPNC| Geneva |Switzerland
 E|Kentarou Mawatari|kentarou.mawatari@vub.ac.be|Theoretische Natuurkunde and IIHE/ELEM, Vrije Universiteit Brussel, and International Solvay Institutes|Pleinlaan 2, B-1050 Brussels|Belgium
 E|Michele Papucci|mpapucci@lbl.gov|Theoretical Physics Group, Lawrence Berkeley National Laboratory, and Berkeley Center for Theoretical Physics, University of California, Berkeley|Berkeley, CA 94720|USA
 E|Ulrich Haisch|ulrich.haisch@physics.ox.ac.uk|Rudolf Peierls Centre for Theoretical Physics, University of Oxford|OX1 3NP Oxford|United Kingdom
@@ -68,19 +68,20 @@ E|Lian-Tao Wang|liantaow@uchicago.edu|Enrico Fermi Institute and Department of P
 E|Arturo Sanchez Pineda|Arturo.Rodolfo.Sanchez.Pineda@cern.ch|INFN Sezione di Napoli, and Dipartimento di Fisica, Universit\`a di Napoli|Napoli|Italy
 
 # This is the list of people who haven't responded yet; several of these clearly contributed.
-P|||532076|Alexander Belyaev|Alexander.Belyaev@cern.ch
-P|||400602|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch
-E|Shih-Chieh Hsu|schsu@uw.edu|||
-P|||631201|Khristian Kotov|khristian.kotov@cern.ch
-P|||757001|Siddharth M. Narayanan|siddharth.m.narayanan@cern.ch
-P|||696366|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch
-E|Kathryn Zurek|kzurek@berkeley.edu|||
+#E|Alexander Belyaev|a.belyaev@soton.ac.uk|||
+#P|||400602|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch
+#E|Shih-Chieh Hsu|schsu@uw.edu|||
+#P|||631201|Khristian Kotov|khristian.kotov@cern.ch
+#P|||696366|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch
+#E|Kathryn Zurek|kzurek@berkeley.edu|||
+#P|||757001|Siddharth M. Narayanan|siddharth.m.narayanan@cern.ch 
 
 # Below the same list of unanswered people, but with the info I dug up and sent to them for correction/confirmation
-# E|Alexander S. Belyaev|a.belyaev@soton.ac.uk|School of Physics and Astronomy, University of Southampton||United Kingdom
-# E|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch|RWTH Aachen University, III. Physikalisches Institut A|Aachen|Germany
-# E|Shih-Chieh Hsu|schsu@uw.edu|School of Physics, University of the Witwatersrand|Johannesburg|South Africa
-# E|Khristian Kotov|khristian.kotov@cern.ch|The Ohio State University|Columbus|USA
+#CD: uncommented most since we know they contributed, except for the one I donÕt remember/who has a too famous namesake to be dug up
+E|Alexander S. Belyaev|a.belyaev@soton.ac.uk|School of Physics and Astronomy, University of Southampton||United Kingdom
+E|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch|RWTH Aachen University, III. Physikalisches Institut A|Aachen|Germany
+E|Shih-Chieh Hsu|schsu@uw.edu|University of Washington|Seattle|USA
+E|Khristian Kotov|khristian.kotov@cern.ch|The Ohio State University|Columbus|USA
 # E|Siddharth M. Narayanan|siddharth.m.narayanan@cern.ch|||
-# E|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch|Laboratoire de Physique Corpusculaire, Clermont Universit\'e and Universit\'e Blaise Pascal and CNRS/IN2P3, Clermont-Ferrand||France
-# E|Kathryn Zurek|kzurek@berkeley.edu|Berkeley Center for Theoretical Physics, University of California, Berkeley, and Theoretical Physics Group, Lawrence Berkeley National Laboratory|Berkeley|USA
+E|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch|Laboratoire de Physique Corpusculaire, Clermont Universit\'e and Universit\'e Blaise Pascal and CNRS/IN2P3, Clermont-Ferrand||France
+E|Kathryn Zurek|kzurek@berkeley.edu|Berkeley Center for Theoretical Physics, University of California, Berkeley, and Theoretical Physics Group, Lawrence Berkeley National Laboratory|Berkeley|USA

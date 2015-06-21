@@ -12,6 +12,8 @@
   cross-section times efficiency times acceptance of new phenomena for all cases, but
   especially when EFTs are employed as benchmarks. This recommendation has been issued before: see
   Ref.~\cite{Kraml:2012sg} for detailed suggestions.
+ \item Provide easily usable and clearly labeled results in a digitized format, e.g.~\cite{HEPData} entries, ROOT histograms and macros
+ or tables available on analysis public pages.
  \end{itemize}
 
 %It is important to consider what information phenomenologists need in order to reinterpret the LHC searches. The following is a non-exhaustive list of recommendations in order to ensure reinterpretation is possible, efficient, and fast. 
@@ -22,14 +24,16 @@ as well as for the use of simplified model results directly given by the collabo
 
 In the case of reinterpretation for models different than those provided by the experimental collaborations,
 the information needed primarily includes expected and observed exclusion lines along with their $\pm 1 \sigma$ uncertainty, 
-expected and observed upper limits in case of simplified models. If the kinematic
-of the new model to be used for the reinterpretation is similar to that of the original model provided by the collaboration, 
-the results provided can be rescaled to match the new model cross-section. 
+expected and observed upper limits in case of simplified models, efficiency maps and kinematic distributions
+as reported in the analysis. If the kinematics of the new model to be tested in the reinterpretation is similar to that 
+of the original model provided by the collaboration, it
+will be straight-forward to rescale the results provided to match the new model cross-section
+using this information. 
 
 \section{Reimplementation of analyses}
 
-One of the important developments in recent years is an active development of software codes~\cite{Dumont:2014tja, Conte:2014zja, Kim:2015wza,Cranmer:2010hk,ATOM} necessary for recasting analyses. The aim of these codes is to provide a public library of LHC analyses that have been reimplemented and validated, often by the collaborations themselves. Such libraries can then be used to analyze validity of a BSM scenario in a systematic and effective manner. The availability of public libraries further facilitates a unified framework and can lead to an organized and central structure to preserve LHC information long term.
-The reimplementation of an analysis consists of several stages. Typically, the analysis note is used as a basis for the implementation of the preselection and event selection cuts in the user analysis code within the recasting frameworks. Signal events are generated, and passed through a parameterized detector simulation using software such as Delphes~\cite{deFavereau:2013fsa}. The reconstructed objects are then analyzed using the code written in the previous step, and the results in terms of number of events are passed through a statistical analysis framework to compare with the backgrounds provided by the collaborations. 
+One of the important developments in recent years is an active development of software codes~\cite{Dumont:2014tja, Conte:2014zja, Kim:2015wza,Cranmer:2010hk,ATOM,Barducci:2014ila} necessary for recasting analyses. The aim of these codes is to provide a public library of LHC analyses that have been reimplemented and validated, often by the collaborations themselves. Such libraries can then be used to analyze validity of a BSM scenario in a systematic and effective manner. The availability of public libraries further facilitates a unified framework and can lead to an organized and central structure to preserve LHC information long term.
+The reimplementation of an analysis consists of several stages. Typically, the analysis note is used as a basis for the implementation of the preselection and event selection cuts in the user analysis code within the recasting frameworks. Signal events are generated, and passed through a parameterized detector simulation using software such as Delphes or PGS~\cite{deFavereau:2013fsa,PGS}. The reconstructed objects are then analyzed using the code written in the previous step, and the results in terms of number of events are passed through a statistical analysis framework to compare with the backgrounds provided by the collaborations. 
 
 In order to be able to effectively use such codes, it is important to get a complete set of information from the collaborations. 
 
@@ -44,7 +48,7 @@ For what concerns the generation of the models, it is desirable to have the foll
 \end{itemize}
 The ATLAS/CMS Dark Matter Forum provides most of the information needed within its SVN repository~\cite{ForumSVN} and on a dedicated HEPData~\cite{HEPData} page dedicated to the results in this report.
 
-Efficiency maps and relevant kinematic distributions as reported in the analysis, with clearly specified units.
+Efficiency maps and relevant kinematic distributions as reported in the analysis should be provided, in a digitized format with clearly specified units.
 If selection criteria cannot be easily simulated through parameterized detector simulation, the collaborations should provide the efficiency of such cuts. 
 Overall reconstruction and identification efficiencies of physics objects are given as an input to the detector simulation software. 
 It is thus very useful to get parametrized efficiencies for reconstructed objects (as a function of the rapidity $\eta$ and/or transverse momentum $p_T$), 
@@ -64,10 +68,10 @@ Such codes can be published via INSPIRE~\cite{INSPIRE} in order to track version
 
 \section{Simplified model interpretations}
 
-Dark Matter searches at the LHC will include simplified model interpretations in their search results. These interpretations are simple and can be used for a survey of viability of parameter space. Codes such as~\cite{Kraml:2013mwa, Kraml:2014sna, Papucci:2014rja} can make use of the simplified model results given in the form of 95\% Confidence Level (CLs) upper limit  or efficiency maps in order to test Beyond the Standard Model parameter space. It will thus be extremely useful if the results are given in a form that is easily usable by the theory community. 
+Dark Matter searches at the LHC will include simplified model interpretations in their search results. These interpretations are simple and can be used for a survey of viability of parameter space. Codes such as~\cite{Kraml:2013mwa, Kraml:2014sna, Papucci:2014rja} can make use of the simplified model results given in the form of 95\% Confidence Level (CLs) upper limit  or efficiency maps in order to test Beyond the Standard Model parameter space. As mentioned above, it will thus be extremely useful if the results are given in a digitized form that is easily usable by the theory community. 
 
 The parameter space of these models should be clearly specified. For example, for a simplified model containing dark matter mass \mDM, mediator mass \Mmed and couplings \gDM, \gq it will be very useful to have upper limits on the product of couplings $\sqrt{\gDM\gq}$ or cross section times branching ratio as a function of \mDM, \Mmed. Limits on visible cross sections of the simplified models considered for interpretations should be made available.
 
-The usage of simplified model results relies on interpolating between upper limit values. In order to facilitate the interpolation, regions where large variation of upper limits is observed should contain denser grid, if a uniform grid over the entire plane is not possible. For simplified model involving more than three parameters (two masses and product of couplings), slices of upper limits in the additional dimensions will be very useful. 
+The usage of simplified model results relies on interpolating between upper limit values. In order to facilitate the interpolation, regions where large variation of upper limits is observed should contain denser grid, if a uniform grid over the entire plane is not possible. For simplified model involving more than three parameters (two masses and product of couplings), slices of upper limits in the additional dimensions will be necessary for reinterpretation. 
 
-As detailed in the Section above, acceptance and efficiency maps for all the signal regions involved in the analysis should be made available. These results are not only useful for model testing using simplified models but also to validate implementation of the analysis. Information about the most sensitive signal region as a function of masses is also very useful in order to determine the validity of approximate limit setting procedures commonly used by theorists. 
+As already mentioned in the introduction to this Chapter, acceptance and efficiency maps for all the signal regions involved in the analysis should be made available. These results are not only useful for model testing using simplified models but also to validate implementation of the analysis. Information about the most sensitive signal regions as a function of new particle masses is also useful in order to determine the validity of approximate limit setting procedures commonly used by theorists. 

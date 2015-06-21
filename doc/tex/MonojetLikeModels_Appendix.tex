@@ -44,7 +44,7 @@ Most of the results that have been presented in this document for these processe
 
 \subsubsection{\powheg configuration for \schannel DM models}
 
-The lastest \powheg release is available for download using the
+The latest \powheg release is available for download using the
 instructions at
 \url{http://powhegbox.mib.infn.it/}. The Forum recommends
 using at least version \texttt{3059}.
@@ -197,7 +197,7 @@ that \madgraph (+\pythiaEight or {\sc HERWIG++}) and {\sc Sherpa}~\cite{Hoche:20
 In this report we have mostly employed \madgraph. 
 \madgraph provides a flexible and easy--to--use framework for implementing
 new models via the {\sc FeynRules} package.
-\madgraph can perform both LO and NLO calculations in QCD, matched/merged to parton showers. For NLO ones, dedicated UFO model implementations at NLO should be used. Several UFO models at NLO are publicly available that while not developed specifically for DM, are suitable to make mode independent simulations at NLO accuracy, including multiparton merging 
+\madgraph can perform both LO and NLO calculations in QCD, matched/merged to parton showers~\cite{Alwall:2008qv}. For NLO ones, dedicated UFO model implementations at NLO should be used. Several UFO models at NLO are publicly available that while not developed specifically for DM, are suitable to make mode independent simulations at NLO accuracy, including multiparton merging 
 via the FxFx technique~\cite{Frederix:2012ps}. A dedicated DM UFO implementation 
 has been developed and it has been released as a testing version~\cite{NewMadgraphModels}.
 
@@ -205,6 +205,7 @@ Merging events generated via matrix elements with different number of partons in
 Several merging techniques are available. Based on some comparative studies \,\cite{Alwall:0706.2569}, there is some advantage to using the CKKW-L merging scheme \cite{Lonnblad:2011xx} implemented in \pythiaEight.  Alternatively, one can use the $k_T$-MLM scheme also available in \pythiaEight.
 
 \subsubsection{Generation of the LHE file}
+\label{sub:MadgraphParameters}
 
 The example presented here is a D5 EFT model, and
 includes tree-level diagrams with $\chi\bar\chi$+0,1,2 partons.
@@ -240,7 +241,7 @@ related parameters would be made.
 
 \subsubsection{Implementation of the CKKW-L merging}
 \label{sec:match_implementation}
-To illustrate the settings related to merging different multipliticities, the EFT D5 samples were generated with \madgraph version 2.2.2 and showered in \pythiaEight.201.
+To illustrate the settings related to merging different multipliticities, the EFT D5 samples were generated with \madgraph version 2.2.2 and showered in \pythiaEight.201, using the Madgraph parameters in the previous section (Sec.~\cite{sub:MadgraphParameters}).
 
 
 The \pythiaEight parameters for the CKKW-L $k_T$-merging scheme are:
