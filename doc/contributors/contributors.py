@@ -51,12 +51,12 @@ for inFileName in inFileNames :
 		if theCSV[0] == "E" :
 			email = theCSV[2]
 			institution = theCSV[3]
-                        country = theCSV[5]
+			country = theCSV[5]
 			lastFirstName = getLastFirstName(theCSV[1])
 		
 		elif theCSV[0] == "P" :
 			email = theCSV[5]
-			lastFirstName = getLastFirstName(theCSV[4])  
+			lastFirstName = getLastFirstName(theCSV[4])
 	    
 		else :
 			continue #this is the contributors mailing list
