@@ -39,7 +39,7 @@ E|Regina Caputo|Regina.Caputo@cern.ch|Santa Cruz Institute for Particle Physics,
 E|Kevin Sung|kevin.kai.hong.sung@cern.ch|Northwestern University||USA
 E|Benjamin Fuks|Benjamin.Fuks@cern.ch|Institut Pluridisciplinaire Hubert Curien/D\'epartement Recherches Subatomiques, Universit\'e de Strasbourg/CNRS-IN2P3|23 Rue du Loess, F-67037 Strasbourg|France
 E|Annapaola De Cosa|annapaola.de.cosa@cern.ch|University of Zurich||Switzerland
-E|Johanna Gramling|johanna.gramling@cern.ch|Universit\'e de Gen\`eve, Ecole de Physique|CH-1211 Geneva|Switzerland
+E|Johanna Gramling|johanna.gramling@cern.ch|Universit\'e de Gen\`eve, DPNC|CH-1211 Geneva|Switzerland
 E|Priscilla Pani|Priscilla.Pani@cern.ch|Stockholm University||Sweden
 E|Valerio Ippolito|valerio.ippolito@cern.ch|Laboratory for Particle Physics and Cosmology, Harvard University|Cambridge MA|USA
 E|Shin-Shan Yu|Shin-Shan.Yu@cern.ch|National Central University||Taiwan
@@ -66,13 +66,6 @@ E|Michele Papucci|mpapucci@lbl.gov|Theoretical Physics Group, Lawrence Berkeley 
 E|Ulrich Haisch|ulrich.haisch@physics.ox.ac.uk|Rudolf Peierls Centre for Theoretical Physics, University of Oxford|OX1 3NP Oxford|United Kingdom
 E|Lian-Tao Wang|liantaow@uchicago.edu|Enrico Fermi Institute and Department of Physics and Kavli Institute for Cosmological Physics, University of Chicago|5620 S. Ellis Avenue, Chicago, IL 60637|USA
 E|Arturo Sanchez Pineda|Arturo.Rodolfo.Sanchez.Pineda@cern.ch|INFN Sezione di Napoli, and Dipartimento di Fisica, Universit\`a di Napoli|Napoli|Italy
-E|Alexander S. Belyaev|a.belyaev@soton.ac.uk|School of Physics and Astronomy, University of Southampton||United Kingdom
-E|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch|RWTH Aachen University, III. Physikalisches Institut A|Aachen|Germany
-E|Shih-Chieh Hsu|schsu@uw.edu|University of Washington|Seattle|USA
-E|Khristian Kotov|khristian.kotov@cern.ch|The Ohio State University|Columbus|USA
-# E|Siddharth M. Narayanan|siddharth.m.narayanan@cern.ch|||
-E|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch|Laboratoire de Physique Corpusculaire, Clermont Universit\'e and Universit\'e Blaise Pascal and CNRS/IN2P3, Clermont-Ferrand||France
-E|Kathryn Zurek|kzurek@berkeley.edu|Berkeley Center for Theoretical Physics, University of California, Berkeley, and Theoretical Physics Group, Lawrence Berkeley National Laboratory|Berkeley|USA
 
 # This is the list of people who haven't responded yet; several of these clearly contributed.
 #E|Alexander Belyaev|a.belyaev@soton.ac.uk|||
@@ -81,7 +74,6 @@ E|Kathryn Zurek|kzurek@berkeley.edu|Berkeley Center for Theoretical Physics, Uni
 #P|||631201|Khristian Kotov|khristian.kotov@cern.ch
 #P|||696366|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch
 #E|Kathryn Zurek|kzurek@berkeley.edu|||
-#P|||757001|Siddharth M. Narayanan|siddharth.m.narayanan@cern.ch 
 
 # Below the same list of unanswered people, but with the info I dug up and sent to them for correction/confirmation
 #CD: uncommented most since we know they contributed, except for the one I don’t remember/who has a too famous namesake to be dug up
@@ -89,6 +81,5 @@ E|Alexander S. Belyaev|a.belyaev@soton.ac.uk|School of Physics and Astronomy, Un
 E|Kerstin Hoepfner|Kerstin.Hoepfner@cern.ch|RWTH Aachen University, III. Physikalisches Institut A|Aachen|Germany
 E|Shih-Chieh Hsu|schsu@uw.edu|University of Washington|Seattle|USA
 E|Khristian Kotov|khristian.kotov@cern.ch|The Ohio State University|Columbus|USA
-# E|Siddharth M. Narayanan|siddharth.m.narayanan@cern.ch|||
 E|Timothee Theveneaux-Pelzer|Timothee.Theveneaux-Pelzer@cern.ch|Laboratoire de Physique Corpusculaire, Clermont Universit\'e and Universit\'e Blaise Pascal and CNRS/IN2P3, Clermont-Ferrand||France
 E|Kathryn Zurek|kzurek@berkeley.edu|Berkeley Center for Theoretical Physics, University of California, Berkeley, and Theoretical Physics Group, Lawrence Berkeley National Laboratory|Berkeley|USA
