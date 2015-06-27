@@ -116,22 +116,40 @@
 \usepackage{etex}
 \reserveinserts{20}
 %,backref=true,maxcitenames=3,maxbibnames=3,
-\usepackage[hyperref=true,url=false,backend=bibtex,style=alphabetic,backref=false,firstinits=true,doi=true,eprint=true,date=year]{biblatex}
-% biblatex commands follow from example by Ian Brock (ian.brock@cern.ch)
+\usepackage[hyperref=true,url=false,backend=bibtex,style=alphabetic,backref=false,firstinits=true,doi=false,eprint=true,date=year,language=USenglish]{biblatex}
+% many of the following biblatex commands follow from examples by Ian Brock (ian.brock@cern.ch)
 \DeclareFieldFormat[article]{journaltitle}{#1\isdot}
 \DeclareFieldFormat[article]{journalsubtitle}{#1\isdot}
 \DeclareFieldFormat[article]{volume}{\textbf{#1}\isdot}
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{\emph{#1\isdot}}
 \renewcommand*{\newunitpunct}{\addcomma\space}
 \renewbibmacro{in:}{}
 \renewcommand{\bibpagespunct}{\space}
-\DefineBibliographyStrings{UKenglish}{%
-  page = {},
-  pages = {}
-}
 \DefineBibliographyStrings{USenglish}{%
   page = {},
   pages = {}
 }
+\DefineBibliographyStrings{UKenglish}{%
+  page = {},
+  pages = {}
+}
+% biblatex title case as at http://tex.stackexchange.com/questions/22980/sentence-case-for-titles-in-biblatex
+\newrobustcmd{\MakeTitleCase}[1]{%
+  \ifthenelse{\ifcurrentfield{booktitle}\OR\ifcurrentfield{booksubtitle}%
+    \OR\ifcurrentfield{maintitle}\OR\ifcurrentfield{mainsubtitle}%
+    \OR\ifcurrentfield{journaltitle}\OR\ifcurrentfield{journalsubtitle}%
+    \OR\ifcurrentfield{issuetitle}\OR\ifcurrentfield{issuesubtitle}%
+    \OR\ifentrytype{book}\OR\ifentrytype{mvbook}\OR\ifentrytype{bookinbook}%
+    \OR\ifentrytype{booklet}\OR\ifentrytype{suppbook}%
+    \OR\ifentrytype{collection}\OR\ifentrytype{mvcollection}%
+    \OR\ifentrytype{suppcollection}\OR\ifentrytype{manual}%
+    \OR\ifentrytype{periodical}\OR\ifentrytype{suppperiodical}%
+    \OR\ifentrytype{proceedings}\OR\ifentrytype{mvproceedings}%
+    \OR\ifentrytype{reference}\OR\ifentrytype{mvreference}%
+    \OR\ifentrytype{report}\OR\ifentrytype{thesis}}
+    {#1}
+    {\MakeSentenceCase{#1}}}
 \addbibresource{doc.bib}
 
 \begin{document}
@@ -197,22 +215,6 @@
 
 % \chapter{Bibliography}
 % \label{thebibliography}
-%biblatex title case as at http://tex.stackexchange.com/questions/22980/sentence-case-for-titles-in-biblatex
-\newrobustcmd{\MakeTitleCase}[1]{%
-  \ifthenelse{\ifcurrentfield{booktitle}\OR\ifcurrentfield{booksubtitle}%
-    \OR\ifcurrentfield{maintitle}\OR\ifcurrentfield{mainsubtitle}%
-    \OR\ifcurrentfield{journaltitle}\OR\ifcurrentfield{journalsubtitle}%
-    \OR\ifcurrentfield{issuetitle}\OR\ifcurrentfield{issuesubtitle}%
-    \OR\ifentrytype{book}\OR\ifentrytype{mvbook}\OR\ifentrytype{bookinbook}%
-    \OR\ifentrytype{booklet}\OR\ifentrytype{suppbook}%
-    \OR\ifentrytype{collection}\OR\ifentrytype{mvcollection}%
-    \OR\ifentrytype{suppcollection}\OR\ifentrytype{manual}%
-    \OR\ifentrytype{periodical}\OR\ifentrytype{suppperiodical}%
-    \OR\ifentrytype{proceedings}\OR\ifentrytype{mvproceedings}%
-    \OR\ifentrytype{reference}\OR\ifentrytype{mvreference}%
-    \OR\ifentrytype{report}\OR\ifentrytype{thesis}}
-    {#1}
-    {\MakeSentenceCase{#1}}}
 % \bibliographystyle{unsrtnat}
 % \bibliographystyle{dmf}
 %\bibliographystyle{hep}
