@@ -122,7 +122,7 @@
 \renewbibmacro*{title}{%
   \ifthenelse{\iffieldundef{title}\AND\iffieldundef{subtitle}}
     {}
-    {\ifthenelse{\ifentrytype{article}\OR\ifentrytype{inbook}%
+    {\ifthenelse{\ifentrytype{article}\OR\ifentrytype{inbook}\OR\ifentrytype{report}%
       \OR\ifentrytype{incollection}\OR\ifentrytype{inproceedings}%
       \OR\ifentrytype{inreference}}
       {\printtext[title]{%
