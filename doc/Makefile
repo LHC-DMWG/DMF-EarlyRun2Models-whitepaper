@@ -7,7 +7,7 @@ doc.pdf: pass1 $(graphics_mp1) $(graphics_mp)
 	pdflatex doc.tex
 	pdflatex doc.tex
 
-pass1: clean $(tex_source) figures/*.pdf figures/svg/*.svg
+pass1: clean $(tex_source)
 	pdflatex doc.tex
 	bibtex doc
 
