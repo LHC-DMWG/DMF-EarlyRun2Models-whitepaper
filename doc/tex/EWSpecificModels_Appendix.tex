@@ -165,29 +165,44 @@ fusion process, adapted from \cite{Belyaev:2015tap}.}
 \label{fig:fdvbf}
 \end{figure}
 
-Based on the various LHC search channels, DM phenomenology issues and theoretical considerations, numerous works have proposed benchmark scenarios for the IDM, see e.g. \cite{IDMmultileptons,Goudelis:2013uca} while a FeynRules implementation (including MadGraph, CalcHEP and micrOMEGAs model files) was provided in \cite{IDMmultileptons}. An updated analysis of the parameter space has recently been performed in Ref. Ref.~\cite{Belyaev:2015tap}. The authors of that study have re-implemented the model in CalcHEP and micrOMEGAs and propose an additional set of benchmark points, mostly inspired by mono-$X$ and VBF searches (Table.~\ref{tab:IDMbenchMarks}). Though the overall parameter space of IDM is 5-dimensional, once all relavant constraints are applied the parameter space relevant to a specific LHC signature typically reduces to 1-2 dimensional. In the mono-jet case, one can use two separate simplified models, a $gg \rightarrow h_1 h_1 + g$ process (via Higgs mediator) and a $qq \rightarrow h_1 h_2 + g (gq \rightarrow h_1 h_2 + q)$ process (through a Z-boson mediator) to capture the physics relevant to the search.
+Based on the various LHC search channels, DM phenomenology issues and theoretical considerations, numerous works have proposed benchmark scenarios for the IDM, see e.g. \cite{IDMmultileptons,Goudelis:2013uca} while a FeynRules implementation (including MadGraph, CalcHEP and micrOMEGAs model files) was provided in \cite{IDMmultileptons}. An updated analysis of the parameter space has recently been performed in Ref.~\cite{Belyaev:2015tap}. 
+
+The authors suggested to study mono-X  signatures that are relevant to model-independent collider DM searches,
+and evaluated their rates presented below. They have implemented and cross-checked the IDM model into CalcHEP and micrOMEGAs,
+with an implementation publicly available on the  ~\href{http://hepmdb.soton.ac.uk/hepmdb:0615.0189}{HEPMDB database}, including loop-induced $HHG$ and $\gamma\gamma H$ models. They propose an additional set of benchmark points, mostly inspired by mono-$X$ and VBF searches (Table.~\ref{tab:IDMbenchMarks}). Though the overall parameter space of IDM is 5-dimensional, once all relavant constraints are applied the parameter space relevant to a specific LHC signature typically reduces to 1-2 dimensional. In the mono-jet case, one can use two separate simplified models, a $gg \rightarrow h_1 h_1 + g$ process (via Higgs mediator) and a $qq \rightarrow h_1 h_2 + g (gq \rightarrow h_1 h_2 + q)$ process (through a Z-boson mediator) to capture the physics relevant to the search.
 The cross sections for the various mono-$X$ and VBF signatures produced by this model are displayed in Fig.~\ref{fig:IDM_xsecs}.
 
-\begin{table*}[htb]
-  \fontfamily{ppl}\selectfont
-  \footnotesize
-  \begin{tabular}{lllllll}
-    \toprule
-    {Benchmark}                       &  {1}  & {2}  & {3}  & {4}  &  {5}  \\
-    \midrule
-    $M_{h_{1}}$ (\gev)     & 45 & 53 & 66 & 82 & 120 \\ 
-    $M_{h_{2}}$ (\gev)     &  55  & 189  &  77  &  89  & 140 \\
-    $M_{h_{\pm}}$ (\gev)  & 130 & 182  &  122  &  150  &  200 \\
-    $\lambda_{2}$             &  0.8 & 1.0 & 1.1 & 0.9 & 1.0 \\  
-    $\lambda_{345}$         & $-0.010$ & $-0.024$  & $+0.022$ & $-0.090$  & $-0.100$      \\
-    $\Omega^{2}_{h}$       & $1.1 \times 10^{-1}$ &  $8.1 \times 10^{-2}$  & $9.9 \times 10^{-2}$  & $1.5 \times 10^{-2}$  &  $2.1 \times 10^{-3}$ \\
-    $\sigma_{SI}$ (fb)        & $1.9 \times 10^{-7}$ &  $7.9 \times 10^{-7}$  & $4.2 \times 10^{-7}$  & $4.5 \times 10^{-7}$  &  $2.6 \times 10^{-6}$ \\
-    $\sigma_{LHC}$ (fb)     & $1.7 \times 10^{2}$ &  $7.7 \times 10^{2}$  & $4.3 \times 10^{-2}$  & $1.2 \times 10^{-1}$  &  $2.3 \times 10^{-2}$ \\
-    \bottomrule
-  \end{tabular}
-  \caption[][-92pt]{Five benchmarks for IDM in  ($M_{h_{1}},M_{h_{2}},M_{h_{\pm}},\lambda_{2},\lambda_{345}$) parameter space. We also present the corresponding relic density ($\Omega_{h^2}$), the spin-independent cross section for DM scattering on the proton, and the LHC cross section at 13~\tev for mono-jet process $pp\to h_1,h_1+jet$ for $p_T^{jet}>100$~\gev cut.}
-  \label{tab:IDMbenchMarks}
-\end{table*}
+
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{|c||c|c|c|c|c|c|}
+		\hline
+		{\bf BM}                       &  {\bf 1}  & {\bf 2}  & {\bf 3}  & {\bf 4}  &  {\bf 5}  \\
+		\hline\hline 
+		$M_{h_{1}}$ (GeV)     & 48      	& 53 		& 70 		& 82 	&120 \\
+		\hline
+		$M_{h_{2}}$ (GeV)     & 55      	& 189 		& 77  		&  89  & 140 \\
+		\hline
+		$M_{h_{\pm}}$ (GeV)   & 130     	& 182 		& 200  	&  150  &  200 \\
+		\hline
+		$\lambda_{2}$         &  0.8    	& 1.0 		& 1.1 		& 0.9 	& 1.0 \\ 
+		\hline
+		$\lambda_{345}$       & $-0.010$ 	& $-0.024$  	& $+0.022$ 	& $-0.090$  & $-0.100$      \\
+		\hline
+		$\Omega h^2$          & $3.4 \times 10^{-2}$ & $8.1 \times 10^{-2}$  & $9.63 \times 10^{-2}$  & $1.5 \times 10^{-2}$  &  $2.1 \times 10^{-3}$ \\
+		\hline 
+		$\sigma_{SI}$ (pb)   & $2.3 \times 10^{-10}$ &  $7.9 \times 10^{-10}$  & $5.1 \times 10^{-10}$  & $4.5 \times 10^{-10}$  &  $2.6 \times 10^{-9}$ \\
+		\hline 
+		$\sigma_{LHC}$ (fb)     & $1.7 \times 10^{2}$ &  $7.7 \times 10^{2}$  & $4.3 \times 10^{-2}$  & $1.2 \times 10^{-1}$  &  $2.3 \times 10^{-2}$ \\
+		\hline\hline
+	\end{tabular}
+	\caption{Five benchmarks for IDM in  ($M_{h_{1}},M_{h_{2}},M_{h_{\pm}},\lambda_{2},\lambda_{345}$) parameter space.
+		We also present the corresponding relic density ($\Omega h^2$), the spin-independent cross section for DM scattering on the proton ($\sigma_{SI}$),
+		and the LHC cross section at 13 TeV for mono-jet process $pp\to h_1,h_1+jet$ for $p_T^{jet}>100$~GeV cut ($\sigma_{LHC}$).}
+	\label{tab:i2HDMbenchMarks}
+\end{table}
+
 
 \begin{figure}[htb]
 	\includegraphics[width=\textwidth]{figures/EW/i2HDM/i2HDM_crossSections.pdf} 
