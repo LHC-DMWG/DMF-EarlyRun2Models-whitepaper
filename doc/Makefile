@@ -1,5 +1,5 @@
 
-tex_source := $(wildcard *.tex) contributors.tex $(wildcard tex/*.tex)
+tex_source := $(wildcard *.tex) $(wildcard tex/*.tex)
 graphics_mp := $(subst feynmp.mp,,$(wildcard *.mp))
 graphics_mp1 := $(patsubst %.mp,%.1,$(graphics_mp))
 
@@ -23,7 +23,7 @@ view: doc.pdf
 #	perl contributors.pl >> contributors.tex
 
 cleanMP: $(wildcard *.mp)
-	rm -f `ls -1 *.mp | sed 's/\.mp$\/\*/'`
+	rm -f `ls -1 *.mp > /dev/null 2>&1 | sed 's/\.mp$\/\*/'`
 
 clean: cleanMP
 	rm -f doc.aux doc.blg doc.log doc.out doc.bbl doc.toc
