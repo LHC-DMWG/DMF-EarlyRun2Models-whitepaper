@@ -10,13 +10,13 @@ def getLastFirstName (fullName) :
 	if len( splitName ) == 2 :
 		return (splitName[1], splitName[0])
 	if len( splitName ) == 3 :
-        	if (splitName[1] == "de" or splitName[1] == "De" or splitName[1] == "du" or
+		if (splitName[1] == "de" or splitName[1] == "De" or splitName[1] == "du" or
                     splitName[1] == "Cortes" or splitName[1] == "Alvarez" or
                     splitName[1] == "Martinez" or splitName[1] == "Sanchez" or
                     splitName[1] == "Alcaraz" or
                     splitName[1] == "Lowette" or splitName[1] == "Doglioni" or splitName[1] == "Malik" or splitName[1] == "Boveia" or splitName[1] == "Mrenna"):
 			return (splitName[1]+" "+splitName[2], splitName[0])
-                else:
+		else:
 			return (splitName[2], splitName[0]+" "+ splitName[1])
 	if len( splitName ) == 4 :
 		return (splitName[3], splitName[0]+" "+ splitName[1]+" "+ splitName[2])
@@ -40,7 +40,7 @@ for inFileName in inFileNames :
 		lastFirstName = None
 		email = None
 		institution = ""
-                country = ""
+		country = ""
 		
 		theCSV = line.strip("\n").split("|")
 		
@@ -62,24 +62,30 @@ for inFileName in inFileNames :
 			continue #this is the contributors mailing list
 		
 		if institution == "" : institution = "NO INSTITUTE"
-                if country     == "" : country     = "NO COUNTRY"
+		if country     == "" : country     = "NO COUNTRY"
 		NameEmailInstitutionDic[lastFirstName] = [email, institution, country]
 
 
 SortedNameEmailInstitutionDic = OrderedDict(sorted(NameEmailInstitutionDic.items(), key=lambda l: (str.lower(l[0][0]),str.lower(l[0][1]))))
 
+allAuthors = ""
 for key, value in SortedNameEmailInstitutionDic.iteritems() :
 	
 	firstName = key[1]
 	lastName = key[0]
 	email = value[0]
 	institution = value[1]
-        country = value[2]
-	
-	print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
-	if country == "skip":
-	        print "\\emph{"+institution+"}\\\\"
-        else:
-	        print "\\emph{"+institution+", "+country+"}\\\\"
+	country = value[2]
+	allAuthors = allAuthors+","+firstName+" "+lastName
+
+print allAuthors
+
+
+
+#print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
+#	if country == "skip":
+#	        print "\\emph{"+institution+"}\\\\"
+#        else:
+#	        print "\\emph{"+institution+", "+country+"}\\\\"
 
  
