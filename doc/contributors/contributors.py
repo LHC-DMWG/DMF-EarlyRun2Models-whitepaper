@@ -78,14 +78,14 @@ for key, value in SortedNameEmailInstitutionDic.iteritems() :
 	country = value[2]
 	allAuthors = allAuthors+","+firstName+" "+lastName
 
-print allAuthors
+#print allAuthors
 
 
 
-#print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
-#	if country == "skip":
-#	        print "\\emph{"+institution+"}\\\\"
-#        else:
-#	        print "\\emph{"+institution+", "+country+"}\\\\"
+	print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
+	if country == "skip":
+	        print "\\emph{"+institution+"}\\\\"
+	else:
+	        print "\\emph{"+institution+", "+country+"}\\\\"
 
  
