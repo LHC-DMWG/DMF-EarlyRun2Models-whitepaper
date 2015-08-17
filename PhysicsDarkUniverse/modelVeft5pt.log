@@ -1,0 +1,14 @@
+This is MetaPost, version 1.902 (TeX Live 2014) (kpathsea version 6.2.0)  16 AUG 2015 23:45
+**modelVeft5pt
+(/usr/local/texlive/2014/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./modelVeft5pt.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/feynmf/feynmp.mp) [1] )
+ 
+Here is how much of MetaPost's memory you used:
+ 396 strings using 6465 characters
+ 1578648 bytes of node memory
+ 922 symbolic tokens
+ 14i,77n,33p,110b,3f stack positions out of 16i,96n,40p,200b,4f
+1 output file written: modelVeft5pt.1
+

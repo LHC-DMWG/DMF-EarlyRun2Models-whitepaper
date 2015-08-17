@@ -1,0 +1,54 @@
+Models of bottom-flavored Dark Matter that are closely related to the \tchannel mediated model from this 
+Section have been proposed in Refs.~\cite{Lin:2013sca,Agrawal:2014una}. 
+%Here, DM couples preferentially to bottom quarks, with a decoupled third generation. 
+We describe the $b$-FDM model of Ref.~\cite{Agrawal:2014una}, created to explain the Galactic Center (GC) 
+gamma-ray excess observed in data collected by the Fermi-LAT collaboration~\cite{Daylan:2014rsa,Calore:2014xka}. 
+This model favors couplings to third-generation quarks via Yukawa couplings, 
+therefore respecting the MFV assumption. 
+
+The model contains a Dirac fermion transforming as a flavor triplet, exclusively coupling
+to right-handed down-type quarks. The third component of the triplet $\chi_b$ comprises the 
+cosmological DM. Within the MFV framework, the other fermions in the flavor triplet can be 
+made sufficiently heavy and weakly-coupled that they can be neglected in the analysis.
+A flavor singlet, color triplet scalar field $\Phi$ mediates the interactions between the DM 
+and the Standard Model quarks.  The model is similar to the MSSM with a light bottom squark and neutralino, 
+and is thus a flavor-specific example of a \tchannel model. 
+Similar top-flavored models can exist, as e.g. in Refs.~\cite{Kumar:2013hfa,Batell:2013zwa}. 
+In the case where the top coupling is the main DM coupling, 
+the signal is very similar to a signal from a stop quark, since unlike the other t-channel cases there is no top
+in the initial state parton distribution functions (PDFs). This is the reason why it wasn't considered as an additional model. More recent
+literature shows that other flavor states could also contribute to LHC signals, as shown in Ref.~\cite{Kilic:2015vka},
+but such models will have to be investigate on a longer timescale with respect to that of this Forum. 
+
+The Lagrangian considered is given by
+\begin{equation}
+  - {\mathcal{L}} \supset g \Phi^* \bar\chi_b b_R  + {\rm h.c.}
+\end{equation}
+
+%The QCD production of the colored mediator introduces a tree-level $b$+MET diagram with a $g_s*g$ dependence, which could be scaled. 
+%However, the bb+MET (which often also falls in the b+MET signal region) has both pure QCD production of the colored mediator 
+%($g_s^2$) and also possibly diagrams that scale as $g_s^2*g$.
+
+This model is known at LO+PS accuracy, and the studies in this Section use a LO model implementation within \madgraph v2.2.3
+interfaced to \pythiaEight for the parton shower. Further implementation details can be found in Section~\ref{sec:TTBar_implementation}.
+ 
+\paragraph{Parameter scan}
+
+In this model, the interference of diagrams with QCD production of the mediator (which scale as $g^2_s$) with diagrams that are proportional to the coupling $g$ in the $b+$\MET{} and $b\bar{b}$+\MET{} final states. In the case of large couplings, this is not conducive to a simple scaling behavior that would allow us to reduce the number of points to be simulated. This can be seen in Fig.~\ref{fig:g_comp}.
+
+A full study of the parameter scan for this model was not available for this report; thus for early Run-2 searches we recommend scanning a range of possible widths as discussed in a more limited way than for the \tchannel mono-jet, spanning from the minimal width to a value approaching the particle limit, e.g. $g=0.5,1,2,3$. A coupling benchmark such as $g=1$ should be considered for each mass point since this would be a distinctive feature of this benchmark from SUSY models with sbottom squarks (see Section~\ref{sec:monojet_t_channel} for further discussion).
+
+A scan of Dark Matter and mediator masses should be done in the on-shell region $\MPhi > \mDM + m_b$, since the cross-sections in the off-shell region are too small to be probed with early LHC data, spanning from 10 to 500 GeV in \mDM and from 10 to 1300 GeV in \MPhi. Examples of the kinematic distributions produced by this model are shown in Fig.~\ref{fig:relic}~\footnote{Following the grounding assumptions in this report, the normalization to the relic density is considered only in these example plots rather than as a necessary ingredient for the parameter scan of this model.}.
+
+\begin{figure*}[h!]
+  \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_relic/missing_et}\quad
+  \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_relic/Njets}
+  \caption{\MET (left) and jet multiplicity (right) for various DM and mediator masses and couplings normalized to the relic density observed in the early universe. Studies in this section use a LO UFO model implementation within \madgraph v2.2.3
+  	interfaced to \pythiaEight for the parton shower.}\label{fig:relic}
+\end{figure*}
+
+\begin{figure*}[h!]
+  \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_35_500/missing_et}\quad
+  \includegraphics[width=0.49\textwidth]{figures/bFDM/bfdm_35_500/Njets}
+  \caption{\MET (left) and jet multiplicity (right) for $\mDM=35$~GeV and $\MPhi=500$~GeV for varying couplings of $g=1,2$} \label{fig:g_comp}
+\end{figure*}

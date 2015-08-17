@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: doc.aux
+The style file: elsarticle-num.bst
+Reallocated field_info (elt_size=4) to 10157 items from 5000.
+Database file #1: doc.bib
+Warning--entry type for "CMS:2015mba" isn't style-file defined
+--line 1810 of file doc.bib
+Warning--empty journal in Aad:2015zva
+Warning--empty journal in Khachatryan:2014rwa
+Warning--empty journal in Khachatryan:2015nua
+Warning--empty journal in CMS-PAS-B2G-13-004
+Warning--empty journal in CMS-PAS-EXO-14-004
+Warning--empty journal in Kopp:2011eu
+Warning--empty journal in Goodman:2011jq
+Warning--empty journal in Yavin:14092893
+Warning--empty journal in Malik:2014ggr
+Warning--empty journal in DMatLHCProceedings
+Warning--empty journal in Bai:2015nfa
+Warning--empty journal in Chala:2015ama
+Warning--empty journal in Bell:2015sza
+Warning--empty journal in Daylan:2014rsa
+Warning--empty journal in Crivellin:2015wva
+Warning--empty journal in Craig:2013hca
+Warning--empty journal in Corcella:2002jc
+Warning--empty journal in Banks:2010eh
+Warning--empty journal in Whalley:2005nh
+Warning--empty title in Belyaev:2015tap
+Warning--empty journal in Belyaev:2015tap
+Warning--empty journal in IDMdileptonsII
+Warning--empty journal in Kim:2015wza
+Warning--empty journal in Kraml:2014sna
+You've used 191 entries,
+            2937 wiz_defined-function locations,
+            2012 strings with 43301 characters,
+and the built_in function-call counts, 56636 in all, are:
+= -- 5751
+> -- 1928
+< -- 2
++ -- 770
+- -- 579
+* -- 5146
+:= -- 7741
+add.period$ -- 339
+call.type$ -- 191
+change.case$ -- 218
+chr.to.int$ -- 0
+cite$ -- 215
+duplicate$ -- 1469
+empty$ -- 5856
+format.name$ -- 728
+if$ -- 14513
+int.to.chr$ -- 0
+int.to.str$ -- 191
+missing$ -- 168
+newline$ -- 734
+num.names$ -- 171
+pop$ -- 761
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 3816
+stack$ -- 0
+substring$ -- 2079
+swap$ -- 782
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 24
+while$ -- 316
+width$ -- 194
+write$ -- 1951
+(There were 25 warnings)

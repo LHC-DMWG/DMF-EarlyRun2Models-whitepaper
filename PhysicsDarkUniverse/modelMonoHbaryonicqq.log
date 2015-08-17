@@ -1,0 +1,16 @@
+This is MetaPost, version 1.902 (TeX Live 2014) (kpathsea version 6.2.0)  16 AUG 2015 23:45
+**modelMonoHbaryonicqq
+(/usr/local/texlive/2014/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./modelMonoHbaryonicqq.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/feynmf/feynmp.mp)
+feynmf: ignoring option label.distance=3w.
+feynmf: ignoring option label.distance=5w. [1] )
+ 
+Here is how much of MetaPost's memory you used:
+ 476 strings using 7816 characters
+ 1595208 bytes of node memory
+ 922 symbolic tokens
+ 14i,77n,28p,118b,3f stack positions out of 16i,96n,32p,200b,4f
+1 output file written: modelMonoHbaryonicqq.1
+

@@ -1,0 +1,296 @@
+
+A comprehensive and careful assessment of signal theoretical uncertainties
+plays in general a more important role for the background estimations
+(especially when their evaluation is non-entirely data-driven) than it
+does for signal simulations. Nevertheless, also for signal samples theoretical 
+uncertainties are relevant, and may become even dominant in certain regions of phase space.
+
+The uncertainties on the factorization and renormalization scales are assessed by the experimental collaborations by varying
+the original scales of the process by factors of 0.5 and 2. The evaluation of the uncertainty on the choice of PDF follows
+the PDF4LHC recommendation ~\cite{PDF4LHC} of considering the envelope of different PDF error sets, in order to account
+for the uncertainty on the various PDFs as well as the uncertainty on the choice of the central value PDF. 
+The Forum has not discussed the uncertainties related to the merging of different samples, nor the uncertainty
+due to the choice of the modeling of the parton shower.  
+This Chapter provides technical details on how scale and PDF uncertainties can be assessed 
+for events generated with \powheg and \madgraph.
+
+\subsection{POWHEG}
+
+When using \powheg~\cite{Frixione:2007vw,Alioli:2010xd,Nason:2004rx}, it is
+possible to study scale and PDF errors for the dark matter signals. A
+fast reweighting machinery is available in \textsc{POWHEG-BOX} that
+allows one to add, after each event, new weights according to
+different scale or PDF choices, without the need to regenerate all the
+events from scratch. 
+
+To enable this possibility, the variable \texttt{storeinfo\_rwgt} should be set 
+to 1 in the \powheg input file when the events are generated for the 
+first time\footnote{Notice that even if the variable is not present, by 
+default it is set to 1.}. After each event, a line starting with 
+\begin{verbatim}
+   #rwgt 
+\end{verbatim}
+is appended, containing the necessary information to generate extra 
+weights. In order to obtain new weights, corresponding to different 
+PDFs or scale choice, after an event file has been generated, a line 
+\begin{verbatim}
+   compute_rwgt 1 
+\end{verbatim}
+should be added in the input file along with the change in parameters
+that is desired. For instance, \texttt{renscfact} and
+\texttt{facscfact} allow one to study scale variations on the
+renormalization and factorization scales around a central value. By
+running the program again, a new event file will be generated, named
+\texttt{<OriginalName>-rwgt.lhe}, with one more line at the end of each event of the form
+\begin{verbatim}
+   #new weight,renfact,facfact,pdf1,pdf2 
+\end{verbatim}
+followed by five numbers and a character string. The first of these 
+numbers is the weight of that event with the new parameters chosen. By 
+running in sequence the program in the reweighting mode, several 
+weights can be added on the same file. Two remarks are in order.
+
+\begin{itemize} 
+
+\item The file with new weights is always named \\
+\texttt{<OriginalName>-rwgt.lhe}\\
+hence care has to be taken to save it as \\
+\texttt{<OriginalName>.lhe}\\
+before each iteration of the reweighting procedure. 
+
+\item Due to the complexity of the environment where the program is 
+likely to be run, it is strongly suggested as a self-consistency check 
+that the first reweighting is done keeping the initial parameters. If 
+the new weights are not exactly the same as the original ones, then 
+some inconsistency must have happened, or some file was probably 
+corrupted. 
+
+\end{itemize} 
+
+\noindent It is possible to also have weights written in the version 3 Les Houches format. 
+To do so, in the original run, at least the token\\
+\texttt{lhrwgt\_id 'ID'}\\
+\noindent must be present. The reweighting procedure is the same as described 
+above, but now each new run can be tagged by using a different value 
+for the \texttt{lhrwgt\_id} keyword. After each event, the following lines will 
+appear: 
+\small{
+\begin{verbatim}
+  <rwgt> 
+  <wgt id='ID'>
+  <wgt id='ID1'>
+  </rwgt> 
+\end{verbatim}}
+\normalsize
+
+A more detailed explanation of what went into the computation of every 
+single weight can be included in the \texttt{<header>} section of the event 
+file by adding/changing the line \\
+\texttt{lhrwgt\_descr 'some info'}\\
+\noindent in the input card, before each ``reweighting'' run is performed. Other 
+useful keywords to group together different weights are 
+\texttt{lhrwgt\_group\_name} and \texttt{lhrwgt\_group\_combine}. 
+
+More detailed information can be obtained by inspecting the document in 
+\texttt{/Docs/V2-paper.pdf} under the common \textsc{POWHEG-BOX-V2} directory. 
+
+\subsection{The SysCalc package in \madgraph}
+
+
+\syscalc is a post-processing package for parton-level events as obtained from leading-order calculations in \madgraph.  It can associate to each event a series of weights corresponding to the evaluation of a certain class of theoretical uncertainties. The event files in input and output are compliant with  the Les Houches v3 format.
+For NLO calculations, PDF and scale uncertainties are instead evaluated automatically by setting corresponding instructions in the \texttt{run\_card.dat} and no post-processing is needed (or possible).
+
+The requirements of the package as inputs are : 
+\begin{itemize}
+\item A systematics file (which can be generated by MadGraph 5 v. 1.6.0 or later) \cite{Alwall:2014hca,Alwall:2011uj}.
+\item The Pythia-PGS package (v. 2.2.0 or later) \cite{Sjostrand:2006za}. This is needed only in the case of matching scales variations.
+\item The availability of LHAPDF5 \cite{Whalley:2005nh}.
+\item A configuration file (i.e. a text file) specifying the parameters to be varied. 
+\end{itemize}
+
+\syscalc supports all leading order computations generated in \madgraph including fixed-order computation and matched-merged computation performed in the MLM scheme~\cite{Mangano:2006rw}.
+\madgraph stores additional information inside the event in order to have access to all the information required to compute the convolution of the PDFs with the matrix element for the various supported systematics.
+
+Below follows an example configuration file which could serve as an example:\\[2mm]
+
+{\footnotesize
+\texttt{\# Central scale factors \\
+scalefact: \\
+0.5 1 2\\
+\# Scale correlation \\
+\# Special value -1: all combination (N**2)\\
+\# Special value -2: only correlated variation\\
+\# Otherwise list of index N*fac\_index + ren\_index\\
+\#\ \ \ \ index starts at 0\\
+scalecorrelation: \\
+-1 \\
+\#   $\alpha_s$ emission scale factors \\
+alpsfact:\\
+0.5 1 2\\
+\#   matching scales\\
+matchscale:\\
+30 60 120\\
+\# PDF sets and number of members (optional)\\
+PDF:\\
+CT10.LHgrid 53\\
+MSTW2008nlo68cl.LHgrid\\[3mm]}
+}
+
+
+Without matching/merging, \syscalc\ is able to compute the variation of renormalisation and factorisation scale (parameter \texttt{scalefact}) and the change of PDFs.
+The variation of the scales can be done in a correlated and/or uncorrelated way, basically following the value of the \texttt{scalecorrelation} parameter which can take the following values:
+\begin{itemize}
+\item  -1 : to account for all $N^2$ combinations.
+\item  -2 : to account only for the correlated variations.
+\item A set of positive values corresponding to the following entries (assuming \emph{0.5, 1, 2} for the  \texttt{scalefact} entry):
+\begin{enumerate}
+{\footnotesize
+\item[0:] $\mu_F =\mu^{\rm orig}_F /2,\, \mu_R =\mu^{\rm orig}_R /2$
+\item[1:] $\mu_F =\mu^{\rm orig}_F /2,\, \mu_R =\mu^{\rm orig}_R $
+\item[2:] $\mu_F =\mu^{\rm orig}_F /2,\, \mu_R =\mu^{\rm orig}_R * 2$
+\item[3:] $\mu_F =\mu^{\rm orig}_F, \phantom{/2}\, \mu_R =\mu^{\rm orig}_R /2$
+\item[4:] $\mu_F =\mu^{\rm orig}_F, \phantom{/2}\, \mu_R =\mu^{\rm orig}_R$
+\item[5:] $\mu_F =\mu^{\rm orig}_F, \phantom{/2}\, \mu_R =\mu^{\rm orig}_R * 2$
+\item[6:] $\mu_F =\mu^{\rm orig}_F *2, \mu_R =\mu^{\rm orig}_R /2$
+\item[7:] $\mu_F =\mu^{\rm orig}_F *2, \mu_R =\mu^{\rm orig}_R$
+\item[8:] $\mu_F =\mu^{\rm orig}_F *2, \mu_R =\mu^{\rm orig}_R * 2$
+}
+\end{enumerate}
+\end{itemize}
+
+Without correlation, the weight associated to the renormalisation scale is the following:
+\begin{equation}
+\mathcal{W}^{\mu_R}_{\rm new} =  \frac{\alpha_S^{N}(\Delta*\mu_ R)}{\alpha_S^{N}(\mu_R)} * \mathcal{W}_{\rm orig}, 
+\end{equation}
+where $\Delta$ is the scale variation considered, $\mathcal{W_{\rm{orig}}}$ and $\mathcal{W_{\rm{new}}}$ are respectively the original/new weights associated to the event. $N$ is the power in the strong coupling for the associated event (interference is not taken account on an event by event basis).
+The weight associated to the scaling of the factorisation scale is:
+\begin{equation}
+\mathcal{W}^{\mu_F}_{\rm {new}} =   \frac{f_{\rm 1,orig} (x_1, \Delta*\mu_F) * f_{\rm 2,orig} (x_2, \Delta*\mu_F)}{f_{\rm 1,orig}(x_1, \mu_F) * f_{\rm 2,orig}(x_2, \mu_F)} * \mathcal{W}_{\rm orig}, 
+\end{equation}
+where $f_{\rm i,orig}$ are the probabilities from the original PDF set associated to the incoming partons, which hold a proton momentum fraction $x_1$ and $x_2$ for the first and second beam respectively.
+
+The variations for the PDF are given by the corresponding weights associated to the new PDF sets:
+\begin{equation}
+\mathcal{W}^{\rm PDF}_{\rm new} =  \frac{f_{\rm 1,new} (x_1, \mu_F) * f_{\rm 2,new} (x_2, \mu_F)}{f_{\rm 1,orig} (x_1, \mu_F) * f_{\rm 2,orig} (x_2, \mu_F)}* \mathcal{W}_{\rm orig},
+\end{equation}
+where $f_{\rm i,new}$ is the new PDF probability associated to parton $i$.
+
+In presence of matching, \madgraph associates one history of radiation (initial and/or final state radiation) obtained by a $k_T$ clustering algorithm, and calculates $\alpha_s$ at each vertex of the history to a scale given by the aforementioned clustering algorithm. Furthermore, \madgraph reweights the PDF in a fashion similar to what a parton shower would do. \syscalc can perform the associated re-weighting (parameter \texttt{alpsfact}) by dividing and multiplying by the associated factor.
+
+For each step in the history of the radiation (associated to a scale $\mu_i = k_{T,i}$), this corresponds to the following expression for a Final State Radiation (FSR):
+\begin{equation}
+\mathcal{W}^{\rm FSR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)}  * \mathcal{W}_{\rm orig},
+\end{equation}
+and to the following expression for Initial State Radiation  (ISR), associated to a scale $\mu_i$ and fraction of energy $x_i$:
+\begin{equation}
+\mathcal{W}^{\rm ISR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)} \frac{ \frac{f_a(x_i,\Delta*\mu_i)}{f_b(x_i,\Delta*\mu_{i+1})}} { \frac{f_a(x_i, \mu_i)}{f_b(x_i, \mu_{i+1})} }
+  *\mathcal{W}_{\rm orig},
+\end{equation}
+where $\mu_{i+1}$ is the scale of the next step in the (initial state) history of radiation.
+
+\syscalc can include the weight associated to different merging scales in the MLM matching/merging mechanism (for output of the \texttt{pythia6} package or \texttt{pythia-pgs} package). 
+
+In that case, the parton shower does not veto any event according to the MLM algorithm, although in the output file the scale of the first emission is retained. Having this information, \syscalc can test each value of the specified matching scales under the \texttt{matchscale} parameter block. \syscalc\ will then test for each of the values specified in the parameter \texttt{matchscale} if the event passes the MLM criteria or not. If it does not, then a zero weight is associated to the event, while if it does, then a weight 1 is kept. As a reminder,  those weights are the equivalent of having a (approximate) Sudakov form-factor and removing at the same time the double counting between the events belonging to different multiplicities.\\
+
+Finally, we give an example of the \syscalc output which follows the LHEF v3 format. The following block appears in the header of the output file:
+
+\footnotesize{
+\begin{verbatim}
+<header>
+  <initrwgt>
+    <weightgroup type="Central scale variation" combine="envelope">
+      <weight id="1"> mur=0.5 muf=0.5 </weight>
+      <weight id="2"> mur=1 muf=0.5 </weight>
+      <weight id="3"> mur=2 muf=0.5 </weight>
+      <weight id="4"> mur=0.5 muf=1 </weight>
+      <weight id="5"> mur=1 muf=1 </weight>
+      <weight id="6"> mur=2 muf=1 </weight>
+      <weight id="7"> mur=0.5 muf=2 </weight>
+      <weight id="8"> mur=1 muf=2 </weight>
+      <weight id="9"> mur=2 muf=2 </weight>
+    </weightgroup>
+    <weightgroup type="Emission scale variation" combine="envelope">
+      <weight id="10"> alpsfact=0.5</weight>
+      <weight id="11"> alpsfact=1</weight>
+      <weight id="12"> alpsfact=2</weight>
+    </weightgroup>
+    <weightgroup type="CT10nlo.LHgrid" combine="hessian">
+      <weight id="13">Member 0</weight>
+      <weight id="14">Member 1</weight>
+      <weight id="15">Member 2</weight>
+      <weight id="16">Member 3</weight>
+      ...
+      <weight id="65">Member 52</weight>
+    </weightgroup>
+  </initrwgt>
+</header>
+\end{verbatim}}
+
+\noindent For each event, the weights are then written as follows:
+\footnotesize{
+\begin{verbatim}
+<rwgt>
+  <wgt id="1">83214.7</wgt>
+  <wgt id="2">61460</wgt>
+  <wgt id="3">47241.9</wgt>
+  <wgt id="4">101374</wgt>
+  ...
+  <wgt id="64">34893.5</wgt>
+  <wgt id="65">41277</wgt>
+</rwgt>
+\end{verbatim}}
+\normalsize
+
+
+%\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%Some more comments though :
+% 
+%\begin{enumerate}
+%
+% \item The \texttt{alpsfact} stands for the variations of the $\alpha_s$ emission and PDF scale which accounts for the reweighting of the vertex in the presence of matching retained from parton history, which in \texttt{MadGraph} comes from the MLM-\texttt{kT} clustering scheme.}
+%\item For the scale correlations, for  $\mu_F$ and $\mu_R$  it gets the following values :
+%
+%\begin{itemize}
+%\item  -1 : to account for all combination (N**2)
+%\item  -2 : to account only for correlated variations
+%\item  Other values > 0 : to account for a list of indexes $N*(\mu_F_{\rm{index}} + \mu_R_{\rm {index} })$ 
+%\end{itemize}
+%
+%\item The choice of the matching scale and effectively the choice on its variations depends on the clustering scheme one uses ie shower \texttt{kT} or \texttt{kT-MLM}. It has been found that usually qcut $\approx 1~ (1.5-2) \times $ xqcut  \footnote{xqcut defines the minimal distance (in $k_T$ measures) in the phase space between the extra partons (u,d,s,c, and also b if maxjetflavor=5 in the \texttt{MadGraph} run\_card).}for the former (latter) case. 
+%
+%\end{enumerate}
+%   \\
+%\newline
+%
+%
+%
+%
+%
+%
+%In any case, without going into too much details, \texttt{SysCalc} for instance computes the weights for the renormalization scale systematics using the following ansaltz. \\
+%
+%Weight for renormalization variation : \\
+%- central scale:
+%for ISR:
+%\begin{equation}
+%(\mathcal{W_{\rm{new}}}) = \prod_{i=1}^{N_{QCD}}  \alpha_s(alpsfact*kT_i) * \frac{f_a(x_i,kT_i)}{f_b(x_i,kT_i-1)} / \rm{V_{ME}} *(\mathcal{W_{\rm{orig}}}) 
+%\end{equation}
+%for FSR:
+%\begin{equation}
+%(\mathcal{W_{\rm{new}}}) = \prod_{i=1}^{N_{QCD}}  \alpha_s(alpsfact*kT_i) / \rm{V_{ME}} *(\mathcal{W_{\rm{orig}}}) 
+%\end{equation}
+%\newline
+%
+%- renormalization scale associate to radiation (in presence of matching)
+%\begin{equation}
+%(\mathcal{W_{\rm{new}}}) = \prod_i \alpha_s(\rm{alpsfact*scale_i}) / \rm{V_{ME}}*(\mathcal{W_{\rm{orig}}}) 
+%
+%\end{equation}
+%
+%Where  \texttt{alpsfact} is the $\alpha_s$ emission scale factor, ${N_{QCD}$ is the number of QCD vertices and $\rm V_{ME}$ stands for the value computed for the central value of the corresponded scale at Matrix Element level.
+%
+%
+%\end{comment}
+

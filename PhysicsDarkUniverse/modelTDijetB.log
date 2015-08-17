@@ -1,0 +1,14 @@
+This is MetaPost, version 1.902 (TeX Live 2014) (kpathsea version 6.2.0)  16 AUG 2015 23:12
+**modelTDijetB
+(/usr/local/texlive/2014/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./modelTDijetB.mp
+(/usr/local/texlive/2014/texmf-dist/metapost/feynmf/feynmp.mp) [1] )
+ 
+Here is how much of MetaPost's memory you used:
+ 443 strings using 7354 characters
+ 1663976 bytes of node memory
+ 922 symbolic tokens
+ 14i,77n,28p,110b,3f stack positions out of 16i,96n,32p,200b,4f
+1 output file written: modelTDijetB.1
+

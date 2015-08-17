@@ -1,0 +1,59 @@
+%%Introduction
+
+In this Section, we consider specific models with a photon, a W boson, a Z boson or a Higgs boson in the final state (\textit{V+\MET} signature), accompanied by Dark Matter particles that either couple directly to the boson or are mediated by a new particle. The common feature of those models is that they provide different kinematic distributions with respect to the models described in Section~\ref{subsec:MonojetLikeModels}.
+
+%%%Classification of models
+
+\begin{figure}[h!]
+	\centering
+	\vspace{\baselineskip}
+	\unitlength=0.0045\textwidth
+
+	\begin{feynmandiagram}[modelVeft5pt]
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2,o3}
+		\fmf{photon,label={\Large $V$}}{v1,v2}
+		\fmfv{decor.shape=circle,decor.filled=shaded, decor.size=30}{v2}
+		\fmf{fermion}{i2,v1,i1}
+		\fmf{fermion}{o2,v2,o1}
+		\fmflabel{\Large ${\bar{q}}$}{i1}
+		\fmflabel{\Large ${q}$}{i2}
+		\fmflabel{\Large ${\bar{\chiDM}}$}{o1}
+		\fmflabel{\Large ${\chiDM}$}{o2}
+		\fmf{photon}{o3,v2}
+		\fmflabel{\Large ${V}$}{o3}
+	\end{feynmandiagram}
+	
+	\vspace{\baselineskip}
+	\caption{Sketch of benchmark models including a contact interaction
+		for V+MET searches, adapted from~\cite{Nelson:2013pqa}. \label{fig:VPlusMET_EFT}}
+\end{figure}
+
+The models considered in this Section can be divided into two categories:
+\begin{description}
+	\item[V-specific simplified models] These models postulate direct couplings of new mediators
+	to bosons, e.g. they couple the Higgs boson to a new vector or to a new scalar~\cite{Carpenter:2013xra,Berlin:2014cfa}. 
+	\item[Models involving a SM singlet operator including a boson pair that couples to Dark Matter through a contact interaction]
+	Shown on the right-hand side of Figure~\ref{fig:VPlusMET_EFT},
+	these models allow for a contact interaction vertex \\that directly couples the boson to Dark Matter~\cite{Cotta:2012nj, Carpenter:2012rg, Crivellin:2015wva,Berlin:2014cfa}.
+	These models are included in this report devoted to simplified models since 
+	UV completions for most of these operators proceed through loops and are not available to date. 
+	These models provide a benchmark to motivate signal regions that are unique to searches with
+	EW final states and would otherwise not be studied. However, we recommend to use these models
+	as placeholders and emphasize model-independent results especially in signal regions tailored to these models. 
+	Wherever results are interpreted in terms of these operators, a truncation procedure
+	to ensure the validity of the EFT should be employed, as detailed in the next Section (Sec. ~\ref{sec:EFTValidity}). 
+\end{description}
+
+
+The following Sections describe the models within these categories,
+the parameters for each of the benchmark models chosen,
+the studies towards the choices of the parameters to be scanned.
+
+\subsection{Specific simplified models including EW bosons, tailored to Higgs+MET searches}
+\label{sec:monoHiggs}
+\input{tex/EWSpecificModels_MonoHiggs}
+
+\subsection{EFT models with direct DM-boson couplings}
+\label{sec:EFT_models_with_direct_DM_boson_couplings}
+\input{tex/EWSpecificModels_EFT}

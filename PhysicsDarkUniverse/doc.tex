@@ -1,0 +1,244 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Journal of \LaTeX\ Templates}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+
+%%Bibliography additions (not compiling yet!)
+\usepackage{etex}
+\reserveinserts{20}
+%,backref=true,maxcitenames=3,maxbibnames=3,
+%\usepackage[hyperref=true,url=false,backend=bibtex,style=alphabetic,backref=false,firstinits=true,doi=false,eprint=true,language=USenglish]{biblatex}
+% from http://tex.stackexchange.com/questions/176965/biblatex-sentence-case-and-math-mode-not-working-together
+%\DeclareFieldFormat{sentencecase}{\MakeSentenceCase{#1}}
+%\renewbibmacro*{title}{%
+%	\ifthenelse{\iffieldundef{title}\AND\iffieldundef{subtitle}}
+%	{}
+%	{\ifthenelse{\ifentrytype{article}\OR\ifentrytype{inbook}\OR\ifentrytype{report}%
+%			\OR\ifentrytype{incollection}\OR\ifentrytype{inproceedings}%
+%			\OR\ifentrytype{inreference}}
+%		{\printtext[title]{%
+%				\printfield[sentencecase]{title}%
+%				\setunit{\subtitlepunct}%
+%				\printfield[sentencecase]{subtitle}}}%
+%		{\printtext[title]{%
+%				\printfield[titlecase]{title}%
+%				\setunit{\subtitlepunct}%
+%				\printfield[titlecase]{subtitle}}}%
+%		\newunit}%
+%	\printfield{titleaddon}}
+% many of the following biblatex commands follow from examples by Ian Brock (ian.brock@cern.ch)
+%\DeclareFieldFormat[article]{journaltitle}{#1\isdot}
+%\DeclareFieldFormat[article]{journalsubtitle}{#1\isdot}
+%\DeclareFieldFormat[article]{volume}{\textbf{#1}\isdot}
+%\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+%{title}{\emph{#1\isdot}}
+%\errorcontextlines=100
+%\renewcommand*{\newunitpunct}{\addcomma\space}
+%\renewbibmacro{in:}{}
+%\renewcommand{\bibpagespunct}{\space}
+%\DefineBibliographyStrings{USenglish}{%
+%	page = {},
+%	pages = {}
+%}
+%\DefineBibliographyStrings{UKenglish}{%
+%	page = {},
+%	pages = {}
+%}
+%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Packages and formatting options
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{epstopdf}
+\usepackage{xspace} %for single top
+\usepackage{longtable} %for ttbar 
+\usepackage{slashed}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{slashed}
+
+% begin feynman diagram setup
+\usepackage{feynmp-auto}
+% before setting default graphics include widths, save the default to properly scale feynman diagrams with their labels
+\makeatletter
+\let\ginnatwidth\Gin@nat@width
+\let\ginnatheight\Gin@nat@height
+\makeatother
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+%if you don't use the feynmandiagram environment for feynmf/mp figures, and you've changed the Gin keys above, then you need to manually adjust the unit length for feynman diagrams to get ratio of tex labels to graphics right. \unitlength = 1.21mm for tufte \linewidth and \textheight
+\DeclareGraphicsRule{*}{mps}{*}{}
+\newenvironment{feynmandiagram}[1][]{\setkeys{Gin}{width=\ginnatwidth,totalheight=\ginnatheight}\begin{fmffile}{#1}
+		\begin{fmfgraph*}(100,70)\fmfpen{thick}}{\end{fmfgraph*}\end{fmffile}\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}}
+% end feynman diagram setup
+
+\usepackage{subfig}
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\usepackage{xhfill}% http://ctan.org/pkg/xhfill
+\newcommand{\ditto}{~''~}
+
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\usepackage{mathtools} % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{fancyvrb} % extended verbatim environments
+\usepackage{fancyhdr}
+\usepackage{refcount}
+\usepackage{calc}
+\usepackage{lastpage}
+%\usepackage{natbib} % for \citep
+% create a dummy file (shell command "touch moderntex") to turn on some features that don't work on lxplus
+\IfFileExists{moderntex}{
+	\usepackage[protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true]{microtype}
+}{}
+\fvset{fontsize=\normalsize} % default font size for fancy-verbatim environments
+
+%%%Begin nice tables
+\usepackage{booktabs,colortbl, array}
+\usepackage{rotating}
+%%End nice tables
+
+% Prints an asterisk that takes up no horizontal space.
+% Useful in tabular environments.
+\newcommand{\hangstar}{\makebox[0pt][l]{*}}
+\newcommand{\openepigraph}[2]{%
+	%\sffamily\fontsize{14}{16}\selectfont
+	\begin{fullwidth}
+		\sffamily\large
+		\begin{doublespace}
+			\noindent\allcaps{#1}\\% epigraph
+			\noindent\allcaps{#2}% author
+		\end{doublespace}
+	\end{fullwidth}
+}
+
+%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Dark Matter Benchmark Models for Early LHC Run-2 Searches: Report of the ATLAS/CMS Dark Matter Forum}
+\author{ATLAS+CMS Dark Matter Forum}
+
+%% Group authors per affiliation:
+\author{The authors}
+%\address{Radarweg 29, Amsterdam}
+%\fntext[myfootnote]{Since 1880.}
+
+%% or include affiliations in footnotes:
+%\author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+%\ead[url]{www.elsevier.com}
+
+%\author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
+%\cortext[mycorrespondingauthor]{Corresponding author}
+%\ead{support@elsevier.com}
+
+%\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
+%\address[mysecondaryaddress]{360 Park Avenue South, New York}
+
+\begin{abstract}
+This document is the final report of the ATLAS-CMS Dark Matter Forum, a forum organized by the ATLAS and CMS collaborations with the participation of experts on theories of Dark Matter, to select a minimal basis set of dark matter simplified models that should support the design of the early LHC Run-2 searches. A prioritized, compact set of benchmark models is proposed, accompanied by studies of the parameter space of these models and a repository of generator implementations. This report also addresses how to apply the Effective Field Theory formalism for collider searches and present the results of such interpretations.
+\end{abstract}
+
+\begin{keyword}
+\texttt{elsarticle.cls}\sep \LaTeX\sep Elsevier \sep template
+\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+
+\input symbols.tex
+
+\linenumbers
+\tableofcontents
+
+\section{Introduction}
+\label{sec:Introduction}
+\input{tex/Introduction.tex}
+
+\section{\texorpdfstring{Simplified models for all \MET+X analyses}{Simplified models for all MET+X analyses}}
+\label{subsec:MonojetLikeModels}
+\input{tex/MonojetLikeModels}
+
+
+\section{Specific models for signatures with EW bosons}
+\label{subsec:EWSpecificModels}
+\input{tex/EWSpecificModels}
+
+\section{Implementation of Models}
+\label{app:MonojetLikeModels_Appendix}
+\input{tex/MonojetLikeModels_Appendix.tex}
+
+\section{Presentation of EFT results}
+\label{sec:EFTValidity} 
+\input{tex/EFTValidity.tex}
+
+\section{Evaluation of signal theoretical uncertainties}
+\label{sec:TheoryUncertainties} 
+\input{tex/TheoryUncertainties.tex}
+
+\section{Conclusions}
+\label{section:conclusions}
+\input{tex/Conclusions.tex}
+
+\input{tex/backmatter.tex}
+
+\appendix
+
+\section{Appendix: Additional models for Dark Matter searches}
+\label{app:EWSpecificModels_Appendix}
+\input{tex/EWSpecificModels_Appendix.tex}
+
+\section{Appendix: Presentation of experimental results for reinterpretation}
+\label{app:Presentation_Of_Experimental_Results}
+\input{tex/Presentation_Of_Experimental_Results.tex}
+
+\section{Appendix: Additional details and studies within the Forum}
+\label{app:Additional_details}
+\input{tex/AdditionalDetails.tex}
+
+\section*{References}
+
+\bibliography{doc}
+
+\end{document}
