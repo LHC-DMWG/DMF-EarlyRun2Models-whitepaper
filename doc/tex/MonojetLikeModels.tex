@@ -603,7 +603,7 @@ The minimal mediator width (neglecting the small contributions from quarks other
       \Gamma_{\phi,a} = & \sum_f N_c \frac{y_f^2 \gq^2 m_{\phi,a}}{16
         \pi} \left(1-\frac{4 m_f^2}{m_{\phi,a}^2}\right)^{x/2}
       + \frac{\gdm^2 m_{\phi,a}}{8 \pi} \left(1-\frac{4 \mDM^2}{m_{\phi,a}^2}\right)^{x/2}\\
-      & + \frac{\alpha_s^2 y_t^2 \gq^2 m_{\phi,a}^3}{32 \pi^3 v^2}
+      & + \frac{\alpha_s^2 \gq^2 m_{\phi,a}^3}{32 \pi^3 v^2}
       \left| f_{\phi,a}\left(\tfrac{4m_t^2}{m_{\phi,a}^2}
         \right)\right|^2
     \end{split}
@@ -632,7 +632,6 @@ where $\tau = 4 m_{t}^2/m_{\phi,a}^2$.
 % If this is in the DM@LHC write-up, it is unnecessary here.
 % The first term in the width corresponds to the decay into SM fermions, and the sum runs over all kinematically available fermions, $N_c = 3$ for quarks. The second term is the decay into DM, assuming that is kinematically allowed. The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Yukawa couplings due to spin dependencies. The last term corresponds to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
 
-
 %\begin{equation}
 %\Gamma_{\rm{min}}^{S/P}=\Gamma_{\bar{\chiDM}\chiDM}^{S/P} + \sum_{q}\Gamma_{\bar{q}q}^{S/P} + \Gamma_{gg}^{S/P},
 %\end{equation}
@@ -652,31 +651,6 @@ where $\tau = 4 m_{t}^2/m_{\phi,a}^2$.
 %F_{\rm{P}}(x)&= \arctan^2\left(\frac{1}{\sqrt{x-1}}\right)\;.
 %\end{align}
 
-%%Start Matt Buckley's edits 
-%\begin{equation} \label{eq:width}
-%\begin{split}
-%\Gamma_{\phi,a}  = & \sum_f N_c \frac{y_f^2 \gq^2 m_{\phi,a}}{16 \pi} \left(1-\frac{4 m_f^2}{m_{\phi,a}^2}\right)^{x/2}
-%+ \frac{\gdm^2 m_{\phi,a}}{8 \pi} \left(1-\frac{4 \mDM^2}{m_{\phi,a}^2}\right)^{x/2}\\
-%& + \frac{\alpha_s^2 y_t^2 \gq^2 m_{\phi,a}^3}{32 \pi^3 v^2} \left| f_{\phi,a}\left(\tfrac{4m_t^2}{m_{\phi,a}^2} \right)\right|^2
-%\end{split}
-%\end{equation}
-%
-%where $x=3$ for scalars and $x=1$ for pseudoscalars, and the loop integrals are
-%
-%\bea \label{eq:fphifa}
-%f_\phi (\tau) = \tau \left [ 1+ (1-\tau) \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \right ]  \,, \qquad 
-%f_a (\tau) =  \tau \arctan^2 \left ( \frac{1}{\sqrt{\tau-1}} \right ) \,. 
-%\eea
-%
-%The first term in each width corresponds to the decay into SM fermions (the sum runs over all kinematically available fermions, $N_c = 3$ for quarks and $N_c = 1$ for leptons). The second term is the decay into DM (assuming that this decay is kinematically allowed). The factor of two between the decay into SM  fermions and into DM  is a result of our choice of normalization of the Higgs vacuum expectation value and the Yukawa couplings.
-%
-
-%%BP: Is this the best way to express that? I'd add:... due to spin dependencies. 
-%%MB: yes. I don't think it's a spin thing, it's just that we've defined v = 246, so the SM fermions get a $1/\sqrt{2}^2$ that DM doesn't.
-
-%The last two terms correspond to decay into gluons.  Since we have assumed that $\gq = g_u = g_d = g_\ell$, we have included in the partial decay widths $\Gamma (\phi/a \to gg)$ only the contributions stemming from top loops, which provide the by far largest corrections given that $y_t \gg y_b$~etc. At the loop level the mediators can decay not only to gluons but also to pairs of photons and other final states if kinematical accessible. However the decay rates $\Gamma (\phi/a \to gg)$ are always larger than the other loop-induced partial widths, and in consequence the total decay widths $\Gamma_{\phi/a}$ are well approximated by the corresponding sum of the individual partial decay widths involving DM, fermion or gluon pairs. It should be noted that if  $m_{\phi/a} > 2m_t$ the total widths of $\phi/a$ will typically be dominated by the partial widths to top quarks.
-
-%%%End Matt Buckley's edits
 
 The minimal widths for scalar and pseudo-scalar mediators with $\gq=\gDM=1$ are shown in Fig.\,\ref{fig:monojet_width_S}, illustrating the effect of choosing
 the SM Higgs-like Yukawa couplings for the SM fermions.
