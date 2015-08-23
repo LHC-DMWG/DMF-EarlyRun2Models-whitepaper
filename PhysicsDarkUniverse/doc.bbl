@@ -1,8 +1,1339 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{100}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Birkedal:2004xn}
+A.~Birkedal, K.~Matchev, M.~Perelstein, {Dark matter at colliders: A Model
+  independent approach}, Phys.Rev. D70 (2004) 077701.
+\newblock \href {http://arxiv.org/abs/hep-ph/0403004}
+  {\path{arXiv:hep-ph/0403004}}, \href
+  {http://dx.doi.org/10.1103/PhysRevD.70.077701}
+  {\path{doi:10.1103/PhysRevD.70.077701}}.
+
+\bibitem{Feng:2005gj}
+J.~L. Feng, S.~Su, F.~Takayama, Lower limit on dark matter production at the
+  large hadron collider, Phys.Rev.Lett. 96 (2006) 151802.
+\newblock \href {http://arxiv.org/abs/hep-ph/0503117}
+  {\path{arXiv:hep-ph/0503117}}, \href
+  {http://dx.doi.org/10.1103/PhysRevLett.96.151802}
+  {\path{doi:10.1103/PhysRevLett.96.151802}}.
+
+\bibitem{Petriello:2008pu}
+F.~J. Petriello, S.~Quackenbush, K.~M. Zurek, {The Invisible $Z^\prime$ at the
+  CERN LHC}, Phys.Rev. D77 (2008) 115020.
+\newblock \href {http://arxiv.org/abs/0803.4005} {\path{arXiv:0803.4005}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.77.115020}
+  {\path{doi:10.1103/PhysRevD.77.115020}}.
+
+\bibitem{Beltran:2010ww}
+M.~Beltran, D.~Hooper, E.~W. Kolb, Z.~A. Krusberg, T.~M. Tait, Maverick dark
+  matter at colliders, JHEP 1009 (2010) 037.
+\newblock \href {http://arxiv.org/abs/1002.4137} {\path{arXiv:1002.4137}},
+  \href {http://dx.doi.org/10.1007/JHEP09(2010)037}
+  {\path{doi:10.1007/JHEP09(2010)037}}.
+
+\bibitem{Bai:2010hh}
+Y.~Bai, P.~J. Fox, R.~Harnik, The {Tevatron} at the frontier of dark matter
+  direct detection, JHEP 1012 (2010) 048.
+\newblock \href {http://arxiv.org/abs/1005.3797} {\path{arXiv:1005.3797}},
+  \href {http://dx.doi.org/10.1007/JHEP12(2010)048}
+  {\path{doi:10.1007/JHEP12(2010)048}}.
+
+\bibitem{Aaltonen:2012jb}
+T.~Aaltonen, et~al., A search for dark matter in events with one jet and
+  missing transverse energy in {$p\bar{p}$} collisions at {$\sqrt{s} =
+  1.96$}~{TeV}, Phys.Rev.Lett. 108 (2012) 211804.
+\newblock \href {http://arxiv.org/abs/1203.0742} {\path{arXiv:1203.0742}},
+  \href {http://dx.doi.org/10.1103/PhysRevLett.108.211804}
+  {\path{doi:10.1103/PhysRevLett.108.211804}}.
+
+\bibitem{Aad:2015zva}
+{ATLAS Collaboration}, Search for new phenomena in final states with an
+  energetic jet and large missing transverse momentum in {$pp$} collisions at
+  {$\sqrt{s}=8$}~{TeV} with the {ATLAS} detectorSubmitted to {Eur.Phys.J.~C}.
+\newblock \href {http://arxiv.org/abs/1502.01518} {\path{arXiv:1502.01518}}.
+
+\bibitem{Aad:2014tda}
+{ATLAS Collaboration}, Search for new phenomena in events with a photon and
+  missing transverse momentum in {$pp$} collisions at {$\sqrt{s}=8$}~{TeV} with
+  the {ATLAS} detector, Phys.Rev. D91 (2015) 012008.
+\newblock \href {http://arxiv.org/abs/1411.1559} {\path{arXiv:1411.1559}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.91.012008}
+  {\path{doi:10.1103/PhysRevD.91.012008}}.
+
+\bibitem{ATLAS:2014wra}
+{ATLAS Collaboration}, Search for new particles in events with one lepton and
+  missing transverse momentum in {$pp$} collisions at {$\sqrt{s}$} = 8~{TeV}
+  with the {ATLAS} detector, JHEP 1409 (2014) 037.
+\newblock \href {http://arxiv.org/abs/1407.7494} {\path{arXiv:1407.7494}},
+  \href {http://dx.doi.org/10.1007/JHEP09(2014)037}
+  {\path{doi:10.1007/JHEP09(2014)037}}.
+
+\bibitem{Aad:2014vka}
+{ATLAS Collaboration}, Search for dark matter in events with a {Z} boson and
+  missing transverse momentum in {$pp$} collisions at {$\sqrt{s}$}=8~{TeV} with
+  the {ATLAS} detector, Phys.Rev. D90 (2014) 012004.
+\newblock \href {http://arxiv.org/abs/1404.0051} {\path{arXiv:1404.0051}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.90.012004}
+  {\path{doi:10.1103/PhysRevD.90.012004}}.
+
+\bibitem{Aad:2013oja}
+{ATLAS Collaboration}, Search for dark matter in events with a hadronically
+  decaying {W} or {Z} boson and missing transverse momentum in {$pp$}
+  collisions at {$\sqrt{s} =$} 8~{TeV} with the {ATLAS} detector,
+  Phys.Rev.Lett. 112 (2014) 041802.
+\newblock \href {http://arxiv.org/abs/1309.4017} {\path{arXiv:1309.4017}},
+  \href {http://dx.doi.org/10.1103/PhysRevLett.112.041802}
+  {\path{doi:10.1103/PhysRevLett.112.041802}}.
+
+\bibitem{Aad:2014wza}
+{ATLAS Collaboration}, Search for invisible particles produced in association
+  with single-top-quarks in proton-proton collisions at {$\sqrt{s}$} = 8~{TeV}
+  with the {ATLAS} detector, Eur.Phys.J. C75 (2015) 79.
+\newblock \href {http://arxiv.org/abs/1410.5404} {\path{arXiv:1410.5404}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-014-3233-4}
+  {\path{doi:10.1140/epjc/s10052-014-3233-4}}.
+
+\bibitem{Aad:2014vea}
+{ATLAS Collaboration}, Search for dark matter in events with heavy quarks and
+  missing transverse momentum in {$pp$} collisions with the {ATLAS} detector,
+  Eur.Phys.J. C75 (2015) 92.
+\newblock \href {http://arxiv.org/abs/1410.4031} {\path{arXiv:1410.4031}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-015-3306-z}
+  {\path{doi:10.1140/epjc/s10052-015-3306-z}}.
+
+\bibitem{ATL-PHYS-PUB-2014-007}
+{ATLAS Collaboration}, \href{http://cds.cern.ch/record/1708859}{Sensitivity to
+  {WIMP} dark matter in the final states containing jets and missing transverse
+  momentum with the {ATLAS} detector at 14~{TeV} {LHC}}, Tech. Rep.
+  ATL-PHYS-PUB-2014-007, CERN, Geneva (Jun 2014).
+\newline\urlprefix\url{http://cds.cern.ch/record/1708859}
+
+\bibitem{Khachatryan:2014rra}
+{CMS Collaboration}, Search for dark matter, extra dimensions, and unparticles
+  in monojet events in proton{$-$}proton collisions at {$\sqrt{s} = 8$}~{TeV},
+  Eur.Phys.J. C75 (2015) 235.
+\newblock \href {http://arxiv.org/abs/1408.3583} {\path{arXiv:1408.3583}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-015-3451-4}
+  {\path{doi:10.1140/epjc/s10052-015-3451-4}}.
+
+\bibitem{Khachatryan:2014rwa}
+{CMS Collaboration}, Search for new phenomena in monophoton final states in
+  proton-proton collisions at {$\sqrt{s}$} = 8~{TeV}Submitted to {Phys.Lett.B}.
+\newblock \href {http://arxiv.org/abs/1410.8812} {\path{arXiv:1410.8812}}.
+
+\bibitem{Khachatryan:2014tva}
+{CMS Collaboration}, Search for physics beyond the standard model in final
+  states with a lepton and missing transverse energy in proton-proton
+  collisions at {$\sqrt{s}$} = 8~{TeV}, Phys.Rev. D91 (2015) 092005.
+\newblock \href {http://arxiv.org/abs/1408.2745} {\path{arXiv:1408.2745}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.91.092005}
+  {\path{doi:10.1103/PhysRevD.91.092005}}.
+
+\bibitem{Khachatryan:2014uma}
+{CMS Collaboration}, Search for monotop signatures in proton-proton collisions
+  at {$\sqrt s =$} 8~{TeV}, Phys.Rev.Lett. 114 (2015) 101801.
+\newblock \href {http://arxiv.org/abs/1410.1149} {\path{arXiv:1410.1149}},
+  \href {http://dx.doi.org/10.1103/PhysRevLett.114.101801}
+  {\path{doi:10.1103/PhysRevLett.114.101801}}.
+
+\bibitem{Khachatryan:2015nua}
+{CMS Collaboration}, Search for the production of dark matter in association
+  with top-quark pairs in the single-lepton final state in proton-proton
+  collisions at {$\sqrt{s}$} = 8~{TeV}Submitted to {JHEP}.
+\newblock \href {http://arxiv.org/abs/1504.03198} {\path{arXiv:1504.03198}}.
+
+\bibitem{CMS-PAS-B2G-13-004}
+{CMS Collaboration}, \href{http://cds.cern.ch/record/1697173}{Search for the
+  production of dark matter in association with top quark pairs in the
+  di-lepton final state in {$pp$} collisions at {$\sqrt{s} =
+  8$}~{TeV}}\href{http://cds.cern.ch/record/1697173}{CMS-PAS-B2G-13-004}.
+\newline\urlprefix\url{http://cds.cern.ch/record/1697173}
+
+\bibitem{CMS-PAS-EXO-14-004}
+{CMS Collaboration}, \href{http://cds.cern.ch/record/2002861}{Search for dark
+  matter direct production using razor variables in events with two or more
+  jets in {$pp$} collisions at
+  8~{TeV}}\href{https://cds.cern.ch/record/2002861}{CMS-PAS-EXO-14-004}.
+\newline\urlprefix\url{http://cds.cern.ch/record/2002861}
+
+\bibitem{Goodman:2010yf}
+J.~Goodman, M.~Ibe, A.~Rajaraman, W.~Shepherd, T.~M. Tait, et~al., Constraints
+  on light {Majorana} dark matter from colliders, Phys.Lett. B695 (2011)
+  185--188.
+\newblock \href {http://arxiv.org/abs/1005.1286} {\path{arXiv:1005.1286}},
+  \href {http://dx.doi.org/10.1016/j.physletb.2010.11.009}
+  {\path{doi:10.1016/j.physletb.2010.11.009}}.
+
+\bibitem{Goodman:2010ku}
+J.~Goodman, M.~Ibe, A.~Rajaraman, W.~Shepherd, T.~M. Tait, et~al., Constraints
+  on dark matter from colliders, Phys.Rev. D82 (2010) 116010.
+\newblock \href {http://arxiv.org/abs/1008.1783} {\path{arXiv:1008.1783}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.82.116010}
+  {\path{doi:10.1103/PhysRevD.82.116010}}.
+
+\bibitem{Shoemaker:2011vi}
+I.~M. Shoemaker, L.~Vecchi, Unitarity and monojet bounds on models for {DAMA},
+  {CoGeNT}, and {CRESST-II}, Phys.Rev. D86 (2012) 015023.
+\newblock \href {http://arxiv.org/abs/1112.5457} {\path{arXiv:1112.5457}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.86.015023}
+  {\path{doi:10.1103/PhysRevD.86.015023}}.
+
+\bibitem{Kopp:2011eu}
+J.~Kopp, Collider limits on dark matter\href {http://arxiv.org/abs/1105.3248}
+  {\path{arXiv:1105.3248}}.
+
+\bibitem{Fox:2011fx}
+P.~J. Fox, R.~Harnik, J.~Kopp, Y.~Tsai, {LEP} shines light on dark matter,
+  Phys.Rev. D84 (2011) 014028.
+\newblock \href {http://arxiv.org/abs/1103.0240} {\path{arXiv:1103.0240}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.84.014028}
+  {\path{doi:10.1103/PhysRevD.84.014028}}.
+
+\bibitem{Fox:2011pm}
+P.~J. Fox, R.~Harnik, J.~Kopp, Y.~Tsai, Missing energy signatures of dark
+  matter at the {LHC}, Phys.Rev. D85 (2012) 056011.
+\newblock \href {http://arxiv.org/abs/1109.4398} {\path{arXiv:1109.4398}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.85.056011}
+  {\path{doi:10.1103/PhysRevD.85.056011}}.
+
+\bibitem{Busoni:2013lha}
+G.~Busoni, A.~De~Simone, E.~Morgante, A.~Riotto, On the validity of the
+  effective field theory for dark matter searches at the {LHC}, Phys.Lett. B728
+  (2014) 412--421.
+\newblock \href {http://arxiv.org/abs/1307.2253} {\path{arXiv:1307.2253}},
+  \href {http://dx.doi.org/10.1016/j.physletb.2013.11.069}
+  {\path{doi:10.1016/j.physletb.2013.11.069}}.
+
+\bibitem{Alwall:2008ag}
+J.~Alwall, P.~Schuster, N.~Toro, Simplified models for a first characterization
+  of new physics at the {LHC}, Phys.Rev. D79 (2009) 075020.
+\newblock \href {http://arxiv.org/abs/0810.3921} {\path{arXiv:0810.3921}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.79.075020}
+  {\path{doi:10.1103/PhysRevD.79.075020}}.
+
+\bibitem{Goodman:2011jq}
+J.~Goodman, W.~Shepherd, {LHC} bounds on {UV}-complete models of dark
+  matter\href {http://arxiv.org/abs/1111.2359} {\path{arXiv:1111.2359}}.
+
+\bibitem{Alves:2011wf}
+D.~Alves, et~al., Simplified models for {LHC} new physics searches, J.Phys. G39
+  (2012) 105005.
+\newblock \href {http://arxiv.org/abs/1105.2838} {\path{arXiv:1105.2838}},
+  \href {http://dx.doi.org/10.1088/0954-3899/39/10/105005}
+  {\path{doi:10.1088/0954-3899/39/10/105005}}.
+
+\bibitem{An:2012va}
+H.~An, X.~Ji, L.-T. Wang, Light dark matter and {$Z^\prime$} dark force at
+  colliders, JHEP 1207 (2012) 182.
+\newblock \href {http://arxiv.org/abs/1202.2894} {\path{arXiv:1202.2894}},
+  \href {http://dx.doi.org/10.1007/JHEP07(2012)182}
+  {\path{doi:10.1007/JHEP07(2012)182}}.
+
+\bibitem{An:2012ue}
+H.~An, R.~Huo, L.-T. Wang, Searching for low mass dark portal at the {LHC},
+  Phys.Dark Univ. 2 (2013) 50--57.
+\newblock \href {http://arxiv.org/abs/1212.2221} {\path{arXiv:1212.2221}},
+  \href {http://dx.doi.org/10.1016/j.dark.2013.03.002}
+  {\path{doi:10.1016/j.dark.2013.03.002}}.
+
+\bibitem{Tait:2013}
+A.~DiFranzo, K.~I. Nagao, A.~Rajaraman, T.~M.~P. Tait, Simplified models for
+  dark matter interacting with quarks, JHEP 1311 (2013) 014.
+\newblock \href {http://arxiv.org/abs/1308.2679} {\path{arXiv:1308.2679}},
+  \href {http://dx.doi.org/10.1007/JHEP11(2013)014, 10.1007/JHEP01(2014)162}
+  {\path{doi:10.1007/JHEP11(2013)014, 10.1007/JHEP01(2014)162}}.
+
+\bibitem{Buchmueller:2013dya}
+O.~Buchmueller, M.~J. Dolan, C.~McCabe, Beyond effective field theory for dark
+  matter searches at the {LHC}, JHEP 1401 (2014) 025.
+\newblock \href {http://arxiv.org/abs/1308.6799} {\path{arXiv:1308.6799}},
+  \href {http://dx.doi.org/10.1007/JHEP01(2014)025}
+  {\path{doi:10.1007/JHEP01(2014)025}}.
+
+\bibitem{Bai:2013iqa}
+Y.~Bai, J.~Berger, {Fermion Portal} dark matter, JHEP 1311 (2013) 171.
+\newblock \href {http://arxiv.org/abs/1308.0612} {\path{arXiv:1308.0612}},
+  \href {http://dx.doi.org/10.1007/JHEP11(2013)171}
+  {\path{doi:10.1007/JHEP11(2013)171}}.
+
+\bibitem{Bai:2014osa}
+Y.~Bai, J.~Berger, {Lepton Portal} dark matter, JHEP 1408 (2014) 153.
+\newblock \href {http://arxiv.org/abs/1402.6696} {\path{arXiv:1402.6696}},
+  \href {http://dx.doi.org/10.1007/JHEP08(2014)153}
+  {\path{doi:10.1007/JHEP08(2014)153}}.
+
+\bibitem{An:2013xka}
+H.~An, L.-T. Wang, H.~Zhang, Dark matter with {$t$}-channel mediator: a simple
+  step beyond contact interaction, Phys.Rev. D89 (2014) 115014.
+\newblock \href {http://arxiv.org/abs/1308.0592} {\path{arXiv:1308.0592}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.89.115014}
+  {\path{doi:10.1103/PhysRevD.89.115014}}.
+
+\bibitem{Yavin:14092893}
+J.~Abdallah, et~al., Simplified models for dark matter and missing energy
+  searches at the {LHC}\href {http://arxiv.org/abs/1409.2893}
+  {\path{arXiv:1409.2893}}.
+
+\bibitem{Malik:2014ggr}
+S.~Malik, C.~McCabe, H.~Araujo, A.~Belyaev, C.~Boehm, et~al., Interplay and
+  characterization of dark matter searches at colliders and in direct detection
+  experiments\href {http://arxiv.org/abs/1409.4075} {\path{arXiv:1409.4075}}.
+
+\bibitem{Harris:2014hga}
+P.~Harris, V.~V. Khoze, M.~Spannowsky, C.~Williams, Constraining dark sectors
+  at colliders: Beyond the effective theory approach, Phys.Rev. D91 (2015)
+  055009.
+\newblock \href {http://arxiv.org/abs/1411.0535} {\path{arXiv:1411.0535}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.91.055009}
+  {\path{doi:10.1103/PhysRevD.91.055009}}.
+
+\bibitem{Buckley:2014fba}
+M.~R. Buckley, D.~Feld, D.~Goncalves, Scalar simplified models for dark matter,
+  Phys.Rev. D91 (2015) 015017.
+\newblock \href {http://arxiv.org/abs/1410.6497} {\path{arXiv:1410.6497}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.91.015017}
+  {\path{doi:10.1103/PhysRevD.91.015017}}.
+
+\bibitem{Haisch:2015ioa}
+U.~Haisch, E.~Re, Simplified dark matter top-quark interactions at the {LHC},
+  JHEP 1506 (2015) 078.
+\newblock \href {http://arxiv.org/abs/1503.00691} {\path{arXiv:1503.00691}},
+  \href {http://dx.doi.org/10.1007/JHEP06(2015)078}
+  {\path{doi:10.1007/JHEP06(2015)078}}.
+
+\bibitem{Bai:2012xg}
+Y.~Bai, T.~M. Tait, Searches with mono-leptons, Phys.Lett. B723 (2013)
+  384--387.
+\newblock \href {http://arxiv.org/abs/1208.4361} {\path{arXiv:1208.4361}},
+  \href {http://dx.doi.org/10.1016/j.physletb.2013.05.057}
+  {\path{doi:10.1016/j.physletb.2013.05.057}}.
+
+\bibitem{Carpenter:2012rg}
+L.~M. Carpenter, A.~Nelson, C.~Shimmin, T.~M. Tait, D.~Whiteson, Collider
+  searches for dark matter in events with a {Z} boson and missing energy,
+  Phys.Rev. D87 (2013) 074005.
+\newblock \href {http://arxiv.org/abs/1212.3352} {\path{arXiv:1212.3352}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.87.074005}
+  {\path{doi:10.1103/PhysRevD.87.074005}}.
+
+\bibitem{Bell:2012rg}
+N.~F. Bell, J.~B. Dent, A.~J. Galea, T.~D. Jacques, L.~M. Krauss, et~al.,
+  Searching for dark matter at the {LHC} with a mono-{Z}, Phys.Rev. D86 (2012)
+  096011.
+\newblock \href {http://arxiv.org/abs/1209.0231} {\path{arXiv:1209.0231}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.86.096011}
+  {\path{doi:10.1103/PhysRevD.86.096011}}.
+
+\bibitem{Petrov:2013nia}
+A.~A. Petrov, W.~Shepherd, Searching for dark matter at {LHC} with mono-{Higgs}
+  production, Phys.Lett. B730 (2014) 178--183.
+\newblock \href {http://arxiv.org/abs/1311.1511} {\path{arXiv:1311.1511}},
+  \href {http://dx.doi.org/10.1016/j.physletb.2014.01.051}
+  {\path{doi:10.1016/j.physletb.2014.01.051}}.
+
+\bibitem{Carpenter:2013xra}
+L.~Carpenter, A.~DiFranzo, M.~Mulhearn, C.~Shimmin, S.~Tulin, et~al.,
+  Mono-{Higgs}-boson: A new collider probe of dark matter, Phys.Rev. D89 (2014)
+  075017.
+\newblock \href {http://arxiv.org/abs/1312.2592} {\path{arXiv:1312.2592}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.89.075017}
+  {\path{doi:10.1103/PhysRevD.89.075017}}.
+
+\bibitem{DMatLHCProceedings}
+J.~Abdallah, H.~Araujo, A.~Arbey, A.~Ashkenazi, A.~Belyaev, et~al., Simplified
+  models for dark matter searches at the {LHC}Submitted to {Phys.Dark Univ.}
+\newblock \href {http://arxiv.org/abs/1506.03116} {\path{arXiv:1506.03116}}.
+
+\bibitem{Bauer:2013ihz}
+D.~Bauer, J.~Buckley, M.~Cahill-Rowley, R.~Cotta, A.~Drlica-Wagner, et~al.,
+  Dark matter in the coming decade: Complementary paths to discovery and
+  beyond, Phys.Dark Univ. 7-8 (2013) 16--23.
+\newblock \href {http://arxiv.org/abs/1305.1605} {\path{arXiv:1305.1605}},
+  \href {http://dx.doi.org/10.1016/j.dark.2015.04.001}
+  {\path{doi:10.1016/j.dark.2015.04.001}}.
+
+\bibitem{Chivukula:1987py}
+R.~S. Chivukula, H.~Georgi, {Composite Technicolor Standard Model}, Phys.Lett.
+  B188 (1987) 99.
+\newblock \href {http://dx.doi.org/10.1016/0370-2693(87)90713-1}
+  {\path{doi:10.1016/0370-2693(87)90713-1}}.
+
+\bibitem{Hall:1990ac}
+L.~Hall, L.~Randall, Weak scale effective supersymmetry, Phys.Rev.Lett. 65
+  (1990) 2939--2942.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.65.2939}
+  {\path{doi:10.1103/PhysRevLett.65.2939}}.
+
+\bibitem{Buras:2000dm}
+A.~Buras, P.~Gambino, M.~Gorbahn, S.~Jager, L.~Silvestrini, Universal unitarity
+  triangle and physics beyond the {Standard Model}, Phys.Lett. B500 (2001)
+  161--167.
+\newblock \href {http://arxiv.org/abs/hep-ph/0007085}
+  {\path{arXiv:hep-ph/0007085}}, \href
+  {http://dx.doi.org/10.1016/S0370-2693(01)00061-2}
+  {\path{doi:10.1016/S0370-2693(01)00061-2}}.
+
+\bibitem{D'Ambrosio:2002ex}
+G.~D'Ambrosio, G.~Giudice, G.~Isidori, A.~Strumia, {Minimal Flavor Violation}:
+  An effective field theory approach, Nucl.Phys. B645 (2002) 155--187.
+\newblock \href {http://arxiv.org/abs/hep-ph/0207036}
+  {\path{arXiv:hep-ph/0207036}}, \href
+  {http://dx.doi.org/10.1016/S0550-3213(02)00836-2}
+  {\path{doi:10.1016/S0550-3213(02)00836-2}}.
+
+\bibitem{Agrawal:2014aoa}
+P.~Agrawal, M.~Blanke, K.~Gemmler, Flavored dark matter beyond {Minimal Flavor
+  Violation}, JHEP 1410 (2014) 72.
+\newblock \href {http://arxiv.org/abs/1405.6709} {\path{arXiv:1405.6709}},
+  \href {http://dx.doi.org/10.1007/JHEP10(2014)072}
+  {\path{doi:10.1007/JHEP10(2014)072}}.
+
+\bibitem{ForumSVN}
+{SVN} repository for model, input and parameter cards for models considered in
+  the {ATLAS}/{CMS} {Dark Matter Forum} studies,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/}, [Online;
+  accessed 13-June-2015] (2015).
+
+\bibitem{HEPData}
+The {Durham} {HepData} project, \url{http://hepdata.cedar.ac.uk/abouthepdata},
+  [Online; accessed 13-June-2015] (2015).
+
+\bibitem{Buchmueller:2014yoa}
+O.~Buchmueller, M.~J. Dolan, S.~A. Malik, C.~McCabe, Characterising dark matter
+  searches at colliders and direct detection experiments: Vector mediators,
+  JHEP 1501 (2015) 037.
+\newblock \href {http://arxiv.org/abs/1407.8257} {\path{arXiv:1407.8257}},
+  \href {http://dx.doi.org/10.1007/JHEP01(2015)037}
+  {\path{doi:10.1007/JHEP01(2015)037}}.
+
+\bibitem{Haisch:2013ata}
+U.~Haisch, F.~Kahlhoefer, E.~Re, {QCD} effects in mono-jet searches for dark
+  matter, JHEP 1312 (2013) 007.
+\newblock \href {http://arxiv.org/abs/1310.4491} {\path{arXiv:1310.4491}},
+  \href {http://dx.doi.org/10.1007/JHEP12(2013)007}
+  {\path{doi:10.1007/JHEP12(2013)007}}.
+
+\bibitem{Sjostrand:2007gs}
+T.~Sj{\"o}strand, S.~Mrenna, P.~Z. Skands, A brief introduction to
+  {PYTHIA}~8.1, Comput.Phys.Commun. 178 (2008) 852--867.
+\newblock \href {http://arxiv.org/abs/0710.3820} {\path{arXiv:0710.3820}},
+  \href {http://dx.doi.org/10.1016/j.cpc.2008.01.036}
+  {\path{doi:10.1016/j.cpc.2008.01.036}}.
+
+\bibitem{Bai:2015nfa}
+Y.~Bai, J.~Bourbeau, T.~Lin, Dark matter searches with a mono-{$Z^\prime$}
+  jet\href {http://arxiv.org/abs/1504.01395} {\path{arXiv:1504.01395}}.
+
+\bibitem{Chala:2015ama}
+M.~Chala, F.~Kahlhoefer, M.~McCullough, G.~Nardini, K.~Schmidt-Hoberg,
+  Constraining dark sectors with monojets and dijets\href
+  {http://arxiv.org/abs/1503.05916} {\path{arXiv:1503.05916}}.
+
+\bibitem{Zhou:2013fla}
+N.~Zhou, D.~Berge, D.~Whiteson, Mono-everything: combined limits on dark matter
+  production at colliders from multiple final states, Phys.Rev. D87 (2013)
+  095013.
+\newblock \href {http://arxiv.org/abs/1302.3619} {\path{arXiv:1302.3619}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.87.095013}
+  {\path{doi:10.1103/PhysRevD.87.095013}}.
+
+\bibitem{Gershtein:2008bf}
+Y.~Gershtein, F.~Petriello, S.~Quackenbush, K.~M. Zurek, {Discovering hidden
+  sectors with mono-photon $Z^\prime$o searches}, Phys.Rev. D78 (2008) 095002.
+\newblock \href {http://arxiv.org/abs/0809.2849} {\path{arXiv:0809.2849}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.78.095002}
+  {\path{doi:10.1103/PhysRevD.78.095002}}.
+
+\bibitem{Bell:2015sza}
+N.~F. Bell, Y.~Cai, J.~B. Dent, R.~K. Leane, T.~J. Weiler, Dark matter at the
+  {LHC}: {EFTs} and gauge invariance\href {http://arxiv.org/abs/1503.07874}
+  {\path{arXiv:1503.07874}}.
+
+\bibitem{Hamaguchi:2014pja}
+K.~Hamaguchi, S.~P. Liew, T.~Moroi, Y.~Yamamoto, Isospin-violating dark matter
+  with colored mediators, JHEP 1405 (2014) 086.
+\newblock \href {http://arxiv.org/abs/1403.0324} {\path{arXiv:1403.0324}},
+  \href {http://dx.doi.org/10.1007/JHEP05(2014)086}
+  {\path{doi:10.1007/JHEP05(2014)086}}.
+
+\bibitem{Alioli:2010xd}
+S.~Alioli, P.~Nason, C.~Oleari, E.~Re, A general framework for implementing
+  {NLO} calculations in shower {Monte Carlo} programs: the {POWHEG BOX}, JHEP
+  1006 (2010) 043.
+\newblock \href {http://arxiv.org/abs/1002.2581} {\path{arXiv:1002.2581}},
+  \href {http://dx.doi.org/10.1007/JHEP06(2010)043}
+  {\path{doi:10.1007/JHEP06(2010)043}}.
+
+\bibitem{Nason:2004rx}
+P.~Nason, A new method for combining {NLO} {QCD} with shower {Monte Carlo}
+  algorithms, JHEP 0411 (2004) 040.
+\newblock \href {http://arxiv.org/abs/hep-ph/0409146}
+  {\path{arXiv:hep-ph/0409146}}, \href
+  {http://dx.doi.org/10.1088/1126-6708/2004/11/040}
+  {\path{doi:10.1088/1126-6708/2004/11/040}}.
+
+\bibitem{Frixione:2007vw}
+S.~Frixione, P.~Nason, C.~Oleari, Matching {NLO} {QCD} computations with parton
+  shower simulations: the {POWHEG} method, JHEP 0711 (2007) 070, * Temporary
+  entry *.
+\newblock \href {http://arxiv.org/abs/0709.2092} {\path{arXiv:0709.2092}},
+  \href {http://dx.doi.org/10.1088/1126-6708/2007/11/070}
+  {\path{doi:10.1088/1126-6708/2007/11/070}}.
+
+\bibitem{Arina:2014yna}
+C.~Arina, E.~Del~Nobile, P.~Panci, Dark matter with pseudoscalar-mediated
+  interactions explains the {DAMA} signal and the {Galactic Center} excess,
+  Phys.Rev.Lett. 114 (2015) 011301.
+\newblock \href {http://arxiv.org/abs/1406.5542} {\path{arXiv:1406.5542}},
+  \href {http://dx.doi.org/10.1103/PhysRevLett.114.011301}
+  {\path{doi:10.1103/PhysRevLett.114.011301}}.
+
+\bibitem{Haisch:2013fla}
+U.~Haisch, A.~Hibbs, E.~Re, Determining the structure of dark-matter couplings
+  at the {LHC}, Phys.Rev. D89 (2014) 034009.
+\newblock \href {http://arxiv.org/abs/1311.7131} {\path{arXiv:1311.7131}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.89.034009}
+  {\path{doi:10.1103/PhysRevD.89.034009}}.
+
+\bibitem{Lee:2012ph}
+H.~M. Lee, M.~Park, V.~Sanz, Interplay between {Fermi} gamma-ray lines and
+  collider searches, JHEP 1303 (2013) 052.
+\newblock \href {http://arxiv.org/abs/1212.5647} {\path{arXiv:1212.5647}},
+  \href {http://dx.doi.org/10.1007/JHEP03(2013)052}
+  {\path{doi:10.1007/JHEP03(2013)052}}.
+
+\bibitem{Alwall:2014hca}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, et~al., The
+  automated computation of tree-level and next-to-leading order differential
+  cross sections, and their matching to parton shower simulations, JHEP 1407
+  (2014) 079.
+\newblock \href {http://arxiv.org/abs/1405.0301} {\path{arXiv:1405.0301}},
+  \href {http://dx.doi.org/10.1007/JHEP07(2014)079}
+  {\path{doi:10.1007/JHEP07(2014)079}}.
+
+\bibitem{Alloul:2013bka}
+A.~Alloul, N.~D. Christensen, C.~Degrande, C.~Duhr, B.~Fuks, {FeynRules}~2.0 -
+  a complete toolbox for tree-level phenomenology, Comput.Phys.Commun. 185
+  (2014) 2250--2300.
+\newblock \href {http://arxiv.org/abs/1310.1921} {\path{arXiv:1310.1921}}.
+
+\bibitem{Degrande:2011ua}
+C.~Degrande, C.~Duhr, B.~Fuks, D.~Grellscheid, O.~Mattelaer, et~al., {UFO} -
+  the {Universal FeynRules Output}, Comput.Phys.Commun. 183 (2012) 1201--1214.
+\newblock \href {http://arxiv.org/abs/1108.2040} {\path{arXiv:1108.2040}},
+  \href {http://dx.doi.org/10.1016/j.cpc.2012.01.022}
+  {\path{doi:10.1016/j.cpc.2012.01.022}}.
+
+\bibitem{Papucci:2014iwa}
+M.~Papucci, A.~Vichi, K.~M. Zurek, Monojet versus the rest of the world {I}:
+  {$t$}-channel models, JHEP 1411 (2014) 024.
+\newblock \href {http://arxiv.org/abs/1402.2285} {\path{arXiv:1402.2285}},
+  \href {http://dx.doi.org/10.1007/JHEP11(2014)024}
+  {\path{doi:10.1007/JHEP11(2014)024}}.
+
+\bibitem{Chang:2013oia}
+S.~Chang, R.~Edezhath, J.~Hutchinson, M.~Luty, Effective {WIMPs}, Phys.Rev. D89
+  (2014) 015011.
+\newblock \href {http://arxiv.org/abs/1307.8120} {\path{arXiv:1307.8120}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.89.015011}
+  {\path{doi:10.1103/PhysRevD.89.015011}}.
+
+\bibitem{Busoni:2014haa}
+G.~Busoni, A.~De~Simone, T.~Jacques, E.~Morgante, A.~Riotto, On the validity of
+  the effective field theory for dark matter searches at the {LHC} part {III}:
+  Analysis for the {$t$}-channel, JCAP 1409 (2014) 022.
+\newblock \href {http://arxiv.org/abs/1405.3101} {\path{arXiv:1405.3101}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2014/09/022}
+  {\path{doi:10.1088/1475-7516/2014/09/022}}.
+
+\bibitem{Maltoni:2015twa}
+F.~Maltoni, A.~Martini, K.~Mawatari, B.~Oexl, Signals of a superlight gravitino
+  at the {LHC}, JHEP 1504 (2015) 021.
+\newblock \href {http://arxiv.org/abs/1502.01637} {\path{arXiv:1502.01637}},
+  \href {http://dx.doi.org/10.1007/JHEP04(2015)021}
+  {\path{doi:10.1007/JHEP04(2015)021}}.
+
+\bibitem{deAquino:2012ru}
+P.~de~Aquino, F.~Maltoni, K.~Mawatari, B.~Oexl, Light gravitino production in
+  association with gluinos at the {LHC}, JHEP 1210 (2012) 008.
+\newblock \href {http://arxiv.org/abs/1206.7098} {\path{arXiv:1206.7098}},
+  \href {http://dx.doi.org/10.1007/JHEP10(2012)008}
+  {\path{doi:10.1007/JHEP10(2012)008}}.
+
+\bibitem{Alwall:2008qv}
+J.~Alwall, S.~de~Visscher, F.~Maltoni, {QCD} radiation in the production of
+  heavy colored particles at the {LHC}, JHEP 0902 (2009) 017.
+\newblock \href {http://arxiv.org/abs/0810.5350} {\path{arXiv:0810.5350}},
+  \href {http://dx.doi.org/10.1088/1126-6708/2009/02/017}
+  {\path{doi:10.1088/1126-6708/2009/02/017}}.
+
+\bibitem{Conte:2014zja}
+E.~Conte, B.~Dumont, B.~Fuks, C.~Wymant, Designing and recasting {LHC} analyses
+  with {MadAnalysis}~5, Eur.Phys.J. C74 (2014) 3103.
+\newblock \href {http://arxiv.org/abs/1405.3982} {\path{arXiv:1405.3982}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-014-3103-0}
+  {\path{doi:10.1140/epjc/s10052-014-3103-0}}.
+
+\bibitem{Dumont:2014tja}
+B.~Dumont, B.~Fuks, S.~Kraml, S.~Bein, G.~Chalons, et~al., Toward a public
+  analysis database for {LHC} new physics searches using {MADANALYSIS}~5,
+  Eur.Phys.J. C75 (2015) 56.
+\newblock \href {http://arxiv.org/abs/1407.3278} {\path{arXiv:1407.3278}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-014-3242-3}
+  {\path{doi:10.1140/epjc/s10052-014-3242-3}}.
+
+\bibitem{Conte:2012fm}
+E.~Conte, B.~Fuks, G.~Serret, {MadAnalysis}~5, a user-friendly framework for
+  collider phenomenology, Comput.Phys.Commun. 184 (2013) 222--256.
+\newblock \href {http://arxiv.org/abs/1206.1599} {\path{arXiv:1206.1599}},
+  \href {http://dx.doi.org/10.1016/j.cpc.2012.09.009}
+  {\path{doi:10.1016/j.cpc.2012.09.009}}.
+
+\bibitem{Lin:2013sca}
+T.~Lin, E.~W. Kolb, L.-T. Wang, Probing dark matter couplings to top and bottom
+  quarks at the {LHC}, Phys.Rev. D88 (2013) 063510.
+\newblock \href {http://arxiv.org/abs/1303.6638} {\path{arXiv:1303.6638}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.88.063510}
+  {\path{doi:10.1103/PhysRevD.88.063510}}.
+
+\bibitem{Agrawal:2014una}
+P.~Agrawal, B.~Batell, D.~Hooper, T.~Lin, Flavored dark matter and the
+  {Galactic Center} gamma-ray excess, Phys.Rev. D90 (2014) 063512.
+\newblock \href {http://arxiv.org/abs/1404.1373} {\path{arXiv:1404.1373}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.90.063512}
+  {\path{doi:10.1103/PhysRevD.90.063512}}.
+
+\bibitem{Daylan:2014rsa}
+T.~Daylan, D.~P. Finkbeiner, D.~Hooper, T.~Linden, S.~K.~N. Portillo, et~al.,
+  The characterization of the gamma-ray signal from the central {Milky Way}: A
+  compelling case for annihilating dark matter\href
+  {http://arxiv.org/abs/1402.6703} {\path{arXiv:1402.6703}}.
+
+\bibitem{Calore:2014xka}
+F.~Calore, I.~Cholis, C.~Weniger, Background model systematics for the {Fermi}
+  {GeV} excess, JCAP 1503 (2015) 038.
+\newblock \href {http://arxiv.org/abs/1409.0042} {\path{arXiv:1409.0042}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2015/03/038}
+  {\path{doi:10.1088/1475-7516/2015/03/038}}.
+
+\bibitem{Kumar:2013hfa}
+A.~Kumar, S.~Tulin, Top-flavored dark matter and the forward-backward
+  asymmetry, Phys.Rev. D87~(9) (2013) 095006.
+\newblock \href {http://arxiv.org/abs/1303.0332} {\path{arXiv:1303.0332}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.87.095006}
+  {\path{doi:10.1103/PhysRevD.87.095006}}.
+
+\bibitem{Batell:2013zwa}
+B.~Batell, T.~Lin, L.-T. Wang, {Flavored Dark Matter} and {R}-parity violation,
+  JHEP 1401 (2014) 075.
+\newblock \href {http://arxiv.org/abs/1309.4462} {\path{arXiv:1309.4462}},
+  \href {http://dx.doi.org/10.1007/JHEP01(2014)075}
+  {\path{doi:10.1007/JHEP01(2014)075}}.
+
+\bibitem{Kilic:2015vka}
+C.~Kilic, M.~D. Klimek, J.-H. Yu, Signatures of top flavored dark matter,
+  Phys.Rev. D91~(5) (2015) 054036.
+\newblock \href {http://arxiv.org/abs/1501.02202} {\path{arXiv:1501.02202}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.91.054036}
+  {\path{doi:10.1103/PhysRevD.91.054036}}.
+
+\bibitem{Lee:2013bua}
+H.~M. Lee, M.~Park, V.~Sanz, Gravity-mediated (or composite) {Dark Matter},
+  Eur.Phys.J. C74 (2014) 2715.
+\newblock \href {http://arxiv.org/abs/1306.4107} {\path{arXiv:1306.4107}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-014-2715-8}
+  {\path{doi:10.1140/epjc/s10052-014-2715-8}}.
+
+\bibitem{Lee:2014caa}
+H.~M. Lee, M.~Park, V.~Sanz, Gravity-mediated (or composite) dark matter
+  confronts astrophysical data, JHEP 1405 (2014) 063.
+\newblock \href {http://arxiv.org/abs/1401.5301} {\path{arXiv:1401.5301}},
+  \href {http://dx.doi.org/10.1007/JHEP05(2014)063}
+  {\path{doi:10.1007/JHEP05(2014)063}}.
+
+\bibitem{Bardin:1989qr}
+D.~Y. Bardin, S.~M. Bilenky, W.~Beenakker, F.~A. Berends, W.~L. van Neerven,
+  S.~C. Van~der Marck, G.~Burgers, W.~F.~L. Hollik, T.~Riemann, M.~Sachwitz,
+  \href{http://cds.cern.ch/record/199969}{{Z} line shape}, in: {Workshop on Z
+  Physics at LEP1 : General Meetings, vol. 1 : Standard Physics}, 1989, p. 43
+  p.
+\newline\urlprefix\url{http://cds.cern.ch/record/199969}
+
+\bibitem{Nelson:2013pqa}
+A.~Nelson, L.~M. Carpenter, R.~Cotta, A.~Johnstone, D.~Whiteson, Confronting
+  the {Fermi Line} with {LHC} data: an effective theory of dark matter
+  interaction with photons, Phys.Rev. D89 (2014) 056011.
+\newblock \href {http://arxiv.org/abs/1307.5064} {\path{arXiv:1307.5064}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.89.056011}
+  {\path{doi:10.1103/PhysRevD.89.056011}}.
+
+\bibitem{Berlin:2014cfa}
+A.~Berlin, T.~Lin, L.-T. Wang, Mono-{Higgs} detection of dark matter at the
+  {LHC}, JHEP 1406 (2014) 078.
+\newblock \href {http://arxiv.org/abs/1402.7074} {\path{arXiv:1402.7074}},
+  \href {http://dx.doi.org/10.1007/JHEP06(2014)078}
+  {\path{doi:10.1007/JHEP06(2014)078}}.
+
+\bibitem{Cotta:2012nj}
+R.~Cotta, J.~Hewett, M.~Le, T.~Rizzo, Bounds on dark matter interactions with
+  electroweak gauge bosons, Phys.Rev. D88 (2013) 116009.
+\newblock \href {http://arxiv.org/abs/1210.0525} {\path{arXiv:1210.0525}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.88.116009}
+  {\path{doi:10.1103/PhysRevD.88.116009}}.
+
+\bibitem{Crivellin:2015wva}
+A.~Crivellin, U.~Haisch, A.~Hibbs, {LHC} constraints on gauge boson couplings
+  to dark matter\href {http://arxiv.org/abs/1501.00907}
+  {\path{arXiv:1501.00907}}.
+
+\bibitem{O'Connell:2006wi}
+D.~O'Connell, M.~J. Ramsey-Musolf, M.~B. Wise, Minimal extension of the
+  {Standard Model} scalar sector, Phys.Rev. D75 (2007) 037701.
+\newblock \href {http://arxiv.org/abs/hep-ph/0611014}
+  {\path{arXiv:hep-ph/0611014}}, \href
+  {http://dx.doi.org/10.1103/PhysRevD.75.037701}
+  {\path{doi:10.1103/PhysRevD.75.037701}}.
+
+\bibitem{Craig:2013hca}
+N.~Craig, J.~Galloway, S.~Thomas, Searching for signs of the {Second Higgs
+  Doublet}\href {http://arxiv.org/abs/1305.2424} {\path{arXiv:1305.2424}}.
+
+\bibitem{deFavereau:2013fsa}
+J.~de~Favereau, et~al., {DELPHES} 3, a modular framework for fast simulation of
+  a generic collider experiment, JHEP 1402 (2014) 057.
+\newblock \href {http://arxiv.org/abs/1307.6346} {\path{arXiv:1307.6346}},
+  \href {http://dx.doi.org/10.1007/JHEP02(2014)057}
+  {\path{doi:10.1007/JHEP02(2014)057}}.
+
+\bibitem{Djouadi:2012zc}
+A.~Djouadi, A.~Falkowski, Y.~Mambrini, J.~Quevillon, Direct detection of
+  {Higgs-Portal} dark matter at the {LHC}, Eur.Phys.J. C73 (2013) 2455.
+\newblock \href {http://arxiv.org/abs/1205.3169} {\path{arXiv:1205.3169}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-013-2455-1}
+  {\path{doi:10.1140/epjc/s10052-013-2455-1}}.
+
+\bibitem{Weiner:2012cb}
+N.~Weiner, I.~Yavin, How dark are {Majorana} {WIMPs}? signals from {MiDM} and
+  {Rayleigh} dark matter, Phys.Rev. D86 (2012) 075021.
+\newblock \href {http://arxiv.org/abs/1206.2910} {\path{arXiv:1206.2910}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.86.075021}
+  {\path{doi:10.1103/PhysRevD.86.075021}}.
+
+\bibitem{Weiner:2012gm}
+N.~Weiner, I.~Yavin, {UV} completions of magnetic inelastic and {Rayleigh} dark
+  matter for the {Fermi Line}(s), Phys.Rev. D87 (2013) 023523.
+\newblock \href {http://arxiv.org/abs/1209.1093} {\path{arXiv:1209.1093}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.87.023523}
+  {\path{doi:10.1103/PhysRevD.87.023523}}.
+
+\bibitem{Liu:2013gba}
+J.~Liu, B.~Shuve, N.~Weiner, I.~Yavin, Looking for new charged states at the
+  {LHC}: Signatures of magnetic and {Rayleigh} dark matter, JHEP 1307 (2013)
+  144.
+\newblock \href {http://arxiv.org/abs/1303.4404} {\path{arXiv:1303.4404}},
+  \href {http://dx.doi.org/10.1007/JHEP07(2013)144}
+  {\path{doi:10.1007/JHEP07(2013)144}}.
+
+\bibitem{Haisch:2012kf}
+U.~Haisch, F.~Kahlhoefer, J.~Unwin, The impact of heavy-quark loops on {LHC}
+  dark matter searches, JHEP 1307 (2013) 125.
+\newblock \href {http://arxiv.org/abs/1208.4605} {\path{arXiv:1208.4605}},
+  \href {http://dx.doi.org/10.1007/JHEP07(2013)125}
+  {\path{doi:10.1007/JHEP07(2013)125}}.
+
+\bibitem{Bahr:2008pv}
+M.~Bahr, S.~Gieseke, M.~Gigg, D.~Grellscheid, K.~Hamilton, et~al., {Herwig++
+  Physics and Manual}, Eur.Phys.J. C58 (2008) 639--707.
+\newblock \href {http://arxiv.org/abs/0803.0883} {\path{arXiv:0803.0883}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-008-0798-9}
+  {\path{doi:10.1140/epjc/s10052-008-0798-9}}.
+
+\bibitem{Corcella:2002jc}
+G.~Corcella, I.~Knowles, G.~Marchesini, S.~Moretti, K.~Odagiri, et~al., {HERWIG
+  6.5 release note}\href {http://arxiv.org/abs/hep-ph/0210213}
+  {\path{arXiv:hep-ph/0210213}}.
+
+\bibitem{Corcella:2000bw}
+G.~Corcella, et~al., {HERWIG}~6: An event generator for hadron emission
+  reactions with interfering gluons (including supersymmetric processes), JHEP
+  0101 (2001) 010.
+\newblock \href {http://arxiv.org/abs/hep-ph/0011363}
+  {\path{arXiv:hep-ph/0011363}}, \href
+  {http://dx.doi.org/10.1088/1126-6708/2001/01/010}
+  {\path{doi:10.1088/1126-6708/2001/01/010}}.
+
+\bibitem{Marchesini1992465}
+G.~Marchesini, B.~Webber, G.~Abbiendi, I.~Knowles, M.~Seymour, L.~Stanco,
+  \href{http://www.sciencedirect.com/science/article/pii/0010465592900554}{\{HERWIG\}
+  5.1 - a monte carlo event generator for simulating hadron emission reactions
+  with interfering gluons}, Computer Physics Communications 67~(3) (1992) 465
+  -- 508.
+\newblock \href
+  {http://dx.doi.org/http://dx.doi.org/10.1016/0010-4655(92)90055-4}
+  {\path{doi:http://dx.doi.org/10.1016/0010-4655(92)90055-4}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/0010465592900554}
+
+\bibitem{NewMadgraphModels}
+Simplified dark matter models at {NLO}, {UFO} for {Feynrules}~2.3 and
+  {\madgraph}. v0.1\_alpha: alpha version,
+  \url{https://feynrules.irmp.ucl.ac.be/wiki/DMsimp}, [Online; accessed
+  12-June-2015] (2015).
+
+\bibitem{Fox:2012ru}
+P.~J. Fox, C.~Williams, Next-to-leading order predictions for dark matter
+  production at hadron colliders, Phys.Rev. D87 (2013) 054030.
+\newblock \href {http://arxiv.org/abs/1211.6390} {\path{arXiv:1211.6390}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.87.054030}
+  {\path{doi:10.1103/PhysRevD.87.054030}}.
+
+\bibitem{ForumSVN_DMA}
+{SVN} repository for {POWHEG} input card for model with {$s$}-channel exchange
+  of axial vector mediator,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/Monojet_DMA/},
+  [Online; accessed 24-April-2015] (2015).
+
+\bibitem{ForumSVN_DMV}
+{SVN} repository for {POWHEG} input card for model with {$s$}-channel exchange
+  of vector mediator,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/Monojet_DMV/},
+  [Online; accessed 24-April-2015] (2015).
+
+\bibitem{ForumSVN_DMS_tloop}
+{SVN} repository for {POWHEG} input card for model with {$s$}-channel exchange
+  of scalar mediator,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/Monojet_DMS_tLoop/},
+  [Online; accessed 24-April-2015] (2015).
+
+\bibitem{ForumSVN_DMP_tloop}
+{SVN} repository for {POWHEG} input card for model with {$s$}-channel exchange
+  of pseudo-scalar mediator, coupling to the quarks through a top loop,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/Monojet_DMP_tloop/},
+  [Online; accessed 24-April-2015] (2015).
+
+\bibitem{Sjostrand:2014zea}
+T.~Sj{\"o}strand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, et~al., An
+  introduction to {PYTHIA}~8.2, Comput.Phys.Commun. 191 (2015) 159--177.
+\newblock \href {http://arxiv.org/abs/1410.3012} {\path{arXiv:1410.3012}},
+  \href {http://dx.doi.org/10.1016/j.cpc.2015.01.024}
+  {\path{doi:10.1016/j.cpc.2015.01.024}}.
+
+\bibitem{Hoche:2014kca}
+S.~Hoeche, S.~Kuttimalai, S.~Schumann, F.~Siegert, Beyond {Standard Model}
+  calculations with {Sherpa}, Eur.Phys.J. C75~(3) (2015) 135.
+\newblock \href {http://arxiv.org/abs/1412.6478} {\path{arXiv:1412.6478}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-015-3338-4}
+  {\path{doi:10.1140/epjc/s10052-015-3338-4}}.
+
+\bibitem{Frederix:2012ps}
+R.~Frederix, S.~Frixione, Merging meets matching in {MC@NLO}, JHEP 1212 (2012)
+  061.
+\newblock \href {http://arxiv.org/abs/1209.6215} {\path{arXiv:1209.6215}},
+  \href {http://dx.doi.org/10.1007/JHEP12(2012)061}
+  {\path{doi:10.1007/JHEP12(2012)061}}.
+
+\bibitem{Alwall:0706.2569}
+J.~Alwall, et~al., Comparative study of various algorithms for the merging of
+  parton showers and matrix elements in hadronic collisions, Eur.Phys.J. C53
+  (2008) 473--500.
+\newblock \href {http://arxiv.org/abs/0706.2569} {\path{arXiv:0706.2569}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-007-0490-5}
+  {\path{doi:10.1140/epjc/s10052-007-0490-5}}.
+
+\bibitem{Lonnblad:2011xx}
+L.~Lonnblad, S.~Prestel, Matching tree-level matrix elements with interleaved
+  showers, JHEP 1203 (2012) 019.
+\newblock \href {http://arxiv.org/abs/1109.4829} {\path{arXiv:1109.4829}},
+  \href {http://dx.doi.org/10.1007/JHEP03(2012)019}
+  {\path{doi:10.1007/JHEP03(2012)019}}.
+
+\bibitem{ForumSVN_TChannel_PapucciVichiZurek}
+{SVN} repository for {Madgraph} inputs with {$t$}-channel exchange of colored
+  scalar mediator, couplings to light quarks only,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/Monojet_tChannel/contributed_by_PapucciVichiZurek/},
+  [Online; accessed 27-April-2015] (2015).
+
+\bibitem{ForumSVN_TChannel_Amelia}
+{SVN} repository for {Madgraph} inputs with {$t$}-channel exchange of colored
+  scalar mediator, couplings to all quark generations,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/Monojet_tChannel/contributed_by_Amelia_Brennan/},
+  [Online; accessed 27-April-2015] (2015).
+
+\bibitem{ForumSVN_EW_DMV}
+{SVN} repository for {Madgraph} input cards for model with {$s$}-channel
+  exchange of vector mediator, for electroweak boson final states,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/EW_DMV/}, [Online;
+  accessed 15-May-2015] (2015).
+
+\bibitem{ForumSVN_DMTTBar}
+{SVN} repository for {Madgraph} inputs for model with {$s$}-channel exchange of
+  pseudo-scalar mediator, produced in association with top quarks,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/HF_S+PS/}, [Online;
+  accessed 24-April-2015] (2015).
+
+\bibitem{ForumSVN_DMSingleB}
+{SVN} repository for {Madgraph} inputs for simplified model with a colored
+  scalar mediator coupling to {DM} and b-quarks,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/HF_S+PS/}, [Online;
+  accessed 24-April-2015] (2015).
+
+\bibitem{Campbell:2003dd}
+J.~M. Campbell, R.~K. Ellis, F.~Maltoni, S.~Willenbrock, Associated production
+  of a {$Z$} boson and a single heavy quark jet, Phys.Rev. D69 (2004) 074021.
+\newblock \href {http://arxiv.org/abs/hep-ph/0312024}
+  {\path{arXiv:hep-ph/0312024}}, \href
+  {http://dx.doi.org/10.1103/PhysRevD.69.074021}
+  {\path{doi:10.1103/PhysRevD.69.074021}}.
+
+\bibitem{Maltoni:2005wd}
+F.~Maltoni, T.~McElmurry, S.~Willenbrock, Inclusive production of a {Higgs} or
+  {$Z$} boson in association with heavy quarks, Phys.Rev. D72 (2005) 074024.
+\newblock \href {http://arxiv.org/abs/hep-ph/0505014}
+  {\path{arXiv:hep-ph/0505014}}, \href
+  {http://dx.doi.org/10.1103/PhysRevD.72.074024}
+  {\path{doi:10.1103/PhysRevD.72.074024}}.
+
+\bibitem{Campbell:2005zv}
+J.~M. Campbell, R.~K. Ellis, F.~Maltoni, S.~Willenbrock, Production of a {$Z$}
+  boson and two jets with one heavy-quark tag, Phys.Rev. D73 (2006) 054007.
+\newblock \href {http://arxiv.org/abs/hep-ph/0510362}
+  {\path{arXiv:hep-ph/0510362}}, \href
+  {http://dx.doi.org/10.1103/PhysRevD.77.019903, 10.1103/PhysRevD.73.054007}
+  {\path{doi:10.1103/PhysRevD.77.019903, 10.1103/PhysRevD.73.054007}}.
+
+\bibitem{Chatrchyan:2014dha}
+{CMS Collaboration}, Measurement of the production cross sections for a {Z}
+  boson and one or more {$b$} jets in {$pp$} collisions at {$\sqrt{s} =
+  7$}~{TeV}, JHEP 1406 (2014) 120.
+\newblock \href {http://arxiv.org/abs/1402.1521} {\path{arXiv:1402.1521}},
+  \href {http://dx.doi.org/10.1007/JHEP06(2014)120}
+  {\path{doi:10.1007/JHEP06(2014)120}}.
+
+\bibitem{Chatrchyan:2013zja}
+{CMS Collaboration}, Measurement of the cross section and angular correlations
+  for associated production of a {$Z$} boson with {$b$} hadrons in {$pp$}
+  collisions at {$\sqrt{s} =$} 7~{TeV}, JHEP 1312 (2013) 039.
+\newblock \href {http://arxiv.org/abs/1310.1349} {\path{arXiv:1310.1349}},
+  \href {http://dx.doi.org/10.1007/JHEP12(2013)039}
+  {\path{doi:10.1007/JHEP12(2013)039}}.
+
+\bibitem{CMS:2015mba}
+{CMS Collaboration}, Search for {H/A} decaying into {Z+A/H}, with {Z} to {ll}
+  and {A/H} to fermion pair (2015).
+
+\bibitem{Frederix:2011qg}
+R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, R.~Pittau, et~al., {W} and
+  {$Z/\gamma*$} boson production in association with a bottom-antibottom pair,
+  JHEP 1109 (2011) 061.
+\newblock \href {http://arxiv.org/abs/1106.6019} {\path{arXiv:1106.6019}},
+  \href {http://dx.doi.org/10.1007/JHEP09(2011)061}
+  {\path{doi:10.1007/JHEP09(2011)061}}.
+
+\bibitem{Wiesemann:2014ioa}
+M.~Wiesemann, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, et~al., {Higgs}
+  production in association with bottom quarks, JHEP 1502 (2015) 132.
+\newblock \href {http://arxiv.org/abs/1409.5301} {\path{arXiv:1409.5301}},
+  \href {http://dx.doi.org/10.1007/JHEP02(2015)132}
+  {\path{doi:10.1007/JHEP02(2015)132}}.
+
+\bibitem{ForumSVN_EWMonoHiggs}
+{SVN} repository for {Madgraph} inputs for vector and scalar mediator models
+  leading to a mono-{Higgs} signature,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/EW_Higgs_all/},
+  [Online; accessed 24-April-2015] (2015).
+
+\bibitem{ForumSVN_EWMonoHiggs_2HDM}
+{SVN} repository for {Madgraph} inputs for {2HDM} model leading to a
+  mono-{Higgs} signature,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/EW_Higgs_2HDM/},
+  [Online; accessed 12-May-2015] (2015).
+
+\bibitem{Hespel:2014sla}
+B.~Hespel, D.~Lopez-Val, E.~Vryonidou, {Higgs} pair production via gluon fusion
+  in the {Two-Higgs-Doublet Model}, JHEP 1409 (2014) 124.
+\newblock \href {http://arxiv.org/abs/1407.0281} {\path{arXiv:1407.0281}},
+  \href {http://dx.doi.org/10.1007/JHEP09(2014)124}
+  {\path{doi:10.1007/JHEP09(2014)124}}.
+
+\bibitem{Baur:1989cm}
+U.~Baur, E.~N. Glover, {Higgs} boson production at large transverse momentum in
+  hadronic collisions, Nucl.Phys. B339 (1990) 38--66.
+\newblock \href {http://dx.doi.org/10.1016/0550-3213(90)90532-I}
+  {\path{doi:10.1016/0550-3213(90)90532-I}}.
+
+\bibitem{ForumSVN_EWEFTD7}
+{SVN} repository for {Madgraph} inputs for dimension-7 {EFT} models with direct
+  {DM}-{EW} boson couplings,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/EW_Fermion_D7/contributed_by_Renjie_Wang/},
+  [Online; accessed 24-April-2015] (2015).
+
+\bibitem{Nussinov:1985xr}
+S.~Nussinov, Technocosmology: could a technibaryon excess provide a 'natural'
+  missing mass candidate?, Phys.Lett. B165 (1985) 55.
+\newblock \href {http://dx.doi.org/10.1016/0370-2693(85)90689-6}
+  {\path{doi:10.1016/0370-2693(85)90689-6}}.
+
+\bibitem{Kaplan:1991ah}
+D.~B. Kaplan, A single explanation for both the baryon and dark matter
+  densities, Phys.Rev.Lett. 68 (1992) 741--743.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.68.741}
+  {\path{doi:10.1103/PhysRevLett.68.741}}.
+
+\bibitem{Banks:2010eh}
+T.~Banks, J.-F. Fortin, S.~Thomas, Direct detection of dark matter
+  electromagnetic dipole moments\href {http://arxiv.org/abs/1007.5515}
+  {\path{arXiv:1007.5515}}.
+
+\bibitem{Busoni:2014sya}
+G.~Busoni, A.~De~Simone, J.~Gramling, E.~Morgante, A.~Riotto, On the validity
+  of the effective field theory for dark matter searches at the {LHC}, part
+  {II}: Complete analysis for the {$s$}-channel, JCAP 1406 (2014) 060.
+\newblock \href {http://arxiv.org/abs/1402.1275} {\path{arXiv:1402.1275}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2014/06/060}
+  {\path{doi:10.1088/1475-7516/2014/06/060}}.
+
+\bibitem{Racco:2015dxa}
+D.~Racco, A.~Wulzer, F.~Zwirner, Robust collider limits on heavy-mediator dark
+  matter, JHEP 1505 (2015) 009.
+\newblock \href {http://arxiv.org/abs/1502.04701} {\path{arXiv:1502.04701}},
+  \href {http://dx.doi.org/10.1007/JHEP05(2015)009}
+  {\path{doi:10.1007/JHEP05(2015)009}}.
+
+\bibitem{Endo:2014mja}
+M.~Endo, Y.~Yamamoto, Unitarity bounds on dark matter effective interactions at
+  {LHC}, JHEP 1406 (2014) 126.
+\newblock \href {http://arxiv.org/abs/1403.6610} {\path{arXiv:1403.6610}},
+  \href {http://dx.doi.org/10.1007/JHEP06(2014)126}
+  {\path{doi:10.1007/JHEP06(2014)126}}.
+
+\bibitem{PDF4LHC}
+{PDF4LHC}: Recommendation for {LHC} cross section calculations,
+  \url{http://www.hep.ucl.ac.uk/pdf4lhc/}, [Online; accessed 13-June-2015]
+  (2015).
+
+\bibitem{Alwall:2011uj}
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, T.~Stelzer, {MadGraph}~5 :
+  Going beyond, JHEP 1106 (2011) 128.
+\newblock \href {http://arxiv.org/abs/1106.0522} {\path{arXiv:1106.0522}},
+  \href {http://dx.doi.org/10.1007/JHEP06(2011)128}
+  {\path{doi:10.1007/JHEP06(2011)128}}.
+
+\bibitem{Sjostrand:2006za}
+T.~Sj{\"o}strand, S.~Mrenna, P.~Z. Skands, {PYTHIA}~6.4 physics and manual,
+  JHEP 0605 (2006) 026.
+\newblock \href {http://arxiv.org/abs/hep-ph/0603175}
+  {\path{arXiv:hep-ph/0603175}}, \href
+  {http://dx.doi.org/10.1088/1126-6708/2006/05/026}
+  {\path{doi:10.1088/1126-6708/2006/05/026}}.
+
+\bibitem{Whalley:2005nh}
+M.~Whalley, D.~Bourilkov, R.~Group, The {Les Houches} accord {PDFs} ({LHAPDF})
+  and {LHAGLUE}\href {http://arxiv.org/abs/hep-ph/0508110}
+  {\path{arXiv:hep-ph/0508110}}.
+
+\bibitem{Mangano:2006rw}
+M.~L. Mangano, M.~Moretti, F.~Piccinini, M.~Treccani, Matching matrix elements
+  and shower evolution for top-quark production in hadronic collisions, JHEP
+  0701 (2007) 013.
+\newblock \href {http://arxiv.org/abs/hep-ph/0611129}
+  {\path{arXiv:hep-ph/0611129}}, \href
+  {http://dx.doi.org/10.1088/1126-6708/2007/01/013}
+  {\path{doi:10.1088/1126-6708/2007/01/013}}.
+
+\bibitem{Hirschi:2011pa}
+V.~Hirschi, R.~Frederix, S.~Frixione, M.~V. Garzelli, F.~Maltoni, et~al.,
+  Automation of one-loop {QCD} corrections, JHEP 1105 (2011) 044.
+\newblock \href {http://arxiv.org/abs/1103.0621} {\path{arXiv:1103.0621}},
+  \href {http://dx.doi.org/10.1007/JHEP05(2011)044}
+  {\path{doi:10.1007/JHEP05(2011)044}}.
+
+\bibitem{ForumSVN_monoHEFTD5}
+{SVN} repository for {Madgraph} inputs for mono-{Higgs} {EFT} models, dimension
+  4 and 5,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/EW_Higgs_D4D5/},
+  [Online; accessed 04-May-2015] (2015).
+
+\bibitem{AndreaFuksMaltoni}
+J.~Andrea, B.~Fuks, F.~Maltoni, Monotops at the {LHC}, Phys.Rev. D84 (2011)
+  074025.
+\newblock \href {http://arxiv.org/abs/1106.6199} {\path{arXiv:1106.6199}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.84.074025}
+  {\path{doi:10.1103/PhysRevD.84.074025}}.
+
+\bibitem{Agram:2013wda}
+J.-L. Agram, J.~Andrea, M.~Buttignol, E.~Conte, B.~Fuks, Monotop phenomenology
+  at the {Large Hadron Collider}, Phys.Rev. D89 (2014) 014028.
+\newblock \href {http://arxiv.org/abs/1311.6478} {\path{arXiv:1311.6478}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.89.014028}
+  {\path{doi:10.1103/PhysRevD.89.014028}}.
+
+\bibitem{Boucheneb:2014wza}
+I.~Boucheneb, G.~Cacciapaglia, A.~Deandrea, B.~Fuks, Revisiting monotop
+  production at the {LHC}, JHEP 1501 (2015) 017.
+\newblock \href {http://arxiv.org/abs/1407.7529} {\path{arXiv:1407.7529}},
+  \href {http://dx.doi.org/10.1007/JHEP01(2015)017}
+  {\path{doi:10.1007/JHEP01(2015)017}}.
+
+\bibitem{Christensen:2009jx}
+N.~D. Christensen, P.~de~Aquino, C.~Degrande, C.~Duhr, B.~Fuks, et~al., A
+  comprehensive approach to new physics simulations, Eur.Phys.J. C71 (2011)
+  1541.
+\newblock \href {http://arxiv.org/abs/0906.2474} {\path{arXiv:0906.2474}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-011-1541-5}
+  {\path{doi:10.1140/epjc/s10052-011-1541-5}}.
+
+\bibitem{ForumSVN_EWMonoTop}
+{SVN} repository for {Madgraph} inputs for mono-top models,
+  \url{https://svnweb.cern.ch/cern/wsvn/LHCDMF/trunk/models/HF_SingleTop/},
+  [Online; accessed 27-April-2015] (2015).
+
+\bibitem{Belyaev:2015tap}
+A.~Belyaev, G.~Cacciapaglia, I.~Ivanov, F.~Rojas, M.~ThomasTo appear.
+
+\bibitem{Deshpande:1977rw}
+N.~G. Deshpande, E.~Ma, Pattern of symmetry breaking with two {Higgs} doublets,
+  Phys.Rev. D18 (1978) 2574.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevD.18.2574}
+  {\path{doi:10.1103/PhysRevD.18.2574}}.
+
+\bibitem{IDMnaturalness}
+R.~Barbieri, L.~J. Hall, V.~S. Rychkov, Improved naturalness with a heavy
+  {Higgs}: An alternative road to {LHC} physics, Phys.~Rev. D74 (2006) 015007.
+\newblock \href {http://arxiv.org/abs/hep-ph/0603188}
+  {\path{arXiv:hep-ph/0603188}}, \href
+  {http://dx.doi.org/10.1103/PhysRevD.74.015007}
+  {\path{doi:10.1103/PhysRevD.74.015007}}.
+
+\bibitem{LopezHonorez:2006gr}
+L.~Lopez~Honorez, E.~Nezri, J.~F. Oliver, M.~H. Tytgat, The {Inert Doublet
+  Model}: An archetype for dark matter, JCAP 0702 (2007) 028.
+\newblock \href {http://arxiv.org/abs/hep-ph/0612275}
+  {\path{arXiv:hep-ph/0612275}}, \href
+  {http://dx.doi.org/10.1088/1475-7516/2007/02/028}
+  {\path{doi:10.1088/1475-7516/2007/02/028}}.
+
+\bibitem{ScalarMultiplet}
+T.~Hambye, F.-S. Ling, L.~Lopez~Honorez, J.~Rocher, {Scalar Multiplet} dark
+  matter, JHEP 0907 (2009) 090.
+\newblock \href {http://arxiv.org/abs/0903.4010} {\path{arXiv:0903.4010}},
+  \href {http://dx.doi.org/10.1007/JHEP05(2010)066,
+  10.1088/1126-6708/2009/07/090} {\path{doi:10.1007/JHEP05(2010)066,
+  10.1088/1126-6708/2009/07/090}}.
+
+\bibitem{IDMnewviable}
+L.~Lopez~Honorez, C.~E. Yaguna, A new viable region of the {Inert Doublet
+  Model}, JCAP 1101 (2011) 002.
+\newblock \href {http://arxiv.org/abs/1011.1411} {\path{arXiv:1011.1411}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2011/01/002}
+  {\path{doi:10.1088/1475-7516/2011/01/002}}.
+
+\bibitem{IDMgammalines}
+M.~Gustafsson, E.~Lundstr{\"o}m, L.~Bergstr{\"o}m, J.~Edsj{\"o}, Significant
+  gamma lines from {Inert Higgs Dark Matter}, Phys.~Rev.~Lett. 99 (2007)
+  041301.
+\newblock \href {http://arxiv.org/abs/astro-ph/0703512}
+  {\path{arXiv:astro-ph/0703512}}, \href
+  {http://dx.doi.org/10.1103/PhysRevLett.99.041301}
+  {\path{doi:10.1103/PhysRevLett.99.041301}}.
+
+\bibitem{Dolle:2009fn}
+E.~M. Dolle, S.~Su, The {Inert Dark Matter}, Phys.Rev. D80 (2009) 055012.
+\newblock \href {http://arxiv.org/abs/0906.1609} {\path{arXiv:0906.1609}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.80.055012}
+  {\path{doi:10.1103/PhysRevD.80.055012}}.
+
+\bibitem{IDMnu1}
+P.~Agrawal, E.~M. Dolle, C.~A. Krenke, Signals of {Inert Doublet Dark Matter}
+  in neutrino telescopes, Phys.~Rev. D79 (2009) 015015.
+\newblock \href {http://arxiv.org/abs/0811.1798} {\path{arXiv:0811.1798}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.79.015015}
+  {\path{doi:10.1103/PhysRevD.79.015015}}.
+
+\bibitem{IDMnu2}
+S.~Andreas, M.~H. Tytgat, Q.~Swillens, Neutrinos from {Inert Doublet Dark
+  Matter}, JCAP 0904 (2009) 004.
+\newblock \href {http://arxiv.org/abs/0901.1750} {\path{arXiv:0901.1750}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2009/04/004}
+  {\path{doi:10.1088/1475-7516/2009/04/004}}.
+
+\bibitem{IDMpos}
+E.~Nezri, M.~H. Tytgat, G.~Vertongen, {$e^+$} and anti-p from {Inert Doublet}
+  model dark matter, JCAP 0904 (2009) 014.
+\newblock \href {http://arxiv.org/abs/0901.2556} {\path{arXiv:0901.2556}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2009/04/014}
+  {\path{doi:10.1088/1475-7516/2009/04/014}}.
+
+\bibitem{IDMVIB}
+C.~Garcia-Cely, A.~Ibarra, Novel gamma-ray spectral features in the {Inert
+  Doublet Model}, JCAP 1309 (2013) 025.
+\newblock \href {http://arxiv.org/abs/1306.4681} {\path{arXiv:1306.4681}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2013/09/025}
+  {\path{doi:10.1088/1475-7516/2013/09/025}}.
+
+\bibitem{Goudelis:2013uca}
+A.~Goudelis, B.~Herrmann, O.~St{\r{o}}l, Dark matter in the {Inert Doublet
+  Model} after the discovery of a {Higgs}-like boson at the {LHC}, JHEP 1309
+  (2013) 106.
+\newblock \href {http://arxiv.org/abs/1303.3010} {\path{arXiv:1303.3010}},
+  \href {http://dx.doi.org/10.1007/JHEP09(2013)106}
+  {\path{doi:10.1007/JHEP09(2013)106}}.
+
+\bibitem{Burgess:2000yq}
+C.~Burgess, M.~Pospelov, T.~ter Veldhuis, The {Minimal} model of nonbaryonic
+  dark matter: A singlet scalar, Nucl.Phys. B619 (2001) 709--728.
+\newblock \href {http://arxiv.org/abs/hep-ph/0011335}
+  {\path{arXiv:hep-ph/0011335}}, \href
+  {http://dx.doi.org/10.1016/S0550-3213(01)00513-2}
+  {\path{doi:10.1016/S0550-3213(01)00513-2}}.
+
+\bibitem{Andreas:2008xy}
+S.~Andreas, T.~Hambye, M.~H. Tytgat, {WIMP} dark matter, {Higgs} exchange and
+  {DAMA}, JCAP 0810 (2008) 034.
+\newblock \href {http://arxiv.org/abs/0808.0255} {\path{arXiv:0808.0255}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2008/10/034}
+  {\path{doi:10.1088/1475-7516/2008/10/034}}.
+
+\bibitem{Arhrib:2013ela}
+A.~Arhrib, Y.-L.~S. Tsai, Q.~Yuan, T.-C. Yuan, An updated analysis of {Inert
+  Higgs Doublet Model} in light of the recent results from {LUX}, {PLANCK},
+  {AMS-02} and {LHC}, JCAP 1406 (2014) 030.
+\newblock \href {http://arxiv.org/abs/1310.0358} {\path{arXiv:1310.0358}},
+  \href {http://dx.doi.org/10.1088/1475-7516/2014/06/030}
+  {\path{doi:10.1088/1475-7516/2014/06/030}}.
+
+\bibitem{IDMLEPII}
+E.~Lundstr{\"o}m, M.~Gustafsson, J.~Edsj{\"o}, The {Inert Doublet Model} and
+  {LEP II} limits, Phys.~Rev. D79 (2009) 035013.
+\newblock \href {http://arxiv.org/abs/0810.3924} {\path{arXiv:0810.3924}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.79.035013}
+  {\path{doi:10.1103/PhysRevD.79.035013}}.
+
+\bibitem{IDMLHChinvfirst}
+Q.-H. Cao, E.~Ma, G.~Rajasekaran, Observing the {Dark Scalar Doublet} and its
+  impact on the {Standard-Model} {Higgs} boson at colliders, Phys.~Rev. D76
+  (2007) 095011.
+\newblock \href {http://arxiv.org/abs/0708.2939} {\path{arXiv:0708.2939}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.76.095011}
+  {\path{doi:10.1103/PhysRevD.76.095011}}.
+
+\bibitem{IDMdileptons1}
+E.~Dolle, X.~Miao, S.~Su, B.~Thomas, Dilepton signals in the {Inert Doublet
+  Model}, Phys.~Rev. D81 (2010) 035003.
+\newblock \href {http://arxiv.org/abs/0909.3094} {\path{arXiv:0909.3094}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.81.035003}
+  {\path{doi:10.1103/PhysRevD.81.035003}}.
+
+\bibitem{IDMtrileptons}
+X.~Miao, S.~Su, B.~Thomas, Trilepton signals in the {Inert Doublet Model},
+  Phys.~Rev. D82 (2010) 035009.
+\newblock \href {http://arxiv.org/abs/1005.0090} {\path{arXiv:1005.0090}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.82.035009}
+  {\path{doi:10.1103/PhysRevD.82.035009}}.
+
+\bibitem{IDMmultileptons}
+M.~Gustafsson, S.~Rydbeck, L.~Lopez-Honorez, E.~Lundstrom, Status of the {Inert
+  Doublet Model} and the role of multileptons at the {LHC}, Phys.Rev. D86
+  (2012) 075019.
+\newblock \href {http://arxiv.org/abs/1206.6316} {\path{arXiv:1206.6316}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.86.075019}
+  {\path{doi:10.1103/PhysRevD.86.075019}}.
+
+\bibitem{IDMhgaga1}
+A.~Arhrib, R.~Benbrik, N.~Gaur, {$H\to \gamma \gamma$} in {Inert Higgs Doublet
+  Model}, Phys.~Rev. D85 (2012) 095021.
+\newblock \href {http://arxiv.org/abs/1201.2644} {\path{arXiv:1201.2644}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.85.095021}
+  {\path{doi:10.1103/PhysRevD.85.095021}}.
+
+\bibitem{IDMhgaga2}
+B.~Swiezewska, M.~Krawczyk, Diphoton rate in the inert doublet model with a
+  125~{GeV} {Higgs} boson, Phys.Rev. D88~(3) (2013) 035019.
+\newblock \href {http://arxiv.org/abs/1212.4100} {\path{arXiv:1212.4100}},
+  \href {http://dx.doi.org/10.1103/PhysRevD.88.035019}
+  {\path{doi:10.1103/PhysRevD.88.035019}}.
+
+\bibitem{IDMposthiggs}
+A.~Goudelis, B.~Herrmann, O.~St\aa{}l, Dark matter in the {Inert Doublet Model}
+  after the discovery of a higgs-like boson at the {LHC}, JHEP 1309 (2013) 106.
+\newblock \href {http://arxiv.org/abs/1303.3010} {\path{arXiv:1303.3010}},
+  \href {http://dx.doi.org/10.1007/JHEP09(2013)106}
+  {\path{doi:10.1007/JHEP09(2013)106}}.
+
+\bibitem{IDMdileptonsII}
+G.~Belanger, B.~Dumont, A.~Goudelis, B.~Herrmann, S.~Kraml, et~al., Dilepton
+  constraints in the {Inert Doublet Model} from {Run 1} of the {LHC}\href
+  {http://arxiv.org/abs/1503.07367} {\path{arXiv:1503.07367}}.
+
+\bibitem{Kraml:2012sg}
+S.~Kraml, B.~Allanach, M.~Mangano, H.~Prosper, S.~Sekmen, et~al., Searches for
+  new physics: {Les Houches} recommendations for the presentation of {LHC}
+  results, Eur.Phys.J. C72 (2012) 1976.
+\newblock \href {http://arxiv.org/abs/1203.2489} {\path{arXiv:1203.2489}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-012-1976-3}
+  {\path{doi:10.1140/epjc/s10052-012-1976-3}}.
+
+\bibitem{Kim:2015wza}
+J.~S. Kim, D.~Schmeier, J.~Tattersall, K.~Rolbiecki, A framework to create
+  customised {LHC} analyses within {CheckMATE}\href
+  {http://arxiv.org/abs/1503.01123} {\path{arXiv:1503.01123}}.
+
+\bibitem{Cranmer:2010hk}
+K.~Cranmer, I.~Yavin, {RECAST}: Extending the impact of existing analyses, JHEP
+  1104 (2011) 038.
+\newblock \href {http://arxiv.org/abs/1010.2506} {\path{arXiv:1010.2506}},
+  \href {http://dx.doi.org/10.1007/JHEP04(2011)038}
+  {\path{doi:10.1007/JHEP04(2011)038}}.
+
+\bibitem{ATOM}
+I.-W. Kim, M.~Papucci, K.~Sakurai, A.~Weiler, {ATOM}: {Automated Testing Of
+  Models}, {to appear} (2015).
+
+\bibitem{Barducci:2014ila}
+D.~Barducci, A.~Belyaev, M.~Buchkremer, G.~Cacciapaglia, A.~Deandrea, et~al.,
+  Framework for model independent analyses of multiple extra quark scenarios,
+  JHEP 1412 (2014) 080.
+\newblock \href {http://arxiv.org/abs/1405.0737} {\path{arXiv:1405.0737}},
+  \href {http://dx.doi.org/10.1007/JHEP12(2014)080}
+  {\path{doi:10.1007/JHEP12(2014)080}}.
+
+\bibitem{PGS}
+{PGS}: simulation of a generic high-energy physics collider detector,
+  \url{http://www.physics.ucdavis.edu/~conway/research/software/pgs/pgs4-general.htm},
+  [Online; accessed 13-June-2015] (2015).
+
+\bibitem{Baak:2014wma}
+M.~Baak, G.~Besjes, D.~Côte, A.~Koutsman, J.~Lorenz, et~al., {HistFitter}
+  software framework for statistical data analysis, Eur.Phys.J. C75 (2015) 153.
+\newblock \href {http://arxiv.org/abs/1410.1280} {\path{arXiv:1410.1280}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-015-3327-7}
+  {\path{doi:10.1140/epjc/s10052-015-3327-7}}.
+
+\bibitem{INSPIRE}
+{INSPIRE}: High-energy physics literature database,
+  \url{http://inspirehep.net}, [Online; accessed 13-June-2015] (2015).
+
+\bibitem{Kraml:2013mwa}
+S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, W.~Magerl, D.~Proschofsky,
+  W.~Waltenberger, {SModelS}: a tool for interpreting simplified-model results
+  from the {LHC} and its application to supersymmetry, Eur.Phys.J. C74 (2014)
+  2868.
+\newblock \href {http://arxiv.org/abs/1312.4175} {\path{arXiv:1312.4175}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-014-2868-5}
+  {\path{doi:10.1140/epjc/s10052-014-2868-5}}.
+
+\bibitem{Kraml:2014sna}
+S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, V.~Magerl, et~al., {SModelS} v1.0: a
+  short user guide\href {http://arxiv.org/abs/1412.1745}
+  {\path{arXiv:1412.1745}}.
+
+\bibitem{Papucci:2014rja}
+M.~Papucci, K.~Sakurai, A.~Weiler, L.~Zeune, {Fastlim}: a fast {LHC} limit
+  calculator, Eur.Phys.J. C74 (2014) 3163.
+\newblock \href {http://arxiv.org/abs/1402.0492} {\path{arXiv:1402.0492}},
+  \href {http://dx.doi.org/10.1140/epjc/s10052-014-3163-1}
+  {\path{doi:10.1140/epjc/s10052-014-3163-1}}.
 
 \end{thebibliography}
