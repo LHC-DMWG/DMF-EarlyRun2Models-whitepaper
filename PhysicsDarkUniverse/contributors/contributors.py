@@ -1,6 +1,8 @@
 #!/usr/bin/python
 from collections import OrderedDict
 
+import random
+import string
 
 NameEmailInstitutionDic = {}
 
@@ -70,20 +72,35 @@ SortedNameEmailInstitutionDic = OrderedDict(sorted(NameEmailInstitutionDic.items
 
 allAuthors = ""
 for key, value in SortedNameEmailInstitutionDic.iteritems() :
+    
+    
 	firstName = key[1]
 	lastName = key[0]
 	email = value[0]
 	institution = value[1]
 	country = value[2]
 	allAuthors = allAuthors+","+firstName+" "+lastName
-    ##For submission
-    #print "\\author["+institution+"]{"+firstName+" "+lastName+"} "
+    ##For submission (mangled)
+    #if country == "skip":
+    #	print "\\author["+institution+"]{"+firstName+" "+lastName+"} "
+        #print "\ead{"+email+"}\n"
+    #else:
+        #print "\\author["+institution+", "+country+"]{"+firstName+" "+lastName+"}"
+        #print "\ead{"+email+"}\n"
+    ##For submission (mangled)
+
+    #get affiliation
+	randomLetters = random.choice(string.ascii_letters)+random.choice(string.ascii_letters)+random.choice(string.ascii_letters)+random.choice(string.ascii_letters)
+
 	if country == "skip":
-		print "\\author["+institution+"]{"+firstName+" "+lastName+"} "
-    #print "\ead{"+email+"}\n"
+		print "\\author["+randomLetters+"]{"+firstName+" "+lastName+"} "
+		print "\\address["+randomLetters+"]{"+institution+"}\n "
+        #print "\ead{"+email+"}\n"
 	else:
-		print "\\author["+institution+", "+country+"]{"+firstName+" "+lastName+"}"
-#print "\ead{"+email+"}\n"
+		#print "\\author["+institution+", "+country+"]{"+firstName+" "+lastName+"}"
+		print "\\author["+randomLetters+"]{"+firstName+" "+lastName+"} "
+		print "\\address["+randomLetters+"]{"+institution+", "+country+"}\n "
+        #print "\ead{"+email+"}\n"
 
 
 #%% or include affiliations in footnotes:
