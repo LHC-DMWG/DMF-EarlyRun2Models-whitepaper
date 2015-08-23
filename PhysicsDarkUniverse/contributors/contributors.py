@@ -70,22 +70,40 @@ SortedNameEmailInstitutionDic = OrderedDict(sorted(NameEmailInstitutionDic.items
 
 allAuthors = ""
 for key, value in SortedNameEmailInstitutionDic.iteritems() :
-	
 	firstName = key[1]
 	lastName = key[0]
 	email = value[0]
 	institution = value[1]
 	country = value[2]
 	allAuthors = allAuthors+","+firstName+" "+lastName
+    ##For submission
+    #print "\\author["+institution+"]{"+firstName+" "+lastName+"} "
+	if country == "skip":
+		print "\\author["+institution+"]{"+firstName+" "+lastName+"} "
+    #print "\ead{"+email+"}\n"
+	else:
+		print "\\author["+institution+", "+country+"]{"+firstName+" "+lastName+"}"
+#print "\ead{"+email+"}\n"
 
-print allAuthors
+
+#%% or include affiliations in footnotes:
+#%\author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+#%\ead[url]{www.elsevier.com}
+
+#%\author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
+#%\cortext[mycorrespondingauthor]{Corresponding author}
+#%\ead{support@elsevier.com}
+
+##For arXiv authorlist
+#print allAuthors
 
 
-
+##For document
 #print "\\noindent\\href{mailto:"+email+"}{"+firstName+" "+lastName+"} "
 #	if country == "skip":
 #	        print "\\emph{"+institution+"}\\\\"
 #        else:
 #	        print "\\emph{"+institution+", "+country+"}\\\\"
 
- 
+
+

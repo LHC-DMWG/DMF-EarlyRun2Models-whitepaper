@@ -7,8 +7,8 @@ also provide explicit examples  of codes and implementations (including specific
 that have been used to obtain the results in this report.
 We stress that these recommendations are based on the current
 status of publicly available codes and users should always check whether new results
-at a better accuracy have appeared in the meantime. In that case, we recommend to update
-the corresponding analyses  directly using the new releases and/or codes, and in case this would not be possible,
+at a better accuracy have appeared in the meantime. We recommend to update
+the corresponding analyses  directly using the new releases and/or codes respectively, and in case this would not be possible,
 to at least take into account the new information in the analysis (e.g., via a MC comparison with the latest predictions, 
 or by effectively using global/local $K$-factors). For all models included in this report, 
 \pythiaEight has been used to provide the parton shower simulation. Nevertheless, 
@@ -28,7 +28,7 @@ A study using POWHEG~\cite{Haisch:2013ata,Fox:2012ru} has shown that the NLO cor
 
 For the scalar and pseudoscalar models, the lowest order process
 already involves a one-loop amplitude in QCD.
-Because of the complexity of performing NLO calculations for this class of processes and in particular the absence of general methods for computing two-loop virtual contributions, only LO predictions are currently available. These can be interfaced to shower programs exactly as usual tree-level Born computations, i.e. by considering one parton multiplicity at the time
+Because of the complexity of performing NLO calculations for this class of processes and in particular the absence of general methods for computing two-loop virtual contributions, only LO predictions are currently available. These can be interfaced to shower programs exactly as usual tree-level Born computations, i.e. by considering one parton multiplicity at a time
 or by merging different parton multiplicities via CKKW or MLM schemes to generate inclusive samples with jet rates at LO accuracy.  For spin-0 mediators in the mono-jet final state,
 the top-quark loop is the most important consideration.
 The matrix element implementation with exact top-loop dependence of the \schannel spin-0 mediated DM production is available in \mcfm~\cite{Fox:2012ru,Harris:2014hga}~\footnote{Only the scalar mediator is available in the public release.} at fixed order and in \powheg~\cite{Haisch:2015ioa} and \madgraph~\cite{NewMadgraphModels} for event generation at LO+PS level. The \powheg and \mcfm implementations include the finite
@@ -37,7 +37,7 @@ The same processes are available in \madgraph v2.3 and could be made
 available in the future in codes like {\sc Sherpa+OpenLoops/GoSam}, including up to two extra partons in the final state. Samples can be merged employing CKKW, $K_T$-MLM procedures.
 %For consistency with the spin-1 generation, we recommend using \powheg.
 
-Most of the results that have been presented in this document for these processes have been obtained with \powheg interfaced to \pythiaEight, matching the state of the art calculation as of Spring 2015. For future reference, we document the specific settings needed to run the \powheg generation for the Dark Matter models so they can serve as nominal benchmarks for the early Run-2 ATLAS and CMS DM analyses. \powheg parameter cards for all models can be found on the Forum SVN repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
+Most of the results that have been presented in this document for these processes have been obtained with \powheg interfaced to \pythiaEight, matching the state of the art calculation as of Spring 2015. For future reference, we document the specific settings needed to run the \powheg generation for the dark matter models so they can serve as nominal benchmarks for the early Run-2 ATLAS and CMS DM analyses. \powheg parameter cards for all models can be found on the Forum SVN repository~\cite{ForumSVN_DMA, ForumSVN_DMV, ForumSVN_DMS_tloop, ForumSVN_DMP_tloop}.
 
 \paragraph{\powheg configuration for \schannel DM models}
 
@@ -64,9 +64,7 @@ explained below. \powheg will generate unweighted events using a sharp
 lower cut (with value \texttt{PT}) on the leading-jet \pT. Since this is a
 generation cut, the user must check that the choice of \bornktmin
 does not change the cross section for signal events passing analysis selections.
-It is good practice to use as a value in the input card a
-transverse momentum 10-20\% smaller than the final analysis selection
-on \MET{}, and check that the final result is independent, by exploring an even
+It is a good practice to use 10-20\% smaller \MET{} value in the input card than the final analysis selection, and check that the final result is independent, by exploring an even
 smaller value of \bornktmin. The drawback of using this mode is that
 it is difficult to populate well, and in a single run, both the low-\pT
 region as well as the high-\pT tail.
@@ -107,20 +105,20 @@ signal samples, and hence a threshold lower than 150 may be required.
   Q^2 - M^2 + \complexi\,M\,\Gamma
 \end{equation*}
 is used for the propagator's denominator, where Q is the virtuality of the mediator, and M and $\Gamma$ are its mass and width, respectively.
-This is the more straightforward, simple and transparent option, and it was used for the Forum studies. It should be the method of choice, unless one approaches regions of parameter space where gamma/M starts to approach order 1 values. In those cases, a more accurate modelling (or at least a check of the validity of the fixed width approach) can be achieved by using a running width: by setting the \runningwidth token to 1, \powheg uses as the denominator of the mediator’s propagator the expression
+This is the more straightforward, simple and transparent option, and it was used for the Forum studies. It should be the method of choice, unless one approaches regions of parameter space where $\Gamma/M$ starts to approach order 1 values. In those cases, a more accurate modelling (or at least a check of the validity of the fixed width approach) can be achieved by using a running width: by setting the \runningwidth token to 1, \powheg uses as the denominator of the mediator propagator the expression
 \begin{equation*}
  Q^2 - M^2 + \complexi\,Q^2\,\frac{\Gamma}{M},
 \end{equation*}
 which is known to give a more realistic description. See Ref.~\cite{Bardin:1989qr} for a discussion.
 
-\item Set the parameters defining the bounds on the invariant mass of the Dark Matter pair, \masslow and \masshigh, to -1. In this way, \powheg will assign values internally. 
+\item Set the parameters defining the bounds on the invariant mass of the dark matter pair, \masslow and \masshigh, to -1. In this way, \powheg will assign values internally. 
 \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 250000, 5, 1000000, 5 for the vector model, respectively.
 \item The minimal values for \ncallOne, \itmxOne, \ncallTwo, \itmxTwo are 100000, 5, 100000, 5 for the scalar top-loop model, respectively.
 \item When NLO corrections are included (as for instance in the
-  vector model), negative-weighted events could happen and should
+  vector model), negative-weighted events could occur and should
   be kept in the event sample, hence \withnegweights should be set to
   1. If needed, their fraction can be decreased by setting \foldsci
-  and \foldy to bigger value (2 for instance). \foldphi can be kept to
+  and \foldy to larger values (2 for instance). \foldphi can be kept to
   1.
 \item One should use the automatic calculation of systematic uncertainties associated with the choice of hard scale and PDFs as described in Section\,\ref{sec:TheoryUncertainties}.
 
@@ -155,7 +153,7 @@ For the models discussed in the previous section, it is important
 to calculate the hard process as accurately as possible in QCD.
 For many other signal models, the \MET{} signature depends more
 upon the production and decay of the mediator. In some cases, observables
-built in terms of the jets present in the final state are considered, something that assumes inclusive samples accurate in higher jet multiplicities are available.  In these cases, one can employ LO+PS simulations where different parton multiplicities are merged and then matched to parton shower, using schemes such as CKKW or MLM merging.
+built in terms of the jets present in the final state are considered, relying on the assumption that inclusive samples accurate in higher jet multiplicities are available.  In these cases, one can employ LO+PS simulations where different parton multiplicities are merged and then matched to parton shower, using schemes such as CKKW or MLM merging.
 
 Here, we consider the example of an EFT model produced in association
 with up to 2 additional QCD partons.   A Monte Carlo sample based on
@@ -170,7 +168,7 @@ that \madgraph (+\pythiaEight or {\sc HERWIG++}) and {\sc Sherpa}~\cite{Hoche:20
 In this report we have mostly employed \madgraph. 
 \madgraph provides a flexible and easy--to--use framework for implementing
 new models via the {\sc FeynRules} package.
-\madgraph can perform both LO and NLO calculations in QCD, matched/merged to parton showers~\cite{Alwall:2008qv}. For NLO ones, dedicated UFO model implementations at NLO should be used. Several UFO models at NLO are publicly available that while not developed specifically for DM, are suitable to make mode independent simulations at NLO accuracy, including multiparton merging 
+\madgraph can perform both LO and NLO calculations in QCD, matched/merged to parton showers~\cite{Alwall:2008qv}. For NLO ones, dedicated UFO model implementations at NLO should be used. Several UFO models at NLO are publicly available that although not developed specifically for DM, are suitable to make mode independent simulations at NLO accuracy, including multiparton merging 
 via the FxFx technique~\cite{Frederix:2012ps}. A dedicated DM UFO implementation 
 has been developed and it has been released as a testing version~\cite{NewMadgraphModels}.
 
@@ -376,7 +374,7 @@ well described at LO+PS level.  As a result, no special runtime configuration is
 Dedicated implementations for DM signals in this final state are available at LO+PS accuracy. 
 However, the state of the art of the simulations for $t \bar{t}$ and $b \bar{b}$ with a generic scalar and vector mediator is NLO+PS accuracy. For example, simulations for $t \bar{t}$ + scalar can be obtained via \powheg and {\sc sherpa} starting from the SM implementations. In \madgraph,  all final relevant final states, spin-0 (scalar and pseudo scalar) and spin-1, (vector and axial) are available  at NLO+PS via the dedicated NLO UFO for DM has been released in June 2015~\cite{NewMadgraphModels}).
 
-In the work of this Forum, simulations for the $t \bar{t}$ and $b \bar{b}$ signatures of the scalar mediator model have been 
+Within the scope of the Forum, simulations for the $t \bar{t}$ and $b \bar{b}$ signatures of the scalar mediator model have been 
 generated starting from a leading order UFO with \madgraph 2.2.2, using \pythiaEight for the parton shower. 
 The UFO file and parameter cards that will be used as benchmarks 
 for early Run-2 searches in these final states can be found on the Forum SVN repository~\cite{ForumSVN_DMTTBar}.
@@ -389,10 +387,10 @@ The corresponding UFO and parameter files can be found on the Forum SVN reposito
 In the case of $b \bar{b}$ final state an additional care should be taken when choosing the flavor scheme 
 generation and whether quarks should be treated as massive or massless.
 
-The production of DM+$b\bar{b}$, Dark Matter in association with $b$ jets via a decay of a (pseudo) scalar boson, 
+The production of DM+$b\bar{b}$, dark matter in association with $b$ jets via a decay of a (pseudo) scalar boson, 
 is dominated in simplified mediator models by the gluon-gluon initiated production, similar to the production of 
 Z+$b\bar{b}$ at the LHC. The Z+$b\bar{b}$ process has been studied in detail in the Z(ll)+$b$-jets final state,  
-which can be used to validate both the modeling of DM+bb and, its main background, Z(vv)+$b\bar{b}$. 
+which can be used to validate both the modelling of DM+bb and, its main background, Z($\nu\nu$)+$b\bar{b}$. 
 In this context, the $p_\textrm{T}$ of the Z boson is related to the observed MET, whereas the $b$-jet kinematics 
 determines the ratio of mono-$b$/di-$b$ signatures in the detector.
 
@@ -403,8 +401,8 @@ The production cross section of the Z+$b\bar{b}$ process can be calculated in th
 where b quarks are assumed massless, and the 'four-flavor scheme', where massive b quarks are 
 used~\cite{Campbell:2003dd,Maltoni:2005wd,Campbell:2005zv}.
 Data slightly favour the cross-section predictions in the five-flavor scheme~\cite{Chatrchyan:2014dha} for the 1 $b$-jet signature. 
-In this document we have preferred the 5-flavor scheme due to its simplicity and 
-cross sections and models in the 5-flavor scheme are available in the repository. 
+In this document we have preferred the 5-flavor scheme due to its simplicity and  
+cross section agreement within the SM. 
 The PDF used to calculate these cross section is NNPDF3.0 (lhaid 263000). 
 
 On the other hand, both data~\cite{Chatrchyan:2014dha,Chatrchyan:2013zja,CMS:2015mba} 
