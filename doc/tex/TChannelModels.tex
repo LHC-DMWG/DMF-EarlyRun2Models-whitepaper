@@ -1,9 +1,9 @@
 %\svnidlong
-%{$HeadURL: svn+ssh://doglioni@svn.cern.ch/reps/LHCDMF/trunk/doc/tex/TChannelModels.tex $}
-%{$LastChangedDate: 2015-06-30 22:05:35 +0200 (Tue, 30 Jun 2015) $}
-%{$LastChangedRevision: 434 $}
-%{$LastChangedBy: doglioni $}
-%\svnid{$Id: TChannelModels.tex 434 2015-06-30 20:05:35Z doglioni $}
+%{$HeadURL$}
+%{$LastChangedDate$}
+%{$LastChangedRevision$}
+%{$LastChangedBy$}
+%\svnid{$Id$}
 
 % text based on initial versions from
 % Amelia Brennan (amelia.jean.brennan@cern.ch),
@@ -73,17 +73,9 @@ The state of the art for calculating these models is LO+PS, and the implementati
 multi-parton merging has been studied in detail~\cite{Maltoni:2015twa,deAquino:2012ru,Alwall:2008qv,Papucci:2014iwa},
 and further studies should be undertaken prior to generating signal samples for early Run-2 LHC searches. 
 
-%\Todo{What about Tait model?}
-%\vspace{5mm}
 
 The leading-order processes involved in \MET{}+jet production are shown
 in Fig. \ref{fig:tchannelMonojet}. 
-%Thus, mono-jet production via $\phi_{(3),u}$ is not possible at
-%this order, while production through $\phi_{(3),d}$ is suppressed by
-%the $b$ parton PDF.
-%fermion(s).
-%CD: probably not needed? It's clear we need all three quarks. 
-%However, coupling to the third generation is required by MFV. 
 This model can also give a signal in the \MET + di-jet
 channel when, for example, the \chiDM is exchanged in the
 \tchannel and the resulting $\phi$ pair each decay to a jet +
@@ -100,7 +92,6 @@ of $\chiDM$ is strongly dependent upon the Dirac fermion assumption.
 For a Majorana fermion, $q\bar q,\bar q\bar q,$ and $qq$ production
 would be possible with the latter having a pronounced enhancement
 at the LHC.
-%\Todo{Get clarification of the case similar to a top squark -> will be later}
 
 This model is similar to the simplified model considered in SUSY searches, 
 implemented as the MSSM with only light squarks and
@@ -110,21 +101,12 @@ weak scale ($g\ll 1$).
 In the MSSM, most of these processes are sub-dominant, even
 if resonantly enhanced, because the production is proportional
 to weak couplings.
-%SM: not true.  Little explicit optimization.
-%% A second, crucial different with respect to the MSSM is the
-%% contribution from diagrams involving the exchange or production of a
-%% single squark $\phi$ and the importance of off-shell $\phi$. Searches for
-%% supersymmetry signals are typically optimised for squark pair
-%% production, since the equvialent of the DM coupling $g$ is constrained
-%% to be very small within the MSSM.
 In the more general theories
 considered here, $g$ is free to take on large values of order 1 or
 more, and thus diagrams neglected in MSSM simulation can occur at a
 much higher rate here. While constraints from SUSY jets+\MET analyses
 on MSSM models can be recast to apply to the specific model in this report, 
 DM searches should also directly test their sensitivity to the MSSM benchmark models.
-%study analyses directly optimized for the diagrams which
-%are relevant for large $g$.
 
 \begin{figure}
   \unitlength=0.0043\linewidth
@@ -385,7 +367,6 @@ in the time-frame of the conclusions of this Forum. Further implementation detai
 
 As for the \schannel models, we adopt the simplifying assumption that the mediator masses and 
 couplings are equal for each flavor and handedness. 
-%Coupling to the third generation breaks the MFV assumption and is thus forbidden.
 The free parameters are then
 
 \begin{equation}
@@ -406,22 +387,12 @@ $\mDM$ and $\Mphi$. The viable ranges of both parameters nearly
 coincide with the scan proposed for the \schannel. For the early Run-2 searches, we
 recommend to generate and fully simulate a subset of the \schannel mono-jet grid that accounts
 for the on-shell and off-shell regions.
-%Sentence not needed? 
-%Reshuffled after Tongyan's comments.
-%In the heavy mediator limit, the kinematic distributions depend
-%on the coupling through the effect on the minimal
-%mediator width. 
 In contrast to the \schannel case, the
 bounds one obtains from \MET{}+X searches depend strongly on the width
 of the mediator, as is visible in Figs.~5 and 6 of
 Ref.~\cite{Papucci:2014iwa} and in Fig.~\ref{fig:monojet_tchannel} (a), 
 except in the heavy mediator limit ($\Mphi \approx 2$\,TeV). This figure has been obtained applying
 a simplified analysis selection (cuts on the leading jet \pT$>$150 GeV and $\eta <$ 2.8, \MET{}$>$150 GeV.) using MadAnalysis~\cite{Conte:2014zja,Dumont:2014tja}.
-%In the heavy mediator limit, the rates of the first three diagrams of
-%Fig.~\ref{fig:tchannelMonojet} scale as one with the coupling $g$. 
-%A scan over the width was not available for this report.  Thus we recommend scanning a range of 
-%possible widths as discussed in a more-limited way for the \schannel mono-jet, spanning from the minimal 
-%width to a value approaching the particle limit (for example, $\Gamma \approx \Mphi/3$ in Ref.~\cite{Papucci:2014iwa}).
 Figure~\ref{fig:monojet_tchannel} (b) also shows that, if the DM mass is low and the mediator is produced on-shell and its width is narrow,
 the cross-section is dominated by $qg \rightarrow q\chi\chi$ diagram. The mediator energy is then
 split evenly between the light DM particles and the quark, leading to a broad enhancement at \mMed/2. 
@@ -466,7 +437,7 @@ when a parton shower is employed together with multiparton matching.
 			500          &              &     &     &     &     &        &  2000    & 3           \\
 			\hline
 			1000           &             &     &     &    &     &  1100  &          & 3, 4$\pi$ \\
-			1000           &             &     &     &    &     &        & 2000     & 4$\pi$ \\
+			1000           &             &     &     &    &     &        & 2000     & 3 \\
 			\hline
 		\end{tabular}
 	}
@@ -520,24 +491,6 @@ The discussion of the parameter scan for the \tchannel model
 in the case of signatures including EW bosons
 parallels that of the monojet case for mediator and DM masses,
 but no kinematic dependence on the width is observed, so a coupling scan is not needed. 
-%with the difference that in this case the kinematics does 
-%not depend on the width. 
-
-%\begin{figure}[h!]
-%	\centering  
-%	\includegraphics[width=0.95\textwidth]{figures/EW/monoZhad_TChannel/metPt_Amelia_Normalized.png}
-%	\caption{Acceptance for the hadronic Z+\MET final state,
-%		for the simplified model with a colored scalar mediator exchanged in the $t-$channel, for different coupling values.}
-%	\label{fig:TChan_EW_Zhad_acc}
-%\end{figure}
-
-%\newthought{Implementation}
-%
-%The \madgraph implementation of the Ref.~\cite{Papucci:2014iwa} is
-%available from the Forum repository~\cite{ForumSVN_TChannel}, following the
-%matching and merging prescription described in its Section II and
-%Appendix A.
-%
 
  \subsection{\texorpdfstring{Additional considerations for signatures with $b-$quarks + \MET}{Additional considerations for signatures  with b-quarks + \MET}}
  \label{sec:singleb}
