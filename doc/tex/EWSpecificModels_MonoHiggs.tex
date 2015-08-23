@@ -1,10 +1,3 @@
-%\svnidlong
-%{$HeadURL: $}
-%{$LastChangedDate: $}
-%{$LastChangedRevision: $}
-%{$LastChangedBy: $}
-%\svnid{$Id: $}   
-
 Three benchmark simplified models \cite{Carpenter:2013xra,Berlin:2014cfa} 
 are recommended for Higgs+\MET searches:
 \begin{itemize}
@@ -168,8 +161,8 @@ and DM mass of 1~\tev for all models.
 		\label{fig:METSimpMonoHiggs}}
 \end{figure}
 
-Predictions for this class of models have been so far considered at LO+PS, even though they could be extended to NLO+PS in the near future. The studies in this Section
-have been performed using a model within \madgraph v2.2.3, interfaced to \pythia 8 for the parton shower.  
+Predictions for this class of models have been so far considered at LO+ Parton Shower (PS)\textcolor{red}{check this}, even though they could be extended to NLO+PS in the near future. The studies in this Section
+have been performed using a model within \madgraph v2.2.3, interfaced to \pythia 8 \textcolor{red}{any chance of getting exact pythia version?} for the parton shower.  
 The implementation details for these models are discussed in Section~\ref{sec:monoHImplementation}.
 
 \subsection{\MET+Higgs from a baryonic \Zprime}
@@ -184,11 +177,7 @@ The interactions between the \Zprime, the quarks and the DM are described by
 the following Lagrangian:   
 
 \be \label{ZprimeDM}
-%%\mathscr{
 	\mathcal{L} =  \gq  \bar q \gamma^\mu q  Z_\mu' +
-%
-%\left\{ \begin{array}{cc}
-%	%i  \gDM  \chiDM^\dagger \smash{ \overset{\leftrightarrow}{\partial^\mu}}  \chiDM  \Zprime_\mu + \gDM^2 |\chiDM|^2 \Zprime_\mu Z^{\prime\mu} & {\rm scalar}  
 	 \gDM  \bar\chiDM \gamma^\mu \chiDM Z_\mu' .
 \ee
 
@@ -218,11 +207,7 @@ Baryonic Higgs vacuum expectation value.
 %the field strengths of $Z$ and $Z'$: this is a free parameter, that is set to be small
 %in the model considered for mono-Higgs signatures. 
 
-In its most general form, this model can contribute to mono-Z signals due to the \Zprime mixing with the Z or photon. Note that EWSB and $ U(1)_B $ breaking do not lead to this mixing at tree-level. Instead, kinetic mixing occurs between the $ U(1)_Y $ and $ U(1)_B $ gauge bosons due to the gauge invariant term $ F^{\mu\nu}_Y F_{B\mu\nu} $. This mixing is a free parameter which we assume to be small in order to focus on the mono-Higgs signature. Mixing may also occur due to radiative corrections, however this is model dependent so we choose to ignore this here.
-
-%Left for later
-%	1- Mention sensitivity difference wrt monojet? 
-%	2- Mention why we don't consider the dark Z model?]}
+In its most general form, this model can contribute to mono-Z signals due to the \Zprime mixing with the Z or photon. Note that EWSB and $ U(1)_B $ breaking do not lead to this mixing at tree-level. Instead, kinetic mixing occurs between the $ U(1)_Y $ and $ U(1)_B $ gauge bosons due to the gauge invariant term $ F^{\mu\nu}_Y F_{B\mu\nu} $. This mixing is a free parameter which we assume to be small in order to focus on the mono-Higgs signature. Mixing may also occur due to radiative corrections, however we choose to ignore this here as it is model dependent.
 
 The predictions of the model depend upon the two additional
 parameters beyond an \schannel simplified model, namely the
@@ -264,7 +249,7 @@ obtained through rescaling by the appropriate cross sections.
 Figs~\ref{fig:VectorHbb_100} and ~\ref{fig:VectorHbb_1000} show the kinematic distributions for the two leading jets
 in the $H \to \bar b b$ decay channel, for two values of the mediator mass and varying the DM mass.  
 
-Analyses should perform further studies, beyond those studies performed for the forum, 
+Experimentalists should perform further studies, beyond those studies performed for the forum, 
 to estimate the reach of the analysis with respect to all points in the grid and therefore decide 
 on a smaller set of grid points to be generated.
 
@@ -272,7 +257,7 @@ on a smaller set of grid points to be generated.
 	\includegraphics[width=0.75\linewidth]{figures/EW/monoH/z_gdm_MET_et_Log}\\
 	\includegraphics[width=0.75\linewidth]{figures/EW/monoH/z_ratio_MET_et_Log}
 	\caption{Missing transverse momentum distributions at generator level in the vector 
-		mediator scenario for different values of: the mediator-dark matter coupling \gDM (left),
+		mediator scenario for different values of: the mediator-DM coupling \gDM (left),
 		and the coupling between the mediator and the SM-like Higgs boson, scaled by the mediator mass, 
 		$g_{h \Zprime \Zprime}/m_{\Zprime}$ (right).
 		\label{fig:metVectorCoupling}}
@@ -282,7 +267,7 @@ on a smaller set of grid points to be generated.
 	\includegraphics[width=0.75\linewidth]{figures/EW/monoH/zprime_100_MET_et_Log}\\
 	\includegraphics[width=0.75\linewidth]{figures/EW/monoH/zprime_1000_MET_et_Log}
 	\caption{Missing transverse momentum distributions at generator level in the vector 
-		mediator scenario: for different values of the dark matter mass \mDM 
+		mediator scenario: for different values of the DM mass \mDM 
 		and a mediator mass of \mmed = 100~\gev (left) and \mmed = 1~\tev (right).
 		\label{fig:metVectorMass} }
 \end{figure}
@@ -304,14 +289,6 @@ on a smaller set of grid points to be generated.
 		\label{fig:VectorHbb_100}}
 \end{figure}
 
-%	\hfill
-%	\subfloat[Leading $b-$jet transverse momentum]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-%	}
-%	\hfill
-%	\subfloat[Leading $b-$jet pseudorapidity]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/zpzp100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-%	}
 
 \begin{figure}[htpb!]
 	\centering
@@ -321,15 +298,6 @@ on a smaller set of grid points to be generated.
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/zpzp1000/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}\hfill
-%	\hfill
-%	\subfloat[Leading $b-$jet transverse momentum]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-%	}
-%	\hfill
-%	\subfloat[Leading $b-$jet pseudorapidity]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/zpzp1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-%	}
-%	\hfill
 	\subfloat[\text{Angular separation of the two leading $b$-jets}]{
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/zpzp1000/truth_bb_deltar} %\label{fig:met_cmp_low}
 	}
@@ -390,11 +358,11 @@ due to the $h S^2$ vertex.
 The model is described by five parameters: 
 
 \begin{enumerate}
-	\item the Yukawa coupling of heavy scalar to dark matter, \gDM (also referred to as $y_\chiDM$) 
+	\item the Yukawa coupling of heavy scalar to DM, \gDM (also referred to as $y_\chiDM$) 
 	\item the mixing angle between heavy scalar and SM-like Higgs boson, $\sin\theta$;
 	\item the new physics coupling, $b$;
 	\item mass of heavy scalar, $m_{S}$, also termed \mmed;
-	\item mass of dark matter. \mDM;
+	\item mass of DM. \mDM;
 	%(also referred to as $m_{\.chiDM}$)
 \end{enumerate}
 
@@ -408,25 +376,21 @@ for the parameter scan in this model: we recommend to set $\sin\theta = 0.3$.
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/s_gdm_MET_et_Log}
 		\caption{Missing transverse momentum distributions at generator level in the scalar 
 			mediator scenario, for different values of: the new physics coupling $g_b$ (left),
-			and the mediator-dark matter coupling \gDM (right).
+			and the mediator-DM coupling \gDM (right).
 			\label{fig:metScalarCoupling}}
 	\end{center}
 \end{figure}
 
 Figure~\ref{fig:metScalarCoupling2} shows that
-there is no dependence of the kinematics from the value of this angle, and different values can be obtained via rescaling
+the kinematics does not depend on the value of this angle, and results for different values can be obtained via rescaling
 the results for this mixing angle according to the relevant cross-section. It can also be observed from Figures~\ref{fig:metScalarMass} and~\ref{fig:metScalarCoupling} 
 that the kinematics of this model follows that of the equivalent jet+\MET model: only small changes are observed
 in the on-shell region, while the relevant distributions diverge when the mediator is off-shell. 
 For this reason, the same grid in \mmed, \mdm as for the scalar mediator
 of the jet+\MET search (Table~\ref{tab:mDMmMedScan_SP}) is chosen as a starting point. 
-%\Todo{Estimate the sensitivity and possibly prune parameter scan.}
 The Yukawa coupling to DM $y_{DM}$ is set to 1, the 
 new physics coupling between scalar and SM Higgs $b$ = 3. Results for other values can be obtained via a 
 rescaling of the results for these parameters. 
-%More detailed studies are required to estimate the reach of the analysis with respect to all points in the grid
-%and therefore decide on a smaller set of grid points to be generated; 
-%those are left to the individual analyses. 
 
 
 
@@ -444,7 +408,7 @@ rescaling of the results for these parameters.
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/scalar_100_MET_et_Log}\\
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/scalar_1000_MET_et_Log}
 		\caption{Missing transverse momentum distributions at generator level in the scalar 
-			mediator scenario: for different values of the dark matter mass \mDM 
+			mediator scenario: for different values of the DM mass \mDM 
 			and a mediator mass of $\mMed = 100~\gev$ (left) and $\mMed = 1~\tev$ (right).
 			\label{fig:metScalarMass}}
 	\end{center}
@@ -462,14 +426,6 @@ in the $H \to \bar b b$ decay channel, for two values of the mediator mass and v
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/scalar100/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}\hfill
-%	\hfill
-%	\subfloat[Leading $b-$jet transverse momentum]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-%	}
-%	\hfill
-%	\subfloat[Leading $b-$jet pseudorapidity]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/scalar100/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-%	}
 	\subfloat[Angular distance between the two leading $b-$jets]{
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/scalar100/truth_bb_deltar} %\label{fig:met_cmp_low}
 	}
@@ -488,14 +444,6 @@ in the $H \to \bar b b$ decay channel, for two values of the mediator mass and v
 	\subfloat[Leading $b-$jet pseudorapidity]{
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/scalar1000/truth_leading_b_eta} %\label{fig:met_cmp_low}
 	}
-%	\hfill
-%	\subfloat[Leading $b-$jet transverse momentum]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_pt} %\label{fig:met_cmp_high}
-%	}
-%	\hfill
-%	\subfloat[Leading $b-$jet pseudorapidity]{
-%		\includegraphics[width=0.95\linewidth]{figures/EW/monoH/scalar1000/truth_subleading_b_eta} %\label{fig:met_cmp_low}
-%	}
 	\hfill
 	\subfloat[Angular distance between the two leading $b-$jets]{
 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/scalar1000/truth_bb_deltar} %\label{fig:met_cmp_low}
@@ -515,7 +463,7 @@ $A^0$ in the 2HDM framework, which in turn decays to a DM pair. This model is
 represented in the diagram in Fig. \ref{fig:feyn_prod_monoH} (b).
 
 
-The motivation for coupling the dark matter to the pseudoscalar is that dark matter coupling to a Higgs or \Zprime boson is generically 
+The motivation for coupling the DM to the pseudoscalar is that DM coupling to a Higgs or \Zprime boson is generically 
 constrained by other signal channels and direct detection.
 A reason to consider this model
 is that it has different kinematics  due to the on-shell \Zprime production, 
@@ -523,7 +471,7 @@ where for heavy \Zprime masses the \MET and $p_T$ spectra are much harder.
 This model can satisfy electroweak precision tests and constraints from dijet resonance searches, 
 and still give a potentially observable Higgs+\MET signal.
  
- This model comprises two doublets, where $\Phi_u$ couples to up-type quarks and $\Phi_d$ couples to down-type
+The model comprises of two doublets, where $\Phi_u$ couples to up-type quarks and $\Phi_d$ couples to down-type
  quarks and leptons:
 
  \begin{equation}
@@ -551,12 +499,10 @@ and still give a potentially observable Higgs+\MET signal.
  %FIXME: this is an external constrain that may or may not be included 
 %The masses of the remaining scalars $H, A^0, H^\pm$ are assumed to be 
 %around or above $300$~\gev, respecting $b \to s \gamma$ constraints \cite{Branco:2011iw}.
-We take $\alpha = \beta - \pi/2$, in the 
-%alignment 
+We take $\alpha = \beta - \pi/2$, in the alignment 
 limit where $h$ has SM-like couplings to fermions and 
 gauge bosons as per Ref.~\cite{Craig:2013hca}, and $\tan{\beta} \ge 0.3$ 
 as implied from the perturbativity of the top Yukawa coupling. 
-  %For the $ b \bar{b}$ decay channel, the signature of the signal we are searching for is a pair of boosted WIMPs recoiling against two $b$ jets. 
 The Higgs vacuum expectation values lead to $Z-\Zprime$ mass mixing, with a small mixing parameter given by 
  \begin{align}
  \epsilon & \equiv \frac{1}{M_{\Zprime}^2 - M_Z^2} \frac{g g_z}{2 \cos{\theta_w}} ( z_d v_d^2 + z_u v_u^2) \nonumber \\
@@ -572,7 +518,6 @@ The Higgs vacuum expectation values lead to $Z-\Zprime$ mass mixing, with a smal
 The production cross section for this model scales as $(g_z)^2$, as the decay width for this process
 to leading order in $\epsilon$ (Eq.~\ref{eq:epsilon}) is
 \begin{equation}
-%\Gamma_{\Zprime \to h A^0} =  (g_z \cos \alpha \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
 \Gamma_{\Zprime \to h A^0} =  (g_z \sin \beta \cos \beta)^2 \frac{|p|}{24 \pi} \frac{|p|^2}{M_{\Zprime}^2}.
 \end{equation}
 where the center of mass momentum for the decay products
@@ -580,7 +525,6 @@ $\displaystyle |p| = \frac{1}{2 M_{\Zprime}} \sqrt{ (M_{\Zprime}^2 - (m_h + m_{A
 (M_{\Zprime}^2 - (m_h - m_{A^0})^2)}$.
 The $\Zprime$ can also decay to $Zh$, leading to the same signature if the $Z$ decays invisibly. The partial width for this decay is:
 \begin{equation}
-%\Gamma_{Z' \to hZ}  = (g_z \cos \alpha \sin \beta)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
 \Gamma_{Z' \to hZ}  = (g_z \sin \beta^2)^2 \frac{|p|}{24 \pi} \left( \frac{ |p|^2 }{M_{Z'}^2} + 3 \frac{M_Z^2}{M_{Z'}^2} \right),
 \end{equation}. We recommend to generate these two decays separately and combine them at a later stage. 
 
@@ -646,8 +590,7 @@ we recommend to fix $\tan{\beta}$ to unity in the signal generation.
 Similarly, variations of $g_z$ do not lead to any kinematic changes. 
 The value of $g_z$ for a given $M_{\Zprime}$ and $\tan \beta$ can be set according to the maximum value allowed by electroweak global 
 fits and dijet constraints, as described in~\cite{Berlin:2014cfa}. Since this parameter does not influence the kinematics, 
-we leave it up to individual analyses on whether they generate benchmark points only according to these external constraints.
-%\textbf{[TODO: add link to section as in summary. This is the same sentence we will put in for the mono-b model]}.   
+we leave it up to individual analyses to decide whether they generate benchmark points only according to these external constraints.
 %For \Zprime masses below $\sim 1.3$~\tev and larger $\tan \beta$, the $\rho_0$ constraint on $g_z$ is stronger than 
 %dijet limits, while for $\tan \beta \lesssim 0.75$,
 %the dijet constraints dominate even at low \Zprime masses. 
@@ -674,7 +617,7 @@ as long as $\mDM<M_{A^0}/2$ so that $A^0$ production is on-shell, as shown in Fi
   		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/zp2hdm_a0_300_MET_et_Log}
   		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log}
   		\caption{Missing transverse momentum distributions at generator level in the \Zprime+2HDM 
-  			scenario for different values of the dark matter mass \mDM, with 
+  			scenario for different values of the DM mass \mDM, with 
   			$m_{\Zprime}$ = 1~\tev and $m_{A^0}$ = 300~\gev (left) and $m_{A^0}$ = 1~\tev (right).
   			\label{fig:zprimeDecay}}
   \end{figure}
@@ -700,9 +643,6 @@ The kinematic distributions with varying $M_{\Zprime}$ for fixed $M_{A^0}$ are s
  	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
  		\includegraphics[width=0.8\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_dphi12}
  	}
-% 	\subfloat[Dijet invariant mass]{
-% 		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_mbb}
-% 	}
  	
  	\caption{Kinematic distributions of the signal process varying $M_{\Zprime}$, for $\mDM=100$~\gev, $M_{A^0}=300$~\gev.}
  	\label{fig:DMH_mzp}
@@ -720,9 +660,6 @@ The kinematic distributions with varying $M_{\Zprime}$ for fixed $M_{A^0}$ are s
    	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
    		\includegraphics[width=0.8\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_dphi12}
    	}
-%   	\subfloat[Dijet invariant mass]{
-%   		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_mbb}
-%   	}
    	\caption{Kinematic distributions of the signal process varying $M_{A^0}$, for $\mDM=100$~\gev, $M_{\Zprime}=1000$~\gev.}
    	\label{fig:DMH_ma0}
    \end{figure}
@@ -735,8 +672,6 @@ The kinematic distributions with varying $M_{\Zprime}$ for fixed $M_{A^0}$ are s
  \end{equation}
 The values for the \Zprime masses scanned for those samples should follow those of the previous samples, 
 namely values of $M_{\Zprime}=600, 800, 1000, 1200, 1400$~\gev.  This signal process has no $M_A$ dependence.
-%\Todo{What about visible decays of Z?   And isn't monojet still more sensitive? CD: monojet yes, 
-%but for the dijet decays we are asking the same questions for the Z' vector model and I don't think we should worry more here than there.}
  
 \begin{figure}[htpb!]
   	\centering
@@ -750,9 +685,6 @@ namely values of $M_{\Zprime}=600, 800, 1000, 1200, 1400$~\gev.  This signal pro
   	\subfloat[$\Delta\phi$ distance between the two $b-$ jets]{
   		\includegraphics[width=0.8\linewidth]{figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphi12}
   	}
-%  	\subfloat[Dijet invariant mass]{
-%  		\includegraphics[width=0.75\linewidth]{figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_mjj}
-%  	}
   	\caption{Kinematic distributions of $\Zprime \to A^0\,h$ exclusive production, $\Zprime \to Zh$ exclusive production and \Zprime inclusive production for $M_{\Zprime}=1000$~\gev and $M_{A^0}=300$~\gev}
   	\label{fig:DMH_zpincl}
 \end{figure}
