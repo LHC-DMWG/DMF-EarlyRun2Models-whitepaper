@@ -14,10 +14,6 @@ due to the choice of the modeling of the parton shower.
 This Chapter provides technical details on how scale and PDF uncertainties can be assessed 
 for events generated with \powheg and \madgraph.
 
-%\Todo{This section describes the technical details of how to vary
-%  input parameters, but it does not describe the overall strategy of
-%  what parameters to vary or by how much. SL.: We are not going to reach a conclusion on this; we could still have a pdf recommendation, maybe?
-%  {\bf [Comment on proper PDF sets to use, concerns about sea quark PDF in b-initiated diagrams (perhaps the latter belongs in the b-flavored DM section]}
 %  }
 
 
@@ -43,8 +39,7 @@ PDFs or scale choice, after an event file has been generated, a line
 \begin{verbatim}
    compute_rwgt 1 
 \end{verbatim}
-should be added in the input file along with the change in parameters
-that is desired. For instance, \texttt{renscfact} and
+should be added in the input file along with the desired change in parameters. For instance, \texttt{renscfact} and
 \texttt{facscfact} allow one to study scale variations on the
 renormalization and factorization scales around a central value. By
 running the program again, a new event file will be generated, named
@@ -118,7 +113,7 @@ The requirements of the package as inputs are :
 \syscalc supports all leading order computations generated in \madgraph including fixed-order computation and matched-merged computation performed in the MLM scheme~\cite{Mangano:2006rw}.
 \madgraph stores additional information inside the event in order to have access to all the information required to compute the convolution of the PDFs with the matrix element for the various supported systematics.
 
-Below follows an example configuration file which could serve as an example:\\[2mm]
+An example configuration file is as follows:\\[2mm]
 
 {\footnotesize
 \texttt{\# Central scale factors \\
@@ -188,7 +183,7 @@ For each step in the history of the radiation (associated to a scale $\mu_i = k_
 \begin{equation}
 \mathcal{W}^{\rm FSR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)}  * \mathcal{W}_{\rm orig},
 \end{equation}
-and to the following expression for Initial State Radiation  (ISR), associated to a scale $\mu_i$ and fraction of energy $x_i$:
+and to the following expression for Initial State Radiation (ISR), associated to a scale $\mu_i$ and fraction of energy $x_i$:
 \begin{equation}
 \mathcal{W}^{\rm ISR}_{\rm new} = \frac{ \alpha_s (\Delta* \mu_i)} { \alpha_s (\mu_i)} \frac{ \frac{f_a(x_i,\Delta*\mu_i)}{f_b(x_i,\Delta*\mu_{i+1})}} { \frac{f_a(x_i, \mu_i)}{f_b(x_i, \mu_{i+1})} }
   *\mathcal{W}_{\rm orig},
