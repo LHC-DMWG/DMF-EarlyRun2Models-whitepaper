@@ -432,13 +432,15 @@ either flavor scheme used for DM+$b\bar{b}$. In our generation we have used  NNP
 \section{\texorpdfstring{Implementation of specific models for $V+\MET$ analyses}{Implementation of specific models for V+MET analyses}}
 
 \subsection{Model implementation for mono-Higgs models}
-\label{sub:monoHiggs}
+\label{sec:monoHImplementation}
 
 Currently, simulations for most of these models are available via LO UFO implementations, allowing event generation at the 
 LO+PS accuracy. We note, however, that the inclusion of NLO corrections would be possible but was not available in time for the conclusion of these studies. In \madgraph, for example, this amounts to simply upgrading the currently employed UFO models to NLO. Simulation of  loop-induced associated production of DM and Higgs is also possible with the exact top-quark mass dependence. In \madgraph, for example, this can be obtained from the NLO UFO SM and 2HDM implementations. 
 
-In this work all three Higgs+\MET models have been generated at leading
-order with \madgraph 2.2.2, using \pythiaEight for the parton shower. No merging procedure has been employed.
+In this work the first two of the three Higgs+\MET models have been generated at leading
+order with \madgraph 2.2.3, using \pythiaEight for the parton shower. The 2HDM model
+has been generated with  \madgraph v5.1.5.12, interfaced to \pythia 6 for the parton shower. 
+No merging procedure has been employed.
 The LO UFO implementations of the scalar and vector models that will be used as early Run-2 benchmarks can be found on the Forum SVN  
 repository~\cite{ForumSVN_EWMonoHiggs}, while the 2HDM model can be found at this link~\cite{ForumSVN_EWMonoHiggs_2HDM}.
 
