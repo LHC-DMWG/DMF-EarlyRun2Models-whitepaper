@@ -14,55 +14,53 @@
 \BOOKMARK [2][-]{subsection.2.3}{Colored scalar mediator, t-channel exchange}{section.2}% 14
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Parameter scan}{subsection.2.3}% 15
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Additional considerations for V+E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T signatures}{subsection.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.4}{Additional considerations for signatures with b-quarks + E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T}{section.2}% 17
-\BOOKMARK [1][-]{section.3}{ Spin-2 mediator}{}% 18
-\BOOKMARK [1][-]{section.4}{Presentation of results for reinterpretation of s-channel mediator models}{}% 19
-\BOOKMARK [2][-]{subsection.4.1}{Proposed parameter grid for cross-section scaling}{section.4}% 20
-\BOOKMARK [2][-]{subsection.4.2}{Rescaling to different mediator width}{section.4}% 21
-\BOOKMARK [2][-]{subsection.4.3}{Additional considerations for ttbar/bbbar+E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T signatures}{section.4}% 22
-\BOOKMARK [1][-]{section.5}{Specific models for signatures with EW bosons}{}% 23
-\BOOKMARK [2][-]{subsection.5.1}{Specific simplified models including EW bosons, tailored to Higgs+MET searches}{section.5}% 24
-\BOOKMARK [3][-]{subsubsection.5.1.1}{E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T +Higgs from a baryonic Z}{subsection.5.1}% 25
-\BOOKMARK [3][-]{subsubsection.5.1.2}{E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T +Higgs from a scalar mediator}{subsection.5.1}% 26
-\BOOKMARK [3][-]{subsubsection.5.1.3}{Higgs+E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T signal from 2HDM model with a Z and a new pseudoscalar}{subsection.5.1}% 27
-\BOOKMARK [2][-]{subsection.5.2}{EFT models with direct DM-boson couplings}{section.5}% 28
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Dimension 5 operators}{subsection.5.2}% 29
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Dimension 7 operators}{subsection.5.2}% 30
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Higher dimensional operators}{subsection.5.2}% 31
-\BOOKMARK [3][-]{subsubsection.5.2.4}{Validity of EW contact operators and possible completions}{subsection.5.2}% 32
-\BOOKMARK [1][-]{section.6}{Implementation of Models}{}% 33
-\BOOKMARK [2][-]{subsection.6.1}{Implementation of s-channel and t-channel models for MET+X analyses}{section.6}% 34
-\BOOKMARK [3][-]{subsubsection.6.1.1}{Implementation of s-channel models for mono-jet signature}{subsection.6.1}% 35
-\BOOKMARK [3][-]{subsubsection.6.1.2}{Merging samples with different parton multiplicities}{subsection.6.1}% 36
-\BOOKMARK [3][-]{subsubsection.6.1.3}{Implementation of t-channel models for the jet+E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T final state}{subsection.6.1}% 37
-\BOOKMARK [3][-]{subsubsection.6.1.4}{Implementation of s-channel and t-channel models with EW bosons in the final state}{subsection.6.1}% 38
-\BOOKMARK [3][-]{subsubsection.6.1.5}{Simulations for models with heavy flavor quark signatures}{subsection.6.1}% 39
-\BOOKMARK [2][-]{subsection.6.2}{Implementation of specific models for V+MET analyses}{section.6}% 40
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Model implementation for mono-Higgs models}{subsection.6.2}% 41
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Implementation of EFT models for EW boson signatures}{subsection.6.2}% 42
-\BOOKMARK [1][-]{section.7}{Presentation of EFT results}{}% 43
-\BOOKMARK [2][-]{subsection.7.1}{Procedures for the truncation of EFT benchmark models}{section.7}% 44
-\BOOKMARK [3][-]{subsubsection.7.1.1}{EFT truncation using the momentum transfer and information on UV completion}{subsection.7.1}% 45
-\BOOKMARK [3][-]{subsubsection.7.1.2}{EFT truncation using the center of mass energy}{subsection.7.1}% 46
-\BOOKMARK [3][-]{subsubsection.7.1.3}{Truncation at the generator level}{subsection.7.1}% 47
-\BOOKMARK [3][-]{subsubsection.7.1.4}{Sample results of EFT truncation procedures}{subsection.7.1}% 48
-\BOOKMARK [3][-]{subsubsection.7.1.5}{Comments on unitarity considerations}{subsection.7.1}% 49
-\BOOKMARK [2][-]{subsection.7.2}{Recommendation for presentation of EFT results}{section.7}% 50
-\BOOKMARK [3][-]{subsubsection.7.2.1}{EFT benchmarks with corresponding simplified models}{subsection.7.2}% 51
-\BOOKMARK [3][-]{subsubsection.7.2.2}{EFT benchmarks with no corresponding simplified models}{subsection.7.2}% 52
-\BOOKMARK [1][-]{section.8}{Evaluation of signal theoretical uncertainties}{}% 53
-\BOOKMARK [2][-]{subsection.8.1}{POWHEG}{section.8}% 54
-\BOOKMARK [2][-]{subsection.8.2}{The SysCalc package in MadGraph5\137aMC@NLO}{section.8}% 55
-\BOOKMARK [1][-]{section.9}{Conclusions}{}% 56
-\BOOKMARK [1][-]{appendix.A}{Appendix: Additional models for Dark Matter searches}{}% 57
-\BOOKMARK [2][-]{subsection.A.1}{Models with a single top-quark + MET}{appendix.A}% 58
-\BOOKMARK [2][-]{subsection.A.2}{Parameter scan}{appendix.A}% 59
-\BOOKMARK [2][-]{subsection.A.3}{Single Top Model implementation}{appendix.A}% 60
-\BOOKMARK [2][-]{subsection.A.4}{Further W+MET models with possible cross-section enhancements}{appendix.A}% 61
-\BOOKMARK [2][-]{subsection.A.5}{Simplified model corresponding to dimension-5 EFT operator}{appendix.A}% 62
-\BOOKMARK [2][-]{subsection.A.6}{Inert two-Higgs Doublet Model \(IDM\)}{appendix.A}% 63
-\BOOKMARK [1][-]{appendix.B}{Appendix: Presentation of experimental results for reinterpretation}{}% 64
-\BOOKMARK [2][-]{subsection.B.1}{Reinterpretation of analyses}{appendix.B}% 65
-\BOOKMARK [2][-]{subsection.B.2}{Reimplementation of analyses}{appendix.B}% 66
-\BOOKMARK [2][-]{subsection.B.3}{Simplified model interpretations}{appendix.B}% 67
-\BOOKMARK [1][-]{appendix.C}{Appendix: Additional details and studies within the Forum}{}% 68
+\BOOKMARK [2][-]{subsection.2.4}{ Spin-2 mediator}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.5}{Presentation of results for reinterpretation of s-channel mediator models}{section.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Proposed parameter grid for cross-section scaling}{subsection.2.5}% 19
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Rescaling to different mediator width}{subsection.2.5}% 20
+\BOOKMARK [1][-]{section.3}{Specific models for signatures with EW bosons}{}% 21
+\BOOKMARK [2][-]{subsection.3.1}{Specific simplified models including EW bosons, tailored to Higgs+MET searches}{section.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.1}{E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T +Higgs from a baryonic Z}{subsection.3.1}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.2}{E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T +Higgs from a scalar mediator}{subsection.3.1}% 24
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Higgs+E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T signal from 2HDM model with a Z and a new pseudoscalar}{subsection.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.2}{EFT models with direct DM-boson couplings}{section.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Dimension 5 operators}{subsection.3.2}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Dimension 7 operators}{subsection.3.2}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Higher dimensional operators}{subsection.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Validity of EW contact operators and possible completions}{subsection.3.2}% 30
+\BOOKMARK [1][-]{section.4}{Implementation of Models}{}% 31
+\BOOKMARK [2][-]{subsection.4.1}{Implementation of s-channel and t-channel models for MET+X analyses}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Implementation of s-channel models for mono-jet signature}{subsection.4.1}% 33
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Merging samples with different parton multiplicities}{subsection.4.1}% 34
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Implementation of t-channel models for the jet+E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4E/4\2040-00-to4toto4T final state}{subsection.4.1}% 35
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Implementation of s-channel and t-channel models with EW bosons in the final state}{subsection.4.1}% 36
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Simulations for models with heavy flavor quark signatures}{subsection.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.2}{Implementation of specific models for V+MET analyses}{section.4}% 38
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Model implementation for mono-Higgs models}{subsection.4.2}% 39
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Implementation of EFT models for EW boson signatures}{subsection.4.2}% 40
+\BOOKMARK [1][-]{section.5}{Presentation of EFT results}{}% 41
+\BOOKMARK [2][-]{subsection.5.1}{Procedures for the truncation of EFT benchmark models}{section.5}% 42
+\BOOKMARK [3][-]{subsubsection.5.1.1}{EFT truncation using the momentum transfer and information on UV completion}{subsection.5.1}% 43
+\BOOKMARK [3][-]{subsubsection.5.1.2}{EFT truncation using the center of mass energy}{subsection.5.1}% 44
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Truncation at the generator level}{subsection.5.1}% 45
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Sample results of EFT truncation procedures}{subsection.5.1}% 46
+\BOOKMARK [3][-]{subsubsection.5.1.5}{Comments on unitarity considerations}{subsection.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.2}{Recommendation for presentation of EFT results}{section.5}% 48
+\BOOKMARK [3][-]{subsubsection.5.2.1}{EFT benchmarks with corresponding simplified models}{subsection.5.2}% 49
+\BOOKMARK [3][-]{subsubsection.5.2.2}{EFT benchmarks with no corresponding simplified models}{subsection.5.2}% 50
+\BOOKMARK [1][-]{section.6}{Evaluation of signal theoretical uncertainties}{}% 51
+\BOOKMARK [2][-]{subsection.6.1}{POWHEG}{section.6}% 52
+\BOOKMARK [2][-]{subsection.6.2}{The SysCalc package in MadGraph5\137aMC@NLO}{section.6}% 53
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 54
+\BOOKMARK [1][-]{appendix.A}{Appendix: Additional models for Dark Matter searches}{}% 55
+\BOOKMARK [2][-]{subsection.A.1}{Models with a single top-quark + MET}{appendix.A}% 56
+\BOOKMARK [2][-]{subsection.A.2}{Parameter scan}{appendix.A}% 57
+\BOOKMARK [2][-]{subsection.A.3}{Single Top Model implementation}{appendix.A}% 58
+\BOOKMARK [2][-]{subsection.A.4}{Further W+MET models with possible cross-section enhancements}{appendix.A}% 59
+\BOOKMARK [2][-]{subsection.A.5}{Simplified model corresponding to dimension-5 EFT operator}{appendix.A}% 60
+\BOOKMARK [2][-]{subsection.A.6}{Inert two-Higgs Doublet Model \(IDM\)}{appendix.A}% 61
+\BOOKMARK [1][-]{appendix.B}{Appendix: Presentation of experimental results for reinterpretation}{}% 62
+\BOOKMARK [2][-]{subsection.B.1}{Reinterpretation of analyses}{appendix.B}% 63
+\BOOKMARK [2][-]{subsection.B.2}{Reimplementation of analyses}{appendix.B}% 64
+\BOOKMARK [2][-]{subsection.B.3}{Simplified model interpretations}{appendix.B}% 65
+\BOOKMARK [1][-]{appendix.C}{Appendix: Additional details and studies within the Forum}{}% 66
