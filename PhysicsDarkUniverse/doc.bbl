@@ -779,10 +779,10 @@ G.~Marchesini, B.~Webber, G.~Abbiendi, I.~Knowles, M.~Seymour, L.~Stanco,
 \newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/0010465592900554}
 
 \bibitem{NewMadgraphModels}
-Simplified dark matter models at {NLO}, {UFO} for {Feynrules}~2.3 and
-  {\madgraph}. v0.1\_alpha: alpha version,
-  \url{https://feynrules.irmp.ucl.ac.be/wiki/DMsimp}, [Online; accessed
-  12-June-2015] (2015).
+M.~Backovi?, M.~Krämer, F.~Maltoni, A.~Martini, K.~Mawatari, M.~Pellen,
+  {Higher-order QCD predictions for dark matter production at the LHC in
+  simplified models with s-channel mediators}\href
+  {http://arxiv.org/abs/1508.05327} {\path{arXiv:1508.05327}}.
 
 \bibitem{Fox:2012ru}
 P.~J. Fox, C.~Williams, Next-to-leading order predictions for dark matter
