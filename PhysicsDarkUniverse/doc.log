@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.3)  5 SEP 2015 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.3)  5 SEP 2015 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10901,41 +10901,63 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/fsc' will be
 LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
 (Font)              scaled to size 6.72005pt on input line 19.
 ) [133] [134])
-(./tex/backmatter.tex) [135] (./tex/EWSpecificModels_Appendix.tex
-(./tex/SingleTop.tex [136]
+(./tex/backmatter.tex [135] [136] [137 <./figures/monojet_appendix/compare_plot
+_1.pdf, page is rotated 90 degrees> <./figures/monojet_appendix/window_plot_1.p
+df, page is rotated 90 degrees> <./figures/monojet_appendix/compare_plot_2.pdf,
+ page is rotated 90 degrees> <./figures/monojet_appendix/window_plot_2.pdf, pag
+e is rotated 90 degrees> <./figures/monojet_appendix/compare_plot_3.pdf, page i
+s rotated 90 degrees> <./figures/monojet_appendix/window_plot_3.pdf, page is ro
+tated 90 degrees> <./figures/monojet_appendix/compare_plot_4.pdf, page is rotat
+ed 90 degrees> <./figures/monojet_appendix/window_plot_4.pdf, page is rotated 9
+0 degrees>] [138 <./figures/monojet_appendix/MET_matching80.pdf>] [139 <./figur
+es/monojet_appendix/h_MET.pdf, page is rotated 90 degrees> <./figures/monojet_a
+ppendix/h_MET_3jet.pdf, page is rotated 90 degrees>] [140 <./figures/monojet_ap
+pendix/h_njet250.pdf, page is rotated 90 degrees> <./figures/bbar/4Fvs5F_plots/
+Njets.pdf> <./figures/bbar/4Fvs5F_plots/dR12.pdf>] [141 <./figures/EFT/MstarLim
+itvscouplingSec600_Stop13_R0_DM_EFT_D5_DM50_tree.pdf>] [142 <./figures/EFT/Trut
+hETmiss_compEFTvsZprime_DM150_narrow.pdf> <./figures/EFT/TruthEcm_compEFTvsZpri
+me_DM150_narrow.pdf> <./figures/EFT/TruthPt_compEFTvsZprime_DM150_narrow.pdf> <
+./figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narrow.pdf> <./figures/EFT/TruthD
+M2ptcompEFTvsZprime_DM150_narrow.pdf>] [143 <./figures/EFT/EFT_met.pdf> <./figu
+res/EFT/EFT_shat.pdf> <./figures/EFT/Zprime_met.pdf> <./figures/EFT/Zprime_shat
+.pdf>]) (./tex/EWSpecificModels_Appendix.tex (./tex/SingleTop.tex
 \openout4 = `modelS1.mp'.
 
 File: modelS1.1 Graphic file (type mps)
- [MP to PDF] (./modelS1.1) (./modelS1.t1)
+ [MP to PDF]
+(./modelS1.1) (./modelS1.t1)
 \openout4 = `modelS4s.mp'.
 
 File: modelS4s.1 Graphic file (type mps)
-
-[MP to PDF] (./modelS4s.1) (./modelS4s.t1)
+ [MP to PDF] (./modelS4s.1) (./modelS4s.t1)
 \openout4 = `modelS4t.mp'.
 
 File: modelS4t.1 Graphic file (type mps)
- [MP to PDF] (./modelS4t.1)
-(./modelS4t.t1) [137]
+
+[MP to PDF] (./modelS4t.1) (./modelS4t.t1) [144
+
+] [145]
 Overfull \hbox (2.63133pt too wide) in paragraph at lines 135--142
  []\T1/mdbch/m/it/10 Non-Resonant pro-duc-tion.[] \T1/mdbch/m/n/10 For non-reso
 nant mono-top pro-duc-tion, the mono-top state
  []
 
+[146]
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 7.68005pt on input line 162.
 
-Package natbib Warning: Citation `Allahverdi:2015mha' on page 138 undefined on 
+
+Package natbib Warning: Citation `Allahverdi:2015mha' on page 147 undefined on 
 input line 162.
 
-[138] [139]
+[147]
 Overfull \hbox (0.33124pt too wide) in paragraph at lines 236--239
 \T1/mdbch/m/n/10 den sec-tor that could be, in its sim-plest form, pa-ram-e-ter
 -ized by a new fermion [[]].
  []
 
-
-<figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf, id=3732, 569.12625pt x 548.0
+[148]
+<figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf, id=4431, 569.12625pt x 548.0
 475pt>
 File: figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf Graphic file (type pdf)
  <use figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf>
@@ -10943,7 +10965,7 @@ Package pdftex.def Info: figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf used
 on input line 277.
 (pdftex.def)             Requested size: 110.40167pt x 106.31271pt.
 
-<figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf, id=3733, 569.12625pt x 548.0
+<figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf, id=4432, 569.12625pt x 548.0
 475pt>
 File: figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf Graphic file (type pdf)
  <use figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf>
@@ -10951,7 +10973,7 @@ Package pdftex.def Info: figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf used
 on input line 278.
 (pdftex.def)             Requested size: 110.40167pt x 106.31271pt.
 
-<figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf, id=3734, 569.12625pt x 548.
+<figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf, id=4433, 569.12625pt x 548.
 0475pt>
 File: figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf Graphic file (type pdf)
 
@@ -10959,8 +10981,12 @@ File: figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf used
  on input line 279.
 (pdftex.def)             Requested size: 110.40167pt x 106.31271pt.
-) [140] [141]
-[142] [143] <figures/EW/i2HDM/fd-mono-j1.pdf, id=3818, 332.24126pt x 120.45pt>
+) [149 <./figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf, page is rotated 90 
+degrees> <./figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf, page is rotated 9
+0 degrees> <./figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf, page is rotate
+d 90 degrees>]
+[150] [151] [152]
+<figures/EW/i2HDM/fd-mono-j1.pdf, id=4648, 332.24126pt x 120.45pt>
 File: figures/EW/i2HDM/fd-mono-j1.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-j1.pdf>
@@ -10968,7 +10994,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-j1.pdf used on input line 130
 .
 (pdftex.def)             Requested size: 345.02086pt x 125.08307pt.
 
-<figures/EW/i2HDM/fd-mono-j2.pdf, id=3821, 376.40625pt x 55.20625pt>
+<figures/EW/i2HDM/fd-mono-j2.pdf, id=4651, 376.40625pt x 55.20625pt>
 File: figures/EW/i2HDM/fd-mono-j2.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-j2.pdf>
@@ -10976,7 +11002,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-j2.pdf used on input line 136
 .
 (pdftex.def)             Requested size: 345.02289pt x 50.60333pt.
 
-<figures/EW/i2HDM/fd-mono-z.pdf, id=3824, 330.23375pt x 55.20625pt>
+<figures/EW/i2HDM/fd-mono-z.pdf, id=4654, 330.23375pt x 55.20625pt>
 File: figures/EW/i2HDM/fd-mono-z.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-z.pdf>
@@ -10984,7 +11010,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-z.pdf used on input line 142.
 
 (pdftex.def)             Requested size: 345.01218pt x 57.67679pt.
 
-<figures/EW/i2HDM/fd-mono-h1.pdf, id=3827, 334.24875pt x 117.43875pt>
+<figures/EW/i2HDM/fd-mono-h1.pdf, id=4657, 334.24875pt x 117.43875pt>
 File: figures/EW/i2HDM/fd-mono-h1.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-h1.pdf>
@@ -10992,7 +11018,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-h1.pdf used on input line 148
 .
 (pdftex.def)             Requested size: 345.02979pt x 121.22665pt.
 
-<figures/EW/i2HDM/fd-mono-h2.pdf, id=3830, 293.095pt x 55.20625pt>
+<figures/EW/i2HDM/fd-mono-h2.pdf, id=4660, 293.095pt x 55.20625pt>
 File: figures/EW/i2HDM/fd-mono-h2.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-h2.pdf>
@@ -11000,52 +11026,30 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-h2.pdf used on input line 154
 .
 (pdftex.def)             Requested size: 344.99936pt x 64.98274pt.
 
-<figures/EW/i2HDM/fd-vbf.pdf, id=3833, 280.04625pt x 77.28876pt>
+<figures/EW/i2HDM/fd-vbf.pdf, id=4663, 280.04625pt x 77.28876pt>
 File: figures/EW/i2HDM/fd-vbf.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-vbf.pdf>
 Package pdftex.def Info: figures/EW/i2HDM/fd-vbf.pdf used on input line 160.
 (pdftex.def)             Requested size: 345.0146pt x 95.21909pt.
-
+ [153 <./figures/EW/i2HDM/fd-mono-j1.pdf> <./figures/EW/i2HDM/fd-mono-j2.pdf> <
+./figures/EW/i2HDM/fd-mono-z.pdf>]
 Overfull \hbox (5.76506pt too wide) in paragraph at lines 168--172
 \T1/mdbch/m/n/10 have im-ple-mented and cross-checked the IDM model into CalcHE
 P and mi-crOMEGAs,
  []
 
-<figures/EW/i2HDM/i2HDM_crossSections.pdf, id=3843, 511.9125pt x 426.59375pt>
+[154 <./figures/EW/i2HDM/fd-mono-h1.pdf> <./figures/EW/i2HDM/fd-mono-h2.pdf>]
+<figures/EW/i2HDM/i2HDM_crossSections.pdf, id=4744, 511.9125pt x 426.59375pt>
 File: figures/EW/i2HDM/i2HDM_crossSections.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/i2HDM_crossSections.pdf>
 Package pdftex.def Info: figures/EW/i2HDM/i2HDM_crossSections.pdf used on input
  line 208.
 (pdftex.def)             Requested size: 345.00269pt x 287.50223pt.
- [144] [145] [146 <./figures/monojet_appendix/compare_plot_1.pdf, page is rotat
-ed 90 degrees> <./figures/monojet_appendix/window_plot_1.pdf, page is rotated 9
-0 degrees> <./figures/monojet_appendix/compare_plot_2.pdf, page is rotated 90 d
-egrees> <./figures/monojet_appendix/window_plot_2.pdf, page is rotated 90 degre
-es> <./figures/monojet_appendix/compare_plot_3.pdf, page is rotated 90 degrees>
- <./figures/monojet_appendix/window_plot_3.pdf, page is rotated 90 degrees> <./
-figures/monojet_appendix/compare_plot_4.pdf, page is rotated 90 degrees> <./fig
-ures/monojet_appendix/window_plot_4.pdf, page is rotated 90 degrees>] [147 <./f
-igures/monojet_appendix/MET_matching80.pdf>] [148 <./figures/monojet_appendix/h
-_MET.pdf, page is rotated 90 degrees> <./figures/monojet_appendix/h_MET_3jet.pd
-f, page is rotated 90 degrees>]
-[149 <./figures/monojet_appendix/h_njet250.pdf, page is rotated 90 degrees> <./
-figures/bbar/4Fvs5F_plots/Njets.pdf> <./figures/bbar/4Fvs5F_plots/dR12.pdf>]
-[150 <./figures/EFT/MstarLimitvscouplingSec600_Stop13_R0_DM_EFT_D5_DM50_tree.pd
-f>] [151 <./figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.pdf> <./figure
-s/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.pdf> <./figures/EFT/TruthPt_compEFT
-vsZprime_DM150_narrow.pdf> <./figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narro
-w.pdf> <./figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf>] [152 <./figu
-res/EFT/EFT_met.pdf> <./figures/EFT/EFT_shat.pdf> <./figures/EFT/Zprime_met.pdf
-> <./figures/EFT/Zprime_shat.pdf>] [153 <./figures/singletop/Width/c_PTvmet200G
-eV_IsLog.pdf, page is rotated 90 degrees> <./figures/singletop/Width/c_PTvmet60
-0GeV_IsLog.pdf, page is rotated 90 degrees> <./figures/singletop/Width/c_PTvmet
-1000GeV_IsLog.pdf, page is rotated 90 degrees>] [154 <./figures/EW/i2HDM/fd-mon
-o-j1.pdf> <./figures/EW/i2HDM/fd-mono-j2.pdf> <./figures/EW/i2HDM/fd-mono-z.pdf
-> <./figures/EW/i2HDM/fd-mono-h1.pdf>] [155 <./figures/EW/i2HDM/fd-mono-h2.pdf>
- <./figures/EW/i2HDM/fd-vbf.pdf>] [156 <./figures/EW/i2HDM/i2HDM_crossSections.
-pdf>]) (./tex/Presentation_Of_Experimental_Results.tex
+ [155 <./figures/EW/i2HDM/fd-vbf.pdf>] [156 <./figures/EW/i2HDM/i2HDM_crossSect
+ions.pdf>])
+(./tex/Presentation_Of_Experimental_Results.tex
 Overfull \hbox (4.0153pt too wide) in paragraph at lines 15--17
 []\T1/mdbch/m/n/10 Provide eas-ily us-able and clearly la-beled re-sults in a d
 ig-i-tized for-mat, e.g. [[]]
@@ -11072,7 +11076,7 @@ r-ma-tion needed within
  []
 
 [159] [160]) (./tex/AdditionalDetails.tex [161]
-<figures/EW/monoH/zprime_xs_med_100.pdf, id=4839, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_xs_med_100.pdf, id=4840, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_xs_med_100.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_xs_med_100.pdf>
@@ -11080,7 +11084,7 @@ Package pdftex.def Info: figures/EW/monoH/zprime_xs_med_100.pdf used on input l
 ine 23.
 (pdftex.def)             Requested size: 155.24666pt x 148.94917pt.
 
-<figures/EW/monoH/zprime_xs_med_1000.pdf, id=4840, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_xs_med_1000.pdf, id=4841, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_xs_med_1000.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_xs_med_1000.pdf>
@@ -11350,8 +11354,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 14765 strings out of 493117
- 237554 string characters out of 6135434
+ 14766 strings out of 493117
+ 237566 string characters out of 6135434
  399574 words of memory out of 5000000
  16722 multiletter control sequences out of 15000+600000
  114133 words of font info for 205 fonts, out of 8000000 for 9000
@@ -11382,10 +11386,10 @@ nts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1000.pfb>
-Output written on doc.pdf (185 pages, 3121526 bytes).
+Output written on doc.pdf (185 pages, 3121973 bytes).
 PDF statistics:
- 5827 PDF objects out of 6186 (max. 8388607)
- 4399 compressed objects within 44 object streams
- 846 named destinations out of 1000 (max. 500000)
+ 5830 PDF objects out of 6186 (max. 8388607)
+ 4401 compressed objects within 45 object streams
+ 847 named destinations out of 1000 (max. 500000)
  1222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
