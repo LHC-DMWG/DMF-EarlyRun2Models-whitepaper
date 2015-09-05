@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.3)  2 SEP 2015 01:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.3)  5 SEP 2015 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,14 +1008,14 @@ LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 13.82408pt on input line 2.
 ) [13]
-<figures/monojet/width_V.pdf, id=605, 569.12625pt x 546.04pt>
+<figures/monojet/width_V.pdf, id=604, 569.12625pt x 546.04pt>
 File: figures/monojet/width_V.pdf Graphic file (type pdf)
 
 <use figures/monojet/width_V.pdf>
 Package pdftex.def Info: figures/monojet/width_V.pdf used on input line 127.
 (pdftex.def)             Requested size: 276.00853pt x 264.81241pt.
 
-<figures/monojet/width_A.pdf, id=606, 569.12625pt x 546.04pt>
+<figures/monojet/width_A.pdf, id=605, 569.12625pt x 546.04pt>
 File: figures/monojet/width_A.pdf Graphic file (type pdf)
 
 <use figures/monojet/width_A.pdf>
@@ -1029,7 +1029,7 @@ LaTeX Warning: Float too large for page by 76.1248pt on input line 131.
 LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
 (Font)              scaled to size 9.60007pt on input line 142.
 
-[16] <figures/monojet/scan_g_V_10_1000.pdf, id=656, 569.12625pt x 272.01625pt>
+[16] <figures/monojet/scan_g_V_10_1000.pdf, id=655, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_g_V_10_1000.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_g_V_10_1000.pdf>
@@ -1039,7 +1039,7 @@ e 158.
 LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
 (Font)              scaled to size 7.68005pt on input line 159.
 
-<figures/monojet/scan_g_EFT_10_5000.pdf, id=662, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_g_EFT_10_5000.pdf, id=661, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_g_EFT_10_5000.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_g_EFT_10_5000.pdf>
@@ -1051,14 +1051,14 @@ ine 177.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17 <./figures/monojet/scan_g_V_10_1000.pdf>]
-<figures/monojet/mxx.pdf, id=681, 569.12625pt x 408.52625pt>
+<figures/monojet/mxx.pdf, id=680, 569.12625pt x 408.52625pt>
 File: figures/monojet/mxx.pdf Graphic file (type pdf)
 
 <use figures/monojet/mxx.pdf>
 Package pdftex.def Info: figures/monojet/mxx.pdf used on input line 192.
 (pdftex.def)             Requested size: 224.25096pt x 160.97026pt.
 
-<figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.pdf, id=682, 569.12625
+<figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.pdf, id=681, 569.12625
 pt x 385.44pt>
 File: figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.pdf Graphic file 
 (type pdf)
@@ -1069,7 +1069,7 @@ w.pdf used on input line 196.
 (pdftex.def)             Requested size: 224.25096pt x 151.87366pt.
  [18 <./figures/monojet/scan_g_EFT_10_5000.pdf>] [19 <./figures/monojet/mxx.pdf
 > <./figures/EFT/TruthShat3_compEFTvsZprime_DM150_narrow_new.pdf>]
-<figures/monojet/scan_mDM_V_1000.pdf, id=730, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mDM_V_1000.pdf, id=729, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mDM_V_1000.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mDM_V_1000.pdf>
@@ -1077,7 +1077,7 @@ Package pdftex.def Info: figures/monojet/scan_mDM_V_1000.pdf used on input line
  232.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/scan_mDM_V_100.pdf, id=731, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mDM_V_100.pdf, id=730, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mDM_V_100.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mDM_V_100.pdf>
@@ -1086,7 +1086,7 @@ Package pdftex.def Info: figures/monojet/scan_mDM_V_100.pdf used on input line
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
  [20] [21 <./figures/monojet/scan_mDM_V_1000.pdf> <./figures/monojet/scan_mDM_V
 _100.pdf>]
-<figures/monojet/scan_mMed_V_10.pdf, id=765, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mMed_V_10.pdf, id=764, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mMed_V_10.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mMed_V_10.pdf>
@@ -1094,7 +1094,7 @@ Package pdftex.def Info: figures/monojet/scan_mMed_V_10.pdf used on input line
 252.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/scan_mMed_V_1000.pdf, id=766, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mMed_V_1000.pdf, id=765, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mMed_V_1000.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mMed_V_1000.pdf>
@@ -1102,7 +1102,7 @@ Package pdftex.def Info: figures/monojet/scan_mMed_V_1000.pdf used on input lin
 e 259.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/compareModels_VA_100.pdf, id=768, 569.12625pt x 272.01625pt>
+<figures/monojet/compareModels_VA_100.pdf, id=767, 569.12625pt x 272.01625pt>
 File: figures/monojet/compareModels_VA_100.pdf Graphic file (type pdf)
 
 <use figures/monojet/compareModels_VA_100.pdf>
@@ -1111,7 +1111,7 @@ Package pdftex.def Info: figures/monojet/compareModels_VA_100.pdf used on input
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
  [22 <./figures/monojet/scan_mMed_V_10.pdf>] [23 <./figures/monojet/scan_mMed_V
 _1000.pdf> <./figures/monojet/compareModels_VA_100.pdf>]
-<figures/monojet/compareVA_100_1000.pdf, id=814, 569.12625pt x 272.01625pt>
+<figures/monojet/compareVA_100_1000.pdf, id=813, 569.12625pt x 272.01625pt>
 File: figures/monojet/compareVA_100_1000.pdf Graphic file (type pdf)
 
 <use figures/monojet/compareVA_100_1000.pdf>
@@ -1119,7 +1119,7 @@ Package pdftex.def Info: figures/monojet/compareVA_100_1000.pdf used on input l
 ine 297.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/compareVA_100_100.pdf, id=815, 569.12625pt x 272.01625pt>
+<figures/monojet/compareVA_100_100.pdf, id=814, 569.12625pt x 272.01625pt>
 File: figures/monojet/compareVA_100_100.pdf Graphic file (type pdf)
 
 <use figures/monojet/compareVA_100_100.pdf>
@@ -2189,7 +2189,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<figures/EW/ptGamma_filter120GeV_dmV_dm10GeV.pdf, id=887, 569.12625pt x 526.968
+<figures/EW/ptGamma_filter120GeV_dmV_dm10GeV.pdf, id=886, 569.12625pt x 526.968
 75pt>
 File: figures/EW/ptGamma_filter120GeV_dmV_dm10GeV.pdf Graphic file (type pdf)
  <use figures/EW/ptGamma_filter120GeV_dmV_dm10GeV.pdf>
@@ -2197,7 +2197,7 @@ Package pdftex.def Info: figures/EW/ptGamma_filter120GeV_dmV_dm10GeV.pdf used o
 n input line 84.
 (pdftex.def)             Requested size: 169.05446pt x 156.5319pt.
 
-<figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV.pdf, id=888, 569.12625pt x 526.9
+<figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV.pdf, id=887, 569.12625pt x 526.9
 6875pt>
 File: figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV.pdf Graphic file (type pdf)
 
@@ -2206,14 +2206,14 @@ Package pdftex.def Info: figures/EW/ptGamma_filter120GeV_dmV_mV1000GeV.pdf used
  on input line 89.
 (pdftex.def)             Requested size: 169.05446pt x 156.5319pt.
 
-<figures/EW/pt_vv_Mx15.pdf, id=889, 569.12625pt x 408.52625pt>
+<figures/EW/pt_vv_Mx15.pdf, id=888, 569.12625pt x 408.52625pt>
 File: figures/EW/pt_vv_Mx15.pdf Graphic file (type pdf)
 
 <use figures/EW/pt_vv_Mx15.pdf>
 Package pdftex.def Info: figures/EW/pt_vv_Mx15.pdf used on input line 94.
 (pdftex.def)             Requested size: 169.05446pt x 121.3495pt.
 
-<figures/EW/monoWhad_Destructive/metPt.pdf, id=890, 569.12625pt x 408.52625pt>
+<figures/EW/monoWhad_Destructive/metPt.pdf, id=889, 569.12625pt x 408.52625pt>
 File: figures/EW/monoWhad_Destructive/metPt.pdf Graphic file (type pdf)
 
 <use figures/EW/monoWhad_Destructive/metPt.pdf>
@@ -2274,7 +2274,7 @@ Overfull \hbox (21.76428pt too wide) in paragraph at lines 437--460
 mma_filter120GeV_dmV_mV1000GeV.pdf> <./figures/EW/pt_vv_Mx15.pdf, page is rotat
 ed 90 degrees> <./figures/EW/monoWhad_Destructive/metPt.pdf, page is rotated 90
  degrees>] [32] [33]
-<figures/monojet/scan_g_S_10_500.pdf, id=1059, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_g_S_10_500.pdf, id=1058, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_g_S_10_500.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_g_S_10_500.pdf>
@@ -2282,7 +2282,7 @@ Package pdftex.def Info: figures/monojet/scan_g_S_10_500.pdf used on input line
  570.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/scan_mDM_S_500.pdf, id=1060, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mDM_S_500.pdf, id=1059, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mDM_S_500.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mDM_S_500.pdf>
@@ -2290,7 +2290,7 @@ Package pdftex.def Info: figures/monojet/scan_mDM_S_500.pdf used on input line
 578.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/scan_mDM_S_100.pdf, id=1061, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mDM_S_100.pdf, id=1060, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mDM_S_100.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mDM_S_100.pdf>
@@ -2298,7 +2298,7 @@ Package pdftex.def Info: figures/monojet/scan_mDM_S_100.pdf used on input line
 585.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/scan_mMed_S_10.pdf, id=1062, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mMed_S_10.pdf, id=1061, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mMed_S_10.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mMed_S_10.pdf>
@@ -2306,7 +2306,7 @@ Package pdftex.def Info: figures/monojet/scan_mMed_S_10.pdf used on input line
 592.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/scan_mMed_S_1000.pdf, id=1063, 569.12625pt x 272.01625pt>
+<figures/monojet/scan_mMed_S_1000.pdf, id=1062, 569.12625pt x 272.01625pt>
 File: figures/monojet/scan_mMed_S_1000.pdf Graphic file (type pdf)
 
 <use figures/monojet/scan_mMed_S_1000.pdf>
@@ -2314,21 +2314,21 @@ Package pdftex.def Info: figures/monojet/scan_mMed_S_1000.pdf used on input lin
 e 599.
 (pdftex.def)             Requested size: 327.7661pt x 156.65717pt.
 
-<figures/monojet/width_S.pdf, id=1064, 569.12625pt x 546.04pt>
+<figures/monojet/width_S.pdf, id=1063, 569.12625pt x 546.04pt>
 File: figures/monojet/width_S.pdf Graphic file (type pdf)
 
 <use figures/monojet/width_S.pdf>
 Package pdftex.def Info: figures/monojet/width_S.pdf used on input line 606.
 (pdftex.def)             Requested size: 224.25096pt x 215.15436pt.
 
-<figures/monojet/width_P.pdf, id=1065, 569.12625pt x 546.04pt>
+<figures/monojet/width_P.pdf, id=1064, 569.12625pt x 546.04pt>
 File: figures/monojet/width_P.pdf Graphic file (type pdf)
 
 <use figures/monojet/width_P.pdf>
 Package pdftex.def Info: figures/monojet/width_P.pdf used on input line 607.
 (pdftex.def)             Requested size: 224.25096pt x 215.15436pt.
 
-<figures/monojet/compareModels_SP_300.pdf, id=1070, 569.12625pt x 272.01625pt>
+<figures/monojet/compareModels_SP_300.pdf, id=1069, 569.12625pt x 272.01625pt>
 File: figures/monojet/compareModels_SP_300.pdf Graphic file (type pdf)
 
 <use figures/monojet/compareModels_SP_300.pdf>
@@ -4464,14 +4464,14 @@ File: modelTTbarMET.1 Graphic file (type mps)
  [MP to PDF] (./modelTTbarMET.1) (./modelTTbarMET.t1) [38]
 [39 <./figures/monojet/scan_mMed_S_1000.pdf>] [40 <./figures/monojet/width_S.pd
 f> <./figures/monojet/width_P.pdf>] [41 <./figures/monojet/compareModels_SP_300
-.pdf>] [42] <figures/ttbar/MEt_chi1.pdf, id=1223, 569.12625pt x 392.46625pt>
+.pdf>] [42] <figures/ttbar/MEt_chi1.pdf, id=1222, 569.12625pt x 392.46625pt>
 File: figures/ttbar/MEt_chi1.pdf Graphic file (type pdf)
 
 <use figures/ttbar/MEt_chi1.pdf>
 Package pdftex.def Info: figures/ttbar/MEt_chi1.pdf used on input line 82.
 (pdftex.def)             Requested size: 327.7661pt x 226.02563pt.
 
-<figures/ttbar/MEt_chi1_pseudo.pdf, id=1224, 569.12625pt x 387.4475pt>
+<figures/ttbar/MEt_chi1_pseudo.pdf, id=1223, 569.12625pt x 387.4475pt>
 File: figures/ttbar/MEt_chi1_pseudo.pdf Graphic file (type pdf)
 
 <use figures/ttbar/MEt_chi1_pseudo.pdf>
@@ -4479,7 +4479,7 @@ Package pdftex.def Info: figures/ttbar/MEt_chi1_pseudo.pdf used on input line 9
 0.
 (pdftex.def)             Requested size: 327.7661pt x 223.1353pt.
 
-<figures/ttbar/MEt_smallwidth.pdf, id=1227, 569.12625pt x 415.5525pt>
+<figures/ttbar/MEt_smallwidth.pdf, id=1226, 569.12625pt x 415.5525pt>
 File: figures/ttbar/MEt_smallwidth.pdf Graphic file (type pdf)
 
 <use figures/ttbar/MEt_smallwidth.pdf>
@@ -4487,7 +4487,7 @@ Package pdftex.def Info: figures/ttbar/MEt_smallwidth.pdf used on input line 10
 1.
 (pdftex.def)             Requested size: 327.7661pt x 239.32127pt.
  [43]
-<figures/ttbar/ScalarWidth.pdf, id=1238, 569.12625pt x 387.4475pt>
+<figures/ttbar/ScalarWidth.pdf, id=1237, 569.12625pt x 387.4475pt>
 File: figures/ttbar/ScalarWidth.pdf Graphic file (type pdf)
 
 <use figures/ttbar/ScalarWidth.pdf>
@@ -4567,7 +4567,7 @@ File: modelTDijetE.1 Graphic file (type mps)
 File: modelTDijetGGG.1 Graphic file (type mps)
  [MP to PDF]
 (./modelTDijetGGG.1) (./modelTDijetGGG.t1) [49] [50] [51]
-<figures/monojet/tChannel_coupling.png, id=1497, 543.02875pt x 375.4025pt>
+<figures/monojet/tChannel_coupling.png, id=1496, 543.02875pt x 375.4025pt>
 File: figures/monojet/tChannel_coupling.png Graphic file (type png)
 
 <use figures/monojet/tChannel_coupling.png>
@@ -4575,7 +4575,7 @@ Package pdftex.def Info: figures/monojet/tChannel_coupling.png used on input li
 ne 412.
 (pdftex.def)             Requested size: 276.01295pt x 190.81119pt.
 
-<figures/monojet/tchannel_edge.png, id=1499, 765.86125pt x 507.8975pt>
+<figures/monojet/tchannel_edge.png, id=1498, 765.86125pt x 507.8975pt>
 File: figures/monojet/tchannel_edge.png Graphic file (type png)
 
 <use figures/monojet/tchannel_edge.png>
@@ -5646,7 +5646,7 @@ Overfull \hbox (46.8773pt too wide) in paragraph at lines 474--481
 []] in \T1/mdbch/m/fsc/10 Mad-Graph5_aMC@NLO
  []
 
-<figures/EW/monoZhad_TChannel/metPt.pdf, id=1529, 569.12625pt x 408.52625pt>
+<figures/EW/monoZhad_TChannel/metPt.pdf, id=1528, 569.12625pt x 408.52625pt>
 File: figures/EW/monoZhad_TChannel/metPt.pdf Graphic file (type pdf)
 
 <use figures/EW/monoZhad_TChannel/metPt.pdf>
@@ -5658,7 +5658,7 @@ ine 484.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<figures/EW/monoZhad_TChannel/TChan_newplot.pdf, id=1530, 569.12625pt x 408.526
+<figures/EW/monoZhad_TChannel/TChan_newplot.pdf, id=1529, 569.12625pt x 408.526
 25pt>
 File: figures/EW/monoZhad_TChannel/TChan_newplot.pdf Graphic file (type pdf)
  <use figures/EW/monoZhad_TChannel/TChan_newplot.pdf>
@@ -5672,7 +5672,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (./tex/SingleB.tex [54] [55 <./figures/EW/monoZhad_TChannel/metPt.pdf, page is 
 rotated 90 degrees>] [56 <./figures/EW/monoZhad_TChannel/TChan_newplot.pdf, pag
 e is rotated 90 degrees>]
-<figures/bFDM/bfdm_relic/missing_et.pdf, id=1656, 569.12625pt x 385.44pt>
+<figures/bFDM/bfdm_relic/missing_et.pdf, id=1655, 569.12625pt x 385.44pt>
 File: figures/bFDM/bfdm_relic/missing_et.pdf Graphic file (type pdf)
 
 <use figures/bFDM/bfdm_relic/missing_et.pdf>
@@ -5680,7 +5680,7 @@ Package pdftex.def Info: figures/bFDM/bfdm_relic/missing_et.pdf used on input l
 ine 44.
 (pdftex.def)             Requested size: 169.05446pt x 114.49191pt.
 
-<figures/bFDM/bfdm_relic/Njets.pdf, id=1657, 569.12625pt x 385.44pt>
+<figures/bFDM/bfdm_relic/Njets.pdf, id=1656, 569.12625pt x 385.44pt>
 File: figures/bFDM/bfdm_relic/Njets.pdf Graphic file (type pdf)
 
 <use figures/bFDM/bfdm_relic/Njets.pdf>
@@ -5692,7 +5692,7 @@ Overfull \hbox (2.70898pt too wide) in paragraph at lines 44--47
 [][] [] 
  []
 
-<figures/bFDM/bfdm_35_500/missing_et.pdf, id=1658, 569.12625pt x 385.44pt>
+<figures/bFDM/bfdm_35_500/missing_et.pdf, id=1657, 569.12625pt x 385.44pt>
 File: figures/bFDM/bfdm_35_500/missing_et.pdf Graphic file (type pdf)
 
 <use figures/bFDM/bfdm_35_500/missing_et.pdf>
@@ -5700,7 +5700,7 @@ Package pdftex.def Info: figures/bFDM/bfdm_35_500/missing_et.pdf used on input
 line 51.
 (pdftex.def)             Requested size: 169.05446pt x 114.49191pt.
 
-<figures/bFDM/bfdm_35_500/Njets.pdf, id=1659, 569.12625pt x 385.44pt>
+<figures/bFDM/bfdm_35_500/Njets.pdf, id=1658, 569.12625pt x 385.44pt>
 File: figures/bFDM/bfdm_35_500/Njets.pdf Graphic file (type pdf)
 
 <use figures/bFDM/bfdm_35_500/Njets.pdf>
@@ -5718,14 +5718,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) [57 <./figures/bFDM/bfdm_relic/missing_et.pdf> <./figures/bFDM/bfdm_relic/Nj
 ets.pdf>] [58 <./figures/bFDM/bfdm_35_500/missing_et.pdf> <./figures/bFDM/bfdm_
 35_500/Njets.pdf>] [59]
-<figures/monojet/constantwidth_V_gg100.pdf, id=1725, 569.12625pt x 408.52625pt>
+<figures/monojet/constantwidth_V_gg100.pdf, id=1724, 569.12625pt x 408.52625pt>
 File: figures/monojet/constantwidth_V_gg100.pdf Graphic file (type pdf)
 <use figures/monojet/constantwidth_V_gg100.pdf>
 Package pdftex.def Info: figures/monojet/constantwidth_V_gg100.pdf used on inpu
 t line 833.
 (pdftex.def)             Requested size: 169.05446pt x 121.3495pt.
 
-<figures/monojet/constantwidth_V_gg1000.pdf, id=1726, 569.12625pt x 408.52625pt
+<figures/monojet/constantwidth_V_gg1000.pdf, id=1725, 569.12625pt x 408.52625pt
 >
 File: figures/monojet/constantwidth_V_gg1000.pdf Graphic file (type pdf)
  <use figures/monojet/constantwidth_V_gg1000.pdf>
@@ -5733,14 +5733,14 @@ Package pdftex.def Info: figures/monojet/constantwidth_V_gg1000.pdf used on inp
 ut line 834.
 (pdftex.def)             Requested size: 169.05446pt x 121.3495pt.
 
-<figures/monojet/constantwidth_S_gg100.pdf, id=1727, 569.12625pt x 408.52625pt>
+<figures/monojet/constantwidth_S_gg100.pdf, id=1726, 569.12625pt x 408.52625pt>
 File: figures/monojet/constantwidth_S_gg100.pdf Graphic file (type pdf)
 <use figures/monojet/constantwidth_S_gg100.pdf>
 Package pdftex.def Info: figures/monojet/constantwidth_S_gg100.pdf used on inpu
 t line 835.
 (pdftex.def)             Requested size: 169.05446pt x 121.3495pt.
 
-<figures/monojet/constantwidth_S_gg1000.pdf, id=1728, 569.12625pt x 408.52625pt
+<figures/monojet/constantwidth_S_gg1000.pdf, id=1727, 569.12625pt x 408.52625pt
 >
 File: figures/monojet/constantwidth_S_gg1000.pdf Graphic file (type pdf)
  <use figures/monojet/constantwidth_S_gg1000.pdf>
@@ -5750,7 +5750,7 @@ ut line 836.
  [60] [61 <./figures/monojet/constantwidth_V_gg100.pdf> <./figures/monojet/cons
 tantwidth_V_gg1000.pdf> <./figures/monojet/constantwidth_S_gg100.pdf> <./figure
 s/monojet/constantwidth_S_gg1000.pdf>]
-<figures/monojet/scaling_S_10_100.pdf, id=1780, 569.12625pt x 408.52625pt>
+<figures/monojet/scaling_S_10_100.pdf, id=1779, 569.12625pt x 408.52625pt>
 File: figures/monojet/scaling_S_10_100.pdf Graphic file (type pdf)
 
 <use figures/monojet/scaling_S_10_100.pdf>
@@ -5758,7 +5758,7 @@ Package pdftex.def Info: figures/monojet/scaling_S_10_100.pdf used on input lin
 e 880.
 (pdftex.def)             Requested size: 327.7661pt x 235.27478pt.
 
-<figures/monojet/scaling_S_10_1000.pdf, id=1781, 569.12625pt x 408.52625pt>
+<figures/monojet/scaling_S_10_1000.pdf, id=1780, 569.12625pt x 408.52625pt>
 File: figures/monojet/scaling_S_10_1000.pdf Graphic file (type pdf)
 
 <use figures/monojet/scaling_S_10_1000.pdf>
@@ -5766,7 +5766,7 @@ Package pdftex.def Info: figures/monojet/scaling_S_10_1000.pdf used on input li
 ne 881.
 (pdftex.def)             Requested size: 327.7661pt x 235.27478pt.
 
-<figures/monojet/rescalingexercise.pdf, id=1782, page=1, 1027.84pt x 770.88pt>
+<figures/monojet/rescalingexercise.pdf, id=1781, page=1, 1027.84pt x 770.88pt>
 File: figures/monojet/rescalingexercise.pdf Graphic file (type pdf)
 
 <use figures/monojet/rescalingexercise.pdf, page 1>
@@ -5774,7 +5774,7 @@ Package pdftex.def Info: figures/monojet/rescalingexercise.pdf, page1 used on i
 nput line 892.
 (pdftex.def)             Requested size: 169.05223pt x 153.98833pt.
 
-<figures/monojet/rescalingexercise.pdf, id=1784, page=2, 1027.84pt x 770.88pt>
+<figures/monojet/rescalingexercise.pdf, id=1783, page=2, 1027.84pt x 770.88pt>
 File: figures/monojet/rescalingexercise.pdf Graphic file (type pdf)
 
 <use figures/monojet/rescalingexercise.pdf, page 2>
@@ -5782,7 +5782,7 @@ Package pdftex.def Info: figures/monojet/rescalingexercise.pdf, page2 used on i
 nput line 893.
 (pdftex.def)             Requested size: 169.05179pt x 154.3518pt.
 
-<figures/monojet/rescalingexercise.pdf, id=1786, page=3, 1027.84pt x 770.88pt>
+<figures/monojet/rescalingexercise.pdf, id=1785, page=3, 1027.84pt x 770.88pt>
 File: figures/monojet/rescalingexercise.pdf Graphic file (type pdf)
 
 <use figures/monojet/rescalingexercise.pdf, page 3>
@@ -5798,7 +5798,7 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                 on input line 951.
 
 
-<figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png, id=1920, 497.86pt x 574.145pt
+<figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png, id=1919, 497.86pt x 574.145pt
 >
 File: figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png Graphic file (type png)
  <use figures/ttbar/xVSwom_mphi_400_mchi_1_proc_S.png>
@@ -5846,7 +5846,7 @@ File: modelMonoHbaryonicgg.1 Graphic file (type mps)
 File: modelMonoHbaryonicggS.1 Graphic file (type mps)
  [MP to PDF] (./modelMonoHbaryonicggS.1)
 (./modelMonoHbaryonicggS.t1)
-<figures/EW/monoH/models_cmp_MET_et_Log.pdf, id=1956, 569.12625pt x 546.04pt>
+<figures/EW/monoH/models_cmp_MET_et_Log.pdf, id=1955, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/models_cmp_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/models_cmp_MET_et_Log.pdf>
@@ -5854,7 +5854,7 @@ Package pdftex.def Info: figures/EW/monoH/models_cmp_MET_et_Log.pdf used on inp
 ut line 151.
 (pdftex.def)             Requested size: 207.00423pt x 198.60722pt.
 
-<figures/EW/monoH/models_cmp_low_MET_et_Log.pdf, id=1957, 569.12625pt x 546.04p
+<figures/EW/monoH/models_cmp_low_MET_et_Log.pdf, id=1956, 569.12625pt x 546.04p
 t>
 File: figures/EW/monoH/models_cmp_low_MET_et_Log.pdf Graphic file (type pdf)
  <use figures/EW/monoH/models_cmp_low_MET_et_Log.pdf>
@@ -6927,7 +6927,7 @@ Overfull \hbox (2.6744pt too wide) in paragraph at lines 250--253
 those stud-ies per-formed
  []
 
-<figures/EW/monoH/z_gdm_MET_et_Log.pdf, id=2028, 569.12625pt x 546.04pt>
+<figures/EW/monoH/z_gdm_MET_et_Log.pdf, id=2027, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/z_gdm_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/z_gdm_MET_et_Log.pdf>
@@ -6935,7 +6935,7 @@ Package pdftex.def Info: figures/EW/monoH/z_gdm_MET_et_Log.pdf used on input li
 ne 256.
 (pdftex.def)             Requested size: 207.00423pt x 198.60722pt.
 
-<figures/EW/monoH/z_ratio_MET_et_Log.pdf, id=2029, 569.12625pt x 546.04pt>
+<figures/EW/monoH/z_ratio_MET_et_Log.pdf, id=2028, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/z_ratio_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/z_ratio_MET_et_Log.pdf>
@@ -6943,7 +6943,7 @@ Package pdftex.def Info: figures/EW/monoH/z_ratio_MET_et_Log.pdf used on input
 line 257.
 (pdftex.def)             Requested size: 207.00423pt x 198.60722pt.
 
-<figures/EW/monoH/zprime_100_MET_et_Log.pdf, id=2030, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_100_MET_et_Log.pdf, id=2029, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_100_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_100_MET_et_Log.pdf>
@@ -6951,7 +6951,7 @@ Package pdftex.def Info: figures/EW/monoH/zprime_100_MET_et_Log.pdf used on inp
 ut line 267.
 (pdftex.def)             Requested size: 207.00423pt x 198.60722pt.
 
-<figures/EW/monoH/zprime_1000_MET_et_Log.pdf, id=2031, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_1000_MET_et_Log.pdf, id=2030, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_1000_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_1000_MET_et_Log.pdf>
@@ -6959,7 +6959,7 @@ Package pdftex.def Info: figures/EW/monoH/zprime_1000_MET_et_Log.pdf used on in
 put line 268.
 (pdftex.def)             Requested size: 207.00423pt x 198.60722pt.
 
-<figures/EW/monoH/zpzp100/truth_leading_b_pt.pdf, id=2032, 569.12625pt x 404.51
+<figures/EW/monoH/zpzp100/truth_leading_b_pt.pdf, id=2031, 569.12625pt x 404.51
 125pt>
 File: figures/EW/monoH/zpzp100/truth_leading_b_pt.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zpzp100/truth_leading_b_pt.pdf>
@@ -6967,7 +6967,7 @@ Package pdftex.def Info: figures/EW/monoH/zpzp100/truth_leading_b_pt.pdf used o
 n input line 280.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/zpzp100/truth_leading_b_eta.pdf, id=2033, 569.12625pt x 404.5
+<figures/EW/monoH/zpzp100/truth_leading_b_eta.pdf, id=2032, 569.12625pt x 404.5
 1125pt>
 File: figures/EW/monoH/zpzp100/truth_leading_b_eta.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zpzp100/truth_leading_b_eta.pdf>
@@ -6975,7 +6975,7 @@ Package pdftex.def Info: figures/EW/monoH/zpzp100/truth_leading_b_eta.pdf used
 on input line 283.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/zpzp100/truth_bb_deltar.pdf, id=2034, 569.12625pt x 404.51125
+<figures/EW/monoH/zpzp100/truth_bb_deltar.pdf, id=2033, 569.12625pt x 404.51125
 pt>
 File: figures/EW/monoH/zpzp100/truth_bb_deltar.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zpzp100/truth_bb_deltar.pdf>
@@ -6987,7 +6987,7 @@ nput line 286.
 LaTeX Warning: Float too large for page by 6.63986pt on input line 290.
 
 
-<figures/EW/monoH/zpzp1000/truth_leading_b_pt.pdf, id=2035, 569.12625pt x 404.5
+<figures/EW/monoH/zpzp1000/truth_leading_b_pt.pdf, id=2034, 569.12625pt x 404.5
 1125pt>
 File: figures/EW/monoH/zpzp1000/truth_leading_b_pt.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zpzp1000/truth_leading_b_pt.pdf>
@@ -6995,7 +6995,7 @@ Package pdftex.def Info: figures/EW/monoH/zpzp1000/truth_leading_b_pt.pdf used
 on input line 297.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/zpzp1000/truth_leading_b_eta.pdf, id=2036, 569.12625pt x 404.
+<figures/EW/monoH/zpzp1000/truth_leading_b_eta.pdf, id=2035, 569.12625pt x 404.
 51125pt>
 File: figures/EW/monoH/zpzp1000/truth_leading_b_eta.pdf Graphic file (type pdf)
 
@@ -7004,7 +7004,7 @@ Package pdftex.def Info: figures/EW/monoH/zpzp1000/truth_leading_b_eta.pdf used
  on input line 300.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/zpzp1000/truth_bb_deltar.pdf, id=2037, 569.12625pt x 404.5112
+<figures/EW/monoH/zpzp1000/truth_bb_deltar.pdf, id=2036, 569.12625pt x 404.5112
 5pt>
 File: figures/EW/monoH/zpzp1000/truth_bb_deltar.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zpzp1000/truth_bb_deltar.pdf>
@@ -8076,7 +8076,7 @@ cesses shown in Fig. []40[]
  []
 
 [78]
-<figures/EW/monoH/s_gb_65_100_04_MET_et_Log.pdf, id=2200, 569.12625pt x 546.04p
+<figures/EW/monoH/s_gb_65_100_04_MET_et_Log.pdf, id=2199, 569.12625pt x 546.04p
 t>
 File: figures/EW/monoH/s_gb_65_100_04_MET_et_Log.pdf Graphic file (type pdf)
  <use figures/EW/monoH/s_gb_65_100_04_MET_et_Log.pdf>
@@ -8084,7 +8084,7 @@ Package pdftex.def Info: figures/EW/monoH/s_gb_65_100_04_MET_et_Log.pdf used on
  input line 374.
 (pdftex.def)             Requested size: 258.7618pt x 248.26529pt.
 
-<figures/EW/monoH/s_gdm_MET_et_Log.pdf, id=2201, 569.12625pt x 546.04pt>
+<figures/EW/monoH/s_gdm_MET_et_Log.pdf, id=2200, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/s_gdm_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/s_gdm_MET_et_Log.pdf>
@@ -8092,7 +8092,7 @@ Package pdftex.def Info: figures/EW/monoH/s_gdm_MET_et_Log.pdf used on input li
 ne 375.
 (pdftex.def)             Requested size: 258.7618pt x 248.26529pt.
 
-<figures/EW/monoH/s_theta_65_100_2_MET_et_Log.pdf, id=2206, 569.12625pt x 546.0
+<figures/EW/monoH/s_theta_65_100_2_MET_et_Log.pdf, id=2205, 569.12625pt x 546.0
 4pt>
 File: figures/EW/monoH/s_theta_65_100_2_MET_et_Log.pdf Graphic file (type pdf)
  <use figures/EW/monoH/s_theta_65_100_2_MET_et_Log.pdf>
@@ -8100,7 +8100,7 @@ Package pdftex.def Info: figures/EW/monoH/s_theta_65_100_2_MET_et_Log.pdf used
 on input line 398.
 (pdftex.def)             Requested size: 258.7618pt x 248.26529pt.
 
-<figures/EW/monoH/scalar_100_MET_et_Log.pdf, id=2207, 569.12625pt x 546.04pt>
+<figures/EW/monoH/scalar_100_MET_et_Log.pdf, id=2206, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/scalar_100_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/scalar_100_MET_et_Log.pdf>
@@ -8108,7 +8108,7 @@ Package pdftex.def Info: figures/EW/monoH/scalar_100_MET_et_Log.pdf used on inp
 ut line 407.
 (pdftex.def)             Requested size: 258.7618pt x 248.26529pt.
 
-<figures/EW/monoH/scalar_1000_MET_et_Log.pdf, id=2208, 569.12625pt x 546.04pt>
+<figures/EW/monoH/scalar_1000_MET_et_Log.pdf, id=2207, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/scalar_1000_MET_et_Log.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/scalar_1000_MET_et_Log.pdf>
@@ -8120,7 +8120,7 @@ put line 408.
 LaTeX Warning: Float too large for page by 10.28056pt on input line 414.
 
 
-<figures/EW/monoH/scalar100/truth_leading_b_pt.pdf, id=2211, 569.12625pt x 404.
+<figures/EW/monoH/scalar100/truth_leading_b_pt.pdf, id=2210, 569.12625pt x 404.
 51125pt>
 File: figures/EW/monoH/scalar100/truth_leading_b_pt.pdf Graphic file (type pdf)
 
@@ -8129,7 +8129,7 @@ Package pdftex.def Info: figures/EW/monoH/scalar100/truth_leading_b_pt.pdf used
  on input line 423.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/scalar100/truth_leading_b_eta.pdf, id=2212, 569.12625pt x 404
+<figures/EW/monoH/scalar100/truth_leading_b_eta.pdf, id=2211, 569.12625pt x 404
 .51125pt>
 File: figures/EW/monoH/scalar100/truth_leading_b_eta.pdf Graphic file (type pdf
 )
@@ -8138,7 +8138,7 @@ Package pdftex.def Info: figures/EW/monoH/scalar100/truth_leading_b_eta.pdf use
 d on input line 427.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/scalar100/truth_bb_deltar.pdf, id=2213, 569.12625pt x 404.511
+<figures/EW/monoH/scalar100/truth_bb_deltar.pdf, id=2212, 569.12625pt x 404.511
 25pt>
 File: figures/EW/monoH/scalar100/truth_bb_deltar.pdf Graphic file (type pdf)
  <use figures/EW/monoH/scalar100/truth_bb_deltar.pdf>
@@ -8150,7 +8150,7 @@ Package pdftex.def Info: figures/EW/monoH/scalar100/truth_bb_deltar.pdf used on
 LaTeX Warning: Float too large for page by 6.63986pt on input line 435.
 
 
-<figures/EW/monoH/scalar1000/truth_leading_b_pt.pdf, id=2214, 569.12625pt x 404
+<figures/EW/monoH/scalar1000/truth_leading_b_pt.pdf, id=2213, 569.12625pt x 404
 .51125pt>
 File: figures/EW/monoH/scalar1000/truth_leading_b_pt.pdf Graphic file (type pdf
 )
@@ -8159,7 +8159,7 @@ Package pdftex.def Info: figures/EW/monoH/scalar1000/truth_leading_b_pt.pdf use
 d on input line 441.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/scalar1000/truth_leading_b_eta.pdf, id=2215, 569.12625pt x 40
+<figures/EW/monoH/scalar1000/truth_leading_b_eta.pdf, id=2214, 569.12625pt x 40
 4.51125pt>
 File: figures/EW/monoH/scalar1000/truth_leading_b_eta.pdf Graphic file (type pd
 f)
@@ -8168,7 +8168,7 @@ Package pdftex.def Info: figures/EW/monoH/scalar1000/truth_leading_b_eta.pdf us
 ed on input line 445.
 (pdftex.def)             Requested size: 207.00423pt x 147.12997pt.
 
-<figures/EW/monoH/scalar1000/truth_bb_deltar.pdf, id=2216, 569.12625pt x 404.51
+<figures/EW/monoH/scalar1000/truth_bb_deltar.pdf, id=2215, 569.12625pt x 404.51
 125pt>
 File: figures/EW/monoH/scalar1000/truth_bb_deltar.pdf Graphic file (type pdf)
  <use figures/EW/monoH/scalar1000/truth_bb_deltar.pdf>
@@ -9243,7 +9243,7 @@ f> <./figures/EW/monoH/scalar100/truth_leading_b_eta.pdf> <./figures/EW/monoH/s
 calar100/truth_bb_deltar.pdf>] [84 <./figures/EW/monoH/scalar1000/truth_leading
 _b_pt.pdf> <./figures/EW/monoH/scalar1000/truth_leading_b_eta.pdf> <./figures/E
 W/monoH/scalar1000/truth_bb_deltar.pdf>] [85]
-<figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met.pdf, id=2352, 569.12625pt x 385.4
+<figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met.pdf, id=2351, 569.12625pt x 385.4
 4pt>
 File: figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met.pdf Graphic file (type pdf)
  <use figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met.pdf>
@@ -9251,7 +9251,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met.pdf used
 on input line 577.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_dphi12.pdf, id=2353, 569.12625pt x 38
+<figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_dphi12.pdf, id=2352, 569.12625pt x 38
 5.44pt>
 File: figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_dphi12.pdf Graphic file (type pd
 f)
@@ -9261,7 +9261,7 @@ ed on input line 581.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
  [86] [87 <./figures/EW/monoH/2hdm/hxx_zp1000dm10gz01_met.pdf> <./figures/EW/mo
 noH/2hdm/hxx_zp1000dm10gz01_dphi12.pdf>]
-<figures/EW/monoH/2hdm/tanb1zp1000gz08_met.pdf, id=2393, 569.12625pt x 385.44pt
+<figures/EW/monoH/2hdm/tanb1zp1000gz08_met.pdf, id=2392, 569.12625pt x 385.44pt
 >
 File: figures/EW/monoH/2hdm/tanb1zp1000gz08_met.pdf Graphic file (type pdf)
  <use figures/EW/monoH/2hdm/tanb1zp1000gz08_met.pdf>
@@ -9269,7 +9269,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/tanb1zp1000gz08_met.pdf used on
 input line 603.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/tanb1zp1000gz08_dphi12.pdf, id=2394, 569.12625pt x 385.4
+<figures/EW/monoH/2hdm/tanb1zp1000gz08_dphi12.pdf, id=2393, 569.12625pt x 385.4
 4pt>
 File: figures/EW/monoH/2hdm/tanb1zp1000gz08_dphi12.pdf Graphic file (type pdf)
  <use figures/EW/monoH/2hdm/tanb1zp1000gz08_dphi12.pdf>
@@ -9277,7 +9277,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/tanb1zp1000gz08_dphi12.pdf used
 on input line 607.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/zp2hdm_a0_300_MET_et_Log.pdf, id=2395, 569.12625pt x 546.04pt
+<figures/EW/monoH/zp2hdm_a0_300_MET_et_Log.pdf, id=2394, 569.12625pt x 546.04pt
 >
 File: figures/EW/monoH/zp2hdm_a0_300_MET_et_Log.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zp2hdm_a0_300_MET_et_Log.pdf>
@@ -9285,7 +9285,7 @@ Package pdftex.def Info: figures/EW/monoH/zp2hdm_a0_300_MET_et_Log.pdf used on
 input line 614.
 (pdftex.def)             Requested size: 207.00423pt x 198.60722pt.
 
-<figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log.pdf, id=2396, 569.12625pt x 546.04p
+<figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log.pdf, id=2395, 569.12625pt x 546.04p
 t>
 File: figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log.pdf Graphic file (type pdf)
  <use figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log.pdf>
@@ -9295,7 +9295,7 @@ Package pdftex.def Info: figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log.pdf used on
  [88 <./figures/EW/monoH/2hdm/tanb1zp1000gz08_met.pdf> <./figures/EW/monoH/2hdm
 /tanb1zp1000gz08_dphi12.pdf>] [89 <./figures/EW/monoH/zp2hdm_a0_300_MET_et_Log.
 pdf> <./figures/EW/monoH/zp2hdm_a0_1000_MET_et_Log.pdf>]
-<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_met.pdf, id=2445, 569.12625pt x 
+<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_met.pdf, id=2444, 569.12625pt x 
 385.44pt>
 File: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_met.pdf Graphic file (type 
 pdf)
@@ -9304,7 +9304,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_met.pdf
 used on input line 634.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_p0.pdf, id=2446, 569.12625pt x 3
+<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_p0.pdf, id=2445, 569.12625pt x 3
 85.44pt>
 File: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_p0.pdf Graphic file (type p
 df)
@@ -9313,7 +9313,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_p0.pdf u
 sed on input line 638.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_dphi12.pdf, id=2447, 569.12625pt
+<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_dphi12.pdf, id=2446, 569.12625pt
  x 385.44pt>
 File: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_dphi12.pdf Graphic file (ty
 pe pdf)
@@ -9322,7 +9322,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mA300mZp_dphi12.p
 df used on input line 642.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_met.pdf, id=2448, 569.12625pt x
+<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_met.pdf, id=2447, 569.12625pt x
  385.44pt>
 File: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_met.pdf Graphic file (type
  pdf)
@@ -9331,7 +9331,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_met.pdf
  used on input line 652.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_p0.pdf, id=2449, 569.12625pt x 
+<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_p0.pdf, id=2448, 569.12625pt x 
 385.44pt>
 File: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_p0.pdf Graphic file (type 
 pdf)
@@ -9340,7 +9340,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_p0.pdf
 used on input line 655.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_dphi12.pdf, id=2450, 569.12625p
+<figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_dphi12.pdf, id=2449, 569.12625p
 t x 385.44pt>
 File: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_dphi12.pdf Graphic file (t
 ype pdf)
@@ -9349,7 +9349,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/ZpA0h_tanb1gz08mZp1000mA_dphi12.
 pdf used on input line 659.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_met.pdf, id=2452, 569.12625pt x
+<figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_met.pdf, id=2451, 569.12625pt x
  385.44pt>
 File: figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_met.pdf Graphic file (type
  pdf)
@@ -9358,7 +9358,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_met.pdf
  used on input line 677.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphimetj0.pdf, id=2453, 569.126
+<figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphimetj0.pdf, id=2452, 569.126
 25pt x 385.44pt>
 File: figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphimetj0.pdf Graphic file
  (type pdf)
@@ -9368,7 +9368,7 @@ Package pdftex.def Info: figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphimet
 j0.pdf used on input line 680.
 (pdftex.def)             Requested size: 207.00423pt x 140.19333pt.
 
-<figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphi12.pdf, id=2454, 569.12625p
+<figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphi12.pdf, id=2453, 569.12625p
 t x 385.44pt>
 File: figures/EW/monoH/2hdm/Zp_tanb1gz08mA300mZp1000_dphi12.pdf Graphic file (t
 ype pdf)
@@ -9390,7 +9390,7 @@ m/Zp_tanb1gz08mA300mZp1000_dphi12.pdf>]
 File: modelMonoHEFT.1 Graphic file (type mps)
  [MP to PDF] (./modelMonoHEFT.1)
 (./modelMonoHEFT.t1) [94]
-<figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf, id=2599, 569.12625pt x 408.526
+<figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf, id=2598, 569.12625pt x 408.526
 25pt>
 File: figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf Graphic file (type pdf)
  <use figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf>
@@ -9399,7 +9399,7 @@ Package pdftex.def Info: figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf used on
 (pdftex.def)             Requested size: 327.7661pt x 235.27478pt.
  [95] [96 <./figures/EW/pt_vv2_xxDHDH_vs_ScalarMediator.pdf, page is rotated 90
  degrees>]
-<figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf, id=2655, 569.12625pt x 404.511
+<figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf, id=2654, 569.12625pt x 404.511
 25pt>
 File: figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf Graphic file (type pdf)
  <use figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf>
@@ -9407,7 +9407,7 @@ Package pdftex.def Info: figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf used on
  input line 139.
 (pdftex.def)             Requested size: 224.25096pt x 159.38824pt.
 
-<figures/EW/monoH/xxhhg5/truth_leading_b_eta.pdf, id=2656, 569.12625pt x 404.51
+<figures/EW/monoH/xxhhg5/truth_leading_b_eta.pdf, id=2655, 569.12625pt x 404.51
 125pt>
 File: figures/EW/monoH/xxhhg5/truth_leading_b_eta.pdf Graphic file (type pdf)
  <use figures/EW/monoH/xxhhg5/truth_leading_b_eta.pdf>
@@ -9415,7 +9415,7 @@ Package pdftex.def Info: figures/EW/monoH/xxhhg5/truth_leading_b_eta.pdf used o
 n input line 143.
 (pdftex.def)             Requested size: 224.25096pt x 159.38824pt.
 
-<figures/EW/monoH/xxhhg5/truth_bb_deltar.pdf, id=2657, 569.12625pt x 404.51125p
+<figures/EW/monoH/xxhhg5/truth_bb_deltar.pdf, id=2656, 569.12625pt x 404.51125p
 t>
 File: figures/EW/monoH/xxhhg5/truth_bb_deltar.pdf Graphic file (type pdf)
  <use figures/EW/monoH/xxhhg5/truth_bb_deltar.pdf>
@@ -9436,7 +9436,7 @@ m/it/10 SU\OT1/mdbch/m/n/10 (2)[] \OMS/mdbch/m/n/10 ^^B \OML/mdbch/m/it/10 U\OT
 [97] [98 <./figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf> <./figures/EW/monoH
 /xxhhg5/truth_leading_b_eta.pdf> <./figures/EW/monoH/xxhhg5/truth_bb_deltar.pdf
 >] [99] [100]
-<figures/EW/monoZhad_SP/metPt.pdf, id=2743, 569.12625pt x 408.52625pt>
+<figures/EW/monoZhad_SP/metPt.pdf, id=2742, 569.12625pt x 408.52625pt>
 File: figures/EW/monoZhad_SP/metPt.pdf Graphic file (type pdf)
 
 <use figures/EW/monoZhad_SP/metPt.pdf>
@@ -9451,7 +9451,7 @@ Package pdftex.def Info: figures/EW/monoH/xxhhg5/truth_leading_b_pt.pdf used on
  input line 260.
 (pdftex.def)             Requested size: 224.25096pt x 159.38824pt.
 
-<figures/EW/monoH/xgxFhDh/truth_leading_b_pt.pdf, id=2796, 569.12625pt x 404.51
+<figures/EW/monoH/xgxFhDh/truth_leading_b_pt.pdf, id=2795, 569.12625pt x 404.51
 125pt>
 File: figures/EW/monoH/xgxFhDh/truth_leading_b_pt.pdf Graphic file (type pdf)
  <use figures/EW/monoH/xgxFhDh/truth_leading_b_pt.pdf>
@@ -9479,28 +9479,28 @@ Overfull \hbox (31.95871pt too wide) in paragraph at lines 214--215
  []
 
 [111]
-<figures/monojet_appendix/HistoJet1to2_30.pdf, id=2923, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet1to2_30.pdf, id=2922, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet1to2_30.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet1to2_30.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet1to2_30.pdf used on i
 nput line 246.
 (pdftex.def)             Requested size: 155.24666pt x 105.1406pt.
 
-<figures/monojet_appendix/HistoJet2to3_30.pdf, id=2924, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet2to3_30.pdf, id=2923, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet2to3_30.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet2to3_30.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet2to3_30.pdf used on i
 nput line 250.
 (pdftex.def)             Requested size: 155.24666pt x 105.1406pt.
 
-<figures/monojet_appendix/HistoJet3to4_30.pdf, id=2925, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet3to4_30.pdf, id=2924, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet3to4_30.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet3to4_30.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet3to4_30.pdf used on i
 nput line 254.
 (pdftex.def)             Requested size: 155.24666pt x 105.1406pt.
 
-<figures/monojet_appendix/HistoJet4to5_30.pdf, id=2926, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet4to5_30.pdf, id=2925, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet4to5_30.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet4to5_30.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet4to5_30.pdf used on i
@@ -9511,28 +9511,28 @@ nput line 258.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<figures/monojet_appendix/HistoJet1to2_80.pdf, id=2927, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet1to2_80.pdf, id=2926, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet1to2_80.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet1to2_80.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet1to2_80.pdf used on i
 nput line 268.
 (pdftex.def)             Requested size: 155.24666pt x 105.1406pt.
 
-<figures/monojet_appendix/HistoJet2to3_80.pdf, id=2928, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet2to3_80.pdf, id=2927, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet2to3_80.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet2to3_80.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet2to3_80.pdf used on i
 nput line 272.
 (pdftex.def)             Requested size: 155.24666pt x 105.1406pt.
 
-<figures/monojet_appendix/HistoJet3to4_80.pdf, id=2929, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet3to4_80.pdf, id=2928, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet3to4_80.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet3to4_80.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet3to4_80.pdf used on i
 nput line 276.
 (pdftex.def)             Requested size: 155.24666pt x 105.1406pt.
 
-<figures/monojet_appendix/HistoJet4to5_80.pdf, id=2930, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/HistoJet4to5_80.pdf, id=2929, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/HistoJet4to5_80.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/HistoJet4to5_80.pdf>
 Package pdftex.def Info: figures/monojet_appendix/HistoJet4to5_80.pdf used on i
@@ -9543,7 +9543,7 @@ nput line 280.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<figures/monojet_appendix/compare_plot_1.pdf, id=2931, 569.12625pt x 387.4475pt
+<figures/monojet_appendix/compare_plot_1.pdf, id=2930, 569.12625pt x 387.4475pt
 >
 File: figures/monojet_appendix/compare_plot_1.pdf Graphic file (type pdf)
  <use figures/monojet_appendix/compare_plot_1.pdf>
@@ -9551,14 +9551,14 @@ Package pdftex.def Info: figures/monojet_appendix/compare_plot_1.pdf used on in
 put line 291.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/window_plot_1.pdf, id=2932, 569.12625pt x 387.4475pt>
+<figures/monojet_appendix/window_plot_1.pdf, id=2931, 569.12625pt x 387.4475pt>
 File: figures/monojet_appendix/window_plot_1.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/window_plot_1.pdf>
 Package pdftex.def Info: figures/monojet_appendix/window_plot_1.pdf used on inp
 ut line 291.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/compare_plot_2.pdf, id=2933, 569.12625pt x 387.4475pt
+<figures/monojet_appendix/compare_plot_2.pdf, id=2932, 569.12625pt x 387.4475pt
 >
 File: figures/monojet_appendix/compare_plot_2.pdf Graphic file (type pdf)
  <use figures/monojet_appendix/compare_plot_2.pdf>
@@ -9566,14 +9566,14 @@ Package pdftex.def Info: figures/monojet_appendix/compare_plot_2.pdf used on in
 put line 296.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/window_plot_2.pdf, id=2934, 569.12625pt x 387.4475pt>
+<figures/monojet_appendix/window_plot_2.pdf, id=2933, 569.12625pt x 387.4475pt>
 File: figures/monojet_appendix/window_plot_2.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/window_plot_2.pdf>
 Package pdftex.def Info: figures/monojet_appendix/window_plot_2.pdf used on inp
 ut line 296.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/compare_plot_3.pdf, id=2935, 569.12625pt x 387.4475pt
+<figures/monojet_appendix/compare_plot_3.pdf, id=2934, 569.12625pt x 387.4475pt
 >
 File: figures/monojet_appendix/compare_plot_3.pdf Graphic file (type pdf)
  <use figures/monojet_appendix/compare_plot_3.pdf>
@@ -9581,14 +9581,14 @@ Package pdftex.def Info: figures/monojet_appendix/compare_plot_3.pdf used on in
 put line 301.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/window_plot_3.pdf, id=2936, 569.12625pt x 387.4475pt>
+<figures/monojet_appendix/window_plot_3.pdf, id=2935, 569.12625pt x 387.4475pt>
 File: figures/monojet_appendix/window_plot_3.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/window_plot_3.pdf>
 Package pdftex.def Info: figures/monojet_appendix/window_plot_3.pdf used on inp
 ut line 301.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/compare_plot_4.pdf, id=2937, 569.12625pt x 387.4475pt
+<figures/monojet_appendix/compare_plot_4.pdf, id=2936, 569.12625pt x 387.4475pt
 >
 File: figures/monojet_appendix/compare_plot_4.pdf Graphic file (type pdf)
  <use figures/monojet_appendix/compare_plot_4.pdf>
@@ -9596,7 +9596,7 @@ Package pdftex.def Info: figures/monojet_appendix/compare_plot_4.pdf used on in
 put line 306.
 (pdftex.def)             Requested size: 151.79904pt x 103.34114pt.
 
-<figures/monojet_appendix/window_plot_4.pdf, id=2938, 569.12625pt x 387.4475pt>
+<figures/monojet_appendix/window_plot_4.pdf, id=2937, 569.12625pt x 387.4475pt>
 File: figures/monojet_appendix/window_plot_4.pdf Graphic file (type pdf)
 <use figures/monojet_appendix/window_plot_4.pdf>
 Package pdftex.def Info: figures/monojet_appendix/window_plot_4.pdf used on inp
@@ -9607,7 +9607,7 @@ ut line 306.
 LaTeX Warning: Float too large for page by 22.11449pt on input line 309.
 
 [112]
-<figures/monojet_appendix/MET_matching80.pdf, id=2949, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/MET_matching80.pdf, id=2948, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/MET_matching80.pdf Graphic file (type pdf)
 
 <use figures/monojet_appendix/MET_matching80.pdf>
@@ -9622,7 +9622,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 s> <./figures/monojet_appendix/HistoJet2to3_30.pdf, page is rotated 90 degrees>
  <./figures/monojet_appendix/HistoJet3to4_30.pdf, page is rotated 90 degrees> <
 ./figures/monojet_appendix/HistoJet4to5_30.pdf, page is rotated 90 degrees>]
-<figures/monojet_appendix/h_MET.pdf, id=3133, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/h_MET.pdf, id=3132, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/h_MET.pdf Graphic file (type pdf)
 
 <use figures/monojet_appendix/h_MET.pdf>
@@ -9630,7 +9630,7 @@ Package pdftex.def Info: figures/monojet_appendix/h_MET.pdf used on input line
 336.
 (pdftex.def)             Requested size: 327.7661pt x 221.97916pt.
 
-<figures/monojet_appendix/h_MET_3jet.pdf, id=3134, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/h_MET_3jet.pdf, id=3133, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/h_MET_3jet.pdf Graphic file (type pdf)
 
 <use figures/monojet_appendix/h_MET_3jet.pdf>
@@ -9641,7 +9641,7 @@ line 340.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/monojet_appendix/h_njet250.pdf, id=3135, 569.12625pt x 385.44pt>
+<figures/monojet_appendix/h_njet250.pdf, id=3134, 569.12625pt x 385.44pt>
 File: figures/monojet_appendix/h_njet250.pdf Graphic file (type pdf)
 
 <use figures/monojet_appendix/h_njet250.pdf>
@@ -10705,7 +10705,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `subscript' on input line 354.
 
 [115] [116]
-<figures/bbar/4Fvs5F_plots/Njets.pdf, id=3354, 569.12625pt x 385.44pt>
+<figures/bbar/4Fvs5F_plots/Njets.pdf, id=3353, 569.12625pt x 385.44pt>
 File: figures/bbar/4Fvs5F_plots/Njets.pdf Graphic file (type pdf)
 
 <use figures/bbar/4Fvs5F_plots/Njets.pdf>
@@ -10713,7 +10713,7 @@ Package pdftex.def Info: figures/bbar/4Fvs5F_plots/Njets.pdf used on input line
  417.
 (pdftex.def)             Requested size: 182.12411pt x 123.3433pt.
 
-<figures/bbar/4Fvs5F_plots/dR12.pdf, id=3355, 569.12625pt x 385.44pt>
+<figures/bbar/4Fvs5F_plots/dR12.pdf, id=3354, 569.12625pt x 385.44pt>
 File: figures/bbar/4Fvs5F_plots/dR12.pdf Graphic file (type pdf)
 
 <use figures/bbar/4Fvs5F_plots/dR12.pdf>
@@ -10739,7 +10739,7 @@ tum car-ried by the me-di-a-tor, and $\OML/mdbch/m/it/10 g[]$\T1/mdbch/m/n/10 ,
 
 [121] [122]
 <figures/EFT/MstarLimitvscouplingSec600_Stop13_R0_DM_EFT_D5_DM50_tree.pdf, id=3
-443, 569.12625pt x 385.44pt>
+442, 569.12625pt x 385.44pt>
 File: figures/EFT/MstarLimitvscouplingSec600_Stop13_R0_DM_EFT_D5_DM50_tree.pdf 
 Graphic file (type pdf)
 
@@ -10749,7 +10749,7 @@ T_D5_DM50_tree.pdf used on input line 180.
 (pdftex.def)             Requested size: 327.7661pt x 221.97916pt.
 
 [123] [124]
-<figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.pdf, id=3473, 569.12625pt
+<figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.pdf, id=3472, 569.12625pt
  x 385.44pt>
 File: figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.pdf Graphic file (ty
 pe pdf)
@@ -10758,7 +10758,7 @@ Package pdftex.def Info: figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.p
 df used on input line 236.
 (pdftex.def)             Requested size: 172.50208pt x 116.8268pt.
 
-<figures/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.pdf, id=3474, 569.12625pt x 
+<figures/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.pdf, id=3473, 569.12625pt x 
 385.44pt>
 File: figures/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.pdf Graphic file (type 
 pdf)
@@ -10767,7 +10767,7 @@ Package pdftex.def Info: figures/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.pdf
 used on input line 240.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/TruthPt_compEFTvsZprime_DM150_narrow.pdf, id=3475, 569.12625pt x 3
+<figures/EFT/TruthPt_compEFTvsZprime_DM150_narrow.pdf, id=3474, 569.12625pt x 3
 85.44pt>
 File: figures/EFT/TruthPt_compEFTvsZprime_DM150_narrow.pdf Graphic file (type p
 df)
@@ -10776,7 +10776,7 @@ Package pdftex.def Info: figures/EFT/TruthPt_compEFTvsZprime_DM150_narrow.pdf u
 sed on input line 243.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narrow.pdf, id=3476, 569.12625pt x
+<figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narrow.pdf, id=3475, 569.12625pt x
  385.44pt>
 File: figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narrow.pdf Graphic file (type
  pdf)
@@ -10785,7 +10785,7 @@ Package pdftex.def Info: figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narrow.pdf
  used on input line 247.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf, id=3477, 569.12625pt x
+<figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf, id=3476, 569.12625pt x
  385.44pt>
 File: figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf Graphic file (type
  pdf)
@@ -10794,28 +10794,28 @@ Package pdftex.def Info: figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf
  used on input line 250.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/EFT_met.pdf, id=3480, 569.12625pt x 385.44pt>
+<figures/EFT/EFT_met.pdf, id=3479, 569.12625pt x 385.44pt>
 File: figures/EFT/EFT_met.pdf Graphic file (type pdf)
 
 <use figures/EFT/EFT_met.pdf>
 Package pdftex.def Info: figures/EFT/EFT_met.pdf used on input line 266.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/EFT_shat.pdf, id=3481, 569.12625pt x 385.44pt>
+<figures/EFT/EFT_shat.pdf, id=3480, 569.12625pt x 385.44pt>
 File: figures/EFT/EFT_shat.pdf Graphic file (type pdf)
 
 <use figures/EFT/EFT_shat.pdf>
 Package pdftex.def Info: figures/EFT/EFT_shat.pdf used on input line 269.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/Zprime_met.pdf, id=3482, 569.12625pt x 385.44pt>
+<figures/EFT/Zprime_met.pdf, id=3481, 569.12625pt x 385.44pt>
 File: figures/EFT/Zprime_met.pdf Graphic file (type pdf)
 
 <use figures/EFT/Zprime_met.pdf>
 Package pdftex.def Info: figures/EFT/Zprime_met.pdf used on input line 273.
 (pdftex.def)             Requested size: 162.15056pt x 109.81625pt.
 
-<figures/EFT/Zprime_shat.pdf, id=3483, 569.12625pt x 385.44pt>
+<figures/EFT/Zprime_shat.pdf, id=3482, 569.12625pt x 385.44pt>
 File: figures/EFT/Zprime_shat.pdf Graphic file (type pdf)
 
 <use figures/EFT/Zprime_shat.pdf>
@@ -10902,7 +10902,7 @@ LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
 (Font)              scaled to size 6.72005pt on input line 19.
 ) [133] [134])
 (./tex/backmatter.tex) [135] (./tex/EWSpecificModels_Appendix.tex
-(./tex/SingleTop.tex
+(./tex/SingleTop.tex [136]
 \openout4 = `modelS1.mp'.
 
 File: modelS1.1 Graphic file (type mps)
@@ -10910,34 +10910,32 @@ File: modelS1.1 Graphic file (type mps)
 \openout4 = `modelS4s.mp'.
 
 File: modelS4s.1 Graphic file (type mps)
- [MP to PDF]
-(./modelS4s.1) (./modelS4s.t1)
+
+[MP to PDF] (./modelS4s.1) (./modelS4s.t1)
 \openout4 = `modelS4t.mp'.
 
 File: modelS4t.1 Graphic file (type mps)
- [MP to PDF] (./modelS4t.1) (./modelS4t.t1)
-[136]
+ [MP to PDF] (./modelS4t.1)
+(./modelS4t.t1) [137]
 Overfull \hbox (2.63133pt too wide) in paragraph at lines 135--142
  []\T1/mdbch/m/it/10 Non-Resonant pro-duc-tion.[] \T1/mdbch/m/n/10 For non-reso
 nant mono-top pro-duc-tion, the mono-top state
  []
 
-[137]
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 7.68005pt on input line 162.
-
 
 Package natbib Warning: Citation `Allahverdi:2015mha' on page 138 undefined on 
 input line 162.
 
-[138]
+[138] [139]
 Overfull \hbox (0.33124pt too wide) in paragraph at lines 236--239
 \T1/mdbch/m/n/10 den sec-tor that could be, in its sim-plest form, pa-ram-e-ter
 -ized by a new fermion [[]].
  []
 
-[139]
-<figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf, id=3733, 569.12625pt x 548.0
+
+<figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf, id=3732, 569.12625pt x 548.0
 475pt>
 File: figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf Graphic file (type pdf)
  <use figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf>
@@ -10945,7 +10943,7 @@ Package pdftex.def Info: figures/singletop/Width/c_PTvmet200GeV_IsLog.pdf used
 on input line 277.
 (pdftex.def)             Requested size: 110.40167pt x 106.31271pt.
 
-<figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf, id=3734, 569.12625pt x 548.0
+<figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf, id=3733, 569.12625pt x 548.0
 475pt>
 File: figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf Graphic file (type pdf)
  <use figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf>
@@ -10953,7 +10951,7 @@ Package pdftex.def Info: figures/singletop/Width/c_PTvmet600GeV_IsLog.pdf used
 on input line 278.
 (pdftex.def)             Requested size: 110.40167pt x 106.31271pt.
 
-<figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf, id=3735, 569.12625pt x 548.
+<figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf, id=3734, 569.12625pt x 548.
 0475pt>
 File: figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf Graphic file (type pdf)
 
@@ -10962,7 +10960,7 @@ Package pdftex.def Info: figures/singletop/Width/c_PTvmet1000GeV_IsLog.pdf used
  on input line 279.
 (pdftex.def)             Requested size: 110.40167pt x 106.31271pt.
 ) [140] [141]
-[142] <figures/EW/i2HDM/fd-mono-j1.pdf, id=3800, 332.24126pt x 120.45pt>
+[142] [143] <figures/EW/i2HDM/fd-mono-j1.pdf, id=3818, 332.24126pt x 120.45pt>
 File: figures/EW/i2HDM/fd-mono-j1.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-j1.pdf>
@@ -10970,7 +10968,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-j1.pdf used on input line 130
 .
 (pdftex.def)             Requested size: 345.02086pt x 125.08307pt.
 
-<figures/EW/i2HDM/fd-mono-j2.pdf, id=3803, 376.40625pt x 55.20625pt>
+<figures/EW/i2HDM/fd-mono-j2.pdf, id=3821, 376.40625pt x 55.20625pt>
 File: figures/EW/i2HDM/fd-mono-j2.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-j2.pdf>
@@ -10978,7 +10976,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-j2.pdf used on input line 136
 .
 (pdftex.def)             Requested size: 345.02289pt x 50.60333pt.
 
-<figures/EW/i2HDM/fd-mono-z.pdf, id=3806, 330.23375pt x 55.20625pt>
+<figures/EW/i2HDM/fd-mono-z.pdf, id=3824, 330.23375pt x 55.20625pt>
 File: figures/EW/i2HDM/fd-mono-z.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-z.pdf>
@@ -10986,7 +10984,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-z.pdf used on input line 142.
 
 (pdftex.def)             Requested size: 345.01218pt x 57.67679pt.
 
-<figures/EW/i2HDM/fd-mono-h1.pdf, id=3809, 334.24875pt x 117.43875pt>
+<figures/EW/i2HDM/fd-mono-h1.pdf, id=3827, 334.24875pt x 117.43875pt>
 File: figures/EW/i2HDM/fd-mono-h1.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-h1.pdf>
@@ -10994,7 +10992,7 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-h1.pdf used on input line 148
 .
 (pdftex.def)             Requested size: 345.02979pt x 121.22665pt.
 
-<figures/EW/i2HDM/fd-mono-h2.pdf, id=3812, 293.095pt x 55.20625pt>
+<figures/EW/i2HDM/fd-mono-h2.pdf, id=3830, 293.095pt x 55.20625pt>
 File: figures/EW/i2HDM/fd-mono-h2.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-mono-h2.pdf>
@@ -11002,58 +11000,58 @@ Package pdftex.def Info: figures/EW/i2HDM/fd-mono-h2.pdf used on input line 154
 .
 (pdftex.def)             Requested size: 344.99936pt x 64.98274pt.
 
-<figures/EW/i2HDM/fd-vbf.pdf, id=3815, 280.04625pt x 77.28876pt>
+<figures/EW/i2HDM/fd-vbf.pdf, id=3833, 280.04625pt x 77.28876pt>
 File: figures/EW/i2HDM/fd-vbf.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/fd-vbf.pdf>
 Package pdftex.def Info: figures/EW/i2HDM/fd-vbf.pdf used on input line 160.
 (pdftex.def)             Requested size: 345.0146pt x 95.21909pt.
- [143]
+
 Overfull \hbox (5.76506pt too wide) in paragraph at lines 168--172
 \T1/mdbch/m/n/10 have im-ple-mented and cross-checked the IDM model into CalcHE
 P and mi-crOMEGAs,
  []
 
-<figures/EW/i2HDM/i2HDM_crossSections.pdf, id=3858, 511.9125pt x 426.59375pt>
+<figures/EW/i2HDM/i2HDM_crossSections.pdf, id=3843, 511.9125pt x 426.59375pt>
 File: figures/EW/i2HDM/i2HDM_crossSections.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/i2HDM_crossSections.pdf>
 Package pdftex.def Info: figures/EW/i2HDM/i2HDM_crossSections.pdf used on input
  line 208.
 (pdftex.def)             Requested size: 345.00269pt x 287.50223pt.
- [144] [145 <./figures/monojet_appendix/compare_plot_1.pdf, page is rotated 90 
-degrees> <./figures/monojet_appendix/window_plot_1.pdf, page is rotated 90 degr
-ees> <./figures/monojet_appendix/compare_plot_2.pdf, page is rotated 90 degrees
-> <./figures/monojet_appendix/window_plot_2.pdf, page is rotated 90 degrees> <.
-/figures/monojet_appendix/compare_plot_3.pdf, page is rotated 90 degrees> <./fi
-gures/monojet_appendix/window_plot_3.pdf, page is rotated 90 degrees> <./figure
-s/monojet_appendix/compare_plot_4.pdf, page is rotated 90 degrees> <./figures/m
-onojet_appendix/window_plot_4.pdf, page is rotated 90 degrees>] [146 <./figures
-/monojet_appendix/MET_matching80.pdf>] [147 <./figures/monojet_appendix/h_MET.p
-df, page is rotated 90 degrees> <./figures/monojet_appendix/h_MET_3jet.pdf, pag
-e is rotated 90 degrees>]
-[148 <./figures/monojet_appendix/h_njet250.pdf, page is rotated 90 degrees> <./
+ [144] [145] [146 <./figures/monojet_appendix/compare_plot_1.pdf, page is rotat
+ed 90 degrees> <./figures/monojet_appendix/window_plot_1.pdf, page is rotated 9
+0 degrees> <./figures/monojet_appendix/compare_plot_2.pdf, page is rotated 90 d
+egrees> <./figures/monojet_appendix/window_plot_2.pdf, page is rotated 90 degre
+es> <./figures/monojet_appendix/compare_plot_3.pdf, page is rotated 90 degrees>
+ <./figures/monojet_appendix/window_plot_3.pdf, page is rotated 90 degrees> <./
+figures/monojet_appendix/compare_plot_4.pdf, page is rotated 90 degrees> <./fig
+ures/monojet_appendix/window_plot_4.pdf, page is rotated 90 degrees>] [147 <./f
+igures/monojet_appendix/MET_matching80.pdf>] [148 <./figures/monojet_appendix/h
+_MET.pdf, page is rotated 90 degrees> <./figures/monojet_appendix/h_MET_3jet.pd
+f, page is rotated 90 degrees>]
+[149 <./figures/monojet_appendix/h_njet250.pdf, page is rotated 90 degrees> <./
 figures/bbar/4Fvs5F_plots/Njets.pdf> <./figures/bbar/4Fvs5F_plots/dR12.pdf>]
-[149 <./figures/EFT/MstarLimitvscouplingSec600_Stop13_R0_DM_EFT_D5_DM50_tree.pd
-f>] [150 <./figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.pdf> <./figure
+[150 <./figures/EFT/MstarLimitvscouplingSec600_Stop13_R0_DM_EFT_D5_DM50_tree.pd
+f>] [151 <./figures/EFT/TruthETmiss_compEFTvsZprime_DM150_narrow.pdf> <./figure
 s/EFT/TruthEcm_compEFTvsZprime_DM150_narrow.pdf> <./figures/EFT/TruthPt_compEFT
 vsZprime_DM150_narrow.pdf> <./figures/EFT/TruthDM1ptcompEFTvsZprime_DM150_narro
-w.pdf> <./figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf>] [151 <./figu
+w.pdf> <./figures/EFT/TruthDM2ptcompEFTvsZprime_DM150_narrow.pdf>] [152 <./figu
 res/EFT/EFT_met.pdf> <./figures/EFT/EFT_shat.pdf> <./figures/EFT/Zprime_met.pdf
-> <./figures/EFT/Zprime_shat.pdf>] [152 <./figures/singletop/Width/c_PTvmet200G
+> <./figures/EFT/Zprime_shat.pdf>] [153 <./figures/singletop/Width/c_PTvmet200G
 eV_IsLog.pdf, page is rotated 90 degrees> <./figures/singletop/Width/c_PTvmet60
 0GeV_IsLog.pdf, page is rotated 90 degrees> <./figures/singletop/Width/c_PTvmet
-1000GeV_IsLog.pdf, page is rotated 90 degrees>] [153 <./figures/EW/i2HDM/fd-mon
+1000GeV_IsLog.pdf, page is rotated 90 degrees>] [154 <./figures/EW/i2HDM/fd-mon
 o-j1.pdf> <./figures/EW/i2HDM/fd-mono-j2.pdf> <./figures/EW/i2HDM/fd-mono-z.pdf
-> <./figures/EW/i2HDM/fd-mono-h1.pdf>] [154 <./figures/EW/i2HDM/fd-mono-h2.pdf>
- <./figures/EW/i2HDM/fd-vbf.pdf>] [155 <./figures/EW/i2HDM/i2HDM_crossSections.
+> <./figures/EW/i2HDM/fd-mono-h1.pdf>] [155 <./figures/EW/i2HDM/fd-mono-h2.pdf>
+ <./figures/EW/i2HDM/fd-vbf.pdf>] [156 <./figures/EW/i2HDM/i2HDM_crossSections.
 pdf>]) (./tex/Presentation_Of_Experimental_Results.tex
 Overfull \hbox (4.0153pt too wide) in paragraph at lines 15--17
 []\T1/mdbch/m/n/10 Provide eas-ily us-able and clearly la-beled re-sults in a d
 ig-i-tized for-mat, e.g. [[]]
  []
 
-[156
+[157
 
 ]
 Overfull \hbox (25.24022pt too wide) in paragraph at lines 42--43
@@ -11061,7 +11059,7 @@ Overfull \hbox (25.24022pt too wide) in paragraph at lines 42--43
  sec-tions (e.g. LO,NLO,NLL)
  []
 
-[157]
+[158]
 Overfull \hbox (43.65022pt too wide) in paragraph at lines 46--47
 []\T1/mdbch/m/n/10 Model files: For mod-els which are not al-ready im-ple-mente
 d in \T1/mdbch/m/fsc/10 Mad-Graph5_aMC@NLO\T1/mdbch/m/n/10 ,
@@ -11073,8 +11071,8 @@ Overfull \hbox (1.78189pt too wide) in paragraph at lines 48--49
 r-ma-tion needed within
  []
 
-[158] [159]) (./tex/AdditionalDetails.tex [160]
-<figures/EW/monoH/zprime_xs_med_100.pdf, id=4836, 569.12625pt x 546.04pt>
+[159] [160]) (./tex/AdditionalDetails.tex [161]
+<figures/EW/monoH/zprime_xs_med_100.pdf, id=4839, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_xs_med_100.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_xs_med_100.pdf>
@@ -11082,16 +11080,16 @@ Package pdftex.def Info: figures/EW/monoH/zprime_xs_med_100.pdf used on input l
 ine 23.
 (pdftex.def)             Requested size: 155.24666pt x 148.94917pt.
 
-<figures/EW/monoH/zprime_xs_med_1000.pdf, id=4837, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_xs_med_1000.pdf, id=4840, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_xs_med_1000.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_xs_med_1000.pdf>
 Package pdftex.def Info: figures/EW/monoH/zprime_xs_med_1000.pdf used on input 
 line 24.
 (pdftex.def)             Requested size: 155.24666pt x 148.94917pt.
-) (./doc.bbl [161 <./figures/EW/monoH/zprime_xs_med_100.pdf> <./figures/EW/mono
+) (./doc.bbl [162 <./figures/EW/monoH/zprime_xs_med_100.pdf> <./figures/EW/mono
 H/zprime_xs_med_1000.pdf>]
-[162] [163] [164]
+[163] [164] [165]
 Underfull \hbox (badness 3386) in paragraph at lines 244--249
 []\T1/mdbch/m/n/10 A. DiFranzo, K. I. Na-gao, A. Ra-jara-man, T. M. P. Tait, Si
 m-pli-fied
@@ -11103,19 +11101,19 @@ Underfull \hbox (badness 2435) in paragraph at lines 244--249
  (2013)
  []
 
-[165]
+[166]
 Underfull \hbox (badness 1184) in paragraph at lines 302--307
 \T1/mdbch/m/n/10 LHC, JHEP 1506 (2015) 078.  []$\T1/cmtt/m/n/10 arXiv : 1503 . 
 00691$[]\T1/mdbch/m/n/10 , []$\T1/cmtt/m/n/10 doi : 10 . 1007 /
  []
 
-[166]
+[167]
 Underfull \hbox (badness 2326) in paragraph at lines 360--364
 []\T1/mdbch/m/n/10 R. S. Chivukula, H. Georgi, Com-pos-ite Tech-ni-color Stan-d
 ard Model,
  []
 
-[167] [168] [169] [170]
+[168] [169] [170] [171]
 Underfull \hbox (badness 1132) in paragraph at lines 632--637
 []\T1/mdbch/m/n/10 B. Batell, T. Lin, L.-T. Wang, Fla-vored Dark Mat-ter and R-
 parity vi-o-
@@ -11127,13 +11125,13 @@ Underfull \hbox (badness 1048) in paragraph at lines 632--637
 9 . 4462$[]\T1/mdbch/m/n/10 , []$\T1/cmtt/m/n/10 doi : 10 . 1007 /
  []
 
-[171] [172]
+[172] [173]
 Underfull \hbox (badness 1810) in paragraph at lines 762--769
 \T1/mdbch/m/n/10 JHEP 0101 (2001) 010.  []$\T1/cmtt/m/n/10 arXiv : hep-[]ph / 0
 011363$[]\T1/mdbch/m/n/10 , []$\T1/cmtt/m/n/10 doi : 10 . 1088 /
  []
 
-[173]
+[174]
 Underfull \hbox (badness 5036) in paragraph at lines 771--780
 []\T1/mdbch/m/n/10 G. March-esini, B. Web-ber, G. Ab-bi-endi, I. Knowles, M. Se
 y-mour,
@@ -11193,7 +11191,7 @@ Underfull \hbox (badness 3179) in paragraph at lines 807--811
 vnweb . cern . ch / cern / wsvn /
  []
 
-[174]
+[175]
 Underfull \hbox (badness 10000) in paragraph at lines 813--817
 []$\T1/cmtt/m/n/10 https : / / svnweb . cern . ch / cern / wsvn / LHCDMF / trun
 k / models /
@@ -11247,7 +11245,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 861--865
 /mdbch/m/n/10 , [On-line;
  []
 
-[175]
+[176]
 Underfull \hbox (badness 10000) in paragraph at lines 873--877
 \T1/cmtt/m/n/10 / / svnweb . cern . ch / cern / wsvn / LHCDMF / trunk / models 
 / HF _ S + PS/$[]\T1/mdbch/m/n/10 ,
@@ -11265,7 +11263,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 901--907
 ts with one heavy-quark tag, Phys.Rev. D73
  []
 
-[176]
+[177]
 Underfull \hbox (badness 10000) in paragraph at lines 950--954
 \T1/mdbch/m/n/10 Higgs sig-na-ture, []$\T1/cmtt/m/n/10 https : / / svnweb . cer
 n . ch / cern / wsvn / LHCDMF /
@@ -11277,7 +11275,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 950--954
 ne; ac-cessed 12-May-2015]
  []
 
-[177]
+[178]
 Underfull \hbox (badness 10000) in paragraph at lines 969--973
 \T1/cmtt/m/n/10 LHCDMF / trunk / models / EW _ Fermion _ D7 / contributed _ by 
 _ Renjie _
@@ -11289,13 +11287,13 @@ Underfull \hbox (badness 2635) in paragraph at lines 1014--1017
 On-line; ac-cessed 13-June-2015]
  []
 
-[178]
+[179]
 Underfull \hbox (badness 1019) in paragraph at lines 1026--1032
 []\T1/mdbch/m/n/10 T. Sjös-trand, S. Mrenna, P. Z. Skands, PYTHIA 6.4 physics a
 nd man-
  []
 
-[179]
+[180]
 Underfull \hbox (badness 3088) in paragraph at lines 1090--1093
 []\T1/mdbch/m/n/10 SVN repos-i-tory for Mad-graph in-puts for mono-top mod-els,
  []$\T1/cmtt/m/n/10 https :
@@ -11307,7 +11305,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1090--1093
 / HF _
  []
 
-[180] [181] [182]
+[181] [182] [183]
 Underfull \hbox (badness 10000) in paragraph at lines 1280--1282
 []\T1/mdbch/m/n/10 The Durham Hep-Data project, []$\T1/cmtt/m/n/10 http : / / h
 epdata . cedar . ac . uk /
@@ -11331,13 +11329,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1308--1311
 du / ~conway / research /
  []
 
-[183])
+[184])
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[184]
+[185]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./doc.aux)
@@ -11352,10 +11350,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 14766 strings out of 493117
- 237560 string characters out of 6135434
- 399646 words of memory out of 5000000
- 16723 multiletter control sequences out of 15000+600000
+ 14765 strings out of 493117
+ 237554 string characters out of 6135434
+ 399574 words of memory out of 5000000
+ 16722 multiletter control sequences out of 15000+600000
  114133 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,19n,85p,8399b,1211s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -11384,10 +11382,10 @@ nts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1000.pfb>
-Output written on doc.pdf (184 pages, 3119878 bytes).
+Output written on doc.pdf (185 pages, 3121526 bytes).
 PDF statistics:
- 5824 PDF objects out of 6186 (max. 8388607)
- 4397 compressed objects within 44 object streams
+ 5827 PDF objects out of 6186 (max. 8388607)
+ 4399 compressed objects within 44 object streams
  846 named destinations out of 1000 (max. 500000)
  1222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
