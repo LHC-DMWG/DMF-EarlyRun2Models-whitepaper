@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.3)  5 SEP 2015 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.3)  22 SEP 2015 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11040,7 +11040,7 @@ P and mi-crOMEGAs,
  []
 
 [154 <./figures/EW/i2HDM/fd-mono-h1.pdf> <./figures/EW/i2HDM/fd-mono-h2.pdf>]
-<figures/EW/i2HDM/i2HDM_crossSections.pdf, id=4744, 511.9125pt x 426.59375pt>
+<figures/EW/i2HDM/i2HDM_crossSections.pdf, id=4743, 511.9125pt x 426.59375pt>
 File: figures/EW/i2HDM/i2HDM_crossSections.pdf Graphic file (type pdf)
 
 <use figures/EW/i2HDM/i2HDM_crossSections.pdf>
@@ -11076,7 +11076,7 @@ r-ma-tion needed within
  []
 
 [159] [160]) (./tex/AdditionalDetails.tex [161]
-<figures/EW/monoH/zprime_xs_med_100.pdf, id=4840, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_xs_med_100.pdf, id=4839, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_xs_med_100.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_xs_med_100.pdf>
@@ -11084,7 +11084,7 @@ Package pdftex.def Info: figures/EW/monoH/zprime_xs_med_100.pdf used on input l
 ine 23.
 (pdftex.def)             Requested size: 155.24666pt x 148.94917pt.
 
-<figures/EW/monoH/zprime_xs_med_1000.pdf, id=4841, 569.12625pt x 546.04pt>
+<figures/EW/monoH/zprime_xs_med_1000.pdf, id=4840, 569.12625pt x 546.04pt>
 File: figures/EW/monoH/zprime_xs_med_1000.pdf Graphic file (type pdf)
 
 <use figures/EW/monoH/zprime_xs_med_1000.pdf>
@@ -11309,26 +11309,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1090--1093
 / HF _
  []
 
-[181] [182] [183]
-Underfull \hbox (badness 10000) in paragraph at lines 1280--1282
+[181] [182]
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1274
 []\T1/mdbch/m/n/10 The Durham Hep-Data project, []$\T1/cmtt/m/n/10 http : / / h
 epdata . cedar . ac . uk /
  []
 
-
-Underfull \hbox (badness 2126) in paragraph at lines 1289--1294
+[183]
+Underfull \hbox (badness 2126) in paragraph at lines 1281--1286
 \T1/mdbch/m/n/10 y-ses, JHEP 1104 (2011) 038.  []$\T1/cmtt/m/n/10 arXiv : 1010 
 . 2506$[]\T1/mdbch/m/n/10 , []$\T1/cmtt/m/n/10 doi : 10 . 1007 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1300--1303
 []\T1/mdbch/m/n/10 PGS: sim-u-la-tion of a generic high-energy physics col-lide
 r de-tec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1300--1303
 \T1/mdbch/m/n/10 tor, []$\T1/cmtt/m/n/10 http : / / www . physics . ucdavis . e
 du / ~conway / research /
  []
@@ -11354,10 +11354,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 14766 strings out of 493117
- 237566 string characters out of 6135434
- 399574 words of memory out of 5000000
- 16722 multiletter control sequences out of 15000+600000
+ 14761 strings out of 493117
+ 237466 string characters out of 6135434
+ 399566 words of memory out of 5000000
+ 16718 multiletter control sequences out of 15000+600000
  114133 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,19n,85p,8399b,1211s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -11386,10 +11386,10 @@ nts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1000.pfb>
-Output written on doc.pdf (185 pages, 3121973 bytes).
+Output written on doc.pdf (185 pages, 3121364 bytes).
 PDF statistics:
- 5830 PDF objects out of 6186 (max. 8388607)
- 4401 compressed objects within 45 object streams
- 847 named destinations out of 1000 (max. 500000)
+ 5825 PDF objects out of 6186 (max. 8388607)
+ 4397 compressed objects within 44 object streams
+ 846 named destinations out of 1000 (max. 500000)
  1222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

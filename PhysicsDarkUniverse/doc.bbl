@@ -1174,10 +1174,9 @@ C.~Garcia-Cely, A.~Ibarra, Novel gamma-ray spectral features in the {Inert
   \href {http://dx.doi.org/10.1088/1475-7516/2013/09/025}
   {\path{doi:10.1088/1475-7516/2013/09/025}}.
 
-\bibitem{Goudelis:2013uca}
-A.~Goudelis, B.~Herrmann, O.~St{\r{o}}l, Dark matter in the {Inert Doublet
-  Model} after the discovery of a {Higgs}-like boson at the {LHC}, JHEP 1309
-  (2013) 106.
+\bibitem{IDMposthiggs}
+A.~Goudelis, B.~Herrmann, O.~St\aa{}l, Dark matter in the {Inert Doublet Model}
+  after the discovery of a higgs-like boson at the {LHC}, JHEP 1309 (2013) 106.
 \newblock \href {http://arxiv.org/abs/1303.3010} {\path{arXiv:1303.3010}},
   \href {http://dx.doi.org/10.1007/JHEP09(2013)106}
   {\path{doi:10.1007/JHEP09(2013)106}}.
@@ -1255,13 +1254,6 @@ B.~Swiezewska, M.~Krawczyk, Diphoton rate in the inert doublet model with a
 \newblock \href {http://arxiv.org/abs/1212.4100} {\path{arXiv:1212.4100}},
   \href {http://dx.doi.org/10.1103/PhysRevD.88.035019}
   {\path{doi:10.1103/PhysRevD.88.035019}}.
-
-\bibitem{IDMposthiggs}
-A.~Goudelis, B.~Herrmann, O.~St\aa{}l, Dark matter in the {Inert Doublet Model}
-  after the discovery of a higgs-like boson at the {LHC}, JHEP 1309 (2013) 106.
-\newblock \href {http://arxiv.org/abs/1303.3010} {\path{arXiv:1303.3010}},
-  \href {http://dx.doi.org/10.1007/JHEP09(2013)106}
-  {\path{doi:10.1007/JHEP09(2013)106}}.
 
 \bibitem{IDMdileptonsII}
 G.~Belanger, B.~Dumont, A.~Goudelis, B.~Herrmann, S.~Kraml, et~al., Dilepton
