@@ -1,0 +1,417 @@
+\author[YgtI]{Mr. Daniel Abercrombie} 
+\address[YgtI]{MIT, USA}
+ 
+\author[oNox]{Dr. Nural Akchurin} 
+\address[oNox]{Texas Tech University, USA}
+ 
+\author[lYzY]{Ms. Ece Akilli} 
+\address[lYzY]{Universit\'e de Gen\`eve, DPNC, Switzerland}
+ 
+\author[rulG]{Dr. Juan Alcaraz Maestre} 
+\address[rulG]{Centro de Investigaciones Energ\'eticas Medioambientales y Tecnol\'ogicas (CIEMAT), Spain}
+ 
+\author[yvhc]{Mr. Brandon Allen} 
+\address[yvhc]{MIT, USA}
+ 
+\author[VkbZ]{Dr. Barbara Alvarez Gonzalez} 
+\address[VkbZ]{CERN, Switzerland}
+ 
+\author[LtYA]{Dr. Jeremy Andrea} 
+\address[LtYA]{Institut Pluridisciplinaire Hubert Curien/D\'epartement Recherches Subatomiques, Universit\'e de Strasbourg/CNRS-IN2P3, France}
+ 
+\author[eywN]{Dr. Alexandre Arbey} 
+\address[eywN]{Universit\'e de Lyon and Centre de Recherche Astrophysique de Lyon, CNRS and Ecole Normale Sup\'erieure de Lyon, France and CERN Theory Division, Switzerland}
+ 
+\author[vobQ]{Dr. Georges Azuelos} 
+\address[vobQ]{University of Montreal and TRIUMF, Canada}
+ 
+\author[xpPr]{Dr. Patrizia Azzi} 
+\address[xpPr]{INFN Padova, Italy}
+ 
+\author[nifu]{Dr. Mihailo Backovi\'{c}} 
+\address[nifu]{Centre for Cosmology, Particle Physics and Phenomenology (CP3), Universit\'e catholique de Louvain, Belgium}
+ 
+\author[ccMo]{Dr. Yang Bai} 
+\address[ccMo]{Department of Physics, University of Wisconsin-Madison, USA}
+ 
+\author[MKWl]{Dr.Swagato Banerjee} 
+\address[MKWl]{University of Wisconsin-Madison, USA}
+ 
+\author[PWxM]{Dr. James Beacham} 
+\address[PWxM]{Ohio State University, USA}
+ 
+\author[QgyD]{Dr. Alexander Belyaev} 
+\address[QgyD]{Rutherford Appleton Laboratory and University of Southampton, United Kingdom}
+ 
+\author[QcHH]{Dr. Antonio Boveia (editor)} 
+\address[QcHH]{The Ohio State University, USA}
+ 
+\author[VpFu]{Dr. Amelia Jean Brennan} 
+\address[VpFu]{The University of Melbourne, Australia}
+ 
+\author[zoLZ]{Dr. Oliver Buchmueller} 
+\address[zoLZ]{Imperial College London, United Kingdom}
+ 
+\author[IsHm]{Dr. Matthew R. Buckley} 
+\address[IsHm]{Department of Physics and Astronomy, Rutgers University, USA}
+ 
+\author[QvVI]{Dr. Giorgio Busoni} 
+\address[QvVI]{SISSA and INFN, Sezione di Trieste, Italy}
+ 
+\author[tSSf]{Dr. Michael Buttignol} 
+\address[tSSf]{Institut Pluridisciplinaire Hubert Curien/D\'epartement Recherches Subatomiques, Universit\'e de Strasbourg/CNRS-IN2P3, France}
+ 
+\author[ewlV]{Dr. Giacomo Cacciapaglia} 
+\address[ewlV]{Universit\'e de Lyon and Universit\'e Lyon 1, CNRS/IN2P3, UMR5822, IPNL, France}
+ 
+\author[GbmG]{Dr. Regina Caputo} 
+\address[GbmG]{Santa Cruz Institute for Particle Physics, Department of Physics and Department of Astronomy and Astrophysics, University of California at Santa Cruz, USA}
+ 
+\author[savX]{Dr. Linda Carpenter} 
+\address[savX]{Ohio State University, USA}
+ 
+\author[gAAg]{Dr. Nuno Filipe Castro} 
+\address[gAAg]{LIP-Minho, Braga, and Departamento de F\'\i sica e Astronomia, Faculdade de Ci\^ encias da Universidade do Porto, Portugal}
+ 
+\author[LrZM]{Dr. Guillelmo Gomez Ceballos} 
+\address[LrZM]{MIT, USA}
+ 
+\author[LWWS]{Dr. Yangyang Cheng} 
+\address[LWWS]{University of Chicago, USA}
+ 
+\author[cgEF]{Dr. John Paul Chou} 
+\address[cgEF]{Rutgers University, USA}
+ 
+\author[mnUe]{Dr. Arely Cortes Gonzalez} 
+\address[mnUe]{IFAE Barcelona, Spain}
+ 
+\author[PeoD]{Mr. Chris Cowden} 
+\address[PeoD]{Texas Tech University, USA}
+ 
+\author[vIFO]{Dr. Francesco D'Eramo} 
+\address[vIFO]{University of California and LBNL, Berkeley, USA}
+ 
+\author[vUME]{Dr. Annapaola De Cosa} 
+\address[vUME]{University of Zurich, Switzerland}
+ 
+\author[dxIu]{Dr. Michele De Gruttola} 
+\address[dxIu]{CERN, Switzerland}
+ 
+\author[bkZu]{Dr. Albert De Roeck} 
+\address[bkZu]{CERN, Switzerland}
+ 
+\author[PYZw]{Dr. Andrea De Simone} 
+\address[PYZw]{SISSA and INFN, Sezione di Trieste, Italy}
+ 
+\author[PmIR]{Dr. Aldo Deandrea} 
+\address[PmIR]{Universit\'e de Lyon and Universit\'e Lyon 1, CNRS/IN2P3, UMR5822, IPNL, France}
+ 
+\author[hksf]{Dr. Zeynep Demiragli} 
+\address[hksf]{MIT, USA}
+ 
+\author[RNEI]{Dr. Anthony DiFranzo} 
+\address[RNEI]{Department of Physics and Astronomy, University of California, Irvine and Theoretical Physics Department, Fermilab, USA}
+ 
+\author[pEGv]{Dr. Caterina Doglioni (editor)} 
+\address[pEGv]{Lund University, Sweden}
+ 
+\author[qHgj]{Dr. Tristan du Pree} 
+\address[qHgj]{CERN, Switzerland}
+ 
+\author[bNjY]{Dr. Robin Erbacher} 
+\address[bNjY]{University of California, Davis, USA}
+ 
+\author[lmir]{Dr. Johannes Erdmann} 
+\address[lmir]{Institut f\"ur Experimentelle Physik IV, Technische Universit\"at Dortmund, Germany}
+ 
+\author[qDPF]{Ms. Cora Fischer} 
+\address[qDPF]{IFAE Barcelona, Spain}
+ 
+\author[mmqy]{Dr. Henning Flaecher} 
+\address[mmqy]{H.H. Wills Physics Laboratory, University of Bristol, United Kingdom}
+ 
+\author[Xsyd]{Dr. Patrick J. Fox} 
+\address[Xsyd]{Fermilab, USA}
+ 
+\author[xMwc]{Dr. Benjamin Fuks} 
+\address[xMwc]{Institut Pluridisciplinaire Hubert Curien/D\'epartement Recherches Subatomiques, Universit\'e de Strasbourg/CNRS-IN2P3, France}
+ 
+\author[akwF]{Dr. Marie-Helene Genest} 
+\address[akwF]{LPSC, Université Grenoble-Alpes, CNRS/IN2P3, France}
+ 
+\author[VKEX]{Dr. Bhawna Gomber} 
+\address[VKEX]{University of Wisconsin-Madison, USA}
+ 
+\author[lZPk]{Dr. Andreas Goudelis} 
+\address[lZPk]{Institut f\"ur Hochenergiephysik, \"Osterreichische Akademie der Wissenschaften, Austria}
+ 
+\author[rAlz]{Ms. Johanna Gramling} 
+\address[rAlz]{Universit\'e de Gen\`eve, DPNC, Switzerland}
+ 
+\author[QHsX]Dr. John Gunion} 
+\address[QHsX]{University of California, Davis, USA}
+ 
+\author[bPxE]{Dr. Kristian Hahn} 
+\address[bPxE]{Northwestern University, USA}
+ 
+\author[jLtv]{Dr. Ulrich Haisch} 
+\address[jLtv]{Rudolf Peierls Centre for Theoretical Physics, University of Oxford, United Kingdom}
+ 
+\author[ODJb]{Dr. Roni Harnik} 
+\address[ODJb]{Theoretical Physics Department, Fermilab, USA}
+ 
+\author[jFfH]{Dr. Philip C. Harris} 
+\address[jFfH]{CERN, Switzerland}
+ 
+\author[fnCC]{Dr. Kerstin Hoepfner} 
+\address[fnCC]{RWTH Aachen University, III. Physikalisches Institut A, Germany}
+ 
+\author[XfkT]{Mr. Siew Yan Hoh} 
+\address[XfkT]{National Centre for Particle Physics, Universiti Malaya, Malaysia}
+ 
+\author[bMZD]{Mr. Dylan George Hsu} 
+\address[bMZD]{MIT, USA}
+ 
+\author[TMCS]{Dr. Shih-Chieh Hsu} 
+\address[TMCS]{Physics, University of Washington, Seattle, USA}
+ 
+\author[dize]{Dr. Yutaro Iiyama} 
+\address[dize]{MIT, USA}
+ 
+\author[ndom]{Dr. Valerio Ippolito} 
+\address[ndom]{Laboratory for Particle Physics and Cosmology, Harvard University, USA}
+ 
+\author[IbuO]{Dr. Thomas Jacques} 
+\address[IbuO]{Department of Theoretical Physics, University of Geneva, Switzerland}
+ 
+\author[hEyH]{Mr. Xiangyang Ju} 
+\address[hEyH]{University of Wisconsin-Madison, USA}
+ 
+\author[VEIx]{Dr. Felix Kahlhoefer} 
+\address[VEIx]{DESY, Germany}
+ 
+\author[SqlJ]{Dr. Alexis Kalogeropoulos} 
+\address[SqlJ]{Deutsches Elektronen-Synchrotron (DESY), Germany}
+ 
+\author[JOeU]{Mr. Laser Seymour Kaplan} 
+\address[JOeU]{University of Wisconsin-Madison, USA}
+ 
+\author[tEDL]{Dr. Lashkar Kashif} 
+\address[tEDL]{University of Wisconsin-Madison, USA}
+ 
+\author[axZk]{Dr. Valentin V. Khoze} 
+\address[axZk]{Institute of Particle Physics Phenomenology, Durham University, United Kingdom}
+ 
+\author[EVpF]{Mr. Raman Khurana} 
+\address[EVpF]{National Central University, Taiwan}
+ 
+\author[MCvN]{Dr. Khristian Kotov} 
+\address[MCvN]{The Ohio State University, USA}
+ 
+\author[baWD]{Dr. Dmytro Kovalskyi} 
+\address[baWD]{MIT, USA}
+ 
+\author[wmLy]{Dr. Suchita Kulkarni} 
+\address[wmLy]{Institut f\"ur Hochenergiephysik, \"Osterreichische Akademie der Wissenschaften, Austria}
+ 
+\author[RolA]{Dr. Shuichi Kunori} 
+\address[RolA]{Texas Tech University, USA}
+ 
+\author[yXEf]{Mr. Viktor Kutzner} 
+\address[yXEf]{RWTH Aachen University, III. Physikalisches Institut A, Germany}
+ 
+\author[vWXv]{Dr. Hyun Min Lee} 
+\address[vWXv]{Department of Physics, Chung-Ang University, Korea}
+ 
+\author[jgwF]{Dr. Sung-Won Lee} 
+\address[jgwF]{Texas Tech University, USA}
+ 
+\author[yOpN]{Dr. Seng Pei Liew} 
+\address[yOpN]{Department of Physics, University of Tokyo, Japan}
+ 
+\author[dcBG]{Dr. Tongyan Lin} 
+\address[dcBG]{Kavli Institute for Cosmological Physics, University of Chicago, USA}
+ 
+\author[kuvd]{Dr. Steven Lowette (editor)} 
+\address[kuvd]{Vrije Universiteit Brussel - IIHE, Belgium}
+ 
+\author[GsbT]{Dr. Romain Madar} 
+\address[GsbT]{Laboratoire de Physique Corpusculaire, Clermont-Ferrand, France}
+ 
+\author[CJbp]{Dr. Sarah Malik (editor)} 
+\address[CJbp]{Imperial College London, United Kingdom}
+ 
+\author[YFht]{Dr. Fabio Maltoni} 
+\address[YFht]{Centre for Cosmology, Particle Physics and Phenomenology (CP3), Universit\'e catholique de Louvain, Belgium}
+ 
+\author[ddNj]{Dr. Mario Martinez Perez} 
+\address[ddNj]{IFAE Barcelona, Spain}
+ 
+\author[PfVM]{Dr. Olivier Mattelaer} 
+\address[PfVM]{IPPP Durham, United Kingdom}
+ 
+\author[iWeX]{Kentarou Mawatari} 
+\address[iWeX]{Theoretische Natuurkunde and IIHE/ELEM, Vrije Universiteit Brussel, and International Solvay Institutes, Belgium}
+ 
+\author[tcqq]{Dr. Christopher McCabe} 
+\address[tcqq]{GRAPPA, University of Amsterdam, Netherlands}
+ 
+\author[piIo]{Th\'eo Megy} 
+\address[piIo]{Laboratoire de Physique Corpusculaire, Clermont-Ferrand, France}
+ 
+\author[ZxxP]{Dr. Enrico Morgante} 
+\address[ZxxP]{Department of Theoretical Physics, University of Geneva, Switzerland}
+ 
+\author[RzcE]{Dr. Stephen Mrenna (editor)} 
+\address[RzcE]{FNAL, USA}
+ 
+\author[muDH]{Siddharth M. Narayanan} 
+\address[muDH]{MIT, USA}
+ 
+\author[QpYr]{Dr. Andy Nelson} 
+\address[QpYr]{University of California, Irvine, USA}
+ 
+\author[ZplI]{S\'ergio F. Novaes} 
+\address[ZplI]{Universidade Estadual Paulista, Brazil}
+ 
+\author[YNtI]{Klaas Ole Padeken} 
+\address[YNtI]{RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany}
+ 
+\author[NXgZ]{Dr. Priscilla Pani} 
+\address[NXgZ]{Stockholm University, Sweden}
+ 
+\author[Nkhs]{Dr. Michele Papucci} 
+\address[Nkhs]{Theoretical Physics Group, Lawrence Berkeley National Laboratory, and Berkeley Center for Theoretical Physics, University of California, Berkeley, USA}
+ 
+\author[Aaxf]{Dr. Manfred Paulini} 
+\address[Aaxf]{Carnegie Mellon University, USA}
+ 
+\author[tPhk]{Dr. Christoph Paus} 
+\address[tPhk]{MIT, USA}
+ 
+\author[dlCu]{Jacopo Pazzini} 
+\address[dlCu]{Universit\`a di Padova, Italy}
+ 
+\author[ziHj]{Dr. Bj\"orn Penning} 
+\address[ziHj]{Imperial College London, United Kingdom}
+ 
+\author[JqvG]{Dr. Michael E. Peskin} 
+\address[JqvG]{SLAC, Stanford University, USA}
+ 
+\author[dRWz]{Ms. Deborah Pinna} 
+\address[dRWz]{University of Zurich, Switzerland}
+ 
+\author[AwrK]{Massimiliano Procura} 
+\address[AwrK]{Universit\"at Wien, Austria}
+ 
+\author[UzKI]{Shamona F. Qazi} 
+\address[UzKI]{National Centre for Physics, Quaid-i-Azam University, Pakistan}
+ 
+\author[iwqE]{Mr. Davide Racco} 
+\address[iwqE]{Department of Theoretical Physics, University of Geneva, Switzerland}
+ 
+\author[ykEA]{Dr. Emanuele Re} 
+\address[ykEA]{Rudolf Peierls Centre for Theoretical Physics, University of Oxford, United Kingdom}
+ 
+\author[dJlR]{Dr. Antonio Riotto} 
+\address[dJlR]{Department of Theoretical Physics, University of Geneva, Switzerland}
+ 
+\author[xymz]{Dr. Thomas G. Rizzo} 
+\address[xymz]{SLAC, USA}
+ 
+\author[pHCm]{Rainer Roehrig} 
+\address[pHCm]{Max-Planck-Institut für Physik, Germany}
+ 
+\author[nkTm]{Dr. David Salek} 
+\address[nkTm]{Nikhef and GRAPPA, Netherlands}
+ 
+\author[QRPz]{Arturo Sanchez Pineda} 
+\address[QRPz]{INFN Sezione di Napoli, and Dipartimento di Fisica, Universit\`a di Napoli, Italy}
+ 
+\author[cAXv]{Dr. Subir Sarkar} 
+\address[cAXv]{Rudolf Peierls Centre for Theoretical Physics, University of Oxford, United Kingdom, and Niels Bohr Institute, Copenhagen, Denmark}
+ 
+\author[brGc]{Alexander Schmidt} 
+\address[brGc]{University of Hamburg, Germany}
+ 
+\author[Xsej]{Mr. Steven Randolph Schramm} 
+\address[Xsej]{Universit\'e de Gen\`eve, DPNC, Switzerland}
+ 
+\author[BSYU]{Dr. William Shepherd} 
+\address[BSYU]{University of California Santa Cruz Department of Physics and Santa Cruz Institute for Particle Physics, USA, and Niels Bohr International Academy, University of Copenhagen, Denmark}
+ 
+\author[qkhy]{Gurpreet Singh} 
+\address[qkhy]{Chulalongkorn University, Thailand}
+ 
+\author[yLGT]{Livia Soffi} 
+\address[yLGT]{Cornell University, USA}
+ 
+\author[iACE]{Norraphat Srimanobhas} 
+\address[iACE]{Chulalongkorn University, Faculty of Science, Department of Physics, Thailand}
+ 
+\author[iuVC]{Kevin Sung} 
+\address[iuVC]{Northwestern University, USA}
+ 
+\author[rviI]{Tim M. P. Tait} 
+\address[rviI]{Department of Physics and Astronomy, University of California, Irvine, USA}
+ 
+\author[LfuS]{Timothee Theveneaux-Pelzer} 
+\address[LfuS]{Laboratoire de Physique Corpusculaire, Clermont Universit\'e and Universit\'e Blaise Pascal and CNRS/IN2P3, Clermont-Ferrand, France}
+ 
+\author[eEFq]{Marc Thomas} 
+\address[eEFq]{Southampton University, United Kingdom}
+ 
+\author[AdKS]{Mia Tosi} 
+\address[AdKS]{University of Padova and INFN, Italy}
+ 
+\author[rpMm]{Daniele Trocino} 
+\address[rpMm]{Northeastern University, Boston, USA}
+ 
+\author[ZVJM]{Sonaina Undleeb} 
+\address[ZVJM]{Texas Tech University, USA}
+ 
+\author[BtUm]{Alessandro Vichi} 
+\address[BtUm]{Theory division, CERN, Switzerland }
+ 
+\author[SXWm]{Fuquan Wang} 
+\address[SXWm]{University of Wisconsin-Madison, USA}
+ 
+\author[ugQs]{Dr. Lian-Tao Wang} 
+\address[ugQs]{Enrico Fermi Institute and Department of Physics and Kavli Institute for Cosmological Physics, University of Chicago, USA}
+ 
+\author[uuqr]{Mr. Ren-Jie Wang} 
+\address[uuqr]{Department of Physics, Northeastern University, USA}
+ 
+\author[RvTY]{Mr. Nikola  Whallon} 
+\address[RvTY]{Physics, University of Washington, Seattle, USA}
+ 
+\author[JvrM]{Dr. Steven Worm} 
+\address[JvrM]{Particle Physics Department, Rutherford Appleton Laboratory, United Kingdom}
+ 
+\author[vrjA]{Mengqing Wu} 
+\address[vrjA]{Laboratoire de Physique Subatomique et de Cosmologie, Universit\'e Grenoble-Alpes, CNRS/IN2P3, France}
+ 
+\author[xTYE]{Sau Lan Wu} 
+\address[xTYE]{University of Wisconsin-Madison, USA}
+ 
+\author[BSMJ]{Hongtao Yang} 
+\address[BSMJ]{University of Wisconsin-Madison, USA}
+ 
+\author[oEHn]{Yong Yang} 
+\address[oEHn]{Universit\"at Zurich, Switzerland}
+ 
+\author[LpMR]{Dr. Shin-Shan Yu} 
+\address[LpMR]{National Central University, Taiwan}
+ 
+\author[pSwv]{Dr. Bryan Zaldivar} 
+\address[pSwv]{Universit\'e Libre de Bruxelles, Belgium}
+ 
+\author[wPPg]{Marco Zanetti} 
+\address[wPPg]{Universit\`a di Padova, Italy}
+ 
+\author[oBSt]{Dr. Zhiqing Zhang} 
+\address[oBSt]{Laboratoire de l'Acc\'el\'erateur Lin\'eaire, Univ. Paris-Sud 11 et IN2P3/CNRS, France}
+ 
+\author[sVnw]{Alberto Zucchetta} 
+\address[sVnw]{Universit\`a di Padova, Italy}
+ 
